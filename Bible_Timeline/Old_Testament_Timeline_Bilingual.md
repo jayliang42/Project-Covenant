@@ -1,0 +1,311 @@
+# Old Testament Timeline
+
+旧约时间线双语版。  
+Bilingual Old Testament timeline.
+
+## Big Picture | 总览
+
+### English
+
+The Old Testament moves from creation to exile and partial return. Its central question is not only “What happened to Israel?” but “How will God's promises survive human sin and covenant failure?”
+
+### 中文
+
+旧约的故事从创造一直走到被掳与部分归回。它的核心问题不只是“以色列后来怎么了”，而是“在人不断犯罪、不断背约的情况下，神的应许要怎样继续下去？”
+
+## Main Flow | 主线流程
+
+1. Creation and Fall
+2. Flood and Noah
+3. Abraham and the Patriarchs
+4. Exodus and Sinai
+5. Wilderness
+6. Conquest and Judges
+7. United Kingdom
+8. Divided Kingdom
+9. Exile
+10. Return and Waiting
+
+1. 创造与堕落
+2. 洪水与挪亚
+3. 亚伯拉罕与列祖
+4. 出埃及与西奈
+5. 旷野时期
+6. 进地与士师
+7. 联合王国
+8. 分裂王国
+9. 被掳
+10. 归回与等待
+
+## Timeline | 时间线
+
+### 1. Creation and Fall
+
+- Main books: Genesis 1-3
+- Main people: Adam, Eve
+- Key themes: creation, image of God, sin, death, curse, promise
+
+- 主要书卷：创世记 1-3
+- 主要人物：亚当、夏娃
+- 关键词：创造、神形象、罪、死亡、咒诅、应许
+
+#### Why it matters | 为什么重要
+
+### English
+
+Everything begins here: human dignity, human rebellion, and the need for redemption.
+
+### 中文
+
+一切都从这里开始：人的尊严、人的悖逆，以及救赎的必要。
+
+### 2. Flood and Noah
+
+- Main books: Genesis 6-9
+- Main people: Noah
+- Key themes: judgment, mercy, preservation, covenant
+
+- 主要书卷：创世记 6-9
+- 主要人物：挪亚
+- 关键词：审判、怜悯、保守、立约
+
+#### Why it matters | 为什么重要
+
+### English
+
+God judges evil, but he does not abandon his world. He preserves history for the sake of his purposes.
+
+### 中文
+
+神审判邪恶，但没有放弃祂的世界。祂保守历史继续往祂的计划走。
+
+### 3. Abraham and the Patriarchs
+
+- Main books: Genesis 12-50
+- Main people: Abraham, Isaac, Jacob, Joseph
+- Key themes: promise, covenant, offspring, land, blessing to nations
+
+- 主要书卷：创世记 12-50
+- 主要人物：亚伯拉罕、以撒、雅各、约瑟
+- 关键词：应许、立约、后裔、土地、万国得福
+
+#### Why it matters | 为什么重要
+
+### English
+
+God narrows the story line into one family, not to exclude the nations forever, but to bless them through that family.
+
+### 中文
+
+神把故事线收束到一个家族中，并不是永远排除万国，而是要借这个家族祝福万国。
+
+### 4. Exodus and Sinai
+
+- Main books: Exodus, Leviticus, Numbers, Deuteronomy
+- Main people: Moses, Aaron
+- Key themes: redemption, law, holiness, tabernacle, covenant people
+
+- 主要书卷：出埃及记、利未记、民数记、申命记
+- 主要人物：摩西、亚伦
+- 关键词：救赎、律法、圣洁、会幕、约民
+
+#### Why it matters | 为什么重要
+
+### English
+
+God not only saves a people from slavery; he forms them into a people who belong to him.
+
+### 中文
+
+神不只是把一群人从奴役中救出来，祂还把他们塑造成属于祂的子民。
+
+### 5. Wilderness
+
+- Main books: Numbers, Deuteronomy
+- Main people: Moses, Joshua, Israel
+- Key themes: testing, unbelief, discipline, preparation
+
+- 主要书卷：民数记、申命记
+- 主要人物：摩西、约书亚、以色列民
+- 关键词：试炼、不信、管教、预备
+
+#### Why it matters | 为什么重要
+
+### English
+
+The wilderness shows how deep unbelief runs even after deliverance, and how patient God's covenant faithfulness is.
+
+### 中文
+
+旷野时期显明，即使人已经得拯救，不信仍然很深；同时也显明神守约的忍耐何等长久。
+
+### 6. Conquest and Judges
+
+- Main books: Joshua, Judges, Ruth
+- Main people: Joshua, judges, Ruth, Boaz
+- Key themes: land, incomplete obedience, repeated decline, hidden faithfulness
+
+- 主要书卷：约书亚记、士师记、路得记
+- 主要人物：约书亚、众士师、路得、波阿斯
+- 关键词：得地、不完全顺服、循环性败坏、隐藏的信实
+
+#### Why it matters | 为什么重要
+
+### English
+
+Israel receives the land, but life in the land shows that external settlement does not equal inward faithfulness.
+
+### 中文
+
+以色列虽得了地，但在地上的生活显明：外在安顿并不等于内里忠心。
+
+### 7. United Kingdom
+
+- Main books: 1-2 Samuel, 1 Kings 1-11, 1 Chronicles, parts of Psalms and Proverbs
+- Main people: Samuel, Saul, David, Solomon
+- Key themes: kingship, covenant, temple, wisdom, glory, decline
+
+- 主要书卷：撒母耳记上下、列王纪上 1-11、历代志上、部分诗篇和箴言
+- 主要人物：撒母耳、扫罗、大卫、所罗门
+- 关键词：王权、圣约、圣殿、智慧、荣耀、衰退
+
+#### Why it matters | 为什么重要
+
+### English
+
+This is the high point of Old Testament national life, yet even here sin already threatens the kingdom from within.
+
+### 中文
+
+这是旧约民族历史的高峰，但即使在高峰期，罪也已经从内部侵蚀国度。
+
+### 8. Divided Kingdom
+
+- Main books: 1 Kings 12-22, 2 Kings, 2 Chronicles, many prophets
+- Main people: kings of Israel and Judah, Elijah, Elisha, Isaiah, Jeremiah, others
+- Key themes: idolatry, prophetic warning, reform, decline, judgment
+
+- 主要书卷：列王纪上 12-22、列王纪下、历代志下、许多先知书
+- 主要人物：以色列与犹大的诸王、以利亚、以利沙、以赛亚、耶利米等
+- 关键词：偶像崇拜、先知警告、改革、衰败、审判
+
+#### Why it matters | 为什么重要
+
+### English
+
+The kingdom splits, and the prophets explain that political collapse is tied to spiritual rebellion.
+
+### 中文
+
+王国分裂之后，先知不断解释：政治崩塌背后，是属灵背叛。
+
+### 9. Exile
+
+- Main books: 2 Kings 17-25, 2 Chronicles, Ezekiel, Daniel, Lamentations, parts of Jeremiah
+- Main people: exiles, prophets in exile
+- Key themes: judgment, loss, lament, hope, sovereignty, new covenant
+
+- 主要书卷：列王纪下 17-25、历代志下、以西结书、但以理书、耶利米哀歌、耶利米书部分内容
+- 主要人物：被掳百姓、被掳时期先知
+- 关键词：审判、失落、哀歌、盼望、主权、新约
+
+#### Why it matters | 为什么重要
+
+### English
+
+Exile looks like the collapse of everything, but it becomes the place where God speaks some of his deepest promises of renewal.
+
+### 中文
+
+被掳看起来像一切都崩塌了，但神却恰恰在这里说出一些最深的恢复应许。
+
+### 10. Return and Waiting
+
+- Main books: Ezra, Nehemiah, Esther, Haggai, Zechariah, Malachi
+- Main people: Zerubbabel, Ezra, Nehemiah, Esther
+- Key themes: rebuilding, repentance, weakness, unfinished hope
+
+- 主要书卷：以斯拉记、尼希米记、以斯帖记、哈该书、撒迦利亚书、玛拉基书
+- 主要人物：所罗巴伯、以斯拉、尼希米、以斯帖
+- 关键词：重建、悔改、软弱、未完成的盼望
+
+#### Why it matters | 为什么重要
+
+### English
+
+The people come back, but the story still feels incomplete. This creates deep expectation for the Messiah.
+
+### 中文
+
+百姓虽然回来了，但故事仍然显得没有完成，这就带来对弥赛亚更深的等待。
+
+## Old Testament Book Groups | 旧约书卷分组
+
+### Law | 律法书
+
+- Genesis, Exodus, Leviticus, Numbers, Deuteronomy
+- 创世记、出埃及记、利未记、民数记、申命记
+
+### History | 历史书
+
+- Joshua, Judges, Ruth, 1-2 Samuel, 1-2 Kings, 1-2 Chronicles, Ezra, Nehemiah, Esther
+- 约书亚记、士师记、路得记、撒母耳记上下、列王纪上下、历代志上下、以斯拉记、尼希米记、以斯帖记
+
+### Wisdom and Poetry | 智慧与诗歌
+
+- Job, Psalms, Proverbs, Ecclesiastes, Song of Songs
+- 约伯记、诗篇、箴言、传道书、雅歌
+
+### Prophets | 先知书
+
+- Major Prophets: Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel
+- Minor Prophets: Hosea to Malachi
+
+- 大先知书：以赛亚书、耶利米书、耶利米哀歌、以西结书、但以理书
+- 小先知书：何西阿书到玛拉基书
+
+## What The Old Testament Is Doing | 旧约到底在做什么
+
+### English
+
+The Old Testament is doing at least five things at once:
+
+1. It tells real history.
+2. It reveals God's character.
+3. It exposes human sin and covenant failure.
+4. It builds the categories needed to understand Jesus.
+5. It keeps alive the promise that God will save, restore, and dwell with his people.
+
+### 中文
+
+旧约至少同时在做五件事：
+
+1. 讲述真实历史。
+2. 启示神的性情。
+3. 暴露人的罪与背约。
+4. 建立理解耶稣所需要的神学范畴。
+5. 一直维持那个盼望：神要拯救、恢复，并与祂的子民同住。
+
+## Bridge To The New Testament | 走向新约的桥
+
+### English
+
+By the end of the Old Testament, readers are still waiting:
+
+- for a true king,
+- for deeper forgiveness,
+- for a faithful people,
+- for a better temple,
+- for the Spirit,
+- for the Messiah.
+
+### 中文
+
+到了旧约结尾，读者其实仍在等待：
+
+- 等待真正的王，
+- 等待更深的赦免，
+- 等待真正忠心的子民，
+- 等待更好的圣殿，
+- 等待圣灵，
+- 等待弥赛亚。
