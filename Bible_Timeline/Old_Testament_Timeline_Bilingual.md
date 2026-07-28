@@ -1,6 +1,6 @@
 # Old Testament Timeline
 
-旧约时间线双语版。  
+旧约时间线双语版。
 Bilingual Old Testament timeline.
 
 ## Big Picture | 总览

@@ -1,6 +1,6 @@
 # Bible By Book
 
-按书卷梳理圣经，并把每卷书挂到整条时间线上。  
+按书卷梳理圣经，并把每卷书挂到整条时间线上。
 This file walks through the Bible book by book and shows how each book fits into the larger timeline.
 
 ## How To Use This File | 怎么使用这份文件

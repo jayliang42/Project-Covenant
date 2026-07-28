@@ -1,7 +1,11 @@
 # Bible Timeline Cheat Sheet
 
-一页式速查版。  
+一页式速查版。
 One-page quick review version.
+
+一年研读版见[《52 周圣经故事线：查经、史料与考古阅读计划》](./52周圣经故事线_查经与史料阅读计划.md)。
+
+For the one-year study sequence, see the [52-Week Bible Storyline Plan](./52周圣经故事线_查经与史料阅读计划.md).
 
 ## Big Story | 大故事
 
@@ -34,9 +38,10 @@ One-page quick review version.
 5. 1-2 Samuel; 1 Kings 1-11: Saul, David, Solomon
 6. 1 Kings 12-2 Kings 25: divided kingdom to exile
 7. Ezra-Nehemiah-Esther: return and rebuilding
-8. Gospels: Jesus
-9. Acts-Letters: church and mission
-10. Revelation: final judgment and new creation
+8. Intertestamental / Second Temple period: Hellenistic kingdoms, Maccabees, Hasmoneans, Rome, Herod
+9. Gospels: Jesus
+10. Acts-Letters: church and mission
+11. Revelation: final judgment and new creation
 
 1. 创世记 1-11：创造、堕落、洪水、巴别
 2. 创世记 12-50：亚伯拉罕、以撒、雅各、约瑟
@@ -45,9 +50,12 @@ One-page quick review version.
 5. 撒母耳记上下；列王纪上 1-11：扫罗、大卫、所罗门
 6. 列王纪上 12 到列王纪下 25：分裂王国直到被掳
 7. 以斯拉记-尼希米记-以斯帖记：归回与重建
-8. 四福音：耶稣
-9. 使徒行传-书信：教会与宣教
-10. 启示录：最终审判与新创造
+8. 两约之间／第二圣殿时期：希腊化王国、马加比、哈斯摩尼、罗马与希律
+9. 四福音：耶稣
+10. 使徒行传-书信：教会与宣教
+11. 启示录：最终审判与新创造
+
+详见[《两约之间至四福音：第二圣殿、希腊化与罗马世界》](./两约之间至四福音_第二圣殿与罗马背景.md)。
 
 ## Main Covenants | 主要圣约
 

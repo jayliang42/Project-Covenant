@@ -6,6 +6,10 @@ This timeline is meant to help connect the whole Bible as one story: creation, c
 
 这份时间线的目的是帮助把整本圣经看成一个完整故事：创造、立约、国度、被掳、救赎、教会、以及新创造。
 
+For a guided one-year sequence covering all 66 books, see the [52-Week Bible Storyline Plan](./52周圣经故事线_查经与史料阅读计划.md).
+
+若希望用一年把 66 卷连起来，并同步阅读史料、考古边界和释经注释，见[《52 周圣经故事线》](./52周圣经故事线_查经与史料阅读计划.md)。
+
 ## The Big Story In One Line | 一句话总览
 
 The Bible tells how God creates a good world, humanity falls into sin, God forms a covenant people, sends the promised Messiah, and through Jesus begins the restoration that will be completed in the new creation.
@@ -204,6 +208,8 @@ The people return physically, but the larger promises still await fulfillment. T
 
 百姓虽然身体上回到了土地，但更大的应许仍未完全实现，因此整段历史都带着对更大拯救的等待。
 
+从波斯末期到四福音之间，犹太地先后经历希腊化王国、马加比反抗、哈斯摩尼王朝、罗马接管和希律统治；详见[《两约之间至四福音：第二圣殿、希腊化与罗马世界》](./两约之间至四福音_第二圣殿与罗马背景.md)。
+
 ### 10. Jesus the Messiah
 
 - Approximate setting: Early first century AD
@@ -219,6 +225,10 @@ The people return physically, but the larger promises still await fulfillment. T
 Jesus is the center of the Bible's storyline. He fulfills the law, the prophets, the sacrificial system, the Davidic kingship, and the hope of redemption for Israel and the nations.
 
 耶稣是整本圣经故事线的中心。祂成全律法、先知、献祭体系、大卫之王权，以及以色列和万国得救赎的盼望。
+
+For the earliest resurrection tradition, the manuscript endings of Mark, burial archaeology, and the limits of Roman evidence, see [Resurrection And Early Witnesses: Textual History And Historical Boundaries](./复活与早期见证_文本史与历史研究边界.md).
+
+林前 15 的早期复活传统、马可结尾抄本、墓葬考古和罗马材料的证据边界，见[《复活与早期见证：文本史、墓葬背景与历史研究边界》](./复活与早期见证_文本史与历史研究边界.md)。
 
 ### 11. Church and Mission
 
@@ -236,6 +246,10 @@ The church is not a side note. It is the community formed by the risen Christ an
 
 教会不是附属章节，而是复活的基督借着圣灵所建立的群体，承担向万民作见证的使命。
 
+For a journey-by-journey comparison of Acts, the Pauline letters, Roman officials, inscriptions, and city archaeology, see [Acts And Pauline Letters: Journeys, Chronology And Urban Evidence](./使徒行传与保罗书信_旅程年代与城市史料对照.md).
+
+若要逐程对照《使徒行传》、保罗书信、罗马官员、铭文和城市考古，见[《使徒行传与保罗书信：旅程、年代与城市史料对照》](./使徒行传与保罗书信_旅程年代与城市史料对照.md)。
+
 ### 12. New Creation
 
 - Main books: Revelation 21-22, with roots throughout Scripture
@@ -249,6 +263,10 @@ The church is not a side note. It is the community formed by the risen Christ an
 The Bible ends not with escape from creation but with the renewal of creation. The story moves from Eden to new creation, from lost fellowship to perfected fellowship with God.
 
 圣经的结局不是“逃离受造界”，而是“受造界被更新”。整个故事从伊甸园走向新创造，从失落的相交走向与神完全的同住。
+
+For the later New Testament setting—Hebrews, the General Epistles, Patmos, the seven churches, imperial cults, and Revelation’s major interpretive questions—see [Hebrews To Revelation: Later New Testament And The Seven Churches](./希伯来书至启示录_晚期新约与七教会背景.md).
+
+希伯来书、普通书信、拔摩、七教会、帝国崇拜和启示录主要解释问题，见[《希伯来书至启示录：晚期新约、普通书信与七教会背景》](./希伯来书至启示录_晚期新约与七教会背景.md)。
 
 ## Where The Books Fit | 各卷书大致放在哪里
 

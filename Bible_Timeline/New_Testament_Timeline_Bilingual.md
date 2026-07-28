@@ -1,7 +1,17 @@
 # New Testament Timeline
 
-新约时间线双语版。  
+新约时间线双语版。
 Bilingual New Testament timeline.
+
+四福音开始前的希腊化、马加比、哈斯摩尼、希律家族和罗马行政背景，见[《两约之间至四福音：第二圣殿、希腊化与罗马世界》](./两约之间至四福音_第二圣殿与罗马背景.md)。
+
+四福音复活叙事关系、妇女见证语境、空墓研究模型、林前 15 的早期传统、马可福音结尾抄本、墓葬遗存和罗马材料的证据边界，见[《复活与早期见证：文本史、墓葬背景与历史研究边界》](./复活与早期见证_文本史与历史研究边界.md)。
+
+《使徒行传》三次宣教旅程、保罗书信写作阶段、迦流年代锚点及各城市史料，见[《使徒行传与保罗书信：旅程、年代与城市史料对照》](./使徒行传与保罗书信_旅程年代与城市史料对照.md)。
+
+希伯来书、普通书信、主后 70 年后景、拔摩、亚细亚七城和启示录象征，见[《希伯来书至启示录：晚期新约、普通书信与七教会背景》](./希伯来书至启示录_晚期新约与七教会背景.md)。
+
+若按一年计划阅读，新约部分集中在[《52 周圣经故事线》](./52周圣经故事线_查经与史料阅读计划.md)第 35–52 周。
 
 ## Big Picture | 总览
 
@@ -38,10 +48,12 @@ The New Testament begins with Jesus and then shows what happens because Jesus ca
 ### 1. Arrival of the Messiah
 
 - Main books: Matthew 1-2, Luke 1-2, parts of John 1
+- Historical setting: late Herodian rule; the Quirinius census connection in Luke 2 remains chronologically debated
 - Main people: Jesus, Mary, Joseph, John the Baptist
 - Key themes: incarnation, fulfillment, promise, kingdom near
 
 - 主要书卷：马太福音 1-2、路加福音 1-2、约翰福音 1 的部分内容
+- 历史背景：大希律统治晚期；路加福音 2 章与居里扭人口登记的年代衔接仍有争议
 - 主要人物：耶稣、马利亚、约瑟、施洗约翰
 - 关键词：道成肉身、应验、应许、天国临近
 
@@ -195,6 +207,8 @@ The New Testament ends by showing where all gospel history is going: Christ wins
 
 新约最后显明整段福音历史究竟走向哪里：基督得胜，邪恶终结，神与祂子民永远同住。
 
+七城是同时存在的真实城市群体，也共同代表整全教会。启示录既要放在一世纪罗马亚细亚和帝国崇拜背景中读，也要按启示文学对旧约图像的重用和最终新创造来读；它不是现代新闻密码表。
+
 ## New Testament Book Groups | 新约书卷分组
 
 ### Gospels | 福音书
@@ -230,6 +244,7 @@ The New Testament ends by showing where all gospel history is going: Christ wins
 - Missionary and church-formation period: Corinthians, Romans, Prison Epistles.
 - Pastoral leadership and later church life: 1-2 Timothy, Titus, 1-2 Peter, 1-3 John, Jude.
 - Hebrews and Revelation stand with strong theological and pastoral force, though their exact contexts are discussed in different ways.
+- This is a teaching sequence, not a claim that every letter has a settled date. Galatians has early and late models; the Prison Epistles have Ephesus, Caesarea, and Rome proposals; the Pastoral Epistles also have competing authorship and date models.
 
 ### 中文
 
@@ -237,6 +252,7 @@ The New Testament ends by showing where all gospel history is going: Christ wins
 - 宣教与建堂阶段：哥林多前后书、罗马书、监狱书信等。
 - 牧养领袖与后期教会生活阶段：提摩太前后书、提多书、彼得前后书、约翰一二三书、犹大书。
 - 希伯来书与启示录也有强烈神学和牧养作用，只是具体背景常有不同讨论。
+- 这是方便教学的相对次序，不表示每封信都有公认日期：加拉太书有早晚两种主要方案；监狱书信有以弗所、凯撒利亚和罗马方案；教牧书信的作者与年代也存在不同模型。
 
 ## What The New Testament Is Doing | 新约到底在做什么
 
