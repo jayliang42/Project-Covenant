@@ -50,14 +50,14 @@ The book is a cross-denominational introduction to the Trinity, not a complete c
 | 1. Before creation | Ch. 1, *What Was God Doing Before Creation?* | [2026-01-21 — Father, Son, and Spirit](./2026-01-21_Wednesday_The_Father_Son_and_Spirit.md) | God is eternally Father, Son, and Spirit; divine love does not begin with creation. |
 | 2. Creation from love | Ch. 2, *Creation: The Father's Love Overflows* | [2026-01-28 — Part 1](./2026-01-28_Wednesday_Creation_from_Triune_Love_Part_1.md); [Part 2](./2026-01-28_Wednesday_Creation_Beauty_and_Evil_Part_2.md) | Creation is a free gift, not something God needed in order to become loving. |
 | 3. Salvation and sharing | Ch. 3, *Salvation: The Son Shares What Is His* | [2026-02-04 — Great High Priest](./2026-02-04_Wednesday_Christ_Our_Great_High_Priest.md); [Reading Scripture through Christ](./2026-02-04_Wednesday_Reading_Scripture_Through_Christ.md) | The Son brings believers into his relationship with the Father; the Spirit applies this saving communion. |
-| 4. The Christian life | Ch. 4, *The Christian Life: The Spirit Beautifies* | **Supplemental reading — no matching source transcript is currently stored in this repository.** | The Spirit does not merely supply religious energy; he conforms believers to Christ and redirects desire toward the Father. |
+| 4. The Christian life | Ch. 4, *The Christian Life: The Spirit Beautifies* | [Supplemental study: The Spirit Beautifies | 补充学习：圣灵使人得荣美](./Supplemental_Delighting_in_the_Trinity_Chapter_4_The_Spirit_Beautifies.md) — no matching source transcript is currently stored in this repository. | The Spirit does not merely supply religious energy; he conforms believers to Christ and redirects desire toward the Father. |
 | 5. Holy love and glory | Ch. 5, *Who Among the Gods Is Like You, O LORD?* | [2026-02-25 — Holy Love and Righteous Wrath](./2026-02-25_Wednesday_Gods_Holy_Love_and_Righteous_Wrath.md); [Glory Revealed in Christ](./2026-02-25_Wednesday_Glory_Revealed_in_Christ.md) | God's holiness, wrath, and glory are not competitors to love; they are seen most clearly in the crucified and risen Christ. |
 
 ### Important source note | 重要来源注记
 
-The fourth chapter belongs in the book's sequence, but no February 11 or February 18 source transcript has been found in this repository. The module above is therefore a **supplemental reading plan**, not a reconstruction of an unrecorded class.
+The fourth chapter belongs in the book's sequence, but no February 11 or February 18 source transcript has been found in this repository. The linked note is therefore a **supplemental study**, not a reconstruction of an unrecorded class.
 
-第四章在全书结构中不可缺少，但目前资料库没有发现 2 月 11 日或 2 月 18 日对应的来源记录。因此，上表中的第四单元是**补充阅读计划**，不是对未留存课程的重建。
+第四章在全书结构中不可缺少，但目前资料库没有发现 2 月 11 日或 2 月 18 日对应的来源记录。因此，上表链接的第四单元是**补充查考**，不是对未留存课程的重建。
 
 ## Doctrinal Compass | 教义罗盘
 
