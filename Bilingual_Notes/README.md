@@ -7,6 +7,7 @@
 
 - [Chronological Notes Index | 按时间顺序的笔记索引](./INDEX_Chronological.md)
 - [Teaching Notes Summary | 全部 Teaching 总结](./All_Notes_Summary_Chronological.md)
+- [Delighting in the Trinity Discipleship Guide | 《喜乐于三一神》门徒训练指南](./2026-01-21_to_02-25_Delighting_in_the_Trinity_Discipleship_Guide.md)
 
 ## Reading Status | 阅读状态
 

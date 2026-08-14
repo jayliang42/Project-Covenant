@@ -12,6 +12,16 @@
 - 主题：三一神与创造
 - 核心信息：父、子、圣灵在永恒中活在舍己的爱里；创造是这爱自由的涌流，不是神为了成为有爱而必须拥有的对象。
 
+## Training Context | 训练脉络
+
+This is the first preserved unit for **Module 2**, closely aligned with chapter 2, “Creation: The Father's Love Overflows,” in *Delighting in the Trinity*. It introduces creation as a free gift from the fullness of triune love.
+
+本篇是**第二单元**的第一份留存记录，与《喜乐于三一神》第二章“创造：父的爱涌流”高度对应。它从三一之爱的丰盛出发，说明创造是自由的恩赐。
+
+See the [course guide | 课程总览](./2026-01-21_to_02-25_Delighting_in_the_Trinity_Discipleship_Guide.md) and [Part 2 | 第二部分](./2026-01-28_Wednesday_Creation_Beauty_and_Evil_Part_2.md).
+
+请结合[课程总览](./2026-01-21_to_02-25_Delighting_in_the_Trinity_Discipleship_Guide.md)和[第二部分](./2026-01-28_Wednesday_Creation_Beauty_and_Evil_Part_2.md)阅读。
+
 ## Big Idea | 核心信息
 
 The discussion contrasts the triune God with an imagined solitary deity who would need creation in order to have someone to love. Christian faith confesses instead that God is eternally Father, Son, and Spirit. His creation is therefore gift: it springs from abundance, not lack, and calls creatures to receive and reflect his generous love.

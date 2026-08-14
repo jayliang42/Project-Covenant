@@ -12,6 +12,16 @@
 - 主要经文脉络：希伯来书、约翰福音 17 章、旧约大祭司图像
 - 核心信息：耶稣是真正的大祭司；祂与我们同有人性、为罪献上自己、持续代求，并把我们带到父面前。
 
+## Training Context | 训练脉络
+
+This is the first preserved unit for **Module 3**, closely aligned with chapter 3, “Salvation: The Son Shares What Is His,” in *Delighting in the Trinity*. The High-Priest theme gives this chapter a biblical center: the incarnate Son brings his people to the Father and intercedes for them.
+
+本篇是**第三单元**的第一份留存记录，与《喜乐于三一神》第三章“救恩：子分享祂所有的”高度对应。大祭司的主题为这一章提供了圣经中心：道成肉身的圣子把祂的子民带到父面前，并为他们代求。
+
+See the [course guide | 课程总览](./2026-01-21_to_02-25_Delighting_in_the_Trinity_Discipleship_Guide.md) and [the companion Scripture-reading note | 配套读经笔记](./2026-02-04_Wednesday_Reading_Scripture_Through_Christ.md).
+
+请结合[课程总览](./2026-01-21_to_02-25_Delighting_in_the_Trinity_Discipleship_Guide.md)和[配套读经笔记](./2026-02-04_Wednesday_Reading_Scripture_Through_Christ.md)阅读。
+
 ## Big Idea | 核心信息
 
 The study reads the Old Testament priesthood as finding its fulfillment in Jesus. He is not distant from human weakness: he became flesh, suffered, offered himself, and lives to intercede. Salvation is described in deeply personal terms—Christ carries his people before the Father and welcomes them into the Father's love through the Spirit.

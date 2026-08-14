@@ -12,6 +12,16 @@
 - 主题：三一神、创造、美与邪恶
 - 核心信息：创造的美反映慷慨的神；邪恶不是与神对等的创造力量，而是受造自由和爱的扭曲。
 
+## Training Context | 训练脉络
+
+This is the second preserved unit for **Module 2**, closely aligned with chapter 2, “Creation: The Father's Love Overflows,” in *Delighting in the Trinity*. It extends the creation theme by asking about beauty, freedom, and evil without treating evil as a second creator.
+
+本篇是**第二单元**的第二份留存记录，与《喜乐于三一神》第二章“创造：父的爱涌流”高度对应。它继续讨论创造，并从美、自由与邪恶切入，不把邪恶视为第二位创造者。
+
+See the [course guide | 课程总览](./2026-01-21_to_02-25_Delighting_in_the_Trinity_Discipleship_Guide.md) and [Part 1 | 第一部分](./2026-01-28_Wednesday_Creation_from_Triune_Love_Part_1.md).
+
+请结合[课程总览](./2026-01-21_to_02-25_Delighting_in_the_Trinity_Discipleship_Guide.md)和[第一部分](./2026-01-28_Wednesday_Creation_from_Triune_Love_Part_1.md)阅读。
+
 ## Big Idea | 核心信息
 
 The study continues by seeing the created world as good, beautiful, and expressive of God's outgoing generosity. It also asks how evil can exist in a world made by a good God. The proposed framework is that God grants creatures real existence and meaningful freedom; evil is a parasitic turning away from the good, not an independent power equal to God.

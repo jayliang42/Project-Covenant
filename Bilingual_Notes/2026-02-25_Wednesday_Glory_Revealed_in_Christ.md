@@ -12,6 +12,16 @@
 - 主题：理解神的属性（二）
 - 核心信息：神的荣耀是祂光辉、赐生命的自我显明，并在道成肉身、被钉又复活的基督里最清楚地被看见。
 
+## Training Context | 训练脉络
+
+This is the second preserved unit for **Module 5**, closely aligned with chapter 5, “Who Among the Gods Is Like You, O LORD?” in *Delighting in the Trinity*. It completes the stored February material by locating divine glory in the incarnate, crucified, and risen Son.
+
+本篇是**第五单元**的第二份留存记录，与《喜乐于三一神》第五章“众神之中，谁能像你，耶和华？”高度对应。它以道成肉身、被钉又复活的圣子为中心，完成本资料库所存的二月课程材料。
+
+See the [course guide | 课程总览](./2026-01-21_to_02-25_Delighting_in_the_Trinity_Discipleship_Guide.md) and [Part 1: Holy Love and Righteous Wrath | 第一部分：圣洁的爱与公义的忿怒](./2026-02-25_Wednesday_Gods_Holy_Love_and_Righteous_Wrath.md).
+
+请结合[课程总览](./2026-01-21_to_02-25_Delighting_in_the_Trinity_Discipleship_Guide.md)和[第一部分：圣洁的爱与公义的忿怒](./2026-02-25_Wednesday_Gods_Holy_Love_and_Righteous_Wrath.md)阅读。
+
 ## Big Idea | 核心信息
 
 The study asks what Christians mean when they say “give God glory.” God does not need human applause to become greater. To glorify God is to recognize and declare the weight, beauty, and goodness that are already his. Jesus overturns proud images of divinity: his miracles reveal glory, and his cross reveals most deeply that God's glory is self-giving love.

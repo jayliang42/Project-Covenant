@@ -14,6 +14,16 @@
 - 所思考的主要经文：圣经中的父、子、圣灵语言，特别是耶稣受洗与收纳的主题
 - 核心信息：神永恒是父、子、圣灵；祂的父性是赐生命的爱，不是冷漠的距离。
 
+## Training Context | 训练脉络
+
+This note is catalogued as **Module 1** of the *Delighting in the Trinity* discipleship training, corresponding closely to chapter 1, “What Was God Doing Before Creation?” The mapping is based on the date, the teaching's Father–Son–Spirit focus, and the book's chapter sequence; it is a careful study aid, not an official course syllabus.
+
+本篇归入《喜乐于三一神》门徒训练的**第一单元**，与第一章“创造以前，神在做什么？”高度对应。这个对应依据日期、信息中父—子—圣灵的重点和全书章节顺序而建立；它是谨慎的学习索引，不是官方课程大纲。
+
+See the [course guide | 课程总览](./2026-01-21_to_02-25_Delighting_in_the_Trinity_Discipleship_Guide.md) for the full book map, theological guardrails, and reading plan.
+
+完整的书籍对应、神学界线与阅读计划，请见[课程总览](./2026-01-21_to_02-25_Delighting_in_the_Trinity_Discipleship_Guide.md)。
+
 ## Big Idea | 核心信息
 
 This theological discussion begins with God's identity as Father rather than treating “Father” as merely a human metaphor added after creation. The Father eternally loves the Son, the Son delights in the Father, and the Spirit makes that love known. Salvation is therefore not admission to an impersonal system, but the Son bringing people into the Father's love by the Spirit.
