@@ -1,6 +1,6 @@
 # All Teaching Notes Summary
 
-按时间顺序整理的总笔记。  
+按时间顺序整理的总笔记。
 This is a chronological master summary of all currently available teaching transcripts.
 
 说明：有些 `Otter AI` 记录是完整讲道，有些更像活动记录或读书讨论摘录。对后者，我尽量保留可确认的主线；个别经文与细节若不够清晰，我会按标题和上下文作谨慎推断。
@@ -148,6 +148,36 @@ This sermon clearly works through Matthew 5:13-16, especially the images of salt
 This message on Matthew 5:21-26 argues that Jesus is not abolishing the law but uncovering its true depth. Murder is shown to begin in the heart through anger, contempt, insult, and refusal to reconcile. The sermon carefully moves from Old Testament law to the dignity of the image of God, then to practical urgency in restoring broken relationships. The gospel turn is crucial: because Jesus loved and forgave his enemies, his people are freed from clinging to anger and are enabled to pursue peace.
 
 这篇关于马太福音 5:21-26 的信息强调，耶稣不是在废掉律法，而是在显明律法真正的深度。杀人不是只从外在行为开始，而是先从人的内心开始，表现为愤怒、轻蔑、辱骂，以及拒绝和好。讲道很有层次地从旧约律法推进到“神形象”的尊严，再落到现实人际关系中的 urgent reconciliation {迫切和好}。最关键的转折是福音：因为耶稣先爱了祂的仇敌、赦免了祂的仇敌，所以祂的百姓也能不再紧抓愤怒，而真正走向和平。
+
+## 2026-05-10 Sunday | Spiritual Practices and the Father | Sunday Teaching
+
+This sermon on Matthew 6:1-18 asks whether giving, prayer, and fasting have become religious performances. It identifies the desire to be seen as the shared danger beneath all three practices, including the subtler temptation to congratulate oneself for hidden devotion. The gospel answer is that Jesus gave himself without human applause, was seen and raised by the Father, and brings believers into the Father's welcome. The aim of spiritual practice is therefore not reputation or leverage, but communion with God himself.
+
+这篇马太福音 6:1-18 的信息追问：施舍、祷告和禁食会不会已经变成宗教表演。它指出，三种操练底下共同的危险是想被人看见，也包括为自己“隐秘的敬虔”暗自喝彩的更细微试探。福音的答案是：耶稣没有寻求人间掌声地献上自己，被父看见并叫祂复活，又把信徒带进父的接纳。因此属灵操练的目标不是名声或与神交易，而是与神自己相交。
+
+## 2026-05-17 Sunday | Spiritual Growth Through Prayer | Sunday Teaching
+
+This teaching uses the Lord's Prayer as a pattern of relationship rather than a technique for controlling outcomes. Beginning with “our Father,” it moves through praise, repentance and forgiveness, daily dependence, and yielded trust in trial. The speaker's P-R-A-Y structure keeps the emphasis on adoption: believers approach God not as employees or performers, but as children received through Jesus. The practical invitation is simple and concrete—make unhurried space to come before the Father.
+
+这篇信息把主祷文看作关系的模式，而非控制结果的技巧。从“我们在天上的父”开始，它依次讲到赞美、悔改与饶恕、每日的倚靠，以及在试炼中降服的信任。讲员用 P-R-A-Y 的结构不断强调“被收纳”：信徒不是以雇员或表演者身分来到神面前，而是借耶稣被接纳的儿女。实际邀请很朴素：留出不匆忙的时间，来到父面前。
+
+## 2026-05-24 Sunday | Treasuring Jesus | Sunday Teaching
+
+Working through Matthew 6:19-24, this sermon contrasts earthly treasure with Christ himself. It does not condemn responsible work or saving, but confronts the self-centered storing, comparison, and divided allegiance that turn money into a master. Good works, generosity, wise stewardship, and examined ambition are presented as responses to treasuring Jesus, not ways to earn salvation. Christ is the better treasure because he loves his people, gives light, and frees them from greed.
+
+这篇马太福音 6:19-24 的信息把地上财宝与基督自己作对比。它不定罪负责地工作或储蓄，却面对为己积攒、比较和分裂忠诚这些会让金钱成为主人的心。善行、慷慨、明智的管理和省察野心，被理解为珍爱耶稣后的回应，而不是赚取救恩的方法。基督是更好的至宝，因为祂爱祂的子民、赐下光，并释放人脱离贪婪。
+
+## 2026-05-31 Sunday | Overcoming Worry | Sunday Teaching
+
+On Matthew 6:25-34, the speaker explains worry as an attempt to control what only a good and sovereign Father can finally hold. Jesus' care for anxious disciples is not careless optimism: he directs them to the Father who feeds birds, clothes flowers, and knows their needs. The sermon calls the church to seek the kingdom first through gospel meditation, prayer, Scripture-shaped inner speech, and honest community.
+
+这篇马太福音 6:25-34 的信息把忧虑解释为：人试图掌控那些最终只能由良善、掌权的父来承担的事。耶稣对焦虑门徒的关怀并非轻率乐观；祂把他们带向那位喂养飞鸟、装饰百合、并知道他们需要的父。讲道呼召教会借着默想福音、祷告、用经文重塑内在对话，以及诚实的群体生活，先求神的国。
+
+## 2026-08-02 Sunday | Emotions and God's Presence | Sunday Teaching
+
+Using Jonah 1-4 and 1 Peter 5:7, this sermon treats emotions as real but not final rulers. Jonah's fear, prayer, anger, and grief show that spiritual faithfulness and emotional struggle can coexist. God receives distress, patiently cares for Jonah, and also confronts the desires beneath his anger. The message encourages honest prayer, Scripture, community, and appropriate professional support when emotional distress is serious.
+
+这篇信息使用约拿书 1-4 章和彼得前书 5:7，把情绪视为真实却不是最终主人的东西。约拿的惧怕、祷告、愤怒与哀伤表明：属灵信靠和情绪挣扎可以同时存在。神接纳人的困苦，耐心看顾约拿，也面对他愤怒底下的欲望。信息鼓励诚实祷告、圣经、群体，并在情绪困扰严重时接受合宜的专业支持。
 
 ## Recurring Threads | 反复出现的主线
 
