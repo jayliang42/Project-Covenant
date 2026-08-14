@@ -7,6 +7,7 @@
 ## Current Guides | 当前导读
 
 - [Song of a Wanderer: An Eternal Call — Whole-Book Guide | 《游子吟：永恒在召唤》全书解读](./游子吟_永恒在召唤_全书解读与阅读指南.md)
+- [Seek the Truth, Find the Way — Study Guide | 《求真寻道：约翰福音研经问答》使用指南](./求真寻道_约翰福音研经问答_使用指南.md)
 
 ## Reading Rule | 阅读原则
 
