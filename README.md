@@ -11,6 +11,7 @@
 | Read book by book | 按书卷串读 | [Bible by Book / 按书卷梳理圣经](./Bible_Timeline/Bible_By_Book_Bilingual.md) |
 | Follow a one-year plan | 用一年读完故事线 | [52-Week Storyline Plan / 52 周故事线计划](./Bible_Timeline/52周圣经故事线_查经与史料阅读计划.md) |
 | Find sermon and fellowship notes | 查找讲道与团契笔记 | [Notes Hub / 笔记中心](./Bilingual_Notes/README.md) |
+| Study Christian books carefully | 系统研读基督教书籍 | [Christian Book Studies / 基督教书籍研读](./Book_Studies/README.md) |
 | Explore history and archaeology carefully | 查看史料、考古与证据边界 | [Bible Timeline Research Hub / 时间线研究中心](./Bible_Timeline/README.md) |
 
 ## What This Library Does | 这个资料库在做什么
@@ -45,6 +46,9 @@ Project-Covenant/
 │   ├── README.md              # Notes hub | 笔记中心
 │   ├── INDEX_Chronological.md # Chronological note index | 时间索引
 │   └── *.md                   # Sermon and fellowship notes | 讲道与团契笔记
+├── Book_Studies/
+│   ├── README.md              # Christian book-study hub | 基督教书籍研读导航
+│   └── *.md                   # Book guides and critical reading maps | 书籍导读与批判性阅读地图
 └── Bible_Timeline/
     ├── README.md              # Research hub | 研究导航
     ├── *_Bilingual.md         # Fully bilingual core guides | 核心双语导读
@@ -68,6 +72,11 @@ Project-Covenant/
 - [Notes Hub | 笔记中心](./Bilingual_Notes/README.md)
 - [Chronological Index | 时间索引](./Bilingual_Notes/INDEX_Chronological.md)
 - [Teaching Summary | 全部 Teaching 总结](./Bilingual_Notes/All_Notes_Summary_Chronological.md)
+
+### Christian Book Studies | 基督教书籍研读
+
+- [Book-Study Hub | 书籍研读导航](./Book_Studies/README.md)
+- [Song of a Wanderer: An Eternal Call — Whole-Book Guide | 《游子吟：永恒在召唤》全书解读](./Book_Studies/游子吟_永恒在召唤_全书解读与阅读指南.md)
 
 ## Research Boundaries | 研究边界
 
