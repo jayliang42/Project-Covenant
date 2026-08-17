@@ -10,6 +10,7 @@
 | See the Bible’s whole storyline | 先看整本圣经的大故事 | [Bible Timeline Overview / 圣经时间线总览](./Bible_Timeline/Bible_Timeline_Bilingual.md) |
 | Read book by book | 按书卷串读 | [Bible by Book / 按书卷梳理圣经](./Bible_Timeline/Bible_By_Book_Bilingual.md) |
 | Follow a one-year plan | 用一年读完故事线 | [52-Week Storyline Plan / 52 周故事线计划](./Bible_Timeline/52周圣经故事线_查经与史料阅读计划.md) |
+| Read ISV as an English learner | 用 ISV 辅助英语读经 | [ISV Access and ESL Guide / ISV 获取与 ESL 指南](./Bible_Translations/ISV_International_Standard_Version_Access_and_ESL_Guide.md) |
 | Find sermon and fellowship notes | 查找讲道与团契笔记 | [Notes Hub / 笔记中心](./Bilingual_Notes/README.md) |
 | Study Christian books carefully | 系统研读基督教书籍 | [Christian Book Studies / 基督教书籍研读](./Book_Studies/README.md) |
 | Explore history and archaeology carefully | 查看史料、考古与证据边界 | [Bible Timeline Research Hub / 时间线研究中心](./Bible_Timeline/README.md) |
@@ -49,6 +50,9 @@ Project-Covenant/
 ├── Book_Studies/
 │   ├── README.md              # Christian book-study hub | 基督教书籍研读导航
 │   └── *.md                   # Book guides and critical reading maps | 书籍导读与批判性阅读地图
+├── Bible_Translations/
+│   ├── README.md              # Translation-access hub | 圣经译本获取导航
+│   └── *.md                   # Access guides and reading profiles | 获取指南与阅读定位
 └── Bible_Timeline/
     ├── README.md              # Research hub | 研究导航
     ├── *_Bilingual.md         # Fully bilingual core guides | 核心双语导读
@@ -66,6 +70,11 @@ Project-Covenant/
 - [Old Testament Timeline | 旧约时间线](./Bible_Timeline/Old_Testament_Timeline_Bilingual.md)
 - [New Testament Timeline | 新约时间线](./Bible_Timeline/New_Testament_Timeline_Bilingual.md)
 - [52-Book Core + 14-Book Bridge | 52 卷主读＋14 卷桥接](./Bible_Timeline/52卷圣经故事主线_精选与14卷桥接版.md)
+
+### Bible Translations | 圣经译本
+
+- [Translation Hub | 译本导航](./Bible_Translations/README.md)
+- [International Standard Version: Access and ESL Guide | ISV 获取与 ESL 阅读指南](./Bible_Translations/ISV_International_Standard_Version_Access_and_ESL_Guide.md)
 
 ### Sermon and Fellowship Notes | 讲道与团契笔记
 
