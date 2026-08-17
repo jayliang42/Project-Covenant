@@ -1,4 +1,4 @@
-# Bible Timeline Cheat Sheet
+# Bible Timeline Cheat Sheet | 圣经时间线一页式速查
 
 一页式速查版。
 One-page quick review version.

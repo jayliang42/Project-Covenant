@@ -1,4 +1,4 @@
-# New Testament Timeline
+# New Testament Timeline | 新约时间线
 
 新约时间线双语版。
 Bilingual New Testament timeline.

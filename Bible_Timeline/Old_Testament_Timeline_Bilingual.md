@@ -1,4 +1,4 @@
-# Old Testament Timeline
+# Old Testament Timeline | 旧约时间线
 
 旧约时间线双语版。
 Bilingual Old Testament timeline.

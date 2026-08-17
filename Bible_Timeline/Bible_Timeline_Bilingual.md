@@ -1,4 +1,4 @@
-# Bible Timeline
+# Bible Timeline | 圣经时间线
 
 ## Purpose | 目的
 
