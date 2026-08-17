@@ -1,2 +1,6 @@
 # Ignore raw Otter AI transcripts
 Teaching_Memo/
+
+# Keep downloaded copyrighted Bible texts and app modules local. The public
+# repository stores access guides and rights notices, not redistributed texts.
+Bible_Translations/Private_Downloads/
