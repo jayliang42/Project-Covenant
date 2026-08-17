@@ -7,6 +7,18 @@ One-page quick review version.
 
 For the one-year study sequence, see the [52-Week Bible Storyline Plan](./52周圣经故事线_查经与史料阅读计划.md).
 
+## Section Jump Table | 章节跳转表
+
+| Section / 章节 | Link / 跳转 |
+| --- | --- |
+| Big story / 大故事 | [Jump](#big-story) |
+| Fast timeline / 快速时间线 | [Jump](#fast-timeline) |
+| Main covenants / 主要圣约 | [Jump](#main-covenants) |
+| Main people / 主要人物 | [Jump](#main-people) |
+| Book-by-book map / 按书卷地图 | [Open Bible by Book / 打开按书卷梳理](./Bible_By_Book_Bilingual.md) |
+
+<a id="big-story"></a>
+
 ## Big Story | 大故事
 
 - Creation: God made a good world.
@@ -28,6 +40,8 @@ For the one-year study sequence, see the [52-Week Bible Storyline Plan](./52周�
 - 耶稣：应许中的弥赛亚成全故事。
 - 教会：福音向万国扩展。
 - 新创造：神最终完全恢复万有。
+
+<a id="fast-timeline"></a>
 
 ## Fast Timeline | 快速时间线
 
@@ -57,6 +71,8 @@ For the one-year study sequence, see the [52-Week Bible Storyline Plan](./52周�
 
 详见[《两约之间至四福音：第二圣殿、希腊化与罗马世界》](./两约之间至四福音_第二圣殿与罗马背景.md)。
 
+<a id="main-covenants"></a>
+
 ## Main Covenants | 主要圣约
 
 - Adam / creation themes: life, rule, blessing
@@ -72,6 +88,8 @@ For the one-year study sequence, see the [52-Week Bible Storyline Plan](./52周�
 - 摩西：律法与立约子民
 - 大卫：永远的君王血脉
 - 新约：赦罪、圣灵、新心、最终恢复
+
+<a id="main-people"></a>
 
 ## Main People | 主要人物
 

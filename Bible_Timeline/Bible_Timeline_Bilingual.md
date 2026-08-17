@@ -10,11 +10,24 @@ For a guided one-year sequence covering all 66 books, see the [52-Week Bible Sto
 
 若希望用一年把 66 卷连起来，并同步阅读史料、考古边界和释经注释，见[《52 周圣经故事线》](./52周圣经故事线_查经与史料阅读计划.md)。
 
+## Section Jump Table | 章节跳转表
+
+| Section / 章节 | Link / 跳转 |
+| --- | --- |
+| The big story in one line / 一句话总览 | [Jump](#big-story) |
+| Quick map / 快速地图 | [Jump](#quick-map) |
+| Story arc / 故事弧线 | [Jump](#story-arc) |
+| Timeline / 时间线 | [Jump](#timeline) |
+
+<a id="big-story"></a>
+
 ## The Big Story In One Line | 一句话总览
 
 The Bible tells how God creates a good world, humanity falls into sin, God forms a covenant people, sends the promised Messiah, and through Jesus begins the restoration that will be completed in the new creation.
 
 圣经讲的是：神创造了美好的世界，人类陷入罪中，神拣选并塑造一个立约的子民，差来应许中的弥赛亚，并借着耶稣开启最终将在新天新地完成的恢复工作。
+
+<a id="quick-map"></a>
 
 ## Quick Map | 快速地图
 
@@ -44,6 +57,8 @@ If you feel that “the Bible is made of many books but I cannot see how they fi
 7. 使徒行传到犹大书：复活的基督建立并差遣教会。
 8. 启示录：神完成最终的审判、救赎与新创造。
 
+<a id="story-arc"></a>
+
 ## Story Arc | 故事弧线
 
 - Creation: the world begins good.
@@ -65,6 +80,8 @@ If you feel that “the Bible is made of many books but I cannot see how they fi
 - 成全：耶稣成全以色列的故事，并把救恩向万国打开。
 - 教会：福音借着圣灵向外扩展。
 - 新创造：神与祂子民同住被完全恢复。
+
+<a id="timeline"></a>
 
 ## Timeline | 时间线
 

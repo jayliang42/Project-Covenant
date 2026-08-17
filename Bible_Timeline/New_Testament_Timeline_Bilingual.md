@@ -13,6 +13,21 @@ Bilingual New Testament timeline.
 
 若按一年计划阅读，新约部分集中在[《52 周圣经故事线》](./52周圣经故事线_查经与史料阅读计划.md)第 35–52 周。
 
+## Section Jump Table | 章节跳转表
+
+| Section / 章节 | Link / 跳转 |
+| --- | --- |
+| Big picture / 总览 | [Jump](#big-picture) |
+| Main flow / 主线流程 | [Jump](#main-flow) |
+| Timeline / 时间线 | [Jump](#timeline) |
+| New Testament book groups / 新约书卷分组 | [Jump](#new-testament-book-groups) |
+| Rough letter placement / 书信大致位置 | [Jump](#rough-letter-placement) |
+| What the New Testament is doing / 新约到底在做什么 | [Jump](#what-the-new-testament-is-doing) |
+| Relationship to the Old Testament / 与旧约的关系 | [Jump](#relationship-to-the-old-testament) |
+| Simple reading logic / 简单阅读逻辑 | [Jump](#simple-reading-logic) |
+
+<a id="big-picture"></a>
+
 ## Big Picture | 总览
 
 ### English
@@ -22,6 +37,8 @@ The New Testament begins with Jesus and then shows what happens because Jesus ca
 ### 中文
 
 新约从耶稣开始，然后展开一个问题：因为耶稣来了、死了、复活了、升天了、并赐下圣灵，接下来世界发生了什么？
+
+<a id="main-flow"></a>
 
 ## Main Flow | 主线流程
 
@@ -42,6 +59,8 @@ The New Testament begins with Jesus and then shows what happens because Jesus ca
 6. 向万国宣教
 7. 使徒教导
 8. 最终盼望
+
+<a id="timeline"></a>
 
 ## Timeline | 时间线
 
@@ -209,6 +228,8 @@ The New Testament ends by showing where all gospel history is going: Christ wins
 
 七城是同时存在的真实城市群体，也共同代表整全教会。启示录既要放在一世纪罗马亚细亚和帝国崇拜背景中读，也要按启示文学对旧约图像的重用和最终新创造来读；它不是现代新闻密码表。
 
+<a id="new-testament-book-groups"></a>
+
 ## New Testament Book Groups | 新约书卷分组
 
 ### Gospels | 福音书
@@ -236,6 +257,8 @@ The New Testament ends by showing where all gospel history is going: Christ wins
 - Revelation
 - 启示录
 
+<a id="rough-letter-placement"></a>
+
 ## Rough Letter Placement | 书信大致位置
 
 ### English
@@ -253,6 +276,8 @@ The New Testament ends by showing where all gospel history is going: Christ wins
 - 牧养领袖与后期教会生活阶段：提摩太前后书、提多书、彼得前后书、约翰一二三书、犹大书。
 - 希伯来书与启示录也有强烈神学和牧养作用，只是具体背景常有不同讨论。
 - 这是方便教学的相对次序，不表示每封信都有公认日期：加拉太书有早晚两种主要方案；监狱书信有以弗所、凯撒利亚和罗马方案；教牧书信的作者与年代也存在不同模型。
+
+<a id="what-the-new-testament-is-doing"></a>
 
 ## What The New Testament Is Doing | 新约到底在做什么
 
@@ -276,6 +301,8 @@ The New Testament is doing at least five things:
 4. 把福音推向万国。
 5. 把盼望固定在基督再来和新创造上。
 
+<a id="relationship-to-the-old-testament"></a>
+
 ## Relationship To The Old Testament | 与旧约的关系
 
 ### English
@@ -285,6 +312,8 @@ The New Testament does not replace the Old Testament as if the first part no lon
 ### 中文
 
 新约不是把旧约“替换掉”，好像前面部分不重要了；新约是在完成旧约所预备的一切。
+
+<a id="simple-reading-logic"></a>
 
 ## Simple Reading Logic | 简单阅读逻辑
 

@@ -3,6 +3,19 @@
 旧约时间线双语版。
 Bilingual Old Testament timeline.
 
+## Section Jump Table | 章节跳转表
+
+| Section / 章节 | Link / 跳转 |
+| --- | --- |
+| Big picture / 总览 | [Jump](#big-picture) |
+| Main flow / 主线流程 | [Jump](#main-flow) |
+| Timeline / 时间线 | [Jump](#timeline) |
+| Old Testament book groups / 旧约书卷分组 | [Jump](#old-testament-book-groups) |
+| What the Old Testament is doing / 旧约到底在做什么 | [Jump](#what-the-old-testament-is-doing) |
+| Bridge to the New Testament / 走向新约的桥 | [Jump](#bridge-to-the-new-testament) |
+
+<a id="big-picture"></a>
+
 ## Big Picture | 总览
 
 ### English
@@ -12,6 +25,8 @@ The Old Testament moves from creation to exile and partial return. Its central q
 ### 中文
 
 旧约的故事从创造一直走到被掳与部分归回。它的核心问题不只是“以色列后来怎么了”，而是“在人不断犯罪、不断背约的情况下，神的应许要怎样继续下去？”
+
+<a id="main-flow"></a>
 
 ## Main Flow | 主线流程
 
@@ -36,6 +51,8 @@ The Old Testament moves from creation to exile and partial return. Its central q
 8. 分裂王国
 9. 被掳
 10. 归回与等待
+
+<a id="timeline"></a>
 
 ## Timeline | 时间线
 
@@ -239,6 +256,8 @@ The people come back, but the story still feels incomplete. This creates deep ex
 
 百姓虽然回来了，但故事仍然显得没有完成，这就带来对弥赛亚更深的等待。
 
+<a id="old-testament-book-groups"></a>
+
 ## Old Testament Book Groups | 旧约书卷分组
 
 ### Law | 律法书
@@ -264,6 +283,8 @@ The people come back, but the story still feels incomplete. This creates deep ex
 - 大先知书：以赛亚书、耶利米书、耶利米哀歌、以西结书、但以理书
 - 小先知书：何西阿书到玛拉基书
 
+<a id="what-the-old-testament-is-doing"></a>
+
 ## What The Old Testament Is Doing | 旧约到底在做什么
 
 ### English
@@ -285,6 +306,8 @@ The Old Testament is doing at least five things at once:
 3. 暴露人的罪与背约。
 4. 建立理解耶稣所需要的神学范畴。
 5. 一直维持那个盼望：神要拯救、恢复，并与祂的子民同住。
+
+<a id="bridge-to-the-new-testament"></a>
 
 ## Bridge To The New Testament | 走向新约的桥
 
