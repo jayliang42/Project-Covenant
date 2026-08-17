@@ -12,9 +12,9 @@
 
 ## Reading Status | 阅读状态
 
-Completed notes use bilingual titles and may contain English, Chinese, or both depending on the original teaching and the note’s current editing stage. The index records the source date and whether an item is a completed note or a source transcript awaiting refinement.
+Completed notes use bilingual titles and paired English/Chinese summaries or sections. The index records the source date and the language/status boundary; a source transcript is not presented as a fully bilingual polished note until that boundary is clear.
 
-已完成笔记使用双语标题；正文会按原讲道语言和当前整理阶段采用英文、中文或双语。索引会标注实际日期，并区分“已完成笔记”与“待精修来源记录”。
+已完成笔记使用双语标题，并提供成对的英文／中文总结或章节。索引会标注实际日期和语言／整理边界；在边界清楚之前，逐字稿不会被标成完整双语精修笔记。
 
 ## Contribution Rule | 整理规则
 

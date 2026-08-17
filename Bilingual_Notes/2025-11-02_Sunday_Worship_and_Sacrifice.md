@@ -1,4 +1,4 @@
-# Worship and Sacrifice
+# Worship and Sacrifice | 敬拜与献祭
 
 ## Basic Info | 基本信息
 

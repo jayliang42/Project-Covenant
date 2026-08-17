@@ -1,4 +1,4 @@
-# Faith and Endurance
+# Faith and Endurance | 信心与忍耐
 
 ## Basic Info | 基本信息
 

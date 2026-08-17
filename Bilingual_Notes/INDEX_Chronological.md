@@ -1,12 +1,12 @@
-# Bilingual Notes Index
+# Bilingual Notes Index | 双语笔记索引
 
 ## Chronological Order | 时间顺序
 
 ### Teaching Notes Completed | 已完成
 
 0. Master summary - [All Teaching Notes Summary](./All_Notes_Summary_Chronological.md)
-1. `2025-11-02 Sunday` - [Worship and Sacrifice](./2025-11-02_Sunday_Worship_and_Sacrifice.md) - `Sunday Teaching`
-2. `2025-11-09 Sunday` - [Faith and Endurance](./2025-11-09_Sunday_Faith_and_Endurance.md) - `Sunday Teaching`
+1. `2025-11-02 Sunday` - [Worship and Sacrifice | 敬拜与献祭](./2025-11-02_Sunday_Worship_and_Sacrifice.md) - `Sunday Teaching`
+2. `2025-11-09 Sunday` - [Faith and Endurance | 信心与忍耐](./2025-11-09_Sunday_Faith_and_Endurance.md) - `Sunday Teaching`
 3. `2025-11-16 Sunday` - [Church Faithfulness and Mission | 教会的信实与使命](./2025-11-16_Sunday_Church_Faithfulness_and_Mission.md) - `Sunday Teaching`
 4. `2025-11-23 Sunday` - [Heaven and Christian Hope | 天堂与基督徒盼望](./2025-11-23_Sunday_Heaven_and_Christian_Hope.md) - `Sunday Teaching`
 5. `2025-12-07 Sunday` - [Christmas as Mission | 把圣诞活成使命](./2025-12-07_Sunday_Christmas_as_Mission.md) - `Sunday Teaching`
@@ -28,7 +28,7 @@
 21. `2026-03-08 Sunday` - [Poor in Spirit, Mourning, and Meekness | 虚心、哀恸与温柔](./2026-03-08_Sunday_Poor_in_Spirit_Mourning_and_Meekness.md) - `Sunday Teaching`
 22. `2026-03-15 Sunday` - [Hunger, Mercy, and Purity | 饥渴、怜悯与清心](./2026-03-15_Sunday_Hunger_Mercy_and_Purity.md) - `Sunday Teaching`
 23. `2026-03-29 Sunday` - [Salt, Light, and a City on a Hill | 盐、光与山上之城](./2026-03-29_Sunday_Salt_Light_and_City_on_a_Hill.md) - `Sunday Teaching`
-24. `2026-04-12 Sunday` - [Anger and Reconciliation](./2026-04-12_Sunday_Anger_and_Reconciliation.md) - `Sunday Teaching`
+24. `2026-04-12 Sunday` - [Anger and Reconciliation | 愤怒与和好](./2026-04-12_Sunday_Anger_and_Reconciliation.md) - `Sunday Teaching`
 25. `2026-05-10 Sunday` - [Spiritual Practices and the Father | 属灵操练与天父](./2026-05-10_Sunday_Spiritual_Practices_and_the_Father.md) - `Sunday Teaching`
 26. `2026-05-17 Sunday` - [Spiritual Growth Through Prayer | 借祷告属灵成长](./2026-05-17_Sunday_Growth_Through_Prayer.md) - `Sunday Teaching`
 27. `2026-05-24 Sunday` - [Treasuring Jesus | 以耶稣为至宝](./2026-05-24_Sunday_Treasuring_Jesus.md) - `Sunday Teaching`

@@ -1,4 +1,4 @@
-# All Teaching Notes Summary
+# All Teaching Notes Summary | 全部讲道笔记总结
 
 按时间顺序整理的总笔记。
 This is a chronological master summary of all currently available teaching transcripts.

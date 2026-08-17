@@ -1,4 +1,4 @@
-# Anger and Reconciliation
+# Anger and Reconciliation | 愤怒与和好
 
 ## Basic Info | 基本信息
 
