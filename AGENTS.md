@@ -38,7 +38,7 @@ These instructions apply to the entire repository unless a deeper `AGENTS.md` ad
 
 - 仓库文件使用相对 Markdown 链接；不要使用本机绝对路径、`file://` 或编辑器专用链接。
 - 列表和表格前留空行；表格保持简单，确保 GitHub 窄屏也能阅读。
-- 使用标题建立可跳转章节。如果标题含中英文、标点或文件名，导致 GitHub 自动锚点不稳定，则在标题前加入 `<a id="stable-id"></a>` 形式的固定锚点。
+- 使用标题建立可跳转章节。如果标题含中英文、标点或文件名，导致 GitHub 自动锚点不稳定，则在标题前加入一个固定的稳定锚点（例如 `stable-id`）。
 - 保持文件名稳定；若必须改名，必须在同一次修改中更新仓库内所有链接。
 - 不得留下行尾空格、失效相对链接，或指向被忽略／私有文件的链接。
 
@@ -79,6 +79,10 @@ These instructions apply to the entire repository unless a deeper `AGENTS.md` ad
 2. 做满足目标的最小完整改动，然后运行仓库审计与 `git diff --check`。
 3. 核对本地链接、双语标题、索引覆盖率和 GitHub 渲染格式。
 4. 复核精确 diff，明确提交；只有在用户授权发布后才推送。
+
+Run the repeatable audit with `python3 scripts/audit_markdown.py`.
+
+使用 `python3 scripts/audit_markdown.py` 运行可重复的仓库审计。
 
 ## 7. Current Migration Meaning | 当前迁移口径
 
