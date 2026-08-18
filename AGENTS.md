@@ -86,6 +86,6 @@ Run the repeatable audit with `python3 scripts/audit_markdown.py`.
 
 ## 7. Current Migration Meaning | 当前迁移口径
 
-“All content bilingual” means that every public entry point, index, title, status label, and substantive new section is bilingual. Long historical research dossiers may temporarily keep their full research body in Chinese or English only when their navigation page and file header clearly provide the other-language summary and mark the translation status. New edits must improve that status rather than silently expanding a one-language section.
+"All content bilingual" means that every public entry point, index, title, status label, and substantive paragraph is bilingual. A paragraph-level pair means an English sentence or paragraph immediately adjacent to its Chinese counterpart; a mixed-script file or translated heading alone is not sufficient. Quoted source language may remain unaltered only when a bilingual explanation identifies it. Long historical research dossiers are migration work, not an excuse to label Chinese-only bodies complete; the audit reports unpaired Chinese lines so they can be translated in priority order.
 
-“所有内容双语”在本项目中的执行口径是：所有公开入口、索引、标题、状态标签和新增实质章节都必须双语。长篇历史研究专题在过渡期可以暂时保留中文或英文完整正文，但所属导航页和文件开头必须提供另一语言的摘要并标明翻译状态；后续新增内容应改善双语覆盖，不能默默扩大单语区域。
+“所有内容双语”在本项目中的执行口径是：所有公开入口、索引、标题、状态标签和实质段落都必须双语。所谓段落级双语，是英文句子或段落与对应中文紧邻；文件里同时出现中英文，或只翻译标题，都不算完成。来源引文可以保留原文，但必须有双语解释。长篇历史专题仍可分批迁移，不能把中文正文标成完整双语；审计脚本会报告没有邻近英文对应的中文行，按优先级继续翻译。

@@ -69,6 +69,9 @@ def main() -> int:
     broken_links: list[str] = []
     unverified_fragments: list[str] = []
     unlinked_index_items: list[str] = []
+    unpaired_chinese_lines: list[str] = []
+    unpaired_by_file: dict[str, int] = {}
+    paired_bilingual_lines = 0
     bilingual_body = 0
     h1_total = 0
 
@@ -77,6 +80,28 @@ def main() -> int:
         relative = path.relative_to(ROOT).as_posix()
         if CHINESE.search(text) and LATIN.search(text):
             bilingual_body += 1
+
+        # A mixed-script file is not enough: a Chinese paragraph should have
+        # a nearby English counterpart.  We accept either ordering so that
+        # existing notes can be migrated incrementally, while still exposing
+        # isolated Chinese prose and table rows for follow-up translation.
+        lines = text.splitlines()
+        for index, line in enumerate(lines):
+            stripped = line.strip()
+            if not stripped or not CHINESE.search(stripped) or LATIN.search(stripped):
+                continue
+            nearby_latin = False
+            for neighbor_index in (index - 1, index + 1):
+                if 0 <= neighbor_index < len(lines):
+                    neighbor = lines[neighbor_index].strip()
+                    if neighbor and LATIN.search(neighbor):
+                        nearby_latin = True
+                        break
+            if nearby_latin:
+                paired_bilingual_lines += 1
+            else:
+                unpaired_chinese_lines.append(f"{relative}:{index + 1}: {stripped}")
+                unpaired_by_file[relative] = unpaired_by_file.get(relative, 0) + 1
 
         h1s = H1.findall(text)
         h1_total += len(h1s)
@@ -123,6 +148,13 @@ def main() -> int:
     print(f"duplicate_explicit_anchors={len(duplicate_anchors)}")
     print(f"fragments_needing_github_slug_review={len(unverified_fragments)}")
     print(f"unlinked_file_items_in_indexes={len(unlinked_index_items)}")
+    print(f"paired_bilingual_lines={paired_bilingual_lines}")
+    print(f"unpaired_chinese_lines={len(unpaired_chinese_lines)}")
+    print("largest_unpaired_files=" + ", ".join(
+        f"{path}:{count}" for path, count in sorted(
+            unpaired_by_file.items(), key=lambda item: (-item[1], item[0])
+        )[:12]
+    ))
 
     for heading, entries in (
         ("missing_h1", missing_h1),
@@ -130,6 +162,7 @@ def main() -> int:
         ("duplicate_explicit_anchors", duplicate_anchors),
         ("fragments_needing_github_slug_review", unverified_fragments),
         ("unlinked_file_items_in_indexes", unlinked_index_items),
+        ("unpaired_chinese_lines_sample", unpaired_chinese_lines[:80]),
     ):
         if entries:
             print(f"\n[{heading}]")
