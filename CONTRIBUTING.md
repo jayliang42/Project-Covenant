@@ -121,8 +121,8 @@ Before publishing a documentation change:
 6. Publish through a focused branch and pull request rather than editing the default branch directly.
    通过聚焦的分支与拉取请求发布，不直接修改默认分支。
 
-The repository documentation workflow reruns the Markdown audit for pull requests and for documentation changes merged to `main`.
+Run the Markdown audit before opening or merging a pull request. If repository CI is added later, it should invoke the same command so local and automated checks stay aligned.
 
-仓库文档工作流会在拉取请求以及合并到 `main` 的文档修改中重新运行 Markdown 审计。
+在创建或合并拉取请求前运行 Markdown 审计。若以后加入仓库 CI，应调用同一命令，使本地检查与自动检查保持一致。
 
 [Back to Project Home｜返回项目首页](./README.md) · [Open Master Index｜打开总索引](./INDEX.md)
