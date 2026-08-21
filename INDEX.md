@@ -11,7 +11,8 @@
 | **Full bilingual｜完整双语** | The substantive guide is available in both English and Chinese.｜实质正文同时提供英文与中文。 |
 | **Chinese full + English orientation｜中文全文＋英文导读** | The complete research text is Chinese; the index supplies an English title, scope, and reading direction.｜完整研究正文为中文；索引提供英文标题、范围和使用说明。 |
 | **English full + Chinese orientation｜英文全文＋中文导读** | The complete guide is English; Chinese readers receive a reliable orientation or summary.｜完整正文为英文；中文读者可获得可靠导读或摘要。 |
-| **Navigation / maintenance｜导航／维护** | A hub, index, policy, or audit tool rather than a study essay.｜入口、索引、规范或审计工具，不是研读正文。 |
+| **Bilingual navigation｜双语导航** | A hub or index is bilingual while linked long-form files may have different translation status.｜入口或索引本身为双语；所链接长文的翻译状态可能不同。 |
+| **Navigation / maintenance｜导航／维护** | A policy, audit, or maintenance log rather than a study essay.｜规范、审计或维护记录，不是研读正文。 |
 
 A language label describes the repository guide, not the language of a copyrighted source book or Bible translation.
 
@@ -24,10 +25,12 @@ A language label describes the repository guide, not the language of a copyright
 | Understand the Bible’s unified story｜先看整本圣经大故事 | [Bible Timeline Overview｜圣经时间线总览](./Bible_Timeline/Bible_Timeline_Bilingual.md) | Full bilingual｜完整双语 |
 | See how all 66 books connect｜查看 66 卷怎样承上启下 | [Bible by Book｜按书卷梳理圣经](./Bible_Timeline/Bible_By_Book_Bilingual.md) | Full bilingual｜完整双语 |
 | Study for one year｜按 52 周研读 | [52-Week Bible Storyline Plan｜52 周圣经故事线计划](./Bible_Timeline/52周圣经故事线_查经与史料阅读计划.md) | Full bilingual｜完整双语 |
-| Find a sermon or fellowship note｜查找讲道或团契笔记 | [Chronological Notes Index｜讲道笔记时间索引](./Bilingual_Notes/INDEX_Chronological.md) | Navigation｜导航 |
-| Study a Christian book｜研读基督教书籍 | [Christian Book Studies Hub｜基督教书籍研读中心](./Book_Studies/README.md) | Navigation｜导航 |
-| Evaluate history, archaeology, and manuscripts｜核对史料、考古与抄本 | [Bible Timeline Research Hub｜时间线研究中心](./Bible_Timeline/README.md) | Navigation｜导航 |
-| Choose an English Bible reading aid｜选择英文读经辅助译本 | [Bible Translations Hub｜圣经译本中心](./Bible_Translations/README.md) | Navigation｜导航 |
+| Find a sermon or fellowship note｜查找讲道或团契笔记 | [Chronological Notes Index｜讲道笔记时间索引](./Bilingual_Notes/INDEX_Chronological.md) | Bilingual navigation｜双语导航 |
+| Study a Christian book｜研读基督教书籍 | [Christian Book Studies Hub｜基督教书籍研读中心](./Book_Studies/README.md) | Bilingual navigation｜双语导航 |
+| Evaluate history, archaeology, and manuscripts｜核对史料、考古与抄本 | [Bible Timeline Research Hub｜时间线研究中心](./Bible_Timeline/README.md) | Bilingual navigation｜双语导航 |
+| Choose an English Bible reading aid｜选择英文读经辅助译本 | [Bible Translations Hub｜圣经译本中心](./Bible_Translations/README.md) | Bilingual navigation｜双语导航 |
+
+<a id="core-guides"></a>
 
 ## 1. Core Bilingual Storyline Guides | 核心双语故事线导读
 
@@ -39,6 +42,9 @@ A language label describes the repository guide, not the language of a copyright
 | [New Testament Timeline｜新约时间线](./Bible_Timeline/New_Testament_Timeline_Bilingual.md) | Jesus, apostles, letters, and early church｜耶稣、使徒、书信与早期教会 | Full bilingual｜完整双语 |
 | [Bible Timeline Cheat Sheet｜圣经时间线一页式速查](./Bible_Timeline/Bible_Timeline_Cheat_Sheet.md) | Fast review and teaching preparation｜快速复习与带领预备 | Full bilingual｜完整双语 |
 | [52-Week Bible Storyline Plan｜52 周圣经故事线：查经、史料与考古](./Bible_Timeline/52周圣经故事线_查经与史料阅读计划.md) | A complete one-year route through all 66 books｜一年串读全部 66 卷 | Full bilingual｜完整双语 |
+
+<a id="study-plans"></a>
+<a id="2-study-plans-and-structural-maps--研读计划与结构地图"></a>
 
 ## 2. Study Plans and Structural Maps | 研读计划与结构地图
 
@@ -57,6 +63,8 @@ A language label describes the repository guide, not the language of a copyright
 | [Psalms Five-Book and NT-Use Navigation｜诗篇五卷结构与新约引用导航](./Bible_Timeline/诗篇五卷结构与新约引用导航.md) | Psalter structure, kingship, and New Testament reuse｜诗篇结构、王权与新约重用 | Chinese full + English orientation｜中文全文＋英文导读 |
 | [Psalm 1–150 NT Citation and Echo Index｜诗篇 150 篇新约引用、重用与回响索引](./Bible_Timeline/诗篇150篇_新约引用重用与回响索引.md) | Psalm-by-psalm New Testament cross-reference｜逐篇反查新约使用 | Chinese full + English orientation｜中文全文＋英文导读 |
 
+<a id="evidence-research"></a>
+
 ## 3. Evidence and Historical Research | 史料与历史研究
 
 | Resource | Scope | Status |
@@ -74,12 +82,14 @@ A language label describes the repository guide, not the language of a copyright
 | [Reception-History Depth Audit｜66 卷接收史深度审计](./Bible_Timeline/66卷接收史深度审计_CAT_USE_COM_LEC_VER.md) | Catalogue, use, commentary, lectionary, and version evidence｜书目、使用、注释、礼仪与译本证据 | Chinese full + English orientation｜中文全文＋英文导读 |
 | [Research Maintenance Log｜研究维护日志](./Bible_Timeline/研究维护日志.md) | Revision history, unresolved questions, and next checks｜修订记录、未决问题与下一步核查 | Navigation / maintenance｜导航／维护 |
 
+<a id="notes"></a>
+
 ## 4. Sermon and Fellowship Notes | 讲道与团契笔记
 
 | Resource | Use | Status |
 | --- | --- | --- |
-| [Notes Hub｜笔记中心](./Bilingual_Notes/README.md) | Entry page and series routes｜入口与系列路线 | Navigation｜导航 |
-| [Chronological Notes Index｜讲道笔记时间索引](./Bilingual_Notes/INDEX_Chronological.md) | Every completed dated note｜全部已完成的日期笔记 | Navigation｜导航 |
+| [Notes Hub｜笔记中心](./Bilingual_Notes/README.md) | Entry page and series routes｜入口与系列路线 | Bilingual navigation｜双语导航 |
+| [Chronological Notes Index｜讲道笔记时间索引](./Bilingual_Notes/INDEX_Chronological.md) | Every completed dated note｜全部已完成的日期笔记 | Bilingual navigation｜双语导航 |
 | [All Teaching Notes Summary｜全部讲道笔记总结](./Bilingual_Notes/All_Notes_Summary_Chronological.md) | One chronological master summary｜按时间排列的总总结 | Full bilingual｜完整双语 |
 | [Delighting in the Trinity Discipleship Guide｜《喜乐于三一神》门徒训练指南](./Bilingual_Notes/2026-01-21_to_02-25_Delighting_in_the_Trinity_Discipleship_Guide.md) | Connects the January–February fellowship series｜串联一月至二月团契课程 | Full bilingual｜完整双语 |
 | [The Spirit Beautifies — Supplemental Study｜圣灵使人得荣美：补充学习](./Bilingual_Notes/Supplemental_Delighting_in_the_Trinity_Chapter_4_The_Spirit_Beautifies.md) | Fills the book-sequence gap without inventing a transcript｜补足书本结构而不虚构逐字稿 | Full bilingual｜完整双语 |
@@ -87,6 +97,8 @@ A language label describes the repository guide, not the language of a copyright
 Individual dated notes are listed once in the [chronological index](./Bilingual_Notes/INDEX_Chronological.md) to avoid maintaining duplicate lists.
 
 每篇按日期整理的笔记统一收录在[时间索引](./Bilingual_Notes/INDEX_Chronological.md)，避免多个清单重复维护后产生不一致。
+
+<a id="book-studies"></a>
 
 ## 5. Christian Book Studies | 基督教书籍研读
 
@@ -99,6 +111,8 @@ See the [Book Studies Hub｜书籍研读中心](./Book_Studies/README.md) before
 
 新增书籍导读前，请先查看[书籍研读中心](./Book_Studies/README.md)的范围与规则。
 
+<a id="translations"></a>
+
 ## 6. Bible Translation Access | 圣经译本获取
 
 | Guide | Scope | Status |
@@ -108,6 +122,8 @@ See the [Book Studies Hub｜书籍研读中心](./Book_Studies/README.md) before
 The repository does not mirror a complete copyrighted Bible translation.
 
 本仓库不镜像受版权保护的整本圣经译文。
+
+<a id="maintenance"></a>
 
 ## 7. Repository Guidance and Audits | 仓库规范与审计
 
