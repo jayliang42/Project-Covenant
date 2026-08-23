@@ -66,6 +66,9 @@ These instructions apply to the entire repository unless a deeper `AGENTS.md` ad
 - A church name may remain when relevant, but it must not be combined with a private person's role, address, contact details, care information, or participation history.
 - Treat transcripts, recordings, downloads, meeting links, and attachments as private source material. Publish only reviewed, non-identifying summaries.
 - A future website must use `publication/site-content.txt` as an exact allowlist; never publish by recursively copying the repository.
+- Produce release input with `scripts/export_publication.py` from a committed ref. Preserve its printed content-set digest separately and require that digest when verifying the snapshot.
+- The exporter removes Git history from the snapshot, not identity from the hosting account. An identity-minimized public copy must use a reviewed neutral owner and a new non-fork repository; never transfer this repository's old Git history.
+- Treat that neutral copy as a generated, read-only reading mirror. Its snapshot consists primarily of approved Markdown plus integrity metadata and intentionally omits scripts, tests, and workflows; run maintenance and deployment tooling only from a separately reviewed workspace.
 
 - 区分圣经正文、历史背景、抄本、考古、接收史与神学解释。
 - 说明来源能够支持什么、不能建立什么；不能把对应关系扩大成神迹或教义的证明。
@@ -75,6 +78,9 @@ These instructions apply to the entire repository unless a deeper `AGENTS.md` ad
 - 教会名称与资料有关时可以保留，但不得与私人个人的职分、地址、联系方式、关怀信息或参与经历组合出现。
 - 逐字稿、录音录像、下载文件、会议链接和附件都视为私人来源；只发布经过复核、无法识别个人的总结。
 - 未来网站必须把 `publication/site-content.txt` 作为精确白名单；不得递归复制整个仓库发布。
+- 发布输入必须由 `scripts/export_publication.py` 从已提交的 ref 生成。另行保存它输出的内容集摘要，验证快照时必须传入该摘要。
+- 导出器去掉的是快照中的 Git 历史，不是托管账号身份。若要尽量降低身份关联，公开副本必须使用经过复核的中性所有者和全新非 fork 仓库；不得转移本仓库的旧 Git 历史。
+- 将中性副本作为生成的只读阅读镜像。它的快照主要由获准 Markdown 与完整性元数据组成，并会有意不包含脚本、测试和 workflow；维护与部署工具只能在另行复核的工作区中运行。
 
 ## 6. Change and Verification Workflow | 修改与验证流程
 
@@ -100,8 +106,16 @@ Run `python3 scripts/audit_publication.py --history-content` before publishing s
 
 发布前运行 `python3 scripts/audit_publication.py --history-content`，同时检查后来删除的历史内容、提交说明和标签说明。需要让 Git 身份与远端所有者元数据也通过时，使用 `--history`。
 
+Run a release export only from a fresh, reviewed, clean checkout after all intended public changes are committed. The selected content comes from the committed ref, but the exporter and its imported audit code still come from the checkout that runs them. The export command performs its own post-write verification; repeat the verify command with the separately retained digest, and inspect the rendered Markdown as a human, before importing the snapshot into a neutral destination.
+
+只有全部预定公开修改都已提交，并且位于全新、经过复核且干净的 checkout 中，才能生成发布快照。被选中的内容来自已提交 ref，但实际运行的导出器及其导入的审计代码仍来自当前 checkout。导出命令会自行执行写入后复核；把快照导入中性目标前，还要使用另行保存的摘要再次验证，并由人工检查 Markdown 的实际渲染结果。
+
 ## 7. Current Migration Meaning | 当前迁移口径
 
 "All content bilingual" means that every public entry point, index, title, status label, and substantive paragraph is bilingual. A paragraph-level pair means an English sentence or paragraph immediately adjacent to its Chinese counterpart; a mixed-script file or translated heading alone is not sufficient. Quoted source language may remain unaltered only when a bilingual explanation identifies it. Long historical research dossiers are migration work, not an excuse to label Chinese-only bodies complete; the audit reports unpaired Chinese lines so they can be translated in priority order.
 
 “所有内容双语”在本项目中的执行口径是：所有公开入口、索引、标题、状态标签和实质段落都必须双语。所谓段落级双语，是英文句子或段落与对应中文紧邻；文件里同时出现中英文，或只翻译标题，都不算完成。来源引文可以保留原文，但必须有双语解释。长篇历史专题仍可分批迁移，不能把中文正文标成完整双语；审计脚本会报告没有邻近英文对应的中文行，按优先级继续翻译。
+
+Governance files such as `AGENTS.md` and `CONTRIBUTING.md` may instead use complete mirrored English and Chinese sections when their headings and claim order match exactly. This exception does not apply to public study guides, indexes, or entry pages.
+
+`AGENTS.md` 和 `CONTRIBUTING.md` 等治理文件可改用完整对照的英文与中文分区，但标题和论点顺序必须完全一致。此例外不适用于公开研读指南、索引或入口页。

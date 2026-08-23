@@ -28,11 +28,11 @@ Project Covenant 把圣经读成一条连贯的故事线：创造、堕落、圣
 
 ## Bilingual Reading Status | 双语阅读状态
 
-| Content | English | 中文 |
+| Content / 内容 | English status / 英文状态 | Chinese status / 中文状态 |
 | --- | --- | --- |
-| Main entry points, timeline overview, book-by-book guide, OT/NT timelines, and cheat sheet | Full bilingual content | 完整双语内容 |
-| Sermon and fellowship notes | Bilingual titles and selected bilingual notes | 双语标题及部分双语笔记 |
-| Historical, archaeological, and manuscript research dossiers | English navigation and summaries; most full research texts are currently Chinese | 英文导航与摘要；多数完整研究正文目前为中文 |
+| Main entry points and core timeline guides / 主要入口与核心时间线导读 | Substantial bilingual coverage; heading, link, and paragraph alignment continues | 已有较多双语覆盖；标题、链接与段落对应仍在补齐 |
+| Sermon and fellowship notes / 讲道与团契笔记 | Bilingual titles and selected bilingual notes | 双语标题及部分双语笔记 |
+| Historical, archaeological, and manuscript research dossiers / 历史、考古与抄本研究专题 | English navigation and summaries; most full research texts are currently Chinese | 英文导航与摘要；多数完整研究正文目前为中文 |
 
 The goal is not to label an untranslated document as bilingual. New English summaries and full translations will be added progressively, beginning with the most-used study routes.
 
@@ -106,6 +106,10 @@ Public pages must not contain the maintainer's personal profile, contact route, 
 See [Privacy and Publication Policy | 隐私与发布政策](./PUBLICATION_POLICY.md) for the review rules and the future website boundary.
 
 审核规则与未来网站的发布边界，见 [Privacy and Publication Policy | 隐私与发布政策](./PUBLICATION_POLICY.md)。
+
+A deterministic, Git-history-free content snapshot can be generated for a future site or clean repository import. This removes repository history from the transferred files, but it does not anonymize the GitHub account that publishes them.
+
+项目可为未来网站或干净仓库导入生成可重现、不带 Git 历史的内容快照。这会去掉待转移文件中的仓库历史，但不会匿名化发布它们的 GitHub 账号。
 
 ## Contributing | 参与整理
 

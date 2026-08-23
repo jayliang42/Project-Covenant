@@ -20,6 +20,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Run publication guard tests
         run: python3 -m unittest discover -s tests -v
@@ -32,6 +33,16 @@ jobs:
 
       - name: Audit historical content
         run: python3 scripts/audit_publication.py --history-content
+
+      - name: Export and verify clean publication snapshot
+        shell: bash
+        run: |
+          output_dir="$RUNNER_TEMP/project-covenant-public"
+          export_log="$RUNNER_TEMP/project-covenant-export.log"
+          python3 scripts/export_publication.py export --ref HEAD --output "$output_dir" | tee "$export_log"
+          digest="$(awk -F= '$1 == "publication_content_set_sha256" { print $2 }' "$export_log")"
+          test "${#digest}" -eq 64
+          python3 scripts/export_publication.py verify --input "$output_dir" --expected-content-set-sha256 "$digest"
 
       - name: Reject whitespace errors
         shell: bash

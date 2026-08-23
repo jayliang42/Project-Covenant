@@ -25,11 +25,16 @@
 
 ### Privacy and publication
 
+- These instructions apply to the full maintenance checkout. The exported neutral repository is a generated, read-only reading mirror and intentionally contains no scripts, tests, or CI workflow.
 - Follow [PUBLICATION_POLICY.md](./PUBLICATION_POLICY.md). Do not add a maintainer's or private participant's identity, contact route, personal history, immigration or asylum information, medical history, testimony, attendance history, or identifiable anecdote.
 - A church name may remain when relevant, but never pair it with a private person's role, address, contact details, care information, or participation history.
 - Treat transcripts, recordings, downloads, meeting links, and attachments as private source material. Publish only a reviewed, non-identifying summary.
 - A future website may publish only files explicitly listed in `publication/site-content.txt`.
-- Before committing, run `python3 scripts/audit_markdown.py`, `python3 scripts/audit_publication.py`, `python3 scripts/audit_publication.py --history-content`, and `git diff --check`.
+- Commit all intended public changes, then export only from a fresh, reviewed, clean checkout. Content selection uses the committed ref, but the running exporter and audit code still come from that checkout.
+- Create a Git-history-free snapshot with `python3 scripts/export_publication.py export --ref HEAD --output /tmp/project-covenant-public`. Keep the printed digest separately, then verify with `python3 scripts/export_publication.py verify --input /tmp/project-covenant-public --expected-content-set-sha256 DIGEST_FROM_EXPORT`.
+- Inspect the rendered Markdown manually before release. Automated checks are necessary safeguards, but they cannot prove that every recognizable personal detail has been removed.
+- The snapshot does not anonymize the uploading account. An identity-minimized release needs a reviewed neutral owner and a new non-fork repository populated only from the clean snapshot.
+- Before committing, run `python3 -m unittest discover -s tests -v`, `python3 scripts/audit_markdown.py`, `python3 scripts/audit_publication.py`, `python3 scripts/audit_publication.py --history-content`, and `git diff --check`.
 
 ## 中文
 
@@ -56,8 +61,13 @@
 
 ### 隐私与发布
 
+- 本说明适用于完整维护工作区。导出后的中性仓库是生成的只读阅读镜像，会有意不包含脚本、测试或 CI workflow。
 - 遵守 [PUBLICATION_POLICY.md](./PUBLICATION_POLICY.md)。不得加入维护者或私人参与者的身份、联系入口、个人经历、移民或庇护信息、医疗经历、见证、出席记录或可识别轶事。
 - 教会名称与资料有关时可以保留，但不得与私人个人的职分、地址、联系方式、关怀信息或参与经历组合出现。
 - 逐字稿、录音录像、下载文件、会议链接和附件都视为私人来源；公开内容只能是经过复核、无法识别个人的总结。
 - 未来网站只能发布 `publication/site-content.txt` 明确列出的文件。
-- 提交前运行 `python3 scripts/audit_markdown.py`、`python3 scripts/audit_publication.py`、`python3 scripts/audit_publication.py --history-content` 和 `git diff --check`。
+- 先提交全部预定公开修改，再从全新、经过复核且干净的 checkout 生成快照。内容选择使用已提交 ref，但实际运行的导出器和审计代码仍来自该 checkout。
+- 用 `python3 scripts/export_publication.py export --ref HEAD --output /tmp/project-covenant-public` 生成不带 Git 历史的快照。另行保存输出的摘要，再用 `python3 scripts/export_publication.py verify --input /tmp/project-covenant-public --expected-content-set-sha256 DIGEST_FROM_EXPORT` 复核。
+- 发布前必须人工查看 Markdown 的实际渲染结果。自动检查是必要防线，但无法证明所有可识别的个人细节都已清除。
+- 快照不会匿名化上传账号。若要尽量降低身份关联，需要经过复核的中性所有者，并把干净快照单独导入全新且非 fork 的仓库。
+- 提交前运行 `python3 -m unittest discover -s tests -v`、`python3 scripts/audit_markdown.py`、`python3 scripts/audit_publication.py`、`python3 scripts/audit_publication.py --history-content` 和 `git diff --check`。
