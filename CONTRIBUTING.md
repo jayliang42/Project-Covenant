@@ -23,6 +23,14 @@
 - Link new Bible Timeline material from `Bible_Timeline/README.md`; link major new entry points from the root `README.md`.
 - Preserve existing filenames unless a coordinated link update is part of the change.
 
+### Privacy and publication
+
+- Follow [PUBLICATION_POLICY.md](./PUBLICATION_POLICY.md). Do not add a maintainer's or private participant's identity, contact route, personal history, immigration or asylum information, medical history, testimony, attendance history, or identifiable anecdote.
+- A church name may remain when relevant, but never pair it with a private person's role, address, contact details, care information, or participation history.
+- Treat transcripts, recordings, downloads, meeting links, and attachments as private source material. Publish only a reviewed, non-identifying summary.
+- A future website may publish only files explicitly listed in `publication/site-content.txt`.
+- Before committing, run `python3 scripts/audit_markdown.py`, `python3 scripts/audit_publication.py`, `python3 scripts/audit_publication.py --history-content`, and `git diff --check`.
+
 ## 中文
 
 ### 双语标准
@@ -45,3 +53,11 @@
 - 整本圣经导读、计划、旁证索引和研究专题放入 `Bible_Timeline/`。
 - 新增圣经时间线资料应从 `Bible_Timeline/README.md` 导航；重大新入口也应加入根目录 `README.md`。
 - 除非同步更新所有链接，否则保留现有文件名。
+
+### 隐私与发布
+
+- 遵守 [PUBLICATION_POLICY.md](./PUBLICATION_POLICY.md)。不得加入维护者或私人参与者的身份、联系入口、个人经历、移民或庇护信息、医疗经历、见证、出席记录或可识别轶事。
+- 教会名称与资料有关时可以保留，但不得与私人个人的职分、地址、联系方式、关怀信息或参与经历组合出现。
+- 逐字稿、录音录像、下载文件、会议链接和附件都视为私人来源；公开内容只能是经过复核、无法识别个人的总结。
+- 未来网站只能发布 `publication/site-content.txt` 明确列出的文件。
+- 提交前运行 `python3 scripts/audit_markdown.py`、`python3 scripts/audit_publication.py`、`python3 scripts/audit_publication.py --history-content` 和 `git diff --check`。

@@ -5,7 +5,7 @@
 
 ## Start Here | 从这里开始
 
-| I want to… | 我想… | Start with |
+| I want to… | 我想… | Start with / 从这里开始 |
 | --- | --- | --- |
 | See the Bible’s whole storyline | 先看整本圣经的大故事 | [Bible Timeline Overview / 圣经时间线总览](./Bible_Timeline/Bible_Timeline_Bilingual.md) |
 | Read book by book | 按书卷串读 | [Bible by Book / 按书卷梳理圣经](./Bible_Timeline/Bible_By_Book_Bilingual.md) |
@@ -14,6 +14,7 @@
 | Find sermon and fellowship notes | 查找讲道与团契笔记 | [Notes Hub / 笔记中心](./Bilingual_Notes/README.md) |
 | Study Christian books carefully | 系统研读基督教书籍 | [Christian Book Studies / 基督教书籍研读](./Book_Studies/README.md) |
 | Explore history and archaeology carefully | 查看史料、考古与证据边界 | [Bible Timeline Research Hub / 时间线研究中心](./Bible_Timeline/README.md) |
+| Understand the public-content boundary | 了解公开内容边界 | [Privacy and Publication Policy / 隐私与发布政策](./PUBLICATION_POLICY.md) |
 
 ## What This Library Does | 这个资料库在做什么
 
@@ -43,6 +44,9 @@ The goal is not to label an untranslated document as bilingual. New English summ
 Project-Covenant/
 ├── README.md                  # Bilingual project entry | 双语项目入口
 ├── CONTRIBUTING.md            # Bilingual writing and source rules | 双语写作与来源规则
+├── PUBLICATION_POLICY.md       # Privacy and publication boundary | 隐私与发布边界
+├── publication/
+│   └── site-content.txt        # Exact future-site allowlist | 未来网站精确白名单
 ├── Bilingual_Notes/
 │   ├── README.md              # Notes hub | 笔记中心
 │   ├── INDEX_Chronological.md # Chronological note index | 时间索引
@@ -92,6 +96,16 @@ Project-Covenant/
 Historical and archaeological materials can illuminate people, places, institutions, texts, and historical settings. They do not automatically prove every narrative detail, authorial claim, miracle, or theological conclusion. Each research file therefore records both **what a source can support** and **where interpretation must stop**.
 
 史料与考古可以照明人物、地点、制度、文本与历史处境，却不会自动证明每一项叙事细节、作者传统、神迹或神学结论。因此每份研究稿都同时记录“材料能支持什么”与“解释必须停在哪里”。
+
+## Privacy and Publication | 隐私与发布
+
+Public pages must not contain the maintainer's personal profile, contact route, private experience, immigration or asylum information, or identifiable participation history. Church names may remain when relevant, but they must not be combined with private personal details. Raw transcripts and private downloads are not public reading material.
+
+公开页面不得包含维护者的个人简介、联系入口、私人经历、移民或庇护信息，或可识别的参与记录。教会名称在有关时可以保留，但不得与私人个人细节组合出现。原始逐字稿和私人下载文件不属于公开阅读内容。
+
+See [Privacy and Publication Policy | 隐私与发布政策](./PUBLICATION_POLICY.md) for the review rules and the future website boundary.
+
+审核规则与未来网站的发布边界，见 [Privacy and Publication Policy | 隐私与发布政策](./PUBLICATION_POLICY.md)。
 
 ## Contributing | 参与整理
 

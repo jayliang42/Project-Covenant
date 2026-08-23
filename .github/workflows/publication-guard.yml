@@ -1,0 +1,40 @@
+name: Publication Guard
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    name: Audit public content
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run publication guard tests
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Audit Markdown structure
+        run: python3 scripts/audit_markdown.py
+
+      - name: Audit privacy and website allowlist
+        run: python3 scripts/audit_publication.py
+
+      - name: Audit historical content
+        run: python3 scripts/audit_publication.py --history-content
+
+      - name: Reject whitespace errors
+        shell: bash
+        run: |
+          empty_tree="$(git hash-object -t tree /dev/null)"
+          git diff --check "$empty_tree" HEAD

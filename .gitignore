@@ -4,3 +4,35 @@ Teaching_Memo/
 # Keep downloaded copyrighted Bible texts and app modules local. The public
 # repository stores access guides and rights notices, not redistributed texts.
 Bible_Translations/Private_Downloads/
+
+# Private source material and credentials | 私人来源与凭证
+private/
+drafts/private/
+attachments/private/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*
+
+# Raw media and transcript exports | 原始媒体与逐字稿导出
+*.m4a
+*.mp3
+*.wav
+*.mp4
+*.mov
+*.vtt
+*.srt
+*_otter_ai_transcript*.txt
+
+# Future site build output | 未来网站构建产物
+site/.cache/
+site/dist/
+site/out/
+
+# Python audit cache | Python 审计缓存
+__pycache__/
+*.py[cod]

@@ -54,9 +54,9 @@ Jonah's anger is morally entangled with his resistance to God's mercy for Nineve
 
 ### A necessary care note | 必要的关怀说明
 
-The transcript includes personal references to eating disorders, depression, and suicidal thoughts. If someone is in immediate danger or may act on thoughts of self-harm, contact local emergency services or a crisis line now; in the U.S. and Canada, call or text 988. Ongoing pastoral care should be joined with qualified clinical support when appropriate.
+Topics such as disordered eating, depression, or suicidal thoughts require careful support rather than public retelling of a person's experience. If someone is in immediate danger or may act on thoughts of self-harm, contact local emergency services or a crisis line now; in the U.S. and Canada, call or text 988. Ongoing pastoral care should be joined with qualified clinical support when appropriate.
 
-逐字稿提到饮食失调、抑郁和自杀意念的个人经历。若有人正处于即时危险中，或可能按自伤想法行动，请立刻联系当地紧急服务或危机热线；在美国和加拿大可拨打或发送短信至 988。持续的牧养关怀也应在合宜时配合专业的临床支持。
+饮食失调、抑郁或自杀意念等主题需要谨慎支持，不应公开转述某个人的经历。若有人正处于即时危险中，或可能按自伤想法行动，请立刻联系当地紧急服务或危机热线；在美国和加拿大可拨打或发送短信至 988。持续的牧养关怀也应在合宜时配合专业的临床支持。
 
 ## Reflection Questions | 反思问题
 

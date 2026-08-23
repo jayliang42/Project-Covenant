@@ -62,11 +62,19 @@ These instructions apply to the entire repository unless a deeper `AGENTS.md` ad
 - State what a source supports and what it cannot establish. Do not turn a correlation into proof of a miracle or doctrine.
 - Do not commit copyrighted full Bible versions, commercial books, raw sermon transcripts, private downloads, credentials, or personal identifiers.
 - Use official links and access instructions for copyrighted resources; preserve permission and version notes.
+- Follow `PUBLICATION_POLICY.md`. Do not publish the maintainer's or a private participant's identity, contact route, personal history, immigration or asylum information, medical history, testimony, attendance history, or identifiable anecdote.
+- A church name may remain when relevant, but it must not be combined with a private person's role, address, contact details, care information, or participation history.
+- Treat transcripts, recordings, downloads, meeting links, and attachments as private source material. Publish only reviewed, non-identifying summaries.
+- A future website must use `publication/site-content.txt` as an exact allowlist; never publish by recursively copying the repository.
 
 - 区分圣经正文、历史背景、抄本、考古、接收史与神学解释。
 - 说明来源能够支持什么、不能建立什么；不能把对应关系扩大成神迹或教义的证明。
 - 不得提交受版权保护的整本译本、商业书籍、逐字讲道稿、私人下载文件、凭证或个人识别信息。
 - 对受版权保护的资源使用官方链接和获取说明，并保留授权与版本注记。
+- 遵守 `PUBLICATION_POLICY.md`。不得发布维护者或私人参与者的身份、联系入口、个人经历、移民或庇护信息、医疗经历、见证、出席记录或可识别轶事。
+- 教会名称与资料有关时可以保留，但不得与私人个人的职分、地址、联系方式、关怀信息或参与经历组合出现。
+- 逐字稿、录音录像、下载文件、会议链接和附件都视为私人来源；只发布经过复核、无法识别个人的总结。
+- 未来网站必须把 `publication/site-content.txt` 作为精确白名单；不得递归复制整个仓库发布。
 
 ## 6. Change and Verification Workflow | 修改与验证流程
 
@@ -83,6 +91,14 @@ These instructions apply to the entire repository unless a deeper `AGENTS.md` ad
 Run the repeatable audit with `python3 scripts/audit_markdown.py`.
 
 使用 `python3 scripts/audit_markdown.py` 运行可重复的仓库审计。
+
+Run the public-content guard with `python3 scripts/audit_publication.py`.
+
+使用 `python3 scripts/audit_publication.py` 运行公开内容隐私审计。
+
+Run `python3 scripts/audit_publication.py --history-content` before publishing so deleted-in-later-commit content, commit messages, and tag messages are also checked. Use `--history` when Git identity and remote-owner metadata must also pass.
+
+发布前运行 `python3 scripts/audit_publication.py --history-content`，同时检查后来删除的历史内容、提交说明和标签说明。需要让 Git 身份与远端所有者元数据也通过时，使用 `--history`。
 
 ## 7. Current Migration Meaning | 当前迁移口径
 

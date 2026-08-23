@@ -41,6 +41,6 @@ _No transcripts are currently awaiting individual refinement. | 目前没有等�
 
 ## Note | 说明
 
-This index follows the actual teaching date instead of alphabetical filename order.
+This index follows the source-session date instead of alphabetical filename order. The dates describe the source material and do not record the maintainer's attendance.
 
-这份索引按讲道日期排列，不按文件名字母顺序排列。
+这份索引按来源聚会日期排列，不按文件名字母顺序排列。日期用于说明来源材料，并不记录维护者的出席情况。

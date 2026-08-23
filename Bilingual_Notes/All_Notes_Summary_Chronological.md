@@ -1,9 +1,11 @@
 # All Teaching Notes Summary | 全部讲道笔记总结
 
-按时间顺序整理的总笔记。
-This is a chronological master summary of all currently available teaching transcripts.
+This master summary arranges the public teaching notes by source-session date.
+本总览按来源聚会日期整理公开讲道笔记。
 
-说明：有些 `Otter AI` 记录是完整讲道，有些更像活动记录或读书讨论摘录。对后者，我尽量保留可确认的主线；个别经文与细节若不够清晰，我会按标题和上下文作谨慎推断。
+Editorial note: source quality varies. The summaries retain verifiable teaching themes, while uncertain details are either omitted or marked as cautious inference. Dates identify source sessions; they do not document the maintainer's attendance or personal history.
+
+编辑说明：来源质量并不完全相同。总结只保留可以确认的教学主线；不清楚的细节会被省略，或明确标为谨慎推断。日期标识来源聚会，并不记录维护者的出席情况或个人经历。
 
 ## 2025-11-02 Sunday | Worship and Sacrifice | Sunday Teaching
 
@@ -43,9 +45,9 @@ This transcript is more event-like than sermon-like. It begins with an explanati
 
 ## 2025-12-21 Sunday | Christmas Invitation Sermon | Sunday Teaching
 
-This sermon is built around the idea of invitation, beginning with the personal image of a wedding invitation list and then moving toward the gospel invitation of Christmas. A key illustration is Albert McMakin inviting Billy Graham to hear the gospel, which becomes the model for how one ordinary invitation can alter many lives. The preacher presses the congregation to think about who in their personal sphere still does not know the Christ they claim has changed their own life. Christmas is presented not mainly as family routine or sentiment, but as a moment to extend the gift of relationship with Jesus.
+This sermon is built around the idea of invitation, beginning with the familiar image of a wedding invitation list and then moving toward the gospel invitation of Christmas. A key illustration is Albert McMakin inviting Billy Graham to hear the gospel, which becomes the model for how one ordinary invitation can alter many lives. The preacher asks listeners to consider who in their circle has not yet heard the message of Christ. Christmas is presented not mainly as family routine or sentiment, but as a moment to extend the invitation to relationship with Jesus.
 
-这篇讲道围绕“邀请”展开，先从婚礼邀请名单这个生活化画面切入，再把焦点转到圣诞和福音所发出的邀请。一个重要例子是 Albert McMakin 邀请 Billy Graham 去听福音，这被用来说明，一个看似普通的邀请，可能改变极多人的生命。讲员强烈推动会众去想：在自己的生活圈里，还有谁还不知道那位你口中“改变了你人生”的基督。圣诞因此不再只是家人团聚或节日仪式，而是把“与耶稣建立关系”这份最大礼物递出去的时刻。
+这篇讲道围绕“邀请”展开，先从婚礼邀请名单这个常见画面切入，再把焦点转到圣诞和福音所发出的邀请。一个重要例子是 Albert McMakin 邀请 Billy Graham 去听福音，这被用来说明，一个看似普通的邀请，可能改变极多人的生命。讲员邀请听众思考：自己的生活圈里还有谁尚未听见基督的信息。圣诞因此不再只是家人团聚或节日仪式，也成为向人发出“与耶稣建立关系”之邀请的时刻。
 
 ## 2026-01-04 Sunday | Church Community Vision Session | Sunday Fellowship
 
