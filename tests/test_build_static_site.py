@@ -654,12 +654,24 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             ]
             # One source heading-shaped line is inside a fenced Markdown example.
             self.assertEqual(
-                2247,
+                2248,
                 sum(len(re.findall(r"<h[1-6](?: |>)", text)) for text in html_texts),
             )
-            self.assertEqual(210, sum(text.count("<table>") for text in html_texts))
+            self.assertEqual(211, sum(text.count("<table>") for text in html_texts))
             self.assertEqual(21, sum(text.count("<pre><code>") for text in html_texts))
             self.assertGreaterEqual(sum(text.count("<a ") for text in html_texts), 1850)
+
+            evidence_index = (
+                output / "Bible_Timeline" / "史料与考古旁证索引.html"
+            ).read_text(encoding="utf-8")
+            self.assertIn('href="#batch-11"', evidence_index)
+            self.assertIn('id="batch-11"', evidence_index)
+            self.assertIn('href="#top"', evidence_index)
+            self.assertIn(
+                'href="index.html">Back to the Bible Timeline Research Hub | '
+                "返回圣经时间线研究中心</a>",
+                evidence_index,
+            )
 
             visible = _VisibleText()
             visible.feed("\n".join(html_texts))
