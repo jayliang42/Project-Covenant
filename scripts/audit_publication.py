@@ -195,9 +195,9 @@ CONTENT_RULES: tuple[tuple[str, re.Pattern[str]], ...] = (
     (
         "PRIVATE_CONTACT_HANDLE",
         re.compile(
-            r"(?i)(?:\b(?:wechat|telegram|whatsapp|signal)\b|"
-            r"微信号?|QQ号?|手机号|联系电话|联系方式)"
-            r"(?:\s*[:：]\s*|\s+)[A-Za-z0-9_+.-]{5,}"
+            r"(?i)(?:\b(?:wechat|telegram|whatsapp|signal)\b\s*[:：]\s*|"
+            r"(?:微信号?|QQ号?|手机号|联系电话|联系方式)"
+            r"(?:\s*[:：]\s*|\s+))[A-Za-z0-9_+.-]{5,}"
         ),
     ),
     (

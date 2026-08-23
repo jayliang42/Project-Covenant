@@ -82,6 +82,13 @@ class ContentRuleTests(unittest.TestCase):
         self.assertIn("PRIVATE_ADDRESS_LABEL", rules)
         self.assertIn("PLAIN_SOCIAL_HANDLE", rules)
 
+    def test_distinguishes_signal_app_from_generic_signal_word(self) -> None:
+        generic = "Treat this as a review signal rather than a fatal error."
+        app_label = "Sig" + "nal: "
+        contact = app_label + "reader_88"
+        self.assertNotIn("PRIVATE_CONTACT_HANDLE", self.rule_ids(generic))
+        self.assertIn("PRIVATE_CONTACT_HANDLE", self.rule_ids(contact))
+
     def test_detects_chinese_resident_id_and_conversion_history(self) -> None:
         body = "110105" + "19900101" + "001"
         weights = (7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2)
