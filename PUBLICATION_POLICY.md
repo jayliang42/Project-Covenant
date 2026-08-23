@@ -69,6 +69,30 @@ python3 scripts/export_publication.py verify \
   --expected-content-set-sha256 DIGEST_FROM_EXPORT
 ```
 
+The static-site builder consumes the immutable bytes returned by snapshot verification; it does not reread Markdown paths after validation. It produces exactly one HTML page per approved Markdown page plus one local stylesheet, then compares the complete output against a deterministic reconstruction. The site omits the source allowlist, integrity manifests, checksums, scripts, tests, workflows, Git data, and source digest.
+
+静态站点构建器只使用快照验证返回的不可变字节，不会在验证后重新读取 Markdown 路径。它为每份获准 Markdown 生成一个 HTML 页面及一份本地样式表，再把完整输出与确定性重建结果逐字节比较。站点不会包含源白名单、完整性清单、校验和、脚本、测试、workflow、Git 数据或源摘要。
+
+Snapshot and site directories must be under the exclusive control of the trusted build job while they are checked. Do not verify in a shared writable directory or publish by recursively copying a directory that may have changed afterward; package or upload the just-built, just-verified files in the same trusted job. A filesystem verifier cannot prevent another process from changing a mutable directory after verification returns.
+
+快照与站点目录在检查期间必须由可信构建任务独占控制。不得在多方可写目录中验证，也不得递归复制可能在验证后已变化的目录进行发布；应在同一个可信任务中紧接着打包或上传刚构建、刚验证的文件。文件系统验证器无法阻止其他进程在验证返回后再修改一个可变目录。
+
+```bash
+python3 scripts/build_static_site.py build \
+  --snapshot /tmp/project-covenant-public \
+  --expected-content-set-sha256 DIGEST_FROM_EXPORT \
+  --output /tmp/project-covenant-site
+
+python3 scripts/build_static_site.py verify \
+  --snapshot /tmp/project-covenant-public \
+  --expected-content-set-sha256 DIGEST_FROM_EXPORT \
+  --input /tmp/project-covenant-site
+```
+
+These commands verify static files only. At deployment, separately require HTTPS and review response headers such as `Content-Security-Policy` with `frame-ancestors 'none'`, `X-Content-Type-Options: nosniff`, and `Referrer-Policy: no-referrer`; `frame-ancestors` cannot be enforced by an HTML meta tag. Do not describe hosting security as verified until the live response headers have been tested.
+
+以上命令只验证静态文件。部署时还必须单独要求 HTTPS，并复核响应头，例如带有 `frame-ancestors 'none'` 的 `Content-Security-Policy`、`X-Content-Type-Options: nosniff` 和 `Referrer-Policy: no-referrer`；HTML meta 标签无法强制执行 `frame-ancestors`。在实际响应头经过测试前，不得把托管安全写成已验证。
+
 The clean snapshot removes Git history from the files being transferred; it does **not** anonymize the account that uploads it. An identity-minimized public release requires a reviewed neutral owner, a new non-fork repository, and one clean import made with neutral Git author **and committer** metadata. Do not mirror, fork, merge, or push this repository's existing history into that destination. After import, inspect both identities with `git log --format='%an <%ae> | %cn <%ce>'`, and push only from the neutral hosting account.
 
 干净快照会从待转移文件中去掉 Git 历史，但**不会**把上传它的账号变成匿名账号。若要尽量降低身份关联，公开版必须使用经过复核的中性所有者、全新且非 fork 的仓库，并以中性的 Git author 与 committer 元数据做一次干净导入。不得向该目标镜像、fork、合并或推送本仓库的旧历史。导入后要用 `git log --format='%an <%ae> | %cn <%ce>'` 同时检查两种身份，并且只能由中性托管账号推送。
@@ -83,17 +107,17 @@ The neutral destination is a generated reading mirror, not the maintenance sourc
 
 ## Future Website Boundary | 未来网站的发布边界
 
-The future website must read only the exact files listed in [`publication/site-content.txt`](./publication/site-content.txt). It must never copy the repository recursively. Files not on the list are excluded from the website by default; if they are tracked in this public repository, they are still readable on GitHub.
+The future website must read only the exact files listed in `publication/site-content.txt`. It must never copy the repository recursively. Files not on the list are excluded from the website by default; if they are tracked in this public repository, they are still readable on GitHub.
 
-未来网站只能读取 [`publication/site-content.txt`](./publication/site-content.txt) 明确列出的文件，绝不能递归复制整个仓库。未列入清单的文件默认不进入网站；若这些文件已被公开仓库跟踪，它们仍可在 GitHub 上阅读。
+未来网站只能读取 `publication/site-content.txt` 明确列出的文件，绝不能递归复制整个仓库。未列入清单的文件默认不进入网站；若这些文件已被公开仓库跟踪，它们仍可在 GitHub 上阅读。
 
 Inclusion in the list means that a page has passed the privacy and link-boundary review; it does not by itself mean that full bilingual migration is complete. The website must show the language status stated by the library hubs and must never label a Chinese-body research dossier as fully bilingual.
 
 列入清单表示页面已经通过隐私与链接边界复核，并不表示完整双语迁移已经完成。网站必须显示资料导航页标注的语言状态，也不得把中文正文研究专题标成“完整双语”。
 
-Generated pages must be scanned again before deployment. Source maps, image metadata, build logs, hidden drafts, and local filesystem paths must not enter the deployed artifact.
+Generated pages must be scanned again before deployment. Source maps, image metadata, build logs, hidden drafts, and machine-specific or identifying local filesystem paths must not enter the deployed artifact.
 
-生成的网站页面必须在部署前再次扫描。Source map、图片元数据、构建日志、隐藏草稿和本机文件路径都不得进入部署产物。
+生成的网站页面必须在部署前再次扫描。Source map、图片元数据、构建日志、隐藏草稿，以及机器特定或可识别身份的本机文件路径都不得进入部署产物。
 
 The initial renderer must disable executable or template-like Markdown features such as MDX, Liquid, untrusted front matter, diagram scripting, and arbitrary raw HTML. Audit the final HTML, outbound links, resource requests, and deployed file set—not only the source Markdown.
 

@@ -32,6 +32,8 @@
 - A future website may publish only files explicitly listed in `publication/site-content.txt`.
 - Commit all intended public changes, then export only from a fresh, reviewed, clean checkout. Content selection uses the committed ref, but the running exporter and audit code still come from that checkout.
 - Create a Git-history-free snapshot with `python3 scripts/export_publication.py export --ref HEAD --output /tmp/project-covenant-public`. Keep the printed digest separately, then verify with `python3 scripts/export_publication.py verify --input /tmp/project-covenant-public --expected-content-set-sha256 DIGEST_FROM_EXPORT`.
+- Build the static reading site only from that verified snapshot with `python3 scripts/build_static_site.py build --snapshot /tmp/project-covenant-public --expected-content-set-sha256 DIGEST_FROM_EXPORT --output /tmp/project-covenant-site`, then repeat the `verify` subcommand against the same snapshot and retained digest.
+- The generated site is a deployment artifact, not a second source tree. Do not edit it directly or add scripts, analytics, forms, comments, remote assets, source maps, repository links, or publication metadata.
 - Inspect the rendered Markdown manually before release. Automated checks are necessary safeguards, but they cannot prove that every recognizable personal detail has been removed.
 - The snapshot does not anonymize the uploading account. An identity-minimized release needs a reviewed neutral owner and a new non-fork repository populated only from the clean snapshot.
 - Before committing, run `python3 -m unittest discover -s tests -v`, `python3 scripts/audit_markdown.py`, `python3 scripts/audit_publication.py`, `python3 scripts/audit_publication.py --history-content`, and `git diff --check`.
@@ -68,6 +70,8 @@
 - 未来网站只能发布 `publication/site-content.txt` 明确列出的文件。
 - 先提交全部预定公开修改，再从全新、经过复核且干净的 checkout 生成快照。内容选择使用已提交 ref，但实际运行的导出器和审计代码仍来自该 checkout。
 - 用 `python3 scripts/export_publication.py export --ref HEAD --output /tmp/project-covenant-public` 生成不带 Git 历史的快照。另行保存输出的摘要，再用 `python3 scripts/export_publication.py verify --input /tmp/project-covenant-public --expected-content-set-sha256 DIGEST_FROM_EXPORT` 复核。
+- 只能从该已验证快照构建静态阅读站点：运行 `python3 scripts/build_static_site.py build --snapshot /tmp/project-covenant-public --expected-content-set-sha256 DIGEST_FROM_EXPORT --output /tmp/project-covenant-site`，再用同一快照与另行保存的摘要重复运行 `verify` 子命令。
+- 生成站点是部署产物，不是第二份源代码树。不得直接编辑，也不得加入脚本、分析追踪、表单、评论、远程资源、source map、仓库链接或发布元数据。
 - 发布前必须人工查看 Markdown 的实际渲染结果。自动检查是必要防线，但无法证明所有可识别的个人细节都已清除。
 - 快照不会匿名化上传账号。若要尽量降低身份关联，需要经过复核的中性所有者，并把干净快照单独导入全新且非 fork 的仓库。
 - 提交前运行 `python3 -m unittest discover -s tests -v`、`python3 scripts/audit_markdown.py`、`python3 scripts/audit_publication.py`、`python3 scripts/audit_publication.py --history-content` 和 `git diff --check`。

@@ -67,6 +67,8 @@ These instructions apply to the entire repository unless a deeper `AGENTS.md` ad
 - Treat transcripts, recordings, downloads, meeting links, and attachments as private source material. Publish only reviewed, non-identifying summaries.
 - A future website must use `publication/site-content.txt` as an exact allowlist; never publish by recursively copying the repository.
 - Produce release input with `scripts/export_publication.py` from a committed ref. Preserve its printed content-set digest separately and require that digest when verifying the snapshot.
+- Build website files only with `scripts/build_static_site.py` from that verified snapshot and retained digest. The builder must emit exactly one HTML page per approved Markdown page plus local CSS; it must not copy the source manifest or integrity metadata into the site.
+- The first static site must remain script-free and must not add analytics, forms, comments, remote fonts, remote images, source maps, or identifying repository links. Hosting response headers and account ownership require a separate deployment review.
 - The exporter removes Git history from the snapshot, not identity from the hosting account. An identity-minimized public copy must use a reviewed neutral owner and a new non-fork repository; never transfer this repository's old Git history.
 - Treat that neutral copy as a generated, read-only reading mirror. Its snapshot consists primarily of approved Markdown plus integrity metadata and intentionally omits scripts, tests, and workflows; run maintenance and deployment tooling only from a separately reviewed workspace.
 
@@ -79,6 +81,8 @@ These instructions apply to the entire repository unless a deeper `AGENTS.md` ad
 - 逐字稿、录音录像、下载文件、会议链接和附件都视为私人来源；只发布经过复核、无法识别个人的总结。
 - 未来网站必须把 `publication/site-content.txt` 作为精确白名单；不得递归复制整个仓库发布。
 - 发布输入必须由 `scripts/export_publication.py` 从已提交的 ref 生成。另行保存它输出的内容集摘要，验证快照时必须传入该摘要。
+- 网站文件只能由 `scripts/build_static_site.py` 从已验证快照和另行保存的摘要生成。构建器必须为每份获准 Markdown 只生成一个 HTML 页面及本地 CSS，不得把源清单或完整性元数据复制进站点。
+- 初版静态站点必须保持无脚本，也不得加入分析追踪、表单、评论、远程字体、远程图片、source map 或可识别源仓库链接。托管响应头与账号归属需要单独进行部署复核。
 - 导出器去掉的是快照中的 Git 历史，不是托管账号身份。若要尽量降低身份关联，公开副本必须使用经过复核的中性所有者和全新非 fork 仓库；不得转移本仓库的旧 Git 历史。
 - 将中性副本作为生成的只读阅读镜像。它的快照主要由获准 Markdown 与完整性元数据组成，并会有意不包含脚本、测试和 workflow；维护与部署工具只能在另行复核的工作区中运行。
 
@@ -109,6 +113,10 @@ Run `python3 scripts/audit_publication.py --history-content` before publishing s
 Run a release export only from a fresh, reviewed, clean checkout after all intended public changes are committed. The selected content comes from the committed ref, but the exporter and its imported audit code still come from the checkout that runs them. The export command performs its own post-write verification; repeat the verify command with the separately retained digest, and inspect the rendered Markdown as a human, before importing the snapshot into a neutral destination.
 
 只有全部预定公开修改都已提交，并且位于全新、经过复核且干净的 checkout 中，才能生成发布快照。被选中的内容来自已提交 ref，但实际运行的导出器及其导入的审计代码仍来自当前 checkout。导出命令会自行执行写入后复核；把快照导入中性目标前，还要使用另行保存的摘要再次验证，并由人工检查 Markdown 的实际渲染结果。
+
+After snapshot verification, build and independently verify the static site with the same retained digest. Inspect representative rendered pages and the final deployed response headers before calling a website release complete.
+
+快照验证后，使用同一份另行保存的摘要构建并独立复核静态站点。只有人工检查代表性页面的实际渲染结果和最终托管响应头之后，才可把网站发布标为完成。
 
 ## 7. Current Migration Meaning | 当前迁移口径
 

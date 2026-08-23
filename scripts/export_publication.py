@@ -57,7 +57,7 @@ WINDOWS_FORBIDDEN_CHARACTERS = set('<>:"|?*')
 GIT_HOST_TEXT = re.compile(
     r"(?i)(?:[A-Za-z0-9-]+\.)*"
     r"(?:github\.com|githubusercontent\.com|github\.io)"
-    r"(?=$|[^A-Za-z0-9.-])"
+    r"\.*(?=$|[^A-Za-z0-9.-])"
 )
 ALLOWED_STABLE_ANCHOR = re.compile(r'<a id="[A-Za-z0-9][A-Za-z0-9._:-]*"></a>')
 ALLOWED_LINE_BREAK = re.compile(r"(?i)<br\s*/?>")
@@ -116,6 +116,14 @@ class ExportReport:
     content_count: int
     total_bytes: int
     content_set_sha256: str
+
+
+@dataclass(frozen=True)
+class VerifiedSnapshot:
+    """One verified report plus the exact immutable bytes that produced it."""
+
+    report: ExportReport
+    files: tuple[SnapshotFile, ...]
 
 
 @dataclass(frozen=True)
@@ -916,6 +924,47 @@ def enumerate_artifact(input_dir: Path) -> tuple[set[str], set[str]]:
     return file_paths, directory_paths
 
 
+DirectoryIdentity = tuple[int, int, int, int, int, int]
+
+
+def _artifact_directory_identity(directory: Path, error_code: str) -> DirectoryIdentity:
+    try:
+        details = directory.lstat()
+    except OSError as error:
+        raise PublicationExportError(error_code) from error
+    if stat.S_ISLNK(details.st_mode) or not stat.S_ISDIR(details.st_mode):
+        raise PublicationExportError(error_code)
+    return (
+        details.st_dev,
+        details.st_ino,
+        details.st_nlink,
+        details.st_mode,
+        details.st_mtime_ns,
+        details.st_ctime_ns,
+    )
+
+
+def _artifact_directory_identities(
+    input_dir: Path, directory_paths: set[str], error_code: str
+) -> dict[str, DirectoryIdentity]:
+    identities = {"": _artifact_directory_identity(input_dir, error_code)}
+    for path in sorted(directory_paths):
+        identities[path] = _artifact_directory_identity(input_dir / path, error_code)
+    return identities
+
+
+def _assert_artifact_root_unchanged(
+    input_dir: Path, expected_identity: DirectoryIdentity
+) -> None:
+    if (
+        _artifact_directory_identity(
+            input_dir, "ARTIFACT_ROOT_CHANGED_DURING_VERIFICATION"
+        )
+        != expected_identity
+    ):
+        raise PublicationExportError("ARTIFACT_ROOT_CHANGED_DURING_VERIFICATION")
+
+
 def _validate_artifact_mtime(path: Path, error_code: str) -> None:
     try:
         details = path.lstat()
@@ -954,10 +1003,14 @@ def _read_artifact_file(input_dir: Path, path: str) -> bytes:
     return data
 
 
-def _verify_snapshot(input_dir: Path, expected_content_set_sha256: str) -> ExportReport:
+def _load_verified_snapshot(
+    input_dir: Path, expected_content_set_sha256: str
+) -> VerifiedSnapshot:
     if not re.fullmatch(r"[0-9a-f]{64}", expected_content_set_sha256):
         raise PublicationExportError("EXPECTED_CONTENT_SET_DIGEST_INVALID")
+    root_identity = _artifact_directory_identity(input_dir, "ARTIFACT_ROOT_INVALID")
     file_paths, directory_paths = enumerate_artifact(input_dir)
+    _assert_artifact_root_unchanged(input_dir, root_identity)
     if not {MANIFEST_PATH, GENERATED_MANIFEST, CHECKSUMS_FILE}.issubset(file_paths):
         raise PublicationExportError("ARTIFACT_GENERATED_FILES_MISSING")
     source_manifest_bytes = _read_artifact_file(input_dir, MANIFEST_PATH)
@@ -980,6 +1033,11 @@ def _verify_snapshot(input_dir: Path, expected_content_set_sha256: str) -> Expor
         _validate_artifact_mtime(input_dir / path, "ARTIFACT_DIRECTORY_MTIME_INVALID")
     for path in sorted(expected_files):
         _validate_artifact_mtime(input_dir / path, "ARTIFACT_FILE_MTIME_INVALID")
+    directory_identities = _artifact_directory_identities(
+        input_dir,
+        expected_directories,
+        "ARTIFACT_DIRECTORY_CHANGED_DURING_VERIFICATION",
+    )
 
     actual_files: list[SnapshotFile] = []
     total_bytes = 0
@@ -1002,22 +1060,53 @@ def _verify_snapshot(input_dir: Path, expected_content_set_sha256: str) -> Expor
     if _read_artifact_file(input_dir, CHECKSUMS_FILE) != expected_checksums:
         raise PublicationExportError("ARTIFACT_CHECKSUMS_MISMATCH")
 
-    return ExportReport(
-        content_count=len(actual_files),
-        total_bytes=total_bytes,
-        content_set_sha256=actual_set_digest,
+    _assert_artifact_root_unchanged(input_dir, root_identity)
+    final_file_paths, final_directory_paths = enumerate_artifact(input_dir)
+    _assert_artifact_root_unchanged(input_dir, root_identity)
+    if final_file_paths != file_paths:
+        raise PublicationExportError("ARTIFACT_FILE_SET_MISMATCH")
+    if final_directory_paths != directory_paths:
+        raise PublicationExportError("ARTIFACT_DIRECTORY_SET_MISMATCH")
+    if (
+        _artifact_directory_identities(
+            input_dir,
+            expected_directories,
+            "ARTIFACT_DIRECTORY_CHANGED_DURING_VERIFICATION",
+        )
+        != directory_identities
+    ):
+        raise PublicationExportError("ARTIFACT_DIRECTORY_CHANGED_DURING_VERIFICATION")
+    _assert_artifact_root_unchanged(input_dir, root_identity)
+
+    return VerifiedSnapshot(
+        report=ExportReport(
+            content_count=len(actual_files),
+            total_bytes=total_bytes,
+            content_set_sha256=actual_set_digest,
+        ),
+        files=tuple(actual_files),
     )
 
 
-def verify_snapshot(input_dir: Path, expected_content_set_sha256: str) -> ExportReport:
+def load_verified_snapshot(
+    input_dir: Path, expected_content_set_sha256: str
+) -> VerifiedSnapshot:
+    """Verify a snapshot and return only the bytes used by that verification."""
+
     if os.name != "posix":
         raise PublicationExportError("PLATFORM_UNSUPPORTED")
     try:
-        return _verify_snapshot(input_dir, expected_content_set_sha256)
+        return _load_verified_snapshot(input_dir, expected_content_set_sha256)
     except PublicationExportError:
         raise
     except OSError as error:
         raise PublicationExportError("ARTIFACT_IO_FAILED") from error
+
+
+def verify_snapshot(input_dir: Path, expected_content_set_sha256: str) -> ExportReport:
+    """Verify a quiescent snapshot directory and return its immutable report."""
+
+    return load_verified_snapshot(input_dir, expected_content_set_sha256).report
 
 
 def _write_regular_file(path: Path, data: bytes) -> None:

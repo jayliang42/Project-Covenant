@@ -4,6 +4,7 @@ import hashlib
 import io
 import json
 import os
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -21,6 +22,7 @@ from scripts.export_publication import (
     SnapshotFile,
     export_snapshot,
     generated_metadata,
+    load_verified_snapshot,
     normalize_public_path,
     parse_manifest,
     resolved_local_target,
@@ -195,6 +197,8 @@ class ManifestValidationTests(unittest.TestCase):
             "`https://github.com/example/project`\n",
             "https://%67ithub.com/example/project\n",
             "github.com/example/project\n",
+            "github.com.\n",
+            "`github.com.`\n",
         )
         for text in cases:
             with self.subTest(text=text):
@@ -575,11 +579,14 @@ class ExportIntegrationTests(unittest.TestCase):
         def create_racing_output(_repo_root: Path, output_dir: Path) -> None:
             output_dir.mkdir()
 
-        with patch.object(
-            export_publication,
-            "_assert_output_location",
-            side_effect=create_racing_output,
-        ), self.assertRaises(PublicationExportError):
+        with (
+            patch.object(
+                export_publication,
+                "_assert_output_location",
+                side_effect=create_racing_output,
+            ),
+            self.assertRaises(PublicationExportError),
+        ):
             export_snapshot(repo.root, output)
 
         self.assertTrue(output.is_dir())
@@ -588,11 +595,14 @@ class ExportIntegrationTests(unittest.TestCase):
     def test_wraps_output_io_error_and_removes_partial_artifact(self) -> None:
         repo = self.committed_repo()
         output = self.base / "public"
-        with patch.object(
-            export_publication,
-            "_write_regular_file",
-            side_effect=PermissionError("/sensitive/path"),
-        ), self.assertRaises(PublicationExportError) as context:
+        with (
+            patch.object(
+                export_publication,
+                "_write_regular_file",
+                side_effect=PermissionError("/sensitive/path"),
+            ),
+            self.assertRaises(PublicationExportError) as context,
+        ):
             export_snapshot(repo.root, output)
 
         self.assertEqual("OUTPUT_IO_FAILED", context.exception.code)
@@ -627,6 +637,28 @@ class ExportIntegrationTests(unittest.TestCase):
         verification_report = verify_snapshot(output, export_report.content_set_sha256)
 
         self.assertEqual(export_report, verification_report)
+
+    def test_load_verified_snapshot_returns_the_exact_verified_bytes(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            repo_root = root / "repo"
+            output = root / "output"
+            repo = create_repository(repo_root)
+            for path, text in valid_files().items():
+                repo.write(path, text)
+            repo.commit()
+
+            export_report = export_snapshot(repo_root, output)
+            verified = load_verified_snapshot(output, export_report.content_set_sha256)
+
+            self.assertEqual(export_report, verified.report)
+            self.assertEqual(
+                sorted(valid_files()), [file.path for file in verified.files]
+            )
+            self.assertEqual(
+                valid_files()["README.md"].encode("utf-8"),
+                next(file.data for file in verified.files if file.path == "README.md"),
+            )
 
     def test_verification_rejects_tampering_and_extra_git_directory(self) -> None:
         for name, mutate, expected_code in (
@@ -709,6 +741,87 @@ class ExportIntegrationTests(unittest.TestCase):
                     verify_snapshot(output, export_report.content_set_sha256)
 
                 self.assertEqual(expected_code, context.exception.code)
+
+    def test_verification_rejects_root_replacement_after_first_enumeration(
+        self,
+    ) -> None:
+        repo = self.committed_repo()
+        output = self.base / "public"
+        replacement = self.base / "replacement"
+        displaced = self.base / "displaced"
+        export_report = export_snapshot(repo.root, output)
+        shutil.copytree(output, replacement)
+        write_export_text(replacement / "private.txt", "must not be ignored\n")
+        os.utime(
+            replacement,
+            (
+                export_publication.SOURCE_DATE_EPOCH,
+                export_publication.SOURCE_DATE_EPOCH,
+            ),
+        )
+        real_enumerate = export_publication.enumerate_artifact
+        replaced = False
+
+        def enumerate_then_replace(path: Path) -> tuple[set[str], set[str]]:
+            nonlocal replaced
+            result = real_enumerate(path)
+            if not replaced:
+                replaced = True
+                path.rename(displaced)
+                replacement.rename(path)
+            return result
+
+        with (
+            patch.object(
+                export_publication,
+                "enumerate_artifact",
+                side_effect=enumerate_then_replace,
+            ),
+            self.assertRaises(PublicationExportError) as context,
+        ):
+            verify_snapshot(output, export_report.content_set_sha256)
+
+        self.assertEqual(
+            "ARTIFACT_ROOT_CHANGED_DURING_VERIFICATION", context.exception.code
+        )
+        self.assertTrue((output / "private.txt").is_file())
+
+    def test_verification_rejects_extra_added_after_final_enumeration(self) -> None:
+        repo = self.committed_repo()
+        output = self.base / "public"
+        export_report = export_snapshot(repo.root, output)
+        real_enumerate = export_publication.enumerate_artifact
+        enumerate_count = 0
+
+        def enumerate_then_add(path: Path) -> tuple[set[str], set[str]]:
+            nonlocal enumerate_count
+            result = real_enumerate(path)
+            enumerate_count += 1
+            if enumerate_count == 2:
+                write_export_text(path / "private.txt", "must not be ignored\n")
+                os.utime(
+                    path,
+                    (
+                        export_publication.SOURCE_DATE_EPOCH,
+                        export_publication.SOURCE_DATE_EPOCH,
+                    ),
+                )
+            return result
+
+        with (
+            patch.object(
+                export_publication,
+                "enumerate_artifact",
+                side_effect=enumerate_then_add,
+            ),
+            self.assertRaises(PublicationExportError) as context,
+        ):
+            verify_snapshot(output, export_report.content_set_sha256)
+
+        self.assertEqual(
+            "ARTIFACT_ROOT_CHANGED_DURING_VERIFICATION", context.exception.code
+        )
+        self.assertTrue((output / "private.txt").is_file())
 
     def test_verification_bounds_artifact_enumeration(self) -> None:
         repo = self.committed_repo()

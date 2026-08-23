@@ -111,6 +111,22 @@ A deterministic, Git-history-free content snapshot can be generated for a future
 
 项目可为未来网站或干净仓库导入生成可重现、不带 Git 历史的内容快照。这会去掉待转移文件中的仓库历史，但不会匿名化发布它们的 GitHub 账号。
 
+The reviewed snapshot can also be rendered as a deterministic static reading site: one HTML page for every approved Markdown page and one local stylesheet. The generated site contains no JavaScript, analytics, forms, comments, remote images, remote fonts, source maps, Git history, or publication manifests. Building the files does not deploy them or make the hosting account anonymous.
+
+经过复核的快照还可以生成可重现的静态阅读网站：每份获准 Markdown 对应一个 HTML 页面，另加一份本地样式表。生成站点不包含 JavaScript、分析追踪、表单、评论、远程图片、远程字体、source map、Git 历史或发布清单。生成文件不等于已经部署，也不会自动匿名化托管账号。
+
+```bash
+python3 scripts/build_static_site.py build \
+  --snapshot /tmp/project-covenant-public \
+  --expected-content-set-sha256 DIGEST_FROM_EXPORT \
+  --output /tmp/project-covenant-site
+
+python3 scripts/build_static_site.py verify \
+  --snapshot /tmp/project-covenant-public \
+  --expected-content-set-sha256 DIGEST_FROM_EXPORT \
+  --input /tmp/project-covenant-site
+```
+
 ## Contributing | 参与整理
 
 Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before adding or translating material. It explains the bilingual format, source discipline, naming conventions, and how to avoid overstating historical evidence.
