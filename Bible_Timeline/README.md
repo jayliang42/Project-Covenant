@@ -9,7 +9,7 @@
 | --- | --- | --- |
 | Understand the whole story in one sitting<br>一次看懂大故事 | [Bible Timeline Overview / 圣经时间线总览](./Bible_Timeline_Bilingual.md) | Full bilingual<br>完整双语 |
 | See every book’s role<br>逐卷看承上启下 | [Bible by Book / 按书卷梳理圣经](./Bible_By_Book_Bilingual.md) | Full bilingual<br>完整双语 |
-| Study through a year<br>一年串读 | [52-Week Storyline Plan / 52 周故事线计划](./52周圣经故事线_查经与史料阅读计划.md) | Chinese full text; English route labels<br>中文全文；英文路线标识 |
+| Study through a year<br>一年串读 | [52-Week Storyline Plan / 52 周故事线计划](./52周圣经故事线_查经与史料阅读计划.md) | Full bilingual<br>完整双语 |
 | Read 52 core books without losing the other 14<br>52 卷主读而不遗漏其余 14 卷 | [52-Book Core + 14-Book Bridge / 52 卷主读＋14 卷桥接](./52卷圣经故事主线_精选与14卷桥接版.md) | Chinese full text; English route labels<br>中文全文；英文路线标识 |
 | Check evidence and its limits<br>核对史料及边界 | [Evidence Index / 史料与考古旁证索引](./史料与考古旁证索引.md) | Chinese research text; English labels in project navigation<br>中文研究正文；项目导航含英文说明 |
 
