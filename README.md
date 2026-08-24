@@ -90,6 +90,8 @@ Project-Covenant/
 
 - [Book-Study Hub | 书籍研读导航](./Book_Studies/README.md)
 - [Song of a Wanderer: An Eternal Call — Whole-Book Guide | 《游子吟：永恒在召唤》全书解读](./Book_Studies/游子吟_永恒在召唤_全书解读与阅读指南.md)
+- [Seek the Truth, Find the Way — Study Guide | 《求真寻道：约翰福音研经问答》使用指南](./Book_Studies/求真寻道_约翰福音研经问答_使用指南.md)
+- [Evidence That Demands a Verdict — Edition-Aware Whole-Book Guide | 《铁证待判》版本辨析与全书研读指南](./Book_Studies/铁证待判_版本辨析与全书研读指南.md)
 
 ## Research Boundaries | 研究边界
 

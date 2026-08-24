@@ -74,6 +74,7 @@ Bilingual_Notes/Supplemental_Delighting_in_the_Trinity_Chapter_4_The_Spirit_Beau
 Book_Studies/README.md
 Book_Studies/求真寻道_约翰福音研经问答_使用指南.md
 Book_Studies/游子吟_永恒在召唤_全书解读与阅读指南.md
+Book_Studies/铁证待判_版本辨析与全书研读指南.md
 CONTRIBUTING.md
 PUBLICATION_POLICY.md
 README.md
