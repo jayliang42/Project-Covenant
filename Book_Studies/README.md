@@ -4,6 +4,16 @@
 >
 > 本区收录有影响力的基督教书籍研读指南。每份指南都会辨明原书论证，区分历史／科学材料与神学信念，也不会把二手导读当成原书的替代品。
 
+> **Copyright and Authorized-Edition Notice | 版权与正版说明**
+>
+> Please support authorized editions by purchasing the book, borrowing it from a library, or using a copy made available by the author or publisher. This library does not provide original book text, scans, unauthorized PDFs, or material intended to replace the book.
+>
+> 因版权原因，请支持正版书籍：购买正版、借阅图书馆藏书，或使用作者及出版社正式授权的版本。本资料库不提供原书正文、扫描件、未授权 PDF，也不制作足以替代原书的内容。
+>
+> This library provides original reading guides, distilled core ideas, edition notes, and critical-reading indexes so that readers can understand each book and then return to the authorized original.
+>
+> 本资料库提供原创书籍导读、核心思想提炼、版本说明与批判性阅读索引，帮助读者理解各书，并回到正版原著继续阅读。
+
 <a id="library-index"></a>
 ## Library Index and Recommendations | 图书馆总索引与推荐理由
 
