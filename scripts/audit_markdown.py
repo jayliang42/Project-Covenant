@@ -3,11 +3,25 @@
 
 from __future__ import annotations
 
+import json
 import re
 import subprocess
 import sys
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
+
+if __package__:
+    from .export_publication import (
+        MANIFEST_PATH,
+        PublicationExportError,
+        parse_manifest,
+    )
+else:
+    from export_publication import (
+        MANIFEST_PATH,
+        PublicationExportError,
+        parse_manifest,
+    )
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -29,6 +43,280 @@ INDEX_MARKERS = (
     "Cheat_Sheet",
     "Summary",
 )
+BILINGUAL_BASELINE_PATH = "publication/bilingual-baseline.json"
+BILINGUAL_BASELINE_SCHEMA = 1
+BILINGUAL_ALGORITHM = "adjacent-latin-v1"
+NUMBERED_TABLE_ROW = re.compile(r"^\|\s*(\d+)\s*\|\s*([^|]+?)\s*\|", re.MULTILINE)
+NUMBERED_ENTRY_HEADING = re.compile(r"^###\s+(\d+)\.\s+(.+?)\s*$", re.MULTILINE)
+H2 = re.compile(r"^##\s+(.+?)\s*$", re.MULTILINE)
+CANONICAL_BOOKS_PATH = "Bible_Timeline/66卷承上启下总表.md"
+SELECTED_BOOKS_PATH = "Bible_Timeline/52卷圣经故事主线_精选与14卷桥接版.md"
+EVIDENCE_INDEX_PATH = "Bible_Timeline/史料与考古旁证索引.md"
+
+
+class MarkdownAuditError(ValueError):
+    """Invalid audit input or configuration."""
+
+
+def adjacent_latin_v1(text: str) -> tuple[int, list[tuple[int, str]]]:
+    """Return paired-line count and unpaired Chinese-only lines.
+
+    A non-empty Chinese line counts as paired only when it already contains
+    Latin text or an immediately adjacent non-empty line contains Latin text.
+    The same algorithm drives the legacy report and the public baseline gate.
+    """
+
+    paired = 0
+    unpaired: list[tuple[int, str]] = []
+    lines = text.splitlines()
+    for index, line in enumerate(lines):
+        stripped = line.strip()
+        if not stripped or not CHINESE.search(stripped) or LATIN.search(stripped):
+            continue
+        nearby_latin = any(
+            0 <= neighbor_index < len(lines)
+            and bool(lines[neighbor_index].strip())
+            and bool(LATIN.search(lines[neighbor_index].strip()))
+            for neighbor_index in (index - 1, index + 1)
+        )
+        if nearby_latin:
+            paired += 1
+        else:
+            unpaired.append((index + 1, stripped))
+    return paired, unpaired
+
+
+def _unique_json_object(pairs: list[tuple[str, object]]) -> dict[str, object]:
+    result: dict[str, object] = {}
+    for key, value in pairs:
+        if key in result:
+            raise MarkdownAuditError(f"baseline_duplicate_key:{key}")
+        result[key] = value
+    return result
+
+
+def parse_bilingual_baseline(data: bytes) -> dict[str, int]:
+    """Parse and validate the versioned bilingual-debt baseline."""
+
+    try:
+        text = data.decode("utf-8")
+    except UnicodeDecodeError as error:
+        raise MarkdownAuditError("baseline_not_utf8") from error
+    try:
+        payload = json.loads(text, object_pairs_hook=_unique_json_object)
+    except (json.JSONDecodeError, MarkdownAuditError) as error:
+        if isinstance(error, MarkdownAuditError):
+            raise
+        raise MarkdownAuditError("baseline_invalid_json") from error
+    if not isinstance(payload, dict):
+        raise MarkdownAuditError("baseline_root_not_object")
+    if set(payload) != {"schema", "algorithm", "files"}:
+        raise MarkdownAuditError("baseline_top_level_keys_invalid")
+    if (
+        isinstance(payload.get("schema"), bool)
+        or payload.get("schema") != BILINGUAL_BASELINE_SCHEMA
+    ):
+        raise MarkdownAuditError("baseline_schema_invalid")
+    if payload.get("algorithm") != BILINGUAL_ALGORITHM:
+        raise MarkdownAuditError("baseline_algorithm_invalid")
+
+    raw_files = payload.get("files")
+    if not isinstance(raw_files, dict):
+        raise MarkdownAuditError("baseline_files_not_object")
+    files: dict[str, int] = {}
+    for raw_path, raw_count in raw_files.items():
+        if not isinstance(raw_path, str) or not raw_path.endswith(".md"):
+            raise MarkdownAuditError("baseline_path_invalid")
+        if isinstance(raw_count, bool) or not isinstance(raw_count, int) or raw_count < 0:
+            raise MarkdownAuditError(f"baseline_count_invalid:{raw_path}")
+        files[raw_path] = raw_count
+    return files
+
+
+def public_markdown_counts(root: Path) -> dict[str, int]:
+    """Count bilingual debt for the manifest-approved Markdown corpus."""
+
+    manifest = (root / MANIFEST_PATH).read_bytes()
+    entries = parse_manifest(manifest)
+    public_markdown = [entry for entry in entries if entry.endswith(".md")]
+    counts: dict[str, int] = {}
+    for entry in public_markdown:
+        path = root / entry
+        if not path.is_file():
+            raise MarkdownAuditError(f"public_markdown_missing:{entry}")
+        try:
+            text = path.read_text(encoding="utf-8")
+        except UnicodeDecodeError as error:
+            raise MarkdownAuditError(f"public_markdown_not_utf8:{entry}") from error
+        _, unpaired = adjacent_latin_v1(text)
+        counts[entry] = len(unpaired)
+    return counts
+
+
+def compare_bilingual_baseline(
+    current: dict[str, int], baseline: dict[str, int]
+) -> tuple[list[str], int]:
+    """Return regressions and the number of unpaired lines removed."""
+
+    regressions: list[str] = []
+    current_paths = set(current)
+    baseline_paths = set(baseline)
+    for path in sorted(current_paths - baseline_paths):
+        regressions.append(f"baseline_missing_file:{path}")
+    for path in sorted(baseline_paths - current_paths):
+        regressions.append(f"baseline_extra_file:{path}")
+
+    improvements = 0
+    for path in sorted(current_paths & baseline_paths):
+        current_count = current[path]
+        baseline_count = baseline[path]
+        if current_count > baseline_count:
+            regressions.append(
+                f"bilingual_regression:{path}:current={current_count}:baseline={baseline_count}"
+            )
+        else:
+            improvements += baseline_count - current_count
+    return regressions, improvements
+
+
+def extract_numbered_table_rows(text: str) -> list[tuple[int, str]]:
+    """Extract the first two cells from Markdown table rows with numeric IDs."""
+
+    return [
+        (int(number), name.strip())
+        for number, name in NUMBERED_TABLE_ROW.findall(text)
+    ]
+
+
+def extract_h2_section(text: str, title_prefix: str) -> str | None:
+    """Return an H2 section body, located by a stable title prefix."""
+
+    headings = list(H2.finditer(text))
+    for index, heading in enumerate(headings):
+        if heading.group(1).strip().startswith(title_prefix):
+            end = headings[index + 1].start() if index + 1 < len(headings) else len(text)
+            return text[heading.end() : end]
+    return None
+
+
+def validate_numbered_book_rows(
+    rows: list[tuple[int, str]], expected_count: int, label: str
+) -> list[str]:
+    """Validate exact numbering and unique, non-empty book names."""
+
+    errors: list[str] = []
+    numbers = [number for number, _ in rows]
+    expected = list(range(1, expected_count + 1))
+    if numbers != expected:
+        errors.append(
+            f"{label}_numbers_invalid:expected=1..{expected_count}:found="
+            + ",".join(str(number) for number in numbers)
+        )
+
+    names = [name for _, name in rows]
+    if any(not name for name in names):
+        errors.append(f"{label}_empty_book_name")
+    duplicates = sorted({name for name in names if names.count(name) > 1})
+    for name in duplicates:
+        errors.append(f"{label}_duplicate_book:{name}")
+    return errors
+
+
+def validate_book_selection(
+    canonical_rows: list[tuple[int, str]],
+    main_rows: list[tuple[int, str]],
+    bridge_rows: list[tuple[int, str]],
+    *,
+    canonical_count: int = 66,
+    main_count: int = 52,
+    bridge_count: int = 14,
+) -> list[str]:
+    """Validate the canonical list and its 52-book plus 14-book partition."""
+
+    errors = validate_numbered_book_rows(
+        canonical_rows, canonical_count, "canonical_books"
+    )
+    errors.extend(validate_numbered_book_rows(main_rows, main_count, "main_books"))
+    errors.extend(
+        validate_numbered_book_rows(bridge_rows, bridge_count, "bridge_books")
+    )
+
+    canonical_names = {name for _, name in canonical_rows}
+    main_names = {name for _, name in main_rows}
+    bridge_names = {name for _, name in bridge_rows}
+    overlap = sorted(main_names & bridge_names)
+    if overlap:
+        errors.append("selection_overlap:" + ",".join(overlap))
+
+    selected_names = main_names | bridge_names
+    missing = sorted(canonical_names - selected_names)
+    extra = sorted(selected_names - canonical_names)
+    if missing:
+        errors.append("selection_union_missing:" + ",".join(missing))
+    if extra:
+        errors.append("selection_union_extra:" + ",".join(extra))
+    return errors
+
+
+def extract_numbered_entry_headings(text: str) -> list[tuple[int, str]]:
+    """Extract numbered level-three entry headings from an evidence index."""
+
+    return [
+        (int(number), title.strip())
+        for number, title in NUMBERED_ENTRY_HEADING.findall(text)
+    ]
+
+
+def validate_numbered_entries(
+    rows: list[tuple[int, str]], expected_count: int, label: str = "evidence_entries"
+) -> list[str]:
+    """Validate exact ordered numbering and non-empty entry titles."""
+
+    numbers = [number for number, _ in rows]
+    expected = list(range(1, expected_count + 1))
+    errors: list[str] = []
+    if numbers != expected:
+        errors.append(
+            f"{label}_numbers_invalid:expected=1..{expected_count}:found="
+            + ",".join(str(number) for number in numbers)
+        )
+    if any(not title for _, title in rows):
+        errors.append(f"{label}_empty_title")
+    return errors
+
+
+def audit_corpus_integrity(root: Path) -> list[str]:
+    """Check the numbered Bible-book partition and evidence-entry sequence."""
+
+    corpus_paths = (CANONICAL_BOOKS_PATH, SELECTED_BOOKS_PATH, EVIDENCE_INDEX_PATH)
+    texts: dict[str, str] = {}
+    errors: list[str] = []
+    for relative in corpus_paths:
+        try:
+            texts[relative] = (root / relative).read_text(encoding="utf-8")
+        except (OSError, UnicodeDecodeError) as error:
+            errors.append(f"corpus_file_unreadable:{relative}:{type(error).__name__}")
+    if errors:
+        return errors
+
+    selected_text = texts[SELECTED_BOOKS_PATH]
+    main_section = extract_h2_section(selected_text, "二、52 卷逐卷接力")
+    bridge_section = extract_h2_section(selected_text, "三、14 卷怎样挂回主线")
+    if main_section is None:
+        errors.append("main_books_section_missing")
+    if bridge_section is None:
+        errors.append("bridge_books_section_missing")
+    if errors:
+        return errors
+
+    canonical_rows = extract_numbered_table_rows(texts[CANONICAL_BOOKS_PATH])
+    main_rows = extract_numbered_table_rows(main_section)
+    bridge_rows = extract_numbered_table_rows(bridge_section)
+    errors.extend(validate_book_selection(canonical_rows, main_rows, bridge_rows))
+
+    evidence_rows = extract_numbered_entry_headings(texts[EVIDENCE_INDEX_PATH])
+    errors.extend(validate_numbered_entries(evidence_rows, 205))
+    return errors
 
 
 def tracked_markdown() -> list[Path]:
@@ -85,23 +373,11 @@ def main() -> int:
         # a nearby English counterpart.  We accept either ordering so that
         # existing notes can be migrated incrementally, while still exposing
         # isolated Chinese prose and table rows for follow-up translation.
-        lines = text.splitlines()
-        for index, line in enumerate(lines):
-            stripped = line.strip()
-            if not stripped or not CHINESE.search(stripped) or LATIN.search(stripped):
-                continue
-            nearby_latin = False
-            for neighbor_index in (index - 1, index + 1):
-                if 0 <= neighbor_index < len(lines):
-                    neighbor = lines[neighbor_index].strip()
-                    if neighbor and LATIN.search(neighbor):
-                        nearby_latin = True
-                        break
-            if nearby_latin:
-                paired_bilingual_lines += 1
-            else:
-                unpaired_chinese_lines.append(f"{relative}:{index + 1}: {stripped}")
-                unpaired_by_file[relative] = unpaired_by_file.get(relative, 0) + 1
+        file_paired, file_unpaired = adjacent_latin_v1(text)
+        paired_bilingual_lines += file_paired
+        for line_number, stripped in file_unpaired:
+            unpaired_chinese_lines.append(f"{relative}:{line_number}: {stripped}")
+            unpaired_by_file[relative] = unpaired_by_file.get(relative, 0) + 1
 
         h1s = H1.findall(text)
         h1_total += len(h1s)
@@ -141,6 +417,28 @@ def main() -> int:
                 ):
                     unlinked_index_items.append(f"{relative}:{line_number}: {line.strip()}")
 
+    public_counts: dict[str, int] = {}
+    baseline_regressions: list[str] = []
+    baseline_improvements = 0
+    try:
+        public_counts = public_markdown_counts(ROOT)
+    except PublicationExportError as error:
+        baseline_regressions.append(f"publication_manifest_invalid:{error.code}")
+    except (OSError, MarkdownAuditError) as error:
+        baseline_regressions.append(f"public_markdown_audit_failed:{error}")
+    else:
+        try:
+            baseline_data = (ROOT / BILINGUAL_BASELINE_PATH).read_bytes()
+            baseline_counts = parse_bilingual_baseline(baseline_data)
+        except (OSError, MarkdownAuditError) as error:
+            baseline_regressions.append(f"bilingual_baseline_invalid:{error}")
+        else:
+            baseline_regressions, baseline_improvements = compare_bilingual_baseline(
+                public_counts, baseline_counts
+            )
+
+    corpus_errors = audit_corpus_integrity(ROOT)
+
     print(f"markdown_files={len(files)}")
     print(f"bilingual_body_files={bilingual_body}/{len(files)}")
     print(f"bilingual_h1={h1_total - len(missing_h1)}/{h1_total}")
@@ -155,6 +453,11 @@ def main() -> int:
             unpaired_by_file.items(), key=lambda item: (-item[1], item[0])
         )[:12]
     ))
+    print(f"public_markdown_files={len(public_counts)}")
+    print(f"public_unpaired_chinese_lines={sum(public_counts.values())}")
+    print(f"bilingual_baseline_regressions={len(baseline_regressions)}")
+    print(f"bilingual_baseline_improvements={baseline_improvements}")
+    print(f"corpus_integrity_errors={len(corpus_errors)}")
 
     for heading, entries in (
         ("missing_h1", missing_h1),
@@ -163,12 +466,20 @@ def main() -> int:
         ("fragments_needing_github_slug_review", unverified_fragments),
         ("unlinked_file_items_in_indexes", unlinked_index_items),
         ("unpaired_chinese_lines_sample", unpaired_chinese_lines[:80]),
+        ("bilingual_baseline_regressions", baseline_regressions),
+        ("corpus_integrity_errors", corpus_errors),
     ):
         if entries:
             print(f"\n[{heading}]")
             print("\n".join(entries))
 
-    return 1 if missing_h1 or broken_links or duplicate_anchors else 0
+    return 1 if (
+        missing_h1
+        or broken_links
+        or duplicate_anchors
+        or baseline_regressions
+        or corpus_errors
+    ) else 0
 
 
 if __name__ == "__main__":
