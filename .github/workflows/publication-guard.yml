@@ -39,6 +39,7 @@ jobs:
         run: |
           output_dir="$RUNNER_TEMP/project-covenant-public"
           site_dir="$RUNNER_TEMP/project-covenant-site"
+          offline_zip="$RUNNER_TEMP/project-covenant-offline.zip"
           export_log="$RUNNER_TEMP/project-covenant-export.log"
           python3 scripts/export_publication.py export --ref HEAD --output "$output_dir" | tee "$export_log"
           digest="$(awk -F= '$1 == "publication_content_set_sha256" { print $2 }' "$export_log")"
@@ -46,6 +47,8 @@ jobs:
           python3 scripts/export_publication.py verify --input "$output_dir" --expected-content-set-sha256 "$digest"
           python3 scripts/build_static_site.py build --snapshot "$output_dir" --expected-content-set-sha256 "$digest" --output "$site_dir"
           python3 scripts/build_static_site.py verify --snapshot "$output_dir" --expected-content-set-sha256 "$digest" --input "$site_dir"
+          python3 scripts/package_offline_site.py create --snapshot "$output_dir" --expected-content-set-sha256 "$digest" --output "$offline_zip"
+          python3 scripts/package_offline_site.py verify --snapshot "$output_dir" --expected-content-set-sha256 "$digest" --input "$offline_zip"
 
       - name: Reject whitespace errors
         shell: bash

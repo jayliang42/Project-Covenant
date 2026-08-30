@@ -16,6 +16,7 @@
 | Study Christian books carefully | 系统研读基督教书籍 | [Christian Book Studies / 基督教书籍研读](./Book_Studies/README.md) |
 | Explore history and archaeology carefully | 查看史料、考古与证据边界 | [Bible Timeline Research Hub / 时间线研究中心](./Bible_Timeline/README.md) |
 | Understand the public-content boundary | 了解公开内容边界 | [Privacy and Publication Policy / 隐私与发布政策](./PUBLICATION_POLICY.md) |
+| Prepare a GitHub-independent mirror | 准备可脱离 GitHub 的阅读镜像 | [Static Mirror Deployment / 静态镜像部署](./STATIC_MIRROR_DEPLOYMENT.md) |
 | Reuse original guides or software | 合法转载原创导读或使用项目代码 | [Licensing / 授权说明](./LICENSE.md) |
 
 ## What This Library Does | 这个资料库在做什么
@@ -49,6 +50,7 @@ Project-Covenant/
 ├── LICENSE-CODE               # Canonical MIT software license | MIT 软件许可标准文本
 ├── CONTRIBUTING.md            # Bilingual writing and source rules | 双语写作与来源规则
 ├── PUBLICATION_POLICY.md       # Privacy and publication boundary | 隐私与发布边界
+├── STATIC_MIRROR_DEPLOYMENT.md # Provider-neutral mirror checklist | 与托管商无关的镜像清单
 ├── publication/
 │   └── site-content.txt        # Exact future-site allowlist | 未来网站精确白名单
 ├── Bilingual_Notes/
@@ -122,11 +124,11 @@ The reviewed snapshot can also be rendered as a deterministic static reading sit
 
 经过复核的快照还可以生成可重现的静态阅读网站：每份获准 Markdown 对应一个 HTML 页面，另加一份本地样式表。生成站点不包含 JavaScript、分析追踪、表单、评论、远程图片、远程字体、source map、Git 历史或发布清单。生成文件不等于已经部署，也不会自动匿名化托管账号。
 
-## Licensing | 授权说明
+## Build and Offline Reading | 构建与离线阅读
 
-Original study guides and explanatory content are available under `CC BY-NC-SA 4.0`; repository scripts, tests, and workflow code use the MIT License. These licenses do not cover third-party Bible translations, published books, quotations, images, transcripts, or other material that Project Covenant contributors do not own. See [Licensing | 授权说明](./LICENSE.md) for the exact scope.
+After creating and verifying a clean publication snapshot, build the static site and then create a byte-verifiable offline ZIP from that same snapshot. Do not ZIP the repository or an independently edited site directory.
 
-原创研读指南和解释性内容采用 `CC BY-NC-SA 4.0`；仓库脚本、测试和工作流代码采用 MIT License。上述许可证不涵盖第三方圣经译本、已出版书籍、引文、图片、逐字稿或其他 Project Covenant 贡献者并不拥有权利的材料。准确范围见[授权说明](./LICENSE.md)。
+先生成并验证干净发布快照，再从同一份快照构建静态站点和可逐字节验证的离线 ZIP。不要直接压缩整个仓库，也不要压缩另行编辑过的站点目录。
 
 ```bash
 python3 scripts/build_static_site.py build \
@@ -138,7 +140,31 @@ python3 scripts/build_static_site.py verify \
   --snapshot /tmp/project-covenant-public \
   --expected-content-set-sha256 DIGEST_FROM_EXPORT \
   --input /tmp/project-covenant-site
+
+python3 scripts/package_offline_site.py create \
+  --snapshot /tmp/project-covenant-public \
+  --expected-content-set-sha256 DIGEST_FROM_EXPORT \
+  --output /tmp/project-covenant-offline.zip
+
+python3 scripts/package_offline_site.py verify \
+  --snapshot /tmp/project-covenant-public \
+  --expected-content-set-sha256 DIGEST_FROM_EXPORT \
+  --input /tmp/project-covenant-offline.zip
 ```
+
+To read without GitHub or a web server, extract the ZIP and open `project-covenant-offline/index.html` in a browser. The package contains only the approved HTML pages and local CSS; it contains no Git history, scripts, analytics, forms, remote assets, source manifest, or build metadata.
+
+若要脱离 GitHub 和网页服务器阅读，请解压 ZIP，然后在浏览器中打开 `project-covenant-offline/index.html`。离线包只包含获准的 HTML 页面和本地 CSS，不包含 Git 历史、脚本、分析追踪、表单、远程资源、源白名单或构建元数据。
+
+The current release tools require a POSIX system. Before placing the files on any public host, follow [Static Mirror Deployment | 静态镜像部署](./STATIC_MIRROR_DEPLOYMENT.md); the repository is deployment-ready but does not claim that an external mirror is already live.
+
+当前发布工具要求 POSIX 系统。把文件放到任何公开托管服务之前，请遵循[静态镜像部署](./STATIC_MIRROR_DEPLOYMENT.md)；本仓库已经具备部署条件，但不声称外部镜像已经上线。
+
+## Licensing | 授权说明
+
+Original study guides and explanatory content are available under `CC BY-NC-SA 4.0`; repository scripts, tests, and workflow code use the MIT License. These licenses do not cover third-party Bible translations, published books, quotations, images, transcripts, or other material that Project Covenant contributors do not own. See [Licensing | 授权说明](./LICENSE.md) for the exact scope.
+
+原创研读指南和解释性内容采用 `CC BY-NC-SA 4.0`；仓库脚本、测试和工作流代码采用 MIT License。上述许可证不涵盖第三方圣经译本、已出版书籍、引文、图片、逐字稿或其他 Project Covenant 贡献者并不拥有权利的材料。准确范围见[授权说明](./LICENSE.md)。
 
 ## Contributing | 参与整理
 

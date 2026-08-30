@@ -621,7 +621,7 @@ class StaticSiteIntegrationTests(unittest.TestCase):
 
 
 class CurrentPublicationCorpusTests(unittest.TestCase):
-    def test_current_allowlist_builds_as_closed_76_page_site(self) -> None:
+    def test_current_allowlist_builds_as_closed_77_page_site(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             snapshot = root / "snapshot"
@@ -631,14 +631,14 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
 
             report = build_site(snapshot, digest, output)
 
-            self.assertEqual(76, report.page_count)
-            self.assertEqual(77, report.file_count)
+            self.assertEqual(77, report.page_count)
+            self.assertEqual(78, report.file_count)
             file_paths = {
                 path.relative_to(output).as_posix()
                 for path in output.rglob("*")
                 if path.is_file()
             }
-            self.assertEqual(76, sum(path.endswith(".html") for path in file_paths))
+            self.assertEqual(77, sum(path.endswith(".html") for path in file_paths))
             self.assertEqual(
                 {build_static_site.SITE_CSS_PATH},
                 {path for path in file_paths if path.endswith(".css")},
@@ -654,11 +654,11 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             ]
             # One source heading-shaped line is inside a fenced Markdown example.
             self.assertEqual(
-                2301,
+                2313,
                 sum(len(re.findall(r"<h[1-6](?: |>)", text)) for text in html_texts),
             )
             self.assertEqual(231, sum(text.count("<table>") for text in html_texts))
-            self.assertEqual(22, sum(text.count("<pre><code>") for text in html_texts))
+            self.assertEqual(24, sum(text.count("<pre><code>") for text in html_texts))
             self.assertGreaterEqual(sum(text.count("<a ") for text in html_texts), 1850)
 
             book_hub_output = "Book_Studies/index.html"
@@ -684,9 +684,33 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             home = (output / "index.html").read_text(encoding="utf-8")
             license_page = (output / "LICENSE.html").read_text(encoding="utf-8")
             self.assertIn('href="LICENSE.html">Licensing | 授权说明</a>', home)
+            self.assertIn(
+                'href="STATIC_MIRROR_DEPLOYMENT.html">Static Mirror Deployment / '
+                "静态镜像部署</a>",
+                home,
+            )
             self.assertIn("CC BY-NC-SA 4.0", license_page)
             self.assertIn("MIT License", license_page)
             self.assertIn("Material Not Relicensed Here | 本项目没有重新授权的材料", license_page)
+
+            mirror_page = (output / "STATIC_MIRROR_DEPLOYMENT.html").read_text(
+                encoding="utf-8"
+            )
+            self.assertIn('href="index.html">Back to Project Home | 返回项目首页</a>', mirror_page)
+            self.assertIn(
+                'href="PUBLICATION_POLICY.html"><code>PUBLICATION_POLICY.md</code></a>',
+                mirror_page,
+            )
+            self.assertIn("Content-Security-Policy", mirror_page)
+            self.assertIn("X-Content-Type-Options", mirror_page)
+            self.assertIn("Referrer-Policy", mirror_page)
+            self.assertIn("Permissions-Policy", mirror_page)
+            self.assertIn('href="#mainland-china-access-boundary"', mirror_page)
+            self.assertIn('id="mainland-china-access-boundary"', mirror_page)
+            self.assertIn(
+                "No external hosting provider, domain, account, or live mirror is configured",
+                mirror_page,
+            )
 
             evidence_index = (
                 output / "Bible_Timeline" / "史料与考古旁证索引.html"

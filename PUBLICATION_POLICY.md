@@ -83,9 +83,9 @@ The static-site builder consumes the immutable bytes returned by snapshot verifi
 
 静态站点构建器只使用快照验证返回的不可变字节，不会在验证后重新读取 Markdown 路径。它为每份获准 Markdown 生成一个 HTML 页面及一份本地样式表，再把完整输出与确定性重建结果逐字节比较。站点不会包含源白名单、完整性清单、校验和、脚本、测试、workflow、Git 数据或源摘要。
 
-Snapshot and site directories must be under the exclusive control of the trusted build job while they are checked. Do not verify in a shared writable directory or publish by recursively copying a directory that may have changed afterward; package or upload the just-built, just-verified files in the same trusted job. A filesystem verifier cannot prevent another process from changing a mutable directory after verification returns.
+Snapshot and site directories, the ZIP output parent, and the final archive path must be under the exclusive control of the trusted build job while they are checked. Do not verify in a shared writable directory or publish by recursively copying a directory that may have changed afterward. Upload the just-built, just-verified site files, or create the offline ZIP directly from the same verified snapshot and retained digest, in the same trusted job. A filesystem verifier cannot prevent another process from changing a mutable path after verification returns.
 
-快照与站点目录在检查期间必须由可信构建任务独占控制。不得在多方可写目录中验证，也不得递归复制可能在验证后已变化的目录进行发布；应在同一个可信任务中紧接着打包或上传刚构建、刚验证的文件。文件系统验证器无法阻止其他进程在验证返回后再修改一个可变目录。
+快照目录、站点目录、ZIP 输出父目录及最终压缩包路径在检查期间都必须由可信构建任务独占控制。不得在多方可写目录中验证，也不得递归复制可能在验证后已变化的目录进行发布。应在同一个可信任务中上传刚构建、刚验证的站点文件，或直接从同一份已验证快照及另行保存的摘要创建离线 ZIP。文件系统验证器无法阻止其他进程在验证返回后再修改一个可变路径。
 
 ```bash
 python3 scripts/build_static_site.py build \
@@ -97,11 +97,29 @@ python3 scripts/build_static_site.py verify \
   --snapshot /tmp/project-covenant-public \
   --expected-content-set-sha256 DIGEST_FROM_EXPORT \
   --input /tmp/project-covenant-site
+
+python3 scripts/package_offline_site.py create \
+  --snapshot /tmp/project-covenant-public \
+  --expected-content-set-sha256 DIGEST_FROM_EXPORT \
+  --output /tmp/project-covenant-offline.zip
+
+python3 scripts/package_offline_site.py verify \
+  --snapshot /tmp/project-covenant-public \
+  --expected-content-set-sha256 DIGEST_FROM_EXPORT \
+  --input /tmp/project-covenant-offline.zip
 ```
+
+The offline packager regenerates the expected static site directly from the verified snapshot and writes a deterministic, uncompressed ZIP with fixed paths, timestamps, and file modes. Verification requires the ZIP to match those expected bytes exactly, so added files, removed pages, changed HTML, path traversal entries, or altered metadata fail closed. Generate it outside the repository and distribute the printed SHA-256 digest through a trusted channel.
+
+离线打包器会直接从已验证快照重新生成预期静态站点，并写出路径、时间戳和文件模式均固定的确定性未压缩 ZIP。验证要求 ZIP 与预期字节完全一致，因此增加文件、删除页面、修改 HTML、路径穿越条目或改动元数据都会被拒绝。离线包必须在仓库外生成，并应通过可信渠道另行提供脚本输出的 SHA-256 摘要。
 
 These commands verify static files only. At deployment, separately require HTTPS and review response headers such as `Content-Security-Policy` with `frame-ancestors 'none'`, `X-Content-Type-Options: nosniff`, and `Referrer-Policy: no-referrer`; `frame-ancestors` cannot be enforced by an HTML meta tag. Do not describe hosting security as verified until the live response headers have been tested.
 
 以上命令只验证静态文件。部署时还必须单独要求 HTTPS，并复核响应头，例如带有 `frame-ancestors 'none'` 的 `Content-Security-Policy`、`X-Content-Type-Options: nosniff` 和 `Referrer-Policy: no-referrer`；HTML meta 标签无法强制执行 `frame-ancestors`。在实际响应头经过测试前，不得把托管安全写成已验证。
+
+The current export, build, package, and verification workflow is POSIX-only. For the provider-neutral deployment sequence and live acceptance boundary, see [Static Mirror Deployment | 静态镜像部署](./STATIC_MIRROR_DEPLOYMENT.md).
+
+当前的导出、构建、打包与验证流程仅支持 POSIX 系统。与托管商无关的部署顺序及线上验收边界见[静态镜像部署](./STATIC_MIRROR_DEPLOYMENT.md)。
 
 The clean snapshot removes Git history from the files being transferred; it does **not** anonymize the account that uploads it. An identity-minimized public release requires a reviewed neutral owner, a new non-fork repository, and one clean import made with neutral Git author **and committer** metadata. Do not mirror, fork, merge, or push this repository's existing history into that destination. After import, inspect both identities with `git log --format='%an <%ae> | %cn <%ce>'`, and push only from the neutral hosting account.
 
