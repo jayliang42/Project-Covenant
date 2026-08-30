@@ -7,6 +7,7 @@
 
 | I want to… | 我想… | Start with / 从这里开始 |
 | --- | --- | --- |
+| Start with a short, low-pressure route | 用短而轻松的路线第一次读圣经 | [First Steps in the Bible Story / 圣经故事线第一步](./Bible_Timeline/First_Steps_Bilingual.md) |
 | See the Bible’s whole storyline | 先看整本圣经的大故事 | [Bible Timeline Overview / 圣经时间线总览](./Bible_Timeline/Bible_Timeline_Bilingual.md) |
 | Read book by book | 按书卷串读 | [Bible by Book / 按书卷梳理圣经](./Bible_Timeline/Bible_By_Book_Bilingual.md) |
 | Follow a one-year plan | 用一年读完故事线 | [52-Week Storyline Plan / 52 周故事线计划](./Bible_Timeline/52周圣经故事线_查经与史料阅读计划.md) |
@@ -69,6 +70,7 @@ Project-Covenant/
 
 ### Bible Timeline | 圣经时间线
 
+- [First Steps in the Bible Story | 圣经故事线第一步](./Bible_Timeline/First_Steps_Bilingual.md)
 - [Research Hub | 研究导航](./Bible_Timeline/README.md)
 - [One-page Cheat Sheet | 一页式速查表](./Bible_Timeline/Bible_Timeline_Cheat_Sheet.md)
 - [Old Testament Timeline | 旧约时间线](./Bible_Timeline/Old_Testament_Timeline_Bilingual.md)

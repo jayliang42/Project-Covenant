@@ -1,6 +1,6 @@
 # Exact public website allowlist; one repository-relative file per line.
 # 未来网站精确发布白名单；每行一个仓库相对路径。
-# Reviewed | 复核日期: 2026-08-23
+# Reviewed | 复核日期: 2026-08-29
 # Inclusion means privacy and link review passed, not that full translation is complete.
 # 列入表示已通过隐私与链接复核，不代表全文翻译已经完成；语言状态以各导航页为准。
 
@@ -17,6 +17,7 @@ Bible_Timeline/66卷接收史深度审计_CAT_USE_COM_LEC_VER.md
 Bible_Timeline/Bible_By_Book_Bilingual.md
 Bible_Timeline/Bible_Timeline_Bilingual.md
 Bible_Timeline/Bible_Timeline_Cheat_Sheet.md
+Bible_Timeline/First_Steps_Bilingual.md
 Bible_Timeline/New_Testament_Timeline_Bilingual.md
 Bible_Timeline/Old_Testament_Timeline_Bilingual.md
 Bible_Timeline/README.md

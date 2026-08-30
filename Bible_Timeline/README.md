@@ -7,6 +7,7 @@
 
 | Goal | 入口 | Language status |
 | --- | --- | --- |
+| Start with 30 minutes or four gentle weeks<br>用 30 分钟或轻量四周开始 | [First Steps in the Bible Story / 圣经故事线第一步](./First_Steps_Bilingual.md) | Full bilingual<br>完整双语 |
 | Understand the whole story in one sitting<br>一次看懂大故事 | [Bible Timeline Overview / 圣经时间线总览](./Bible_Timeline_Bilingual.md) | Full bilingual<br>完整双语 |
 | See every book’s role<br>逐卷看承上启下 | [Bible by Book / 按书卷梳理圣经](./Bible_By_Book_Bilingual.md) | Full bilingual<br>完整双语 |
 | Study through a year<br>一年串读 | [52-Week Storyline Plan / 52 周故事线计划](./52周圣经故事线_查经与史料阅读计划.md) | Full bilingual<br>完整双语 |
