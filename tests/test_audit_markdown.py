@@ -11,12 +11,15 @@ from scripts.audit_markdown import (
     adjacent_latin_v1,
     audit_corpus_integrity,
     compare_bilingual_baseline,
+    extract_evidence_anchors,
+    extract_evidence_crosswalk_links,
     extract_h2_section,
     extract_numbered_entry_headings,
     extract_numbered_table_rows,
     parse_bilingual_baseline,
     public_markdown_counts,
     validate_book_selection,
+    validate_evidence_navigation,
     validate_numbered_entries,
 )
 from scripts.export_publication import MANIFEST_PATH
@@ -183,6 +186,37 @@ class CorpusIntegrityFunctionTests(unittest.TestCase):
         errors = validate_numbered_entries([(1, "First"), (3, "Third")], 3)
         self.assertEqual(1, len(errors))
         self.assertTrue(errors[0].startswith("evidence_entries_numbers_invalid"))
+
+    def test_evidence_navigation_requires_ordered_matching_deep_links(self) -> None:
+        index_text = (
+            '<a id="evidence-001"></a>\n\n### 1. First\n'
+            '<a id="evidence-002"></a>\n\n### 2. Second\n'
+        )
+        crosswalk_text = (
+            "| [1](./史料与考古旁证索引.md#evidence-001) | First |\n"
+            "| [2](./史料与考古旁证索引.md#evidence-002) | Second |\n"
+        )
+
+        anchors = extract_evidence_anchors(index_text)
+        links = extract_evidence_crosswalk_links(crosswalk_text)
+
+        self.assertEqual([1, 2], anchors)
+        self.assertEqual([(1, 1), (2, 2)], links)
+        self.assertEqual([], validate_evidence_navigation(anchors, links, 2))
+
+    def test_evidence_navigation_rejects_missing_and_misdirected_links(self) -> None:
+        errors = validate_evidence_navigation([1, 2], [(1, 2)], 2)
+
+        self.assertTrue(
+            any(error.startswith("evidence_crosswalk_numbers_invalid") for error in errors)
+        )
+        self.assertIn("evidence_crosswalk_targets_invalid:1->2", errors)
+        self.assertTrue(
+            any(
+                error.startswith("evidence_crosswalk_target_sequence_invalid")
+                for error in errors
+            )
+        )
 
 
 class CurrentCorpusIntegrityTests(unittest.TestCase):

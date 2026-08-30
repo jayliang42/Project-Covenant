@@ -48,10 +48,18 @@ BILINGUAL_BASELINE_SCHEMA = 1
 BILINGUAL_ALGORITHM = "adjacent-latin-v1"
 NUMBERED_TABLE_ROW = re.compile(r"^\|\s*(\d+)\s*\|\s*([^|]+?)\s*\|", re.MULTILINE)
 NUMBERED_ENTRY_HEADING = re.compile(r"^###\s+(\d+)\.\s+(.+?)\s*$", re.MULTILINE)
+EVIDENCE_ANCHOR = re.compile(
+    r'^<a id="evidence-(\d{3})"></a>$', re.MULTILINE
+)
+EVIDENCE_CROSSWALK_LINK = re.compile(
+    r"^\|\s*\[(\d+)\]\(\./史料与考古旁证索引\.md#evidence-(\d{3})\)\s*\|",
+    re.MULTILINE,
+)
 H2 = re.compile(r"^##\s+(.+?)\s*$", re.MULTILINE)
 CANONICAL_BOOKS_PATH = "Bible_Timeline/66卷承上启下总表.md"
 SELECTED_BOOKS_PATH = "Bible_Timeline/52卷圣经故事主线_精选与14卷桥接版.md"
 EVIDENCE_INDEX_PATH = "Bible_Timeline/史料与考古旁证索引.md"
+EVIDENCE_CROSSWALK_PATH = "Bible_Timeline/旁证锚点_52周与66卷对应表.md"
 
 
 class MarkdownAuditError(ValueError):
@@ -285,10 +293,64 @@ def validate_numbered_entries(
     return errors
 
 
+def extract_evidence_anchors(text: str) -> list[int]:
+    """Extract three-digit stable evidence anchors in document order."""
+
+    return [int(number) for number in EVIDENCE_ANCHOR.findall(text)]
+
+
+def extract_evidence_crosswalk_links(text: str) -> list[tuple[int, int]]:
+    """Extract displayed evidence numbers and their linked anchor numbers."""
+
+    return [
+        (int(displayed), int(target))
+        for displayed, target in EVIDENCE_CROSSWALK_LINK.findall(text)
+    ]
+
+
+def validate_evidence_navigation(
+    anchors: list[int], links: list[tuple[int, int]], expected_count: int = 205
+) -> list[str]:
+    """Require one stable anchor and one matching crosswalk link per entry."""
+
+    expected = list(range(1, expected_count + 1))
+    errors: list[str] = []
+    if anchors != expected:
+        errors.append(
+            f"evidence_anchor_sequence_invalid:expected=1..{expected_count}:found="
+            + ",".join(str(number) for number in anchors)
+        )
+    displayed = [number for number, _ in links]
+    targets = [target for _, target in links]
+    if displayed != expected:
+        errors.append(
+            f"evidence_crosswalk_numbers_invalid:expected=1..{expected_count}:found="
+            + ",".join(str(number) for number in displayed)
+        )
+    mismatches = [
+        f"{displayed_number}->{target_number}"
+        for displayed_number, target_number in links
+        if displayed_number != target_number
+    ]
+    if mismatches:
+        errors.append("evidence_crosswalk_targets_invalid:" + ",".join(mismatches))
+    if targets != expected:
+        errors.append(
+            f"evidence_crosswalk_target_sequence_invalid:expected=1..{expected_count}:found="
+            + ",".join(str(number) for number in targets)
+        )
+    return errors
+
+
 def audit_corpus_integrity(root: Path) -> list[str]:
     """Check the numbered Bible-book partition and evidence-entry sequence."""
 
-    corpus_paths = (CANONICAL_BOOKS_PATH, SELECTED_BOOKS_PATH, EVIDENCE_INDEX_PATH)
+    corpus_paths = (
+        CANONICAL_BOOKS_PATH,
+        SELECTED_BOOKS_PATH,
+        EVIDENCE_INDEX_PATH,
+        EVIDENCE_CROSSWALK_PATH,
+    )
     texts: dict[str, str] = {}
     errors: list[str] = []
     for relative in corpus_paths:
@@ -316,6 +378,18 @@ def audit_corpus_integrity(root: Path) -> list[str]:
 
     evidence_rows = extract_numbered_entry_headings(texts[EVIDENCE_INDEX_PATH])
     errors.extend(validate_numbered_entries(evidence_rows, 205))
+    crosswalk_section = extract_h2_section(
+        texts[EVIDENCE_CROSSWALK_PATH], "三、按 205 个锚点反查周次与书卷"
+    )
+    if crosswalk_section is None:
+        errors.append("evidence_crosswalk_section_missing")
+    else:
+        errors.extend(
+            validate_evidence_navigation(
+                extract_evidence_anchors(texts[EVIDENCE_INDEX_PATH]),
+                extract_evidence_crosswalk_links(crosswalk_section),
+            )
+        )
     return errors
 
 
