@@ -38,6 +38,13 @@
 - The snapshot does not anonymize the uploading account. An identity-minimized release needs a reviewed neutral owner and a new non-fork repository populated only from the clean snapshot.
 - Before committing, run `python3 -m unittest discover -s tests -v`, `python3 scripts/audit_markdown.py`, `python3 scripts/audit_publication.py`, `python3 scripts/audit_publication.py --history-content`, and `git diff --check`.
 
+### Licensing
+
+- Contributions to original written content are submitted under `CC BY-NC-SA 4.0`; contributions to scripts, tests, and workflow code are submitted under the MIT License described in [LICENSE.md](./LICENSE.md).
+- Contribute only material you created, material you have permission to license, or properly identified third-party material used under an applicable license or legal exception.
+- Do not imply that Project Covenant's licenses cover Bible translations, published books, quotations, images, transcripts, or linked works owned by others.
+- Preserve attribution, copyright, permission, and edition notes when revising a page.
+
 ## 中文
 
 ### 双语标准
@@ -75,3 +82,11 @@
 - 发布前必须人工查看 Markdown 的实际渲染结果。自动检查是必要防线，但无法证明所有可识别的个人细节都已清除。
 - 快照不会匿名化上传账号。若要尽量降低身份关联，需要经过复核的中性所有者，并把干净快照单独导入全新且非 fork 的仓库。
 - 提交前运行 `python3 -m unittest discover -s tests -v`、`python3 scripts/audit_markdown.py`、`python3 scripts/audit_publication.py`、`python3 scripts/audit_publication.py --history-content` 和 `git diff --check`。
+
+<a id="contributing-licensing-zh"></a>
+### 授权规则
+
+- 原创文字贡献按 `CC BY-NC-SA 4.0` 提交；脚本、测试和工作流代码按 [LICENSE.md](./LICENSE.md) 所说明的 MIT License 提交。
+- 只提交自己创作、有权授权，或已按适用许可证及法律例外明确标注的第三方材料。
+- 不得暗示 Project Covenant 的许可证涵盖他人拥有的圣经译本、已出版书籍、引文、图片、逐字稿或链接作品。
+- 修订页面时必须保留署名、版权、授权和版本说明。

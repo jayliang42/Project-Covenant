@@ -13,6 +13,10 @@
 > This library provides original reading guides, distilled core ideas, edition notes, and critical-reading indexes so that readers can understand each book and then return to the authorized original.
 >
 > 本资料库提供原创书籍导读、核心思想提炼、版本说明与批判性阅读索引，帮助读者理解各书，并回到正版原著继续阅读。
+>
+> Unless otherwise marked, the library's original commentary is shared under `CC BY-NC-SA 4.0`; this license never extends to the books, quotations, cover art, or other third-party material discussed here. See [Licensing | 授权说明](../LICENSE.md).
+>
+> 除非另有标注，本资料库的原创导读采用 `CC BY-NC-SA 4.0`；该许可证绝不延伸到所讨论的原书、引文、封面或其他第三方材料。详情见[授权说明](../LICENSE.md)。
 
 <a id="library-index"></a>
 ## Library Index and Recommendations | 图书馆总索引与推荐理由

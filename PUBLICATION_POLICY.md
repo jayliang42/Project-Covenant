@@ -34,6 +34,16 @@ Every tracked file is scanned for common personal identifiers, secrets, local pa
 
 所有 Git 跟踪文件都要扫描常见个人识别信息、密钥、本机路径、联系入口和自传性披露。自动检查是必要防线，不是匿名保证；审核者还必须查看公开页面的实际渲染结果，因为扫描器无法可靠重建每一种 Markdown 渲染，也无法可靠区分一般例证和可识别的个人故事。
 
+## Licensing Boundary | 授权边界
+
+Publication approval and reuse permission are separate questions. A page may pass the privacy allowlist while still containing quotations or other third-party material that Project Covenant cannot relicense. The repository's dual-license terms apply only to original material for which contributors hold the necessary rights; see [Licensing | 授权说明](./LICENSE.md).
+
+通过发布审核与获得再利用授权是两个不同问题。某个页面即使通过隐私白名单，仍可能包含 Project Covenant 无权重新授权的引文或其他第三方材料。仓库的双许可证只适用于贡献者确实拥有相应权利的原创材料；详见[授权说明](./LICENSE.md)。
+
+Before copying or adapting a page, users must preserve third-party notices and independently check the status of Bible translations, books, quotations, images, and linked resources. Inclusion in a public or offline package does not expand the rights granted by their original owners.
+<br>
+复制或改编页面前，使用者必须保留第三方权利说明，并自行核对圣经译本、书籍、引文、图片和链接资源的授权状态。材料被列入公开网站或离线包，并不会扩大原权利人授予的权利。
+
 Run these checks before publishing:
 
 发布前运行以下检查：

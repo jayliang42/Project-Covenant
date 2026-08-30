@@ -62,6 +62,7 @@ These instructions apply to the entire repository unless a deeper `AGENTS.md` ad
 - State what a source supports and what it cannot establish. Do not turn a correlation into proof of a miracle or doctrine.
 - Do not commit copyrighted full Bible versions, commercial books, raw sermon transcripts, private downloads, credentials, or personal identifiers.
 - Use official links and access instructions for copyrighted resources; preserve permission and version notes.
+- Apply `CC BY-NC-SA 4.0` only to original written content and the MIT License only to repository software. Never imply that either license covers third-party Bible translations, books, quotations, images, transcripts, or linked works.
 - Follow `PUBLICATION_POLICY.md`. Do not publish the maintainer's or a private participant's identity, contact route, personal history, immigration or asylum information, medical history, testimony, attendance history, or identifiable anecdote.
 - A church name may remain when relevant, but it must not be combined with a private person's role, address, contact details, care information, or participation history.
 - Treat transcripts, recordings, downloads, meeting links, and attachments as private source material. Publish only reviewed, non-identifying summaries.
@@ -76,6 +77,7 @@ These instructions apply to the entire repository unless a deeper `AGENTS.md` ad
 - 说明来源能够支持什么、不能建立什么；不能把对应关系扩大成神迹或教义的证明。
 - 不得提交受版权保护的整本译本、商业书籍、逐字讲道稿、私人下载文件、凭证或个人识别信息。
 - 对受版权保护的资源使用官方链接和获取说明，并保留授权与版本注记。
+- `CC BY-NC-SA 4.0` 只适用于原创文字，MIT License 只适用于仓库软件；不得暗示任一许可证涵盖第三方圣经译本、书籍、引文、图片、逐字稿或链接作品。
 - 遵守 `PUBLICATION_POLICY.md`。不得发布维护者或私人参与者的身份、联系入口、个人经历、移民或庇护信息、医疗经历、见证、出席记录或可识别轶事。
 - 教会名称与资料有关时可以保留，但不得与私人个人的职分、地址、联系方式、关怀信息或参与经历组合出现。
 - 逐字稿、录音录像、下载文件、会议链接和附件都视为私人来源；只发布经过复核、无法识别个人的总结。

@@ -917,6 +917,13 @@ def _page_html(page: _Page, page_map: dict[str, str]) -> bytes:
             f'<p><a href="{html.escape(policy_href, quote=True)}">'
             "Privacy and publication policy | 隐私与发布政策</a></p>"
         )
+    license_link = ""
+    if "LICENSE.md" in page_map:
+        license_href = _relative_href(page.output_path, page_map["LICENSE.md"])
+        license_link = (
+            f'<p><a href="{html.escape(license_href, quote=True)}">'
+            "Licensing | 授权说明</a></p>"
+        )
     csp = (
         "default-src 'none'; style-src 'self'; img-src 'none'; font-src 'none'; "
         "script-src 'none'; connect-src 'none'; object-src 'none'; frame-src 'none'; "
@@ -949,6 +956,7 @@ def _page_html(page: _Page, page_map: dict[str, str]) -> bytes:
 <div class="footer-inner">
 <p>No analytics, forms, comments, or remote assets. | 不使用分析追踪、表单、评论或远程资源。</p>
 {policy_link}
+{license_link}
 </div>
 </footer>
 </body>
