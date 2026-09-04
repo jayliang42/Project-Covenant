@@ -12,6 +12,10 @@
 | Nine conflict axes / 九条冲突轴 | [Open / 打开](#conflict-axes) |
 | How serious is a disagreement? / 分歧有多严重？ | [Open / 打开](#conflict-levels) |
 | Three worked examples / 三个比较示例 | [Open / 打开](#worked-examples) |
+| Abortion and reproductive ethics / 堕胎与生育伦理 | [Open / 打开](#abortion) |
+| LGBTQ, marriage, and ordination / LGBTQ、婚姻与按立 | [Open / 打开](#lgbtq) |
+| Transgender questions / 跨性别议题 | [Open / 打开](#transgender) |
+| Why progressive and conservative Christians clash / 进步与保守基督徒为何冲突 | [Open / 打开](#progressive-conflicts) |
 | Fair-comparison checklist / 公平比较清单 | [Open / 打开](#comparison-checklist) |
 | Sources / 来源 | [Open / 打开](#sources) |
 
@@ -76,6 +80,63 @@
 
 **English:** Christians may agree that faith has public consequences yet disagree over establishment, coercion, pluralism, protest, civil disobedience, economic structures, and party alliances. Criticizing Christian nationalism is not the same as demanding politically silent Christianity; supporting public Christian reasoning is not by itself Christian nationalism.<br>
 **中文：** 基督徒可能同意信仰具有公共后果，却在政教建制、强制、多元共存、抗议、公民不服从、经济结构与政党联盟上有分歧。批评基督教民族主义不等于要求基督教在政治上沉默；支持基督徒公开说明信仰理由，也不自动等于基督教民族主义。
+
+<a id="abortion"></a>
+## Abortion and Reproductive Ethics | 堕胎与生育伦理
+
+**English:** Four questions need separate answers: the moral status of prenatal life; whether a particular abortion is morally permissible; what civil law should permit or prohibit; and how a church supports people facing pregnancy or its aftermath. A person may regard abortion as morally troubling while opposing criminal prohibition. Another may support legal restrictions and extensive material support for pregnant people. Neither position can be inferred simply from a party label.<br>
+**中文：** 四个问题需要分别回答：出生前生命的道德地位；某次堕胎在道德上能否被允许；民事法律应允许或禁止什么；教会怎样支持面对怀孕及其后续处境的人。有人认为堕胎在道德上令人忧虑，却反对刑事禁止；也有人支持法律限制，同时主张为孕妇提供广泛物质支持。不能仅凭政党标签推断这些立场。
+
+**English:** A common anti-abortion argument connects human dignity in Genesis 1:27 with God's knowledge of life in the womb in Psalm 139:13–16 and Jeremiah 1:5. It reasons that vulnerable prenatal life deserves protection independently of wantedness or ability. A common pro-choice Christian argument emphasizes conscience, the pregnant person's dignity and agency, tragic conflicts between lives, and the limits of imposing one religious judgment through state power. Its advocates may also value prenatal life. These are summaries of arguments, not quotations or a single confession shared by every advocate.<br>
+**中文：** 常见反堕胎论证把《创世记》1:27 的人类尊严，与《诗篇》139:13–16、《耶利米书》1:5 中神认识腹中生命的表达联系起来，认为脆弱的出生前生命无论是否被期待、具有何种能力，都应获得保护。基督徒中支持选择权的常见论证强调良心、怀孕者的尊严与自主、生命之间的悲剧性冲突，以及国家强制某一宗教判断的界限；其支持者也可能珍视出生前生命。这些是论证概括，并非引文，也不是所有支持者共享的单一信条。
+
+**English:** The biblical passages require interpretation: Jeremiah concerns a prophet's calling and Psalm 139 is poetry; neither supplies a modern gestational timetable or a complete legal code. Exodus 21:22–25 is also debated because translations and interpreters differ over premature birth, miscarriage, and whose injury is in view. Readers should examine the textual dispute before treating that passage as a decisive modern abortion statute.<br>
+**中文：** 这些经文需要解释：《耶利米书》相关段落谈先知呼召，《诗篇》139 篇属于诗歌；两者都没有直接给出现代孕周划分或完整法律规范。《出埃及记》21:22–25 也存在争论，因为译本和解释者对早产、流产及伤害对象有不同理解。把它当作可以直接裁决现代堕胎法的条文之前，应先处理文本争议。
+
+**English:** Representative official positions, reviewed on 2026-09-04: the Catholic *Catechism* §§2270–2275 rejects direct abortion intended as an end or means. The Southern Baptist *Baptist Faith and Message 2000*, article XV, calls for protection of unborn life. PC(USA)'s reproductive-rights policy supports legal access and conscientious decision-making. The UMC's 2020/2024 Social Principles reject abortion as birth control or sex selection while accepting a legal option in specified tragic conflicts. This last example shows why “mainline” does not automatically mean unrestricted approval. Sources: [Catholic teaching](https://www.vatican.va/content/catechism/en/part_three/section_two/chapter_two/article_5/i_respect_for_human_life.html), [SBC confession](https://bfm.sbc.net/bfm2000/), [PC(USA) policy](https://pcusa.org/how-we-serve/justice-peace/reproductive-rights), [UMC Social Principles, section K](https://www.umc.org/en/content/social-principles-the-social-community).<br>
+**中文：** 截至 2026-09-04 复核的代表性正式立场：天主教《教理》2270–2275 条反对作为目的或手段而直接意图实施的堕胎；美南浸信会《浸信会信仰与信息 2000》第十五条要求保护未出生生命；PC(USA) 生育权政策支持合法获得服务及依良心作决定；UMC《2020/2024 社会原则》反对把堕胎当作避孕或性别选择手段，同时接受特定生命冲突中的合法选择。最后一个例子说明，“主流新教”不能自动理解为无条件赞成。来源见上述天主教教理、美南浸信会信仰告白、PC(USA) 政策及 UMC 社会原则 K 节链接。
+
+**English:** Difficult cases expose additional disagreements: threats to the pregnant person's life, rape, incest, fetal conditions, gestational limits, contraception, IVF embryos, and whether penalties should target providers or patients. Support for one exception does not establish support for every other exception. These are questions for comparing ethics and policy; the page offers no individual medical or legal recommendation.<br>
+**中文：** 困难情形会显出进一步分歧：怀孕者生命受到威胁、强奸、乱伦、胎儿状况、孕周限制、避孕、试管婴儿胚胎，以及处罚对象应是服务提供者还是患者。支持某种例外，不能推断为支持其他所有例外。这里列出的是伦理与政策比较问题，不提供个人医疗或法律建议。
+
+<a id="lgbtq"></a>
+## LGBTQ, Marriage, and Ordination | LGBTQ、婚姻与按立
+
+**English:** LGBTQ includes lesbian, gay, bisexual, transgender, and queer or questioning people. Sexual orientation and gender identity describe different things. “Welcoming” may mean access to worship and pastoral care; “affirming” often means recognizing same-sex relationships as morally legitimate. Ask separately about membership, communion, leadership, ordination, blessings, church weddings, and civil marriage rights. A welcome statement does not answer every institutional question.<br>
+**中文：** LGBTQ 包括女同性恋、男同性恋、双性恋、跨性别，以及酷儿或仍在探索自身认同的人；性取向与性别认同描述不同事情。“欢迎”可能指可以参加敬拜与接受牧养；“肯认”通常还包括认可同性伴侣关系的道德正当性。应分别核对会籍、领圣餐、领导岗位、按立、祝福、教会婚礼与民事婚姻权利；一份欢迎声明不能回答全部制度问题。
+
+**English:** Traditional sexual ethics generally connects Genesis 1–2 and Jesus' discussion of marriage in Matthew 19:4–6 with prohibitions in Leviticus 18:22 and 20:13, Romans 1:26–27, and 1 Corinthians 6:9–11. Its central claim is that sexual intimacy belongs within male–female marriage. Many advocates distinguish involuntary attraction from sexual behavior and call for celibacy outside that marriage. Their strongest objection to affirming readings is that those readings narrow prohibitions that they understand as general and grounded in creation.<br>
+**中文：** 传统性伦理通常把《创世记》1–2 章、耶稣在《马太福音》19:4–6 对婚姻的讨论，与《利未记》18:22、20:13、《罗马书》1:26–27、《哥林多前书》6:9–11 的禁令连起来；其核心主张是性亲密关系属于男女婚姻。许多支持者区分非自愿的吸引与性行为，并要求此类婚姻以外保持独身。他们对肯认式解释的主要反对是：对方把他们理解为普遍且根植于创造的禁令缩窄了。
+
+**English:** Affirming Christian arguments often ask whether ancient texts address the same relationships now under discussion: mutual, faithful, lifelong same-sex partnerships. Some emphasize exploitation, status inequality, idolatry, and ancient sexual practices; others argue from covenant fidelity, neighbor-love, spiritual fruit, and the inclusion of previously excluded people. Interpretations of the Greek terms in 1 Corinthians 6 remain disputed. Their strongest objection to traditional readings is that those readings extend ancient judgments to modern relationships without adequately establishing equivalence. This summarizes a range of readings, not a scholarly consensus that every prohibition concerns abuse alone.<br>
+**中文：** 肯认同性关系的基督徒常追问：古代经文针对的关系，是否等同于今天讨论的彼此同意、忠诚、终身的同性伴侣关系？一些解释强调剥削、地位不平等、偶像崇拜及古代性实践；另一些从圣约忠诚、爱邻舍、属灵果子与被排斥者获得接纳来论证。《哥林多前书》6 章相关希腊词的解释仍有争议。他们对传统解释的主要反对是：对方没有充分建立两类关系的对应，就把古代判断延伸到现代关系。这是多种解释的概括，不表示学界一致认为所有禁令都只针对虐待。
+
+**English:** The Catholic *Catechism* §§2357–2359 rejects same-sex sexual acts while requiring respect and opposition to unjust discrimination. The 2023 declaration *Fiducia supplicans* permits certain spontaneous, nonliturgical blessings of same-sex couples while maintaining the church's marriage doctrine. A pastoral blessing and a wedding therefore have different meanings in this policy. Sources: [Catechism](https://www.vatican.va/content/catechism/en/part_three/section_two/chapter_two/article_6/ii_the_vocation_to_chastity.html), [declaration](https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20231218_fiducia-supplicans_en.html).<br>
+**中文：** 天主教《教理》2357–2359 条反对同性性行为，同时要求尊重相关人士并反对不公正歧视。2023 年《恳求的信赖》声明允许特定的自发、非礼仪式同性伴侣祝福，同时维持教会婚姻教义。因此，在这项政策中，牧养祝福与婚礼具有不同含义。来源见上述《教理》与声明链接。
+
+**English:** The SBC's confession defines marriage as the union of one man and one woman. Within a contrasting institutional setting, the UMC's 2024 General Conference removed denominational bans concerning gay clergy and same-sex weddings. Clergy discretion and applicable regional rules still matter; permission does not mean every minister must officiate. The PC(USA)-hosted interpretive paper linked below explains another affirming trajectory, but its 2014 date means it should be read alongside the current constitution. Sources: [SBC article XVIII](https://bfm.sbc.net/bfm2000/), [current UMC explanation](https://www.umc.org/en/content/ask-the-umc-what-is-the-churchs-position-on-homosexuality), [PC(USA) interpretive paper](https://pcusa.org/resource/our-challenging-way-faithfulness-sex-ordination-and-marriage), [PC(USA) constitution](https://pcusa.org/about-pcusa/agencies-entities/life-witness/ministry-areas/constitutional-interpretation/constitution).<br>
+**中文：** 美南浸信会信仰告白把婚姻定义为一男一女的联合。另一种制度路径是：UMC 2024 年总议会撤除了有关同性恋圣职人员与同性婚礼的宗派禁令；牧者裁量及适用地区规则仍然重要，允许主持不等于要求每位牧者都主持。下方 PC(USA) 官网收录的阐释论文解释了另一条肯认路径，但该文写于 2014 年，需要配合现行教会法规阅读。来源见上述美南浸信会第十八条、UMC 当前说明、PC(USA) 阐释论文与章程链接。
+
+<a id="transgender"></a>
+## Transgender Questions | 跨性别议题
+
+**English:** Disagreement about same-sex marriage does not settle questions about transgender people. A comparison should separately ask about names and pronouns, participation and ordination, civil protection, adults' medical decisions, and care involving minors. Each involves different evidence and institutional responsibilities; LGBTQ is not a single policy proposal.<br>
+**中文：** 对同性婚姻的判断不能自动解决跨性别议题。比较时应分别讨论姓名与代词、参与教会及按立、公民保护、成年人的医疗决定，以及涉及未成年人的照护。这些问题需要不同证据，也涉及不同制度责任；LGBTQ 不是一项单一政策提案。
+
+**English:** Conservative theological arguments often treat sexually differentiated embodiment as a received part of creation that places limits on self-definition. Affirming arguments often emphasize the complexity of embodied experience, personal testimony, justice, and pastoral recognition. Both must explain how their interpretation leads to a particular practice. A church statement is evidence of its theology, not medical evidence for the effectiveness or risks of a treatment. The UMC's [current sexuality policy explanation](https://www.umc.org/en/content/ask-the-umc-what-is-the-churchs-position-on-homosexuality) and the SBC's [2025 gender and family resolution](https://www.sbc.net/resource-library/resolutions/on-restoring-moral-clarity-through-gods-designfor-gender-marriage-and-the-family/) illustrate contrasting institutional approaches; an SBC resolution expresses the convention meeting's position and does not legislate for every autonomous congregation.<br>
+**中文：** 保守神学论证常把具有性别差异的身体视为领受的创造秩序，认为它对自我定义构成界限；肯认式论证常强调身体经验的复杂性、当事人的表达、公义与牧养承认。双方都需要说明，自己的解释如何导向某项具体实践。教会声明可以证明其神学，却不是某种治疗有效性或风险的医学证据。UMC 的[当前性伦理政策说明](https://www.umc.org/en/content/ask-the-umc-what-is-the-churchs-position-on-homosexuality)与美南浸信会 [2025 年性别及家庭决议](https://www.sbc.net/resource-library/resolutions/on-restoring-moral-clarity-through-gods-designfor-gender-marriage-and-the-family/)显示不同制度取向；美南浸信会决议表达当届大会立场，并不为每间自治堂会立法。
+
+<a id="progressive-conflicts"></a>
+## Why Progressive and Conservative Christians Clash | 进步与保守基督徒为何冲突
+
+**English:** Much of the conflict concerns how Christian teaching can develop. Progressive interpreters often understand inclusion as a recovery of the gospel's implications through historical study and attention to excluded people's experience. Conservative interpreters often understand inherited norms as limits that cultural change cannot override. The dispute includes what counts as faithful correction, what counts as surrender to culture, and who has authority to decide. The [historical genealogy](./06_Why_Christian_Traditions_Emerged.md#progressive-christianity) explains the liberal, Social Gospel, and liberation streams behind some progressive approaches.<br>
+**中文：** 许多冲突涉及基督教教导怎样发展。进步取向的解释者常认为，通过历史研究与聆听被排斥者的经验，可以重新发现福音的包容意涵；保守取向的解释者常认为，传承下来的规范构成文化变化不能越过的界限。争论包含：什么算忠实纠正，什么算向文化妥协，以及谁有权决定。[历史谱系](./06_Why_Christian_Traditions_Emerged.md#progressive-christianity)解释了部分进步路径背后的自由主义、社会福音与解放神学脉络。
+
+**English:** Test both positions with substantive questions. For affirming arguments: what textual or doctrinal limits remain, and why do fidelity and consent justify this change rather than every proposed change? For traditional arguments: how is the ancient-to-modern application established, and what responsibility follows when a teaching or its enforcement harms people? Neither “love” nor “biblical” alone completes an argument. Regardless of disagreement, this guide rejects humiliation, threats, forced disclosure of sexuality, and pressure on readers to disclose pregnancy histories.<br>
+**中文：** 可以用实质问题检验双方。对于肯认式论证：还保留哪些文本与教义界限？为什么忠诚与同意能够支持这项改变，却不是所有可能的改变？对于传统论证：怎样建立古代经文到现代处境的适用关系？当教导或执行方式伤害人时，需要承担什么责任？单说“爱”或“合乎圣经”，都不能完成论证。无论立场如何，本导读反对羞辱、威胁、强迫公开性取向，以及逼迫读者透露怀孕经历。
+
+**English:** These issues should not be used to assign a complete theology to James Talarico or any individual. For his documented statements and their limits, use the [public-figure case study](./05_James_Talarico_as_a_Case_Study.md#public-theology). A congregation's policy and a person's political vote are separate pieces of evidence.<br>
+**中文：** 不应拿这些议题替 James Talarico 或任何个人推导整套神学。其有记录的表达与证据边界见[公众人物个案](./05_James_Talarico_as_a_Case_Study.md#public-theology)。堂会政策与个人政治投票是不同证据。
 
 <a id="comparison-checklist"></a>
 ## Fair-Comparison Checklist | 公平比较清单
