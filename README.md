@@ -108,6 +108,7 @@ Project-Covenant/
 
 - [Column Hub | 专栏导航](./Christian_Traditions/README.md)
 - [How to Name Christian Groups | 怎样给基督教群体命名](./Christian_Traditions/01_How_to_Name_the_Groups.md)
+- [Where Christian Traditions Disagree | 基督教传统在哪里有分歧](./Christian_Traditions/02_Where_Christians_Disagree.md)
 
 ## Research Boundaries | 研究边界
 

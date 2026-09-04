@@ -27,6 +27,7 @@
 | Read when you want to… / 你想了解…… | Guide / 导读 |
 | --- | --- |
 | Separate denomination, movement, theology, and political identity / 分清宗派、运动、神学与政治身份 | [How to Name the Groups / 怎样给这些群体命名](./01_How_to_Name_the_Groups.md) |
+| Compare the main areas of doctrinal and public-life disagreement / 比较主要教义与公共议题分歧 | [Where Christian Traditions Disagree / 基督教传统在哪里有分歧](./02_Where_Christians_Disagree.md) |
 
 <a id="reading-method"></a>
 ## A Four-Question Reading Method | 四问阅读法
