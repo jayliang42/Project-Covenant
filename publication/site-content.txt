@@ -1,6 +1,6 @@
 # Exact public website allowlist; one repository-relative file per line.
 # 未来网站精确发布白名单；每行一个仓库相对路径。
-# Reviewed | 复核日期: 2026-08-29
+# Reviewed | 复核日期: 2026-09-04
 # Inclusion means privacy and link review passed, not that full translation is complete.
 # 列入表示已通过隐私与链接复核，不代表全文翻译已经完成；语言状态以各导航页为准。
 
@@ -82,6 +82,7 @@ Christian_Traditions/02_Where_Christians_Disagree.md
 Christian_Traditions/03_US_Race_Ethnicity_and_Tradition.md
 Christian_Traditions/04_Chinese_and_Chinese_American_Churches.md
 Christian_Traditions/05_James_Talarico_as_a_Case_Study.md
+Christian_Traditions/06_Why_Christian_Traditions_Emerged.md
 Christian_Traditions/README.md
 LICENSE.md
 PUBLICATION_POLICY.md

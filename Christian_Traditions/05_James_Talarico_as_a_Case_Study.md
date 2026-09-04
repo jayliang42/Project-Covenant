@@ -9,6 +9,7 @@
 | Section / 章节 | Link / 跳转 |
 | --- | --- |
 | Why use a case study? / 为什么采用个案研究？ | [Open / 打开](#purpose) |
+| Where does this case sit in church history? / 这个个案位于哪条教会历史谱系？ | [Open / 打开](#historical-lineage) |
 | Verified background / 已核实的背景 | [Open / 打开](#verified-background) |
 | Four different kinds of labels / 四种不同性质的标签 | [Open / 打开](#label-layers) |
 | Public theology in his own record / 公开记录中的个人神学 | [Open / 打开](#public-theology) |
@@ -26,6 +27,15 @@
 
 **English:** A case study can document what one person and the institutions around him publicly say. It cannot make him representative of the Presbyterian Church (U.S.A.), every member of St. Andrew's, all progressive Christians, all Democrats, or Christians of any race.<br>
 **中文：** 个案研究可以记录一个人及其周围机构公开说过什么，却不能让他代表美国长老会（PC(USA)）、St. Andrew's 的所有成员、全部进步基督徒、全部民主党人，或任何族裔的基督徒。
+
+<a id="historical-lineage"></a>
+## Where This Case Sits in Church History | 这个个案位于哪条教会历史谱系
+
+**English:** The institutional line is **sixteenth-century Reformed Christianity → Scottish and Anglo-American Presbyterianism → multiple American Presbyterian divisions and reunions → the 1983 reunion that formed the PC(USA) → St. Andrew's as a local PC(USA) congregation**. “Progressive” enters at a different level: it is the local congregation's current theological and public-life self-description, not the name of a denomination created by the Reformation.<br>
+**中文：** 其制度谱系是：**十六世纪改革宗 → 苏格兰及英美长老会传统 → 美国长老会多次分裂与重组 → 1983 年联合成立的 PC(USA) → 作为 PC(USA) 地方堂会的 St. Andrew's**。“进步”则属于另一个层级：它是该地方堂会今天对自身神学与公共生活取向的描述，不是宗教改革时期成立的宗派名称。
+
+**English:** This lineage explains where the labels came from; it does not prove that Reformed theology mechanically produces Talarico's politics, or that every PC(USA) congregation shares St. Andrew's profile. Read the full [historical family tree](./06_Why_Christian_Traditions_Emerged.md#talarico-lineage) for the ancient divisions, Reformation branches, modern movements, racial history, and Chinese church pathways that surround this case.<br>
+**中文：** 这条谱系解释各标签从何而来，却不能证明改革宗神学必然产生 Talarico 的政治立场，也不能证明每间 PC(USA) 堂会都与 St. Andrew's 相同。完整的[历史谱系](./06_Why_Christian_Traditions_Emerged.md#talarico-lineage)还会说明古代分裂、宗教改革各支、现代运动、族裔历史与华人教会路径怎样构成这个个案的背景。
 
 <a id="verified-background"></a>
 ## Verified Background | 已核实的背景

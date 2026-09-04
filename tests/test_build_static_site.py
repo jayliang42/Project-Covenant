@@ -621,7 +621,7 @@ class StaticSiteIntegrationTests(unittest.TestCase):
 
 
 class CurrentPublicationCorpusTests(unittest.TestCase):
-    def test_current_allowlist_builds_as_closed_83_page_site(self) -> None:
+    def test_current_allowlist_builds_as_closed_84_page_site(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             snapshot = root / "snapshot"
@@ -631,14 +631,14 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
 
             report = build_site(snapshot, digest, output)
 
-            self.assertEqual(83, report.page_count)
-            self.assertEqual(84, report.file_count)
+            self.assertEqual(84, report.page_count)
+            self.assertEqual(85, report.file_count)
             file_paths = {
                 path.relative_to(output).as_posix()
                 for path in output.rglob("*")
                 if path.is_file()
             }
-            self.assertEqual(83, sum(path.endswith(".html") for path in file_paths))
+            self.assertEqual(84, sum(path.endswith(".html") for path in file_paths))
             self.assertEqual(
                 {build_static_site.SITE_CSS_PATH},
                 {path for path in file_paths if path.endswith(".css")},
@@ -654,10 +654,10 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             ]
             # One source heading-shaped line is inside a fenced Markdown example.
             self.assertEqual(
-                2387,
+                2417,
                 sum(len(re.findall(r"<h[1-6](?: |>)", text)) for text in html_texts),
             )
-            self.assertEqual(252, sum(text.count("<table>") for text in html_texts))
+            self.assertEqual(258, sum(text.count("<table>") for text in html_texts))
             self.assertEqual(24, sum(text.count("<pre><code>") for text in html_texts))
             self.assertGreaterEqual(sum(text.count("<a ") for text in html_texts), 1850)
 
@@ -677,6 +677,9 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             )
             self.assertIn(
                 'href="05_James_Talarico_as_a_Case_Study.html"', traditions_hub
+            )
+            self.assertIn(
+                'href="06_Why_Christian_Traditions_Emerged.html"', traditions_hub
             )
             terms_page = (output / terms_output).read_text(encoding="utf-8")
             self.assertIn('href="index.html#column-index"', terms_page)
@@ -702,6 +705,16 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             ).read_text(encoding="utf-8")
             self.assertIn('href="index.html#column-index"', talarico_page)
             self.assertIn("MATS &#x27;25", talarico_page)
+            self.assertIn(
+                'href="06_Why_Christian_Traditions_Emerged.html#talarico-lineage"',
+                talarico_page,
+            )
+            history_page = (
+                output / "Christian_Traditions/06_Why_Christian_Traditions_Emerged.html"
+            ).read_text(encoding="utf-8")
+            self.assertIn('href="index.html#column-index"', history_page)
+            self.assertIn("1054 Is a Symbolic Date", history_page)
+            self.assertIn("Not Four Parallel Denominations", history_page)
 
             book_hub_output = "Book_Studies/index.html"
             book_hub = (output / book_hub_output).read_text(encoding="utf-8")

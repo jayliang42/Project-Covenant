@@ -31,6 +31,7 @@
 | Read U.S. racial and ethnic percentages without confusing the denominator / 阅读美国族裔比例，避免混淆分母 | [U.S. Race, Ethnicity, and Christian Tradition / 美国族裔与基督教传统](./03_US_Race_Ethnicity_and_Tradition.md) |
 | Distinguish churches in mainland China from Chinese American churches / 区分中国大陆教会与美国华人教会 | [Chinese and Chinese American Churches / 中国大陆与美国华人教会](./04_Chinese_and_Chinese_American_Churches.md) |
 | Examine one public figure without making him represent a whole movement / 分析一位公众人物，不把他当作整个流派 | [James Talarico as a Case Study / James Talarico 个案研究](./05_James_Talarico_as_a_Case_Study.md) |
+| Understand why communions, denominations, and modern movements appeared / 理解教会共融体、宗派与现代运动为何出现 | [Why Christian Traditions Emerged / 基督教传统为何出现](./06_Why_Christian_Traditions_Emerged.md) |
 
 <a id="reading-method"></a>
 ## A Four-Question Reading Method | 四问阅读法
