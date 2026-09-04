@@ -66,6 +66,7 @@ NAVIGATION = (
     ("Bible_Timeline/史料与考古旁证索引.md", "Evidence | 旁证"),
     ("Bilingual_Notes/README.md", "Notes | 笔记"),
     ("Book_Studies/README.md", "Library | 图书馆"),
+    ("Christian_Traditions/README.md", "Traditions | 宗派"),
     ("Bible_Translations/README.md", "Translations | 译本"),
 )
 

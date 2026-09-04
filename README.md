@@ -14,6 +14,7 @@
 | Read ISV as an English learner | 用 ISV 辅助英语读经 | [ISV Access and ESL Guide / ISV 获取与 ESL 指南](./Bible_Translations/ISV_International_Standard_Version_Access_and_ESL_Guide.md) |
 | Find sermon and fellowship notes | 查找讲道与团契笔记 | [Notes Hub / 笔记中心](./Bilingual_Notes/README.md) |
 | Study Christian books carefully | 系统研读基督教书籍 | [Christian Book Studies / 基督教书籍研读](./Book_Studies/README.md) |
+| Compare denominations and theological movements | 比较宗派与神学运动 | [Christian Traditions and Public Theology / 基督教传统与公共神学](./Christian_Traditions/README.md) |
 | Explore history and archaeology carefully | 查看史料、考古与证据边界 | [Bible Timeline Research Hub / 时间线研究中心](./Bible_Timeline/README.md) |
 | Understand the public-content boundary | 了解公开内容边界 | [Privacy and Publication Policy / 隐私与发布政策](./PUBLICATION_POLICY.md) |
 | Prepare a GitHub-independent mirror | 准备可脱离 GitHub 的阅读镜像 | [Static Mirror Deployment / 静态镜像部署](./STATIC_MIRROR_DEPLOYMENT.md) |
@@ -60,6 +61,9 @@ Project-Covenant/
 ├── Book_Studies/
 │   ├── README.md              # Christian book-study hub | 基督教书籍研读导航
 │   └── *.md                   # Book guides and critical reading maps | 书籍导读与批判性阅读地图
+├── Christian_Traditions/
+│   ├── README.md              # Traditions and public-theology hub | 宗派与公共神学导航
+│   └── *.md                   # Comparison guides and demographic notes | 比较导读与人口资料
 ├── Bible_Translations/
 │   ├── README.md              # Translation-access hub | 圣经译本获取导航
 │   └── *.md                   # Access guides and reading profiles | 获取指南与阅读定位
@@ -99,6 +103,11 @@ Project-Covenant/
 - [Song of a Wanderer: An Eternal Call — Whole-Book Guide | 《游子吟：永恒在召唤》全书解读](./Book_Studies/游子吟_永恒在召唤_全书解读与阅读指南.md)
 - [Seek the Truth, Find the Way — Study Guide | 《求真寻道：约翰福音研经问答》使用指南](./Book_Studies/求真寻道_约翰福音研经问答_使用指南.md)
 - [Evidence That Demands a Verdict — Edition-Aware Whole-Book Guide | 《铁证待判》版本辨析与全书研读指南](./Book_Studies/铁证待判_版本辨析与全书研读指南.md)
+
+### Christian Traditions and Public Theology | 基督教传统与公共神学
+
+- [Column Hub | 专栏导航](./Christian_Traditions/README.md)
+- [How to Name Christian Groups | 怎样给基督教群体命名](./Christian_Traditions/01_How_to_Name_the_Groups.md)
 
 ## Research Boundaries | 研究边界
 
