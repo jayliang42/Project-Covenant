@@ -15,11 +15,14 @@
 - Separate event evidence, historical background, manuscripts, reception history, and theological interpretation.
 - State both what a source can support and what it cannot establish.
 - Do not turn an archaeological correlation, an ancient manuscript, or a later citation into automatic proof of an event, author, miracle, or doctrine.
+- For demographic claims, record the geography, field dates, sample, denominator, and material limitations. Do not infer an individual's beliefs from race or ethnicity.
+- For public figures, separate verified affiliation and education from congregation descriptions, self-descriptions, media labels, theological arguments, and policy positions.
 
 ### File structure
 
 - Put sermon and fellowship material in `Bilingual_Notes/` and update its chronological index.
 - Put Bible-wide guides, plans, evidence indexes, and research dossiers in `Bible_Timeline/`.
+- Put church-family, theological-movement, demographic, and public-theology comparisons in `Christian_Traditions/`, and link them from its hub.
 - Link new Bible Timeline material from `Bible_Timeline/README.md`; link major new entry points from the root `README.md`.
 - Preserve existing filenames unless a coordinated link update is part of the change.
 
@@ -61,11 +64,14 @@
 - 分开事件旁证、历史背景、抄本、接收史与神学解释。
 - 同时说明材料“能支持什么”与“不能证明什么”。
 - 不把考古对应、古代抄本或后期引文自动扩大成对事件、作者、神迹或教义的证明。
+- 涉及人口统计时，记录地理范围、调查时间、样本、分母与重要限制；不要从种族或族裔推断个人信仰。
+- 涉及公众人物时，分开已核实的组织隶属与教育经历、地方堂会自述、本人自述、媒体标签、神学论证与政策立场。
 
 ### 文件结构
 
 - 讲道与团契材料放入 `Bilingual_Notes/`，并更新其时间索引。
 - 整本圣经导读、计划、旁证索引和研究专题放入 `Bible_Timeline/`。
+- 教会传统、神学运动、人口统计与公共神学比较放入 `Christian_Traditions/`，并从其导航页链接。
 - 新增圣经时间线资料应从 `Bible_Timeline/README.md` 导航；重大新入口也应加入根目录 `README.md`。
 - 除非同步更新所有链接，否则保留现有文件名。
 

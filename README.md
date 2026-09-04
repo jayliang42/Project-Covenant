@@ -109,6 +109,9 @@ Project-Covenant/
 - [Column Hub | 专栏导航](./Christian_Traditions/README.md)
 - [How to Name Christian Groups | 怎样给基督教群体命名](./Christian_Traditions/01_How_to_Name_the_Groups.md)
 - [Where Christian Traditions Disagree | 基督教传统在哪里有分歧](./Christian_Traditions/02_Where_Christians_Disagree.md)
+- [U.S. Race, Ethnicity, and Christian Tradition | 美国族裔与基督教传统](./Christian_Traditions/03_US_Race_Ethnicity_and_Tradition.md)
+- [Chinese and Chinese American Churches | 中国大陆与美国华人教会](./Christian_Traditions/04_Chinese_and_Chinese_American_Churches.md)
+- [James Talarico as a Case Study | James Talarico 个案研究](./Christian_Traditions/05_James_Talarico_as_a_Case_Study.md)
 
 ## Research Boundaries | 研究边界
 

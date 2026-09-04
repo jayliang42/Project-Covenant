@@ -60,6 +60,9 @@ These instructions apply to the entire repository unless a deeper `AGENTS.md` ad
 
 - Distinguish biblical text, historical background, manuscripts, archaeology, reception history, and theological interpretation.
 - State what a source supports and what it cannot establish. Do not turn a correlation into proof of a miracle or doctrine.
+- In `Christian_Traditions/`, distinguish a communion or denomination, a cross-denominational movement, a theological approach, and a political identity; do not use those levels as synonyms.
+- Every demographic table must state its geography, field dates, sample, denominator, and material limits. Never infer an individual's doctrine or politics from race or ethnicity.
+- Treat a public figure as a documented case study, not as a representative sample of a denomination, race, or theological movement. Separate affiliation, congregation, self-description, media labels, public theology, and policy positions.
 - Do not commit copyrighted full Bible versions, commercial books, raw sermon transcripts, private downloads, credentials, or personal identifiers.
 - Use official links and access instructions for copyrighted resources; preserve permission and version notes.
 - Apply `CC BY-NC-SA 4.0` only to original written content and the MIT License only to repository software. Never imply that either license covers third-party Bible translations, books, quotations, images, transcripts, or linked works.
@@ -77,6 +80,9 @@ These instructions apply to the entire repository unless a deeper `AGENTS.md` ad
 
 - 区分圣经正文、历史背景、抄本、考古、接收史与神学解释。
 - 说明来源能够支持什么、不能建立什么；不能把对应关系扩大成神迹或教义的证明。
+- 在 `Christian_Traditions/` 中，要区分教会共融体或宗派、跨宗派运动、神学取向与政治身份；不得把这些层级当作同义词。
+- 每张人口统计表都必须写明地理范围、调查时间、样本、分母与重要限制；不得从种族或族裔推断个人的教义或政治立场。
+- 公众人物只能作为有资料支持的个案，不能当作某宗派、族裔或神学运动的代表性样本。必须分开组织隶属、地方堂会、本人自述、媒体标签、公共神学与政策立场。
 - 不得提交受版权保护的整本译本、商业书籍、逐字讲道稿、私人下载文件、凭证或个人识别信息。
 - 对受版权保护的资源使用官方链接和获取说明，并保留授权与版本注记。
 - `CC BY-NC-SA 4.0` 只适用于原创文字，MIT License 只适用于仓库软件；不得暗示任一许可证涵盖第三方圣经译本、书籍、引文、图片、逐字稿或链接作品。
