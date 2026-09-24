@@ -185,7 +185,7 @@ def _home_intro(output: str, page_map: dict[str, str]) -> str:
         href = html.escape(_href(output, page_map[hub]), quote=True)
         cards.append(f'<a class="collection-card" href="{href}"><span class="collection-number">{index:02d}</span><strong>{html.escape(label)}</strong><span class="collection-description">{html.escape(description)}</span></a>')
     return ('<div class="book-intro"><div class="eyebrow">A READING LIBRARY · 阅读资料库</div>'
-            '<h2>One story. Many ways to explore.<br>一条故事线，多种研读路径。</h2>'
+            '<div class="book-tagline">One story. Many ways to explore.<br>一条故事线，多种研读路径。</div>'
             '<p>Begin with a short guide, follow a reading plan, or return to a topic. English coverage varies by page; each guide retains its language and source notes.</p>'
             '<p>从短篇导读开始，跟随阅读计划，或回到感兴趣的专题。各页英文覆盖程度不同，原有语言状态与来源说明均予保留。</p>'
             + start + '</div><nav class="collection-grid" aria-label="Choose a collection | 选择栏目">' + "\n".join(cards) + '</nav>')
@@ -320,7 +320,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
 .anchor { display: block; position: relative; top: -5.5rem; visibility: hidden; }
 .book-intro { padding: .7rem 0 2.1rem; }
 .eyebrow { color: var(--accent); font-size: .7rem; letter-spacing: .15em; font-weight: 650; }
-.book-intro h2 { font-family: var(--serif); font-size: clamp(1.8rem, 3.2vw, 2.6rem); margin: 1rem 0; font-weight: 500; letter-spacing: -.025em; }
+.book-tagline { line-height: 1.45; font-family: var(--serif); font-size: clamp(1.8rem, 3.2vw, 2.6rem); margin: 1rem 0; font-weight: 500; letter-spacing: -.025em; }
 .book-intro p { color: var(--muted); font-size: .92rem; line-height: 1.8; max-width: 38rem; }
 .start-reading { display: inline-block; margin-top: 1rem; padding: .65rem 1.15rem; background: var(--accent); color: var(--surface); border-radius: .25rem; text-decoration: none; font-size: .9rem; font-weight: 600; }
 .collection-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; margin-bottom: 3rem; }
