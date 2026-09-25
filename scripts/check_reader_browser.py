@@ -14,6 +14,7 @@ from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from threading import Thread
+from time import monotonic, sleep
 from urllib.parse import quote, unquote, urljoin, urlsplit
 
 WIDTHS = (320, 390, 768, 1024, 1440)
@@ -98,6 +99,7 @@ def toggle_by_keyboard(page, selector: str) -> None:
 
 
 def click_navigation(page, selector: str) -> None:
+    print(f"browser_navigation={selector}", flush=True)
     link = page.locator(selector).first
     target = urljoin(page.url, link.get_attribute("href") or "")
     require(urlsplit(target).scheme in {"file", "http"}, "BROWSER_BAD_TEST_TARGET")
@@ -126,12 +128,16 @@ def interactions(page, home: str, output: Path, mode: str) -> None:
     page.locator("details.mobile-toc > summary").click()
     toc_link = page.locator("details.mobile-toc .reader-toc a").first
     fragment = toc_link.get_attribute("href") or ""
+    print("browser_interaction=toc", flush=True)
     toc_link.click()
-    page.wait_for_function("hash => location.hash === hash", arg=fragment)
+    page.wait_for_url(urljoin(original, fragment))
     require(page.evaluate("id => !!document.getElementById(id)", unquote(fragment[1:])),
             "BROWSER_TOC_TARGET_MISSING")
     click_navigation(page, ".reading-end a")
-    page.wait_for_function("scrollY < 300")
+    deadline = monotonic() + 5
+    while page.evaluate("scrollY") >= 300 and monotonic() < deadline:
+        sleep(0.05)
+    require(page.evaluate("scrollY") < 300, "BROWSER_BACK_TO_TOP_FAILED")
     page.goto(original, wait_until="load")
     page.screenshot(path=str(output / f"{mode}-mobile.png"))
 
@@ -219,6 +225,12 @@ def run(site: Path, output: Path) -> dict:
         result["request_errors"] = 0
         return result
     except Exception as error:
+        result["error_type"] = type(error).__name__
+        trace = error.__traceback__
+        while trace is not None:
+            if Path(trace.tb_frame.f_code.co_filename).name == Path(__file__).name:
+                result["failed_script_line"] = trace.tb_lineno
+            trace = trace.tb_next
         result["error_code"] = str(error) if isinstance(error, BrowserCheckError) else "BROWSER_RUNTIME_ERROR"
         raise BrowserCheckError(result["error_code"]) from None
     finally:
