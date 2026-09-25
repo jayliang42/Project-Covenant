@@ -50,8 +50,41 @@ jobs:
           python3 scripts/package_offline_site.py create --snapshot "$output_dir" --expected-content-set-sha256 "$digest" --output "$offline_zip"
           python3 scripts/package_offline_site.py verify --snapshot "$output_dir" --expected-content-set-sha256 "$digest" --input "$offline_zip"
 
+      - name: Install browser test dependencies
+        shell: bash
+        run: |
+          python3 -m venv "$RUNNER_TEMP/covenant-browser-venv"
+          "$RUNNER_TEMP/covenant-browser-venv/bin/pip" install 'playwright==1.57.0'
+          "$RUNNER_TEMP/covenant-browser-venv/bin/python" -m playwright install --with-deps chromium
+
+      - name: Check every reading page in Chromium
+        id: reader_browser
+        shell: bash
+        run: |
+          "$RUNNER_TEMP/covenant-browser-venv/bin/python" scripts/check_reader_browser.py \
+            --site "$RUNNER_TEMP/project-covenant-site" \
+            --output "$RUNNER_TEMP/covenant-browser-review"
+
+      - name: Upload browser review
+        if: ${{ !cancelled() && steps.reader_browser.outcome != 'skipped' }}
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: covenant-browser-review
+          path: ${{ runner.temp }}/covenant-browser-review
+          if-no-files-found: warn
+          retention-days: 7
+
       - name: Reject whitespace errors
         shell: bash
         run: |
           empty_tree="$(git hash-object -t tree /dev/null)"
           git diff --check "$empty_tree" HEAD
+
+      - name: Upload verified reading preview
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: covenant-reading-preview
+          path: ${{ runner.temp }}/project-covenant-offline.zip
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 0

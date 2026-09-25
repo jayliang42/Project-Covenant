@@ -23,12 +23,15 @@ from urllib.parse import quote, unquote, urlsplit
 if TYPE_CHECKING:
     from scripts import audit_publication as publication_audit
     from scripts import export_publication as publication_export
+    from scripts import site_reader
 elif __package__:
     from . import audit_publication as publication_audit
     from . import export_publication as publication_export
+    from . import site_reader
 else:
     import audit_publication as publication_audit
     import export_publication as publication_export
+    import site_reader
 
 
 SITE_FORMAT = "project-covenant-static-site/v1"
@@ -70,125 +73,7 @@ NAVIGATION = (
     ("Bible_Translations/README.md", "Translations | 译本"),
 )
 
-SITE_CSS = """\
-:root {
-  color-scheme: light dark;
-  --background: #f7f4ed;
-  --surface: #fffdf8;
-  --text: #25231f;
-  --muted: #625f58;
-  --line: #d8d1c4;
-  --accent: #7a2e23;
-  --accent-soft: #f1dfd7;
-  --code: #eee8dd;
-  --max: 76rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #171614;
-    --surface: #211f1c;
-    --text: #f1ede4;
-    --muted: #c2bbb0;
-    --line: #48433c;
-    --accent: #ef9d87;
-    --accent-soft: #3b2924;
-    --code: #302d28;
-  }
-}
-
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  background: var(--background);
-  color: var(--text);
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-size: 1.04rem;
-  line-height: 1.75;
-}
-a { color: var(--accent); text-underline-offset: 0.18em; }
-a:hover, a:focus-visible { text-decoration-thickness: 0.14em; }
-.skip-link {
-  position: absolute;
-  left: -9999px;
-  top: 0;
-}
-.skip-link:focus {
-  left: 1rem;
-  top: 1rem;
-  z-index: 10;
-  padding: 0.55rem 0.8rem;
-  background: var(--surface);
-  border: 2px solid var(--accent);
-}
-.site-header {
-  background: var(--surface);
-  border-bottom: 1px solid var(--line);
-}
-.header-inner, .content, .footer-inner {
-  width: min(calc(100% - 2rem), var(--max));
-  margin-inline: auto;
-}
-.header-inner { padding: 1rem 0 0.8rem; }
-.site-title { color: var(--text); font-weight: 750; text-decoration: none; }
-.site-nav { display: flex; flex-wrap: wrap; gap: 0.35rem 1rem; margin-top: 0.7rem; }
-.site-nav a { font-size: 0.92rem; }
-.content {
-  margin-block: 1.5rem 3rem;
-  padding: clamp(1rem, 3vw, 2.6rem);
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 0.7rem;
-  overflow-wrap: anywhere;
-}
-h1, h2, h3, h4, h5, h6 { line-height: 1.3; scroll-margin-top: 1rem; }
-h1 { font-size: clamp(2rem, 5vw, 3.15rem); margin-top: 0; }
-h2 { margin-top: 2.8rem; border-bottom: 1px solid var(--line); padding-bottom: 0.35rem; }
-h3 { margin-top: 2rem; }
-blockquote {
-  margin-inline: 0;
-  padding: 0.15rem 1rem;
-  border-left: 0.28rem solid var(--accent);
-  color: var(--muted);
-  background: var(--accent-soft);
-}
-code {
-  padding: 0.1em 0.3em;
-  border-radius: 0.25rem;
-  background: var(--code);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  font-size: 0.9em;
-}
-pre {
-  overflow-x: auto;
-  padding: 1rem;
-  border: 1px solid var(--line);
-  border-radius: 0.45rem;
-  background: var(--code);
-}
-pre code { padding: 0; background: transparent; }
-.table-scroll { overflow-x: auto; margin-block: 1.2rem; }
-table { width: 100%; border-collapse: collapse; min-width: 38rem; }
-th, td { padding: 0.55rem 0.7rem; border: 1px solid var(--line); vertical-align: top; }
-th { background: var(--accent-soft); text-align: left; }
-.align-right { text-align: right; }
-li + li { margin-top: 0.32rem; }
-.task-marker { display: inline-block; min-width: 1.35em; font-weight: 700; }
-hr { border: 0; border-top: 1px solid var(--line); margin-block: 2.3rem; }
-.anchor { display: block; position: relative; top: -0.5rem; visibility: hidden; }
-.site-footer { border-top: 1px solid var(--line); color: var(--muted); }
-.footer-inner { padding: 1.2rem 0 2rem; font-size: 0.9rem; }
-.footer-inner p { margin: 0.3rem 0; }
-
-@media (max-width: 42rem) {
-  body { font-size: 1rem; }
-  .content { width: 100%; margin-top: 0; border-inline: 0; border-radius: 0; }
-}
-""".encode(
-    "utf-8"
-)
+SITE_CSS = site_reader.SITE_CSS
 
 
 class SiteBuildError(RuntimeError):
@@ -903,67 +788,16 @@ def _nav_html(current_output: str, page_map: dict[str, str]) -> str:
     return "\n".join(links)
 
 
-def _page_html(page: _Page, page_map: dict[str, str]) -> bytes:
-    css_href = _relative_href(page.output_path, SITE_CSS_PATH)
-    home_output = page_map.get("README.md")
-    if home_output is None:
+def _page_html(
+    page: _Page, page_map: dict[str, str],
+    page_titles: dict[str, str] | None = None,
+) -> bytes:
+    if "README.md" not in page_map:
         raise SiteBuildError("SITE_ROOT_PAGE_MISSING")
-    home_href = _relative_href(page.output_path, home_output)
-    policy_link = ""
-    if "PUBLICATION_POLICY.md" in page_map:
-        policy_href = _relative_href(
-            page.output_path, page_map["PUBLICATION_POLICY.md"]
-        )
-        policy_link = (
-            f'<p><a href="{html.escape(policy_href, quote=True)}">'
-            "Privacy and publication policy | 隐私与发布政策</a></p>"
-        )
-    license_link = ""
-    if "LICENSE.md" in page_map:
-        license_href = _relative_href(page.output_path, page_map["LICENSE.md"])
-        license_link = (
-            f'<p><a href="{html.escape(license_href, quote=True)}">'
-            "Licensing | 授权说明</a></p>"
-        )
-    csp = (
-        "default-src 'none'; style-src 'self'; img-src 'none'; font-src 'none'; "
-        "script-src 'none'; connect-src 'none'; object-src 'none'; frame-src 'none'; "
-        "form-action 'none'; base-uri 'none'"
+    return site_reader.render_page(
+        page.source_path, page.output_path, page.title, page.body,
+        page_map, page_titles or {page.source_path: page.title}, SITE_CSS_PATH,
     )
-    document = f"""<!doctype html>
-<html lang="zh-Hans">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="referrer" content="no-referrer">
-<meta http-equiv="Content-Security-Policy" content="{csp}">
-<title>{html.escape(page.title)} · Project Covenant</title>
-<link rel="stylesheet" href="{html.escape(css_href, quote=True)}">
-</head>
-<body>
-<a class="skip-link" href="#main-content">Skip to content | 跳到正文</a>
-<header class="site-header">
-<div class="header-inner">
-<a class="site-title" href="{html.escape(home_href, quote=True)}">Project Covenant | 圣约计划</a>
-<nav class="site-nav" aria-label="Primary navigation | 主导航">
-{_nav_html(page.output_path, page_map)}
-</nav>
-</div>
-</header>
-<main id="main-content" class="content">
-{page.body}
-</main>
-<footer class="site-footer">
-<div class="footer-inner">
-<p>No analytics, forms, comments, or remote assets. | 不使用分析追踪、表单、评论或远程资源。</p>
-{policy_link}
-{license_link}
-</div>
-</footer>
-</body>
-</html>
-"""
-    return document.encode("utf-8")
 
 
 def _site_digest(files: dict[str, bytes]) -> str:
@@ -1021,9 +855,10 @@ def _load_expected_site(
             )
         )
 
+    page_titles = {page.source_path: page.title for page in pages}
     expected: dict[str, bytes] = {SITE_CSS_PATH: SITE_CSS}
     for page in pages:
-        expected[page.output_path] = _page_html(page, page_map)
+        expected[page.output_path] = _page_html(page, page_map, page_titles)
     if len(expected) > MAX_SITE_FILES:
         raise SiteBuildError("SITE_FILE_LIMIT_EXCEEDED")
     if any(len(data) > MAX_SITE_FILE_BYTES for data in expected.values()):
@@ -1041,10 +876,14 @@ ALLOWED_TAG_ATTRIBUTES: dict[str, set[str]] = {
     "title": set(),
     "link": {"rel", "href"},
     "body": set(),
-    "a": {"href", "id", "class", "rel", "referrerpolicy", "aria-hidden"},
+    "a": {"href", "id", "class", "rel", "referrerpolicy", "aria-hidden", "aria-current"},
     "header": {"class"},
     "nav": {"class", "aria-label"},
-    "main": {"id", "class"},
+    "main": {"id", "class", "tabindex"},
+    "aside": {"class"},
+    "article": {"class"},
+    "details": {"class"},
+    "summary": set(),
     "footer": {"class"},
     "div": {"class"},
     "p": set(),
