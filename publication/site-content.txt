@@ -15,6 +15,7 @@ Bible_Timeline/52周圣经故事线_精读通读双档打卡版.md
 Bible_Timeline/66卷承上启下总表.md
 Bible_Timeline/66卷接收史深度审计_CAT_USE_COM_LEC_VER.md
 Bible_Timeline/Bible_By_Book_Bilingual.md
+Bible_Timeline/Bible_Reading_Toolkit_Bilingual.md
 Bible_Timeline/Bible_Timeline_Bilingual.md
 Bible_Timeline/Bible_Timeline_Cheat_Sheet.md
 Bible_Timeline/First_Steps_Bilingual.md

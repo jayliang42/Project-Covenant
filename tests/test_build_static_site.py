@@ -631,14 +631,14 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
 
             report = build_site(snapshot, digest, output)
 
-            self.assertEqual(82, report.page_count)
-            self.assertEqual(105, report.file_count)
+            self.assertEqual(83, report.page_count)
+            self.assertEqual(106, report.file_count)
             file_paths = {
                 path.relative_to(output).as_posix()
                 for path in output.rglob("*")
                 if path.is_file()
             }
-            self.assertEqual(82, sum(path.endswith(".html") for path in file_paths))
+            self.assertEqual(83, sum(path.endswith(".html") for path in file_paths))
             self.assertEqual(
                 {build_static_site.SITE_CSS_PATH},
                 {path for path in file_paths if path.endswith(".css")},
@@ -654,10 +654,10 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             ]
             # One source heading-shaped line is inside a fenced Markdown example.
             self.assertEqual(
-                2312,
+                2351,
                 sum(len(re.findall(r"<h[1-6](?: |>)", text)) for text in html_texts),
             )
-            self.assertEqual(245, sum(text.count("<table>") for text in html_texts))
+            self.assertEqual(249, sum(text.count("<table>") for text in html_texts))
             self.assertEqual(24, sum(text.count("<pre><code>") for text in html_texts))
             self.assertGreaterEqual(sum(text.count("<a ") for text in html_texts), 1850)
 
@@ -708,7 +708,7 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
                     "00_研究总索引与路线图.md",
                 }
             ]
-            self.assertEqual(66, len(core_sources))
+            self.assertEqual(67, len(core_sources))
             for source_path in core_sources:
                 page = (output / source_path_to_output(source_path)).read_text(encoding="utf-8")
                 with self.subTest(core_page=source_path):

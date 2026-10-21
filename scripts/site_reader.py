@@ -29,6 +29,7 @@ STORY_ROUTE = (
     "Bible_Timeline/Old_Testament_Timeline_Bilingual.md",
     "Bible_Timeline/New_Testament_Timeline_Bilingual.md",
     "Bible_Timeline/Bible_By_Book_Bilingual.md",
+    "Bible_Timeline/Bible_Reading_Toolkit_Bilingual.md",
     "Bible_Timeline/52周圣经故事线_查经与史料阅读计划.md",
     "Bible_Timeline/Bible_Timeline_Cheat_Sheet.md",
 )
@@ -428,4 +429,29 @@ SITE_CSS += b"""
 .map-viewport:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 .study-map { display: block; min-width: 1100px; width: 100%; height: auto; max-width: none; }
 @media print { .study-map { min-width: 0; width: 100%; max-height: 240mm; object-fit: contain; } .map-viewport { overflow: visible; border: 0; break-inside: avoid; } .study-illustration { max-height: 100mm; } }
+"""
+
+# Readability batch 3: keep table words whole, show when a wide table can
+# scroll sideways, and balance short headings. CSS only; no script or remote asset.
+SITE_CSS += b"""
+:root { --scroll-shadow: rgba(41, 46, 41, .18); }
+@media (prefers-color-scheme: dark) { :root { --scroll-shadow: rgba(0, 0, 0, .55); } }
+th, td, th a, td a { overflow-wrap: break-word; word-break: normal; }
+td.align-right, th.align-right { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.table-scroll {
+  background:
+    linear-gradient(to right, var(--background) 30%, transparent) left center / 2.5rem 100% no-repeat local,
+    linear-gradient(to left, var(--background) 30%, transparent) right center / 2.5rem 100% no-repeat local,
+    radial-gradient(farthest-side at 0 50%, var(--scroll-shadow), transparent) left center / .85rem 100% no-repeat scroll,
+    radial-gradient(farthest-side at 100% 50%, var(--scroll-shadow), transparent) right center / .85rem 100% no-repeat scroll;
+}
+tbody tr:hover td { background: color-mix(in srgb, var(--accent-soft) 55%, transparent); }
+.reading-body h1, .reading-body h2, .reading-body h3 { text-wrap: balance; }
+.reading-body p, .reading-body li, blockquote { text-wrap: pretty; }
+@media (max-width: 50rem) {
+  table { font-size: .875rem; line-height: 1.7; }
+  th, td { padding: .6rem .65rem; }
+  blockquote { padding: .2rem .9rem; }
+}
+@media print { .table-scroll { background: none; } tbody tr:hover td { background: none; } }
 """

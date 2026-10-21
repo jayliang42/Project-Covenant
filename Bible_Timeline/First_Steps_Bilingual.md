@@ -29,8 +29,9 @@ The order is narrative, not a proportional timescale. Early date ranges are deba
 | [Before you begin](#before-you-begin) | [开始前](#before-you-begin) |
 | [30-minute first reading](#thirty-minute-route) | [30 分钟第一次阅读](#thirty-minute-route) |
 | [Four-week first steps](#four-week-route) | [前四周](#four-week-route) |
-| [Glossary: 51 words](../Glossary/README.md) | [51词词汇表](../Glossary/README.md) |
+| [Glossary: 66 words](../Glossary/README.md) | [66词词汇表](../Glossary/README.md) |
 | [Small glossary](#glossary) | [术语小表](#glossary) |
+| [Bible Reading Toolkit](./Bible_Reading_Toolkit_Bilingual.md) | [读经工具箱](./Bible_Reading_Toolkit_Bilingual.md) |
 | [What to read next](#next-steps) | [下一步读什么](#next-steps) |
 
 <a id="ten-stops"></a>
@@ -164,8 +165,8 @@ At [Pentecost](../Glossary/README.md#pentecost) in Acts 2, the [Holy Spirit](../
 Use a Bible you can legally access and understand. If you are learning English, try the Chinese text first, then one English paragraph. Reading in one language is also enough. If you want to try the International Standard Version, use the [ISV Access and ESL Guide](../Bible_Translations/ISV_International_Standard_Version_Access_and_ESL_Guide.md) to reach an authorized copy.<br>
 请使用可以合法取得、自己也读得懂的圣经。学习英语时，可以先读中文，再读一段对应英文。只读一种语言也可以。若想尝试 International Standard Version，可通过 [ISV 获取与 ESL 指南](../Bible_Translations/ISV_International_Standard_Version_Access_and_ESL_Guide.md)进入正版授权渠道。
 
-Read the passage before reading a study note. For each reading session, answer only the one core question provided. Mark unfamiliar words and continue; you can investigate them later.<br>
-每次先读经文，再读辅助说明。每个阅读时段只回答所列的一个核心问题。遇到不懂的词，先作记号并继续读，以后再查也可以。
+Read the passage before reading a study note. For each reading session, answer only the one core question provided. Mark unfamiliar words and continue; you can investigate them later. If a reference such as “John 3:16” or an abbreviation is unclear, use the [Bible Reading Toolkit](./Bible_Reading_Toolkit_Bilingual.md#reference).<br>
+每次先读经文，再读辅助说明。每个阅读时段只回答所列的一个核心问题。遇到不懂的词，先作记号并继续读，以后再查也可以。如果看不懂“约翰福音 3:16”这类出处或书卷缩写，可以查[读经工具箱](./Bible_Reading_Toolkit_Bilingual.md#reference)。
 
 This page does not ask you to sign in, submit answers, identify your church, or share personal experiences. Keep any notes privately unless you freely choose to discuss them with someone you trust.<br>
 本页不会要求你登录、提交答案、说明所属教会或分享个人经历。笔记可以只保存在自己手中；只有在你自愿并信任对方时，才需要与别人讨论。

@@ -13,6 +13,7 @@ First-use links follow the recommended beginner route and point to the page that
 - Jesus and response | 耶稣与回应: [Grace / 恩典](#grace) · [Repentance / 悔改](#repentance) · [Forgiveness / 赦免](#forgiveness) · [Salvation / 救恩](#salvation) · [Redemption / 救赎](#redemption) · [Messiah / 弥赛亚](#messiah) · [Christ / 基督](#christ) · [Gospel / 福音](#gospel) · [Gospels / 福音书](#gospels) · [Kingdom of God / 国度（神的国）](#kingdom) · [Holy Spirit / 圣灵](#holy-spirit)
 - People and worship | 群体与敬拜: [Disciple / 门徒](#disciple) · [Apostle / 使徒](#apostle) · [Church / 教会](#church) · [Gentile / 外邦人](#gentile) · [Israel / 以色列](#israel) · [Judah / 犹大](#judah) · [Prophet / 先知](#prophet) · [Priest / 祭司](#priest) · [Law or Torah / 律法](#law) · [Tabernacle / 会幕](#tabernacle) · [Temple / 圣殿](#temple) · [Sacrifice / 献祭](#sacrifice) · [Passover / 逾越节](#passover)
 - Journey and hope | 旅程与盼望: [Exodus / 出埃及](#exodus) · [Exile / 被掳](#exile) · [Return / 归回](#return) · [Resurrection / 复活](#resurrection) · [Parable / 比喻](#parable) · [Psalm / 诗篇](#psalm) · [Wisdom / 智慧](#wisdom) · [Canon / 正典](#canon) · [Pentecost / 五旬节](#pentecost) · [New creation / 新创造](#new-creation)
+- Prayer and church life | 祷告与教会生活: [Prayer / 祷告](#prayer) · [Worship / 敬拜](#worship) · [Baptism / 洗礼](#baptism) · [Lord’s Supper / 圣餐](#lords-supper) · [Cross / 十字架](#cross) · [Holiness / 圣洁](#holiness) · [Righteousness / 义](#righteousness) · [Mercy / 怜悯](#mercy) · [Sabbath / 安息日](#sabbath) · [Lord / 主](#lord) · [Amen / 阿们](#amen) · [Hallelujah / 哈利路亚](#hallelujah) · [Pharisee / 法利赛人](#pharisee) · [Epistle / 书信](#epistle) · [Apocalyptic / 启示文学](#apocalyptic)
 
 - Further study | 继续研读: [Trinity / 三一／三位一体](#trinity) · [Incarnation / 道成肉身](#incarnation) · [Atonement / 赎罪](#atonement) · [Justification / 称义](#justification) · [Manuscript / 抄本](#manuscript) · [Reception history / 接收史](#reception-history) · [Septuagint / 七十士译本](#septuagint)
 
@@ -380,6 +381,129 @@ God’s final renewal, with evil and death overcome and God dwelling with his pe
 
 [First use in First Steps | 入门路线首次使用](../Bible_Timeline/First_Steps_Bilingual.md#stop-new-creation)
 
+
+<a id="terms-43"></a>
+## Prayer and Church Life | 祷告与教会生活
+
+<a id="prayer"></a>
+### Prayer | 祷告
+
+Speaking with God: praising, thanking, confessing, asking, and listening. Jesus taught his followers a model prayer, often called the Lord’s Prayer (Matthew 6:9–13).<br>
+与神说话，包括赞美、感谢、认罪、祈求和聆听。耶稣教门徒一篇范例祷告，常称为“主祷文”（马太福音 6:9–13）。
+
+[Read more | 延伸阅读](../Bilingual_Notes/2026-05-17_Sunday_Growth_Through_Prayer.md)
+
+<a id="worship"></a>
+### Worship | 敬拜
+
+Honoring God as God. It includes gathered praise, prayer, and hearing Scripture, and it also includes everyday trust and obedience.<br>
+尊荣神为神。它包括聚会中的赞美、祷告和聆听圣经，也包括日常生活中的信靠与顺服。
+
+[Read more | 延伸阅读](../Bilingual_Notes/2025-11-02_Sunday_Worship_and_Sacrifice.md)
+
+<a id="baptism"></a>
+### Baptism | 洗礼
+
+A washing with water that marks a person’s entry into the community of Jesus’ followers. Churches differ on whether infants are baptized and on how water is used.<br>
+用水施行的礼仪，标志一个人加入跟随耶稣的群体。各教会在是否为婴儿施洗，以及用水的方式上看法不同。
+
+[Related stop in First Steps | 入门路线相关站点](../Bible_Timeline/First_Steps_Bilingual.md#stop-church)
+
+<a id="lords-supper"></a>
+### Lord’s Supper | 圣餐
+
+A shared meal of bread and cup that remembers Jesus’ death until he comes (1 Corinthians 11:23–26). It is also called Communion or the Eucharist, and traditions explain Christ’s presence in it differently.<br>
+以饼和杯共同领受的记念，纪念耶稣的死，直等到祂来（哥林多前书 11:23–26）。它也称为“圣餐礼”或“感恩祭”；各传统对基督在其中如何同在的理解不同。
+
+[Related stop in First Steps | 入门路线相关站点](../Bible_Timeline/First_Steps_Bilingual.md#stop-church)
+
+<a id="cross"></a>
+### Cross | 十字架
+
+A Roman method of execution, used for Jesus’ death. Christians see the cross as the place where God’s love meets human sin; see also [atonement](#atonement).<br>
+罗马人的一种处决刑具，耶稣就死在十字架上。基督徒视十字架为神的爱与人的罪相遇之处；另见[赎罪](#atonement)。
+
+[Related stop in First Steps | 入门路线相关站点](../Bible_Timeline/First_Steps_Bilingual.md#stop-jesus)
+
+<a id="holiness"></a>
+### Holiness | 圣洁
+
+Being set apart for God. It describes God’s own purity and difference from everything else, and his people are called to reflect it in how they live.<br>
+被分别出来归给神。这个词描述神自己的纯洁与超越，神的子民也蒙召在生活中反映这种圣洁。
+
+[Read more | 延伸阅读](../Bible_Timeline/Bible_Reading_Toolkit_Bilingual.md#genre-law)
+
+<a id="righteousness"></a>
+### Righteousness | 义
+
+Being in right relationship with God and acting rightly toward others, as God defines what is right. Paul also uses the word for God’s faithful action to put people right; see [justification](#justification).<br>
+按神所定义的“正确”，与神有正确的关系，并以正直对待他人。保罗也用这个词表达神使人与祂和好的信实作为；另见[称义](#justification)。
+
+[Related stop in First Steps | 入门路线相关站点](../Bible_Timeline/First_Steps_Bilingual.md#stop-jesus)
+
+<a id="mercy"></a>
+### Mercy | 怜悯
+
+Compassion shown to people who are suffering or in the wrong. [Grace](#grace) stresses a free gift; mercy stresses pity that relieves misery.<br>
+向受苦或犯错的人显出的同情。[恩典](#grace)强调白白的赐予；怜悯强调体恤并解除苦难。
+
+[Related stop in First Steps | 入门路线相关站点](../Bible_Timeline/First_Steps_Bilingual.md#stop-jesus)
+
+<a id="sabbath"></a>
+### Sabbath | 安息日
+
+The seventh day of rest in Israel’s law (Exodus 20:8–11). Most Christians gather on Sunday, the Lord’s Day, to remember the resurrection; some keep Saturday.<br>
+以色列律法中第七日的休息（出埃及记 20:8–11）。多数基督徒在星期日、即“主日”聚会，记念复活；也有些基督徒守星期六。
+
+[Read more | 延伸阅读](../Bilingual_Notes/2026-02-15_Sunday_Rest_and_Peace_in_Christ.md)
+
+<a id="lord"></a>
+### Lord | 主
+
+A title meaning master. Early Christians confessed “Jesus is Lord” (Romans 10:9). In many English Bibles, LORD in capitals stands for God’s personal name.<br>
+意为“主人”的称号。早期基督徒宣认“耶稣是主”（罗马书 10:9）。在许多英文圣经中，大写的 LORD 代表神的名字。
+
+[Read more | 延伸阅读](../Bible_Timeline/Bible_Reading_Toolkit_Bilingual.md#faq-lord)
+
+<a id="amen"></a>
+### Amen | 阿们
+
+A Hebrew word meaning “it is true” or “so be it,” said to agree with a prayer or a truth.<br>
+希伯来词，意思是“诚然如此”或“愿是这样”，用来认同一个祷告或一项真理。
+
+[Read more | 延伸阅读](../Bible_Timeline/Bible_Reading_Toolkit_Bilingual.md#four-questions)
+
+<a id="hallelujah"></a>
+### Hallelujah | 哈利路亚
+
+A Hebrew call meaning “praise the LORD.” It appears often in the last psalms (Psalms 146–150).<br>
+希伯来语的呼召，意思是“你们要赞美耶和华”，常见于最后几篇诗篇（诗篇 146–150 篇）。
+
+[Read more | 延伸阅读](../Bible_Timeline/Bible_Reading_Toolkit_Bilingual.md#genre-poetry)
+
+<a id="pharisee"></a>
+### Pharisee | 法利赛人
+
+A member of a Jewish group in Jesus’ day devoted to careful keeping of the law. The Gospels record sharp debates with Jesus, but Pharisees were not all alike, and Paul had been one (Philippians 3:5).<br>
+耶稣时代的犹太群体成员，热心谨守律法。福音书记载了他们与耶稣的激烈辩论，但法利赛人并非千人一面，保罗从前也是法利赛人（腓立比书 3:5）。
+
+[Read more | 延伸阅读](../Bible_Timeline/两约之间至四福音_第二圣殿与罗马背景.md)
+
+<a id="epistle"></a>
+### Epistle | 书信
+
+A formal word for a letter. Twenty-one New Testament books, Romans through Jude, are letters to churches or individuals.<br>
+“书信”的正式说法。新约中从罗马书到犹大书共 21 卷，都是写给教会或个人的信。
+
+[Read more | 延伸阅读](../Bible_Timeline/Bible_Reading_Toolkit_Bilingual.md#genre-letters)
+
+<a id="apocalyptic"></a>
+### Apocalyptic | 启示文学
+
+A kind of writing that uses visions and symbols to reveal God’s rule over history, as in parts of Daniel and the book of Revelation.<br>
+借异象和象征揭示神掌管历史的文体，见于但以理书的部分章节和启示录。
+
+[Read more | 延伸阅读](../Bible_Timeline/Bible_Reading_Toolkit_Bilingual.md#genre-apocalyptic)
 
 <a id="further-study-terms"></a>
 ## Further Study | 继续研读
