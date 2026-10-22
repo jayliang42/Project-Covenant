@@ -5,8 +5,8 @@
 <a id="in-three-sentences"></a>
 > **In Three Sentences | 三句话读懂本篇**
 >
-> A later community can name, quote, explain, publicly read, or translate a biblical book. These are different kinds of evidence about its reception. This audit records what each source actually shows and where deeper research is still needed.<br>
-> 后来的群体可能列出、引用、解释、公开宣读或翻译某卷[圣经](../Glossary/README.md#bible)。这些是不同层次的[接收史](../Glossary/README.md#reception-history)证据。本审计记录来源实际显示什么，以及哪里仍需深入研究。
+> After a biblical book was written, later communities listed it, quoted it, explained it, read it aloud in worship, and translated it. Each of these is a different kind of evidence that the book was received. This page records, book by book, what each source actually shows and where more research is needed.<br>
+> 一卷[圣经](../Glossary/README.md#bible)书写成之后，后来的群体会把它列入书目、引用它、解释它、在敬拜中宣读它，并翻译它。这些都是这卷书被接受的证据，但种类各不相同（见[接收史](../Glossary/README.md#reception-history)）。本页逐卷记录每个来源实际说明了什么，以及哪里还需要更多研究。
 
 ![Three readers of different ages, each holding an open book, beneath a lamp / 三位年龄不同的读者在灯下各捧着一本打开的书](../assets/art/reading-generations.svg)
 
