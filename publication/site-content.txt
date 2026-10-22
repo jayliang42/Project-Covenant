@@ -23,6 +23,7 @@ Bible_Timeline/Bible_Timeline_Cheat_Sheet.md
 Bible_Timeline/Feasts_of_the_Bible_Bilingual.md
 Bible_Timeline/First_Steps_Bilingual.md
 Bible_Timeline/Key_Passages_Bilingual.md
+Bible_Timeline/Miracles_of_Jesus_Bilingual.md
 Bible_Timeline/New_Testament_Timeline_Bilingual.md
 Bible_Timeline/Old_Testament_Timeline_Bilingual.md
 Bible_Timeline/Parables_of_Jesus_Bilingual.md
@@ -136,6 +137,7 @@ assets/art/lamp-path.svg
 assets/art/letter.svg
 assets/art/lilies-birds.svg
 assets/art/lions-den.svg
+assets/art/loaves-fish.svg
 assets/art/lost-sheep.svg
 assets/art/lowly-valley.svg
 assets/art/lyre-dawn.svg

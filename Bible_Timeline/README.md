@@ -22,6 +22,7 @@
 | Learn to pray from the prayers in Scripture<br>从圣经中的祷告学习祷告 | [Prayers in the Bible / 圣经中的祷告](./Prayers_in_the_Bible_Bilingual.md) | Full bilingual<br>完整双语 |
 | Find a psalm for what you are going through<br>为当下的处境找一篇诗篇 | [Psalms for Different Times / 不同处境中的诗篇](./Psalms_for_Different_Times_Bilingual.md) | Full bilingual<br>完整双语 |
 | Learn Israel’s feasts and how they connect to Jesus<br>认识以色列的节期及其与耶稣的关联 | [Feasts of the Bible / 圣经中的节期](./Feasts_of_the_Bible_Bilingual.md) | Full bilingual<br>完整双语 |
+| Read the miracles the Gospels report<br>读福音书记载的神迹 | [Miracles of Jesus / 耶稣的神迹](./Miracles_of_Jesus_Bilingual.md) | Full bilingual<br>完整双语 |
 | Understand the whole story in one sitting<br>一次看懂大故事 | [Bible Timeline Overview / 圣经时间线总览](./Bible_Timeline_Bilingual.md) | Full bilingual<br>完整双语 |
 | See every book’s role<br>逐卷看承上启下 | [Bible by Book / 按书卷梳理圣经](./Bible_By_Book_Bilingual.md) | Full bilingual<br>完整双语 |
 | Study through a year<br>一年串读 | [52-Week Storyline Plan / 52 周故事线计划](./52周圣经故事线_查经与史料阅读计划.md) | Full bilingual<br>完整双语 |
@@ -37,6 +38,7 @@
 - [Covenants of the Bible | 圣经中的约](./Bible_Covenants_Bilingual.md)
 - [Feasts of the Bible | 圣经中的节期](./Feasts_of_the_Bible_Bilingual.md)
 - [Parables of Jesus | 耶稣的比喻](./Parables_of_Jesus_Bilingual.md)
+- [Miracles of Jesus | 耶稣的神迹](./Miracles_of_Jesus_Bilingual.md)
 - [Key Passages to Know | 值得熟悉的经文](./Key_Passages_Bilingual.md)
 - [Prayers in the Bible | 圣经中的祷告](./Prayers_in_the_Bible_Bilingual.md)
 - [Psalms for Different Times | 不同处境中的诗篇](./Psalms_for_Different_Times_Bilingual.md)

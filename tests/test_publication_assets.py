@@ -28,7 +28,7 @@ class AssetBoundaryTests(unittest.TestCase):
             validate_asset(path.relative_to(ROOT).as_posix(), path.read_bytes())
 
     def test_original_art_regenerates_exactly_and_passes_the_svg_boundary(self) -> None:
-        self.assertEqual(84, len(generate_art.ARTWORKS))
+        self.assertEqual(85, len(generate_art.ARTWORKS))
         committed = sorted(path.name for path in (ROOT / "assets/art").glob("*.svg"))
         self.assertEqual(sorted(generate_art.ARTWORKS), committed)
         for name, builder in generate_art.ARTWORKS.items():

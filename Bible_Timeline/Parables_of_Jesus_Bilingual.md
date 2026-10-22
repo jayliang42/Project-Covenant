@@ -222,6 +222,8 @@ When the Son of Man comes as king, he separates people as a shepherd separates s
   **读一卷福音书：** 马可福音是最短的福音书，用一两次读完，就能看出这些比喻在耶稣事工中的位置。
 - **Study the Sermon on the Mount | 研读登山宝训：** The [teaching notes on Matthew 5–7](../Bilingual_Notes/README.md#sermon-on-the-mount) follow Jesus’ teaching section by section.
   **研读登山宝训：** [马太福音 5–7 章的讲道笔记](../Bilingual_Notes/README.md#sermon-on-the-mount)按段落跟随耶稣的教导。
+- **Read the miracles | 读神迹：** [Miracles of Jesus](./Miracles_of_Jesus_Bilingual.md) introduces twenty miracles the Gospels report alongside these stories.
+  **读神迹：** [耶稣的神迹](./Miracles_of_Jesus_Bilingual.md)介绍福音书在这些故事之外记载的二十个神迹。
 - **Meet the people | 认识人物：** [People of the Bible](./Bible_People_Bilingual.md) introduces Jesus and his first followers.
   **认识人物：** [圣经人物](./Bible_People_Bilingual.md)介绍耶稣和最早跟随祂的人。
 

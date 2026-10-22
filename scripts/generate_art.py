@@ -2009,6 +2009,30 @@ def booths_harvest() -> ET.Element:
     return root
 
 
+def loaves_fish() -> ET.Element:
+    root = scene("loaves-fish", "Five loaves and two fish | 五饼二鱼",
+                 "On green grass by a lake, a woven basket holds five round loaves and two small fish. | "
+                 "湖边的青草地上，一只编织篮里放着五个圆饼和两条小鱼。", "#e4eef0")
+    el(root, "path", d=path([(0, 200)] + wave(0, 800, 196, 4, 260) + [(800, 240), (0, 240)]), fill="#7fb7c4")
+    el(root, "path", d="M0 230 C 200 210, 520 236, 800 214 L800 450 L0 450 Z", fill="#8fb46e")
+    for x, y in [(80, 300), (150, 410), (640, 290), (720, 400), (560, 420)]:
+        el(root, "path", d=f"M{x} {y} l-6 -16 m6 16 l0 -18 m0 18 l6 -16", fill="none", stroke="#4f7d45", stroke_width=3, stroke_linecap="round")
+    el(root, "path", d="M240 300 C 240 400, 560 400, 560 300 Z", fill="#b5793f")
+    for i in range(6):
+        y = 312 + i * 13
+        el(root, "path", d=f"M{246 + i * 6} {y} C {320} {y + 8}, {480} {y + 8}, {554 - i * 6} {y}", fill="none", stroke="#8f5c2f", stroke_width=2)
+    el(root, "path", d="M232 300 L568 300 L560 314 L240 314 Z", fill="#9b6634")
+    for x, y in [(300, 288), (360, 280), (420, 284), (480, 290), (390, 262)]:
+        el(root, "ellipse" if False else "circle", cx=x, cy=y, r=30, fill="#d9a35c")
+        el(root, "path", d=f"M{x - 16} {y - 6} C {x - 6} {y - 14}, {x + 6} {y - 14}, {x + 16} {y - 6}", fill="none", stroke="#b5793f", stroke_width=3, stroke_linecap="round")
+    for x, y, flip in [(330, 250, 1), (450, 246, -1)]:
+        g = ET.SubElement(root, NS + "g", {"transform": f"translate({x} {y}) scale({flip} 1) rotate(-12)"})
+        el(g, "path", d="M-46 0 C -30 -18, 20 -18, 34 0 C 20 18, -30 18, -46 0 Z", fill="#8a9aa6")
+        el(g, "path", d="M34 0 L54 -14 L50 0 L54 14 Z", fill="#7a8a96")
+        el(g, "circle", cx=-30, cy=-3, r=3, fill="#2f3a2f")
+    return root
+
+
 RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "papyrus-codex.svg": papyrus_codex,
     "story-procession.svg": story_procession,
@@ -2020,6 +2044,7 @@ RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "study-desk.svg": study_desk,
     "lyre-dawn.svg": lyre_dawn,
     "booths-harvest.svg": booths_harvest,
+    "loaves-fish.svg": loaves_fish,
 }
 
 

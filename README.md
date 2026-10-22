@@ -111,6 +111,7 @@ Project-Covenant/
 - [Covenants of the Bible | 圣经中的约](./Bible_Timeline/Bible_Covenants_Bilingual.md)
 - [Feasts of the Bible | 圣经中的节期](./Bible_Timeline/Feasts_of_the_Bible_Bilingual.md)
 - [Parables of Jesus | 耶稣的比喻](./Bible_Timeline/Parables_of_Jesus_Bilingual.md)
+- [Miracles of Jesus | 耶稣的神迹](./Bible_Timeline/Miracles_of_Jesus_Bilingual.md)
 - [Key Passages to Know | 值得熟悉的经文](./Bible_Timeline/Key_Passages_Bilingual.md)
 - [Prayers in the Bible | 圣经中的祷告](./Bible_Timeline/Prayers_in_the_Bible_Bilingual.md)
 - [Psalms for Different Times | 不同处境中的诗篇](./Bible_Timeline/Psalms_for_Different_Times_Bilingual.md)
