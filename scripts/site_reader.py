@@ -34,6 +34,7 @@ STORY_ROUTE = (
     "Bible_Timeline/How_the_Bible_Came_to_Us_Bilingual.md",
     "Bible_Timeline/Bible_People_Bilingual.md",
     "Bible_Timeline/Bible_Covenants_Bilingual.md",
+    "Bible_Timeline/Ten_Commandments_Bilingual.md",
     "Bible_Timeline/Names_of_God_Bilingual.md",
     "Bible_Timeline/Feasts_of_the_Bible_Bilingual.md",
     "Bible_Timeline/Parables_of_Jesus_Bilingual.md",

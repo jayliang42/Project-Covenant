@@ -77,8 +77,8 @@ God calls Abraham and promises him three things: offspring as many as the stars,
 
 **Read | 阅读：** Exodus 19–24; Deuteronomy 28–30 / 出埃及记 19–24 章；申命记 28–30 章
 
-After rescuing Israel from Egypt, God brings the people to Mount Sinai and offers them a covenant: they will be his treasured possession and a kingdom of priests. He gives the Ten Commandments and the law to shape their life together, and the Sabbath is called a sign between God and Israel. The order matters: rescue comes first, and the law is given to a people already saved. Deuteronomy sets out blessing for faithfulness and curse for unfaithfulness, and the later history of Israel is read in that light.<br>
-神把以色列人从埃及救出来之后，带他们到西奈山，与他们立约：他们要归神作子民，作祭司的国度。神颁布十诫和律法，塑造他们的群体生活，并称安息日为神与以色列之间的记号。次序很重要：先有拯救，律法是赐给已经蒙拯救的百姓。申命记说明忠心就蒙福、背约就受咒诅，以色列后来的历史也照这个角度来解读。
+After rescuing Israel from Egypt, God brings the people to Mount Sinai and offers them a covenant: they will be his treasured possession and a kingdom of priests. He gives the [Ten Commandments](./Ten_Commandments_Bilingual.md) and the law to shape their life together, and the Sabbath is called a sign between God and Israel. The order matters: rescue comes first, and the law is given to a people already saved. Deuteronomy sets out blessing for faithfulness and curse for unfaithfulness, and the later history of Israel is read in that light.<br>
+神把以色列人从埃及救出来之后，带他们到西奈山，与他们立约：他们要归神作子民，作祭司的国度。神颁布[十诫](./Ten_Commandments_Bilingual.md)和律法，塑造他们的群体生活，并称安息日为神与以色列之间的记号。次序很重要：先有拯救，律法是赐给已经蒙拯救的百姓。申命记说明忠心就蒙福、背约就受咒诅，以色列后来的历史也照这个角度来解读。
 
 <a id="david-covenant"></a>
 ## The Covenant with David | 与大卫立的约

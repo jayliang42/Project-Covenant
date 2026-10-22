@@ -2464,6 +2464,25 @@ def reading_generations() -> ET.Element:
     return root
 
 
+def sinai_cloud() -> ET.Element:
+    root = scene("sinai-cloud", "The mountain of the covenant | 立约的山",
+                 "A rocky mountain rises from the desert, its top wrapped in dark cloud with flashes of lightning, while small tents stand at its foot. | "
+                 "一座石山从旷野中升起，山顶被乌云包围，闪电划过，山脚下立着一些小帐篷。", "#c9cdd2")
+    el(root, "path", d="M150 360 L300 170 L360 210 L420 120 L500 200 L560 170 L700 360 Z", fill="#8a6a55")
+    el(root, "path", d="M420 120 L500 200 L460 200 L430 160 Z", fill="#a3826a")
+    el(root, "path", d="M300 170 L360 210 L330 214 Z", fill="#a3826a")
+    for cx, cy, r in [(330, 120, 60), (400, 96, 74), (480, 112, 64), (540, 132, 46), (270, 140, 40), (420, 140, 60)]:
+        el(root, "circle", cx=cx, cy=cy, r=r, fill="#4a4f5a")
+    el(root, "path", d="M240 150 C 300 168, 520 170, 580 150", fill="none", stroke="#5c6270", stroke_width=6, stroke_linecap="round")
+    el(root, "path", d="M388 150 L372 196 L392 192 L378 236", fill="none", stroke="#fbe08a", stroke_width=5, stroke_linejoin="round", stroke_linecap="round")
+    el(root, "path", d="M500 156 L490 182 L504 180 L494 206", fill="none", stroke="#fbe08a", stroke_width=4, stroke_linejoin="round", stroke_linecap="round")
+    ground(root, 350, "#d8b98a", 6, 600)
+    for x, y, color in [(120, 400, "#c96f4a"), (200, 386, "#e9d9b4"), (290, 404, "#a35d3c"), (520, 398, "#e9d9b4"), (610, 388, "#c96f4a"), (690, 404, "#a35d3c")]:
+        el(root, "path", d=f"M{x - 30} {y} L{x} {y - 34} L{x + 30} {y} Z", fill=color)
+        el(root, "path", d=f"M{x - 6} {y} L{x} {y - 16} L{x + 6} {y} Z", fill="#5a3e2a")
+    return root
+
+
 RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "papyrus-codex.svg": papyrus_codex,
     "story-procession.svg": story_procession,
@@ -2494,6 +2513,7 @@ RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "unfolded-map.svg": unfolded_map,
     "winding-path.svg": winding_path,
     "reading-generations.svg": reading_generations,
+    "sinai-cloud.svg": sinai_cloud,
 }
 
 

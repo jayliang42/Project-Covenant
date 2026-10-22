@@ -43,8 +43,8 @@ You do not need to read these in order. Pick one a day, read the whole passage s
    神呼召亚伯兰，应许地上万族都要因他的家族得福。
 4. **Exodus 3:1–15 | 出埃及记 3:1–15** — At the burning bush, God reveals his name to Moses and promises to rescue his people.
    神在燃烧的荆棘中向摩西启示自己的名，并应许要拯救祂的百姓。
-5. **Exodus 20:1–17 | 出埃及记 20:1–17** — The Ten Commandments begin with God’s rescue, then describe life with God and neighbor.
-   十诫先讲神的拯救，再描述人怎样与神、与邻舍相处。
+5. **Exodus 20:1–17 | 出埃及记 20:1–17** — The Ten Commandments begin with God’s rescue, then describe life with God and neighbor. See [The Ten Commandments](./Ten_Commandments_Bilingual.md).
+   十诫先讲神的拯救，再描述人怎样与神、与邻舍相处。见[十诫](./Ten_Commandments_Bilingual.md)。
 6. **Deuteronomy 6:4–9 | 申命记 6:4–9** — Israel’s central confession: the LORD is one, so love him with all your heart and teach this at home.
    以色列信仰的核心宣认：耶和华是独一的主，要尽心爱祂，并在家中把这话教导儿女。
 

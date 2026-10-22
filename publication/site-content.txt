@@ -32,6 +32,7 @@ Bible_Timeline/Parables_of_Jesus_Bilingual.md
 Bible_Timeline/Prayers_in_the_Bible_Bilingual.md
 Bible_Timeline/Psalms_for_Different_Times_Bilingual.md
 Bible_Timeline/README.md
+Bible_Timeline/Ten_Commandments_Bilingual.md
 Bible_Timeline/两约之间至四福音_第二圣殿与罗马背景.md
 Bible_Timeline/使徒行传与保罗书信_旅程年代与城市史料对照.md
 Bible_Timeline/分裂王国至归回_帝国史料与逐事件对照.md
@@ -181,6 +182,7 @@ assets/art/seven-lamps.svg
 assets/art/shared-yoke.svg
 assets/art/shepherd.svg
 assets/art/signpost.svg
+assets/art/sinai-cloud.svg
 assets/art/sower.svg
 assets/art/split-crown.svg
 assets/art/stepping-stones.svg
