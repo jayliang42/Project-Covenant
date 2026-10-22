@@ -64,6 +64,10 @@ Use this file when your question is not only “what happened next?” but also 
 - **Start with:** Exodus 3:1–15 — At the burning bush, God reveals his name and sends Moses to free Israel.
   **先读：**出埃及记 3:1–15——神在燃烧的荆棘中启示自己的名，差派摩西拯救以色列。
 
+![Travelers walk on dry ground between two walls of water at night / 夜里一行人走在两道水墙之间的干地上](../assets/art/sea-crossing.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 <a id="leviticus"></a>
 ### Leviticus | 利未记
 
@@ -128,6 +132,10 @@ Use this file when your question is not only “what happened next?” but also 
 - **Start with:** Ruth 1:1–18 — Ruth chooses to stay with Naomi and with Naomi's God.
   **先读：**路得记 1:1–18——路得决定跟随拿俄米，也跟随拿俄米的神。
 
+![A woman gleaning in a barley field near a hilltop town / 一位妇人在山城附近的大麦田里拾麦穗](../assets/art/barley-harvest.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 <a id="1-samuel"></a>
 ### 1 Samuel | 撒母耳记上
 
@@ -157,6 +165,10 @@ Use this file when your question is not only “what happened next?” but also 
   **主要作用：**显明所罗门时期的荣耀，也显明偶像崇拜和分裂带来的衰败。
 - **Start with:** 1 Kings 18:20–39 — Elijah on Mount Carmel calls Israel to choose whom they will follow.
   **先读：**列王纪上 18:20–39——以利亚在迦密山呼召以色列选择跟随谁。
+
+![Fire falling on a stone altar ringed with water on a mountaintop / 火降在山顶四周有水的石坛上](../assets/art/carmel-altar.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
 
 <a id="2-kings"></a>
 ### 2 Kings | 列王纪下
@@ -333,6 +345,10 @@ Use this file when your question is not only “what happened next?” but also 
   **主要作用：**显明在被掳中如何忠心，并显明神高过万国政权的主权。
 - **Start with:** Daniel 6:10–23 — Daniel keeps praying under threat and is kept safe in the lions' den.
   **先读：**但以理书 6:10–23——但以理在威胁下照常祷告，在狮子坑中蒙保守。
+
+![A man kneels in prayer in a beam of light between two resting lions / 一人在光中跪着祷告，两只狮子安静地伏在两旁](../assets/art/lions-den.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
 
 <a id="minor-prophets"></a>
 
@@ -525,6 +541,10 @@ Use this file when your question is not only “what happened next?” but also 
   **主要作用：**记载[圣灵](../Glossary/README.md#holy-spirit)在初代[教会](../Glossary/README.md#church)中的工作，以及福音从耶路撒冷向外扩展。
 - **Start with:** Acts 2:36–47 — After Pentecost, the first church forms around teaching, meals, and prayer.
   **先读：**使徒行传 2:36–47——五旬节后，第一批信徒在教导、擘饼和祷告中形成群体。
+
+![A diverse group gathered with small flames above their heads / 一群不同肤色的人聚集，头上有小火焰](../assets/art/pentecost.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
 
 <a id="letters"></a>
 

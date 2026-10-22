@@ -632,7 +632,7 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             report = build_site(snapshot, digest, output)
 
             self.assertEqual(83, report.page_count)
-            self.assertEqual(112, report.file_count)
+            self.assertEqual(123, report.file_count)
             file_paths = {
                 path.relative_to(output).as_posix()
                 for path in output.rglob("*")
@@ -717,7 +717,7 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
                     self.assertIn('class="reading-time"', page)
 
             media_paths = {path for path in file_paths if path.endswith((".jpg", ".svg"))}
-            self.assertEqual(28, len(media_paths))
+            self.assertEqual(39, len(media_paths))
             for media_path in media_paths:
                 self.assertEqual((REPO_ROOT / media_path).read_bytes(), (output / media_path).read_bytes())
             self.assertIn('href="Maps/index.html"', home)
@@ -727,6 +727,8 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             self.assertEqual(10, first_steps.count('class="study-illustration"'))
             year_plan = (output / "Bible_Timeline/52周圣经故事线_查经与史料阅读计划.html").read_text(encoding="utf-8")
             self.assertEqual(10, year_plan.count('class="study-illustration"'))
+            self.assertEqual(15, year_plan.count('class="study-art"'))
+            self.assertEqual(52, year_plan.count('href="#week-index"') - 2)
 
             book_hub_output = "Book_Studies/index.html"
             book_hub = (output / book_hub_output).read_text(encoding="utf-8")

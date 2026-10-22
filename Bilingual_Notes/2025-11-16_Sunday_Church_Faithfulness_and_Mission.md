@@ -14,8 +14,8 @@
   日期：2025-11-16（主日）
 - Type: Sunday Teaching
   类型：主日讲道
-- Setting: Fellowship Church milestone and transition service
-  场景：Fellowship Church 的历史节点与搬迁聚会
+- Setting: a milestone and transition service at a local church
+  场景：一间地方教会的历史节点与搬迁聚会
 - Main emphasis: God builds his church through the faithful witness, generosity, prayer, and service of his people.
   核心重点：神借着祂子民忠心的见证、奉献、祷告和服事建立祂的教会。
 

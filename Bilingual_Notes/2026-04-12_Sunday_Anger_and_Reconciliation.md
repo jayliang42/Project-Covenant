@@ -32,25 +32,25 @@ Jesus is not lowering the standard of the law. He is revealing its true depth. M
 
 ## Outline | 讲道结构
 
-### 1. Jesus corrects shallow readings of the law
+### 1. Jesus corrects shallow readings of the law | 耶稣纠正对律法的肤浅理解
 
 
 The command “You shall not murder” is clear, but many people reduce obedience to external behavior only. Jesus exposes that shallow reading. He shows that the law always pointed to the heart. A person may avoid literal murder and still carry a destructive spirit toward others.<br>
 “不可杀人”这条诫命本身很清楚，但很多人把顺服律法理解成“只要外面没做出来就可以”。耶稣指出，这是一种很浅的理解。律法从来不只针对外在行为，也一直指向人心。一个人即使没有真正杀人，也可能已经在心里活出一种毁坏他人的态度。
 
-### 2. Anger and contempt are spiritually serious
+### 2. Anger and contempt are spiritually serious | 怒气与轻蔑在属灵上是严重的事
 
 
 Jesus links anger, insult, and contempt with judgment. The point is not that every moment of frustration equals homicide in the same social sense. The point is that the same root of devaluing another image-bearer is already present. When we belittle others, we treat someone made in God's image as if that person has reduced worth.<br>
 耶稣把愤怒、辱骂、轻蔑和审判联系在一起。这里的重点不是说每一次情绪波动都等同于社会意义上的杀人，而是说：当人心里开始贬低另一个按神形象被造的人时，杀人的根已经在那里了。我们轻看别人时，其实是在否认那个人作为神形象承载者的尊严。
 
-### 3. Reconciliation should not be delayed
+### 3. Reconciliation should not be delayed | 和好不应拖延
 
 
 Jesus gives two practical pictures. First, if worship and broken relationship collide, reconciliation matters enough that it must be addressed seriously. Second, if conflict is already moving toward judgment, settle quickly. The thrust is urgency. Kingdom people do not nurture bitterness and call it righteousness.<br>
 耶稣用了两个很具体的画面。第一，如果敬拜与破裂的人际关系同时摆在面前，人要认真面对和好的责任。第二，如果冲突已经走向审判和对抗，就要尽快处理。整段经文强调的是“不要拖延”。天国子民不能一边喂养 bitterness {苦毒、怨恨积压}，一边又把它包装成义。
 
-### 4. The gospel makes reconciliation possible
+### 4. The gospel makes reconciliation possible | 福音使和好成为可能
 
 
 The sermon's strongest pastoral move is this: we can pursue peace only because Jesus first moved toward us. We were not neutral people who needed minor improvement. We were sinners, debtors, and enemies. [Christ](../Glossary/README.md#christ) absorbed judgment in our place, paid the debt we could not pay, and released us from the prison of guilt. That [gospel](../Glossary/README.md#gospel) frees us to stop clinging to anger.<br>
@@ -73,19 +73,19 @@ The sermon's strongest pastoral move is this: we can pursue peace only because J
 
 ## Notes | 注释
 
-### Note 1. “Raca” and contempt
+### Note 1. “Raca” and contempt | 注释 1：“拉加”与轻蔑
 
 
 In many discussions of Matthew 5, “Raca” is explained as an insult expressing contempt or emptiness. The exact tone may vary, but the sermon's main emphasis is right: contemptuous speech reveals a heart that dismisses another person's value.<br>
 在很多关于马太福音 5 章的讨论中，`Raca` 常被解释为一种带着轻蔑意味的辱骂，类似“废物”“空心的人”之类。它具体语气可能有细微差别，但这篇讲道抓住了核心：轻蔑性的言语，暴露的是一种否认他人价值的心。
 
-### Note 2. Image of God
+### Note 2. Image of God | 注释 2：神的形象
 
 
 The sermon connects murder ethics to Genesis 9:6. That is important because biblical ethics are grounded not merely in social order, but in the dignity of human beings as bearers of God's image.<br>
 讲道把“不可杀人”的伦理基础连到创世记 9:6，这一点很重要。[圣经](../Glossary/README.md#bible)的伦理不只是为了维持社会秩序，更是建立在人是按神形象所造、具有尊严这一事实上。
 
-### Note 3. Reconciliation is not identical to restored intimacy
+### Note 3. Reconciliation is not identical to restored intimacy | 注释 3：和好不等于恢复亲密
 
 
 A useful pastoral clarification: reconciliation does not always mean immediate trust, restored closeness, or removal of all boundaries. It does mean moving away from hatred, revenge, and stubborn refusal to seek peace where obedience to Christ makes peace possible.<br>

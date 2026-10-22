@@ -30,31 +30,31 @@ Christian worship is not limited to singing or attending [church](../Glossary/RE
 
 ## Outline | 讲道结构
 
-### 1. God's mercy is the motivation for worship
+### 1. God's mercy is the motivation for worship | 神的怜悯是敬拜的动力
 
 
 The sermon begins with Paul's logic in Romans 12:1: “in view of God's mercies.” The Christian life does not start with pressure, performance, or self-improvement. It starts with remembering what God has already done. Mercy means not receiving the judgment we deserve. When the heart is captured by mercy, worship becomes a response rather than a burden.<br>
 讲道一开始抓住罗马书 12:1 的逻辑：“所以弟兄们，我以神的慈悲劝你们。” 基督徒生活的起点，不是压力、表现，或自我优化，而是先记得神已经做了什么。怜悯的意思，是我们没有得着自己本该承受的审判。当人的心真正被神的怜悯击中时，敬拜就不再只是负担，而成为回应。
 
-### 2. Believers are called to be living sacrifices
+### 2. Believers are called to be living sacrifices | 信徒蒙召成为活祭
 
 
 Paul's phrase “living sacrifice” sounds paradoxical, but it makes sense in light of the [Old Testament](../Glossary/README.md#old-testament) sacrificial system and the cross of Christ. Animal sacrifices pointed forward to Jesus, the final sacrifice. Now believers do not climb on the altar to die for sin; Christ has already done that. Instead, believers climb on the altar daily in surrender, devotion, and obedience.<br>
 保罗所说的“活祭”听起来像悖论，但放在旧约献祭制度和基督十字架里就能明白。旧约的祭牲都在预表耶稣这位终极祭物。如今，信徒不是靠自己上祭坛来[赎罪](../Glossary/README.md#atonement)，因为基督已经完成了赎罪；信徒所做的，是每天以降服、委身和顺服的态度，把自己摆在神面前。
 
-### 3. Worship includes the whole body and daily life
+### 3. Worship includes the whole body and daily life | 敬拜包括全人与日常生活
 
 
 The sermon emphasizes that “offer your bodies” means all of life belongs to God. Worship includes speech, sexuality, relationships, habits, thought patterns, and daily choices. Corporate worship is important, but it is incomplete if the rest of life remains untouched. A person can sing loudly in church and still refuse God in ordinary behavior.<br>
 讲道特别强调，“献上身体”表示整个人生都属于神。敬拜包含言语、性方面的圣洁、人际关系、生活习惯、思维模式和每天的决定。群体敬拜固然重要，但如果生活其他部分没有被神触摸，那敬拜就是不完整的。一个人可以在[教会](../Glossary/README.md#church)里唱得很投入，却在日常行为上拒绝神。
 
-### 4. The mind must be renewed instead of conformed
+### 4. The mind must be renewed instead of conformed | 心意要更新，不要效法这世界
 
 
 Romans 12:2 warns against being conformed to the world's pattern. The sermon applies this to materialism, pleasure, and self-defined truth. Transformation begins with the renewal of the mind. As the mind is shaped by God's word, a metamorphosis takes place. This renewed mind learns to discern God's good, pleasing, and perfect will.<br>
 罗马书 12:2 警告人不要效法这个世界。讲道把这点应用到物质主义、享乐主义和“自己定义真理”的倾向上。真正的改变，是从 mind renewal {心意更新} 开始的。当人的思想被神的话语塑造时，就会发生像 metamorphosis {蜕变} 一样的变化。更新后的心思，才能分辨神善良、纯全、可喜悦的旨意。
 
-### 5. God's will is better and more personal than self-made plans
+### 5. God's will is better and more personal than self-made plans | 神的旨意比自己的计划更美好、更贴近人
 
 
 One practical thrust of the sermon is that God's will is not generic. It is specific and good. The speaker argues that even the most attractive self-designed life cannot compare with God's design. Many people want the “best version of themselves,” but biblical transformation is deeper: dying to self and being reshaped by God.<br>
@@ -75,19 +75,19 @@ One practical thrust of the sermon is that God's will is not generic. It is spec
 
 ## Notes | 注释
 
-### Note 1. Romans 12 follows Romans 1-11
+### Note 1. Romans 12 follows Romans 1-11 | 注释 1：罗马书 12 章承接 1–11 章
 
 
 Romans 12 is powerful partly because it comes after eleven chapters of [gospel](../Glossary/README.md#gospel) theology. The command to present oneself to God rests on God's saving action, not on human effort alone.<br>
 罗马书 12 章之所以有力量，一个原因是它建立在前面十一章的[福音](../Glossary/README.md#gospel)神学之上。信徒把自己献给神，不是孤立的道德要求，而是建立在神已经施行拯救这件事上。
 
-### Note 2. “Living sacrifice” is covenant language
+### Note 2. “Living sacrifice” is covenant language | 注释 2：“活祭”是立约的语言
 
 
 The phrase is rooted in sacrificial imagery, but in the [New Testament](../Glossary/README.md#new-testament) it becomes [covenant](../Glossary/README.md#covenant) life language. Believers belong to God because they were bought by Christ, and their lives now become thankful offerings.<br>
 “活祭”这个说法根植于献祭图像，但到了新约，它也成了[立约](../Glossary/README.md#covenant)生命的语言。信徒因着基督的[救赎](../Glossary/README.md#redemption)归给神，所以整个人生变成感恩的献上。
 
-### Note 3. Discernment requires formation
+### Note 3. Discernment requires formation | 注释 3：分辨需要被塑造
 
 
 Many Christians ask for God's will in major decisions while neglecting the renewal of the mind in ordinary life. Romans 12 suggests that discernment grows from long-term formation in truth.<br>

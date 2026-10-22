@@ -30,37 +30,37 @@ The Christian life is not a random struggle but a race prepared by God for his p
 
 ## Outline | 讲道结构
 
-### 1. The race belongs to those who belong to Christ
+### 1. The race belongs to those who belong to Christ | 这场赛跑属于归属基督的人
 
 
 The sermon distinguishes ordinary human striving from the race described in Hebrews 12. This race belongs to those who have entered by grace. It is not earned by performance. [Christ](../Glossary/README.md#christ) has paid the cost and brought believers into a new citizenship. Therefore the Christian race is not about proving worth, but about responding to grace.<br>
 讲道把一般人生竞争与希伯来书 12 章所讲的“赛跑”区分开来。这场赛跑属于那些已经因恩典进入[基督](../Glossary/README.md#christ)里的人。它不是靠表现换来的资格。基督已经付上代价，使信徒得以进入一个新的国度身份。所以，基督徒奔跑不是为了证明自己有价值，而是为了回应恩典。
 
-### 2. The cloud of witnesses gives encouragement
+### 2. The cloud of witnesses gives encouragement | 如云的见证人带来鼓励
 
 
 Hebrews 12 begins by pointing back to Hebrews 11, the chapter of faith. The preacher presents these saints as a great cloud of witnesses whose lives testify that God is faithful. Their example, and the memory of faithful believers who have gone before us, encourages Christians to keep running.<br>
 希伯来书 12 章一开始就把人带回希伯来书 11 章，也就是信心伟人篇。讲员把这些圣徒描述为一大群见证人，他们用生命证明神是信实的。信心前辈的榜样，再加上那些已经先走一步、忠心到底的信徒记忆，都在鼓励今天的基督徒继续奔跑。
 
-### 3. Hindrances and sin must be laid aside
+### 3. Hindrances and sin must be laid aside | 要放下重担和罪
 
 
 The sermon stresses that there is a difference between general encumbrances and entangling sin. Some things may not seem scandalous, yet they still slow spiritual progress. Other things are more clearly sinful and keep a person stuck. Either way, believers cannot run well while carrying what God tells them to throw off.<br>
 讲道强调，拖累人的“重担”和缠住人的“罪”并不完全一样。有些东西看起来未必很严重，却会真实地拖慢属灵前进；另一些则是更明显的罪，使人长期卡住。不管是哪一种，只要神已经指出要放下，信徒就不能一边背着它们，一边期待自己跑得好。
 
-### 4. Endurance is required because the race is long
+### 4. Endurance is required because the race is long | 路程漫长，所以需要忍耐
 
 
 The Christian life demands endurance, not quick excitement. The sermon uses marathon imagery to show that many people either never start, stop too early, or stall out along the way. Endurance is not self-generated toughness. It is patient, Spirit-enabled continuation in the direction of Christ.<br>
 基督徒的人生需要 endurance {恒忍、持续的忍耐}，而不是短暂热情。讲道借着马拉松的图像说明，很多人要么从未真正起跑，要么太早停下，要么跑到中间就失速。真正的忍耐不是靠自己硬撑，而是靠[圣灵](../Glossary/README.md#holy-spirit)持续地朝着基督的方向往前走。
 
-### 5. Jesus is the focus and the strength of the race
+### 5. Jesus is the focus and the strength of the race | 耶稣是赛跑的焦点与力量
 
 
 The central instruction is to fix our eyes on Jesus. He is the author and perfecter of faith. He endured the cross for the joy set before him and now reigns in victory. Believers do not finish the race by staring at themselves, their pain, or other runners. They finish by looking at Christ.<br>
 整篇信息的中心命令是：定睛耶稣。祂是信心的创始成终者。祂因那摆在前面的喜乐，就忍受了十字架，如今已经得胜掌权。信徒不是靠一直盯着自己的状态、痛苦或别人跑得怎样来完成赛程，而是靠着持续仰望基督。
 
-### 6. The race has a missional end
+### 6. The race has a missional end | 这场赛跑指向使命
 
 
 Near the end, the sermon highlights reward in relational terms: bringing others toward Christ. The race is not private self-improvement. Faithful running helps others enter life. To endure well is also to keep [gospel](../Glossary/README.md#gospel) urgency alive.<br>
@@ -81,19 +81,19 @@ Near the end, the sermon highlights reward in relational terms: bringing others 
 
 ## Notes | 注释
 
-### Note 1. Hebrews 12 is built on Hebrews 11
+### Note 1. Hebrews 12 is built on Hebrews 11 | 注释 1：希伯来书 12 章建立在 11 章之上
 
 
 The “great cloud of witnesses” is best understood in connection with Hebrews 11. Their main role is not passive observation but active testimony through lives of faith.<br>
 “许多的见证人”最好结合希伯来书 11 章来理解。他们的主要作用，不只是坐在看台上观看，而是借着自己已经活出的信心人生，为神的信实作见证。
 
-### Note 2. Endurance is a major New Testament theme
+### Note 2. Endurance is a major New Testament theme | 注释 2：忍耐是新约的重要主题
 
 
 The [New Testament](../Glossary/README.md#new-testament) repeatedly links endurance with maturity, hope, and final faithfulness. Endurance is not glamorous, but it is one of the clearest signs of genuine discipleship.<br>
 新约一再把忍耐与成熟、盼望和最终的忠心连接在一起。忍耐看起来不一定耀眼，却是[门徒](../Glossary/README.md#disciple)真实性很清楚的记号之一。
 
-### Note 3. Looking to Jesus reorders comparison
+### Note 3. Looking to Jesus reorders comparison | 注释 3：仰望耶稣，不再与人比较
 
 
 Many believers become spiritually unstable because they keep measuring themselves against others. Hebrews 12 redirects attention from comparison to Christ-centered pursuit.<br>

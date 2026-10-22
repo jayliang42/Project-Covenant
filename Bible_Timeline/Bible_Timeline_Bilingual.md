@@ -11,7 +11,7 @@
 ## Purpose | 目的
 
 This timeline is meant to help connect the whole Bible as one story: [creation](../Glossary/README.md#creation), [covenant](../Glossary/README.md#covenant), kingdom, [exile](../Glossary/README.md#exile), [redemption](../Glossary/README.md#redemption), [church](../Glossary/README.md#church), and [new creation](../Glossary/README.md#new-creation).<br>
-这份时间线的目的是帮助把整本圣经看成一个完整故事：[创造](../Glossary/README.md#creation)、[立约](../Glossary/README.md#covenant)、国度、[被掳](../Glossary/README.md#exile)、[救赎](../Glossary/README.md#redemption)、[教会](../Glossary/README.md#church)、以及[新创造](../Glossary/README.md#new-creation)。
+这份时间线帮助你把整本圣经读成一个完整的故事：[创造](../Glossary/README.md#creation)、[立约](../Glossary/README.md#covenant)、国度、[被掳](../Glossary/README.md#exile)、[救赎](../Glossary/README.md#redemption)、[教会](../Glossary/README.md#church)、以及[新创造](../Glossary/README.md#new-creation)。
 
 For a guided one-year sequence covering all 66 books, see the [52-Week Bible Storyline Plan](./52周圣经故事线_查经与史料阅读计划.md).<br>
 若希望用一年把 66 卷连起来，并同步阅读史料、考古边界和释经注释，见[《52 周圣经故事线》](./52周圣经故事线_查经与史料阅读计划.md)。
@@ -24,6 +24,18 @@ For a guided one-year sequence covering all 66 books, see the [52-Week Bible Sto
 | Quick map / 快速地图 | [Jump](#quick-map) |
 | Story arc / 故事弧线 | [Jump](#story-arc) |
 | Timeline / 时间线 | [Jump](#timeline) |
+| Creation and Fall / 创造与堕落 | [Jump](#stage-01) |
+| Flood and Noah / 洪水与挪亚 | [Jump](#stage-02) |
+| Abraham and the Patriarchs / 亚伯拉罕与列祖 | [Jump](#stage-03) |
+| Exodus and Sinai / 出埃及与西奈 | [Jump](#stage-04) |
+| Conquest and Judges / 进迦南与士师 | [Jump](#stage-05) |
+| United Kingdom / 统一王国 | [Jump](#stage-06) |
+| Divided Kingdom / 分裂王国 | [Jump](#stage-07) |
+| Exile / 被掳 | [Jump](#stage-08) |
+| Return and Second Temple Period / 归回与第二圣殿时期 | [Jump](#stage-09) |
+| Jesus the Messiah / 弥赛亚耶稣 | [Jump](#stage-10) |
+| Church and Mission / 教会与使命 | [Jump](#stage-11) |
+| New Creation / 新创造 | [Jump](#stage-12) |
 
 <a id="big-story"></a>
 
@@ -40,20 +52,20 @@ The Bible tells how God creates a good world, humanity falls into sin, God forms
 If you feel that “the Bible is made of many books but I cannot see how they fit together,” this is the shortest big-picture map:<br>
 如果你常觉得“圣经有很多卷书，但我看不出它们怎么连起来”，最短的大图可以这样抓：
 
-1. Genesis: God creates, humanity falls, and God begins the promise line.
-   创世记：神创造世界，人堕落，神开始推动应许的血脉。
+1. Genesis: God creates, humanity falls, and God begins to carry his promise through one family.
+   创世记：神创造世界，人类堕落，神开始让应许借着一个家族延续下去。
 2. [Exodus](../Glossary/README.md#exodus) to Deuteronomy: God rescues [Israel](../Glossary/README.md#israel) and gives covenant law.
    出埃及记到申命记：神拯救[以色列](../Glossary/README.md#israel)，并赐下立约的律法。
 3. Joshua to Esther: Israel enters the land, becomes a kingdom, falls, is exiled, and partially returns.
-   约书亚记到以斯帖记：以色列进地、立国、败坏、被掳、再归回。
+   约书亚记到以斯帖记：以色列进入应许之地、建立王国、逐渐败坏、被掳，后来部分人归回。
 4. Job to Song of Songs: [wisdom](../Glossary/README.md#wisdom), worship, suffering, love, and life before God.
    约伯记到雅歌：关于[智慧](../Glossary/README.md#wisdom)、敬拜、苦难、爱情和人在神面前的生活。
 5. Isaiah to Malachi: [prophets](../Glossary/README.md#prophet) interpret Israel's history and announce judgment plus future hope.
-   以赛亚书到玛拉基书：[先知](../Glossary/README.md#prophet)解释以色列的历史，并宣告审判与将来的盼望。
+   以赛亚书到玛拉基书：[先知](../Glossary/README.md#prophet)解读以色列的历史，宣告审判，也宣告将来的盼望。
 6. Gospels: Jesus is the promised Messiah and the center of the whole story.
    [四福音](../Glossary/README.md#gospels)：耶稣就是应许中的弥赛亚，也是整本故事的中心。
 7. Acts to Jude: the risen [Christ](../Glossary/README.md#christ) forms and sends the church.
-   使徒行传到犹大书：[复活](../Glossary/README.md#resurrection)的[基督](../Glossary/README.md#christ)建立并差遣教会。
+   使徒行传到犹大书：[复活](../Glossary/README.md#resurrection)的[基督](../Glossary/README.md#christ)建立教会，并差遣教会出去。
 8. Revelation: God completes judgment, redemption, and new creation.
    启示录：神完成最终的审判、救赎与新创造。
 
@@ -64,27 +76,28 @@ If you feel that “the Bible is made of many books but I cannot see how they fi
 - Creation: the world begins good.
   创造：世界起初是美善的。
 - Fall: sin, death, and exile enter.
-  堕落：罪、死亡和流离进入人类历史。
-- Covenant: God binds himself to a people and to a promise.
-  立约：神把自己与一群子民和一个应许绑定起来。
+  堕落：罪、死亡与流离从此进入人类历史。
+- Covenant: God binds himself to a people through a promise.
+  立约：神与一群子民立约，用应许把自己和他们连在一起。
 - Kingdom: Israel receives land, king, [temple](../Glossary/README.md#temple), and law.
-  国度：以色列得地、得王、得殿、得律法。
+  国度：以色列得着土地、君王、圣殿和律法。
 - Exile: covenant breaking brings judgment.
   被掳：背约带来审判。
-- Promise: prophets speak of return, new covenant, Spirit, and Messiah.
-  应许：先知宣告归回、新约、[圣灵](../Glossary/README.md#holy-spirit)和弥赛亚。
+- Promise: prophets speak of return, a new covenant, the gift of the Spirit, and the coming Messiah.
+  应许：先知宣告归回、新的约、[圣灵](../Glossary/README.md#holy-spirit)的浇灌和弥赛亚的来临。
 - Fulfillment: Jesus fulfills Israel's story and opens [salvation](../Glossary/README.md#salvation) to the nations.
   成全：耶稣成全以色列的故事，并把[救恩](../Glossary/README.md#salvation)向万国打开。
 - Church: the [gospel](../Glossary/README.md#gospel) goes outward by the Spirit.
   教会：福音借着圣灵向外扩展。
 - New Creation: God's dwelling with his people is fully restored.
-  新创造：神与祂子民同住被完全恢复。
+  新创造：神与祂的子民同住，这关系被完全恢复。
 
 <a id="timeline"></a>
 
 ## Timeline | 时间线
 
-### 1. Creation and Fall
+<a id="stage-01"></a>
+### 1. Creation and Fall | 创造与堕落
 
 - Approximate setting: Beginning of history
   大致阶段：历史起初
@@ -98,7 +111,8 @@ If you feel that “the Bible is made of many books but I cannot see how they fi
 The Bible begins with God as Creator and humanity as image-bearers. Sin enters early, so every later covenant and act of salvation addresses a problem introduced here.<br>
 圣经一开始就确立了神是创造主，人是按祂形象被造的。罪很早就进入世界，所以后面所有的立约与拯救，都在回应这里出现的问题。
 
-### 2. Flood and Noah
+<a id="stage-02"></a>
+### 2. Flood and Noah | 洪水与挪亚
 
 - Main books: Genesis 6-9
   主要书卷：创世记 6-9
@@ -108,9 +122,10 @@ The Bible begins with God as Creator and humanity as image-bearers. Sin enters e
 #### Connection | 连接意义
 
 Judgment and mercy appear together. God judges sin but preserves a line through which his purposes will continue.<br>
-审判与怜悯同时出现。神审判罪，却保守一个余民，使祂的计划继续推进。
+审判与怜悯同时出现。神审判罪，却保守了挪亚一家，使祂的计划得以延续。
 
-### 3. Abraham and the Patriarchs
+<a id="stage-03"></a>
+### 3. Abraham and the Patriarchs | 亚伯拉罕与列祖
 
 - Approximate setting: Around the early second millennium BC
   大致阶段：约主前第二个千年早期
@@ -124,7 +139,8 @@ Judgment and mercy appear together. God judges sin but preserves a line through 
 God promises land, offspring, and [blessing](../Glossary/README.md#blessing), including blessing for all nations. This covenant becomes a major backbone of the rest of Scripture.<br>
 神应许土地、后裔与赐福，而且这[祝福](../Glossary/README.md#blessing)要临到万国。这个亚伯拉罕之约成为整本圣经后续发展的重要骨架。
 
-### 4. Exodus and Sinai
+<a id="stage-04"></a>
+### 4. Exodus and Sinai | 出埃及与西奈
 
 - Approximate setting: Often placed around the second millennium BC; exact dating is debated
   大致阶段：通常放在主前第二个千年；确切年代有不同看法
@@ -136,9 +152,10 @@ God promises land, offspring, and [blessing](../Glossary/README.md#blessing), in
 #### Connection | 连接意义
 
 Here God forms Israel into a covenant nation. Exodus becomes the central [Old Testament](../Glossary/README.md#old-testament) picture of redemption, later echoed in the gospel.<br>
-在这里，神把以色列塑造成一个立约民族。出埃及也成为旧约中最核心的救赎图像，后来不断在福音里被回应。
+在这里，神把以色列塑造成一个立约民族。出埃及也成为旧约中最核心的救赎图像，后来在福音中一再被呼应。
 
-### 5. Conquest and Judges
+<a id="stage-05"></a>
+### 5. Conquest and Judges | 进迦南与士师
 
 - Main books: Joshua, Judges, Ruth
   主要书卷：约书亚记、士师记、路得记
@@ -150,7 +167,8 @@ Here God forms Israel into a covenant nation. Exodus becomes the central [Old Te
 This era shows that external deliverance is not enough. God's people need inward renewal and faithful leadership.<br>
 这个时期显明，外在得拯救还不够；神的子民需要内在更新，也需要忠心的带领者。
 
-### 6. United Kingdom
+<a id="stage-06"></a>
+### 6. United Kingdom | 统一王国
 
 - Approximate setting: Around 1050-930 BC
   大致阶段：约主前 1050-930 年
@@ -164,7 +182,8 @@ This era shows that external deliverance is not enough. God's people need inward
 David is especially important because God promises a lasting royal line. This becomes the foundation for messianic hope fulfilled in Jesus.<br>
 大卫特别关键，因为神应许他的王位后裔要延续下去。这成为后来弥赛亚盼望的重要基础，并最终在耶稣里实现。
 
-### 7. Divided Kingdom
+<a id="stage-07"></a>
+### 7. Divided Kingdom | 分裂王国
 
 - Approximate setting: Around 930-722 BC for the northern kingdom
   大致阶段：约主前 930-722 年，尤其是北国阶段
@@ -178,7 +197,8 @@ David is especially important because God promises a lasting royal line. This be
 The prophets interpret history theologically. Political collapse is not random; it is tied to covenant unfaithfulness.<br>
 先知从神学角度解释历史。政治崩塌不是偶然事件，而是与背约直接相关。
 
-### 8. Exile
+<a id="stage-08"></a>
+### 8. Exile | 被掳
 
 - Approximate setting: 722 BC for Israel; 586 BC for Judah and Jerusalem
   大致阶段：北国以色列于主前 722 年；南国[犹大](../Glossary/README.md#judah)和耶路撒冷于主前 586 年
@@ -192,7 +212,8 @@ The prophets interpret history theologically. Political collapse is not random; 
 Exile is one of the great turning points of the Bible. It looks like covenant failure and national death, yet the prophets also speak of return, new covenant, new heart, and future restoration.<br>
 被掳是圣经中的重大转折点之一。它看起来像立约失败和国家性的死亡，但先知同时也宣告归回、新约、新心和将来的恢复。
 
-### 9. Return and Second Temple Period
+<a id="stage-09"></a>
+### 9. Return and Second Temple Period | 归回与第二圣殿时期
 
 - Approximate setting: From 538 BC onward
   大致阶段：从主前 538 年开始
@@ -208,7 +229,8 @@ The people return physically, but the larger promises still await fulfillment. T
 
 从波斯末期到四福音之间，犹太地先后经历希腊化王国、马加比反抗、哈斯摩尼王朝、罗马接管和希律统治；详见[《两约之间至四福音：第二圣殿、希腊化与罗马世界》](./两约之间至四福音_第二圣殿与罗马背景.md)。
 
-### 10. Jesus the Messiah
+<a id="stage-10"></a>
+### 10. Jesus the Messiah | 弥赛亚耶稣
 
 - Approximate setting: Early first century AD
   大致阶段：主后一世纪初
@@ -225,7 +247,8 @@ Jesus is the center of the Bible's storyline. He fulfills the law, the prophets,
 For the earliest resurrection tradition, the [manuscript](../Glossary/README.md#manuscript) endings of Mark, burial archaeology, and the limits of Roman evidence, see [Resurrection And Early Witnesses: Textual History And Historical Boundaries](./复活与早期见证_文本史与历史研究边界.md).<br>
 林前 15 的早期复活传统、马可结尾[抄本](../Glossary/README.md#manuscript)、墓葬考古和罗马材料的证据边界，见[《复活与早期见证：文本史、墓葬背景与历史研究边界》](./复活与早期见证_文本史与历史研究边界.md)。
 
-### 11. Church and Mission
+<a id="stage-11"></a>
+### 11. Church and Mission | 教会与使命
 
 - Approximate setting: From Acts onward
   大致阶段：从使徒行传开始直到新约书信时期
@@ -242,7 +265,8 @@ The church is not a side note. It is the community formed by the risen Christ an
 For a journey-by-journey comparison of Acts, the Pauline letters, Roman officials, inscriptions, and city archaeology, see [Acts And Pauline Letters: Journeys, Chronology And Urban Evidence](./使徒行传与保罗书信_旅程年代与城市史料对照.md).<br>
 若要逐程对照《使徒行传》、保罗书信、罗马官员、铭文和城市考古，见[《使徒行传与保罗书信：旅程、年代与城市史料对照》](./使徒行传与保罗书信_旅程年代与城市史料对照.md)。
 
-### 12. New Creation
+<a id="stage-12"></a>
+### 12. New Creation | 新创造
 
 - Main books: Revelation 21-22, with roots throughout Scripture
   主要书卷：启示录 21-22，同时整本圣经早有铺垫

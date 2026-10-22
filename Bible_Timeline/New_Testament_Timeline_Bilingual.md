@@ -88,7 +88,8 @@ The New Testament begins with Jesus and then shows what happens because Jesus ca
 
 ## Timeline | 时间线
 
-### 1. Arrival of the Messiah
+<a id="nt-stage-01"></a>
+### 1. Arrival of the Messiah | 弥赛亚来临
 
 - Main books: Matthew 1-2, Luke 1-2, parts of John 1
   主要书卷：马太福音 1-2、路加福音 1-2、约翰福音 1 的部分内容
@@ -105,7 +106,8 @@ The New Testament begins with Jesus and then shows what happens because Jesus ca
 The Messiah does not appear as an isolated new idea. He arrives as the fulfillment of the Old Testament story.<br>
 弥赛亚不是突然冒出来的新概念，祂是旧约整条故事线的成全。
 
-### 2. Jesus' Public Ministry
+<a id="nt-stage-02"></a>
+### 2. Jesus' Public Ministry | 耶稣公开传道
 
 - Main books: Matthew, Mark, Luke, John
   主要书卷：马太福音、马可福音、路加福音、约翰福音
@@ -120,7 +122,8 @@ The Messiah does not appear as an isolated new idea. He arrives as the fulfillme
 Jesus reveals who God is, what the kingdom is, and what true humanity looks like.<br>
 耶稣显明神是谁、天国是什么样，以及真正的人应该是什么样。
 
-### 3. Cross and Resurrection
+<a id="nt-stage-03"></a>
+### 3. Cross and Resurrection | 十字架与复活
 
 - Main books: all four Gospels
   主要书卷：四福音
@@ -135,7 +138,8 @@ Jesus reveals who God is, what the kingdom is, and what true humanity looks like
 The cross is the center of [redemption](../Glossary/README.md#redemption), and the resurrection is God's vindication of the Son and the beginning of [new creation](../Glossary/README.md#new-creation) life.<br>
 十字架是[救赎](../Glossary/README.md#redemption)中心，复活则是父神对圣子的印证，也是[新创造](../Glossary/README.md#new-creation)生命的开端。
 
-### 4. Ascension and Pentecost
+<a id="nt-stage-04"></a>
+### 4. Ascension and Pentecost | 升天与五旬节
 
 - Main books: Luke 24, Acts 1-2
   主要书卷：路加福音 24、使徒行传 1-2
@@ -150,7 +154,8 @@ The cross is the center of [redemption](../Glossary/README.md#redemption), and t
 Jesus is not absent after ascension. He reigns and continues his work through the Spirit.<br>
 耶稣升天后并不是不在了，祂是在掌权，并借着圣灵继续工作。
 
-### 5. Early Church
+<a id="nt-stage-05"></a>
+### 5. Early Church | 初代教会
 
 - Main books: Acts 2-7
   主要书卷：使徒行传 2-7
@@ -165,7 +170,8 @@ Jesus is not absent after ascension. He reigns and continues his work through th
 The church is shown not as a side project but as the Spirit-formed people of the risen [Christ](../Glossary/README.md#christ).<br>
 这里显明，教会不是附带项目，而是复活[基督](../Glossary/README.md#christ)借圣灵所塑造的群体。
 
-### 6. Mission to the Nations
+<a id="nt-stage-06"></a>
+### 6. Mission to the Nations | 向万民宣教
 
 - Main books: Acts 8-28
   主要书卷：使徒行传 8-28
@@ -180,7 +186,8 @@ The church is shown not as a side project but as the Spirit-formed people of the
 The promises to bless the nations begin to be visibly fulfilled in history.<br>
 “万国得福”的应许开始在历史中明显展开。
 
-### 7. Apostolic Teaching
+<a id="nt-stage-07"></a>
+### 7. Apostolic Teaching | 使徒的教导
 
 - Main books: Romans to Jude
   主要书卷：罗马书到犹大书
@@ -195,7 +202,8 @@ The promises to bless the nations begin to be visibly fulfilled in history.<br>
 The letters explain what Jesus' work means for the church's belief, worship, ethics, mission, and endurance.<br>
 书信解释了耶稣的工作对教会的信仰、敬拜、伦理、使命和忍耐到底意味着什么。
 
-### 8. Final Hope
+<a id="nt-stage-08"></a>
+### 8. Final Hope | 最终的盼望
 
 - Main books: Revelation
   主要书卷：启示录

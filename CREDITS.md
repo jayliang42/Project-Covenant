@@ -114,17 +114,28 @@ The cedar-cutting file’s English description cites 2 Samuel 5, while its title
 <a id="original-illustrations"></a>
 ## Original Illustrations | 原创插画
 
-Six simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
-本资料库有六幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
+Seventeen simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
+本资料库有十七幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
 
 | File / 文件 | Subject / 内容 | Used in / 使用位置 |
 | --- | --- | --- |
 | `assets/art/open-bible.svg` | Finding John 3:16 / 查找约翰福音 3:16 | Bible Reading Toolkit / 读经工具箱 |
 | `assets/art/bible-library.svg` | The 66 books as a library / 66 卷书的图书馆 | Toolkit; Bible by Book / 工具箱；按书卷梳理 |
-| `assets/art/shepherd.svg` | A shepherd and flock (Psalm 23) / 牧人与羊群（诗篇 23 篇） | Psalms; poetry / 诗篇；诗歌文体 |
-| `assets/art/letter.svg` | A letter by lamplight / 灯下书信 | Paul's letters; letters / 保罗书信；书信文体 |
-| `assets/art/jonah.svg` | Jonah and the storm / 约拿与风暴 | Jonah / 约拿书 |
-| `assets/art/rebuilding.svg` | Rebuilding the walls / 重建城墙 | Haggai; Nehemiah / 哈该书；尼希米记 |
+| `assets/art/shepherd.svg` | A shepherd and flock (Psalm 23) / 牧人与羊群（诗篇 23 篇） | Psalms; poetry; week 32 / 诗篇；诗歌文体；第 32 周 |
+| `assets/art/letter.svg` | A letter by lamplight / 灯下书信 | Paul's letters; letters; week 49 / 保罗书信；书信文体；第 49 周 |
+| `assets/art/jonah.svg` | Jonah and the storm / 约拿与风暴 | Jonah; week 18 / 约拿书；第 18 周 |
+| `assets/art/rebuilding.svg` | Rebuilding the walls / 重建城墙 | Haggai; Nehemiah; week 29 / 哈该书；尼希米记；第 29 周 |
+| `assets/art/joseph-granary.svg` | Grain stored in Egypt / 埃及的粮仓 | Week 5 / 第 5 周 |
+| `assets/art/sea-crossing.svg` | Crossing the sea / 过红海 | Exodus; week 6 / 出埃及记；第 6 周 |
+| `assets/art/wilderness-camp.svg` | Camp in the wilderness / 旷野中的营地 | Week 9 / 第 9 周 |
+| `assets/art/barley-harvest.svg` | Barley harvest near Bethlehem / 伯利恒附近的麦收 | Ruth; week 12 / 路得记；第 12 周 |
+| `assets/art/david-harp.svg` | A shepherd's lyre and sling / 牧童的琴与机弦 | Week 14 / 第 14 周 |
+| `assets/art/carmel-altar.svg` | Fire on Mount Carmel / 迦密山上的火 | 1 Kings; week 17 / 列王纪上；第 17 周 |
+| `assets/art/lions-den.svg` | Daniel in the lions' den / 狮子坑中的但以理 | Daniel; week 26 / 但以理书；第 26 周 |
+| `assets/art/bread-cup.svg` | Bread and cup / 饼与杯 | Week 40 / 第 40 周 |
+| `assets/art/empty-tomb.svg` | The empty tomb at dawn / 清晨的空坟墓 | Week 41 / 第 41 周 |
+| `assets/art/pentecost.svg` | Pentecost / 五旬节 | Acts; week 42 / 使徒行传；第 42 周 |
+| `assets/art/paul-ship.svg` | A ship bound for Rome / 驶往罗马的船 | Week 48 / 第 48 周 |
 
 Check them with `python3 scripts/generate_art.py --check`; the command fails if a committed file differs from the generator.<br>
 可用 `python3 scripts/generate_art.py --check` 检查；若已提交的文件与生成结果不一致，该命令会报错。

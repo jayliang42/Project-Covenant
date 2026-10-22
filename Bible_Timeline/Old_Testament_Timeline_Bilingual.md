@@ -59,7 +59,8 @@ The Old Testament moves from creation to exile and partial return. Its central q
 
 ## Timeline | 时间线
 
-### 1. Creation and Fall
+<a id="ot-stage-01"></a>
+### 1. Creation and Fall | 创造与堕落
 
 - Main books: Genesis 1-3
   主要书卷：创世记 1-3
@@ -74,7 +75,8 @@ The Old Testament moves from creation to exile and partial return. Its central q
 Everything begins here: human dignity, human rebellion, and the need for [redemption](../Glossary/README.md#redemption).<br>
 一切都从这里开始：人的尊严、人的悖逆，以及[救赎](../Glossary/README.md#redemption)的必要。
 
-### 2. Flood and Noah
+<a id="ot-stage-02"></a>
+### 2. Flood and Noah | 洪水与挪亚
 
 - Main books: Genesis 6-9
   主要书卷：创世记 6-9
@@ -89,7 +91,8 @@ Everything begins here: human dignity, human rebellion, and the need for [redemp
 God judges evil, but he does not abandon his world. He preserves history for the sake of his purposes.<br>
 神审判邪恶，但没有放弃祂的世界。祂保守历史继续往祂的计划走。
 
-### 3. Abraham and the Patriarchs
+<a id="ot-stage-03"></a>
+### 3. Abraham and the Patriarchs | 亚伯拉罕与列祖
 
 - Main books: Genesis 12-50
   主要书卷：创世记 12-50
@@ -104,7 +107,8 @@ God judges evil, but he does not abandon his world. He preserves history for the
 God narrows the story line into one family, not to exclude the nations forever, but to bless them through that family.<br>
 神把故事线收束到一个家族中，并不是永远排除万国，而是要借这个家族[祝福](../Glossary/README.md#blessing)万国。
 
-### 4. Exodus and Sinai
+<a id="ot-stage-04"></a>
+### 4. Exodus and Sinai | 出埃及与西奈
 
 - Main books: Exodus, Leviticus, Numbers, Deuteronomy
   主要书卷：出埃及记、利未记、民数记、申命记
@@ -119,7 +123,8 @@ God narrows the story line into one family, not to exclude the nations forever, 
 God not only saves a people from slavery; he forms them into a people who belong to him.<br>
 神不只是把一群人从奴役中救出来，祂还把他们塑造成属于祂的子民。
 
-### 5. Wilderness
+<a id="ot-stage-05"></a>
+### 5. Wilderness | 旷野
 
 - Main books: Numbers, Deuteronomy
   主要书卷：民数记、申命记
@@ -134,7 +139,8 @@ God not only saves a people from slavery; he forms them into a people who belong
 The wilderness shows how deep unbelief runs even after deliverance, and how patient God's covenant faithfulness is.<br>
 旷野时期显明，即使人已经得拯救，不信仍然很深；同时也显明神守约的忍耐何等长久。
 
-### 6. Conquest and Judges
+<a id="ot-stage-06"></a>
+### 6. Conquest and Judges | 进迦南与士师
 
 - Main books: Joshua, Judges, Ruth
   主要书卷：约书亚记、士师记、路得记
@@ -149,7 +155,8 @@ The wilderness shows how deep unbelief runs even after deliverance, and how pati
 Israel receives the land, but life in the land shows that external settlement does not equal inward faithfulness.<br>
 以色列虽得了地，但在地上的生活显明：外在安顿并不等于内里忠心。
 
-### 7. United Kingdom
+<a id="ot-stage-07"></a>
+### 7. United Kingdom | 统一王国
 
 - Main books: 1-2 Samuel, 1 Kings 1-11, 1 Chronicles, parts of [Psalms](../Glossary/README.md#psalm) and Proverbs
   主要书卷：撒母耳记上下、列王纪上 1-11、历代志上、部分[诗篇](../Glossary/README.md#psalm)和箴言
@@ -164,7 +171,8 @@ Israel receives the land, but life in the land shows that external settlement do
 This is the high point of Old Testament national life, yet even here sin already threatens the kingdom from within.<br>
 这是旧约民族历史的高峰，但即使在高峰期，罪也已经从内部侵蚀国度。
 
-### 8. Divided Kingdom
+<a id="ot-stage-08"></a>
+### 8. Divided Kingdom | 分裂王国
 
 - Main books: 1 Kings 12-22, 2 Kings, 2 Chronicles, many [prophets](../Glossary/README.md#prophet)
   主要书卷：列王纪上 12-22、列王纪下、历代志下、许多[先知](../Glossary/README.md#prophet)书
@@ -179,7 +187,8 @@ This is the high point of Old Testament national life, yet even here sin already
 The kingdom splits, and the prophets explain that political collapse is tied to spiritual rebellion.<br>
 王国分裂之后，先知不断解释：政治崩塌背后，是属灵背叛。
 
-### 9. Exile
+<a id="ot-stage-09"></a>
+### 9. Exile | 被掳
 
 - Main books: 2 Kings 17-25, 2 Chronicles, Ezekiel, Daniel, Lamentations, parts of Jeremiah
   主要书卷：列王纪下 17-25、历代志下、以西结书、但以理书、耶利米哀歌、耶利米书部分内容
@@ -194,7 +203,8 @@ The kingdom splits, and the prophets explain that political collapse is tied to 
 Exile looks like the collapse of everything, but it becomes the place where God speaks some of his deepest promises of renewal.<br>
 被掳看起来像一切都崩塌了，但神却恰恰在这里说出一些最深的恢复应许。
 
-### 10. Return and Waiting
+<a id="ot-stage-10"></a>
+### 10. Return and Waiting | 归回与等候
 
 - Main books: Ezra, Nehemiah, Esther, Haggai, Zechariah, Malachi
   主要书卷：以斯拉记、尼希米记、以斯帖记、哈该书、撒迦利亚书、玛拉基书
