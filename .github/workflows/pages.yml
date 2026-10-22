@@ -31,6 +31,7 @@ jobs:
           python3 scripts/audit_publication.py
           python3 scripts/audit_publication.py --history-content
           python3 scripts/generate_maps.py --check
+          python3 scripts/generate_art.py --check
           python3 scripts/prepare_illustrations.py --check
           git diff --check
 

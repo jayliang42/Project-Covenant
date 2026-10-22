@@ -66,8 +66,8 @@ Genesis 3–4 tells of distrust, harm, and broken relationships. [Fall](../Gloss
 <a id="stop-covenant"></a>
 ### Covenant with Abraham | 与亚伯拉罕立约
 
-God makes a [covenant](../Glossary/README.md#covenant) with Abraham: a [promise](../Glossary/README.md#promise) with a calling and responsibility. [Blessing](../Glossary/README.md#blessing) is meant to reach other families too. [Faith](../Glossary/README.md#faith) means trusting God and responding, not knowing every answer.<br>
-神与亚伯拉罕立[约](../Glossary/README.md#covenant)：有[应许](../Glossary/README.md#promise)，也有呼召和责任。[祝福](../Glossary/README.md#blessing)还要传向别的家庭。[信心](../Glossary/README.md#faith)是信任神并回应，不必先知道所有答案。
+God makes a [covenant](../Glossary/README.md#covenant) with Abraham: a [promise](../Glossary/README.md#promise) with a calling and responsibility. [Blessing](../Glossary/README.md#blessing) is meant to reach other families of the earth too. [Faith](../Glossary/README.md#faith) means trusting God and responding, not knowing every answer.<br>
+神与亚伯拉罕立[约](../Glossary/README.md#covenant)：有[应许](../Glossary/README.md#promise)，也有呼召和责任。这[祝福](../Glossary/README.md#blessing)还要临到地上其他的家族。[信心](../Glossary/README.md#faith)是信靠神并作出回应，不必先知道所有答案。
 
 **Read | 阅读：** Genesis 12:1–9; 15:1–6 / 创世记12:1–9；15:1–6。
 
@@ -78,8 +78,8 @@ God makes a [covenant](../Glossary/README.md#covenant) with Abraham: a [promise]
 <a id="stop-exodus"></a>
 ### Exodus and law | 出埃及与律法
 
-[Exodus](../Glossary/README.md#exodus) tells of [Israel](../Glossary/README.md#israel) leaving slavery in Egypt. [Passover](../Glossary/README.md#passover) remembers this rescue, also described with the words [salvation](../Glossary/README.md#salvation) and [redemption](../Glossary/README.md#redemption). [Law](../Glossary/README.md#law) guides the rescued community; [priests](../Glossary/README.md#priest), [sacrifices](../Glossary/README.md#sacrifice), and the [tabernacle](../Glossary/README.md#tabernacle) belong to its worship.<br>
-[出埃及](../Glossary/README.md#exodus)叙述[以色列](../Glossary/README.md#israel)离开埃及的奴役。[逾越节](../Glossary/README.md#passover)记念拯救，“[救恩](../Glossary/README.md#salvation)”和“[救赎](../Glossary/README.md#redemption)”也用来表达拯救。[律法](../Glossary/README.md#law)引导获救的群体；[祭司](../Glossary/README.md#priest)、[献祭](../Glossary/README.md#sacrifice)和[会幕](../Glossary/README.md#tabernacle)属于其敬拜生活。
+[Exodus](../Glossary/README.md#exodus) tells of [Israel](../Glossary/README.md#israel) leaving slavery in Egypt. [Passover](../Glossary/README.md#passover) remembers this rescue, which the Bible also describes with the words [salvation](../Glossary/README.md#salvation) and [redemption](../Glossary/README.md#redemption). [Law](../Glossary/README.md#law) guides the rescued community; [priests](../Glossary/README.md#priest), [sacrifices](../Glossary/README.md#sacrifice), and the [tabernacle](../Glossary/README.md#tabernacle) belong to its worship.<br>
+[出埃及](../Glossary/README.md#exodus)叙述[以色列](../Glossary/README.md#israel)离开埃及的奴役。[逾越节](../Glossary/README.md#passover)记念这次拯救；圣经也用“[救恩](../Glossary/README.md#salvation)”和“[救赎](../Glossary/README.md#redemption)”来表达这样的拯救。[律法](../Glossary/README.md#law)引导获救的群体；[祭司](../Glossary/README.md#priest)、[献祭](../Glossary/README.md#sacrifice)和[会幕](../Glossary/README.md#tabernacle)都属于他们的敬拜生活。
 
 **Read | 阅读：** Exodus 12–14; 19–20 / 出埃及记12–14；19–20章。
 
@@ -90,8 +90,8 @@ God makes a [covenant](../Glossary/README.md#covenant) with Abraham: a [promise]
 <a id="stop-kingdom"></a>
 ### Kingdom and Division | 王国与分裂
 
-Human kings can fail. The [kingdom of God](../Glossary/README.md#kingdom) means God’s rule. The [temple](../Glossary/README.md#temple) becomes a center of worship. [Prophets](../Glossary/README.md#prophet) call people back to faithfulness; a [psalm](../Glossary/README.md#psalm) can voice praise or grief, and [wisdom](../Glossary/README.md#wisdom) writing explores how to live. After the division, Israel often means the northern kingdom and [Judah](../Glossary/README.md#judah) the southern kingdom.<br>
-人间君王仍会失败。[国度（神的国）](../Glossary/README.md#kingdom)指神掌权。[圣殿](../Glossary/README.md#temple)成为敬拜中心。[先知](../Glossary/README.md#prophet)呼吁人回到忠信；[诗篇](../Glossary/README.md#psalm)可以表达赞美或悲伤，[智慧](../Glossary/README.md#wisdom)文学则探索怎样生活。王国分裂后，以色列常指北国，[犹大](../Glossary/README.md#judah)常指南国。
+Human kings fail. The [kingdom of God](../Glossary/README.md#kingdom) means God’s rule. The [temple](../Glossary/README.md#temple) becomes a center of worship. [Prophets](../Glossary/README.md#prophet) call people back to faithfulness; a [psalm](../Glossary/README.md#psalm) can voice praise or grief, and [wisdom](../Glossary/README.md#wisdom) writing explores how to live. After the division, Israel often means the northern kingdom and [Judah](../Glossary/README.md#judah) the southern kingdom.<br>
+人间的君王会失败。[国度（神的国）](../Glossary/README.md#kingdom)指神掌权。[圣殿](../Glossary/README.md#temple)成为敬拜中心。[先知](../Glossary/README.md#prophet)呼召人回到对神的忠诚；一篇[诗篇](../Glossary/README.md#psalm)可以表达赞美，也可以倾诉悲伤；[智慧](../Glossary/README.md#wisdom)文学则探讨人该怎样生活。王国分裂后，以色列常指北国，[犹大](../Glossary/README.md#judah)常指南国。
 
 **Read | 阅读：** 1 Kings 8; 12 / 列王纪上8；12章。
 
@@ -127,7 +127,7 @@ The world changes between the return stories and the Gospels. The picture recall
 ### Jesus | 耶稣
 
 The [New Testament](../Glossary/README.md#new-testament) presents Jesus as [Messiah](../Glossary/README.md#messiah), also called [Christ](../Glossary/README.md#christ). [Gospel](../Glossary/README.md#gospel) means the good news about him; [grace](../Glossary/README.md#grace), [repentance](../Glossary/README.md#repentance), and [forgiveness](../Glossary/README.md#forgiveness) describe God’s gift and people’s response. A [disciple](../Glossary/README.md#disciple) learns to follow Jesus. A [parable](../Glossary/README.md#parable) helps people see. [Resurrection](../Glossary/README.md#resurrection) means being raised from death.<br>
-[新约](../Glossary/README.md#new-testament)称耶稣为[弥赛亚](../Glossary/README.md#messiah)，也称[基督](../Glossary/README.md#christ)。福音是关于祂的好消息；[恩典](../Glossary/README.md#grace)、[悔改](../Glossary/README.md#repentance)和[赦免](../Glossary/README.md#forgiveness)，说明神的赐予与人的回应。[门徒](../Glossary/README.md#disciple)学习跟随耶稣。[比喻](../Glossary/README.md#parable)帮助人理解。[复活](../Glossary/README.md#resurrection)指从死亡中被兴起。
+[新约](../Glossary/README.md#new-testament)称耶稣为[弥赛亚](../Glossary/README.md#messiah)，也称[基督](../Glossary/README.md#christ)。福音是关于祂的好消息；[恩典](../Glossary/README.md#grace)、[悔改](../Glossary/README.md#repentance)和[赦免](../Glossary/README.md#forgiveness)说明了神的赐予与人的回应。[门徒](../Glossary/README.md#disciple)学习跟随耶稣。[比喻](../Glossary/README.md#parable)帮助人理解。[复活](../Glossary/README.md#resurrection)指从死里被兴起、重新活过来。
 
 **Read | 阅读：** Mark 1:14–20; 15:33–39; 16:1–8 / 马可福音1:14–20；15:33–39；16:1–8。
 
@@ -139,7 +139,7 @@ The [New Testament](../Glossary/README.md#new-testament) presents Jesus as [Mess
 ### Church | 教会
 
 At [Pentecost](../Glossary/README.md#pentecost) in Acts 2, the [Holy Spirit](../Glossary/README.md#holy-spirit) equips Jesus’ followers to bear witness. [Apostles](../Glossary/README.md#apostle) are sent with a task, and [church](../Glossary/README.md#church) names the community rather than mainly a building. The good news also reaches [Gentiles](../Glossary/README.md#gentile), people outside the Jewish people.<br>
-使徒行传第二章的[五旬节](../Glossary/README.md#pentecost)，[圣灵](../Glossary/README.md#holy-spirit)帮助耶稣的跟随者作见证。[使徒](../Glossary/README.md#apostle)受差遣承担使命；[教会](../Glossary/README.md#church)主要指群体，而非建筑。好消息也传向[外邦人](../Glossary/README.md#gentile)，就是非犹太人。
+在使徒行传第二章的[五旬节](../Glossary/README.md#pentecost)，[圣灵](../Glossary/README.md#holy-spirit)降临，使耶稣的跟随者有能力为祂作见证。[使徒](../Glossary/README.md#apostle)是受差遣、带着使命的人；[教会](../Glossary/README.md#church)主要指一群人，而不是一座建筑。这好消息也传到[外邦人](../Glossary/README.md#gentile)，就是犹太人以外的人。
 
 **Read | 阅读：** Acts 2; 17:1–9 / 使徒行传2章；17:1–9。
 
@@ -177,25 +177,29 @@ This page does not ask you to sign in, submit answers, identify your church, or 
 This route samples the Bible's beginning, crisis, center, and ending. The times are suggestions, not deadlines. Read slowly enough to notice what the passage actually says.<br>
 这条路线用几段短经文看圣经的开端、危机、中心与结局。所列时间只是建议，不是限时任务；请放慢速度，留意经文本身说了什么。
 
-### Stop One Creation and Human Calling | 第一站 创造与人的受托
+<a id="route-stop-1"></a>
+### Stop 1: Creation and Human Calling | 第一站：创造与人的使命
 
 **Read for about 6 minutes | 阅读约 6 分钟：** Genesis 1:1–5, 26–31 | 创世记 1:1–5、26–31。
 
 **One core question | 一个核心问题：** What does this passage say about who God is and what human beings are for? | 这段经文怎样说明神是谁，以及人受造是为了什么？
 
-### Stop Two Distrust and Fracture | 第二站 不信与破裂
+<a id="route-stop-2"></a>
+### Stop 2: Distrust and Fracture | 第二站：不信与破裂
 
 **Read for about 6 minutes | 阅读约 6 分钟：** Genesis 3:1–15 | 创世记 3:1–15。
 
 **One core question | 一个核心问题：** Which relationships begin to break when human beings distrust God? | 当人不信任神时，哪些关系开始破裂？
 
-### Stop Three Jesus and the Turning Point | 第三站 耶稣与故事转折
+<a id="route-stop-3"></a>
+### Stop 3: Jesus and the Turning Point | 第三站：耶稣与故事的转折
 
 **Read for about 11 minutes | 阅读约 11 分钟：** Mark 1:14–20; 15:33–39; 16:1–8 | 马可福音 1:14–20；15:33–39；16:1–8。
 
 **One core question | 一个核心问题：** What does Mark present Jesus saying and doing that changes the direction of the story? | 马可怎样描写耶稣的宣告与行动，使故事方向发生改变？
 
-### Stop Four New Creation | 第四站 新创造
+<a id="route-stop-4"></a>
+### Stop 4: New Creation | 第四站：新创造
 
 **Read for about 7 minutes | 阅读约 7 分钟：** Revelation 21:1–5 | 启示录 21:1–5。
 
@@ -210,7 +214,8 @@ God creates a good world, but human distrust brings sin and death. God keeps his
 Use two short sessions each week. Each session has one question. The handoff sentence shows how that week leads to the next one; it is a summary to remember, not another assignment.<br>
 每周安排两个短时段，每次只回答一个问题。“接力句”说明这一周怎样通向下一周；它只是帮助记忆的总结，不是额外作业。
 
-### Week One A Good World Becomes Broken | 第一周 美好世界走向破裂
+<a id="week-1"></a>
+### Week 1: A Good World Becomes Broken | 第一周：美好的世界走向破裂
 
 **Session 1 | 第一次：** Read Genesis 1–2 | 阅读创世记 1–2 章。
 
@@ -222,7 +227,8 @@ Use two short sessions each week. Each session has one question. The handoff sen
 
 **Handoff | 接力句：** Judgment does not end God's purpose; the story now looks for a promise and a family through whom blessing can move outward. | 审判没有终止神的计划；故事开始等候一个应许，以及一个能把祝福带向万族的家庭。
 
-### Week Two Promise Through a Family | 第二周 应许经过一个家庭
+<a id="week-2"></a>
+### Week 2: A Promise Through One Family | 第二周：借着一个家庭的应许
 
 **Session 1 | 第一次：** Read Genesis 12:1–9 and 15:1–6 | 阅读创世记 12:1–9、15:1–6。
 
@@ -234,7 +240,8 @@ Use two short sessions each week. Each session has one question. The handoff sen
 
 **Handoff | 接力句：** Abraham's family survives in Egypt, but later becomes enslaved and needs rescue. | 亚伯拉罕的家族在埃及得以存留，后来却沦为奴隶，需要拯救。
 
-### Week Three Rescue and Covenant | 第三周 拯救与立约
+<a id="week-3"></a>
+### Week 3: Rescue and Covenant | 第三周：拯救与立约
 
 **Session 1 | 第一次：** Read Exodus 1:8–2:10 and 3:1–15 | 阅读出埃及记 1:8–2:10、3:1–15。
 
@@ -246,7 +253,8 @@ Use two short sessions each week. Each session has one question. The handoff sen
 
 **Handoff | 接力句：** The rescued people repeatedly fail, so the story still needs a faithful representative, a deeper rescue, and renewed hearts. | 蒙拯救的百姓仍不断失败，因此故事还需要一位忠信的代表、更深的拯救和被更新的心。
 
-### Week Four Jesus and New Creation | 第四周 耶稣与新创造
+<a id="week-4"></a>
+### Week 4: Jesus and New Creation | 第四周：耶稣与新创造
 
 **Session 1 | 第一次：** Read Luke 4:14–21 and Mark 1:14–20 | 阅读路加福音 4:14–21、马可福音 1:14–20。
 

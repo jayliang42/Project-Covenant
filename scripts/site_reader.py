@@ -455,3 +455,31 @@ tbody tr:hover td { background: color-mix(in srgb, var(--accent-soft) 55%, trans
 }
 @media print { .table-scroll { background: none; } tbody tr:hover td { background: none; } }
 """
+
+# Visual polish batch 4: figures and captions, calmer status notes, warmer
+# headings and callouts. CSS only; no script, remote font, or remote image.
+SITE_CSS += b"""
+::selection { background: color-mix(in srgb, var(--accent) 22%, transparent); }
+.reading-body a { text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent); text-decoration-thickness: .08em; }
+.reading-body a:hover { text-decoration-color: var(--accent); }
+.reading-body h2 { font-family: var(--serif); font-weight: 600; letter-spacing: -.01em; }
+.reading-body h2::before { content: ""; display: block; width: 2.25rem; height: 3px; border-radius: 2px; background: var(--accent); margin-bottom: .85rem; opacity: .75; }
+.reading-body h3 { color: color-mix(in srgb, var(--text) 82%, var(--accent)); }
+.reading-body li::marker { color: var(--accent); }
+blockquote { border-radius: 0 .55rem .55rem 0; padding: .55rem 1.2rem; }
+blockquote strong:first-child { color: var(--accent); }
+.reading-body > blockquote:first-of-type { background: transparent; border-left-width: 2px; padding: .15rem .9rem; font-size: .82rem; line-height: 1.7; }
+.study-illustration { border-radius: .55rem; box-shadow: 0 1px 2px rgba(0, 0, 0, .08), 0 8px 24px rgba(41, 46, 41, .10); }
+.study-art { display: block; width: 100%; max-width: 100%; height: auto; margin: 1.6rem auto .4rem; border-radius: 14px; box-shadow: 0 1px 2px rgba(0, 0, 0, .06), 0 10px 28px rgba(41, 46, 41, .10); }
+p:has(> img.study-art, > img.study-illustration) + p { margin-top: .2rem; font-size: .8rem; line-height: 1.65; color: var(--muted); text-align: center; }
+.collection-card { transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease; }
+.collection-card:hover { box-shadow: 0 6px 18px rgba(41, 46, 41, .10); transform: translateY(-1px); }
+.start-reading:hover { filter: brightness(1.08); }
+hr { border: 0; height: 1px; background: linear-gradient(to right, transparent, var(--line), transparent); }
+@media (prefers-color-scheme: dark) {
+  .study-art, .study-illustration { box-shadow: 0 1px 2px rgba(0, 0, 0, .4); }
+  .study-art { opacity: .94; }
+}
+@media (prefers-reduced-motion: reduce) { .collection-card { transition: none; } .collection-card:hover { transform: none; } }
+@media print { .study-art { box-shadow: none; max-height: 90mm; width: auto; } .reading-body h2::before { display: none; } }
+"""

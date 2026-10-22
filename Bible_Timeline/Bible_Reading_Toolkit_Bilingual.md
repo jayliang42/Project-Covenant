@@ -16,6 +16,10 @@
 Keep this page open beside your Bible. Use it as a lookup tool, not as a course to finish in one sitting. If you are completely new, read [First Steps in the Bible Story](./First_Steps_Bilingual.md) first, then come back when a reference or an unfamiliar kind of writing slows you down.<br>
 读经时可以把本页放在旁边，当作查找工具，不必一次读完。如果你第一次接触圣经，先读[圣经故事线第一步](./First_Steps_Bilingual.md)；遇到看不懂的出处或陌生文体时，再回来查。
 
+![An open Bible with verse 16 of John 3 highlighted / 翻开的圣经，约翰福音 3 章第 16 节被标亮](../assets/art/open-bible.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 <a id="route-guide"></a>
 ## Route Guide | 路线导航
 
@@ -63,6 +67,10 @@ The tables follow the 66-book Protestant [canon](../Glossary/README.md#canon) us
 
 For what each book is about and how it fits the story, use [Bible by Book](./Bible_By_Book_Bilingual.md).<br>
 各卷的内容和它在故事线中的位置，请看[按书卷梳理圣经](./Bible_By_Book_Bilingual.md)。
+
+![Two shelves holding the 39 Old Testament and 27 New Testament books, colored by section / 两层书架摆放旧约 39 卷与新约 27 卷，按分类着色](../assets/art/bible-library.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
 
 <a id="old-testament-books"></a>
 ### Old Testament: 39 Books, 929 Chapters | 旧约：39 卷，929 章
@@ -169,6 +177,10 @@ Where: Exodus 20 to Deuteronomy. These instructions shaped Israel’s worship an
 Where: Psalms, Lamentations, Song of Songs and many passages in the prophets. Hebrew poetry often repeats an idea in a second line with new words, and it speaks in pictures. Read slowly, notice the images and feelings, and remember that honest complaint and lament are part of prayer.<br>
 主要见于诗篇、耶利米哀歌、雅歌和先知书的许多段落。希伯来诗歌常在下一行换个说法重复同一意思，并大量使用图像。要慢慢读，留意画面与情感；坦诚的诉苦和哀歌也是祷告的一部分。
 
+![A shepherd with a staff watches his flock beside a stream / 手持杖的牧人在溪水旁看顾羊群](../assets/art/shepherd.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 <a id="genre-wisdom"></a>
 ### Wisdom | 智慧文学
 
@@ -192,6 +204,10 @@ Where: Matthew, Mark, Luke and John. Each gives a portrait of Jesus for its firs
 
 Where: Romans to Jude. These were real letters to churches and people with specific questions. Read a whole letter in one sitting if you can, and follow the argument; a verse often depends on the paragraph before it.<br>
 即罗马书至犹大书。它们是写给具体教会和个人、回应具体问题的真实书信。可能的话一次读完整封信，跟随作者的论证；一节经文常常依赖前一段的意思。
+
+![A sealed letter, a reed pen, and an oil lamp on a table / 桌上有盖了蜡印的书信、芦苇笔和油灯](../assets/art/letter.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
 
 <a id="genre-apocalyptic"></a>
 ### Apocalyptic Visions | 启示文学

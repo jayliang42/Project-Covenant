@@ -7,7 +7,7 @@ import math
 import xml.etree.ElementTree as ET
 
 
-ASSET_PATH = re.compile(r"assets/(?:maps/[a-z0-9][a-z0-9_-]*\.svg|illustrations/[a-z0-9][a-z0-9_-]*\.jpg)\Z")
+ASSET_PATH = re.compile(r"assets/(?:(?:maps|art)/[a-z0-9][a-z0-9_-]*\.svg|illustrations/[a-z0-9][a-z0-9_-]*\.jpg)\Z")
 SVG_NS = "http://www.w3.org/2000/svg"
 MAX_SVG_BYTES = 1_000_000
 MAX_JPEG_BYTES = 300_000

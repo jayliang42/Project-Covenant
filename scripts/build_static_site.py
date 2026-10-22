@@ -374,7 +374,7 @@ def _render_inline(
             if not alt:
                 raise SiteBuildError("SITE_IMAGE_ALT_REQUIRED")
             source = html.escape(_relative_href(current_output, page_map[target]), quote=True)
-            image_class = "study-map" if target.endswith(".svg") else "study-illustration"
+            image_class = "study-map" if target.startswith("assets/maps/") else ("study-art" if target.startswith("assets/art/") else "study-illustration")
             rendered_image = f'<img class="{image_class}" src="{source}" alt="{html.escape(alt, quote=True)}">'
             if image_class == "study-map":
                 rendered_image = '<span class="map-viewport" role="region" tabindex="0" aria-label="Map, scroll horizontally | 地图，可横向滚动">' + rendered_image + '</span>'

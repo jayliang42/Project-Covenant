@@ -4,7 +4,7 @@ import hashlib
 from pathlib import Path
 import unittest
 
-from scripts import export_publication, generate_maps
+from scripts import export_publication, generate_art, generate_maps
 from scripts.publication_assets import AssetError, is_asset_path, validate_asset, validate_jpeg, validate_svg
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -26,6 +26,18 @@ class AssetBoundaryTests(unittest.TestCase):
             validate_asset("assets/maps/" + name, data)
         for path in (ROOT / "assets/illustrations").glob("*.jpg"):
             validate_asset(path.relative_to(ROOT).as_posix(), path.read_bytes())
+
+    def test_original_art_regenerates_exactly_and_passes_the_svg_boundary(self) -> None:
+        self.assertEqual(6, len(generate_art.ARTWORKS))
+        committed = sorted(path.name for path in (ROOT / "assets/art").glob("*.svg"))
+        self.assertEqual(sorted(generate_art.ARTWORKS), committed)
+        for name, builder in generate_art.ARTWORKS.items():
+            data = generate_art.render(builder)
+            self.assertEqual(data, (ROOT / "assets/art" / name).read_bytes())
+            validate_asset("assets/art/" + name, data)
+        self.assertTrue(is_asset_path("assets/art/open-bible.svg"))
+        for path in ("assets/art/photo.jpg", "assets/art/../maps/x.svg", "assets/art/Upper.svg", "assets/artwork/x.svg"):
+            self.assertFalse(is_asset_path(path))
 
     def test_rejects_svg_active_content_external_resources_and_entities(self) -> None:
         attacks = (

@@ -28,6 +28,7 @@ jobs:
       - name: Check reproducible local media
         run: |
           python3 scripts/generate_maps.py --check
+          python3 scripts/generate_art.py --check
           python3 scripts/prepare_illustrations.py --check
 
       - name: Audit Markdown structure

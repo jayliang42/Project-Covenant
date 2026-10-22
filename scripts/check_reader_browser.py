@@ -59,7 +59,7 @@ def fingerprint(root: Path) -> str:
         require(not path.is_symlink(), "BROWSER_SYMLINK_FORBIDDEN")
         if path.is_file():
             name = path.relative_to(root).as_posix()
-            require(name.endswith(".html") or name == "assets/site.css" or (name.startswith("assets/maps/") and name.endswith(".svg")) or (name.startswith("assets/illustrations/") and name.endswith(".jpg")),
+            require(name.endswith(".html") or name == "assets/site.css" or (name.startswith(("assets/maps/", "assets/art/")) and name.endswith(".svg")) or (name.startswith("assets/illustrations/") and name.endswith(".jpg")),
                     "BROWSER_UNEXPECTED_SITE_FILE")
             digest.update(name.encode() + b"\0" + path.read_bytes())
     return digest.hexdigest()

@@ -87,6 +87,12 @@ Maps/README.md
 PUBLICATION_POLICY.md
 README.md
 STATIC_MIRROR_DEPLOYMENT.md
+assets/art/bible-library.svg
+assets/art/jonah.svg
+assets/art/letter.svg
+assets/art/open-bible.svg
+assets/art/rebuilding.svg
+assets/art/shepherd.svg
 assets/illustrations/dore-abraham.jpg
 assets/illustrations/dore-between-testaments.jpg
 assets/illustrations/dore-church.jpg

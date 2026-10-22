@@ -7,6 +7,7 @@
 
 - [Map data | 地图数据](#map-data)
 - [Public-domain artworks | 公有领域画作](#artworks)
+- [Original illustrations | 原创插画](#original-illustrations)
 - [52-week artwork uses | 52周计划配图](#year-plan-artworks)
 - [Second-batch map data | 第二批地图数据](#batch2-map-data)
 - [Ministry and Acts map data | 加利利事工与使徒行传地图数据](#ministry-map-data)
@@ -110,10 +111,28 @@ These ten existing files were individually rechecked on their Wikimedia Commons 
 The cedar-cutting file’s English description cites 2 Samuel 5, while its title and this plan’s temple-preparation use are associated here with the assigned 1 Kings 5 reading. That reference-tag difference remains for human review. The New Jerusalem file’s 1890 metadata remains a reproduction date rather than an established creation date. Neither picture is an archaeological reconstruction.<br>
 香柏木文件的英文描述标注撒母耳记下五章；本计划按画题与建殿预备主题，将它配在包含列王纪上五章的指定阅读中。这个经文标签差异保留人工核对。《新耶路撒冷》的1890元数据仍按复制件日期处理，不当作已核定的创作年。两幅都不是考古复原图。
 
+<a id="original-illustrations"></a>
+## Original Illustrations | 原创插画
+
+Six simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
+本资料库有六幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
+
+| File / 文件 | Subject / 内容 | Used in / 使用位置 |
+| --- | --- | --- |
+| `assets/art/open-bible.svg` | Finding John 3:16 / 查找约翰福音 3:16 | Bible Reading Toolkit / 读经工具箱 |
+| `assets/art/bible-library.svg` | The 66 books as a library / 66 卷书的图书馆 | Toolkit; Bible by Book / 工具箱；按书卷梳理 |
+| `assets/art/shepherd.svg` | A shepherd and flock (Psalm 23) / 牧人与羊群（诗篇 23 篇） | Psalms; poetry / 诗篇；诗歌文体 |
+| `assets/art/letter.svg` | A letter by lamplight / 灯下书信 | Paul's letters; letters / 保罗书信；书信文体 |
+| `assets/art/jonah.svg` | Jonah and the storm / 约拿与风暴 | Jonah / 约拿书 |
+| `assets/art/rebuilding.svg` | Rebuilding the walls / 重建城墙 | Haggai; Nehemiah / 哈该书；尼希米记 |
+
+Check them with `python3 scripts/generate_art.py --check`; the command fails if a committed file differs from the generator.<br>
+可用 `python3 scripts/generate_art.py --check` 检查；若已提交的文件与生成结果不一致，该命令会报错。
+
 <a id="preparation"></a>
 ## Preparation and Rights Boundary | 处理与权利边界
 
-The images were resized without cropping and re-encoded as baseline JPEG; EXIF, ICC, IPTC, comments, and original filenames were removed from image metadata. The first three pilot files are 275,148, 295,887, and 94,078 bytes respectively, each below 300,000 bytes. They are loaded locally with bilingual captions; no AI-generated images, remote image requests, or tracking scripts are used. / 图片未裁剪，只缩放并重新编码为基线 JPEG；图像元数据中的 EXIF、ICC、IPTC、注释及原文件名已清除。第一批三张分别为 275,148、295,887、94,078 字节，均低于 300,000 字节；本地加载并配双语图注，不使用 AI 图片、远程图片请求或跟踪脚本。
+The images were resized without cropping and re-encoded as baseline JPEG; EXIF, ICC, IPTC, comments, and original filenames were removed from image metadata. The first three pilot files are 275,148, 295,887, and 94,078 bytes respectively, each below 300,000 bytes. They are loaded locally with bilingual captions; these historical artworks are not AI-generated, and no remote image requests or tracking scripts are used. / 图片未裁剪，只缩放并重新编码为基线 JPEG；图像元数据中的 EXIF、ICC、IPTC、注释及原文件名已清除。第一批三张分别为 275,148、295,887、94,078 字节，均低于 300,000 字节；本地加载并配双语图注；这些历史画作并非 AI 生成，网站也不使用远程图片请求或跟踪脚本。
 
 Check media with `python3 scripts/prepare_illustrations.py --check`. To repeat compression, install the optional preparation dependency from the repository's media requirements and run `python3 scripts/prepare_illustrations.py --source-dir DIRECTORY_OF_REVIEWED_ORIGINALS`. The source catalog is local maintenance data; only approved JPEG/SVG outputs and this credit page enter the website. / 可用上述命令检查图片；重做压缩时安装仓库可选媒体准备依赖，并提供已审查原图所在目录。来源目录记录属于本地维护数据，网站只收录获准 JPEG、SVG 与本署名页。
 
