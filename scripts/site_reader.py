@@ -744,6 +744,9 @@ html.lang-ready .lang-switch { display: inline-flex; flex: none; border: 1px sol
 .guide-card strong { font-size: .88rem; font-weight: 600; }
 @media (prefers-reduced-motion: reduce) { .guide-card { transition: none; } .guide-card:hover { transform: none; } }
 @media print { .guide-heading, .guide-grid { display: none; } }
+.reading-body > p:last-child:has(> a:first-child[href$="index.html"]) { margin-top: 2.6rem; font-size: .84rem; line-height: 1.9; color: var(--muted); }
+.reading-body > p:last-child:has(> a:first-child[href$="index.html"]) a { color: var(--muted); text-decoration-color: var(--line); }
+.reading-body > p:last-child:has(> a:first-child[href$="index.html"]) a:hover { color: var(--accent); text-decoration-color: currentColor; }
 .hub-page ul:has(> li > a:only-child) { list-style: none; padding-left: 0; }
 .hub-page li:has(> a:only-child) > a { display: block; padding: .65rem 1rem .65rem 1.1rem; border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 10px; background: var(--surface); color: var(--text); text-decoration: none; line-height: 1.6; transition: border-color .15s ease, background-color .15s ease; }
 .hub-page li:has(> a:only-child) > a:hover { background: var(--accent-soft); border-color: var(--accent); }
