@@ -375,6 +375,9 @@ Learning to live well before God through discernment, experience, and instructio
 The collection of books a faith community receives as Scripture. Christian traditions differ over some Old Testament books.
 信仰群体接纳为圣经的书卷范围；基督教传统对部分旧约书卷的认定不同。
 
+See [How the Bible Came to Us](../Bible_Timeline/How_the_Bible_Came_to_Us_Bilingual.md#canon-section) for how the canons differ.<br>
+各种正典有何不同，见[圣经是怎样传到我们手中的](../Bible_Timeline/How_the_Bible_Came_to_Us_Bilingual.md#canon-section)。
+
 [First use in First Steps | 入门路线首次使用](../Bible_Timeline/First_Steps_Bilingual.md#stop-between)
 
 <a id="pentecost"></a>
@@ -563,6 +566,9 @@ God’s declaration that people are right with him through Christ, received by f
 
 A handwritten copy of a text, complete or fragmentary. The date of a surviving copy is not automatically the date of the original writing or the events it describes.<br>
 用手抄写的文本，可以是整卷，也可以只剩残片。现存副本的年代，不自动等于原作或所叙事件的年代。
+
+See [How the Bible Came to Us](../Bible_Timeline/How_the_Bible_Came_to_Us_Bilingual.md#copied) for a short overview of how the Bible was copied.<br>
+圣经怎样被抄写流传的简短概述，见[圣经是怎样传到我们手中的](../Bible_Timeline/How_the_Bible_Came_to_Us_Bilingual.md#copied)。
 
 [Use in the study route | 在研读路线中查看](../Bible_Timeline/52卷主读_逐卷四时钟年代画像.md)
 

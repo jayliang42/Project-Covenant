@@ -2033,6 +2033,35 @@ def loaves_fish() -> ET.Element:
     return root
 
 
+def scribe_copying() -> ET.Element:
+    root = scene("scribe-copying", "Copying by hand | 手抄流传",
+                 "By the light of an oil lamp, a scribe at a low table copies lines from an open scroll onto a fresh sheet, with ink and a reed pen beside him. | "
+                 "油灯光下，一位抄写员坐在矮桌前，把展开的书卷上的字一行行抄到新的纸上，旁边放着墨水和芦苇笔。", "#3a322a")
+    el(root, "circle", cx=520, cy=240, r=220, fill="#f2c56b", fill_opacity=0.10)
+    el(root, "path", d="M0 360 L800 360 L800 450 L0 450 Z", fill="#2a241e")
+    el(root, "rect", x=300, y=300, width=420, height=20, rx=4, fill="#8e6644")
+    for x in (320, 690):
+        el(root, "rect", x=x, y=318, width=14, height=50, fill="#6b4e33")
+    el(root, "rect", x=330, y=284, width=170, height=18, rx=9, fill="#d9c28e")
+    el(root, "circle", cx=330, cy=293, r=12, fill="#c4ab76")
+    el(root, "circle", cx=500, cy=293, r=12, fill="#c4ab76")
+    for i in range(3):
+        el(root, "line", x1=350, y1=289 + i * 4, x2=480, y2=289 + i * 4, stroke="#6b4e33", stroke_width=1.5, stroke_opacity=0.6)
+    el(root, "path", d="M530 300 L650 300 L644 282 L536 282 Z", fill="#f4efe3")
+    for i in range(3):
+        el(root, "line", x1=546, y1=287 + i * 4, x2=600 + i * 10, y2=287 + i * 4, stroke="#6b4e33", stroke_width=1.5, stroke_opacity=0.7)
+    el(root, "rect", x=664, y=284, width=16, height=16, rx=3, fill="#2f2a26")
+    el(root, "path", d="M710 262 C 700 270, 712 282, 722 276 L726 284 L732 270 C 734 262, 720 256, 710 262 Z", fill="#b5793f")
+    el(root, "path", d="M728 264 C 724 250, 730 240, 734 232 C 740 242, 740 254, 734 264 Z", fill="#f0a93a")
+    g = ET.SubElement(root, NS + "g", {"transform": "translate(230 360) scale(2.2)"})
+    el(g, "path", d="M-24 0 C -26 -14, -16 -22, -6 -22 L-2 -48 C 0 -56, 16 -56, 18 -48 L24 -20 C 30 -14, 32 -6, 30 0 Z", fill="#7b5d84")
+    el(g, "circle", cx=8, cy=-62, r=9, fill="#8a5f43")
+    el(g, "path", d="M-1 -66 C 0 -74, 16 -74, 17 -66 Z", fill="#e8e1d2")
+    el(g, "line", x1=18, y1=-40, x2=40, y2=-34, stroke="#8a5f43", stroke_width=5, stroke_linecap="round")
+    el(g, "line", x1=40, y1=-34, x2=46, y2=-44, stroke="#c69a3e", stroke_width=1.5)
+    return root
+
+
 RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "papyrus-codex.svg": papyrus_codex,
     "story-procession.svg": story_procession,
@@ -2045,6 +2074,7 @@ RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "lyre-dawn.svg": lyre_dawn,
     "booths-harvest.svg": booths_harvest,
     "loaves-fish.svg": loaves_fish,
+    "scribe-copying.svg": scribe_copying,
 }
 
 

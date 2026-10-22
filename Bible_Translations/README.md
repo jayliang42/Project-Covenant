@@ -9,6 +9,9 @@
 
 *Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
 
+For a short history of how the Bible was copied and translated, including the Chinese Union Version, see [How the Bible Came to Us](../Bible_Timeline/How_the_Bible_Came_to_Us_Bilingual.md#translated).<br>
+圣经怎样被抄传与翻译（包括和合本）的简史，见[圣经是怎样传到我们手中的](../Bible_Timeline/How_the_Bible_Came_to_Us_Bilingual.md#translated)。
+
 ## Available Guides | 当前指南
 
 - [International Standard Version (ISV) | ISV 获取与 ESL 阅读指南](./ISV_International_Standard_Version_Access_and_ESL_Guide.md)

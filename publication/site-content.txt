@@ -22,6 +22,7 @@ Bible_Timeline/Bible_Timeline_Bilingual.md
 Bible_Timeline/Bible_Timeline_Cheat_Sheet.md
 Bible_Timeline/Feasts_of_the_Bible_Bilingual.md
 Bible_Timeline/First_Steps_Bilingual.md
+Bible_Timeline/How_the_Bible_Came_to_Us_Bilingual.md
 Bible_Timeline/Key_Passages_Bilingual.md
 Bible_Timeline/Miracles_of_Jesus_Bilingual.md
 Bible_Timeline/New_Testament_Timeline_Bilingual.md
@@ -161,6 +162,7 @@ assets/art/refining-fire.svg
 assets/art/river-of-life.svg
 assets/art/royal-scepter.svg
 assets/art/ruined-city.svg
+assets/art/scribe-copying.svg
 assets/art/sea-crossing.svg
 assets/art/seasons-tree.svg
 assets/art/secret-room.svg

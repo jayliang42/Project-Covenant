@@ -107,6 +107,7 @@ Project-Covenant/
 
 - [First Steps in the Bible Story | 圣经故事线第一步](./Bible_Timeline/First_Steps_Bilingual.md)
 - [Bible Reading Toolkit | 读经工具箱](./Bible_Timeline/Bible_Reading_Toolkit_Bilingual.md)
+- [How the Bible Came to Us | 圣经是怎样传到我们手中的](./Bible_Timeline/How_the_Bible_Came_to_Us_Bilingual.md)
 - [People of the Bible | 圣经人物](./Bible_Timeline/Bible_People_Bilingual.md)
 - [Covenants of the Bible | 圣经中的约](./Bible_Timeline/Bible_Covenants_Bilingual.md)
 - [Feasts of the Bible | 圣经中的节期](./Bible_Timeline/Feasts_of_the_Bible_Bilingual.md)
