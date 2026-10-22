@@ -109,6 +109,7 @@ Project-Covenant/
 - [Bible Reading Toolkit | 读经工具箱](./Bible_Timeline/Bible_Reading_Toolkit_Bilingual.md)
 - [People of the Bible | 圣经人物](./Bible_Timeline/Bible_People_Bilingual.md)
 - [Covenants of the Bible | 圣经中的约](./Bible_Timeline/Bible_Covenants_Bilingual.md)
+- [Feasts of the Bible | 圣经中的节期](./Bible_Timeline/Feasts_of_the_Bible_Bilingual.md)
 - [Parables of Jesus | 耶稣的比喻](./Bible_Timeline/Parables_of_Jesus_Bilingual.md)
 - [Key Passages to Know | 值得熟悉的经文](./Bible_Timeline/Key_Passages_Bilingual.md)
 - [Prayers in the Bible | 圣经中的祷告](./Bible_Timeline/Prayers_in_the_Bible_Bilingual.md)

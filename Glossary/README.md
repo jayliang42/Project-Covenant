@@ -302,6 +302,9 @@ An offering in worship, used in different passages for thanksgiving, fellowship,
 The festival that remembers Israel’s rescue from Egypt. The New Testament also uses this background when speaking of Jesus.
 记念以色列离开埃及、蒙拯救的节期；新约谈论耶稣时也使用这一背景。
 
+See [Feasts of the Bible](../Bible_Timeline/Feasts_of_the_Bible_Bilingual.md#passover) for Passover and the other feasts.<br>
+逾越节及其他节期，见[圣经中的节期](../Bible_Timeline/Feasts_of_the_Bible_Bilingual.md#passover)。
+
 [First use in First Steps | 入门路线首次使用](../Bible_Timeline/First_Steps_Bilingual.md#stop-exodus)
 
 <a id="terms-33"></a>

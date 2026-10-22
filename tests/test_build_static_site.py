@@ -646,14 +646,14 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
 
             report = build_site(snapshot, digest, output)
 
-            self.assertEqual(90, report.page_count)
-            self.assertEqual(197, report.file_count)
+            self.assertEqual(91, report.page_count)
+            self.assertEqual(199, report.file_count)
             file_paths = {
                 path.relative_to(output).as_posix()
                 for path in output.rglob("*")
                 if path.is_file()
             }
-            self.assertEqual(90, sum(path.endswith(".html") for path in file_paths))
+            self.assertEqual(91, sum(path.endswith(".html") for path in file_paths))
             self.assertEqual(
                 {build_static_site.SITE_CSS_PATH},
                 {path for path in file_paths if path.endswith(".css")},
@@ -669,10 +669,10 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             ]
             # One source heading-shaped line is inside a fenced Markdown example.
             self.assertEqual(
-                2535,
+                2551,
                 sum(len(re.findall(r"<h[1-6](?: |>)", text)) for text in html_texts),
             )
-            self.assertEqual(258, sum(text.count("<table>") for text in html_texts))
+            self.assertEqual(260, sum(text.count("<table>") for text in html_texts))
             self.assertEqual(24, sum(text.count("<pre><code>") for text in html_texts))
             self.assertGreaterEqual(sum(text.count("<a ") for text in html_texts), 1850)
 
@@ -723,7 +723,7 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
                     "00_研究总索引与路线图.md",
                 }
             ]
-            self.assertEqual(73, len(core_sources))
+            self.assertEqual(74, len(core_sources))
             for source_path in core_sources:
                 page = (output / source_path_to_output(source_path)).read_text(encoding="utf-8")
                 with self.subTest(core_page=source_path):
@@ -732,7 +732,7 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
                     self.assertIn('class="reading-time"', page)
 
             media_paths = {path for path in file_paths if path.endswith((".jpg", ".svg"))}
-            self.assertEqual(105, len(media_paths))
+            self.assertEqual(106, len(media_paths))
             for media_path in media_paths:
                 self.assertEqual((REPO_ROOT / media_path).read_bytes(), (output / media_path).read_bytes())
             self.assertIn('href="Maps/index.html"', home)
@@ -743,7 +743,7 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             year_plan = (output / "Bible_Timeline/52周圣经故事线_查经与史料阅读计划.html").read_text(encoding="utf-8")
             self.assertEqual(10, year_plan.count('class="study-illustration"'))
             self.assertEqual(42, year_plan.count('class="study-art"'))
-            self.assertEqual(6, home.count('class="guide-card"'))
+            self.assertEqual(8, home.count('class="guide-card"'))
             self.assertIn('<article class="reading-body hub-page">', (output / "Bilingual_Notes/index.html").read_text(encoding="utf-8"))
             self.assertIn('<article class="reading-body">', year_plan)
             for note in sorted((output / "Bilingual_Notes").glob("20*.html")):

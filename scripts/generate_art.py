@@ -1981,6 +1981,34 @@ def lyre_dawn() -> ET.Element:
     return root
 
 
+def booths_harvest() -> ET.Element:
+    root = scene("booths-harvest", "Living in booths | 住在棚里",
+                 "Under a starry autumn sky, small shelters roofed with leafy branches glow with lamplight, beside baskets of grapes and bundles of grain. | "
+                 "秋夜星空下，几座用带叶树枝盖顶的小棚透出灯光，旁边有一筐筐葡萄和一捆捆谷物。", "#1f2b46")
+    stars(root, [(60, 50), (150, 100), (260, 40), (380, 80), (520, 50), (640, 90), (740, 40)])
+    el(root, "circle", cx=680, cy=110, r=34, fill="#f4efe3", fill_opacity=0.9)
+    ground(root, 330, "#3b3a30", 8, 600)
+    for x, w in [(140, 170), (380, 190), (620, 160)]:
+        el(root, "rect", x=x - w / 2, y=230, width=w, height=110, fill="#6b4e2e")
+        el(root, "circle", cx=x, cy=300, r=60, fill="#f2c56b", fill_opacity=0.28)
+        for px in (x - w / 2, x + w / 2 - 8):
+            el(root, "rect", x=px, y=226, width=8, height=114, fill="#7a5537")
+        for i in range(7):
+            cx = x - w / 2 + 10 + i * (w - 20) / 6
+            el(root, "circle", cx=f"{cx:.1f}", cy=222 + (i % 2) * 6, r=22, fill="#4f7d45" if i % 2 else "#5f8f50")
+        el(root, "circle", cx=x, cy=300, r=8, fill="#fbe08a")
+        el(root, "circle", cx=x, cy=300, r=26, fill="#fbe08a", fill_opacity=0.2)
+    for x in (270, 510):
+        el(root, "path", d=f"M{x - 24} 372 L{x + 24} 372 L{x + 18} 400 L{x - 18} 400 Z", fill="#a86f3c")
+        for j in range(6):
+            el(root, "circle", cx=x - 15 + (j % 3) * 15, cy=364 - (j // 3) * 10, r=7, fill="#7b4f6b")
+    for x in (720, 60):
+        for k in range(5):
+            el(root, "line", x1=x + k * 4, y1=400, x2=x - 10 + k * 8, y2=340, stroke="#d8b47a", stroke_width=3)
+        el(root, "line", x1=x - 4, y1=378, x2=x + 22, y2=378, stroke="#8e6644", stroke_width=4)
+    return root
+
+
 RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "papyrus-codex.svg": papyrus_codex,
     "story-procession.svg": story_procession,
@@ -1991,6 +2019,7 @@ RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "notebook-pen.svg": notebook_pen,
     "study-desk.svg": study_desk,
     "lyre-dawn.svg": lyre_dawn,
+    "booths-harvest.svg": booths_harvest,
 }
 
 

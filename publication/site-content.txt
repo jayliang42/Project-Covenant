@@ -20,6 +20,7 @@ Bible_Timeline/Bible_People_Bilingual.md
 Bible_Timeline/Bible_Reading_Toolkit_Bilingual.md
 Bible_Timeline/Bible_Timeline_Bilingual.md
 Bible_Timeline/Bible_Timeline_Cheat_Sheet.md
+Bible_Timeline/Feasts_of_the_Bible_Bilingual.md
 Bible_Timeline/First_Steps_Bilingual.md
 Bible_Timeline/Key_Passages_Bilingual.md
 Bible_Timeline/New_Testament_Timeline_Bilingual.md
@@ -102,6 +103,7 @@ assets/art/barley-harvest.svg
 assets/art/basin-towel.svg
 assets/art/bethlehem-star.svg
 assets/art/bible-library.svg
+assets/art/booths-harvest.svg
 assets/art/branching-tree.svg
 assets/art/bread-cup.svg
 assets/art/bridge-reconcile.svg

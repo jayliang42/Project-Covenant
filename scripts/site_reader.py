@@ -33,6 +33,7 @@ STORY_ROUTE = (
     "Bible_Timeline/Bible_Reading_Toolkit_Bilingual.md",
     "Bible_Timeline/Bible_People_Bilingual.md",
     "Bible_Timeline/Bible_Covenants_Bilingual.md",
+    "Bible_Timeline/Feasts_of_the_Bible_Bilingual.md",
     "Bible_Timeline/Parables_of_Jesus_Bilingual.md",
     "Bible_Timeline/Key_Passages_Bilingual.md",
     "Bible_Timeline/Prayers_in_the_Bible_Bilingual.md",
@@ -59,6 +60,8 @@ QUICK_GUIDES = (
     ("Bible_Timeline/Bible_Covenants_Bilingual.md", "Covenants | 圣经中的约", "The five covenants that carry the story. | 贯穿故事的五个约。"),
     ("Bible_Timeline/Parables_of_Jesus_Bilingual.md", "Parables | 耶稣的比喻", "Nineteen parables and how to read them. | 十九个比喻及读法。"),
     ("Bible_Timeline/Key_Passages_Bilingual.md", "Key Passages | 值得熟悉的经文", "Thirty-six passages worth knowing well. | 三十六段值得熟悉的经文。"),
+    ("Bible_Timeline/Prayers_in_the_Bible_Bilingual.md", "Prayers | 圣经中的祷告", "Twenty-one prayers to learn from. | 二十一篇可以学习的祷告。"),
+    ("Bible_Timeline/Psalms_for_Different_Times_Bilingual.md", "Psalms for Different Times | 不同处境中的诗篇", "A psalm for what you are going through. | 为当下处境找一篇诗篇。"),
 )
 
 # --- Language display -------------------------------------------------------
