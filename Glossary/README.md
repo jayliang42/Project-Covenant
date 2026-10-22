@@ -345,6 +345,9 @@ Being raised from death into life. In Christian teaching, Jesus’ resurrection 
 A story or comparison that invites listeners to see something differently. Its setting and main point matter.
 借故事或比较帮助听者换个角度理解事情；要留意语境与重点。
 
+See [Parables of Jesus](../Bible_Timeline/Parables_of_Jesus_Bilingual.md) for nineteen examples and how to read them.<br>
+十九个例子及读法，见[耶稣的比喻](../Bible_Timeline/Parables_of_Jesus_Bilingual.md)。
+
 [First use in First Steps | 入门路线首次使用](../Bible_Timeline/First_Steps_Bilingual.md#stop-jesus)
 
 <a id="psalm"></a>

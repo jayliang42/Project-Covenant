@@ -106,6 +106,7 @@ Project-Covenant/
 - [Bible Reading Toolkit | 读经工具箱](./Bible_Timeline/Bible_Reading_Toolkit_Bilingual.md)
 - [People of the Bible | 圣经人物](./Bible_Timeline/Bible_People_Bilingual.md)
 - [Covenants of the Bible | 圣经中的约](./Bible_Timeline/Bible_Covenants_Bilingual.md)
+- [Parables of Jesus | 耶稣的比喻](./Bible_Timeline/Parables_of_Jesus_Bilingual.md)
 - [Research Hub | 研究导航](./Bible_Timeline/README.md)
 - [One-page Cheat Sheet | 一页式速查表](./Bible_Timeline/Bible_Timeline_Cheat_Sheet.md)
 - [Old Testament Timeline | 旧约时间线](./Bible_Timeline/Old_Testament_Timeline_Bilingual.md)

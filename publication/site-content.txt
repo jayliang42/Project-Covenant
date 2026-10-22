@@ -23,6 +23,7 @@ Bible_Timeline/Bible_Timeline_Cheat_Sheet.md
 Bible_Timeline/First_Steps_Bilingual.md
 Bible_Timeline/New_Testament_Timeline_Bilingual.md
 Bible_Timeline/Old_Testament_Timeline_Bilingual.md
+Bible_Timeline/Parables_of_Jesus_Bilingual.md
 Bible_Timeline/README.md
 Bible_Timeline/两约之间至四福音_第二圣殿与罗马背景.md
 Bible_Timeline/使徒行传与保罗书信_旅程年代与城市史料对照.md
@@ -128,6 +129,7 @@ assets/art/lamp-light.svg
 assets/art/letter.svg
 assets/art/lilies-birds.svg
 assets/art/lions-den.svg
+assets/art/lost-sheep.svg
 assets/art/lowly-valley.svg
 assets/art/morning-prayer.svg
 assets/art/mount-teaching.svg

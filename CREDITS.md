@@ -114,8 +114,8 @@ The cedar-cutting file’s English description cites 2 Samuel 5, while its title
 <a id="original-illustrations"></a>
 ## Original Illustrations | 原创插画
 
-Seventy-seven simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
-本资料库有七十七幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
+Seventy-eight simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
+本资料库有七十八幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
 
 | File / 文件 | Subject / 内容 | Used in / 使用位置 |
 | --- | --- | --- |
@@ -155,7 +155,7 @@ Seventy-seven simple vector illustrations were drawn for this library in code, w
 | `assets/art/seasons-tree.svg` | A time for everything / 凡事都有定时 | Ecclesiastes; week 33 / 传道书；第 33 周 |
 | `assets/art/jordan-dove.svg` | At the Jordan River / 在约旦河边 | John; week 36; a teaching note / 约翰福音；第 36 周；一篇讲道笔记 |
 | `assets/art/galilee-boat.svg` | Fishing on the Sea of Galilee / 在加利利海打鱼 | Mark; week 37 / 马可福音；第 37 周 |
-| `assets/art/sower.svg` | The sower / 撒种的比喻 | Matthew; week 38 / 马太福音；第 38 周 |
+| `assets/art/sower.svg` | The sower / 撒种的比喻 | Matthew; week 38; Parables of Jesus / 马太福音；第 38 周；耶稣的比喻 |
 | `assets/art/palm-road.svg` | The road to Jerusalem / 往耶路撒冷的路 | Week 39 / 第 39 周 |
 | `assets/art/chariot-road.svg` | A chariot on the desert road / 旷野路上的车 | Week 43; a teaching note / 第 43 周；一篇讲道笔记 |
 | `assets/art/table-fellowship.svg` | One family at one table / 同坐一桌的一家人 | Week 44; two teaching notes / 第 44 周；两篇讲道笔记 |
@@ -183,7 +183,7 @@ Seventy-seven simple vector illustrations were drawn for this library in code, w
 | `assets/art/bridge-reconcile.svg` | Meeting on the bridge / 在桥上相迎 | Anger and Reconciliation / 愤怒与和好 |
 | `assets/art/secret-room.svg` | Prayer in the quiet room / 在内屋祷告 | Spiritual Practices and the Father / 属灵操练与天父 |
 | `assets/art/morning-prayer.svg` | Growing in prayer / 在祷告中成长 | Spiritual Growth Through Prayer / 借祷告属灵成长 |
-| `assets/art/hidden-treasure.svg` | Treasure in heaven / 积攒财宝在天上 | Treasuring Jesus / 以耶稣为至宝 |
+| `assets/art/hidden-treasure.svg` | Treasure in heaven / 积攒财宝在天上 | Treasuring Jesus; Parables of Jesus / 以耶稣为至宝；耶稣的比喻 |
 | `assets/art/lilies-birds.svg` | Birds of the air, lilies of the field / 天上的飞鸟，野地的百合 | Overcoming Worry / 胜过忧虑 |
 | `assets/art/john-signs.svg` | Signs and sayings in John / 约翰福音的记号与宣告 | Seek the Truth guide / 《求真寻道》导读 |
 | `assets/art/weighing-evidence.svg` | Weighing the evidence / 衡量证据 | Evidence That Demands a Verdict guide / 《铁证待判》导读 |
@@ -196,6 +196,7 @@ Seventy-seven simple vector illustrations were drawn for this library in code, w
 | `assets/art/papyrus-codex.svg` | An early papyrus book / 早期的蒲草纸抄本 | Resurrection and Early Witnesses / 复活与早期见证 |
 | `assets/art/story-procession.svg` | People of the story / 故事中的人物 | People of the Bible / 圣经人物 |
 | `assets/art/parchment-map.svg` | An old map / 一幅旧地图 | Places of the Bible / 圣经地名 |
+| `assets/art/lost-sheep.svg` | The sheep that was found / 找回的羊 | Parables of Jesus / 耶稣的比喻 |
 
 Check them with `python3 scripts/generate_art.py --check`; the command fails if a committed file differs from the generator.<br>
 可用 `python3 scripts/generate_art.py --check` 检查；若已提交的文件与生成结果不一致，该命令会报错。

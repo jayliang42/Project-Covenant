@@ -1849,10 +1849,35 @@ def parchment_map() -> ET.Element:
     return root
 
 
+def lost_sheep() -> ET.Element:
+    root = scene("lost-sheep", "The sheep that was found | 找回的羊",
+                 "On a rocky hillside at sunset, a shepherd walks home carrying a found sheep across his shoulders, with the rest of the flock waiting below. | "
+                 "夕阳下的石头山坡上，牧人把找回的羊扛在肩上走回家，其余的羊群在山下等候。", "#f1dcc0")
+    el(root, "circle", cx=160, cy=150, r=70, fill="#eaa94a", fill_opacity=0.75)
+    el(root, "path", d="M0 300 C 160 230, 320 250, 480 200 C 600 170, 700 190, 800 160 L800 450 L0 450 Z", fill="#b9a479")
+    el(root, "path", d="M0 380 C 200 350, 420 380, 800 340 L800 450 L0 450 Z", fill="#8fa06a")
+    for x, y in [(520, 214), (600, 196), (690, 186), (90, 300)]:
+        el(root, "path", d=f"M{x - 22} {y} C {x - 18} {y - 18}, {x + 18} {y - 18}, {x + 22} {y} Z", fill="#9c8d72")
+    for x, y in [(110, 392), (170, 404), (230, 396), (150, 376)]:
+        el(root, "path", d=f"M{x - 20} {y} C {x - 24} {y - 24}, {x + 20} {y - 28}, {x + 22} {y} Z", fill="#f4efe3")
+        el(root, "circle", cx=x + 24, cy=y - 14, r=7, fill="#cfc4ae")
+    g = ET.SubElement(root, NS + "g", {"transform": "translate(430 330) scale(2.1)"})
+    el(g, "path", d="M-13 0 L-9 -44 C -8 -50, 8 -50, 9 -44 L13 0 Z", fill="#4f6b52")
+    el(g, "path", d="M-26 -42 C -28 -56, -10 -60, 0 -57 C 10 -60, 28 -56, 26 -42 C 20 -36, -20 -36, -26 -42 Z", fill="#f4efe3")
+    el(g, "circle", cx=-29, cy=-48, r=5.5, fill="#cfc4ae")
+    for x in (-22, -16, 16, 22):
+        el(g, "line", x1=x, y1=-40, x2=x + (2 if x > 0 else -2), y2=-31, stroke="#cfc4ae", stroke_width=2, stroke_linecap="round")
+    el(g, "circle", cx=0, cy=-62, r=8.5, fill="#b07a55")
+    el(g, "line", x1=16, y1=0, x2=22, y2=-60, stroke="#7a5537", stroke_width=2.4, stroke_linecap="round")
+    el(g, "path", d="M22 -60 C 22 -68, 30 -68, 30 -62", fill="none", stroke="#7a5537", stroke_width=2.4, stroke_linecap="round")
+    return root
+
+
 RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "papyrus-codex.svg": papyrus_codex,
     "story-procession.svg": story_procession,
     "parchment-map.svg": parchment_map,
+    "lost-sheep.svg": lost_sheep,
 }
 
 
