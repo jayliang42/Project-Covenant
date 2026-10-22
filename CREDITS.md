@@ -114,8 +114,8 @@ The cedar-cutting file’s English description cites 2 Samuel 5, while its title
 <a id="original-illustrations"></a>
 ## Original Illustrations | 原创插画
 
-Ninety-four simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
-本资料库有九十四幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
+Ninety-eight simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
+本资料库有九十八幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
 
 | File / 文件 | Subject / 内容 | Used in / 使用位置 |
 | --- | --- | --- |
@@ -213,6 +213,10 @@ Ninety-four simple vector illustrations were drawn for this library in code, wit
 | `assets/art/split-crown.svg` | A kingdom divided / 王国分裂 | Divided Kingdom to Return / 分裂王国至归回 |
 | `assets/art/roman-road.svg` | The road to the cities / 通往城市的大路 | Acts and Paul / 使徒行传与保罗书信 |
 | `assets/art/scroll-jars.svg` | Scrolls kept in jars / 存放在陶罐里的书卷 | Ancient Old Testament Book Lists / 古代旧约书目 |
+| `assets/art/four-clocks.svg` | Four kinds of time / 四种时间 | Four Clocks by Book / 逐卷四时钟年代画像 |
+| `assets/art/eleven-threads.svg` | Threads through the story / 贯穿故事的线 | Eleven Theme Threads / 十一条主题线 |
+| `assets/art/stepping-stones.svg` | One step to the next / 一步接一步 | 66-Book Handoff Table / 66 卷承上启下总表 |
+| `assets/art/signpost.svg` | Which way to go / 往哪里走 | Evidence Anchor Crosswalk / 旁证锚点对应表 |
 
 Check them with `python3 scripts/generate_art.py --check`; the command fails if a committed file differs from the generator.<br>
 可用 `python3 scripts/generate_art.py --check` 检查；若已提交的文件与生成结果不一致，该命令会报错。

@@ -2267,6 +2267,97 @@ def scroll_jars() -> ET.Element:
     return root
 
 
+def four_clocks() -> ET.Element:
+    root = scene("four-clocks", "Four kinds of time | 四种时间",
+                 "Four round dials stand in a row; inside them are a small figure walking a path, a pen, a scroll, and an open book, for the time of the story, the writing, the copies, and later readers. | "
+                 "四个圆形表盘排成一行，里面分别是一个走在路上的小人、一支笔、一卷书和一本打开的书，代表故事发生、写作成书、抄本流传和后人阅读的时间。", "#e9ecef")
+    el(root, "path", d="M0 330 C 260 316, 540 316, 800 330 L800 450 L0 450 Z", fill="#cfd6cf")
+    colors = ["#c96f4a", "#d9a441", "#4f7d6a", "#3f6f8f"]
+    for i, color in enumerate(colors):
+        cx = 130 + i * 180
+        cy = 210
+        el(root, "circle", cx=cx, cy=cy, r=74, fill="#f7f4ec", stroke=color, stroke_width=10)
+        for k in range(12):
+            a = math.radians(k * 30)
+            el(root, "line", x1=f"{cx + 58 * math.sin(a):.1f}", y1=f"{cy - 58 * math.cos(a):.1f}", x2=f"{cx + 64 * math.sin(a):.1f}", y2=f"{cy - 64 * math.cos(a):.1f}", stroke="#b8b2a6", stroke_width=3)
+        if i == 0:
+            el(root, "path", d=f"M{cx - 40} {cy + 30} C {cx - 10} {cy + 10}, {cx + 10} {cy + 34}, {cx + 40} {cy + 14}", fill="none", stroke="#d8b47a", stroke_width=6, stroke_linecap="round")
+            person(root, cx, cy + 16, color, "#c99a6e", 0.6)
+        elif i == 1:
+            el(root, "path", d=f"M{cx - 30} {cy + 34} L{cx + 24} {cy - 30} L{cx + 34} {cy - 22} L{cx - 20} {cy + 42} Z", fill=color)
+            el(root, "path", d=f"M{cx - 30} {cy + 34} L{cx - 36} {cy + 50} L{cx - 20} {cy + 42} Z", fill="#5a3e2a")
+        elif i == 2:
+            el(root, "rect", x=cx - 26, y=cy - 26, width=52, height=52, rx=3, fill="#e9d9b4")
+            for k in range(3):
+                el(root, "line", x1=cx - 18, y1=cy - 12 + k * 12, x2=cx + 18, y2=cy - 12 + k * 12, stroke="#cdb88c", stroke_width=2)
+            for x in (cx - 30, cx + 30):
+                el(root, "rect", x=x - 6, y=cy - 32, width=12, height=64, rx=5, fill=color)
+        else:
+            el(root, "path", d=f"M{cx} {cy - 22} C {cx - 16} {cy - 30}, {cx - 34} {cy - 28}, {cx - 40} {cy - 22} L{cx - 40} {cy + 26} C {cx - 30} {cy + 20}, {cx - 14} {cy + 20}, {cx} {cy + 28} Z", fill="#f2e6c8", stroke=color, stroke_width=3)
+            el(root, "path", d=f"M{cx} {cy - 22} C {cx + 16} {cy - 30}, {cx + 34} {cy - 28}, {cx + 40} {cy - 22} L{cx + 40} {cy + 26} C {cx + 30} {cy + 20}, {cx + 14} {cy + 20}, {cx} {cy + 28} Z", fill="#f2e6c8", stroke=color, stroke_width=3)
+        el(root, "rect", x=cx - 8, y=cy + 74, width=16, height=50, fill="#b8b2a6")
+    return root
+
+
+def eleven_threads() -> ET.Element:
+    root = scene("eleven-threads", "Threads through the story | 贯穿故事的线",
+                 "Eleven colored threads run side by side across a wooden loom, crossing a band of woven cloth. | "
+                 "十一条彩色的线并排穿过一架木织机，越过一段已经织好的布。", "#f1ebdf")
+    el(root, "rect", x=80, y=70, width=24, height=320, rx=6, fill="#8e6644")
+    el(root, "rect", x=696, y=70, width=24, height=320, rx=6, fill="#8e6644")
+    el(root, "rect", x=70, y=60, width=660, height=20, rx=6, fill="#7a5537")
+    el(root, "rect", x=70, y=380, width=660, height=20, rx=6, fill="#7a5537")
+    colors = ["#c96f4a", "#d9a441", "#8fb46e", "#4f7d6a", "#3f6f8f", "#7a5f8f", "#a35d3c", "#c99436", "#5f8f50", "#8e3b46", "#4a6fa0"]
+    for i, color in enumerate(colors):
+        y = 112 + i * 25
+        el(root, "path", d=f"M104 {y} C 260 {y - 8}, 540 {y + 8}, 696 {y}", fill="none", stroke=color, stroke_width=7, stroke_linecap="round")
+    el(root, "rect", x=300, y=96, width=200, height=276, fill="#e9dfc6", fill_opacity=0.55)
+    for k in range(10):
+        x = 310 + k * 20
+        el(root, "line", x1=x, y1=96, x2=x, y2=372, stroke="#b8a888", stroke_width=4, stroke_opacity=0.7)
+    return root
+
+
+def stepping_stones() -> ET.Element:
+    root = scene("stepping-stones", "One step to the next | 一步接一步",
+                 "A line of flat stepping stones crosses a gentle stream from one green bank to the other. | "
+                 "一排平整的踏脚石横过一条平缓的小溪，从一边绿岸通到另一边。", "#e4eef0")
+    el(root, "path", d="M0 180 C 200 150, 380 200, 560 160 C 680 136, 760 150, 800 140 L800 450 L0 450 Z", fill="#8fb46e")
+    el(root, "path", d="M0 250 C 220 230, 520 270, 800 230 L800 340 C 540 380, 260 330, 0 360 Z", fill="#7fb7c4")
+    for k in range(5):
+        y = 270 + k * 18
+        el(root, "path", d=f"M{60 + k * 90} {y} q 20 -6 40 0", fill="none", stroke="#a9d1da", stroke_width=3, stroke_linecap="round")
+        el(root, "path", d=f"M{500 + k * 50} {y + 6} q 20 -6 40 0", fill="none", stroke="#a9d1da", stroke_width=3, stroke_linecap="round")
+    stones = [(110, 390, 46), (210, 352, 42), (310, 322, 40), (410, 300, 38), (505, 284, 36), (595, 268, 34), (680, 250, 32)]
+    for x, y, r in stones:
+        el(root, "path", d=f"M{x - r} {y} C {x - r} {y - r * 0.5}, {x + r} {y - r * 0.5}, {x + r} {y} C {x + r} {y + r * 0.35}, {x - r} {y + r * 0.35}, {x - r} {y} Z", fill="#b8b2a6")
+        el(root, "path", d=f"M{x - r * 0.7} {y - r * 0.12} C {x - r * 0.3} {y - r * 0.3}, {x + r * 0.3} {y - r * 0.3}, {x + r * 0.7} {y - r * 0.12}", fill="none", stroke="#d4cfc4", stroke_width=3)
+    for x, y in [(60, 210), (740, 180), (700, 410), (40, 420)]:
+        el(root, "path", d=f"M{x} {y} l-6 -16 m6 16 l0 -18 m0 18 l6 -16", fill="none", stroke="#4f7d45", stroke_width=3, stroke_linecap="round")
+    return root
+
+
+def signpost() -> ET.Element:
+    root = scene("signpost", "Which way to go | 往哪里走",
+                 "At a crossroads in open country, a wooden signpost with four blank arrows points down different paths. | "
+                 "旷野的十字路口，一根木路标上有四块空白的箭头牌，指向不同的道路。", "#eaf0e6")
+    el(root, "path", d=path([(0, 250)] + wave(0, 800, 244, 8, 500, 0.2) + [(800, 450), (0, 450)]), fill="#9cbf7a")
+    el(root, "path", d="M370 450 L410 260 L430 260 L470 450 Z", fill="#d8c39a")
+    el(root, "path", d="M0 330 C 200 320, 330 300, 420 290 C 520 300, 640 330, 800 340 L800 360 C 640 352, 520 316, 420 306 C 330 316, 200 340, 0 350 Z", fill="#d8c39a")
+    el(root, "rect", x=412, y=110, width=16, height=230, fill="#7a5537")
+    signs = [(140, 1, "#c96f4a"), (180, -1, "#4f7d6a"), (222, 1, "#d9a441"), (262, -1, "#3f6f8f")]
+    for y, d, color in signs:
+        if d > 0:
+            el(root, "path", d=f"M420 {y} L540 {y} L566 {y + 15} L540 {y + 30} L420 {y + 30} Z", fill=color)
+        else:
+            el(root, "path", d=f"M420 {y} L300 {y} L274 {y + 15} L300 {y + 30} L420 {y + 30} Z", fill=color)
+    el(root, "circle", cx=420, cy=106, r=10, fill="#6b4e33")
+    for x, y in [(120, 230), (680, 236), (220, 410), (640, 420)]:
+        el(root, "circle", cx=x, cy=y, r=22, fill="#5f8f50")
+        el(root, "rect", x=x - 3, y=y + 16, width=6, height=16, fill="#6b4e33")
+    return root
+
+
 RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "papyrus-codex.svg": papyrus_codex,
     "story-procession.svg": story_procession,
@@ -2288,6 +2379,10 @@ RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "split-crown.svg": split_crown,
     "roman-road.svg": roman_road,
     "scroll-jars.svg": scroll_jars,
+    "four-clocks.svg": four_clocks,
+    "eleven-threads.svg": eleven_threads,
+    "stepping-stones.svg": stepping_stones,
+    "signpost.svg": signpost,
 }
 
 

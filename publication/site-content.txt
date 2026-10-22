@@ -118,10 +118,12 @@ assets/art/creation-dawn.svg
 assets/art/david-harp.svg
 assets/art/dig-layers.svg
 assets/art/dry-bones.svg
+assets/art/eleven-threads.svg
 assets/art/empty-tomb.svg
 assets/art/exile-road.svg
 assets/art/five-scrolls.svg
 assets/art/found-scroll.svg
+assets/art/four-clocks.svg
 assets/art/galilee-boat.svg
 assets/art/garden-thorn.svg
 assets/art/golden-calf.svg
@@ -175,8 +177,10 @@ assets/art/secret-room.svg
 assets/art/seven-lamps.svg
 assets/art/shared-yoke.svg
 assets/art/shepherd.svg
+assets/art/signpost.svg
 assets/art/sower.svg
 assets/art/split-crown.svg
+assets/art/stepping-stones.svg
 assets/art/stone-tablets.svg
 assets/art/story-procession.svg
 assets/art/study-desk.svg
