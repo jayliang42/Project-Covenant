@@ -481,7 +481,7 @@ The seventh day of rest in Israel’s law (Exodus 20:8–11). Most Christians ga
 A title meaning master. Early Christians confessed “Jesus is Lord” (Romans 10:9). In many English Bibles, LORD in capitals stands for God’s personal name.<br>
 意为“主人”的称号。早期基督徒宣认“耶稣是主”（罗马书 10:9）。在许多英文圣经中，大写的 LORD 代表神的名字。
 
-[Read more | 延伸阅读](../Bible_Timeline/Bible_Reading_Toolkit_Bilingual.md#faq-lord)
+[Read more | 延伸阅读](../Bible_Timeline/Bible_Reading_Toolkit_Bilingual.md#faq-lord) · [Names and Titles of God | 神的名字与称号](../Bible_Timeline/Names_of_God_Bilingual.md#the-name)
 
 <a id="amen"></a>
 ### Amen | 阿们

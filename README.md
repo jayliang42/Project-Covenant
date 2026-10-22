@@ -110,6 +110,7 @@ Project-Covenant/
 - [How the Bible Came to Us | 圣经是怎样传到我们手中的](./Bible_Timeline/How_the_Bible_Came_to_Us_Bilingual.md)
 - [People of the Bible | 圣经人物](./Bible_Timeline/Bible_People_Bilingual.md)
 - [Covenants of the Bible | 圣经中的约](./Bible_Timeline/Bible_Covenants_Bilingual.md)
+- [Names and Titles of God | 神的名字与称号](./Bible_Timeline/Names_of_God_Bilingual.md)
 - [Feasts of the Bible | 圣经中的节期](./Bible_Timeline/Feasts_of_the_Bible_Bilingual.md)
 - [Parables of Jesus | 耶稣的比喻](./Bible_Timeline/Parables_of_Jesus_Bilingual.md)
 - [Miracles of Jesus | 耶稣的神迹](./Bible_Timeline/Miracles_of_Jesus_Bilingual.md)

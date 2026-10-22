@@ -39,6 +39,7 @@ Short, fully bilingual guides for looking something up or reading one theme at a
 ### Threads Through the Story | 贯穿故事的线索
 
 - [Covenants of the Bible | 圣经中的约](./Bible_Covenants_Bilingual.md)
+- [Names and Titles of God | 神的名字与称号](./Names_of_God_Bilingual.md)
 - [Feasts of the Bible | 圣经中的节期](./Feasts_of_the_Bible_Bilingual.md)
 
 <a id="topic-jesus"></a>

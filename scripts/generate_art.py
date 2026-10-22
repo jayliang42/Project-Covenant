@@ -2062,6 +2062,36 @@ def scribe_copying() -> ET.Element:
     return root
 
 
+def burning_bush() -> ET.Element:
+    root = scene("burning-bush", "The bush that was not consumed | 荆棘被火烧着却没有烧毁",
+                 "In a quiet desert below a mountain, a thorny bush burns with bright flames while its branches stay whole; a pair of sandals lies on the sand nearby. | "
+                 "山脚下寂静的旷野里，一丛荆棘燃着明亮的火焰，枝子却完好无损；旁边的沙地上放着一双鞋。", "#3b2f3f")
+    stars(root, [(70, 60), (180, 110), (300, 50), (610, 70), (700, 120), (760, 50)])
+    el(root, "path", d="M0 300 L150 190 L240 240 L360 130 L470 220 L560 170 L700 260 L800 230 L800 330 L0 330 Z", fill="#4a3b48")
+    ground(root, 320, "#8a6a4a", 6, 600)
+    el(root, "circle", cx=400, cy=270, r=170, fill="#f2c56b", fill_opacity=0.10)
+    el(root, "circle", cx=400, cy=270, r=100, fill="#f6b04f", fill_opacity=0.16)
+    el(root, "line", x1=400, y1=372, x2=400, y2=300, stroke="#5a3e2a", stroke_width=9, stroke_linecap="round")
+    for x1, y1, x2, y2 in [(400, 338, 362, 300), (400, 330, 440, 296)]:
+        el(root, "line", x1=x1, y1=y1, x2=x2, y2=y2, stroke="#5a3e2a", stroke_width=6, stroke_linecap="round")
+    for x, y, r in [(340, 292, 26), (372, 276, 30), (410, 270, 32), (448, 282, 28), (466, 300, 20), (330, 308, 18), (400, 300, 30)]:
+        el(root, "circle", cx=x, cy=y, r=r, fill="#5b4a2e")
+    flames = [(404, 150, 64, 280), (360, 196, 44, 286), (450, 192, 46, 288), (330, 232, 28, 296), (476, 230, 28, 298)]
+    for x, top, w, base in flames:
+        el(root, "path", d=f"M{x - w / 2} {base} C {x - w / 2} {base - 50}, {x - w / 6} {top + 40}, {x} {top} C {x + w / 6} {top + 40}, {x + w / 2} {base - 50}, {x + w / 2} {base} C {x + w / 4} {base + 14}, {x - w / 4} {base + 14}, {x - w / 2} {base} Z",
+           fill="#ef8a3a", fill_opacity=0.88)
+        el(root, "path", d=f"M{x - w / 4} {base} C {x - w / 4} {base - 30}, {x - w / 10} {top + 60}, {x} {top + 34} C {x + w / 10} {top + 60}, {x + w / 4} {base - 30}, {x + w / 4} {base} C {x + w / 8} {base + 8}, {x - w / 8} {base + 8}, {x - w / 4} {base} Z",
+           fill="#fbe08a", fill_opacity=0.92)
+    for x1, y1, x2, y2 in [(372, 280, 352, 238), (410, 272, 404, 222), (448, 284, 468, 244)]:
+        el(root, "line", x1=x1, y1=y1, x2=x2, y2=y2, stroke="#5a3e2a", stroke_width=4, stroke_linecap="round")
+    el(root, "path", d="M356 374 C 380 362, 420 362, 444 374 Z", fill="#6b5038")
+    for x in (178, 208):
+        el(root, "rect", x=x, y=372, width=20, height=46, rx=10, fill="#7a5537")
+        for y in (384, 400):
+            el(root, "line", x1=x + 2, y1=y, x2=x + 18, y2=y, stroke="#4e3624", stroke_width=3)
+    return root
+
+
 RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "papyrus-codex.svg": papyrus_codex,
     "story-procession.svg": story_procession,
@@ -2075,6 +2105,7 @@ RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "booths-harvest.svg": booths_harvest,
     "loaves-fish.svg": loaves_fish,
     "scribe-copying.svg": scribe_copying,
+    "burning-bush.svg": burning_bush,
 }
 
 

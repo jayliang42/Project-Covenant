@@ -242,8 +242,8 @@ No. Reading straight through can stall in long lists of laws or names. Many read
 <a id="faq-lord"></a>
 ### Why do some English Bibles print “LORD” in capitals? | 为什么有些英文圣经把 “LORD” 印成大写？
 
-In many English translations, LORD in small capital letters stands for God’s personal name in Hebrew, written with four letters (YHWH). Ordinary “Lord” translates a different word meaning master. The Chinese Union Version usually renders the personal name as 耶和华 and uses 主 for “Lord”.<br>
-在许多英文译本中，用小型大写字母印的 LORD 代表希伯来文中神的名字，由四个字母（YHWH）组成；普通写法的 “Lord” 则翻译另一个意为“主人”的词。和合本一般把这个名字译作“耶和华”，并用“主”翻译 “Lord”。
+In many English translations, LORD in small capital letters stands for God’s personal name in Hebrew, written with four letters (YHWH). Ordinary “Lord” translates a different word meaning master. The Chinese Union Version usually renders the personal name as 耶和华 and uses 主 for “Lord”. See [Names and Titles of God](./Names_of_God_Bilingual.md#the-name) for more.<br>
+在许多英文译本中，用小型大写字母印的 LORD 代表希伯来文中神的名字，由四个字母（YHWH）组成；普通写法的 “Lord” 则翻译另一个意为“主人”的词。和合本一般把这个名字译作“耶和华”，并用“主”翻译 “Lord”。详见[《神的名字与称号》](./Names_of_God_Bilingual.md#the-name)。
 
 <a id="faq-shen"></a>
 ### Why do Chinese Bibles say 神 or 上帝? | 为什么中文圣经有的写“神”，有的写“上帝”？
