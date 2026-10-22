@@ -8,6 +8,10 @@
 > A later community can name, quote, explain, publicly read, or translate a biblical book. These are different kinds of evidence about its reception. This audit records what each source actually shows and where deeper research is still needed.<br>
 > 后来的群体可能列出、引用、解释、公开宣读或翻译某卷[圣经](../Glossary/README.md#bible)。这些是不同层次的[接收史](../Glossary/README.md#reception-history)证据。本审计记录来源实际显示什么，以及哪里仍需深入研究。
 
+![Three readers of different ages, each holding an open book, beneath a lamp / 三位年龄不同的读者在灯下各捧着一本打开的书](../assets/art/reading-generations.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 > Language coverage: paired English/Chinese Draft; translation does not constitute new source verification.<br>
 > 语言覆盖：中英逐段对照Draft；补译不代表来源已经重新核实。
 

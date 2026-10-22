@@ -2358,6 +2358,112 @@ def signpost() -> ET.Element:
     return root
 
 
+def compass_rose() -> ET.Element:
+    root = scene("compass-rose", "Finding your way | 找到方向",
+                 "A brass compass rests on an unfolded parchment map with faint hills, a river, and a dotted route. | "
+                 "一个黄铜指南针放在展开的羊皮纸地图上，地图上有淡淡的山丘、一条河和一条虚线路线。", "#e9e2d0")
+    el(root, "path", d="M90 70 L710 50 L730 400 L70 410 Z", fill="#f2e6c8")
+    el(root, "path", d="M300 60 L310 405 M520 54 L530 402", fill="none", stroke="#e0d0aa", stroke_width=3)
+    el(root, "path", d="M110 300 C 200 260, 260 320, 360 280 C 460 240, 560 300, 700 250", fill="none", stroke="#9cc3cc", stroke_width=8, stroke_linecap="round")
+    for x, y in [(160, 150), (210, 130), (620, 140), (660, 160)]:
+        el(root, "path", d=f"M{x - 30} {y + 20} L{x} {y - 14} L{x + 30} {y + 20}", fill="none", stroke="#b8a888", stroke_width=4, stroke_linejoin="round")
+    el(root, "path", d="M140 360 C 240 330, 320 220, 420 200 C 520 180, 580 110, 650 100", fill="none", stroke="#a35d3c", stroke_width=4, stroke_dasharray="10 10", stroke_linecap="round")
+    el(root, "circle", cx=650, cy=100, r=9, fill="#a35d3c")
+    cx, cy = 420, 230
+    el(root, "circle", cx=cx, cy=cy, r=96, fill="#c99436")
+    el(root, "circle", cx=cx, cy=cy, r=82, fill="#f7f1df")
+    for k in range(16):
+        a = math.radians(k * 22.5)
+        r1 = 66 if k % 4 else 58
+        el(root, "line", x1=f"{cx + r1 * math.sin(a):.1f}", y1=f"{cy - r1 * math.cos(a):.1f}", x2=f"{cx + 76 * math.sin(a):.1f}", y2=f"{cy - 76 * math.cos(a):.1f}", stroke="#b8a888", stroke_width=2)
+    el(root, "path", d=f"M{cx} {cy - 64} L{cx + 12} {cy} L{cx} {cy + 64} L{cx - 12} {cy} Z", fill="#7a8a96")
+    el(root, "path", d=f"M{cx} {cy - 64} L{cx + 12} {cy} L{cx - 12} {cy} Z", fill="#c96f4a")
+    el(root, "path", d=f"M{cx - 64} {cy} L{cx} {cy - 10} L{cx + 64} {cy} L{cx} {cy + 10} Z", fill="#b8b2a6", fill_opacity=0.7)
+    el(root, "circle", cx=cx, cy=cy, r=7, fill="#6b4e33")
+    el(root, "circle", cx=cx, cy=cy - 100, r=10, fill="#c99436")
+    return root
+
+
+def evidence_kinds() -> ET.Element:
+    root = scene("evidence-kinds", "Different kinds of evidence | 不同种类的旁证",
+                 "On a cloth, a clay jar, a coin, an inscribed stone, and a scroll fragment lie side by side under a large magnifying glass. | "
+                 "一块布上并排放着陶罐、钱币、刻字的石块和一片书卷残片，上方有一个大放大镜。", "#e6ebe6")
+    el(root, "path", d="M40 260 L760 260 L790 420 L10 420 Z", fill="#c9b9a0")
+    el(root, "path", d="M40 260 L760 260", stroke="#b0a088", stroke_width=4)
+    el(root, "path", d="M110 350 C 96 300, 110 250, 140 236 L180 236 C 210 250, 224 300, 210 350 Z", fill="#c06a3c")
+    el(root, "rect", x=134, y=224, width=52, height=14, rx=4, fill="#a35a33")
+    el(root, "line", x1=116, y1=290, x2=204, y2=290, stroke="#a35a33", stroke_width=3)
+    el(root, "circle", cx=300, cy=330, r=30, fill="#d8b46a")
+    el(root, "circle", cx=300, cy=330, r=20, fill="none", stroke="#a8823e", stroke_width=3)
+    el(root, "path", d="M292 322 L308 338 M308 322 L292 338", stroke="#a8823e", stroke_width=3)
+    el(root, "path", d="M390 360 L400 268 L520 262 L530 356 Z", fill="#a9a39a")
+    for k in range(4):
+        y = 286 + k * 18
+        el(root, "line", x1=410, y1=y, x2=512, y2=y - 2, stroke="#7f7a71", stroke_width=3, stroke_dasharray="8 6")
+    el(root, "path", d="M580 290 L690 280 L700 300 L688 330 L700 360 L590 366 L600 336 Z", fill="#e9d9b4")
+    for k in range(3):
+        y = 304 + k * 16
+        el(root, "line", x1=604, y1=y, x2=678, y2=y - 3, stroke="#cdb88c", stroke_width=2)
+    el(root, "circle", cx=440, cy=150, r=78, fill="#dce9ee", fill_opacity=0.55, stroke="#6b4e33", stroke_width=12)
+    el(root, "line", x1=496, y1=206, x2=580, y2=250, stroke="#6b4e33", stroke_width=16, stroke_linecap="round")
+    el(root, "path", d="M400 112 C 412 100, 430 96, 446 98", fill="none", stroke="#ffffff", stroke_width=5, stroke_linecap="round", stroke_opacity=0.8)
+    return root
+
+
+def unfolded_map() -> ET.Element:
+    root = scene("unfolded-map", "The whole route on one sheet | 一张纸上的全程",
+                 "A long folded map opens across a table, its panels marked with small icons for a tent, a crown, a temple, and a cross along one continuous line. | "
+                 "一张折叠的长地图在桌上展开，各个折页上有帐篷、王冠、圣殿和十字架等小图标，由一条连续的线连在一起。", "#3f4a5a")
+    el(root, "path", d="M0 300 L800 300 L800 450 L0 450 Z", fill="#6b4e33")
+    panels = [(70, 120, "#f2e6c8"), (240, 132, "#ebdcb8"), (410, 120, "#f2e6c8"), (580, 132, "#ebdcb8")]
+    for x, y, color in panels:
+        el(root, "path", d=f"M{x} {y} L{x + 170} {y + (12 if y == 120 else -12)} L{x + 170} {y + 230 + (12 if y == 120 else -12)} L{x} {y + 230} Z", fill=color)
+    el(root, "path", d="M100 300 C 180 240, 240 280, 320 230 C 400 180, 460 260, 540 220 C 620 180, 680 210, 720 170", fill="none", stroke="#a35d3c", stroke_width=5, stroke_linecap="round")
+    el(root, "path", d="M140 250 L160 214 L180 250 Z", fill="#8e6644")
+    el(root, "path", d="M300 196 L306 176 L316 190 L326 172 L336 190 L346 176 L352 196 Z", fill="#d9a441")
+    el(root, "rect", x=476, y=178, width=40, height=30, fill="#c9a86a")
+    el(root, "rect", x=488, y=190, width=16, height=18, fill="#8e6644")
+    el(root, "rect", x=470, y=170, width=52, height=10, fill="#a8823e")
+    el(root, "rect", x=672, y=116, width=8, height=44, fill="#7a5537")
+    el(root, "rect", x=660, y=128, width=32, height=8, fill="#7a5537")
+    for x, y in [(100, 300), (320, 230), (540, 220), (720, 170)]:
+        el(root, "circle", cx=x, cy=y, r=8, fill="#a35d3c")
+    return root
+
+
+def winding_path() -> ET.Element:
+    root = scene("winding-path", "A long road with markers | 有路标的长路",
+                 "A path winds from the foreground into distant hills, with small colored flags marking stages along the way. | "
+                 "一条小路从近处蜿蜒伸向远方的山丘，沿途插着几面小彩旗，标出路上的各个阶段。", "#e8eef2")
+    el(root, "path", d="M0 210 L120 150 L240 190 L380 120 L520 180 L660 130 L800 170 L800 260 L0 260 Z", fill="#b9c7cf")
+    el(root, "path", d="M0 230 C 260 210, 540 240, 800 220 L800 450 L0 450 Z", fill="#9cbf7a")
+    el(root, "path", d="M0 320 C 260 290, 540 330, 800 300 L800 450 L0 450 Z", fill="#8ab06a")
+    el(root, "path", d="M300 450 C 260 400, 560 380, 520 330 C 490 292, 300 300, 330 262 C 352 236, 470 236, 480 222 L496 224 C 486 246, 372 246, 354 266 C 330 296, 524 300, 552 334 C 590 384, 320 404, 380 450 Z", fill="#e3d4b0")
+    for x, y, color, sc in [(560, 360, "#c96f4a", 1.0), (318, 290, "#d9a441", 0.8), (470, 240, "#4f7d6a", 0.6), (494, 214, "#3f6f8f", 0.45)]:
+        el(root, "line", x1=x, y1=y, x2=x, y2=y - 60 * sc, stroke="#6b4e33", stroke_width=4 * sc)
+        el(root, "path", d=f"M{x} {y - 60 * sc} L{x + 34 * sc} {y - 50 * sc} L{x} {y - 40 * sc} Z", fill=color)
+    return root
+
+
+def reading_generations() -> ET.Element:
+    root = scene("reading-generations", "Read by every generation | 代代相读",
+                 "Three seated readers of different ages, each holding an open book, sit in a row beneath a warm lamp. | "
+                 "三位年龄不同的读者坐成一排，每人手里捧着一本打开的书，上方有一盏温暖的灯。", "#f1e7d6")
+    el(root, "circle", cx=400, cy=92, r=110, fill="#f2c56b", fill_opacity=0.14)
+    el(root, "line", x1=400, y1=0, x2=400, y2=60, stroke="#6b4e33", stroke_width=3)
+    el(root, "path", d="M370 60 L430 60 L414 86 L386 86 Z", fill="#8e6644")
+    el(root, "circle", cx=400, cy=92, r=10, fill="#fbe08a")
+    el(root, "path", d="M0 360 L800 360 L800 450 L0 450 Z", fill="#c9b48a")
+    for x, robe, sc in [(220, "#7a5f8f", 1.0), (400, "#4f7d6a", 0.85), (580, "#a35d3c", 0.7)]:
+        el(root, "rect", x=x - 50 * sc, y=360 - 60 * sc, width=100 * sc, height=60 * sc, rx=6, fill="#8e6644")
+        el(root, "path", d=f"M{x - 34 * sc} {360 - 60 * sc} L{x - 26 * sc} {360 - 150 * sc} C {x - 20 * sc} {360 - 162 * sc}, {x + 20 * sc} {360 - 162 * sc}, {x + 26 * sc} {360 - 150 * sc} L{x + 34 * sc} {360 - 60 * sc} Z", fill=robe)
+        el(root, "circle", cx=x, cy=360 - 182 * sc, r=22 * sc, fill="#c99a6e")
+        bx, by = x, 360 - 104 * sc
+        el(root, "path", d=f"M{bx} {by} L{bx - 34 * sc} {by - 10 * sc} L{bx - 34 * sc} {by + 20 * sc} L{bx} {by + 28 * sc} Z", fill="#f2e6c8")
+        el(root, "path", d=f"M{bx} {by} L{bx + 34 * sc} {by - 10 * sc} L{bx + 34 * sc} {by + 20 * sc} L{bx} {by + 28 * sc} Z", fill="#e9d9b4")
+    return root
+
+
 RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "papyrus-codex.svg": papyrus_codex,
     "story-procession.svg": story_procession,
@@ -2383,6 +2489,11 @@ RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "eleven-threads.svg": eleven_threads,
     "stepping-stones.svg": stepping_stones,
     "signpost.svg": signpost,
+    "compass-rose.svg": compass_rose,
+    "evidence-kinds.svg": evidence_kinds,
+    "unfolded-map.svg": unfolded_map,
+    "winding-path.svg": winding_path,
+    "reading-generations.svg": reading_generations,
 }
 
 

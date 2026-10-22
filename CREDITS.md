@@ -114,8 +114,8 @@ The cedar-cutting file’s English description cites 2 Samuel 5, while its title
 <a id="original-illustrations"></a>
 ## Original Illustrations | 原创插画
 
-Ninety-eight simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
-本资料库有九十八幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
+One hundred three simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
+本资料库有一百零三幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
 
 | File / 文件 | Subject / 内容 | Used in / 使用位置 |
 | --- | --- | --- |
@@ -217,6 +217,11 @@ Ninety-eight simple vector illustrations were drawn for this library in code, wi
 | `assets/art/eleven-threads.svg` | Threads through the story / 贯穿故事的线 | Eleven Theme Threads / 十一条主题线 |
 | `assets/art/stepping-stones.svg` | One step to the next / 一步接一步 | 66-Book Handoff Table / 66 卷承上启下总表 |
 | `assets/art/signpost.svg` | Which way to go / 往哪里走 | Evidence Anchor Crosswalk / 旁证锚点对应表 |
+| `assets/art/compass-rose.svg` | Finding your way / 找到方向 | Research Index and Roadmap / 研究总索引与路线图 |
+| `assets/art/evidence-kinds.svg` | Different kinds of evidence / 不同种类的旁证 | Evidence Types by Book / 逐卷旁证类型画像 |
+| `assets/art/unfolded-map.svg` | The whole route on one sheet / 一张纸上的全程 | One-Table Navigator / 一表总导航 |
+| `assets/art/winding-path.svg` | A long road with markers / 有路标的长路 | Detailed Timeline and Content Line / 圣经时间线与内容线详细版 |
+| `assets/art/reading-generations.svg` | Read by every generation / 代代相读 | Reception History Audit / 66 卷接收史审计 |
 
 Check them with `python3 scripts/generate_art.py --check`; the command fails if a committed file differs from the generator.<br>
 可用 `python3 scripts/generate_art.py --check` 检查；若已提交的文件与生成结果不一致，该命令会报错。

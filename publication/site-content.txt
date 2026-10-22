@@ -114,12 +114,14 @@ assets/art/burning-bush.svg
 assets/art/burning-coal.svg
 assets/art/carmel-altar.svg
 assets/art/chariot-road.svg
+assets/art/compass-rose.svg
 assets/art/creation-dawn.svg
 assets/art/david-harp.svg
 assets/art/dig-layers.svg
 assets/art/dry-bones.svg
 assets/art/eleven-threads.svg
 assets/art/empty-tomb.svg
+assets/art/evidence-kinds.svg
 assets/art/exile-road.svg
 assets/art/five-scrolls.svg
 assets/art/found-scroll.svg
@@ -163,6 +165,7 @@ assets/art/paul-ship.svg
 assets/art/pentecost.svg
 assets/art/potter-wheel.svg
 assets/art/race-course.svg
+assets/art/reading-generations.svg
 assets/art/rebuilding.svg
 assets/art/refining-fire.svg
 assets/art/river-of-life.svg
@@ -189,12 +192,14 @@ assets/art/table-fellowship.svg
 assets/art/temple-courts.svg
 assets/art/translation-books.svg
 assets/art/triune-light.svg
+assets/art/unfolded-map.svg
 assets/art/wanderer-home.svg
 assets/art/water-tunnel.svg
 assets/art/weighing-evidence.svg
 assets/art/well-cup.svg
 assets/art/whirlwind.svg
 assets/art/wilderness-camp.svg
+assets/art/winding-path.svg
 assets/art/word-cards.svg
 assets/illustrations/dore-abraham.jpg
 assets/illustrations/dore-between-testaments.jpg
