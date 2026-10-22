@@ -8,8 +8,8 @@
 > Find any of the 66 books in the index and see where it belongs in the larger story. Each profile gives its setting, its main role, and one passage to start with. These are short orientations, not full studies.<br>
 > 在索引中找到 66 卷中的任何一卷，看看它属于故事的哪一部分。每份简介都写明背景、主要作用和一段入门经文。这些只是简短的导引，不是完整的研究。
 
-按书卷梳理[圣经](../Glossary/README.md#bible)，并把每卷书挂到整条时间线上。
-This file walks through the [Bible](../Glossary/README.md#bible) book by book and shows how each book fits into the larger timeline.
+This page walks through the [Bible](../Glossary/README.md#bible) book by book and shows where each book fits on the larger timeline.<br>
+本页按书卷梳理[圣经](../Glossary/README.md#bible)，并把每卷书放到整条时间线上。
 
 ## Book Jump Table | 书卷跳转表
 

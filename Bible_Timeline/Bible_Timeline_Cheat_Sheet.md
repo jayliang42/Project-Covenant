@@ -8,12 +8,11 @@
 > This page is a short reminder of the [Bible](../Glossary/README.md#bible)’s main stages. It groups people, [covenants](../Glossary/README.md#covenant), and books for quick reference. Use the longer guides when you need evidence or explanation.<br>
 > 本页用简短条目提醒[圣经](../Glossary/README.md#bible)的主要阶段。人物、约与书卷按用途整理，便于查找。需要理由或证据时，请回到较长导读。
 
+A one-page quick review.<br>
 一页式速查版。
-One-page quick review version.
 
+For the one-year study sequence, see the [52-Week Bible Storyline Plan](./52周圣经故事线_查经与史料阅读计划.md).<br>
 一年研读版见[《52 周圣经故事线：查经、史料与考古阅读计划》](./52周圣经故事线_查经与史料阅读计划.md)。
-
-For the one-year study sequence, see the [52-Week Bible Storyline Plan](./52周圣经故事线_查经与史料阅读计划.md).
 
 ## Section Jump Table | 章节跳转表
 
@@ -75,7 +74,8 @@ For the one-year study sequence, see the [52-Week Bible Storyline Plan](./52周�
 11. Revelation: final judgment and new creation
     启示录：最终审判与新创造
 
-详见[《两约之间至四福音：第二圣殿、希腊化与罗马世界》](./两约之间至四福音_第二圣殿与罗马背景.md)。
+For the centuries between Malachi and the Gospels, see [Between the Testaments to the Gospels](./两约之间至四福音_第二圣殿与罗马背景.md).<br>
+从玛拉基书到四福音之间的几百年，详见[《两约之间至四福音：第二圣殿、希腊化与罗马世界》](./两约之间至四福音_第二圣殿与罗马背景.md)。
 
 <a id="main-covenants"></a>
 

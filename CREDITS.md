@@ -114,8 +114,8 @@ The cedar-cutting file’s English description cites 2 Samuel 5, while its title
 <a id="original-illustrations"></a>
 ## Original Illustrations | 原创插画
 
-Seventy-two simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
-本资料库有七十二幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
+Seventy-four simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
+本资料库有七十四幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
 
 | File / 文件 | Subject / 内容 | Used in / 使用位置 |
 | --- | --- | --- |
@@ -124,28 +124,28 @@ Seventy-two simple vector illustrations were drawn for this library in code, wit
 | `assets/art/shepherd.svg` | A shepherd and flock (Psalm 23) / 牧人与羊群（诗篇 23 篇） | Psalms; poetry; week 32 / 诗篇；诗歌文体；第 32 周 |
 | `assets/art/letter.svg` | A letter by lamplight / 灯下书信 | Paul's letters; letters; week 49 / 保罗书信；书信文体；第 49 周 |
 | `assets/art/jonah.svg` | Jonah and the storm / 约拿与风暴 | Jonah; week 18; a teaching note / 约拿书；第 18 周；一篇讲道笔记 |
-| `assets/art/rebuilding.svg` | Rebuilding the walls / 重建城墙 | Haggai; Nehemiah; week 29 / 哈该书；尼希米记；第 29 周 |
+| `assets/art/rebuilding.svg` | Rebuilding the walls / 重建城墙 | Haggai; Nehemiah; week 29; Bible Timeline / 哈该书；尼希米记；第 29 周；圣经时间线 |
 | `assets/art/joseph-granary.svg` | Grain stored in Egypt / 埃及的粮仓 | Week 5 / 第 5 周 |
-| `assets/art/sea-crossing.svg` | Crossing the sea / 过红海 | Exodus; week 6 / 出埃及记；第 6 周 |
+| `assets/art/sea-crossing.svg` | Crossing the sea / 过红海 | Exodus; week 6; Bible Timeline / 出埃及记；第 6 周；圣经时间线 |
 | `assets/art/wilderness-camp.svg` | Camp in the wilderness / 旷野中的营地 | Week 9 / 第 9 周 |
 | `assets/art/barley-harvest.svg` | Barley harvest near Bethlehem / 伯利恒附近的麦收 | Ruth; week 12 / 路得记；第 12 周 |
-| `assets/art/david-harp.svg` | A shepherd's lyre and sling / 牧童的琴与机弦 | Week 14 / 第 14 周 |
-| `assets/art/carmel-altar.svg` | Fire on Mount Carmel / 迦密山上的火 | 1 Kings; week 17 / 列王纪上；第 17 周 |
+| `assets/art/david-harp.svg` | A shepherd's lyre and sling / 牧童的琴与机弦 | Week 14; Bible Timeline / 第 14 周；圣经时间线 |
+| `assets/art/carmel-altar.svg` | Fire on Mount Carmel / 迦密山上的火 | 1 Kings; week 17; Bible Timeline / 列王纪上；第 17 周；圣经时间线 |
 | `assets/art/lions-den.svg` | Daniel in the lions' den / 狮子坑中的但以理 | Daniel; week 26 / 但以理书；第 26 周 |
 | `assets/art/bread-cup.svg` | Bread and cup / 饼与杯 | Weeks 40, 46 / 第 40、46 周 |
-| `assets/art/empty-tomb.svg` | The empty tomb at dawn / 清晨的空坟墓 | Week 41 / 第 41 周 |
-| `assets/art/pentecost.svg` | Pentecost / 五旬节 | Acts; week 42 / 使徒行传；第 42 周 |
+| `assets/art/empty-tomb.svg` | The empty tomb at dawn / 清晨的空坟墓 | Week 41; Bible Timeline / 第 41 周；圣经时间线 |
+| `assets/art/pentecost.svg` | Pentecost / 五旬节 | Acts; week 42; Bible Timeline / 使徒行传；第 42 周；圣经时间线 |
 | `assets/art/paul-ship.svg` | A ship bound for Rome / 驶往罗马的船 | Week 48 / 第 48 周 |
 | `assets/art/jacob-ladder.svg` | Jacob's dream / 雅各的梦 | Genesis; week 4 / 创世记；第 4 周 |
 | `assets/art/lamb-altar.svg` | Altar and offering / 祭坛与献祭 | Leviticus; week 8 / 利未记；第 8 周 |
 | `assets/art/stone-tablets.svg` | Words to remember / 当记念的话 | Deuteronomy; week 10 / 申命记；第 10 周 |
-| `assets/art/jericho-walls.svg` | Around the walls of Jericho / 绕行耶利哥城 | Joshua; week 11 / 约书亚记；第 11 周 |
+| `assets/art/jericho-walls.svg` | Around the walls of Jericho / 绕行耶利哥城 | Joshua; week 11; Bible Timeline / 约书亚记；第 11 周；圣经时间线 |
 | `assets/art/anointing.svg` | Oil for a new king / 膏立新王 | 1 Samuel; week 13 / 撒母耳记上；第 13 周 |
 | `assets/art/golden-calf.svg` | A divided kingdom / 分裂的王国 | Week 16 / 第 16 周 |
 | `assets/art/burning-coal.svg` | A coal from the altar / 坛上的红炭 | Isaiah; week 19; a teaching note / 以赛亚书；第 19 周；一篇讲道笔记 |
-| `assets/art/exile-road.svg` | The road into exile / 被掳之路 | 2 Kings; week 20 / 列王纪下；第 20 周 |
+| `assets/art/exile-road.svg` | The road into exile / 被掳之路 | 2 Kings; week 20; Bible Timeline / 列王纪下；第 20 周；圣经时间线 |
 | `assets/art/water-tunnel.svg` | A tunnel for water / 引水的隧道 | Week 21 / 第 21 周 |
-| `assets/art/found-scroll.svg` | A scroll found in the temple / 在圣殿中找到的书卷 | 2 Chronicles; week 22 / 历代志下；第 22 周 |
+| `assets/art/found-scroll.svg` | A scroll found in the temple / 在圣殿中找到的书卷 | 2 Chronicles; week 22; Old Testament Timeline / 历代志下；第 22 周；旧约时间线 |
 | `assets/art/potter-wheel.svg` | At the potter's house / 在窑匠家里 | Jeremiah; week 23 / 耶利米书；第 23 周 |
 | `assets/art/ruined-city.svg` | Jerusalem in ruins / 荒凉的耶路撒冷 | Lamentations; week 24 / 耶利米哀歌；第 24 周 |
 | `assets/art/dry-bones.svg` | The valley of dry bones / 枯骨的平原 | Ezekiel; week 25 / 以西结书；第 25 周 |
@@ -164,7 +164,7 @@ Seventy-two simple vector illustrations were drawn for this library in code, wit
 | `assets/art/lamp-light.svg` | Light in the house / 屋中的光 | 1 John; week 51 / 约翰一书；第 51 周 |
 | `assets/art/open-hands.svg` | A living offering / 活祭 | Worship and Sacrifice / 敬拜与献祭 |
 | `assets/art/race-course.svg` | Running with endurance / 存心忍耐奔跑 | Faith and Endurance / 信心与忍耐 |
-| `assets/art/river-of-life.svg` | The river of life / 生命河 | Heaven and Christian Hope / 天堂与基督徒盼望 |
+| `assets/art/river-of-life.svg` | The river of life / 生命河 | Heaven and Christian Hope; Bible Timeline / 天堂与基督徒盼望；圣经时间线 |
 | `assets/art/bethlehem-star.svg` | A light for every neighbor / 照亮邻舍的光 | Christmas as Mission / 把圣诞活成使命 |
 | `assets/art/night-shepherds.svg` | Good news in the night / 夜里的好消息 | Christmas Praise and Hope / 圣诞的赞美与盼望 |
 | `assets/art/open-cage.svg` | Free to live for God / 得自由为神而活 | Christian Living in Christ's Freedom / 在基督自由中生活 |
@@ -172,7 +172,7 @@ Seventy-two simple vector illustrations were drawn for this library in code, wit
 | `assets/art/triune-light.svg` | Love shared from eternity / 永恒中分享的爱 | The Father, Son, and Spirit; Trinity guide / 父、子与圣灵；三一神指南 |
 | `assets/art/basin-towel.svg` | The basin and the towel / 水盆与手巾 | Servant Leadership / 仆人式带领 |
 | `assets/art/garden-thorn.svg` | Beauty and the thorn / 美善与荆棘 | Creation, Beauty, and Evil / 创造、美与邪恶 |
-| `assets/art/creation-dawn.svg` | Creation overflowing / 满溢的创造 | Creation from Triune Love / 从三一之爱看创造 |
+| `assets/art/creation-dawn.svg` | Creation overflowing / 满溢的创造 | Creation from Triune Love; Bible Timeline / 从三一之爱看创造；圣经时间线 |
 | `assets/art/high-priest.svg` | Our great High Priest / 我们的大祭司 | Christ Our Great High Priest / 基督是我们的大祭司 |
 | `assets/art/shared-yoke.svg` | Sharing the yoke / 同负一轭 | Rest and Peace in Christ / 在基督里的安息与平安 |
 | `assets/art/mount-teaching.svg` | Teaching on the mountain / 山上的教导 | Entering the Sermon on the Mount / 进入登山宝训 |
@@ -191,6 +191,8 @@ Seventy-two simple vector illustrations were drawn for this library in code, wit
 | `assets/art/branching-tree.svg` | One trunk, many branches / 同一树干，许多枝子 | How to Name Christian Groups / 怎样给基督教群体命名 |
 | `assets/art/translation-books.svg` | One message, many languages / 同一信息，多种语言 | Bible Translations / 圣经译本 |
 | `assets/art/word-cards.svg` | Words to learn / 要学的词 | Glossary / 词汇表 |
+| `assets/art/ark-rainbow.svg` | After the flood / 洪水之后 | Bible Timeline / 圣经时间线 |
+| `assets/art/abraham-stars.svg` | Count the stars / 数一数天上的星 | Bible Timeline / 圣经时间线 |
 
 Check them with `python3 scripts/generate_art.py --check`; the command fails if a committed file differs from the generator.<br>
 可用 `python3 scripts/generate_art.py --check` 检查；若已提交的文件与生成结果不一致，该命令会报错。

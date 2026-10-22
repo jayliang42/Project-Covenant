@@ -8,8 +8,12 @@
 > The [Old Testament](../Glossary/README.md#old-testament) moves from [creation](../Glossary/README.md#creation) through promise, rescue, kingdom, and [exile](../Glossary/README.md#exile). Return brings a new beginning but does not resolve every problem. The dates here are approximate, and several early periods remain disputed.<br>
 > 旧约从[创造](../Glossary/README.md#creation)走向[应许](../Glossary/README.md#promise)、拯救、王国与[被掳](../Glossary/README.md#exile)。归回带来新开始，但并非所有问题都已解决。这里的年代是大致估计，部分早期阶段仍有争议。
 
+This bilingual Old Testament timeline shows where each Old Testament book fits in the story.<br>
 这份旧约时间线中英对照，帮助你看清旧约各卷在故事中的位置。
-This bilingual Old Testament timeline shows where each Old Testament book fits in the story.
+
+![An old scroll lying partly unrolled among stones, lit by a beam of light / 一卷古老的书卷半展开地躺在石块间，被一束光照亮](../assets/art/found-scroll.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
 
 ## Section Jump Table | 章节跳转表
 
@@ -18,14 +22,13 @@ This bilingual Old Testament timeline shows where each Old Testament book fits i
 | Big picture / 总览 | [Jump](#big-picture) |
 | Main flow / 主线流程 | [Jump](#main-flow) |
 | Timeline / 时间线 | [Jump](#timeline) |
-| Old Testament book groups / [旧约](../Glossary/README.md#old-testament)书卷分组 | [Jump](#old-testament-book-groups) |
+| Old Testament book groups / 旧约书卷分组 | [Jump](#old-testament-book-groups) |
 | What the Old Testament is doing / 旧约到底在做什么 | [Jump](#what-the-old-testament-is-doing) |
-| Bridge to the [New Testament](../Glossary/README.md#new-testament) / 走向新约的桥 | [Jump](#bridge-to-the-new-testament) |
+| Bridge to the New Testament / 走向新约的桥 | [Jump](#bridge-to-the-new-testament) |
 
 <a id="big-picture"></a>
 
 ## Big Picture | 总览
-
 
 The Old Testament moves from creation to exile and partial return. Its central question is not only “What happened to Israel?” but “How will God's promises survive human sin and covenant failure?”<br>
 旧约的故事从创造一直走到被掳与部分归回。它的核心问题不只是“以色列后来怎么了”，而是“在人不断犯罪、不断背约的情况下，神的应许要怎样继续下去？”
@@ -71,7 +74,6 @@ The Old Testament moves from creation to exile and partial return. Its central q
 
 #### Why it matters | 为什么重要
 
-
 Everything begins here: human dignity, human rebellion, and the need for [redemption](../Glossary/README.md#redemption).<br>
 一切都从这里开始：人的尊严、人的悖逆，以及[救赎](../Glossary/README.md#redemption)的必要。
 
@@ -86,7 +88,6 @@ Everything begins here: human dignity, human rebellion, and the need for [redemp
   关键词：审判、怜悯、保守、[立约](../Glossary/README.md#covenant)
 
 #### Why it matters | 为什么重要
-
 
 God judges evil, but he does not abandon his world. He preserves history for the sake of his purposes.<br>
 神审判邪恶，但没有放弃祂的世界。祂保守历史继续往祂的计划走。
@@ -103,7 +104,6 @@ God judges evil, but he does not abandon his world. He preserves history for the
 
 #### Why it matters | 为什么重要
 
-
 God narrows the story line into one family, not to exclude the nations forever, but to bless them through that family.<br>
 神把故事线收束到一个家族中，并不是永远排除万国，而是要借这个家族[祝福](../Glossary/README.md#blessing)万国。
 
@@ -118,7 +118,6 @@ God narrows the story line into one family, not to exclude the nations forever, 
   关键词：救赎、律法、圣洁、[会幕](../Glossary/README.md#tabernacle)、约民
 
 #### Why it matters | 为什么重要
-
 
 God not only saves a people from slavery; he forms them into a people who belong to him.<br>
 神不只是把一群人从奴役中救出来，祂还把他们塑造成属于祂的子民。
@@ -135,7 +134,6 @@ God not only saves a people from slavery; he forms them into a people who belong
 
 #### Why it matters | 为什么重要
 
-
 The wilderness shows how deep unbelief runs even after deliverance, and how patient God's covenant faithfulness is.<br>
 旷野时期显明，即使人已经得拯救，不信仍然很深；同时也显明神守约的忍耐何等长久。
 
@@ -150,7 +148,6 @@ The wilderness shows how deep unbelief runs even after deliverance, and how pati
   关键词：得地、不完全顺服、循环性败坏、隐藏的信实
 
 #### Why it matters | 为什么重要
-
 
 Israel receives the land, but life in the land shows that external settlement does not equal inward faithfulness.<br>
 以色列虽得了地，但在地上的生活显明：外在安顿并不等于内里忠心。
@@ -167,7 +164,6 @@ Israel receives the land, but life in the land shows that external settlement do
 
 #### Why it matters | 为什么重要
 
-
 This is the high point of Old Testament national life, yet even here sin already threatens the kingdom from within.<br>
 这是旧约民族历史的高峰，但即使在高峰期，罪也已经从内部侵蚀国度。
 
@@ -182,7 +178,6 @@ This is the high point of Old Testament national life, yet even here sin already
   关键词：偶像崇拜、先知警告、改革、衰败、审判
 
 #### Why it matters | 为什么重要
-
 
 The kingdom splits, and the prophets explain that political collapse is tied to spiritual rebellion.<br>
 王国分裂之后，先知不断解释：政治崩塌背后，是属灵背叛。
@@ -199,7 +194,6 @@ The kingdom splits, and the prophets explain that political collapse is tied to 
 
 #### Why it matters | 为什么重要
 
-
 Exile looks like the collapse of everything, but it becomes the place where God speaks some of his deepest promises of renewal.<br>
 被掳看起来像一切都崩塌了，但神却恰恰在这里说出一些最深的恢复应许。
 
@@ -214,7 +208,6 @@ Exile looks like the collapse of everything, but it becomes the place where God 
   关键词：重建、[悔改](../Glossary/README.md#repentance)、软弱、未完成的盼望
 
 #### Why it matters | 为什么重要
-
 
 The people come back, but the story still feels incomplete. This creates deep expectation for the [Messiah](../Glossary/README.md#messiah).<br>
 百姓虽然回来了，但故事仍然显得没有完成，这就带来对[弥赛亚](../Glossary/README.md#messiah)更深的等待。
@@ -249,7 +242,6 @@ The people come back, but the story still feels incomplete. This creates deep ex
 
 ## What The Old Testament Is Doing | 旧约到底在做什么
 
-
 The Old Testament is doing at least five things at once:<br>
 旧约至少同时在做五件事：
 
@@ -268,9 +260,8 @@ The Old Testament is doing at least five things at once:<br>
 
 ## Bridge To The New Testament | 走向新约的桥
 
-
-By the end of the Old Testament, readers are still waiting:<br>
-到了旧约结尾，读者其实仍在等待：
+By the end of the Old Testament, readers are still waiting for what the [New Testament](../Glossary/README.md#new-testament) will announce:<br>
+到了旧约结尾，读者其实仍在等待[新约](../Glossary/README.md#new-testament)将要宣告的事：
 
 - for a true king,
   等待真正的王，

@@ -1724,6 +1724,56 @@ GUIDE_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
 }
 
 
+
+# --- Sixth set: storyline stages ------------------------------------------
+
+def ark_rainbow() -> ET.Element:
+    root = scene("ark-rainbow", "After the flood | 洪水之后",
+                 "A large wooden ark rests on a mountainside as the water recedes, with a rainbow arching across the clearing sky and a dove in flight. | "
+                 "洪水退去，一只巨大的木方舟停在山坡上；天空放晴，彩虹横跨天际，一只鸽子在飞翔。", "#dfe8ec")
+    for i, color in enumerate(["#c4574a", "#e2a84a", "#e9d36a", "#6f9f4c", "#3f6c7a", "#7b5d84"]):
+        r = 330 - i * 14
+        el(root, "path", d=f"M{400 - r} 330 A {r} {r} 0 0 1 {400 + r} 330", fill="none", stroke=color, stroke_width=14, stroke_opacity=0.55)
+    el(root, "path", d="M0 300 C 120 200, 260 190, 380 260 C 460 300, 560 250, 800 280 L800 450 L0 450 Z", fill="#7d8a6a")
+    el(root, "path", d=path([(0, 450)] + wave(0, 800, 360, 8, 220) + [(800, 450)]), fill="#5f97a8")
+    el(root, "path", d="M150 258 L470 258 L440 310 L180 310 Z", fill="#7a5537")
+    for y in (270, 284, 298):
+        el(root, "line", x1=168, y1=y, x2=452, y2=y, stroke="#5a3e28", stroke_width=2)
+    el(root, "rect", x=220, y=206, width=180, height=54, fill="#8e6644")
+    el(root, "path", d="M206 210 L310 176 L414 210 Z", fill="#6b4e33")
+    for x in (250, 300, 350):
+        el(root, "rect", x=x - 8, y=222, width=16, height=14, fill="#3a2e22")
+    el(root, "path", d="M600 120 C 610 108, 622 112, 626 120 C 636 108, 648 106, 656 112 C 646 118, 640 126, 628 128 L636 140 L622 132 C 614 134, 604 130, 600 120 Z", fill="#fbf8f0")
+    el(root, "path", d="M656 112 L672 108 L664 118 Z", fill="#6f9f4c")
+    return root
+
+
+def abraham_stars() -> ET.Element:
+    root = scene("abraham-stars", "Count the stars | 数一数天上的星",
+                 "An old man stands outside his tent on a hill at night, looking up at a sky crowded with stars. | "
+                 "夜里，一位老人站在山坡的帐棚外，仰望满天繁星。", "#1c2540")
+    for i in range(90):
+        x = (i * 97) % 790 + 5
+        y = (i * 53) % 260 + 10
+        el(root, "circle", cx=x, cy=y, r=1.2 + (i % 4) * 0.5, fill="#f4efe3", fill_opacity=0.55 + (i % 3) * 0.15)
+    ground(root, 330, "#2e3328", 16, 640, 0.6)
+    el(root, "path", d="M480 360 L560 280 L640 360 Z", fill="#8d7a5a")
+    el(root, "path", d="M540 360 L560 300 L580 360 Z", fill="#3a2e22")
+    el(root, "path", d="M560 280 L700 300 L640 360 Z", fill="#6f5e44")
+    g = ET.SubElement(root, NS + "g", {"transform": "translate(330 372) scale(1.4)"})
+    el(g, "path", d="M-13 0 L-9 -44 C -8 -50, 8 -50, 9 -44 L13 0 Z", fill="#7b5d84")
+    el(g, "circle", cx=2, cy=-57, r=9, fill="#8a5f43")
+    el(g, "path", d="M-5 -52 C -4 -44, 8 -44, 9 -52 C 6 -40, -2 -40, -5 -52 Z", fill="#e8e1d2")
+    el(g, "line", x1=14, y1=0, x2=20, y2=-62, stroke="#7a5537", stroke_width=3, stroke_linecap="round")
+    return root
+
+
+TIMELINE_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
+    "ark-rainbow.svg": ark_rainbow,
+    "abraham-stars.svg": abraham_stars,
+}
+
+
 ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "jacob-ladder.svg": jacob_ladder,
     "lamb-altar.svg": lamb_altar,
@@ -1770,6 +1820,7 @@ ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "open-bible.svg": open_book,
     **NOTE_ARTWORKS,
     **GUIDE_ARTWORKS,
+    **TIMELINE_ARTWORKS,
 }
 
 

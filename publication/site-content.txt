@@ -87,8 +87,10 @@ Maps/README.md
 PUBLICATION_POLICY.md
 README.md
 STATIC_MIRROR_DEPLOYMENT.md
+assets/art/abraham-stars.svg
 assets/art/anchor-hope.svg
 assets/art/anointing.svg
+assets/art/ark-rainbow.svg
 assets/art/barley-harvest.svg
 assets/art/basin-towel.svg
 assets/art/bethlehem-star.svg

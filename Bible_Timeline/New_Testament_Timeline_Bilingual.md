@@ -8,32 +8,37 @@
 > The [New Testament](../Glossary/README.md#new-testament) centers on Jesus and the early communities that follow him. The Gospels, Acts, letters, and Revelation serve different purposes. Use the timeline and maps to locate a passage, then read it in context.<br>
 > 新约以耶稣和早期跟随祂的群体为中心。[福音书](../Glossary/README.md#gospels)、使徒行传、书信和启示录各有不同用途。先用时间线和地图定位，再回到上下文阅读。
 
+This bilingual New Testament timeline shows where each New Testament book fits in the story.<br>
 这份新约时间线中英对照，帮助你看清新约各卷在故事中的位置。
-This bilingual New Testament timeline shows where each New Testament book fits in the story.
 
+For the Hellenistic, Maccabean, Hasmonean, Herodian, and Roman background before the Gospels begin, see [Between the Testaments to the Gospels](./两约之间至四福音_第二圣殿与罗马背景.md).<br>
 四福音开始前的希腊化、马加比、哈斯摩尼、希律家族和罗马行政背景，见[《两约之间至四福音：第二圣殿、希腊化与罗马世界》](./两约之间至四福音_第二圣殿与罗马背景.md)。
 
+For how the Gospel [resurrection](../Glossary/README.md#resurrection) accounts relate, the setting of the women’s testimony, models of empty-tomb research, the early tradition in 1 Corinthians 15, the [manuscript](../Glossary/README.md#manuscript) endings of Mark, burial remains, and the limits of Roman sources, see [Resurrection and Early Witnesses](./复活与早期见证_文本史与历史研究边界.md).<br>
 四福音[复活](../Glossary/README.md#resurrection)叙事关系、妇女见证语境、空墓研究模型、林前 15 的早期传统、马可福音结尾[抄本](../Glossary/README.md#manuscript)、墓葬遗存和罗马材料的证据边界，见[《复活与早期见证：文本史、墓葬背景与历史研究边界》](./复活与早期见证_文本史与历史研究边界.md)。
 
+For the three journeys in Acts, the stages in which Paul wrote his letters, the Gallio date anchor, and evidence from each city, see [Acts and the Pauline Letters](./使徒行传与保罗书信_旅程年代与城市史料对照.md).<br>
 《使徒行传》三次宣教旅程、保罗书信写作阶段、迦流年代锚点及各城市史料，见[《使徒行传与保罗书信：旅程、年代与城市史料对照》](./使徒行传与保罗书信_旅程年代与城市史料对照.md)。
 
+For Hebrews, the General Epistles, the period after AD 70, Patmos, the seven cities of Asia, and the symbols of Revelation, see [Hebrews to Revelation](./希伯来书至启示录_晚期新约与七教会背景.md).<br>
 希伯来书、普通书信、主后 70 年后景、拔摩、亚细亚七城和启示录象征，见[《希伯来书至启示录：晚期新约、普通书信与七教会背景》](./希伯来书至启示录_晚期新约与七教会背景.md)。
 
+In the one-year plan, the New Testament is covered in weeks 35–52 of the [52-Week Bible Storyline](./52周圣经故事线_查经与史料阅读计划.md).<br>
 若按一年计划阅读，新约部分集中在[《52 周圣经故事线》](./52周圣经故事线_查经与史料阅读计划.md)第 35–52 周。
 
 ## Section Jump Table | 章节跳转表
 
 | Section / 章节 | Link / 跳转 |
 | --- | --- |
-| [Gospel](../Glossary/README.md#gospels) map / 福音书地图 | [Open / 打开](#gospel-map) |
+| Gospel map / 福音书地图 | [Open / 打开](#gospel-map) |
 | Jesus’ ministry in Galilee / 耶稣在加利利的事工 | [Open / 打开](#galilee-ministry) |
 | Big picture / 总览 | [Jump](#big-picture) |
 | Main flow / 主线流程 | [Jump](#main-flow) |
 | Timeline / 时间线 | [Jump](#timeline) |
-| New Testament book groups / [新约](../Glossary/README.md#new-testament)书卷分组 | [Jump](#new-testament-book-groups) |
+| New Testament book groups / 新约书卷分组 | [Jump](#new-testament-book-groups) |
 | Rough letter placement / 书信大致位置 | [Jump](#rough-letter-placement) |
 | What the New Testament is doing / 新约到底在做什么 | [Jump](#what-the-new-testament-is-doing) |
-| Relationship to the [Old Testament](../Glossary/README.md#old-testament) / 与旧约的关系 | [Jump](#relationship-to-the-old-testament) |
+| Relationship to the Old Testament / 与旧约的关系 | [Jump](#relationship-to-the-old-testament) |
 | Simple reading logic / 简单阅读逻辑 | [Jump](#simple-reading-logic) |
 
 <a id="gospel-map"></a>
@@ -58,7 +63,6 @@ Read Luke 4:16–30, John 2:1–11 and 4:46–54, and Mark 1:21–39 alongside t
 <a id="big-picture"></a>
 
 ## Big Picture | 总览
-
 
 The New Testament begins with Jesus and then shows what happens because Jesus came, died, rose, ascended, and poured out the [Holy Spirit](../Glossary/README.md#holy-spirit).<br>
 新约从耶稣开始，然后展开一个问题：因为耶稣来了、死了、复活了、升天了、并赐下[圣灵](../Glossary/README.md#holy-spirit)，接下来世界发生了什么？
@@ -102,7 +106,6 @@ The New Testament begins with Jesus and then shows what happens because Jesus ca
 
 #### Why it matters | 为什么重要
 
-
 The Messiah does not appear as an isolated new idea. He arrives as the fulfillment of the Old Testament story.<br>
 弥赛亚不是突然冒出来的新概念，祂是旧约整条故事线的成全。
 
@@ -117,7 +120,6 @@ The Messiah does not appear as an isolated new idea. He arrives as the fulfillme
   关键词：天国、教导、神迹、门徒训练、权柄
 
 #### Why it matters | 为什么重要
-
 
 Jesus reveals who God is, what the kingdom is, and what true humanity looks like.<br>
 耶稣显明神是谁、天国是什么样子，也显明一个真正的人该怎样活。
@@ -134,7 +136,6 @@ Jesus reveals who God is, what the kingdom is, and what true humanity looks like
 
 #### Why it matters | 为什么重要
 
-
 The cross is the center of [redemption](../Glossary/README.md#redemption), and the resurrection is God's vindication of the Son and the beginning of [new creation](../Glossary/README.md#new-creation) life.<br>
 十字架是[救赎](../Glossary/README.md#redemption)的中心，复活则是父神对圣子的印证，也是[新创造](../Glossary/README.md#new-creation)生命的开端。
 
@@ -149,7 +150,6 @@ The cross is the center of [redemption](../Glossary/README.md#redemption), and t
   关键词：高升、圣灵、见证、教会开始
 
 #### Why it matters | 为什么重要
-
 
 Jesus is not absent after ascension. He reigns and continues his work through the Spirit.<br>
 耶稣升天后并不是不在了，祂是在掌权，并借着圣灵继续工作。
@@ -166,7 +166,6 @@ Jesus is not absent after ascension. He reigns and continues his work through th
 
 #### Why it matters | 为什么重要
 
-
 The church is shown not as a side project but as the Spirit-formed people of the risen [Christ](../Glossary/README.md#christ).<br>
 这里显明，教会不是附带项目，而是复活[基督](../Glossary/README.md#christ)借圣灵所塑造的群体。
 
@@ -181,7 +180,6 @@ The church is shown not as a side project but as the Spirit-formed people of the
   关键词：福音扩展、[外邦人](../Glossary/README.md#gentile)被接纳、受苦、宣教
 
 #### Why it matters | 为什么重要
-
 
 The promises to bless the nations begin to be visibly fulfilled in history.<br>
 “万国得福”的应许开始在历史中明显展开。
@@ -198,7 +196,6 @@ The promises to bless the nations begin to be visibly fulfilled in history.<br>
 
 #### Why it matters | 为什么重要
 
-
 The letters explain what Jesus' work means for the church's belief, worship, ethics, mission, and endurance.<br>
 书信解释了耶稣的工作对教会的信仰、敬拜、伦理、使命和忍耐到底意味着什么。
 
@@ -213,7 +210,6 @@ The letters explain what Jesus' work means for the church's belief, worship, eth
   关键词：审判、得胜、敬拜、忍耐、新创造
 
 #### Why it matters | 为什么重要
-
 
 The New Testament ends by showing where all gospel history is going: Christ wins, evil ends, and God dwells with his people forever.<br>
 新约最后显明整段福音历史究竟走向哪里：基督得胜，邪恶终结，神与祂子民永远同住。
@@ -254,7 +250,6 @@ The seven cities were real urban communities existing at the same time, and toge
 
 ## Rough Letter Placement | 书信大致位置
 
-
 - Early church growth period: James, Galatians, 1-2 Thessalonians.
   教会早期成长阶段：雅各书、加拉太书、帖撒罗尼迦前后书。
 - Missionary and church-formation period: Corinthians, Romans, Prison Epistles.
@@ -269,7 +264,6 @@ The seven cities were real urban communities existing at the same time, and toge
 <a id="what-the-new-testament-is-doing"></a>
 
 ## What The New Testament Is Doing | 新约到底在做什么
-
 
 The New Testament is doing at least five things:<br>
 新约至少在做五件事：
@@ -289,14 +283,12 @@ The New Testament is doing at least five things:<br>
 
 ## Relationship To The Old Testament | 与旧约的关系
 
-
-The New Testament does not replace the Old Testament as if the first part no longer matters. It completes what the Old Testament prepared.<br>
-新约不是把旧约“替换掉”，好像前面部分不重要了；新约是在完成旧约所预备的一切。
+The New Testament does not replace the [Old Testament](../Glossary/README.md#old-testament) as if the first part no longer matters. It completes what the Old Testament prepared.<br>
+新约不是把[旧约](../Glossary/README.md#old-testament)“替换掉”，好像前面部分不重要了；新约是在完成旧约所预备的一切。
 
 <a id="simple-reading-logic"></a>
 
 ## Simple Reading Logic | 简单阅读逻辑
-
 
 If you are new, a clear order is:<br>
 如果你刚开始读新约，一个清晰路线可以是：

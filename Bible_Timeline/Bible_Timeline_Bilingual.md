@@ -48,7 +48,6 @@ The Bible tells how God creates a good world, humanity falls into sin, God forms
 
 ## Quick Map | 快速地图
 
-
 If you feel that “the Bible is made of many books but I cannot see how they fit together,” this is the shortest big-picture map:<br>
 如果你常觉得“圣经有很多卷书，但我看不出它们怎么连起来”，最短的大图可以这样抓：
 
@@ -99,6 +98,10 @@ If you feel that “the Bible is made of many books but I cannot see how they fi
 <a id="stage-01"></a>
 ### 1. Creation and Fall | 创造与堕落
 
+![The sun rising over sea and land, with birds, a leaping fish, and trees / 太阳从海与陆地上升起，有飞鸟、跃鱼和树木](../assets/art/creation-dawn.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 - Approximate setting: Beginning of history
   大致阶段：历史起初
 - Main books: Genesis 1-3
@@ -114,6 +117,12 @@ The Bible begins with God as Creator and humanity as image-bearers. Sin enters e
 <a id="stage-02"></a>
 ### 2. Flood and Noah | 洪水与挪亚
 
+![An ark resting on a hillside under a rainbow as the water recedes / 洪水退去，方舟停在山坡上，天空有彩虹](../assets/art/ark-rainbow.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
+- Approximate setting: Early world history; no date is assigned here
+  大致阶段：远古历史；本页不给出年代
 - Main books: Genesis 6-9
   主要书卷：创世记 6-9
 - Key events: Human wickedness increases, flood judgment, Noah preserved, covenant sign of the rainbow
@@ -126,6 +135,10 @@ Judgment and mercy appear together. God judges sin but preserves a line through 
 
 <a id="stage-03"></a>
 ### 3. Abraham and the Patriarchs | 亚伯拉罕与列祖
+
+![An old man outside his tent at night, looking up at countless stars / 夜里，一位老人站在帐棚外仰望无数星星](../assets/art/abraham-stars.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
 
 - Approximate setting: Around the early second millennium BC
   大致阶段：约主前第二个千年早期
@@ -142,6 +155,10 @@ God promises land, offspring, and [blessing](../Glossary/README.md#blessing), in
 <a id="stage-04"></a>
 ### 4. Exodus and Sinai | 出埃及与西奈
 
+![Travelers walking on dry ground between two walls of water, led by a pillar of light / 一行人在两道水墙之间的干地上行走，前面有光柱引路](../assets/art/sea-crossing.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 - Approximate setting: Often placed around the second millennium BC; exact dating is debated
   大致阶段：通常放在主前第二个千年；确切年代有不同看法
 - Main books: Exodus, Leviticus, Numbers, Deuteronomy
@@ -157,6 +174,12 @@ Here God forms Israel into a covenant nation. Exodus becomes the central [Old Te
 <a id="stage-05"></a>
 ### 5. Conquest and Judges | 进迦南与士师
 
+![People carrying horns walking around a walled city / 一行人拿着角号绕着有城墙的城行走](../assets/art/jericho-walls.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
+- Approximate setting: After the exodus and before the monarchy; the dates depend on how the exodus is dated
+  大致阶段：出埃及之后、王国建立之前；具体年代取决于出埃及怎样定年
 - Main books: Joshua, Judges, Ruth
   主要书卷：约书亚记、士师记、路得记
 - Key events: Entering the land, partial conquest, repeated cycles of sin, oppression, crying out, and deliverance
@@ -169,6 +192,10 @@ This era shows that external deliverance is not enough. God's people need inward
 
 <a id="stage-06"></a>
 ### 6. United Kingdom | 统一王国
+
+![A lyre, a sling, five stones, and a small crown on a rock above a pasture / 草场上方岩石上的竖琴、机弦、五块石子和小王冠](../assets/art/david-harp.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
 
 - Approximate setting: Around 1050-930 BC
   大致阶段：约主前 1050-930 年
@@ -185,8 +212,12 @@ David is especially important because God promises a lasting royal line. This be
 <a id="stage-07"></a>
 ### 7. Divided Kingdom | 分裂王国
 
-- Approximate setting: Around 930-722 BC for the northern kingdom
-  大致阶段：约主前 930-722 年，尤其是北国阶段
+![Fire falling on an altar of twelve stones on a mountaintop / 火从天降在山顶十二块石头筑成的坛上](../assets/art/carmel-altar.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
+- Approximate setting: Around 930-722 BC, from the split to the fall of the northern kingdom; Judah continues until 586 BC
+  大致阶段：约主前 930-722 年，从王国分裂到北国灭亡；南国犹大延续到主前 586 年
 - Main books: 1 Kings 12-22, 2 Kings 1-17, 2 Chronicles 10-28, prophetic books
   主要书卷：列王纪上 12-22、列王纪下 1-17、历代志下 10-28、先知书
 - Key events: Kingdom splits into Israel and [Judah](../Glossary/README.md#judah), idolatry increases, prophets call for [repentance](../Glossary/README.md#repentance)
@@ -199,6 +230,10 @@ The prophets interpret history theologically. Political collapse is not random; 
 
 <a id="stage-08"></a>
 ### 8. Exile | 被掳
+
+![A long line of people carrying bundles along a dusty road away from home / 一长列背着包袱的人沿着尘土飞扬的路离开家乡](../assets/art/exile-road.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
 
 - Approximate setting: 722 BC for Israel; 586 BC for Judah and Jerusalem
   大致阶段：北国以色列于主前 722 年；南国[犹大](../Glossary/README.md#judah)和耶路撒冷于主前 586 年
@@ -215,6 +250,10 @@ Exile is one of the great turning points of the Bible. It looks like covenant fa
 <a id="stage-09"></a>
 ### 9. Return and Second Temple Period | 归回与第二圣殿时期
 
+![Workers rebuilding a city wall and gate with scaffolding and baskets / 工人借着木架和筐子重建城墙和城门](../assets/art/rebuilding.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 - Approximate setting: From 538 BC onward
   大致阶段：从主前 538 年开始
 - Main books: Ezra, Nehemiah, Esther, Haggai, Zechariah, Malachi
@@ -227,10 +266,15 @@ Exile is one of the great turning points of the Bible. It looks like covenant fa
 The people return physically, but the larger promises still await fulfillment. This creates expectation for a greater salvation still to come.<br>
 百姓虽然身体上回到了土地，但更大的应许仍未完全实现，因此整段历史都带着对更大拯救的等待。
 
+Between the late Persian period and the Gospels, Judea passed through Hellenistic kingdoms, the Maccabean revolt, the Hasmonean dynasty, Roman takeover, and Herodian rule. See [Between the Testaments to the Gospels: Second Temple, Hellenistic, and Roman World](./两约之间至四福音_第二圣殿与罗马背景.md).<br>
 从波斯末期到四福音之间，犹太地先后经历希腊化王国、马加比反抗、哈斯摩尼王朝、罗马接管和希律统治；详见[《两约之间至四福音：第二圣殿、希腊化与罗马世界》](./两约之间至四福音_第二圣殿与罗马背景.md)。
 
 <a id="stage-10"></a>
 ### 10. Jesus the Messiah | 弥赛亚耶稣
+
+![A large round stone rolled away from an open tomb at sunrise / 日出时，大圆石已从敞开的坟墓门口滚开](../assets/art/empty-tomb.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
 
 - Approximate setting: Early first century AD
   大致阶段：主后一世纪初
@@ -250,8 +294,12 @@ For the earliest resurrection tradition, the [manuscript](../Glossary/README.md#
 <a id="stage-11"></a>
 ### 11. Church and Mission | 教会与使命
 
-- Approximate setting: From Acts onward
-  大致阶段：从使徒行传开始直到新约书信时期
+![A diverse group gathered in a room, with small flames above them and wind sweeping through / 不同背景的人聚在屋里，头上有火焰，有风吹过](../assets/art/pentecost.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
+- Approximate setting: From Acts through the New Testament letters
+  大致阶段：从使徒行传到新约书信时期
 - Main books: Acts, [New Testament](../Glossary/README.md#new-testament) letters
   主要书卷：使徒行传、新约书信
 - Key events: [Pentecost](../Glossary/README.md#pentecost), spread of the gospel, formation of churches, mission to Jews and [Gentiles](../Glossary/README.md#gentile)
@@ -268,6 +316,12 @@ For a journey-by-journey comparison of Acts, the Pauline letters, Roman official
 <a id="stage-12"></a>
 ### 12. New Creation | 新创造
 
+![A bright river flowing from a city gate between fruit trees / 明亮的河从城门流出，两岸有果树](../assets/art/river-of-life.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
+- Approximate setting: The promised future that completes the story
+  大致阶段：完成整个故事的应许中的将来
 - Main books: Revelation 21-22, with roots throughout Scripture
   主要书卷：启示录 21-22，同时整本圣经早有铺垫
 - Key events: Final judgment, evil removed, new heavens and new earth, God dwelling with his people
@@ -282,7 +336,6 @@ For the later New Testament setting—Hebrews, the General Epistles, Patmos, the
 希伯来书、普通书信、拔摩、七教会、帝国崇拜和启示录主要解释问题，见[《希伯来书至启示录：晚期新约、普通书信与七教会背景》](./希伯来书至启示录_晚期新约与七教会背景.md)。
 
 ## Where The Books Fit | 各卷书大致放在哪里
-
 
 - Genesis: creation, fall, flood, Babel, patriarchs.
   创世记：创造、堕落、洪水、巴别、列祖。
@@ -315,7 +368,6 @@ For the later New Testament setting—Hebrews, the General Epistles, Patmos, the
 
 ## Prophet Placement | 先知书大致位置
 
-
 - Before exile, mostly to the northern kingdom: Jonah, Amos, Hosea.
   被掳前，主要对北国说话：约拿书、阿摩司书、何西阿书。
 - Before exile, mostly to Judah: Isaiah, Micah, Zephaniah, Habakkuk, Joel, Jeremiah.
@@ -325,14 +377,17 @@ For the later New Testament setting—Hebrews, the General Epistles, Patmos, the
 - After return: Haggai, Zechariah, Malachi.
   归回之后：哈该书、撒迦利亚书、玛拉基书。
 
+The dates of Joel and Obadiah are debated, so their placement here is only a common reading.<br>
+约珥书和俄巴底亚书的年代有争议，这里的位置只是常见的一种排法。
+
 ## Main People Thread | 主要人物主线
 
 1. Adam and Eve: humanity's beginning and fall.
    亚当和夏娃：人类起头与堕落。
 2. Noah: preserved through judgment.
    挪亚：在审判中蒙保守。
-3. Abraham: covenant promise begins to narrow.
-   亚伯拉罕：约的应许开始聚焦。
+3. Abraham: God's promise is carried through one family.
+   亚伯拉罕：神的应许聚焦到一个家族身上。
 4. Isaac and Jacob: promise continues through the family line.
    以撒和雅各：应许沿着家族血脉继续。
 5. Joseph: the family is preserved and moved into Egypt.
@@ -366,33 +421,31 @@ For the later New Testament setting—Hebrews, the General Epistles, Patmos, the
   各个“约”构成整条圣经故事线的重要骨架。
 - Israel's story prepares for the Messiah.
   以色列的历史是在为弥赛亚作预备。
-- Jesus fulfills and unifies the whole Bible.
+- Jesus fulfills the whole Bible and holds it together around himself.
   耶稣使整本圣经连成一个中心明确的整体。
 - The church lives between Christ's first coming and his return.
   教会活在基督第一次来与再来之间。
-- New creation completes what creation began.
+- New creation completes what creation began and sin damaged.
   新创造完成了创造起初所展开、却因罪而受损的计划。
 
 ## Promise To Fulfillment | 从应许到成全
-
 
 - Genesis 3 introduces the hope that evil will not win forever.
   创世记 3 章已经埋下“邪恶不会永远得胜”的盼望。
 - Abraham receives the promise of offspring, land, and blessing to the nations.
   亚伯拉罕得着后裔、土地和万国得福的应许。
-- Passover and exodus provide the redemption pattern.
-  逾越节与出埃及成为救赎模板。
+- Passover and exodus become the Bible's pattern for redemption.
+  逾越节与出埃及成为圣经中救赎的模式。
 - David receives the promise of an enduring throne.
   大卫得着王位延续的应许。
 - The prophets speak of a coming king, servant, shepherd, new covenant, and Spirit.
   先知不断宣告将来的王、仆人、牧者、新约和圣灵。
 - Jesus fulfills these threads in a deeper and larger way than many expected.
   耶稣以比多数人预期更深、更大的方式成全这些线索。
-- The church lives in the already-not-yet tension: Christ has come, but the story is not yet complete.
-  教会活在 already-not-yet {已然未然} 的张力里：基督已经来了，但故事尚未完全结束。
+- The church lives in an “already, not yet” tension: Christ has come, but the story is not yet complete.
+  教会活在“已然未然”的张力里：基督已经来了，但故事尚未完全结束。
 
 ## If You Read Chronologically | 如果按时间顺序读
-
 
 A helpful beginner flow could be:<br>
 如果你想按时间顺序读，经常可以这样抓一个入门路线：
