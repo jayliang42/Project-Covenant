@@ -147,14 +147,14 @@ Historical and archaeological materials can illuminate people, places, instituti
 Page content does not include the maintainer's personal experiences, testimony, church attendance records, or contact information. The other privacy restrictions, including sensitive personal records and identifiable private anecdotes, still apply. Source churches are described generically, without their names, websites, or meeting details. Raw transcripts and private downloads are not public reading material.<br>
 页面内容不包含维护者的个人经历、见证、聚会出席记录和联系方式。其他隐私限制仍然适用，包括敏感个人记录及可识别的私人轶事。来源教会只以泛称描述，不写名称、网址或聚会细节。原始逐字稿和私人下载文件不属于公开阅读内容。
 
-See [Privacy and Publication Policy | 隐私与发布政策](./PUBLICATION_POLICY.md) for the review rules and the future website boundary.<br>
-审核规则与未来网站的发布边界，见 [Privacy and Publication Policy | 隐私与发布政策](./PUBLICATION_POLICY.md)。
+See [Privacy and Publication Policy | 隐私与发布政策](./PUBLICATION_POLICY.md) for the review rules and the website's publication boundary.<br>
+审核规则与网站的发布边界，见 [Privacy and Publication Policy | 隐私与发布政策](./PUBLICATION_POLICY.md)。
 
-A deterministic, Git-history-free content snapshot can be generated for a future site or clean repository import. This removes repository history from the transferred files, but it does not anonymize the GitHub account that publishes them.<br>
-项目可为未来网站或干净仓库导入生成可重现、不带 Git 历史的内容快照。这会去掉待转移文件中的仓库历史，但不会匿名化发布它们的 GitHub 账号。
+A deterministic, Git-history-free content snapshot can be generated for the website or for a clean repository import. This removes repository history from the transferred files, but it does not anonymize the GitHub account that publishes them.<br>
+项目可以为网站或干净仓库导入生成可重现、不带 Git 历史的内容快照。这会去掉待转移文件中的仓库历史，但不会匿名化发布它们的 GitHub 账号。
 
-The reviewed snapshot can also be rendered as a deterministic static reading site: one HTML page for every approved Markdown page and one local stylesheet plus approved local maps and illustrations. The generated site contains no JavaScript, analytics, forms, comments, remote images, remote fonts, source maps, Git history, or publication manifests. Building the files does not deploy them or make the hosting account anonymous.<br>
-经过复核的快照还可以生成可重现的静态阅读网站：每份获准 Markdown 对应一个 HTML 页面，另加一份本地样式表及获准的本地地图与插画。生成站点不包含 JavaScript、分析追踪、表单、评论、远程图片、远程字体、source map、Git 历史或发布清单。生成文件不等于已经部署，也不会自动匿名化托管账号。
+The reviewed snapshot can also be rendered as a deterministic static reading site: one HTML page for every approved Markdown page and one local stylesheet plus approved local maps and illustrations. Its only script is a local language switch (中文 / EN / 中英) that makes no network request and remembers the reader's choice in the browser; the site contains no analytics, forms, comments, remote images, remote fonts, source maps, Git history, or publication manifests. Building the files does not deploy them or make the hosting account anonymous.<br>
+经过复核的快照还可以生成可重现的静态阅读网站：每份获准 Markdown 对应一个 HTML 页面，另加一份本地样式表及获准的本地地图与插画。站点唯一的脚本是本地语言切换（中文／EN／中英），它不联网，只在浏览器中记住读者的选择；站点不包含分析追踪、表单、评论、远程图片、远程字体、source map、Git 历史或发布清单。生成文件不等于已经部署，也不会自动匿名化托管账号。
 
 ## Build and Offline Reading | 构建与离线阅读
 
@@ -183,11 +183,11 @@ python3 scripts/package_offline_site.py verify \
   --input /tmp/project-covenant-offline.zip
 ```
 
-To read without GitHub or a web server, extract the ZIP and open `project-covenant-offline/index.html` in a browser. The package contains only the approved HTML pages, local CSS, maps, and illustrations; it contains no Git history, scripts, analytics, forms, remote assets, source manifest, or build metadata.<br>
-若要脱离 GitHub 和网页服务器阅读，请解压 ZIP，然后在浏览器中打开 `project-covenant-offline/index.html`。离线包只包含获准的 HTML 页面、本地 CSS、地图和插画，不包含 Git 历史、脚本、分析追踪、表单、远程资源、源白名单或构建元数据。
+To read without GitHub or a web server, extract the ZIP and open `project-covenant-offline/index.html` in a browser. The package contains only the approved HTML pages, local CSS, the local language-switch script, maps, and illustrations; it contains no Git history, analytics, forms, remote assets, source manifest, or build metadata.<br>
+若要脱离 GitHub 和网页服务器阅读，请解压 ZIP，然后在浏览器中打开 `project-covenant-offline/index.html`。离线包只包含获准的 HTML 页面、本地 CSS、本地语言切换脚本、地图和插画，不包含 Git 历史、分析追踪、表单、远程资源、源白名单或构建元数据。
 
-The current release tools require a POSIX system. Before placing the files on any public host, follow [Static Mirror Deployment | 静态镜像部署](./STATIC_MIRROR_DEPLOYMENT.md); the repository is deployment-ready but does not claim that an external mirror is already live.<br>
-当前发布工具要求 POSIX 系统。把文件放到任何公开托管服务之前，请遵循[静态镜像部署](./STATIC_MIRROR_DEPLOYMENT.md)；本仓库已经具备部署条件，但不声称外部镜像已经上线。
+The current release tools require a POSIX system. Before placing the files on any public host, follow [Static Mirror Deployment | 静态镜像部署](./STATIC_MIRROR_DEPLOYMENT.md); the reading site is currently published with GitHub Pages from this repository.<br>
+当前发布工具要求 POSIX 系统。把文件放到任何公开托管服务之前，请遵循[静态镜像部署](./STATIC_MIRROR_DEPLOYMENT.md)；阅读网站目前由本仓库通过 GitHub Pages 发布。
 
 ## Licensing | 授权说明
 

@@ -330,7 +330,7 @@ def _pager(source: str, output: str, page_map: dict[str, str], titles: dict[str,
     return '<nav class="reading-pager" aria-label="Continue reading | 继续阅读">' + "\n".join(links) + "</nav>"
 
 
-def _home_intro(output: str, page_map: dict[str, str]) -> str:
+def _home_intro(output: str, page_map: dict[str, str], home_art: str | None = None) -> str:
     first = next((path for path in STORY_ROUTE[1:] if path in page_map), None)
     start = _link(_href(output, page_map[first]), "Start reading | 开始阅读 →", css="start-reading") if first else ""
     cards = []
@@ -340,11 +340,17 @@ def _home_intro(output: str, page_map: dict[str, str]) -> str:
             continue
         href = html.escape(_href(output, page_map[hub]), quote=True)
         cards.append(f'<a class="collection-card" href="{href}"><span class="collection-number">{index:02d}</span><strong>{bilingual_label(label)}</strong><span class="collection-description">{bilingual_label(description)}</span></a>')
-    return ('<div class="book-intro"><div class="eyebrow">A READING LIBRARY · 阅读资料库</div>'
-            '<div class="book-tagline">One story. Many ways to explore.<br>一条故事线，多种研读路径。</div>'
-            '<p>Begin with a short guide, follow a reading plan, or return to a topic. Read in English or Chinese, and keep each guide’s Draft status and source notes in view.</p>'
-            '<p>从短篇导读开始，跟随阅读计划，或回到感兴趣的专题。可用中文或英文阅读；请同时查看各页的 Draft 状态与来源说明。</p>'
-            + start + '</div><nav class="collection-grid" aria-label="Choose a collection | 选择栏目">' + "\n".join(cards) + '</nav>')
+    art = ""
+    if home_art:
+        art = ('<img class="home-art" src="' + html.escape(_href(output, home_art), quote=True)
+               + '" alt="The Bible as a library of 66 books on two shelves | 两层书架上的 66 卷圣经">')
+    return ('<div class="book-intro"><div class="eyebrow">'
+            '<span class="l-en" lang="en">A READING LIBRARY</span><span class="l-sep"> · </span><span class="l-zh" lang="zh-Hans">阅读资料库</span></div>'
+            '<div class="book-tagline"><span class="l-en" lang="en">One story. Many ways to explore.<br></span>'
+            '<span class="l-zh" lang="zh-Hans">一条故事线，多种研读路径。</span></div>'
+            '<p class="l-en" lang="en">Begin with a short guide, follow a reading plan, or return to a topic. Use the switch at the top right to read in Chinese, in English, or in both, and keep each guide’s Draft status and source notes in view.</p>'
+            '<p class="l-zh" lang="zh-Hans">从短篇导读开始，跟随阅读计划，或回到感兴趣的专题。可以用右上角的按钮切换中文、英文或中英对照；请同时留意各页的 Draft 状态与来源说明。</p>'
+            + start + art + '</div><nav class="collection-grid" aria-label="Choose a collection | 选择栏目">' + "\n".join(cards) + '</nav>')
 
 
 def is_core_study(source: str) -> bool:
@@ -374,7 +380,8 @@ def reading_time(body: str, *, include_short: bool = False) -> str:
 
 
 def render_page(source: str, output: str, title: str, body: str,
-                page_map: dict[str, str], titles: dict[str, str], css_path: str) -> bytes:
+                page_map: dict[str, str], titles: dict[str, str], css_path: str,
+                home_art: str | None = None) -> bytes:
     """Compose reading navigation around untouched, trusted renderer output."""
     if "README.md" not in page_map or page_map.get(source) != output:
         raise ValueError("READER_PAGE_MAP_INVALID")
@@ -389,7 +396,7 @@ def render_page(source: str, output: str, title: str, body: str,
     estimate = reading_time(body, include_short=is_core_study(source))
     if estimate:
         metadata += '<p class="reading-time">' + bilingual_label(estimate) + '</p>'
-    intro = _home_intro(output, page_map) if source == "README.md" else ""
+    intro = _home_intro(output, page_map, home_art) if source == "README.md" else ""
     mobile_toc = '<details class="mobile-toc"><summary>' + bilingual_label("On this page | 本页目录") + '</summary>' + toc + '</details>' if toc else ""
     right_toc = '<aside class="outline-sidebar"><div class="sidebar-label">' + bilingual_label("On this page | 本页目录") + '</div>' + toc + '</aside>' if toc else '<div class="outline-sidebar"></div>'
     policy_links = []
@@ -691,4 +698,11 @@ html.lang-ready .lang-switch { display: inline-flex; flex: none; border: 1px sol
 .header-note { margin-left: auto; }
 @media (max-width: 50rem) { .lang-switch button { padding: .4rem .55rem; } }
 @media print { .lang-switch { display: none !important; } }
+.home-art { display: block; width: 100%; height: auto; margin: 2rem 0 .5rem; border-radius: 14px; box-shadow: 0 1px 2px rgba(0, 0, 0, .06), 0 10px 28px rgba(41, 46, 41, .10); }
+@media (max-width: 50rem) {
+  .site-subtitle { display: none; }
+  .site-title { white-space: nowrap; }
+  .header-inner { gap: .5rem; }
+}
+@media print { .home-art { display: none; } }
 """

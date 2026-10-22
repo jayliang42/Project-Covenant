@@ -29,6 +29,6 @@ Ask which kind of label is being used, who defines it, and what the source actua
 
 Older specialist topics have been removed from the active reading route. The retained guide remains an AI-assisted draft awaiting human review.
 
-旧专题已移出活动阅读路线；保留的导读仍是等待人工审阅的 AI 辅助草稿。
+旧专题已移出当前的阅读路线；保留的导读仍是等待人工审阅的 AI 辅助草稿。
 
 [Back to Project Covenant | 返回圣约计划首页](../README.md)
