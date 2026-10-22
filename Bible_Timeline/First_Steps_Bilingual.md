@@ -18,7 +18,10 @@ New to the [Bible](../Glossary/README.md#bible)? Start here. The ten stops below
 
 ![Ten-stage Bible storyline with approximate and disputed dates / 十站圣经故事线，标注大致年代与争议](../assets/maps/bible-storyline.svg)
 
-The order is narrative, not a proportional timescale. Early date ranges are debated; creation, fall, and new creation are not assigned calendar dates. / 图按叙事顺序排列，不按时间比例；早期年代区间有争议，创造、堕落与新创造不设公历日期。 [Open full SVG | 打开完整图](../assets/maps/bible-storyline.svg)
+The picture follows the order of the story, not a scale of years. Early date ranges are debated, and creation, the fall, and new creation are not given calendar dates.<br>
+图按故事顺序排列，不按年代比例。早期年代区间有争议；创造、堕落与新创造不设公历日期。
+
+[Open the full picture | 打开完整图](../assets/maps/bible-storyline.svg)
 
 <a id="route-guide"></a>
 ## Route Guide | 路线导航
@@ -37,13 +40,14 @@ The order is narrative, not a proportional timescale. Early date ranges are deba
 <a id="ten-stops"></a>
 ## Ten Story Stops | 十站故事线
 
-Read this section as a picture guide. The 30-minute and four-week routes below select passages from the same story. Art is a later interpretation, not a historical photograph. / 本节是一份图像导读；后面的30分钟和四周路线从同一故事选取经文。画作是后来的诠释，不是历史照片。
+Read this section as a picture guide. The 30-minute and four-week routes below choose passages from the same story. The paintings are later artists’ interpretations, not historical photographs.<br>
+本节是一份图像导读；后面的 30 分钟和四周路线从同一个故事中选取经文。这些画作是后世画家的诠释，不是历史照片。
 
 <a id="stop-creation"></a>
 ### Creation | 创造
 
 Begin with Genesis 1–2. [Creation](../Glossary/README.md#creation) means that the world is God’s gift, with a purpose and a place for human responsibility. These opening chapters belong to the [Old Testament](../Glossary/README.md#old-testament).<br>
-先读创世记一至二章。[创造](../Glossary/README.md#creation)表达世界是神的礼物，具有目的，人也承担责任。这些开篇故事属于[旧约](../Glossary/README.md#old-testament)。
+先读创世记一至二章。[创造](../Glossary/README.md#creation)表明世界是神赐的礼物，有它的目的，人在其中也承担责任。这些开篇故事属于[旧约](../Glossary/README.md#old-testament)。
 
 **Read | 阅读：** Genesis 1–2 / 创世记1–2章。
 
@@ -90,8 +94,8 @@ God makes a [covenant](../Glossary/README.md#covenant) with Abraham: a [promise]
 <a id="stop-kingdom"></a>
 ### Kingdom and Division | 王国与分裂
 
-Human kings fail. The [kingdom of God](../Glossary/README.md#kingdom) means God’s rule. The [temple](../Glossary/README.md#temple) becomes a center of worship. [Prophets](../Glossary/README.md#prophet) call people back to faithfulness; a [psalm](../Glossary/README.md#psalm) can voice praise or grief, and [wisdom](../Glossary/README.md#wisdom) writing explores how to live. After the division, Israel often means the northern kingdom and [Judah](../Glossary/README.md#judah) the southern kingdom.<br>
-人间的君王会失败。[国度（神的国）](../Glossary/README.md#kingdom)指神掌权。[圣殿](../Glossary/README.md#temple)成为敬拜中心。[先知](../Glossary/README.md#prophet)呼召人回到对神的忠诚；一篇[诗篇](../Glossary/README.md#psalm)可以表达赞美，也可以倾诉悲伤；[智慧](../Glossary/README.md#wisdom)文学则探讨人该怎样生活。王国分裂后，以色列常指北国，[犹大](../Glossary/README.md#judah)常指南国。
+Israel asks for a king. Under David and Solomon the [temple](../Glossary/README.md#temple) in Jerusalem becomes the center of worship, but human kings fail, and the kingdom splits in two. After the split, “Israel” often means the northern kingdom and [Judah](../Glossary/README.md#judah) the southern one. Through it all, the [kingdom of God](../Glossary/README.md#kingdom), God’s own rule, is the deeper hope. [Prophets](../Glossary/README.md#prophet) call the people back to faithfulness, a [psalm](../Glossary/README.md#psalm) can voice praise or grief, and [wisdom](../Glossary/README.md#wisdom) writing explores how to live well.<br>
+以色列要求立王。在大卫和所罗门的时代，耶路撒冷的[圣殿](../Glossary/README.md#temple)成为敬拜中心；但人间的君王终究失败，王国也一分为二。分裂之后，“以色列”常指北国，[犹大](../Glossary/README.md#judah)则指南国。在这一切之中，更深的盼望是[国度（神的国）](../Glossary/README.md#kingdom)，也就是神自己的掌权。[先知](../Glossary/README.md#prophet)呼召百姓回到对神的忠诚；一篇[诗篇](../Glossary/README.md#psalm)可以表达赞美，也可以倾诉悲伤；[智慧](../Glossary/README.md#wisdom)文学则探讨人怎样活得好。
 
 **Read | 阅读：** 1 Kings 8; 12 / 列王纪上8；12章。
 
@@ -126,8 +130,8 @@ The world changes between the return stories and the Gospels. The picture recall
 <a id="stop-jesus"></a>
 ### Jesus | 耶稣
 
-The [New Testament](../Glossary/README.md#new-testament) presents Jesus as [Messiah](../Glossary/README.md#messiah), also called [Christ](../Glossary/README.md#christ). [Gospel](../Glossary/README.md#gospel) means the good news about him; [grace](../Glossary/README.md#grace), [repentance](../Glossary/README.md#repentance), and [forgiveness](../Glossary/README.md#forgiveness) describe God’s gift and people’s response. A [disciple](../Glossary/README.md#disciple) learns to follow Jesus. A [parable](../Glossary/README.md#parable) helps people see. [Resurrection](../Glossary/README.md#resurrection) means being raised from death.<br>
-[新约](../Glossary/README.md#new-testament)称耶稣为[弥赛亚](../Glossary/README.md#messiah)，也称[基督](../Glossary/README.md#christ)。福音是关于祂的好消息；[恩典](../Glossary/README.md#grace)、[悔改](../Glossary/README.md#repentance)和[赦免](../Glossary/README.md#forgiveness)说明了神的赐予与人的回应。[门徒](../Glossary/README.md#disciple)学习跟随耶稣。[比喻](../Glossary/README.md#parable)帮助人理解。[复活](../Glossary/README.md#resurrection)指从死里被兴起、重新活过来。
+The [New Testament](../Glossary/README.md#new-testament) presents Jesus as [Messiah](../Glossary/README.md#messiah), also called [Christ](../Glossary/README.md#christ). [Gospel](../Glossary/README.md#gospel) means the good news about him; [grace](../Glossary/README.md#grace), [repentance](../Glossary/README.md#repentance), and [forgiveness](../Glossary/README.md#forgiveness) describe God’s gift and people’s response. A [disciple](../Glossary/README.md#disciple) is someone who learns to follow Jesus, and a [parable](../Glossary/README.md#parable) is one of the short stories he told to help people see God’s kingdom in a new way. [Resurrection](../Glossary/README.md#resurrection) means being raised from death to new life.<br>
+[新约](../Glossary/README.md#new-testament)称耶稣为[弥赛亚](../Glossary/README.md#messiah)，也称[基督](../Glossary/README.md#christ)。福音是关于祂的好消息；[恩典](../Glossary/README.md#grace)、[悔改](../Glossary/README.md#repentance)和[赦免](../Glossary/README.md#forgiveness)说明了神的赐予与人的回应。[门徒](../Glossary/README.md#disciple)是学习跟随耶稣的人；[比喻](../Glossary/README.md#parable)是耶稣讲的短故事，帮助人用新的眼光看神的国。[复活](../Glossary/README.md#resurrection)指从死里被兴起、进入新的生命。
 
 **Read | 阅读：** Mark 1:14–20; 15:33–39; 16:1–8 / 马可福音1:14–20；15:33–39；16:1–8。
 
@@ -288,7 +292,9 @@ Use two short sessions each week. Each session has one question. The handoff sen
   **进入完整故事线：** 准备好研读全部 66 卷、历史背景与有边界的外部旁证时，使用[《52 周圣经故事线》完整版](./52周圣经故事线_查经与史料阅读计划.md)。
 - **Read Jesus closely in John | 用约翰福音细读耶稣：** Read the Gospel itself, then use the [Twelve-Week John Route](../Book_Studies/求真寻道_约翰福音研经问答_使用指南.md#reading-route) to follow its signs, teaching, cross, and resurrection without reproducing the copyrighted workbook.
   **用约翰福音细读耶稣：** 先直接阅读约翰福音，再使用[约翰福音 12 周路线](../Book_Studies/求真寻道_约翰福音研经问答_使用指南.md#reading-route)，追踪记号、教导、十字架与复活；该路线不会复制受版权保护的教材正文。
+- **Meet the people and passages | 认识人物与经文：** [People of the Bible](./Bible_People_Bilingual.md) introduces the main people in story order, and [Key Passages to Know](./Key_Passages_Bilingual.md) suggests thirty-six passages to read one at a time.
+  **认识人物与经文：** [圣经人物](./Bible_People_Bilingual.md)按故事顺序介绍主要人物；[值得熟悉的经文](./Key_Passages_Bilingual.md)推荐三十六段经文，可以一段一段地读。
 - **Choose a Christian book guide | 选择基督教书籍导读：** Visit the [Christian Book Studies Library](../Book_Studies/README.md#library-index) for recommendations by question, reading boundaries, and authorized-edition reminders.
-  **选择基督教书籍导读：** 前往[基督教书籍研读 Library](../Book_Studies/README.md#library-index)，按问题查看推荐理由、阅读边界与正版提示。
+  **选择基督教书籍导读：** 前往[基督教书籍研读书库](../Book_Studies/README.md#library-index)，按问题查看推荐理由、阅读边界与正版提示。
 
 [Back to Project Covenant | 返回项目首页](../README.md) · [Back to the Bible Timeline Research Hub | 返回圣经时间线研究中心](./README.md)

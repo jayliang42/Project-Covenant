@@ -50,4 +50,5 @@ This page explains the project's licensing choice and is not legal advice. Creat
 
 [Back to Project Covenant | 返回 Project Covenant 首页](./README.md)
 
-Pilot map layouts and third-party visual assets follow the source-specific terms in [Credits and Licenses](./CREDITS.md); they are not automatically covered by the original-text license. / 地图试点版面与第三方视觉素材遵循[资料来源与授权](./CREDITS.md)的各自条款，不自动纳入原创文字许可证。
+Pilot map layouts and third-party visual assets follow the source-specific terms in [Credits and Licenses](./CREDITS.md); they are not automatically covered by the original-text license.<br>
+地图试点版面与第三方视觉素材遵循[资料来源与授权](./CREDITS.md)的各自条款，不自动纳入原创文字许可证。

@@ -8,7 +8,8 @@ Looking for a single place? [Places of the Bible](./Bible_Places_Bilingual.md) i
 <a id="maps-index"></a>
 ## Map Index | 地图索引
 
-These locally generated maps support reading the Bible’s story, the Gospels, Acts, and Revelation. They work without internet access, map tiles, scripts, or downloaded fonts. On a narrow screen, scroll inside the map or open its SVG link at full size. / 本地生成的地图辅助圣经故事线、福音书、使徒行传与启示录阅读，不需要网络、地图瓦片、脚本或下载字体。窄屏可在图内横向滚动，或打开完整 SVG。
+These locally generated maps support reading the Bible’s story, the Gospels, Acts, and Revelation. They work without internet access, map tiles, scripts, or downloaded fonts. On a narrow screen, scroll inside the map or open its SVG link at full size.<br>
+本地生成的地图辅助圣经故事线、福音书、使徒行传与启示录阅读，不需要网络、地图瓦片、脚本或下载字体。窄屏可在图内横向滚动，或打开完整 SVG。
 
 | Map / 地图 | Read alongside / 配套阅读 |
 | --- | --- |
