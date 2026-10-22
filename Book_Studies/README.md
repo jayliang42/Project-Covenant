@@ -2,19 +2,11 @@
 
 > Status: Draft (AI draft; not human reviewed) | 状态：Draft（AI 草稿，未人工审阅）
 
-> Reading guides for influential Christian books. Each guide identifies the book's own argument, distinguishes historical and scientific evidence from theological conviction, and avoids treating a secondary study guide as a replacement for the book.<br>
-> 本区收录有影响力的基督教书籍研读指南。每份指南都会辨明原书论证，区分历史／科学材料与神学信念，也不会把二手导读当成原书的替代品。
-
-> **Copyright and Authorized-Edition Notice | 版权与正版说明**
+<a id="in-three-sentences"></a>
+> **In Three Sentences | 三句话读懂本篇**
 >
-> Please support authorized editions by purchasing the book, borrowing it from a library, or using a copy made available by the author or publisher. This library does not provide original book text, scans, unauthorized PDFs, or material intended to replace the book.<br>
-> 因版权原因，请支持正版书籍：购买正版、借阅图书馆藏书，或使用作者及出版社正式授权的版本。本资料库不提供原书正文、扫描件、未授权 PDF，也不制作足以替代原书的内容。
->
-> This library provides original reading guides, distilled core ideas, edition notes, and critical-reading indexes so that readers can understand each book and then return to the authorized original.<br>
-> 本资料库提供原创书籍导读、核心思想提炼、版本说明与批判性阅读索引，帮助读者理解各书，并回到正版原著继续阅读。
->
-> Unless otherwise marked, the library's original commentary is shared under `CC BY-NC-SA 4.0`; this license never extends to the books, quotations, cover art, or other third-party material discussed here. See [Licensing | 授权说明](../LICENSE.md).<br>
-> 除非另有标注，本资料库的原创导读采用 `CC BY-NC-SA 4.0`；该许可证绝不延伸到所讨论的原书、引文、封面或其他第三方材料。详情见[授权说明](../LICENSE.md)。
+> This section has reading guides for three Christian books that many Chinese readers meet: one about life’s big questions, one for studying the Gospel of John, and one about historical evidence. Each guide explains what the book argues, where its evidence is strong or dated, and how to read it well. The guides help you read the book; they do not replace it.<br>
+> 本区为三本许多华人读者会接触到的基督教书籍提供导读：一本谈人生的大问题，一本用来研读约翰福音，一本讨论历史证据。每份导读说明原书的论点、哪些证据扎实或已经过时，以及怎样读好这本书。导读帮助你读原书，但不能代替原书。
 
 ![A desk lamp shining on a stack of books and an open book with a bookmark / 台灯照着一摞书和一本夹着书签的打开的书](../assets/art/study-desk.svg)
 
@@ -23,8 +15,8 @@
 <a id="library-index"></a>
 ## Library Index and Recommendations | 图书馆总索引与推荐理由
 
-Every title below is a clickable guide. Choose by the question you are actually asking; no single secondary book should replace reading Scripture or checking the sources it cites.<br>
-下面每个书名都可直接进入导读。请按自己真正的问题选书；任何二手书籍都不应替代直接阅读圣经或核查其引用来源。
+Choose by the question you are asking right now. Each title opens its guide. No book about the Bible should replace reading the Bible itself or checking the sources a book cites.<br>
+按你现在想问的问题来选书；点击书名即可打开导读。任何关于圣经的书，都不应代替直接读圣经，也不应代替核查书中引用的来源。
 
 | If you want to… | Start with… |
 | --- | --- |
@@ -57,10 +49,32 @@ Every title below is a clickable guide. Choose by the question you are actually 
 - **Guide status | 导读状态：** Fully bilingual original thematic guide with edition crosswalk and linked section index. / 原创完整双语主题导读，含版本对照与可跳转页内索引。
 
 <a id="reading-rule"></a>
-## Reading Rule | 阅读原则
+## How to Use These Guides | 怎样使用这些导读
 
-Read the original chapter first. Then use the guide to identify its claim type, check citations that matter, and state where a conclusion is theological rather than something archaeology, manuscripts, or laboratory science can establish by itself.<br>
-先读原书章节，再使用导读辨认论证类型、核查关键引用，并清楚说明哪些结论属于神学判断，而不是考古、抄本或实验科学本身可以单独证明的结论。
+1. **Read a chapter of the book first.** Then open the guide for that chapter.
+   **先读原书的一章，** 再打开这一章的导读。
+2. **Ask what kind of claim the chapter makes.** Is it a historical claim, a scientific example, a reading of Scripture, or a statement of faith?
+   **问一问这一章提出的是哪一类主张：** 历史主张、科学例子、对经文的解读，还是信仰的宣告？
+3. **Check the citations that carry the argument,** especially numbers, quotations, and older scientific or archaeological examples.
+   **核查支撑论证的引用，** 特别是数字、引文，以及较早的科学或考古例子。
+4. **Keep faith and evidence in their places.** Archaeology, manuscripts, and science can support or question a historical claim, but they cannot prove a theological conclusion on their own.
+   **让信仰与证据各在其位。** 考古、抄本和科学可以支持或质疑某个历史主张，却不能单独证明神学结论。
 
-For a natural progression, begin with *Song of a Wanderer* for the broad invitation, continue with *Seek the Truth, Find the Way* to read John closely, and use *Evidence That Demands a Verdict* as a reference when a specific evidence question arises. This is a suggested route, not a required order.<br>
-若想循序渐进，可以先用《游子吟》进入整体问题，再用《求真寻道》细读约翰福音，遇到具体证据问题时再把《铁证待判》作为参考书。这只是建议路线，不是必须顺序。
+A natural order is to start with *Song of a Wanderer* for the big questions, continue with *Seek the Truth, Find the Way* to read John closely, and keep *Evidence That Demands a Verdict* as a reference when a specific evidence question comes up. This is a suggestion, not a required order.<br>
+比较自然的顺序是：先读《游子吟》，进入人生的大问题；再用《求真寻道》细读约翰福音；遇到具体的证据问题时，再把《铁证待判》当作参考书查阅。这只是建议，不是必须遵循的顺序。
+
+<a id="copyright"></a>
+## Please Read the Books Themselves | 请读原书
+
+> **Copyright and Authorized-Edition Notice | 版权与正版说明**
+>
+> Please support authorized editions by purchasing the book, borrowing it from a library, or using a copy made available by the author or publisher. This library does not provide original book text, scans, unauthorized PDFs, or material intended to replace the book.<br>
+> 因版权原因，请支持正版书籍：购买正版、借阅图书馆藏书，或使用作者及出版社正式授权的版本。本资料库不提供原书正文、扫描件、未授权 PDF，也不制作足以替代原书的内容。
+>
+> This library provides original reading guides, distilled core ideas, edition notes, and critical-reading indexes so that readers can understand each book and then return to the authorized original.<br>
+> 本资料库提供原创书籍导读、核心思想提炼、版本说明与批判性阅读索引，帮助读者理解各书，并回到正版原著继续阅读。
+>
+> Unless otherwise marked, the library's original commentary is shared under `CC BY-NC-SA 4.0`; this license never extends to the books, quotations, cover art, or other third-party material discussed here. See [Licensing | 授权说明](../LICENSE.md).<br>
+> 除非另有标注，本资料库的原创导读采用 `CC BY-NC-SA 4.0`；该许可证绝不延伸到所讨论的原书、引文、封面或其他第三方材料。详情见[授权说明](../LICENSE.md)。
+
+[Back to Project Covenant | 返回项目首页](../README.md)

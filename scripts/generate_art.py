@@ -2092,6 +2092,84 @@ def burning_bush() -> ET.Element:
     return root
 
 
+def temple_courts() -> ET.Element:
+    root = scene("temple-courts", "The temple courts | 圣殿的院子",
+                 "In morning light, a tall white sanctuary rises above long colonnades on a great stone platform, as small figures climb the broad steps. | "
+                 "晨光中，一座高大的白色圣所矗立在巨大石台上的长廊之上，几个小小的人影正走上宽阔的台阶。", "#efe4cc")
+    el(root, "circle", cx=130, cy=90, r=40, fill="#f2c56b", fill_opacity=0.8)
+    el(root, "path", d=path([(0, 330)] + wave(0, 800, 320, 10, 500, 0.3) + [(800, 450), (0, 450)]), fill="#c9b48a")
+    el(root, "rect", x=120, y=250, width=560, height=80, fill="#d9c9a3")
+    for i in range(9):
+        el(root, "line", x1=120, y1=262 + i * 8, x2=680, y2=262 + i * 8, stroke="#c6b48c", stroke_width=1.5)
+    el(root, "rect", x=140, y=212, width=520, height=38, fill="#e9dfc6")
+    el(root, "rect", x=134, y=204, width=532, height=10, fill="#cdbb92")
+    for i in range(27):
+        x = 150 + i * 19.5
+        el(root, "rect", x=f"{x:.1f}", y=214, width=7, height=36, fill="#c9b78f")
+    el(root, "rect", x=330, y=110, width=140, height=102, fill="#f6f1e4")
+    el(root, "rect", x=320, y=100, width=160, height=14, fill="#e2d5b4")
+    el(root, "rect", x=376, y=140, width=48, height=72, fill="#d8b46a")
+    el(root, "rect", x=384, y=150, width=32, height=62, fill="#b98c4a")
+    el(root, "rect", x=300, y=170, width=30, height=42, fill="#efe6d0")
+    el(root, "rect", x=470, y=170, width=30, height=42, fill="#efe6d0")
+    el(root, "path", d="M400 98 C 392 80, 410 70, 402 52 C 396 40, 410 34, 406 24", fill="none", stroke="#b8ab95", stroke_width=4, stroke_linecap="round", stroke_opacity=0.7)
+    el(root, "path", d="M330 330 L470 330 L500 400 L300 400 Z", fill="#e3d4b0")
+    for i in range(6):
+        y = 340 + i * 10
+        el(root, "line", x1=330 - i * 5, y1=y, x2=470 + i * 5, y2=y, stroke="#cbb88f", stroke_width=2)
+    person(root, 360, 392, "#7a5f8f", "#c99a6e", 0.55)
+    person(root, 430, 372, "#4f7d6a", "#b8875c", 0.5)
+    person(root, 452, 396, "#a35d3c", "#c99a6e", 0.55)
+    return root
+
+
+def dig_layers() -> ET.Element:
+    root = scene("dig-layers", "Layers in the ground | 地下的地层",
+                 "A cut-away view of an excavation shows soil layers stacked one above another, with pottery shards, a coin, and old wall stones, and a trowel and brush resting at the top. | "
+                 "考古发掘的剖面图：一层层土壤上下叠压，夹着陶片、一枚钱币和古老的墙石，顶上放着一把小铲和一把刷子。", "#e4ecee")
+    el(root, "path", d="M0 120 L800 120 L800 450 L0 450 Z", fill="#c9a87a")
+    layers = [(120, 170, "#8fa86a"), (170, 230, "#b88f5e"), (230, 290, "#a57a4e"), (290, 350, "#c4a173"), (350, 410, "#8e6a46"), (410, 450, "#77593c")]
+    for top, bottom, color in layers:
+        el(root, "path", d=path([(0, top)] + wave(0, 800, top, 4, 300, top / 90) + [(800, bottom), (0, bottom)]), fill=color)
+    for x in range(30, 800, 70):
+        el(root, "line", x1=x, y1=170, x2=x + 8, y2=150, stroke="#5f7d45", stroke_width=3, stroke_linecap="round")
+    for x, y, rot in [(190, 262, -12), (520, 250, 18), (330, 382, 8), (640, 320, -20)]:
+        g = ET.SubElement(root, NS + "g", {"transform": f"translate({x} {y}) rotate({rot})"})
+        el(g, "path", d="M-26 -6 C -12 -16, 12 -16, 26 -6 L20 10 L-20 10 Z", fill="#c06a3c")
+        el(g, "path", d="M-20 -2 C -8 -9, 8 -9, 20 -2", fill="none", stroke="#8f4a28", stroke_width=2)
+    el(root, "circle", cx=420, cy=316, r=11, fill="#d8b46a")
+    el(root, "circle", cx=420, cy=316, r=6, fill="none", stroke="#a8823e", stroke_width=2)
+    for i, x in enumerate(range(560, 760, 46)):
+        el(root, "rect", x=x, y=360 + (i % 2) * 4, width=42, height=24, rx=3, fill="#9b958a")
+        el(root, "rect", x=x + 22, y=386 + (i % 2) * 4, width=42, height=22, rx=3, fill="#8a8479")
+    el(root, "line", x1=110, y1=114, x2=190, y2=112, stroke="#7a5537", stroke_width=7, stroke_linecap="round")
+    el(root, "path", d="M190 104 L250 112 L190 120 Z", fill="#8a9aa6")
+    el(root, "line", x1=540, y1=114, x2=610, y2=112, stroke="#a86f3c", stroke_width=6, stroke_linecap="round")
+    el(root, "rect", x=606, y=100, width=26, height=22, rx=4, fill="#6b4e33")
+    for k in range(5):
+        el(root, "line", x1=632, y1=103 + k * 4, x2=652, y2=101 + k * 5, stroke="#d8c39a", stroke_width=2)
+    return root
+
+
+def seven_lamps() -> ET.Element:
+    root = scene("seven-lamps", "Seven lampstands | 七个灯台",
+                 "Seven golden lampstands with small flames stand in a gentle arc against a deep night sky, their light shining together. | "
+                 "七个金灯台排成一道柔和的弧线，立在深色夜空下，小小的火焰一同发光。", "#1f2b46")
+    stars(root, [(60, 50), (160, 110), (260, 40), (400, 70), (540, 40), (650, 100), (750, 60)])
+    el(root, "path", d="M0 360 C 240 340, 560 340, 800 360 L800 450 L0 450 Z", fill="#2c3550")
+    for i in range(7):
+        x = 100 + i * 100
+        base = 360 - 26 * (1 - ((i - 3) / 3) ** 2)
+        el(root, "path", d=f"M{x - 26} {base} L{x + 26} {base} L{x + 14} {base - 16} L{x - 14} {base - 16} Z", fill="#d9a441")
+        el(root, "rect", x=x - 5, y=base - 126, width=10, height=112, fill="#e2b24f")
+        for k in (0.3, 0.6):
+            el(root, "rect", x=x - 9, y=base - 126 + 112 * k, width=18, height=6, rx=3, fill="#c99436")
+        el(root, "path", d=f"M{x - 20} {base - 128} C {x - 18} {base - 116}, {x + 18} {base - 116}, {x + 20} {base - 128} Z", fill="#d9a441")
+        el(root, "path", d=f"M{x} {base - 172} C {x - 14} {base - 152}, {x - 13} {base - 130}, {x} {base - 128} C {x + 13} {base - 130}, {x + 14} {base - 152}, {x} {base - 172} Z", fill="#ef8a3a")
+        el(root, "path", d=f"M{x} {base - 160} C {x - 8} {base - 146}, {x - 7} {base - 132}, {x} {base - 130} C {x + 7} {base - 132}, {x + 8} {base - 146}, {x} {base - 160} Z", fill="#fbe08a")
+    return root
+
+
 RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "papyrus-codex.svg": papyrus_codex,
     "story-procession.svg": story_procession,
@@ -2106,6 +2184,9 @@ RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "loaves-fish.svg": loaves_fish,
     "scribe-copying.svg": scribe_copying,
     "burning-bush.svg": burning_bush,
+    "temple-courts.svg": temple_courts,
+    "dig-layers.svg": dig_layers,
+    "seven-lamps.svg": seven_lamps,
 }
 
 

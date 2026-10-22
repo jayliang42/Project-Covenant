@@ -116,6 +116,7 @@ assets/art/carmel-altar.svg
 assets/art/chariot-road.svg
 assets/art/creation-dawn.svg
 assets/art/david-harp.svg
+assets/art/dig-layers.svg
 assets/art/dry-bones.svg
 assets/art/empty-tomb.svg
 assets/art/exile-road.svg
@@ -168,6 +169,7 @@ assets/art/scribe-copying.svg
 assets/art/sea-crossing.svg
 assets/art/seasons-tree.svg
 assets/art/secret-room.svg
+assets/art/seven-lamps.svg
 assets/art/shared-yoke.svg
 assets/art/shepherd.svg
 assets/art/sower.svg
@@ -176,6 +178,7 @@ assets/art/story-procession.svg
 assets/art/study-desk.svg
 assets/art/sunrise-field.svg
 assets/art/table-fellowship.svg
+assets/art/temple-courts.svg
 assets/art/translation-books.svg
 assets/art/triune-light.svg
 assets/art/wanderer-home.svg

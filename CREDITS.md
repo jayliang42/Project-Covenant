@@ -114,8 +114,8 @@ The cedar-cutting file’s English description cites 2 Samuel 5, while its title
 <a id="original-illustrations"></a>
 ## Original Illustrations | 原创插画
 
-Eighty-seven simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
-本资料库有八十七幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
+Ninety simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
+本资料库有九十幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
 
 | File / 文件 | Subject / 内容 | Used in / 使用位置 |
 | --- | --- | --- |
@@ -206,6 +206,9 @@ Eighty-seven simple vector illustrations were drawn for this library in code, wi
 | `assets/art/loaves-fish.svg` | Five loaves and two fish / 五饼二鱼 | Miracles of Jesus / 耶稣的神迹 |
 | `assets/art/scribe-copying.svg` | Copying by hand / 手抄流传 | How the Bible Came to Us / 圣经是怎样传到我们手中的 |
 | `assets/art/burning-bush.svg` | The bush that was not consumed / 荆棘被火烧着却没有烧毁 | Names and Titles of God / 神的名字与称号 |
+| `assets/art/temple-courts.svg` | The temple courts / 圣殿的院子 | Second Temple and Roman World / 第二圣殿与罗马世界 |
+| `assets/art/dig-layers.svg` | Layers in the ground / 地下的地层 | Evidence Index / 史料与考古旁证索引 |
+| `assets/art/seven-lamps.svg` | Seven lampstands / 七个灯台 | Hebrews to Revelation / 希伯来书至启示录 |
 
 Check them with `python3 scripts/generate_art.py --check`; the command fails if a committed file differs from the generator.<br>
 可用 `python3 scripts/generate_art.py --check` 检查；若已提交的文件与生成结果不一致，该命令会报错。
