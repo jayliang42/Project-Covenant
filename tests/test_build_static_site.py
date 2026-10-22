@@ -743,6 +743,7 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             year_plan = (output / "Bible_Timeline/52周圣经故事线_查经与史料阅读计划.html").read_text(encoding="utf-8")
             self.assertEqual(10, year_plan.count('class="study-illustration"'))
             self.assertEqual(42, year_plan.count('class="study-art"'))
+            self.assertEqual(5, home.count('class="guide-card"'))
             self.assertIn('<article class="reading-body hub-page">', (output / "Bilingual_Notes/index.html").read_text(encoding="utf-8"))
             self.assertIn('<article class="reading-body">', year_plan)
             for note in sorted((output / "Bilingual_Notes").glob("20*.html")):
