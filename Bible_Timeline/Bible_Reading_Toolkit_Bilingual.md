@@ -270,6 +270,8 @@ Choose one readable translation for regular reading, and compare a second one wh
   **从故事开始：** 阅读[圣经故事线第一步](./First_Steps_Bilingual.md)，用十个短站走过整本圣经。
 - **Look up a book | 查一卷书：** Use [Bible by Book](./Bible_By_Book_Bilingual.md) to see what a book is about and how it connects to its neighbors.
   **查一卷书：** 用[按书卷梳理圣经](./Bible_By_Book_Bilingual.md)了解某卷书的内容及它与前后书卷的关系。
+- **Look up a person | 查一个人物：** Use [People of the Bible](./Bible_People_Bilingual.md) to see who someone is and where to read about them.
+  **查一个人物：** 用[圣经人物](./Bible_People_Bilingual.md)了解某人是谁、该读哪几章。
 - **Look up a word | 查一个词：** Use the [Glossary](../Glossary/README.md) for short, plain-language explanations.
   **查一个词：** 在[词汇表](../Glossary/README.md)中查找简短的白话解释。
 

@@ -1802,8 +1802,28 @@ def papyrus_codex() -> ET.Element:
     return root
 
 
+def story_procession() -> ET.Element:
+    root = scene("story-procession", "People of the story | 故事中的人物",
+                 "A long line of people of many ages and backgrounds walks along one winding road from a dim dawn on the left toward a bright horizon on the right. | "
+                 "许多年龄和背景各不相同的人沿着同一条蜿蜒的路，从左边微明的清晨走向右边明亮的地平线。", "#e9e2d3")
+    for i in range(8):
+        el(root, "rect", x=i * 50, y=0, width=50, height=450, fill="#b9b3a8", fill_opacity=f"{0.42 - i * 0.05:.2f}")
+    el(root, "circle", cx=720, cy=170, r=120, fill="#f2c56b", fill_opacity=0.35)
+    el(root, "circle", cx=720, cy=170, r=60, fill="#f2c56b", fill_opacity=0.6)
+    ground(root, 250, "#a9b88e", 10, 640)
+    el(root, "path", d="M0 410 C 160 380, 260 330, 400 320 C 540 310, 640 270, 800 240 L800 262 C 650 292, 540 334, 410 344 C 280 354, 170 404, 0 440 Z", fill="#d6c8a4")
+    for i in range(14):
+        t = i / 13
+        x = 40 + t * 700
+        y = 418 - 150 * t + 12 * math.sin(t * 6)
+        scale = 1.05 - 0.45 * t
+        person(root, x, y, ROBES[i % len(ROBES)], SKIN[(i * 2) % len(SKIN)], scale)
+    return root
+
+
 RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "papyrus-codex.svg": papyrus_codex,
+    "story-procession.svg": story_procession,
 }
 
 
