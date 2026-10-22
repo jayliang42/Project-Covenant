@@ -114,13 +114,13 @@ The cedar-cutting file’s English description cites 2 Samuel 5, while its title
 <a id="original-illustrations"></a>
 ## Original Illustrations | 原创插画
 
-Eighty simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
-本资料库有八十幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
+Eighty-two simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
+本资料库有八十二幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
 
 | File / 文件 | Subject / 内容 | Used in / 使用位置 |
 | --- | --- | --- |
-| `assets/art/open-bible.svg` | Finding John 3:16 / 查找约翰福音 3:16 | Bible Reading Toolkit; a teaching note / 读经工具箱；一篇讲道笔记 |
-| `assets/art/bible-library.svg` | The 66 books as a library / 66 卷书的图书馆 | Toolkit; Bible by Book / 工具箱；按书卷梳理 |
+| `assets/art/open-bible.svg` | Finding John 3:16 / 查找约翰福音 3:16 | Bible Reading Toolkit; a teaching note; Cheat Sheet / 读经工具箱；一篇讲道笔记；速查表 |
+| `assets/art/bible-library.svg` | The 66 books as a library / 66 卷书的图书馆 | Toolkit; Bible by Book; 52-book route / 工具箱；按书卷梳理；52 卷主读路线 |
 | `assets/art/shepherd.svg` | A shepherd and flock (Psalm 23) / 牧人与羊群（诗篇 23 篇） | Psalms; poetry; week 32 / 诗篇；诗歌文体；第 32 周 |
 | `assets/art/letter.svg` | A letter by lamplight / 灯下书信 | Paul's letters; letters; week 49 / 保罗书信；书信文体；第 49 周 |
 | `assets/art/jonah.svg` | Jonah and the storm / 约拿与风暴 | Jonah; week 18; a teaching note / 约拿书；第 18 周；一篇讲道笔记 |
@@ -129,7 +129,7 @@ Eighty simple vector illustrations were drawn for this library in code, with AI 
 | `assets/art/sea-crossing.svg` | Crossing the sea / 过红海 | Exodus; week 6; Bible Timeline / 出埃及记；第 6 周；圣经时间线 |
 | `assets/art/wilderness-camp.svg` | Camp in the wilderness / 旷野中的营地 | Week 9 / 第 9 周 |
 | `assets/art/barley-harvest.svg` | Barley harvest near Bethlehem / 伯利恒附近的麦收 | Ruth; week 12 / 路得记；第 12 周 |
-| `assets/art/david-harp.svg` | A shepherd's lyre and sling / 牧童的琴与机弦 | Week 14; Bible Timeline; Covenants of the Bible / 第 14 周；圣经时间线；圣经中的约 |
+| `assets/art/david-harp.svg` | A shepherd's lyre and sling / 牧童的琴与机弦 | Week 14; Bible Timeline; Covenants of the Bible; two Psalms pages / 第 14 周；圣经时间线；圣经中的约；两篇诗篇专题 |
 | `assets/art/carmel-altar.svg` | Fire on Mount Carmel / 迦密山上的火 | 1 Kings; week 17; Bible Timeline / 列王纪上；第 17 周；圣经时间线 |
 | `assets/art/lions-den.svg` | Daniel in the lions' den / 狮子坑中的但以理 | Daniel; week 26 / 但以理书；第 26 周 |
 | `assets/art/bread-cup.svg` | Bread and cup / 饼与杯 | Weeks 40, 46; Covenants of the Bible / 第 40、46 周；圣经中的约 |
@@ -152,13 +152,13 @@ Eighty simple vector illustrations were drawn for this library in code, with AI 
 | `assets/art/royal-scepter.svg` | The golden scepter / 金杖 | Esther; week 28 / 以斯帖记；第 28 周 |
 | `assets/art/sunrise-field.svg` | The sun of righteousness / 公义的日头 | Malachi; week 30 / 玛拉基书；第 30 周 |
 | `assets/art/whirlwind.svg` | Out of the whirlwind / 从旋风中 | Job; week 31 / 约伯记；第 31 周 |
-| `assets/art/seasons-tree.svg` | A time for everything / 凡事都有定时 | Ecclesiastes; week 33 / 传道书；第 33 周 |
+| `assets/art/seasons-tree.svg` | A time for everything / 凡事都有定时 | Ecclesiastes; week 33; Wisdom and Poetry / 传道书；第 33 周；智慧与诗歌书 |
 | `assets/art/jordan-dove.svg` | At the Jordan River / 在约旦河边 | John; week 36; a teaching note / 约翰福音；第 36 周；一篇讲道笔记 |
 | `assets/art/galilee-boat.svg` | Fishing on the Sea of Galilee / 在加利利海打鱼 | Mark; week 37 / 马可福音；第 37 周 |
 | `assets/art/sower.svg` | The sower / 撒种的比喻 | Matthew; week 38; Parables of Jesus / 马太福音；第 38 周；耶稣的比喻 |
 | `assets/art/palm-road.svg` | The road to Jerusalem / 往耶路撒冷的路 | Week 39 / 第 39 周 |
 | `assets/art/chariot-road.svg` | A chariot on the desert road / 旷野路上的车 | Week 43; a teaching note / 第 43 周；一篇讲道笔记 |
-| `assets/art/table-fellowship.svg` | One family at one table / 同坐一桌的一家人 | Week 44; two teaching notes / 第 44 周；两篇讲道笔记 |
+| `assets/art/table-fellowship.svg` | One family at one table / 同坐一桌的一家人 | Week 44; two teaching notes; notes summary / 第 44 周；两篇讲道笔记；笔记总结 |
 | `assets/art/jars-of-clay.svg` | Treasure in jars of clay / 瓦器里的宝贝 | 2 Corinthians; week 47 / 哥林多后书；第 47 周 |
 | `assets/art/anchor-hope.svg` | An anchor for the soul / 灵魂的锚 | Hebrews; week 50 / 希伯来书；第 50 周 |
 | `assets/art/lamp-light.svg` | Light in the house / 屋中的光 | 1 John; week 51 / 约翰一书；第 51 周 |
@@ -188,17 +188,19 @@ Eighty simple vector illustrations were drawn for this library in code, with AI 
 | `assets/art/john-signs.svg` | Signs and sayings in John / 约翰福音的记号与宣告 | Seek the Truth guide / 《求真寻道》导读 |
 | `assets/art/weighing-evidence.svg` | Weighing the evidence / 衡量证据 | Evidence That Demands a Verdict guide / 《铁证待判》导读 |
 | `assets/art/wanderer-home.svg` | The long road home / 回家的长路 | Song of a Wanderer guide / 《游子吟》导读 |
-| `assets/art/branching-tree.svg` | One trunk, many branches / 同一树干，许多枝子 | How to Name Christian Groups / 怎样给基督教群体命名 |
-| `assets/art/translation-books.svg` | One message, many languages / 同一信息，多种语言 | Bible Translations / 圣经译本 |
+| `assets/art/branching-tree.svg` | One trunk, many branches / 同一树干，许多枝子 | How to Name Christian Groups; Traditions hub / 怎样给基督教群体命名；传统专栏首页 |
+| `assets/art/translation-books.svg` | One message, many languages / 同一信息，多种语言 | Bible Translations; ISV guide / 圣经译本；ISV 指南 |
 | `assets/art/word-cards.svg` | Words to learn / 要学的词 | Glossary / 词汇表 |
 | `assets/art/ark-rainbow.svg` | After the flood / 洪水之后 | Bible Timeline; Covenants of the Bible / 圣经时间线；圣经中的约 |
 | `assets/art/abraham-stars.svg` | Count the stars / 数一数天上的星 | Bible Timeline; Covenants of the Bible / 圣经时间线；圣经中的约 |
 | `assets/art/papyrus-codex.svg` | An early papyrus book / 早期的蒲草纸抄本 | Resurrection and Early Witnesses / 复活与早期见证 |
-| `assets/art/story-procession.svg` | People of the story / 故事中的人物 | People of the Bible / 圣经人物 |
+| `assets/art/story-procession.svg` | People of the story / 故事中的人物 | People of the Bible; Storyline hub / 圣经人物；故事线首页 |
 | `assets/art/parchment-map.svg` | An old map / 一幅旧地图 | Places of the Bible / 圣经地名 |
 | `assets/art/lost-sheep.svg` | The sheep that was found / 找回的羊 | Parables of Jesus / 耶稣的比喻 |
-| `assets/art/lamp-path.svg` | A lamp for the path / 脚前的灯 | Key Passages to Know / 值得熟悉的经文 |
+| `assets/art/lamp-path.svg` | A lamp for the path / 脚前的灯 | Key Passages to Know; 52-week checklist / 值得熟悉的经文；52 周打卡版 |
 | `assets/art/incense-rising.svg` | Prayer like incense / 祷告如香 | Prayers in the Bible / 圣经中的祷告 |
+| `assets/art/notebook-pen.svg` | Notes to keep / 记下的笔记 | Notes Hub; chronological index / 笔记中心；时间索引 |
+| `assets/art/study-desk.svg` | Reading with a guide / 带着导读来读 | Christian Book Studies / 基督教书籍研读 |
 
 Check them with `python3 scripts/generate_art.py --check`; the command fails if a committed file differs from the generator.<br>
 可用 `python3 scripts/generate_art.py --check` 检查；若已提交的文件与生成结果不一致，该命令会报错。

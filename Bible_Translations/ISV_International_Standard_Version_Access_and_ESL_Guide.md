@@ -8,6 +8,10 @@
 > This page helps you reach an authorized ISV edition. It suggests a manageable way to read biblical English as a second language. The complete translation is not stored or redistributed here.<br>
 > 本页帮助你找到获授权的 ISV 版本。它也提供把英语作为第二语言读经的小步骤。本库不存放或分发整部译本。
 
+![Several open books whose lines are drawn in different scripts / 几本打开的书，书页上是不同形态的文字](../assets/art/translation-books.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 > **Library status | 图书馆状态：** Access guide only; the full ISV text is not stored in this public repository.
 >
 > **Version | 版本：** *The Holy [Bible](../Glossary/README.md#bible): International Standard Version* (ISV), a modern English translation published by The ISV Foundation.

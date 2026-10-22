@@ -2,6 +2,10 @@
 
 > Status: Draft (AI draft; not human reviewed) | 状态：Draft（AI 草稿，未人工审阅）
 
+![An open notebook, a pen, an open Bible, and a cup on a wooden table / 木桌上的笔记本、笔、打开的圣经和杯子](../assets/art/notebook-pen.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Chronological Order | 时间顺序
 
 ### Teaching Notes Completed | 已完成

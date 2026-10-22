@@ -5,6 +5,10 @@
 > Sermon and fellowship notes, listed by source-session date and grouped by theme.
 > 按来源讲道／团契日期排列、并按主题分组的笔记。
 
+![An open notebook, a pen, an open Bible, and a cup on a wooden table / 木桌上的笔记本、笔、打开的圣经和杯子](../assets/art/notebook-pen.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Start Here | 从这里开始
 
 - [Chronological Notes Index | 按时间顺序的笔记索引](./INDEX_Chronological.md)

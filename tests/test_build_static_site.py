@@ -647,7 +647,7 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             report = build_site(snapshot, digest, output)
 
             self.assertEqual(89, report.page_count)
-            self.assertEqual(193, report.file_count)
+            self.assertEqual(195, report.file_count)
             file_paths = {
                 path.relative_to(output).as_posix()
                 for path in output.rglob("*")
@@ -732,7 +732,7 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
                     self.assertIn('class="reading-time"', page)
 
             media_paths = {path for path in file_paths if path.endswith((".jpg", ".svg"))}
-            self.assertEqual(102, len(media_paths))
+            self.assertEqual(104, len(media_paths))
             for media_path in media_paths:
                 self.assertEqual((REPO_ROOT / media_path).read_bytes(), (output / media_path).read_bytes())
             self.assertIn('href="Maps/index.html"', home)

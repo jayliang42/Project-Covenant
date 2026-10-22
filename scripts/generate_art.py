@@ -1912,6 +1912,54 @@ def incense_rising() -> ET.Element:
     return root
 
 
+def notebook_pen() -> ET.Element:
+    root = scene("notebook-pen", "Notes to keep | 记下的笔记",
+                 "An open notebook with neat lines of handwriting lies beside a pen, an open Bible, and a cup on a wooden table. | "
+                 "木桌上摊着一本写满整齐字迹的笔记本，旁边有一支笔、一本打开的圣经和一只杯子。", "#e9e1cf")
+    el(root, "rect", x=0, y=0, width=800, height=450, rx=18, fill="#b08a62")
+    for i in range(6):
+        el(root, "line", x1=0, y1=50 + i * 72, x2=800, y2=70 + i * 72, stroke="#a07c56", stroke_width=3)
+    el(root, "path", d="M90 300 L250 320 L410 300 L410 120 L250 140 L90 120 Z", fill="#7c5a3a")
+    el(root, "path", d="M100 296 L246 314 L246 146 L100 128 Z", fill="#f4efe3")
+    el(root, "path", d="M400 296 L254 314 L254 146 L400 128 Z", fill="#fbf8f0")
+    for side, x0 in ((-1, 112), (1, 266)):
+        for r in range(7):
+            y = 160 + r * 19
+            el(root, "line", x1=x0, y1=y + (r * 0.4), x2=x0 + 120 - (r % 3) * 14, y2=y + (r * 0.4), stroke="#9a8f7c", stroke_width=2.4, stroke_linecap="round")
+    el(root, "rect", x=470, y=150, width=210, height=150, rx=6, fill="#fbf8f0", stroke="#c9b8a0", stroke_width=2)
+    el(root, "line", x1=495, y1=150, x2=495, y2=300, stroke="#c4574a", stroke_width=2, stroke_opacity=0.6)
+    for r in range(6):
+        el(root, "line", x1=508, y1=178 + r * 20, x2=660 - (r % 2) * 30, y2=178 + r * 20, stroke="#3f6c7a", stroke_width=2.4, stroke_linecap="round", stroke_dasharray="18 6 30 8" if r % 2 else "26 5 12 7")
+    el(root, "line", x1=520, y1=350, x2=700, y2=270, stroke="#2f3a2f", stroke_width=9, stroke_linecap="round")
+    el(root, "path", d="M700 270 L716 263 L708 278 Z", fill="#c69a3e")
+    el(root, "circle", cx=690, cy=380, r=40, fill="#8f5c2f")
+    el(root, "circle", cx=690, cy=380, r=30, fill="#5a3e28")
+    el(root, "path", d="M730 372 C 752 372, 752 396, 728 394", fill="none", stroke="#8f5c2f", stroke_width=7)
+    return root
+
+
+def study_desk() -> ET.Element:
+    root = scene("study-desk", "Reading with a guide | 带着导读来读",
+                 "A desk lamp shines on a stack of books, one open book with a bookmark, and a small notebook beside it. | "
+                 "台灯照着一摞书、一本夹着书签的打开的书，旁边放着一本小笔记本。", "#2f3a35")
+    el(root, "circle", cx=520, cy=210, r=230, fill="#f2c56b", fill_opacity=0.10)
+    el(root, "path", d="M0 330 L800 330 L800 450 L0 450 Z", fill="#6b4e33")
+    el(root, "rect", x=0, y=322, width=800, height=12, fill="#8e6644")
+    for i, (w, color) in enumerate([(200, "#456346"), (186, "#8b4b45"), (210, "#3f6c7a"), (176, "#c69a3e")]):
+        el(root, "rect", x=90 + (i % 2) * 8, y=300 - i * 30, width=w, height=26, rx=3, fill=color)
+        el(root, "line", x1=100 + (i % 2) * 8, y1=313 - i * 30, x2=80 + w, y2=313 - i * 30, stroke="#f4efe3", stroke_width=2, stroke_opacity=0.5)
+    el(root, "path", d="M360 318 L470 300 L580 318 L580 250 L470 232 L360 250 Z", fill="#7c5a3a")
+    el(root, "path", d="M368 314 L466 298 L466 238 L368 254 Z", fill="#f4efe3")
+    el(root, "path", d="M572 314 L474 298 L474 238 L572 254 Z", fill="#fbf8f0")
+    el(root, "path", d="M520 244 L532 244 L532 300 L526 292 L520 300 Z", fill="#c4574a")
+    el(root, "rect", x=610, y=286, width=90, height=34, rx=4, fill="#e9d6a6")
+    el(root, "line", x1=700, y1=330, x2=700, y2=170, stroke="#3a3530", stroke_width=8)
+    el(root, "path", d="M700 170 L620 130 L600 170 L660 190 Z", fill="#456346")
+    el(root, "path", d="M610 175 L650 188 L520 300 L430 300 Z", fill="#fbe08a", fill_opacity=0.18)
+    el(root, "rect", x=670, y=322, width=60, height=10, rx=3, fill="#3a3530")
+    return root
+
+
 RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "papyrus-codex.svg": papyrus_codex,
     "story-procession.svg": story_procession,
@@ -1919,6 +1967,8 @@ RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "lost-sheep.svg": lost_sheep,
     "lamp-path.svg": lamp_path,
     "incense-rising.svg": incense_rising,
+    "notebook-pen.svg": notebook_pen,
+    "study-desk.svg": study_desk,
 }
 
 

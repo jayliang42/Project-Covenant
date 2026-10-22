@@ -139,6 +139,7 @@ assets/art/morning-prayer.svg
 assets/art/mount-teaching.svg
 assets/art/mountain-glory.svg
 assets/art/night-shepherds.svg
+assets/art/notebook-pen.svg
 assets/art/open-bible.svg
 assets/art/open-cage.svg
 assets/art/open-hands.svg
@@ -162,6 +163,7 @@ assets/art/shepherd.svg
 assets/art/sower.svg
 assets/art/stone-tablets.svg
 assets/art/story-procession.svg
+assets/art/study-desk.svg
 assets/art/sunrise-field.svg
 assets/art/table-fellowship.svg
 assets/art/translation-books.svg

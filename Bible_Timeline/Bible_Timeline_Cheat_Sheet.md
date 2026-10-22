@@ -8,6 +8,10 @@
 > This page is a short reminder of the [Bible](../Glossary/README.md#bible)’s main stages. It groups people, [covenants](../Glossary/README.md#covenant), and books for quick reference. Use the longer guides when you need evidence or explanation.<br>
 > 本页用简短条目提醒[圣经](../Glossary/README.md#bible)的主要阶段。人物、约与书卷按用途整理，便于查找。需要理由或证据时，请回到较长导读。
 
+![An open Bible with chapter and verse numbers marked / 标着章节号的打开的圣经](../assets/art/open-bible.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 A one-page quick review.<br>
 一页式速查版。
 

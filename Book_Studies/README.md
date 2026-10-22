@@ -16,6 +16,10 @@
 > Unless otherwise marked, the library's original commentary is shared under `CC BY-NC-SA 4.0`; this license never extends to the books, quotations, cover art, or other third-party material discussed here. See [Licensing | 授权说明](../LICENSE.md).<br>
 > 除非另有标注，本资料库的原创导读采用 `CC BY-NC-SA 4.0`；该许可证绝不延伸到所讨论的原书、引文、封面或其他第三方材料。详情见[授权说明](../LICENSE.md)。
 
+![A desk lamp shining on a stack of books and an open book with a bookmark / 台灯照着一摞书和一本夹着书签的打开的书](../assets/art/study-desk.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 <a id="library-index"></a>
 ## Library Index and Recommendations | 图书馆总索引与推荐理由
 

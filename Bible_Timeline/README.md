@@ -5,6 +5,10 @@
 > Follow the Bible as one story, then move from overview to weekly study, individual books, historical evidence, and deeper research.
 > 先把圣经读成一条故事线，再从总览进入每周研读、逐卷阅读、史料旁证与专题研究。
 
+![A long line of people walking one road toward a bright horizon / 许多人沿着同一条路走向明亮的地平线](../assets/art/story-procession.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Choose a Route | 选择路线
 
 | Goal | 入口 | Language status |

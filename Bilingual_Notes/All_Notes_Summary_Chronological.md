@@ -8,6 +8,10 @@
 > This page gathers teaching themes by source-session date. The summaries retain uncertainty and source limits. Use the [chronological index](./INDEX_Chronological.md) to reach individual notes.<br>
 > 本页按来源聚会日期归纳教学主题。总结保留不确定性与来源限制。可以通过[时间索引](./INDEX_Chronological.md)进入各篇笔记。
 
+![People of many backgrounds sharing one long table / 不同背景的人同坐一张长桌](../assets/art/table-fellowship.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 This master summary arranges the public teaching notes by source-session date.
 本总览按来源聚会日期整理公开讲道笔记。
 

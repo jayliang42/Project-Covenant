@@ -5,6 +5,10 @@
 > A terminology guide to support Bible study and reading Christian books.
 > 帮助圣经研读与基督教书籍阅读的术语导读。
 
+![One tree rising from a single trunk into several large branches / 一棵树从同一根树干分出几根大枝](../assets/art/branching-tree.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 <a id="column-scope"></a>
 ## Scope and Reading Boundary | 范围与阅读边界
 
