@@ -8,6 +8,10 @@
 > Acts 8 shows Philip listening, opening Scripture, and explaining Jesus. These notes connect that pattern with prayerful, loving invitation. Human witnesses leave the response to God.<br>
 > 使徒行传八章记述腓利倾听、打开经文并解释耶稣。本篇把这个模式与带着祷告和爱心的邀请相连。见证的人把回应交给神。
 
+![A traveler reading a scroll in a chariot on a desert road, with a man running alongside / 旷野路上，有人坐在车上读书卷，另一人在旁边奔跑](../assets/art/chariot-road.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2025-12-21 (Sunday)

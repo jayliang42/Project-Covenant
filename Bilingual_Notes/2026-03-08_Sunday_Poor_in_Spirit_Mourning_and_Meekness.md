@@ -8,6 +8,10 @@
 > Matthew 5 blesses people who recognize need, mourn brokenness, and yield their strength to God. The kingdom, comfort, and inheritance are received as gifts. These notes connect those promises with life in [Christ](../Glossary/README.md#christ).<br>
 > 马太福音五章称那些承认需要、为破碎哀伤、把力量交给神的人有福。[天国](../Glossary/README.md#kingdom)、安慰和产业都是领受的礼物。本篇把这些[应许](../Glossary/README.md#promise)与在[基督](../Glossary/README.md#christ)里的生活相连。
 
+![A person kneeling with empty hands in a quiet valley at sunrise / 日出时，一个人空着手跪在安静的山谷里](../assets/art/lowly-valley.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2026-03-08 (Sunday)

@@ -8,6 +8,10 @@
 > These notes approach God’s love through Father, Son, and Spirit. The Father’s love exists before [creation](../Glossary/README.md#creation). [Salvation](../Glossary/README.md#salvation) brings people into that love.<br>
 > 本篇从父、子、[圣灵](../Glossary/README.md#holy-spirit)的关系理解神的爱。父的爱在[创造](../Glossary/README.md#creation)以前已存在。[救恩](../Glossary/README.md#salvation)把人带入这份爱中。
 
+![Three overlapping circles of light sharing one center / 三个交叠的光环共享一个中心](../assets/art/triune-light.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2026-01-21 (Wednesday)

@@ -8,6 +8,10 @@
 > Christmas praise responds to God’s gift of his Son. Singing helps a community remember [incarnation](../Glossary/README.md#incarnation), peace, and joy together. [Christ](../Glossary/README.md#christ)’s presence also speaks into loneliness and grief.<br>
 > 圣诞的赞美回应神赐下爱子的礼物。唱诗帮助群体一同记念[道成肉身](../Glossary/README.md#incarnation)、平安与喜乐。[基督](../Glossary/README.md#christ)的同在也面对人的孤单与哀伤。
 
+![Shepherds and sheep on a dark hillside looking up at a sky full of light / 牧羊人和羊群在幽暗山坡上仰望满是亮光的天空](../assets/art/night-shepherds.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2025-12-14 (Sunday)

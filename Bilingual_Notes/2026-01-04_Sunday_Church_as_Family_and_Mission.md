@@ -8,6 +8,10 @@
 > The [church](../Glossary/README.md#church) is a community gathered around Jesus for worship, care, and mission. Matthew 28 and Acts 2 connect discipleship with shared daily practices. Commitment means taking responsibility for this common life.<br>
 > [教会](../Glossary/README.md#church)是围绕耶稣敬拜、关怀并承担使命的群体。马太福音二十八章和使徒行传二章把[门徒](../Glossary/README.md#disciple)训练与共同生活相连。委身意味着为这份生活承担责任。
 
+![People of many backgrounds sharing one long table / 不同背景的人同坐一张长桌](../assets/art/table-fellowship.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2026-01-04 (Sunday)

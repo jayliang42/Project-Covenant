@@ -8,6 +8,10 @@
 > God’s glory is the disclosure of his goodness. These notes focus on the incarnate, crucified, and risen [Christ](../Glossary/README.md#christ). Glorifying God means recognizing and declaring the goodness already his.<br>
 > 神的荣耀是祂美善的显明。本篇把焦点放在[道成肉身](../Glossary/README.md#incarnation)、被钉又[复活](../Glossary/README.md#resurrection)的[基督](../Glossary/README.md#christ)。荣耀神意味着承认并宣告祂已有的美善。
 
+![Brilliant light breaking over a high mountain peak / 灿烂的光从高山顶上发出](../assets/art/mountain-glory.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2026-02-25 (Wednesday)

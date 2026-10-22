@@ -8,6 +8,10 @@
 > Jonah’s story includes fear, prayer, anger, and God’s patient care. Difficult emotions can be brought honestly before God. These notes ask how his word can guide the response.<br>
 > 约拿的故事包括惧怕、祷告、愤怒和神耐心的看顾。艰难情绪可以诚实地带到神面前。本篇追问祂的话怎样引导人的回应。
 
+![A small boat tossed by a storm, with a great fish beneath the waves / 风暴中颠簸的小船，浪下有一条大鱼](../assets/art/jonah.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2026-08-02 (Sunday)

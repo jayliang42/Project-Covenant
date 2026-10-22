@@ -8,6 +8,10 @@
 > The Lord’s Prayer offers a pattern for relationship with the Father. Praise, [repentance](../Glossary/README.md#repentance), daily dependence, and trust in trial belong together. These notes connect that approach with reconciliation through Jesus.<br>
 > 主祷文提供与天父相交的模式。赞美、[悔改](../Glossary/README.md#repentance)、每日倚靠和试炼中的信靠彼此相连。本篇把这种祷告建立在耶稣所带来的和好中。
 
+![A person kneeling beside a deep-rooted young tree at sunrise / 日出时跪在一棵深深扎根的小树旁的人](../assets/art/morning-prayer.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2026-05-17 (Sunday)
@@ -15,7 +19,7 @@
 - Type: Sunday Teaching
   类型：主日讲道
 - Series: The Way of Jesus
-  系列：The Way of Jesus
+  系列：耶稣的道路（The Way of Jesus）
 - Main passage: Matthew 6:9-13
   主要经文：马太福音 6:9-13
 - Big idea: Because Jesus reconciles us to our heavenly Father, we can grow in relationship with him through prayer.

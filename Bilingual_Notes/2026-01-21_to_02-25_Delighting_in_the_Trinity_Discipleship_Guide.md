@@ -8,6 +8,10 @@
 > This guide links the stored notes about the Father, Son, and [Holy Spirit](../Glossary/README.md#holy-spirit). It offers a route for reading Delighting in the Trinity alongside Scripture. The suggested session-to-chapter matches still need checking against an authorized teaching source.<br>
 > 本篇串联有关父、子、[圣灵](../Glossary/README.md#holy-spirit)的已有笔记。它提供一条配合经文阅读《喜乐于三一神》的路线。聚会与章节的对应仍须对照获准使用的教学来源核实。
 
+![Three overlapping circles of light sharing one center / 三个交叠的光环共享一个中心](../assets/art/triune-light.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 > **Training window | 训练时段：** 2026-01-21 to 2026-02-25
 >
 > **Primary book | 主教材：** Michael Reeves, *Delighting in the Trinity: An Introduction to the Christian [Faith](../Glossary/README.md#faith)*

@@ -8,6 +8,10 @@
 > These notes place the [Bible](../Glossary/README.md#bible)’s books within a story centered on [Christ](../Glossary/README.md#christ). Genres, histories, and commands belong within that relationship. The Spirit leads reading toward worship, trust, and a changed life.<br>
 > 本篇把[圣经](../Glossary/README.md#bible)的各卷放回以[基督](../Glossary/README.md#christ)为中心的故事中。文体、历史和命令都在这个关系中被阅读。[圣灵](../Glossary/README.md#holy-spirit)使阅读引向敬拜、信靠和生活更新。
 
+![An open Bible with chapter and verse numbers marked / 标着章节号的打开的圣经](../assets/art/open-bible.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2026-02-04 (Wednesday)

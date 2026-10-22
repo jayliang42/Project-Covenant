@@ -8,6 +8,10 @@
 > Matthew 6 asks what holds the heart’s deepest loyalty. These notes connect treasure, vision, and serving God with love for Jesus. Generosity and other good works flow from that love.<br>
 > 马太福音六章追问人内心最深的归属。本篇把财宝、眼光和事奉神与爱耶稣相连。慷慨和其他善行从这份爱中流出。
 
+![A glowing chest in a field beside moth-eaten cloth and rusted coins / 田间发光的宝箱，旁边是虫蛀的布和生锈的钱币](../assets/art/hidden-treasure.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2026-05-24 (Sunday)
@@ -15,7 +19,7 @@
 - Type: Sunday Teaching
   类型：主日讲道
 - Series: The Way of Jesus
-  系列：The Way of Jesus
+  系列：耶稣的道路（The Way of Jesus）
 - Main passage: Matthew 6:19-24
   主要经文：马太福音 6:19-24
 - Big idea: Because Jesus gave himself for us, we can release selfish pursuit of earthly treasure, treasure him, and let good works flow from that love.

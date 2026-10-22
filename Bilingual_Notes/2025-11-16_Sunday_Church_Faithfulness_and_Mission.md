@@ -8,6 +8,10 @@
 > This page summarizes a service marking a congregation’s transition. It presents the [church](../Glossary/README.md#church) as people sharing witness and service. Buildings and programs serve the work of introducing Jesus and caring for people.<br>
 > 本篇整理一场[教会](../Glossary/README.md#church)历史节点聚会的重点。教会是共同见证与服事的人。建筑和项目用于帮助人认识耶稣并得到关怀。
 
+![People of many backgrounds sharing one long table / 不同背景的人同坐一张长桌](../assets/art/table-fellowship.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2025-11-16 (Sunday)

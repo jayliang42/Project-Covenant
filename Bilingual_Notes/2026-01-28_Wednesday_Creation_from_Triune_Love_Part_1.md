@@ -8,6 +8,10 @@
 > God’s love is complete before [creation](../Glossary/README.md#creation). Creation freely flows from the love of Father, Son, and Spirit. These notes present created life as a gift to receive and reflect.<br>
 > 神的爱在[创造](../Glossary/README.md#creation)以前已经完全。创造自由地流出父、子、[圣灵](../Glossary/README.md#holy-spirit)的爱。本篇把受造生命理解为可以领受并回应的礼物。
 
+![The sun rising over sea and land, with birds, a leaping fish, and trees / 太阳从海与陆地上升起，有飞鸟、跃鱼和树木](../assets/art/creation-dawn.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2026-01-28 (Wednesday)

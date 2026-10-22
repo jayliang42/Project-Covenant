@@ -8,6 +8,10 @@
 > Matthew 5–7 describes life under Jesus’ reign. His words address the heart and the foundations of daily life. Reading leads toward hearing and doing.<br>
 > 马太福音五至七章描述在耶稣掌权下的生活。祂的话触及人的内心和生活根基。阅读要落实为听见并遵行。
 
+![A crowd seated on a hillside above a lake, listening to one teacher / 湖边山坡上，一群人坐着听一位教师讲话](../assets/art/mount-teaching.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2026-02-22 (Sunday)

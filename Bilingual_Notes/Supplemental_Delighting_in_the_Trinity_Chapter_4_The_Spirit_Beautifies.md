@@ -8,6 +8,10 @@
 > This study asks how the [Holy Spirit](../Glossary/README.md#holy-spirit) shapes everyday Christian life. Read its [Bible](../Glossary/README.md#bible) passages before the explanations. It supplements the stored notes and does not reconstruct a missing class.<br>
 > 本篇探讨[圣灵](../Glossary/README.md#holy-spirit)怎样塑造基督徒的日常生命。请先读所列经文，再读解释。它补充已有笔记，不重建未留存的课程。
 
+![A dove descending through the clouds over a figure standing in the Jordan River / 鸽子从云中降到站在约旦河中的人上方](../assets/art/jordan-dove.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 > **Type | 类型：** Supplemental discipleship study {补充[门徒](../Glossary/README.md#disciple)训练材料}
 >
 > **Book connection | 对应教材：** Michael Reeves, *Delighting in the Trinity*, ch. 4, “The Christian Life: The Spirit Beautifies”

@@ -8,6 +8,10 @@
 > Jesus shares human life and weakness. He offers himself and intercedes for his people. Hebrews and John 17 help explain how he brings them before the Father.<br>
 > 耶稣与人同有人性的生活与软弱。祂献上自己，并为祂的子民代求。希伯来书和约翰福音十七章帮助理解祂怎样把人带到父面前。
 
+![A priest in a jeweled breastpiece before an incense altar and an opened curtain / 佩着宝石胸牌的祭司站在香坛和已打开的幔子前](../assets/art/high-priest.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2026-02-04 (Wednesday)

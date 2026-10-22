@@ -8,20 +8,20 @@
 > Romans 12 connects God’s mercy with offering our whole lives to him. Worship takes shape in daily choices and renewed thinking. These sermon notes should be read alongside the passage.<br>
 > 罗马书十二章把神的怜悯与献上整个人生连在一起。敬拜会影响日常选择和心思的更新。这是讲道整理笔记，请对照经文阅读。
 
+![Two open hands lifted toward a warm light / 一双张开的手向着温暖的光举起](../assets/art/open-hands.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
-- Title: Worship and [Sacrifice](../Glossary/README.md#sacrifice) Sermon
-  标题：敬拜与[献祭](../Glossary/README.md#sacrifice)
-- Date: 2025-11-02
-  日期：2025-11-02
-- Day: Sunday
-  星期：Sunday
+- Date: 2025-11-02 (Sunday)
+  日期：2025-11-02（主日）
 - Type: Sunday Teaching
-  类型：Sunday Teaching
+  类型：主日讲道
 - Main passage: Romans 12:1-2
   主要经文：罗马书 12:1-2
-- Theme: In view of God's mercy, believers are called to present their whole lives to God as living sacrifices.
-  主题：信徒因着看见神的怜悯，要把整个人生献给神，成为活祭。
+- Big idea: In view of God's mercy, believers are called to present their whole lives to God as living sacrifices.
+  核心信息：信徒因着看见神的怜悯，要把整个人生献给神，成为活祭。
 
 ## Big Idea | 核心信息
 

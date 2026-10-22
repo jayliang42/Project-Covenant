@@ -8,6 +8,10 @@
 > Jesus calls his people salt and light in Matthew 5. Their identity and mission come from him. Good works make the Father’s goodness visible.<br>
 > 耶稣在马太福音五章称祂的子民为盐和光。他们的身份与使命从祂而来。善行使父的美善被人看见。
 
+![A small city glowing on a hilltop at dusk, with a lamp in front / 黄昏时山顶发光的小城，近处点着一盏灯](../assets/art/hill-city.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2026-03-29 (Sunday)

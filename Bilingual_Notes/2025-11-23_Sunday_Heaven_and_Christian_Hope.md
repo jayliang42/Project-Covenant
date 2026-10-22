@@ -8,6 +8,10 @@
 > Christian hope centers on life with the risen [Christ](../Glossary/README.md#christ) in renewed [creation](../Glossary/README.md#creation). Revelation pictures a people from many nations worshiping together. This hope shapes present faithfulness and care.<br>
 > 基督徒的盼望以[复活](../Glossary/README.md#resurrection)的[基督](../Glossary/README.md#christ)和更新的[创造](../Glossary/README.md#creation)为中心。启示录描绘多族群一同敬拜的群体。这盼望会影响今天的忠心与关怀。
 
+![A bright river flowing from a city gate between fruit trees / 明亮的河从城门流出，两岸有果树](../assets/art/river-of-life.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2025-11-23 (Sunday)
@@ -15,7 +19,7 @@
 - Type: Sunday Teaching
   类型：主日讲道
 - Series: Heaven Help Us
-  系列：Heaven Help Us
+  系列：关于天堂的讲道系列（Heaven Help Us）
 - Main passages: John 14:1-3; Revelation 7; Revelation 21-22
   主要经文：约翰福音 14:1-3；启示录 7、21-22 章
 - Big idea: Christian hope is not vague escape, but life with the risen Christ in God's renewed creation.

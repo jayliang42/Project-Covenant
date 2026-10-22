@@ -8,6 +8,10 @@
 > This study connects [creation](../Glossary/README.md#creation)’s beauty with God’s generosity. It describes evil as a distortion of goodness. Questions about creaturely freedom are part of that discussion.<br>
 > 本篇把受造世界的美与神的慷慨相连。邪恶被描述为对良善的扭曲。受造者的自由也是讨论的一部分。
 
+![A flowering garden with one thorny vine creeping in from the edge / 盛开的花园，边上爬进一根带刺的藤蔓](../assets/art/garden-thorn.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2026-01-28 (Wednesday)

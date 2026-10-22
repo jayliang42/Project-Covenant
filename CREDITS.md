@@ -114,16 +114,16 @@ The cedar-cutting file’s English description cites 2 Samuel 5, while its title
 <a id="original-illustrations"></a>
 ## Original Illustrations | 原创插画
 
-Forty-three simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
-本资料库有四十三幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
+Sixty-six simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
+本资料库有六十六幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
 
 | File / 文件 | Subject / 内容 | Used in / 使用位置 |
 | --- | --- | --- |
-| `assets/art/open-bible.svg` | Finding John 3:16 / 查找约翰福音 3:16 | Bible Reading Toolkit / 读经工具箱 |
+| `assets/art/open-bible.svg` | Finding John 3:16 / 查找约翰福音 3:16 | Bible Reading Toolkit; a teaching note / 读经工具箱；一篇讲道笔记 |
 | `assets/art/bible-library.svg` | The 66 books as a library / 66 卷书的图书馆 | Toolkit; Bible by Book / 工具箱；按书卷梳理 |
 | `assets/art/shepherd.svg` | A shepherd and flock (Psalm 23) / 牧人与羊群（诗篇 23 篇） | Psalms; poetry; week 32 / 诗篇；诗歌文体；第 32 周 |
 | `assets/art/letter.svg` | A letter by lamplight / 灯下书信 | Paul's letters; letters; week 49 / 保罗书信；书信文体；第 49 周 |
-| `assets/art/jonah.svg` | Jonah and the storm / 约拿与风暴 | Jonah; week 18 / 约拿书；第 18 周 |
+| `assets/art/jonah.svg` | Jonah and the storm / 约拿与风暴 | Jonah; week 18; a teaching note / 约拿书；第 18 周；一篇讲道笔记 |
 | `assets/art/rebuilding.svg` | Rebuilding the walls / 重建城墙 | Haggai; Nehemiah; week 29 / 哈该书；尼希米记；第 29 周 |
 | `assets/art/joseph-granary.svg` | Grain stored in Egypt / 埃及的粮仓 | Week 5 / 第 5 周 |
 | `assets/art/sea-crossing.svg` | Crossing the sea / 过红海 | Exodus; week 6 / 出埃及记；第 6 周 |
@@ -142,7 +142,7 @@ Forty-three simple vector illustrations were drawn for this library in code, wit
 | `assets/art/jericho-walls.svg` | Around the walls of Jericho / 绕行耶利哥城 | Joshua; week 11 / 约书亚记；第 11 周 |
 | `assets/art/anointing.svg` | Oil for a new king / 膏立新王 | 1 Samuel; week 13 / 撒母耳记上；第 13 周 |
 | `assets/art/golden-calf.svg` | A divided kingdom / 分裂的王国 | Week 16 / 第 16 周 |
-| `assets/art/burning-coal.svg` | A coal from the altar / 坛上的红炭 | Isaiah; week 19 / 以赛亚书；第 19 周 |
+| `assets/art/burning-coal.svg` | A coal from the altar / 坛上的红炭 | Isaiah; week 19; a teaching note / 以赛亚书；第 19 周；一篇讲道笔记 |
 | `assets/art/exile-road.svg` | The road into exile / 被掳之路 | 2 Kings; week 20 / 列王纪下；第 20 周 |
 | `assets/art/water-tunnel.svg` | A tunnel for water / 引水的隧道 | Week 21 / 第 21 周 |
 | `assets/art/found-scroll.svg` | A scroll found in the temple / 在圣殿中找到的书卷 | 2 Chronicles; week 22 / 历代志下；第 22 周 |
@@ -153,15 +153,38 @@ Forty-three simple vector illustrations were drawn for this library in code, wit
 | `assets/art/sunrise-field.svg` | The sun of righteousness / 公义的日头 | Malachi; week 30 / 玛拉基书；第 30 周 |
 | `assets/art/whirlwind.svg` | Out of the whirlwind / 从旋风中 | Job; week 31 / 约伯记；第 31 周 |
 | `assets/art/seasons-tree.svg` | A time for everything / 凡事都有定时 | Ecclesiastes; week 33 / 传道书；第 33 周 |
-| `assets/art/jordan-dove.svg` | At the Jordan River / 在约旦河边 | John; week 36 / 约翰福音；第 36 周 |
+| `assets/art/jordan-dove.svg` | At the Jordan River / 在约旦河边 | John; week 36; a teaching note / 约翰福音；第 36 周；一篇讲道笔记 |
 | `assets/art/galilee-boat.svg` | Fishing on the Sea of Galilee / 在加利利海打鱼 | Mark; week 37 / 马可福音；第 37 周 |
 | `assets/art/sower.svg` | The sower / 撒种的比喻 | Matthew; week 38 / 马太福音；第 38 周 |
 | `assets/art/palm-road.svg` | The road to Jerusalem / 往耶路撒冷的路 | Week 39 / 第 39 周 |
-| `assets/art/chariot-road.svg` | A chariot on the desert road / 旷野路上的车 | Week 43 / 第 43 周 |
-| `assets/art/table-fellowship.svg` | One family at one table / 同坐一桌的一家人 | Week 44 / 第 44 周 |
+| `assets/art/chariot-road.svg` | A chariot on the desert road / 旷野路上的车 | Week 43; a teaching note / 第 43 周；一篇讲道笔记 |
+| `assets/art/table-fellowship.svg` | One family at one table / 同坐一桌的一家人 | Week 44; two teaching notes / 第 44 周；两篇讲道笔记 |
 | `assets/art/jars-of-clay.svg` | Treasure in jars of clay / 瓦器里的宝贝 | 2 Corinthians; week 47 / 哥林多后书；第 47 周 |
 | `assets/art/anchor-hope.svg` | An anchor for the soul / 灵魂的锚 | Hebrews; week 50 / 希伯来书；第 50 周 |
 | `assets/art/lamp-light.svg` | Light in the house / 屋中的光 | 1 John; week 51 / 约翰一书；第 51 周 |
+| `assets/art/open-hands.svg` | A living offering / 活祭 | Worship and Sacrifice / 敬拜与献祭 |
+| `assets/art/race-course.svg` | Running with endurance / 存心忍耐奔跑 | Faith and Endurance / 信心与忍耐 |
+| `assets/art/river-of-life.svg` | The river of life / 生命河 | Heaven and Christian Hope / 天堂与基督徒盼望 |
+| `assets/art/bethlehem-star.svg` | A light for every neighbor / 照亮邻舍的光 | Christmas as Mission / 把圣诞活成使命 |
+| `assets/art/night-shepherds.svg` | Good news in the night / 夜里的好消息 | Christmas Praise and Hope / 圣诞的赞美与盼望 |
+| `assets/art/open-cage.svg` | Free to live for God / 得自由为神而活 | Christian Living in Christ's Freedom / 在基督自由中生活 |
+| `assets/art/refining-fire.svg` | Gold in the fire / 火中的金子 | Suffering with Hope / 在受苦中持守盼望 |
+| `assets/art/triune-light.svg` | Love shared from eternity / 永恒中分享的爱 | The Father, Son, and Spirit; Trinity guide / 父、子与圣灵；三一神指南 |
+| `assets/art/basin-towel.svg` | The basin and the towel / 水盆与手巾 | Servant Leadership / 仆人式带领 |
+| `assets/art/garden-thorn.svg` | Beauty and the thorn / 美善与荆棘 | Creation, Beauty, and Evil / 创造、美与邪恶 |
+| `assets/art/creation-dawn.svg` | Creation overflowing / 满溢的创造 | Creation from Triune Love / 从三一之爱看创造 |
+| `assets/art/high-priest.svg` | Our great High Priest / 我们的大祭司 | Christ Our Great High Priest / 基督是我们的大祭司 |
+| `assets/art/shared-yoke.svg` | Sharing the yoke / 同负一轭 | Rest and Peace in Christ / 在基督里的安息与平安 |
+| `assets/art/mount-teaching.svg` | Teaching on the mountain / 山上的教导 | Entering the Sermon on the Mount / 进入登山宝训 |
+| `assets/art/mountain-glory.svg` | Glory on the mountain / 山上的荣光 | Glory Revealed in Christ / 在基督里显明的荣耀 |
+| `assets/art/lowly-valley.svg` | Blessed are the poor in spirit / 虚心的人有福了 | Poor in Spirit, Mourning, and Meekness / 虚心、哀恸与温柔 |
+| `assets/art/well-cup.svg` | Hunger and thirst / 饥渴慕义 | Hunger, Mercy, and Purity / 饥渴、怜悯与清心 |
+| `assets/art/hill-city.svg` | A city on a hill / 山上的城 | Salt, Light, and a City on a Hill / 盐、光与山上之城 |
+| `assets/art/bridge-reconcile.svg` | Meeting on the bridge / 在桥上相迎 | Anger and Reconciliation / 愤怒与和好 |
+| `assets/art/secret-room.svg` | Prayer in the quiet room / 在内屋祷告 | Spiritual Practices and the Father / 属灵操练与天父 |
+| `assets/art/morning-prayer.svg` | Growing in prayer / 在祷告中成长 | Spiritual Growth Through Prayer / 借祷告属灵成长 |
+| `assets/art/hidden-treasure.svg` | Treasure in heaven / 积攒财宝在天上 | Treasuring Jesus / 以耶稣为至宝 |
+| `assets/art/lilies-birds.svg` | Birds of the air, lilies of the field / 天上的飞鸟，野地的百合 | Overcoming Worry / 胜过忧虑 |
 
 Check them with `python3 scripts/generate_art.py --check`; the command fails if a committed file differs from the generator.<br>
 可用 `python3 scripts/generate_art.py --check` 检查；若已提交的文件与生成结果不一致，该命令会报错。

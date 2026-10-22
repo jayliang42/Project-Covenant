@@ -8,6 +8,10 @@
 > Hunger for righteousness, mercy, and purity belong to a heart being renewed. These notes begin with acceptance through [Christ](../Glossary/README.md#christ). They then follow how [grace](../Glossary/README.md#grace) becomes action toward God and neighbor.<br>
 > 饥渴慕义、怜悯与清心，属于一颗正在被更新的心。本篇从人在[基督](../Glossary/README.md#christ)里蒙接纳开始。随后看[恩典](../Glossary/README.md#grace)怎样成为对神和邻舍的行动。
 
+![A stone well in dry land with a bucket of water and a cup / 干旱地上的石井，井边有一桶水和一个杯子](../assets/art/well-cup.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2026-03-15 (Sunday)

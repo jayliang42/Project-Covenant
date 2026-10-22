@@ -8,20 +8,20 @@
 > Hebrews 12 pictures [faith](../Glossary/README.md#faith) as a race sustained by Jesus. Encouragement and setting aside hindrances help believers endure. [Grace](../Glossary/README.md#grace) gives this race its starting point.<br>
 > 希伯来书十二章把[信心](../Glossary/README.md#faith)生活比作靠耶稣奔跑的赛程。彼此鼓励、放下拦阻，帮助信徒继续前行。这场赛跑从神的[恩典](../Glossary/README.md#grace)开始。
 
+![Runners on a track heading for the finish line while a crowd watches / 赛跑的人奔向终点，看台上有许多人观看](../assets/art/race-course.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
-- Title: Faith and Endurance Sermon
-  标题：信心与忍耐
-- Date: 2025-11-09
-  日期：2025-11-09
-- Day: Sunday
-  星期：Sunday
+- Date: 2025-11-09 (Sunday)
+  日期：2025-11-09（主日）
 - Type: Sunday Teaching
-  类型：Sunday Teaching
+  类型：主日讲道
 - Main passage: Hebrews 12:1-2
   主要经文：希伯来书 12:1-2
-- Theme: The Christian life is a grace-filled race that requires encouragement, perseverance, and fixed attention on Jesus.
-  主题：基督徒的人生是一场由恩典托住的赛跑，需要鼓励、忍耐，并且持续定睛耶稣。
+- Big idea: The Christian life is a grace-filled race that requires encouragement, perseverance, and fixed attention on Jesus.
+  核心信息：基督徒的人生是一场由恩典托住的赛跑，需要鼓励、忍耐，并且持续定睛耶稣。
 
 ## Big Idea | 核心信息
 

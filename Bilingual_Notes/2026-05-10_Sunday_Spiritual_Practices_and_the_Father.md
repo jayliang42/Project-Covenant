@@ -8,6 +8,10 @@
 > Giving, prayer, and fasting reveal what kind of approval people seek. Matthew 6 directs these practices toward the Father. These notes connect that freedom with the welcome [Christ](../Glossary/README.md#christ) gives.<br>
 > 施舍、祷告和禁食会显明人想得到怎样的认可。马太福音六章把这些操练引向天父。本篇把这样的自由与[基督](../Glossary/README.md#christ)所赐的接纳相连。
 
+![A person kneeling in prayer in a small room with the door shut / 在关上门的小屋里跪着祷告的人](../assets/art/secret-room.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2026-05-10 (Sunday)
@@ -15,7 +19,7 @@
 - Type: Sunday Teaching
   类型：主日讲道
 - Series: The Way of Jesus
-  系列：The Way of Jesus
+  系列：耶稣的道路（The Way of Jesus）
 - Main passage: Matthew 6:1-18
   主要经文：马太福音 6:1-18
 - Big idea: Because Jesus bore our rejection and gives us the Father's welcome, we can give, pray, and fast without performing for people, and pursue God himself.

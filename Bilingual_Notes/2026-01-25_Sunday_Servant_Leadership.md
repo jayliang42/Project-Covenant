@@ -8,6 +8,10 @@
 > First Peter 5 describes leaders as shepherds accountable to Jesus. Willing care and a humble example shape their service. Humility and mutual care belong to the whole [church](../Glossary/README.md#church).<br>
 > 彼得前书五章把带领者描述为向耶稣负责的牧者。甘心的关怀和谦卑的榜样塑造他们的服事。谦卑与彼此关怀属于整个[教会](../Glossary/README.md#church)。
 
+![A water basin, a clay pitcher, and a folded towel on a stone floor / 石地上的水盆、陶壶和叠好的手巾](../assets/art/basin-towel.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2026-01-25 (Sunday)

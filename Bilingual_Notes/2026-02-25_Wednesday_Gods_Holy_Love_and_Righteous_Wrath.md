@@ -8,6 +8,10 @@
 > These notes understand holiness as the purity of God’s love. Wrath expresses that love’s just opposition to evil. The cross joins judgment of sin with mercy toward sinners.<br>
 > 本篇把圣洁理解为神之爱的纯全。忿怒表达这爱对邪恶的公义反对。十字架把对罪的审判与向罪人的怜悯连在一起。
 
+![A glowing coal lifted from the altar with tongs in a smoke-filled temple / 烟云缭绕的圣殿里，有人用火剪从坛上取红炭](../assets/art/burning-coal.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2026-02-25 (Wednesday)

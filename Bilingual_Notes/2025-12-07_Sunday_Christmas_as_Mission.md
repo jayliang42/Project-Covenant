@@ -8,6 +8,10 @@
 > These notes connect Christmas with sharing Jesus’ good news. Invitation grows through prayer, listening, welcome, and friendship. The goal is helping people take an honest step toward [Christ](../Glossary/README.md#christ).<br>
 > 本篇把圣诞与分享耶稣的[福音](../Glossary/README.md#gospel)连在一起。邀请需要祷告、倾听、接待和持续的友谊。目标是帮助人诚实地向[基督](../Glossary/README.md#christ)迈出一步。
 
+![A star over a small town and travelers walking toward a lit doorway / 星光下的小城，行路人走向透着灯光的门](../assets/art/bethlehem-star.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2025-12-07 (Sunday)

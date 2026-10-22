@@ -1094,6 +1094,487 @@ def lamp_light() -> ET.Element:
     return root
 
 
+
+# --- Fourth set: one scene for each teaching note --------------------------
+
+def rays(root: ET.Element, cx: float, cy: float, inner: float, outer: float, count: int, color: str,
+         start: float = 0.0, sweep: float = 360.0, width: float = 3, opacity: float = 0.5) -> None:
+    for i in range(count):
+        angle = math.radians(start + sweep * i / max(1, count - (0 if sweep >= 360 else 1)))
+        el(root, "line", x1=f"{cx + inner * math.cos(angle):.1f}", y1=f"{cy + inner * math.sin(angle):.1f}",
+           x2=f"{cx + outer * math.cos(angle):.1f}", y2=f"{cy + outer * math.sin(angle):.1f}",
+           stroke=color, stroke_width=width, stroke_opacity=opacity, stroke_linecap="round")
+
+
+def stars(root: ET.Element, points: list[tuple[float, float]], color: str = "#f4efe3", r: float = 2.2) -> None:
+    for x, y in points:
+        el(root, "circle", cx=x, cy=y, r=r, fill=color)
+
+
+def kneeling(parent: ET.Element, x: float, y: float, robe: str, skin: str, scale: float = 1.0, facing: int = 1) -> None:
+    """A figure kneeling in prayer whose knees rest at (x, y)."""
+    group = ET.SubElement(parent, NS + "g", {"transform": f"translate({x:.1f} {y:.1f}) scale({scale * facing} {scale})"})
+    el(group, "path", d="M-26 0 C -28 -14, -18 -20, -8 -20 L-2 -46 C 0 -54, 14 -54, 16 -46 L20 -20 C 22 -10, 16 0, 6 0 Z", fill=robe)
+    el(group, "circle", cx=10, cy=-60, r=9, fill=skin)
+    el(group, "path", d="M16 -40 L26 -54 L22 -40 Z", fill=skin)
+
+
+def open_hands() -> ET.Element:
+    root = scene("open-hands", "A living offering | 活祭",
+                 "Two open hands are lifted toward a warm light, as if offering the whole self to God. | "
+                 "一双张开的手向着温暖的光举起，好像把整个人献给神。", "#efe4cf")
+    el(root, "circle", cx=400, cy=120, r=150, fill="#f2c56b", fill_opacity=0.18)
+    el(root, "circle", cx=400, cy=120, r=80, fill="#f2c56b", fill_opacity=0.28)
+    rays(root, 400, 120, 96, 190, 14, "#e2a84a", start=200, sweep=140, width=4, opacity=0.35)
+    for side in (-1, 1):
+        g = ET.SubElement(root, NS + "g", {"transform": f"translate({400 + side * 70} 300) scale({side} 1)"})
+        el(g, "path", d="M-10 150 L-20 40 C -24 10, -10 -10, 10 -14 L60 -24 C 76 -26, 80 -10, 66 -4 L34 6 L40 30 L20 150 Z", fill="#b07a55")
+        for i, (dx, length) in enumerate([(18, 70), (34, 82), (50, 76), (64, 60)]):
+            el(g, "path", d=f"M{dx - 7} -10 L{dx - 4} {-10 - length} C {dx - 2} {-18 - length}, {dx + 8} {-18 - length}, {dx + 8} {-10 - length} L{dx + 7} -6 Z", fill="#c08a63")
+        el(g, "path", d="M-20 150 L-24 110 L40 110 L44 150 Z", fill="#456346")
+    return root
+
+
+def race_course() -> ET.Element:
+    root = scene("race-course", "Running with endurance | 存心忍耐奔跑",
+                 "Runners move along a track toward a finish line while a great crowd watches from the stands. | "
+                 "赛跑的人沿着跑道奔向终点，看台上有许多人在观看。", "#dfe8e4")
+    for row in range(3):
+        y = 70 + row * 34
+        el(root, "rect", x=0, y=y, width=800, height=30, fill="#c9b48a" if row % 2 else "#b9a479")
+        for i in range(26):
+            el(root, "circle", cx=18 + i * 30 + (row % 2) * 12, cy=y + 6, r=8, fill=SKIN[(i + row) % len(SKIN)])
+            el(root, "path", d=f"M{8 + i * 30 + (row % 2) * 12} {y + 30} C {8 + i * 30 + (row % 2) * 12} {y + 14}, {28 + i * 30 + (row % 2) * 12} {y + 14}, {28 + i * 30 + (row % 2) * 12} {y + 30} Z", fill=ROBES[(i + row) % len(ROBES)])
+    el(root, "rect", x=0, y=172, width=800, height=278, fill="#b4573f")
+    for i in range(5):
+        el(root, "line", x1=0, y1=210 + i * 50, x2=800, y2=210 + i * 50, stroke="#f4efe3", stroke_width=3, stroke_opacity=0.8)
+    el(root, "rect", x=660, y=172, width=14, height=278, fill="#f4efe3")
+    for i in range(14):
+        el(root, "rect", x=660 + (i % 2) * 7, y=172 + i * 20, width=7, height=10, fill="#2f3a2f")
+    for i, (x, y) in enumerate([(520, 250), (430, 300), (330, 350), (230, 400)]):
+        g = ET.SubElement(root, NS + "g", {"transform": f"translate({x} {y})"})
+        el(g, "circle", cx=8, cy=-62, r=9, fill=SKIN[i])
+        el(g, "path", d="M-6 -50 L14 -50 L10 -24 L-8 -24 Z", fill=ROBES[i + 1])
+        el(g, "path", d="M-4 -26 L-22 -6 M8 -26 L18 -4 L30 -8", fill="none", stroke=SKIN[i], stroke_width=6, stroke_linecap="round", stroke_linejoin="round")
+        el(g, "path", d="M-2 -46 L-20 -34 M12 -46 L26 -56", fill="none", stroke=SKIN[i], stroke_width=5, stroke_linecap="round")
+    return root
+
+
+def river_of_life() -> ET.Element:
+    root = scene("river-of-life", "The river of life | 生命河",
+                 "A bright river flows from a distant city gate between fruit trees, under a clear morning sky. | "
+                 "明亮的河从远处的城门流出，两岸有结果子的树，天空清朗。", "#e4eef0")
+    el(root, "circle", cx=400, cy=120, r=110, fill="#f6e7b0", fill_opacity=0.6)
+    el(root, "rect", x=310, y=96, width=180, height=110, fill="#e9dcc0")
+    el(root, "path", d="M370 206 L370 150 C 370 126, 430 126, 430 150 L430 206 Z", fill="#f8efcf")
+    for x in range(310, 491, 30):
+        el(root, "rect", x=x, y=84, width=18, height=16, fill="#e9dcc0")
+    ground(root, 200, "#9cc07a", 6, 600)
+    el(root, "path", d="M380 206 L420 206 C 470 280, 560 340, 640 450 L160 450 C 240 340, 330 280, 380 206 Z", fill="#7fb7c4")
+    el(root, "path", d="M400 214 C 380 260, 360 320, 330 450", fill="none", stroke="#d8eef0", stroke_width=6, stroke_opacity=0.7)
+    for side, xs in ((-1, (300, 220, 120)), (1, (500, 590, 690))):
+        for i, x in enumerate(xs):
+            y = 250 + i * 60
+            size = 34 + i * 14
+            el(root, "rect", x=x - 5, y=y, width=10, height=size * 1.2, fill="#7a5537")
+            el(root, "circle", cx=x, cy=y - size * 0.2, r=size, fill="#4f7d45")
+            for j in range(4):
+                el(root, "circle", cx=x - size * 0.5 + j * size * 0.34, cy=y - size * 0.3 + (j % 2) * 14, r=5, fill="#e2a84a")
+    return root
+
+
+def bethlehem_star() -> ET.Element:
+    root = scene("bethlehem-star", "A light for every neighbor | 照亮邻舍的光",
+                 "A bright star shines over a small town at night while travelers walk toward an open, lit doorway. | "
+                 "夜里一颗明亮的星照在小城上，几位行路人走向一扇敞开、透着灯光的门。", "#1f2b46")
+    stars(root, [(80, 60), (160, 110), (260, 40), (520, 70), (640, 120), (720, 50), (340, 90), (60, 170)])
+    el(root, "path", d="M560 80 L566 100 L586 106 L566 112 L560 132 L554 112 L534 106 L554 100 Z", fill="#f6e7b0")
+    el(root, "path", d="M560 132 L480 330 L640 330 Z", fill="#f6e7b0", fill_opacity=0.10)
+    ground(root, 320, "#3b3a30", 8, 600)
+    for x, w, h in [(200, 90, 70), (300, 110, 90), (430, 80, 60), (540, 120, 100), (680, 90, 70)]:
+        el(root, "rect", x=x - w / 2, y=330 - h, width=w, height=h, fill="#8d7a5a")
+        el(root, "rect", x=x - w / 2 - 4, y=330 - h - 8, width=w + 8, height=10, fill="#6f5e44")
+    el(root, "rect", x=520, y=270, width=34, height=60, rx=3, fill="#f2c56b")
+    el(root, "path", d="M520 330 L554 330 L620 420 L470 420 Z", fill="#f2c56b", fill_opacity=0.18)
+    for i, x in enumerate((360, 410)):
+        person(root, x, 400, ROBES[i + 2], SKIN[i + 1], 0.9)
+    return root
+
+
+def night_shepherds() -> ET.Element:
+    root = scene("night-shepherds", "Good news in the night | 夜里的好消息",
+                 "Shepherds and their sheep look up from a dark hillside toward a sky filled with light. | "
+                 "牧羊人和羊群在幽暗的山坡上，抬头望向充满亮光的天空。", "#202a40")
+    el(root, "circle", cx=520, cy=90, r=200, fill="#f6e7b0", fill_opacity=0.10)
+    el(root, "circle", cx=520, cy=90, r=110, fill="#f6e7b0", fill_opacity=0.18)
+    rays(root, 520, 90, 30, 140, 16, "#f6e7b0", width=3, opacity=0.4)
+    stars(root, [(60, 50), (130, 120), (220, 60), (300, 140), (760, 200), (700, 40)])
+    ground(root, 300, "#33402f", 18, 700, 1.2)
+    for x, y in [(430, 360), (490, 380), (560, 350), (620, 386), (680, 360)]:
+        el(root, "path", d=f"M{x - 22} {y} C {x - 26} {y - 26}, {x + 22} {y - 30}, {x + 24} {y} Z", fill="#e8e1d2")
+        el(root, "circle", cx=x + 26, cy=y - 16, r=8, fill="#bdb3a0")
+    for i, x in enumerate((180, 250, 310)):
+        person(root, x, 380 + (i % 2) * 8, ROBES[(i + 2) % len(ROBES)], SKIN[i], 1.0)
+    el(root, "path", d="M268 390 L276 300 C 276 288, 292 288, 290 300", fill="none", stroke="#7a5537", stroke_width=4, stroke_linecap="round")
+    return root
+
+
+def open_cage() -> ET.Element:
+    root = scene("open-cage", "Free to live for God | 得自由为神而活",
+                 "A cage door stands open and birds fly out toward a bright, open sky. | "
+                 "鸟笼的门敞开着，鸟儿飞向明亮开阔的天空。", "#e7eef0")
+    el(root, "circle", cx=640, cy=110, r=70, fill="#f2c56b", fill_opacity=0.5)
+    el(root, "path", d="M0 380 L800 380 L800 450 L0 450 Z", fill="#c9b48a")
+    el(root, "rect", x=150, y=360, width=240, height=20, fill="#8e6644")
+    el(root, "path", d="M170 360 L170 200 C 170 120, 370 120, 370 200 L370 360", fill="none", stroke="#6b4e33", stroke_width=5)
+    for x in range(190, 370, 22):
+        el(root, "line", x1=x, y1=360, x2=x, y2=158 if 230 < x < 320 else 190, stroke="#6b4e33", stroke_width=3)
+    el(root, "line", x1=270, y1=128, x2=270, y2=100, stroke="#6b4e33", stroke_width=4)
+    el(root, "circle", cx=270, cy=94, r=8, fill="none", stroke="#6b4e33", stroke_width=4)
+    el(root, "path", d="M370 260 L460 230 L460 350 L370 340 Z", fill="none", stroke="#6b4e33", stroke_width=4)
+    for x, y, s in [(470, 220, 1.0), (540, 170, 0.9), (610, 210, 0.8), (680, 150, 0.7)]:
+        g = ET.SubElement(root, NS + "g", {"transform": f"translate({x} {y}) scale({s})"})
+        el(g, "path", d="M-20 0 C -10 -18, 0 -8, 0 0 C 0 -8, 10 -18, 20 0", fill="none", stroke="#3f6c7a", stroke_width=6, stroke_linecap="round")
+    return root
+
+
+def refining_fire() -> ET.Element:
+    root = scene("refining-fire", "Gold in the fire | 火中的金子",
+                 "A small crucible of glowing gold sits over a steady fire in a dark workshop. | "
+                 "幽暗的作坊里，一个盛着发光金子的坩埚放在稳定的火上。", "#2c2722")
+    el(root, "circle", cx=400, cy=250, r=200, fill="#f0a93a", fill_opacity=0.12)
+    el(root, "path", d="M0 380 L800 380 L800 450 L0 450 Z", fill="#4a3c2e")
+    el(root, "rect", x=270, y=300, width=260, height=80, rx=8, fill="#6b5a48")
+    for i, (x, hgt) in enumerate([(320, 40), (360, 58), (400, 70), (440, 58), (480, 40)]):
+        el(root, "path", d=f"M{x - 26} 312 C {x - 20} {312 - hgt * 0.6}, {x - 4} {312 - hgt * 0.8}, {x} {312 - hgt} C {x + 4} {312 - hgt * 0.8}, {x + 20} {312 - hgt * 0.6}, {x + 26} 312 Z", fill="#e8742e" if i % 2 else "#f0a93a")
+    el(root, "path", d="M330 230 L470 230 L450 290 L350 290 Z", fill="#5a4e40")
+    el(root, "path", d="M340 236 L460 236 L456 252 L344 252 Z", fill="#fbe08a")
+    rays(root, 400, 236, 30, 90, 7, "#fbe08a", start=200, sweep=140, width=3, opacity=0.4)
+    el(root, "line", x1=470, y1=240, x2=620, y2=160, stroke="#8f8576", stroke_width=6, stroke_linecap="round")
+    return root
+
+
+def triune_light() -> ET.Element:
+    root = scene("triune-light", "Love shared from eternity | 永恒中分享的爱",
+                 "Three overlapping circles of warm light form one shared center, a simple sign of the Father, Son, and Spirit. | "
+                 "三个交叠的暖光圆环合成一个共同的中心，用简单图形象征父、子、圣灵。", "#f1e8d6")
+    rays(root, 400, 230, 160, 230, 24, "#e2a84a", width=3, opacity=0.25)
+    for (x, y), color in zip([(400, 170), (345, 265), (455, 265)], ["#c98a45", "#3f6c7a", "#8b4b45"]):
+        el(root, "circle", cx=x, cy=y, r=96, fill=color, fill_opacity=0.28)
+        el(root, "circle", cx=x, cy=y, r=96, fill="none", stroke=color, stroke_width=4)
+    el(root, "circle", cx=400, cy=233, r=16, fill="#fbf3dc")
+    return root
+
+
+def basin_towel() -> ET.Element:
+    root = scene("basin-towel", "The basin and the towel | 水盆与手巾",
+                 "A water basin, a clay pitcher, and a folded towel sit on a stone floor, ready for washing feet. | "
+                 "石地上放着一个水盆、一把陶壶和一条叠好的手巾，预备为人洗脚。", "#ece2cf")
+    el(root, "path", d="M0 300 L800 300 L800 450 L0 450 Z", fill="#c9b8a0")
+    for x in range(0, 800, 100):
+        el(root, "line", x1=x, y1=300, x2=x - 60, y2=450, stroke="#b4a288", stroke_width=2)
+    el(root, "line", x1=0, y1=370, x2=800, y2=370, stroke="#b4a288", stroke_width=2)
+    el(root, "path", d="M250 330 C 250 400, 470 400, 470 330 Z", fill="#a86f3c")
+    el(root, "path", d="M240 326 L480 326 L476 340 L244 340 Z", fill="#8f5c2f")
+    el(root, "path", d="M260 334 L460 334 C 450 344, 270 344, 260 334 Z", fill="#7fb7c4")
+    el(root, "path", d="M540 340 C 520 300, 530 240, 556 220 L560 196 L590 196 L594 220 C 620 240, 630 300, 610 340 Z", fill="#b5793f")
+    el(root, "path", d="M610 240 C 650 240, 650 290, 612 300", fill="none", stroke="#9b6634", stroke_width=8)
+    el(root, "path", d="M120 320 L220 312 L230 352 L130 360 Z", fill="#f4efe3", stroke="#c9b8a0", stroke_width=2)
+    el(root, "path", d="M126 340 L226 332", stroke="#d8cdb8", stroke_width=3)
+    return root
+
+
+def garden_thorn() -> ET.Element:
+    root = scene("garden-thorn", "Beauty and the thorn | 美善与荆棘",
+                 "A flowering garden glows in the sun, while one thorny vine creeps in from the edge. | "
+                 "阳光下的花园盛开绽放，只有一根带刺的藤蔓从边上爬进来。", "#e6efe0")
+    el(root, "circle", cx=150, cy=90, r=56, fill="#f2c56b", fill_opacity=0.7)
+    ground(root, 280, "#8fb46e", 10, 560)
+    colors = ["#c4574a", "#e2a84a", "#7b5d84", "#f4efe3", "#d47aa0"]
+    for i in range(22):
+        x = 40 + (i * 37) % 560
+        y = 300 + (i * 53) % 120
+        el(root, "line", x1=x, y1=y + 30, x2=x, y2=y, stroke="#4f7d45", stroke_width=3)
+        for k in range(5):
+            angle = math.radians(k * 72)
+            el(root, "circle", cx=f"{x + 7 * math.cos(angle):.1f}", cy=f"{y + 7 * math.sin(angle):.1f}", r=6, fill=colors[i % len(colors)])
+        el(root, "circle", cx=x, cy=y, r=4, fill="#f6e7b0")
+    vine = [(800, 330), (740, 300), (700, 340), (650, 310), (610, 350)]
+    el(root, "path", d=path(vine, close=False), fill="none", stroke="#4a3c2e", stroke_width=5, stroke_linecap="round", stroke_linejoin="round")
+    for (x1, y1), (x2, y2) in zip(vine, vine[1:]):
+        mx, my = (x1 + x2) / 2, (y1 + y2) / 2
+        el(root, "path", d=f"M{mx - 4} {my} L{mx} {my - 14} L{mx + 4} {my} Z", fill="#4a3c2e")
+    return root
+
+
+def creation_dawn() -> ET.Element:
+    root = scene("creation-dawn", "Creation overflowing | 满溢的创造",
+                 "The sun rises over sea and land; birds fly, fish leap, and plants spring up across the hills. | "
+                 "太阳从海与陆地之上升起；飞鸟翱翔，鱼儿跃起，山坡上长满草木。", "#f3e2bd")
+    el(root, "circle", cx=400, cy=230, r=90, fill="#eaa94a")
+    rays(root, 400, 230, 110, 260, 18, "#eaa94a", start=180, sweep=180, width=4, opacity=0.4)
+    el(root, "path", d=path([(0, 450)] + wave(0, 800, 250, 6, 200) + [(800, 450)]), fill="#5f97a8")
+    el(root, "path", d="M0 300 C 120 250, 240 260, 340 320 L340 450 L0 450 Z", fill="#6f9f4c")
+    el(root, "path", d="M800 290 C 700 250, 560 270, 500 340 L500 450 L800 450 Z", fill="#7fae5a")
+    for x, y in [(60, 280), (120, 270), (200, 290), (620, 280), (700, 270), (760, 290)]:
+        el(root, "path", d=f"M{x} {y} L{x - 14} {y + 30} L{x + 14} {y + 30} Z", fill="#3f6b3a")
+    for x, y in [(180, 90), (230, 120), (600, 80), (650, 110)]:
+        el(root, "path", d=f"M{x - 16} {y} C {x - 8} {y - 12}, {x} {y - 6}, {x} {y} C {x} {y - 6}, {x + 8} {y - 12}, {x + 16} {y}", fill="none", stroke="#2f3a2f", stroke_width=3, stroke_linecap="round")
+    el(root, "path", d="M420 330 C 440 300, 480 300, 490 320 L500 306 L500 336 L490 324 C 470 344, 440 344, 420 330 Z", fill="#e2a84a")
+    return root
+
+
+def high_priest() -> ET.Element:
+    root = scene("high-priest", "Our great High Priest | 我们的大祭司",
+                 "A priest in a blue robe and jeweled breastpiece stands before an incense altar and a curtain that has been opened. | "
+                 "身穿蓝袍、胸前佩着宝石胸牌的祭司，站在香坛和已被打开的幔子前。", "#efe2c8")
+    el(root, "rect", x=420, y=60, width=300, height=300, fill="#f6e7b0", fill_opacity=0.7)
+    el(root, "path", d="M420 60 L520 60 C 500 160, 480 260, 420 360 Z", fill="#7b4f6b")
+    el(root, "path", d="M720 60 L620 60 C 640 160, 660 260, 720 360 Z", fill="#7b4f6b")
+    ground(root, 360, "#d6bf8f", 4, 700)
+    el(root, "rect", x=540, y=290, width=60, height=80, fill="#c69a3e")
+    el(root, "rect", x=530, y=282, width=80, height=12, fill="#a8743f")
+    el(root, "path", d="M570 280 C 550 240, 590 210, 566 170", fill="none", stroke="#9a948a", stroke_width=6, stroke_opacity=0.5, stroke_linecap="round")
+    g = ET.SubElement(root, NS + "g", {"transform": "translate(300 390) scale(2.2)"})
+    el(g, "path", d="M-16 0 L-11 -46 C -10 -52, 10 -52, 11 -46 L16 0 Z", fill="#3f5f8a")
+    el(g, "path", d="M-8 -44 L8 -44 L8 -30 L-8 -30 Z", fill="#e9d6a6")
+    for i in range(4):
+        for j in range(3):
+            el(g, "circle", cx=-5 + j * 5, cy=-41 + i * 3.4, r=1.3, fill=["#8b4b45", "#456346", "#3f6c7a", "#c69a3e"][i])
+    el(g, "circle", cx=0, cy=-58, r=8, fill="#b07a55")
+    el(g, "path", d="M-8 -62 C -8 -72, 8 -72, 8 -62 Z", fill="#f4efe3")
+    for x in range(-14, 16, 6):
+        el(g, "circle", cx=x, cy=-1, r=1.5, fill="#c69a3e")
+    return root
+
+
+def shared_yoke() -> ET.Element:
+    root = scene("shared-yoke", "Sharing the yoke | 同负一轭",
+                 "Two oxen walk side by side under one wooden yoke, plowing a quiet field in the evening light. | "
+                 "两头牛同负一个木轭并肩前行，在傍晚的光里耕着安静的田。", "#f1e2c4")
+    el(root, "circle", cx=640, cy=150, r=60, fill="#eaa94a", fill_opacity=0.8)
+    ground(root, 230, "#b9a479", 6, 700)
+    for i in range(7):
+        el(root, "path", d=f"M0 {270 + i * 26} C 300 {262 + i * 26}, 500 {276 + i * 26}, 800 {266 + i * 26}", fill="none", stroke="#9c8660", stroke_width=3)
+    for x, y, color in ((350, 330, "#a8743f"), (300, 380, "#7a5537")):
+        g = ET.SubElement(root, NS + "g", {"transform": f"translate({x} {y}) scale(1.5)"})
+        el(g, "path", d="M-90 -20 C -90 -60, 30 -66, 40 -40 L40 0 L-90 0 Z", fill=color)
+        el(g, "path", d="M40 -46 C 60 -56, 80 -40, 76 -20 L60 -14 L40 -20 Z", fill=color)
+        el(g, "path", d="M54 -52 L46 -66 M66 -52 L74 -66", fill="none", stroke="#e9dcc0", stroke_width=4, stroke_linecap="round")
+        for leg in (-80, -60, 10, 28):
+            el(g, "rect", x=leg, y=-2, width=8, height=30, fill=color)
+    el(root, "line", x1=344, y1=322, x2=416, y2=262, stroke="#5a3e28", stroke_width=12, stroke_linecap="round")
+    for x, y in ((362, 320), (410, 280)):
+        el(root, "path", d=f"M{x - 12} {y - 6} C {x - 14} {y + 20}, {x + 14} {y + 20}, {x + 12} {y - 6}", fill="none", stroke="#5a3e28", stroke_width=4)
+    el(root, "line", x1=170, y1=360, x2=90, y2=400, stroke="#5a3e28", stroke_width=6, stroke_linecap="round")
+    el(root, "path", d="M80 392 L64 424 L92 414 Z", fill="#6f6a60")
+    return root
+
+
+def mount_teaching() -> ET.Element:
+    root = scene("mount-teaching", "Teaching on the mountain | 山上的教导",
+                 "On a grassy hillside above a lake, a crowd sits listening to one teacher. | "
+                 "湖边青草的山坡上，一群人坐着聆听一位教师讲话。", "#e4eef0")
+    el(root, "path", d=path([(0, 210)] + wave(0, 800, 200, 4, 300) + [(800, 260), (0, 260)]), fill="#7fb7c4")
+    el(root, "path", d="M0 230 C 200 140, 420 110, 800 200 L800 450 L0 450 Z", fill="#8fb46e")
+    person(root, 560, 210, "#f4efe3", "#b07a55", 0.95)
+    for i in range(18):
+        x = 120 + (i % 9) * 52 + (i // 9) * 20
+        y = 300 + (i // 9) * 60 + (i % 3) * 6
+        el(root, "circle", cx=x, cy=y - 30, r=8, fill=SKIN[i % len(SKIN)])
+        el(root, "path", d=f"M{x - 14} {y} C {x - 14} {y - 24}, {x + 14} {y - 24}, {x + 14} {y} Z", fill=ROBES[i % len(ROBES)])
+    for x, y in [(80, 420), (690, 380), (740, 430)]:
+        el(root, "path", d=f"M{x} {y} l-6 -16 m6 16 l0 -18 m0 18 l6 -16", fill="none", stroke="#4f7d45", stroke_width=3, stroke_linecap="round")
+    return root
+
+
+def mountain_glory() -> ET.Element:
+    root = scene("mountain-glory", "Glory on the mountain | 山上的荣光",
+                 "Brilliant light breaks over a high mountain peak and spills down its slopes. | "
+                 "灿烂的光从高山顶上发出，倾洒在山坡上。", "#2a3352")
+    el(root, "circle", cx=400, cy=120, r=230, fill="#f6e7b0", fill_opacity=0.10)
+    el(root, "circle", cx=400, cy=120, r=140, fill="#f6e7b0", fill_opacity=0.16)
+    el(root, "circle", cx=400, cy=96, r=48, fill="#fbf3dc", fill_opacity=0.9)
+    rays(root, 400, 120, 70, 360, 28, "#f6e7b0", width=4, opacity=0.25)
+    el(root, "path", d="M120 450 L400 160 L680 450 Z", fill="#5a5d6e")
+    el(root, "path", d="M400 160 L470 232 L430 226 L410 250 L380 226 L340 222 Z", fill="#f4efe3")
+    el(root, "path", d="M0 450 L160 300 L300 450 Z M500 450 L660 280 L800 400 L800 450 Z", fill="#3e4152")
+    return root
+
+
+def lowly_valley() -> ET.Element:
+    root = scene("lowly-valley", "Blessed are the poor in spirit | 虚心的人有福了",
+                 "A person kneels with empty hands in a quiet valley, while morning light falls on a wide green land ahead. | "
+                 "一个人空着手跪在安静的山谷里，晨光照在前面广阔的绿地上。", "#e8ecdf")
+    el(root, "circle", cx=600, cy=110, r=90, fill="#f2c56b", fill_opacity=0.35)
+    el(root, "path", d="M0 120 C 120 140, 220 250, 320 300 L0 300 Z M800 140 C 700 160, 560 250, 470 300 L800 300 Z", fill="#9aa88a")
+    ground(root, 290, "#8fb46e", 6, 600)
+    el(root, "path", d="M330 450 C 360 380, 420 330, 480 300 L520 300 C 480 340, 470 400, 470 450 Z", fill="#c9b48a", fill_opacity=0.7)
+    kneeling(root, 360, 400, "#7b5d84", "#8a5f43", 1.4)
+    rays(root, 600, 110, 100, 200, 9, "#f2c56b", start=110, sweep=80, width=4, opacity=0.35)
+    return root
+
+
+def well_cup() -> ET.Element:
+    root = scene("well-cup", "Hunger and thirst | 饥渴慕义",
+                 "A stone well stands in dry land; a bucket of fresh water and a cup rest on its edge. | "
+                 "干旱的地上有一口石井，井边放着一桶清水和一个杯子。", "#f1e2c4")
+    el(root, "circle", cx=650, cy=100, r=56, fill="#eaa94a", fill_opacity=0.8)
+    ground(root, 300, "#d6bf8f", 6, 700)
+    for x, y in [(80, 360), (150, 410), (700, 380), (640, 420)]:
+        el(root, "path", d=f"M{x} {y} l-6 -14 m6 14 l0 -16 m0 16 l6 -14", fill="none", stroke="#a39466", stroke_width=3, stroke_linecap="round")
+    el(root, "rect", x=290, y=250, width=220, height=120, fill="#a79c8a")
+    for row in range(4):
+        for col in range(5):
+            el(root, "rect", x=290 + col * 44 + (row % 2) * 22, y=250 + row * 30, width=40, height=26, rx=3, fill="#bcb2a0" if (row + col) % 2 else "#b2a794")
+    el(root, "rect", x=280, y=240, width=240, height=16, rx=4, fill="#8d8474")
+    el(root, "line", x1=300, y1=240, x2=300, y2=130, stroke="#7a5537", stroke_width=10)
+    el(root, "line", x1=500, y1=240, x2=500, y2=130, stroke="#7a5537", stroke_width=10)
+    el(root, "line", x1=290, y1=136, x2=510, y2=136, stroke="#7a5537", stroke_width=10)
+    el(root, "line", x1=420, y1=136, x2=420, y2=200, stroke="#5a4e40", stroke_width=2)
+    el(root, "path", d="M400 200 L440 200 L434 236 L406 236 Z", fill="#8f5c2f")
+    el(root, "rect", x=404, y=202, width=32, height=6, fill="#7fb7c4")
+    el(root, "path", d="M470 222 L494 222 L490 240 L474 240 Z", fill="#c98a45")
+    return root
+
+
+def hill_city() -> ET.Element:
+    root = scene("hill-city", "A city on a hill | 山上的城",
+                 "At dusk a small city glows on top of a hill, its windows bright, while a lamp burns in the foreground. | "
+                 "黄昏时，一座小城在山顶发光，窗户明亮；近处一盏灯正点着。", "#33405e")
+    stars(root, [(60, 40), (140, 90), (700, 60), (760, 130), (600, 30)])
+    el(root, "path", d="M0 450 L0 330 C 160 300, 260 180, 400 170 C 540 180, 640 300, 800 330 L800 450 Z", fill="#3d4a3a")
+    for i, (x, w, h) in enumerate([(320, 50, 50), (370, 44, 70), (420, 60, 60), (480, 40, 44), (345, 30, 90)]):
+        el(root, "rect", x=x - w / 2, y=175 - h, width=w, height=h + 10, fill="#d8c49a")
+        for j in range(2):
+            el(root, "rect", x=x - 6 + (j - 0.5) * 14, y=175 - h + 14, width=8, height=10, fill="#fbe08a")
+    el(root, "circle", cx=400, cy=140, r=120, fill="#fbe08a", fill_opacity=0.10)
+    el(root, "rect", x=140, y=360, width=12, height=70, fill="#8f5c2f")
+    el(root, "path", d="M110 430 L180 430 L166 414 L124 414 Z", fill="#8f5c2f")
+    el(root, "path", d="M120 360 C 120 346, 172 346, 180 354 L188 350 L184 362 C 172 370, 132 372, 120 360 Z", fill="#b5793f")
+    el(root, "path", d="M184 350 C 180 336, 184 326, 190 318 C 196 328, 196 340, 190 350 Z", fill="#f0a93a")
+    el(root, "circle", cx=188, cy=338, r=50, fill="#f2c56b", fill_opacity=0.18)
+    el(root, "path", d="M600 430 C 600 404, 660 404, 660 430 Z", fill="#e8e1d2")
+    return root
+
+
+def bridge_reconcile() -> ET.Element:
+    root = scene("bridge-reconcile", "Meeting on the bridge | 在桥上相迎",
+                 "Two people walk toward each other from opposite banks and meet in the middle of a small bridge. | "
+                 "两个人从两岸相向而行，在一座小桥中间相遇。", "#e6eee8")
+    el(root, "circle", cx=400, cy=100, r=60, fill="#f2c56b", fill_opacity=0.5)
+    el(root, "path", d="M0 260 C 120 250, 200 270, 260 300 L260 450 L0 450 Z", fill="#8fb46e")
+    el(root, "path", d="M800 260 C 680 250, 600 270, 540 300 L540 450 L800 450 Z", fill="#8fb46e")
+    el(root, "path", d="M240 330 L560 330 L560 450 L240 450 Z", fill="#7fb7c4")
+    el(root, "path", d="M200 300 C 300 240, 500 240, 600 300 L600 316 C 500 258, 300 258, 200 316 Z", fill="#8e6644")
+    for x in range(240, 580, 40):
+        top = 300 - 60 * (1 - ((x - 400) / 200) ** 2)
+        el(root, "line", x1=x, y1=f"{top:.1f}", x2=x, y2=f"{top - 30:.1f}", stroke="#6b4e33", stroke_width=4)
+    el(root, "path", d="M220 268 C 300 214, 500 214, 580 268", fill="none", stroke="#6b4e33", stroke_width=4)
+    person(root, 370, 254, "#3f6c7a", "#8a5f43", 1.0)
+    person(root, 430, 254, "#8b4b45", "#c08a63", 1.0)
+    el(root, "path", d="M380 220 C 392 212, 408 212, 420 220", fill="none", stroke="#b07a55", stroke_width=5, stroke_linecap="round")
+    return root
+
+
+def secret_room() -> ET.Element:
+    root = scene("secret-room", "Prayer in the quiet room | 在内屋祷告",
+                 "In a small room with the door shut, a person kneels in prayer while light falls through a high window. | "
+                 "在关上门的小屋里，一个人跪着祷告，光从高窗照进来。", "#4a3f36")
+    el(root, "path", d="M0 340 L800 340 L800 450 L0 450 Z", fill="#6b5a48")
+    el(root, "rect", x=520, y=80, width=90, height=70, fill="#f6e7b0")
+    el(root, "line", x1=565, y1=80, x2=565, y2=150, stroke="#4a3f36", stroke_width=5)
+    el(root, "path", d="M520 150 L610 150 L520 420 L300 420 Z", fill="#f6e7b0", fill_opacity=0.16)
+    el(root, "rect", x=100, y=150, width=110, height=190, fill="#5a4630", stroke="#3a2e22", stroke_width=6)
+    el(root, "circle", cx=190, cy=250, r=6, fill="#c69a3e")
+    kneeling(root, 420, 400, "#3f6c7a", "#b07a55", 1.5)
+    el(root, "path", d="M370 400 L520 400 L520 410 L370 410 Z", fill="#8b4b45", fill_opacity=0.8)
+    return root
+
+
+def morning_prayer() -> ET.Element:
+    root = scene("morning-prayer", "Growing in prayer | 在祷告中成长",
+                 "A person kneels beside a young tree on a hilltop at sunrise; the tree's roots reach deep into the soil. | "
+                 "日出时，一个人跪在山顶一棵小树旁；小树的根深深扎进土里。", "#f3e2bd")
+    el(root, "circle", cx=640, cy=210, r=80, fill="#eaa94a")
+    el(root, "path", d=path([(0, 250)] + wave(0, 800, 240, 8, 400) + [(800, 300), (0, 300)]), fill="#c9a874")
+    el(root, "path", d="M0 300 C 200 250, 500 260, 800 300 L800 450 L0 450 Z", fill="#7a6a4e")
+    el(root, "path", d="M0 300 C 200 250, 500 260, 800 300 L800 316 C 500 276, 200 266, 0 316 Z", fill="#6f9f4c")
+    el(root, "line", x1=360, y1=280, x2=360, y2=170, stroke="#7a5537", stroke_width=10)
+    el(root, "circle", cx=360, cy=160, r=50, fill="#4f7d45")
+    el(root, "circle", cx=330, cy=180, r=30, fill="#5f8f50")
+    el(root, "circle", cx=392, cy=178, r=32, fill="#5f8f50")
+    for dx, depth in [(-60, 120), (-24, 150), (20, 140), (64, 110)]:
+        el(root, "path", d=f"M360 290 C {360 + dx * 0.4} {290 + depth * 0.4}, {360 + dx} {290 + depth * 0.6}, {360 + dx * 1.2} {290 + depth}", fill="none", stroke="#b89a62", stroke_width=4, stroke_linecap="round")
+    kneeling(root, 470, 282, "#8b4b45", "#c08a63", 1.1, facing=-1)
+    return root
+
+
+def hidden_treasure() -> ET.Element:
+    root = scene("hidden-treasure", "Treasure in heaven | 积攒财宝在天上",
+                 "An open chest glows in a field, while a moth-eaten cloth and rusted coins lie forgotten nearby. | "
+                 "田间一个打开的宝箱发着光；旁边被虫蛀的布和生锈的钱币被丢在一边。", "#e9efe0")
+    ground(root, 280, "#8fb46e", 8, 600)
+    el(root, "circle", cx=420, cy=300, r=130, fill="#fbe08a", fill_opacity=0.18)
+    el(root, "rect", x=350, y=290, width=140, height=80, rx=6, fill="#8e6644")
+    el(root, "rect", x=350, y=318, width=140, height=10, fill="#c69a3e")
+    el(root, "path", d="M350 290 L380 230 L520 230 L490 290 Z", fill="#7a5537")
+    el(root, "path", d="M360 290 L480 290 L470 270 L370 270 Z", fill="#fbe08a")
+    rays(root, 420, 270, 30, 120, 9, "#fbe08a", start=200, sweep=140, width=4, opacity=0.5)
+    el(root, "path", d="M120 380 L220 370 L230 410 L130 420 Z", fill="#b8ad98")
+    for x, y in [(150, 390), (190, 384), (176, 404), (206, 400)]:
+        el(root, "circle", cx=x, cy=y, r=5, fill="#8fb46e")
+    for x, y in [(600, 400), (624, 394), (646, 404)]:
+        el(root, "circle", cx=x, cy=y, r=10, fill="#9a6a4a")
+        el(root, "circle", cx=x + 3, cy=y - 2, r=3, fill="#6b4e33")
+    return root
+
+
+def lilies_birds() -> ET.Element:
+    root = scene("lilies-birds", "Birds of the air, lilies of the field | 天上的飞鸟，野地的百合",
+                 "Birds glide across a calm sky above a meadow full of wild lilies. | "
+                 "飞鸟在平静的天空中滑翔，下面的草地上开满野百合。", "#e4eef0")
+    el(root, "circle", cx=150, cy=100, r=50, fill="#f2c56b", fill_opacity=0.6)
+    for x, y, s in [(420, 90, 1.2), (500, 130, 1.0), (580, 80, 0.9), (650, 140, 0.8), (340, 140, 0.8)]:
+        g = ET.SubElement(root, NS + "g", {"transform": f"translate({x} {y}) scale({s})"})
+        el(g, "path", d="M-24 0 C -12 -18, 0 -8, 0 0 C 0 -8, 12 -18, 24 0", fill="none", stroke="#2f3a2f", stroke_width=4, stroke_linecap="round")
+    ground(root, 270, "#8fb46e", 8, 500)
+    for i in range(20):
+        x = 30 + (i * 41) % 760
+        y = 320 + (i * 37) % 110
+        g = ET.SubElement(root, NS + "g", {"transform": f"translate({x} {y}) scale(1.7) translate({-x} {-y})"})
+        el(g, "line", x1=x, y1=y + 36, x2=x, y2=y, stroke="#4f7d45", stroke_width=3)
+        el(g, "path", d=f"M{x} {y} C {x - 16} {y - 6}, {x - 18} {y - 20}, {x - 10} {y - 26} C {x - 6} {y - 16}, {x - 2} {y - 14}, {x} {y - 28} C {x + 2} {y - 14}, {x + 6} {y - 16}, {x + 10} {y - 26} C {x + 18} {y - 20}, {x + 16} {y - 6}, {x} {y} Z", fill="#f4efe3" if i % 3 else "#e8c9d8")
+    return root
+
+
+NOTE_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
+    "open-hands.svg": open_hands,
+    "race-course.svg": race_course,
+    "river-of-life.svg": river_of_life,
+    "bethlehem-star.svg": bethlehem_star,
+    "night-shepherds.svg": night_shepherds,
+    "open-cage.svg": open_cage,
+    "refining-fire.svg": refining_fire,
+    "triune-light.svg": triune_light,
+    "basin-towel.svg": basin_towel,
+    "garden-thorn.svg": garden_thorn,
+    "creation-dawn.svg": creation_dawn,
+    "high-priest.svg": high_priest,
+    "shared-yoke.svg": shared_yoke,
+    "mount-teaching.svg": mount_teaching,
+    "mountain-glory.svg": mountain_glory,
+    "lowly-valley.svg": lowly_valley,
+    "well-cup.svg": well_cup,
+    "hill-city.svg": hill_city,
+    "bridge-reconcile.svg": bridge_reconcile,
+    "secret-room.svg": secret_room,
+    "morning-prayer.svg": morning_prayer,
+    "hidden-treasure.svg": hidden_treasure,
+    "lilies-birds.svg": lilies_birds,
+}
+
+
 ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "jacob-ladder.svg": jacob_ladder,
     "lamb-altar.svg": lamb_altar,
@@ -1138,6 +1619,7 @@ ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "letter.svg": letter,
     "rebuilding.svg": rebuilding,
     "open-bible.svg": open_book,
+    **NOTE_ARTWORKS,
 }
 
 

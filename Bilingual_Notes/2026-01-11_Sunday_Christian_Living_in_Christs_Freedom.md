@@ -8,6 +8,10 @@
 > First Peter 4 connects [Christ](../Glossary/README.md#christ)’s suffering with a changed way of life. Prayer, love, hospitality, and serving with gifts make that freedom visible. [Grace](../Glossary/README.md#grace) and coming judgment give these practices their setting.<br>
 > 彼得前书四章把[基督](../Glossary/README.md#christ)的受苦与更新的生活相连。祷告、相爱、接待和使用恩赐，使这份自由变得可见。这些操练以[恩典](../Glossary/README.md#grace)和将来的审判为背景。
 
+![An open cage with birds flying out into a bright sky / 敞开的鸟笼，鸟儿飞向明亮的天空](../assets/art/open-cage.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2026-01-11 (Sunday)

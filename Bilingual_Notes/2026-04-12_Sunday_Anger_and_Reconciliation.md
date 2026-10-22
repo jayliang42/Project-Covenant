@@ -8,22 +8,22 @@
 > Matthew 5 brings the command against murder into the heart’s anger and contempt. Jesus calls people to take reconciliation seriously. These notes ground that response in his forgiving love.<br>
 > 马太福音五章把不可杀人的诫命带到内心的愤怒与轻看。耶稣呼召人认真面对和好。本篇把这样的回应建立在祂[赦免](../Glossary/README.md#forgiveness)的爱中。
 
+![Two people meeting in the middle of a small bridge / 两个人在小桥中间相遇](../assets/art/bridge-reconcile.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
-- Title: Sermon on Anger and Reconciliation
-  标题：关于愤怒与和好的讲道
-- Date: 2026-04-12
-  日期：2026-04-12
-- Day: Sunday
-  星期：Sunday
+- Date: 2026-04-12 (Sunday)
+  日期：2026-04-12（主日）
 - Type: Sunday Teaching
-  类型：Sunday Teaching
+  类型：主日讲道
 - Series: The Way of Jesus
-  系列：The Way of Jesus
+  系列：耶稣的道路（The Way of Jesus）
 - Main passage: Matthew 5:21-26
   主要经文：马太福音 5:21-26
-- Theme: Because Jesus loved and forgave us when we were his enemies, we can turn from anger and pursue reconciliation.
-  主题：因为耶稣在我们还是祂仇敌的时候就爱我们、赦免我们，所以我们也能离开愤怒，主动追求和好。
+- Big idea: Because Jesus loved and forgave us when we were his enemies, we can turn from anger and pursue reconciliation.
+  核心信息：因为耶稣在我们还是祂仇敌的时候就爱我们、赦免我们，所以我们也能离开愤怒，主动追求和好。
 
 ## Big Idea | 核心信息
 

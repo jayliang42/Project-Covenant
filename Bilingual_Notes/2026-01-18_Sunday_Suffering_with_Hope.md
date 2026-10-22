@@ -8,6 +8,10 @@
 > First Peter 4 calls suffering believers to entrust themselves to the faithful Creator. Sharing [Christ](../Glossary/README.md#christ)’s path gives hope while pain remains real. The continuing call is to do good.<br>
 > 彼得前书四章呼召受苦的信徒把自己交托给信实的创造主。与[基督](../Glossary/README.md#christ)同行带来盼望，痛苦仍是真实的。持续的呼召是继续行善。
 
+![A crucible of glowing gold over a steady fire / 稳定火焰上盛着发光金子的坩埚](../assets/art/refining-fire.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2026-01-18 (Sunday)

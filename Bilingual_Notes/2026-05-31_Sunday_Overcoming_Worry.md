@@ -8,6 +8,10 @@
 > Matthew 6 directs worried [disciples](../Glossary/README.md#disciple) toward the Father’s care. Seeking his kingdom gives daily needs a different setting. Trust is learned amid real suffering and uncertainty.<br>
 > 马太福音六章把担忧的[门徒](../Glossary/README.md#disciple)引向天父的看顾。先求祂的国，为日常需要提供新的位置。人可以在真实的受苦与未知中学习信靠。
 
+![Birds gliding above a meadow of wild lilies / 飞鸟滑过开满野百合的草地](../assets/art/lilies-birds.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Basic Info | 基本信息
 
 - Date: 2026-05-31 (Sunday)
@@ -15,7 +19,7 @@
 - Type: Sunday Teaching
   类型：主日讲道
 - Series: The Way of Jesus
-  系列：The Way of Jesus
+  系列：耶稣的道路（The Way of Jesus）
 - Main passage: Matthew 6:25-34
   主要经文：马太福音 6:25-34
 - Big idea: Because Jesus gave his life to meet our greatest need, we can trust him as King and learn to overcome worry.
