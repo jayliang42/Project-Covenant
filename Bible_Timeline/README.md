@@ -15,33 +15,49 @@
 | --- | --- | --- |
 | Start with 30 minutes or four gentle weeks<br>用 30 分钟或轻量四周开始 | [First Steps in the Bible Story / 圣经故事线第一步](./First_Steps_Bilingual.md) | Full bilingual<br>完整双语 |
 | Find a passage, a book abbreviation, or a reading tip<br>查经文出处、书卷缩写与读法 | [Bible Reading Toolkit / 读经工具箱](./Bible_Reading_Toolkit_Bilingual.md) | Full bilingual<br>完整双语 |
-| Meet the people who carry the story<br>认识推动故事的人物 | [People of the Bible / 圣经人物](./Bible_People_Bilingual.md) | Full bilingual<br>完整双语 |
-| Follow the covenants that hold the story together<br>顺着贯穿故事的约来读 | [Covenants of the Bible / 圣经中的约](./Bible_Covenants_Bilingual.md) | Full bilingual<br>完整双语 |
-| Read Jesus’ parables with simple steps<br>用简单步骤读耶稣的比喻 | [Parables of Jesus / 耶稣的比喻](./Parables_of_Jesus_Bilingual.md) | Full bilingual<br>完整双语 |
-| Get to know passages Christians read most often<br>熟悉最常读的经文 | [Key Passages to Know / 值得熟悉的经文](./Key_Passages_Bilingual.md) | Full bilingual<br>完整双语 |
-| Learn to pray from the prayers in Scripture<br>从圣经中的祷告学习祷告 | [Prayers in the Bible / 圣经中的祷告](./Prayers_in_the_Bible_Bilingual.md) | Full bilingual<br>完整双语 |
-| Find a psalm for what you are going through<br>为当下的处境找一篇诗篇 | [Psalms for Different Times / 不同处境中的诗篇](./Psalms_for_Different_Times_Bilingual.md) | Full bilingual<br>完整双语 |
-| Learn Israel’s feasts and how they connect to Jesus<br>认识以色列的节期及其与耶稣的关联 | [Feasts of the Bible / 圣经中的节期](./Feasts_of_the_Bible_Bilingual.md) | Full bilingual<br>完整双语 |
-| Read the miracles the Gospels report<br>读福音书记载的神迹 | [Miracles of Jesus / 耶稣的神迹](./Miracles_of_Jesus_Bilingual.md) | Full bilingual<br>完整双语 |
+| Explore one theme at a time: people, places, covenants, parables, prayer<br>一次读一个主题：人物、地点、圣约、比喻、祷告 | [Topic Guides / 专题导读](#topic-guides) | Full bilingual<br>完整双语 |
 | Understand the whole story in one sitting<br>一次看懂大故事 | [Bible Timeline Overview / 圣经时间线总览](./Bible_Timeline_Bilingual.md) | Full bilingual<br>完整双语 |
 | See every book’s role<br>逐卷看承上启下 | [Bible by Book / 按书卷梳理圣经](./Bible_By_Book_Bilingual.md) | Full bilingual<br>完整双语 |
 | Study through a year<br>一年串读 | [52-Week Storyline Plan / 52 周故事线计划](./52周圣经故事线_查经与史料阅读计划.md) | Full bilingual<br>完整双语 |
 | Read 52 core books without losing the other 14<br>52 卷主读而不遗漏其余 14 卷 | [52-Book Core + 14-Book Bridge / 52 卷主读＋14 卷桥接](./52卷圣经故事主线_精选与14卷桥接版.md) | Paired English/Chinese Draft<br>中英逐段对照Draft |
 | Check evidence and its limits<br>核对史料及边界 | [Evidence Index / 史料与考古旁证索引](./史料与考古旁证索引.md) | Paired English/Chinese Draft<br>中英逐段对照Draft |
 
+<a id="topic-guides"></a>
+## Topic Guides | 专题导读
+
+Short, fully bilingual guides for looking something up or reading one theme at a time. Each takes about ten to twenty minutes.<br>
+篇幅较短、完整双语的专题导读，适合查找资料或一次读一个主题；每篇约需十到二十分钟。
+
+<a id="topic-people-places"></a>
+### People and Places | 人物与地点
+
+- [People of the Bible | 圣经人物](./Bible_People_Bilingual.md)
+- [Places of the Bible | 圣经地名](../Maps/Bible_Places_Bilingual.md)
+
+<a id="topic-threads"></a>
+### Threads Through the Story | 贯穿故事的线索
+
+- [Covenants of the Bible | 圣经中的约](./Bible_Covenants_Bilingual.md)
+- [Feasts of the Bible | 圣经中的节期](./Feasts_of_the_Bible_Bilingual.md)
+
+<a id="topic-jesus"></a>
+### Jesus’ Teaching and Works | 耶稣的教导与作为
+
+- [Parables of Jesus | 耶稣的比喻](./Parables_of_Jesus_Bilingual.md)
+- [Miracles of Jesus | 耶稣的神迹](./Miracles_of_Jesus_Bilingual.md)
+
+<a id="topic-reading-prayer"></a>
+### Reading and Prayer | 读经与祷告
+
+- [Key Passages to Know | 值得熟悉的经文](./Key_Passages_Bilingual.md)
+- [Prayers in the Bible | 圣经中的祷告](./Prayers_in_the_Bible_Bilingual.md)
+- [Psalms for Different Times | 不同处境中的诗篇](./Psalms_for_Different_Times_Bilingual.md)
+
 ## Core Bilingual Guides | 核心双语导读
 
 - [Bible Timeline Overview | 圣经时间线总览](./Bible_Timeline_Bilingual.md)
 - [Bible by Book | 按书卷梳理圣经](./Bible_By_Book_Bilingual.md)
 - [Bible Reading Toolkit | 读经工具箱](./Bible_Reading_Toolkit_Bilingual.md)
-- [People of the Bible | 圣经人物](./Bible_People_Bilingual.md)
-- [Covenants of the Bible | 圣经中的约](./Bible_Covenants_Bilingual.md)
-- [Feasts of the Bible | 圣经中的节期](./Feasts_of_the_Bible_Bilingual.md)
-- [Parables of Jesus | 耶稣的比喻](./Parables_of_Jesus_Bilingual.md)
-- [Miracles of Jesus | 耶稣的神迹](./Miracles_of_Jesus_Bilingual.md)
-- [Key Passages to Know | 值得熟悉的经文](./Key_Passages_Bilingual.md)
-- [Prayers in the Bible | 圣经中的祷告](./Prayers_in_the_Bible_Bilingual.md)
-- [Psalms for Different Times | 不同处境中的诗篇](./Psalms_for_Different_Times_Bilingual.md)
 - [Old Testament Timeline | 旧约时间线](./Old_Testament_Timeline_Bilingual.md)
 - [New Testament Timeline | 新约时间线](./New_Testament_Timeline_Bilingual.md)
 - [Bible Timeline Cheat Sheet | 一页式速查表](./Bible_Timeline_Cheat_Sheet.md)

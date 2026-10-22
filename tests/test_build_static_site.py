@@ -669,7 +669,7 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             ]
             # One source heading-shaped line is inside a fenced Markdown example.
             self.assertEqual(
-                2559,
+                2564,
                 sum(len(re.findall(r"<h[1-6](?: |>)", text)) for text in html_texts),
             )
             self.assertEqual(261, sum(text.count("<table>") for text in html_texts))
