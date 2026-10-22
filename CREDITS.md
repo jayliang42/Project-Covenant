@@ -114,8 +114,8 @@ The cedar-cutting file’s English description cites 2 Samuel 5, while its title
 <a id="original-illustrations"></a>
 ## Original Illustrations | 原创插画
 
-Seventy-four simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
-本资料库有七十四幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
+Seventy-five simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
+本资料库有七十五幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
 
 | File / 文件 | Subject / 内容 | Used in / 使用位置 |
 | --- | --- | --- |
@@ -139,7 +139,7 @@ Seventy-four simple vector illustrations were drawn for this library in code, wi
 | `assets/art/jacob-ladder.svg` | Jacob's dream / 雅各的梦 | Genesis; week 4 / 创世记；第 4 周 |
 | `assets/art/lamb-altar.svg` | Altar and offering / 祭坛与献祭 | Leviticus; week 8 / 利未记；第 8 周 |
 | `assets/art/stone-tablets.svg` | Words to remember / 当记念的话 | Deuteronomy; week 10 / 申命记；第 10 周 |
-| `assets/art/jericho-walls.svg` | Around the walls of Jericho / 绕行耶利哥城 | Joshua; week 11; Bible Timeline / 约书亚记；第 11 周；圣经时间线 |
+| `assets/art/jericho-walls.svg` | Around the walls of Jericho / 绕行耶利哥城 | Joshua; week 11; Bible Timeline; Joshua to Kingdom Formation / 约书亚记；第 11 周；圣经时间线；约书亚至王国形成 |
 | `assets/art/anointing.svg` | Oil for a new king / 膏立新王 | 1 Samuel; week 13 / 撒母耳记上；第 13 周 |
 | `assets/art/golden-calf.svg` | A divided kingdom / 分裂的王国 | Week 16 / 第 16 周 |
 | `assets/art/burning-coal.svg` | A coal from the altar / 坛上的红炭 | Isaiah; week 19; a teaching note / 以赛亚书；第 19 周；一篇讲道笔记 |
@@ -193,6 +193,7 @@ Seventy-four simple vector illustrations were drawn for this library in code, wi
 | `assets/art/word-cards.svg` | Words to learn / 要学的词 | Glossary / 词汇表 |
 | `assets/art/ark-rainbow.svg` | After the flood / 洪水之后 | Bible Timeline / 圣经时间线 |
 | `assets/art/abraham-stars.svg` | Count the stars / 数一数天上的星 | Bible Timeline / 圣经时间线 |
+| `assets/art/papyrus-codex.svg` | An early papyrus book / 早期的蒲草纸抄本 | Resurrection and Early Witnesses / 复活与早期见证 |
 
 Check them with `python3 scripts/generate_art.py --check`; the command fails if a committed file differs from the generator.<br>
 可用 `python3 scripts/generate_art.py --check` 检查；若已提交的文件与生成结果不一致，该命令会报错。

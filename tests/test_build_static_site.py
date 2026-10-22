@@ -647,7 +647,7 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             report = build_site(snapshot, digest, output)
 
             self.assertEqual(83, report.page_count)
-            self.assertEqual(181, report.file_count)
+            self.assertEqual(182, report.file_count)
             file_paths = {
                 path.relative_to(output).as_posix()
                 for path in output.rglob("*")
@@ -669,7 +669,7 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             ]
             # One source heading-shaped line is inside a fenced Markdown example.
             self.assertEqual(
-                2391,
+                2392,
                 sum(len(re.findall(r"<h[1-6](?: |>)", text)) for text in html_texts),
             )
             self.assertEqual(250, sum(text.count("<table>") for text in html_texts))
@@ -732,7 +732,7 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
                     self.assertIn('class="reading-time"', page)
 
             media_paths = {path for path in file_paths if path.endswith((".jpg", ".svg"))}
-            self.assertEqual(96, len(media_paths))
+            self.assertEqual(97, len(media_paths))
             for media_path in media_paths:
                 self.assertEqual((REPO_ROOT / media_path).read_bytes(), (output / media_path).read_bytes())
             self.assertIn('href="Maps/index.html"', home)

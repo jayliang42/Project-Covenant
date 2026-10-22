@@ -134,6 +134,7 @@ assets/art/open-bible.svg
 assets/art/open-cage.svg
 assets/art/open-hands.svg
 assets/art/palm-road.svg
+assets/art/papyrus-codex.svg
 assets/art/paul-ship.svg
 assets/art/pentecost.svg
 assets/art/potter-wheel.svg

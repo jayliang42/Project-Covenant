@@ -1774,6 +1774,39 @@ TIMELINE_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
 }
 
 
+
+# --- Seventh set: research pages ------------------------------------------
+
+def papyrus_codex() -> ET.Element:
+    root = scene("papyrus-codex", "An early papyrus book | 早期的蒲草纸抄本",
+                 "An open papyrus codex with ragged edges lies on a dark table; its pages hold columns of faded handwriting drawn as simple lines. | "
+                 "一本边缘残破的蒲草纸册子摊开在深色桌面上，书页上褪色的手写字迹以简单线条表示。", "#3a322a")
+    el(root, "circle", cx=400, cy=220, r=260, fill="#f2c56b", fill_opacity=0.08)
+    el(root, "path", d="M0 360 L800 360 L800 450 L0 450 Z", fill="#2a241e")
+    for side in (-1, 1):
+        x0 = 400
+        x1 = 400 + side * 300
+        edge = [(x1 + side * (6 if i % 2 else -4), 80 + i * 28) for i in range(11)]
+        pts = [(x0, 70)] + [(x0 + side * 290, 64)] + edge + [(x0 + side * 290, 372), (x0, 380)]
+        el(root, "path", d=path(pts), fill="#d9c28e" if side < 0 else "#dcc896")
+        for i in range(12):
+            y = 104 + i * 21
+            length = 230 - (i % 3) * 18 - (40 if i == 11 else 0)
+            start = 128 if side < 0 else 434
+            el(root, "line", x1=start, y1=y, x2=start + length, y2=y, stroke="#6b4e33", stroke_width=3, stroke_opacity=0.55, stroke_dasharray="14 5 8 6 20 4")
+        for i in range(9):
+            el(root, "line", x1=x0 + side * 20, y1=90 + i * 34, x2=x0 + side * 280, y2=88 + i * 34, stroke="#c4ab76", stroke_width=1, stroke_opacity=0.6)
+    el(root, "line", x1=400, y1=70, x2=400, y2=380, stroke="#8a7550", stroke_width=4)
+    el(root, "path", d="M640 120 C 660 140, 650 170, 680 190 L700 160 C 670 150, 676 128, 640 120 Z", fill="#3a322a")
+    el(root, "path", d="M140 300 C 120 320, 128 350, 104 366 L130 372 C 140 350, 150 330, 140 300 Z", fill="#3a322a")
+    return root
+
+
+RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
+    "papyrus-codex.svg": papyrus_codex,
+}
+
+
 ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "jacob-ladder.svg": jacob_ladder,
     "lamb-altar.svg": lamb_altar,
@@ -1821,6 +1854,7 @@ ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     **NOTE_ARTWORKS,
     **GUIDE_ARTWORKS,
     **TIMELINE_ARTWORKS,
+    **RESEARCH_ARTWORKS,
 }
 
 
