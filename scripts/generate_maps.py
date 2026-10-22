@@ -332,7 +332,7 @@ def batch2_maps() -> dict[str, bytes]:
     finish(root,"seven-churches.svg",1020,["Revelation 1:11; 2–3 / 启示录 1:11；2–3章 · Locations approximate / 地点示意。","The line follows letter order, not an excavated mail route. / 虚线按书信次序，不是已发掘的邮路。"])
 
     stages = cast(list[dict[str, str]], json.loads((DATA / "storyline.json").read_text(encoding="utf-8"))["stages"])
-    root=root_svg("The Bible Story in One Page | 一页圣经故事线", "Ten bilingual story stages with approximate narrative periods, disputed ranges and undated beginning/future hope. Vertical order is narrative, not a proportional timescale. / 十站双语故事线；区分叙事年代、争议区间与不可定年的开端和盼望。",1100,1600)
+    root=root_svg("The Bible Story in One Page | 一页圣经故事线", "Ten bilingual story stages with approximate narrative periods, disputed ranges and undated beginning/future hope. Vertical order is narrative, not a proportional timescale. / 十站双语故事线；区分叙事年代、争议区间与不可定年的开端和盼望。",1100,1680)
     label(root,40,110,"Narrative order, not a proportional timescale / 叙事顺序，不按时间比例",20)
     element(root,"line",x1=77,y1=170,x2=77,y2=1420,stroke="#456346",stroke_width=4)
     for i,stage in enumerate(stages):
@@ -343,9 +343,14 @@ def batch2_maps() -> dict[str, bytes]:
         label(root,145,y+31,stage["en"]+" | "+stage["zh"],24,font_weight="bold")
         label(root,145,y+62,stage["date_en"],18)
         label(root,145,y+91,stage["date_zh"],18)
-    label(root,40,1490,"Dates summarize this library's draft guides; early periods are not independently fixed. / 年代为草稿导读概览，早期无法独立定年。",17)
-    label(root,40,1522,"Creation/fall and new creation are not assigned calendar dates. / 创造、堕落与新创造不设公历日期。",18)
-    label(root,40,1554,"Read passages before summaries; see First Steps and the source notes. / 先读经文，再读概览与来源说明。",18)
+    notes = [
+        ("Dates summarize this library's draft guides; early periods are not independently fixed.", "年代为草稿导读概览，早期无法独立定年。"),
+        ("Creation/fall and new creation are not assigned calendar dates.", "创造、堕落与新创造不设公历日期。"),
+        ("Read passages before summaries; see First Steps and the source notes.", "先读经文，再读概览与来源说明。"),
+    ]
+    for i,(note_en,note_zh) in enumerate(notes):
+        label(root,40,1486+i*66,note_en,18)
+        label(root,40,1514+i*66,note_zh,18)
     results["bible-storyline.svg"]=ET.tostring(root,encoding="utf-8")+b"\n"
     return results
 

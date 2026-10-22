@@ -48,6 +48,15 @@ COLLECTIONS = (
 )
 
 
+# Short beginner guides surfaced on the home page, in reading order.
+QUICK_GUIDES = (
+    ("Bible_Timeline/Bible_Reading_Toolkit_Bilingual.md", "Reading Toolkit | 读经工具箱", "Find a passage and read each kind of writing. | 查经文出处，读懂不同文体。"),
+    ("Bible_Timeline/Bible_People_Bilingual.md", "People | 圣经人物", "Who’s who, in story order. | 按故事顺序认识主要人物。"),
+    ("Maps/Bible_Places_Bilingual.md", "Places | 圣经地名", "Key places, each linked to a map. | 重要地点，附地图链接。"),
+    ("Bible_Timeline/Bible_Covenants_Bilingual.md", "Covenants | 圣经中的约", "The five covenants that carry the story. | 贯穿故事的五个约。"),
+    ("Bible_Timeline/Parables_of_Jesus_Bilingual.md", "Parables | 耶稣的比喻", "Nineteen parables and how to read them. | 十九个比喻及读法。"),
+)
+
 # --- Language display -------------------------------------------------------
 # Paired English/Chinese text is marked at build time so a reader can choose
 # Chinese, English, or both. Marking never removes text: with no script the
@@ -343,6 +352,16 @@ def _home_intro(output: str, page_map: dict[str, str], home_art: str | None = No
             continue
         href = html.escape(_href(output, page_map[hub]), quote=True)
         cards.append(f'<a class="collection-card" href="{href}"><span class="collection-number">{index:02d}</span><strong>{bilingual_label(label)}</strong><span class="collection-description">{bilingual_label(description)}</span></a>')
+    guides = []
+    for path, label, description in QUICK_GUIDES:
+        if path not in page_map:
+            continue
+        href = html.escape(_href(output, page_map[path]), quote=True)
+        guides.append(f'<a class="guide-card" href="{href}"><strong>{bilingual_label(label)}</strong><span class="collection-description">{bilingual_label(description)}</span></a>')
+    quick = ""
+    if guides:
+        quick = ('<div class="eyebrow guide-heading"><span class="l-en" lang="en">QUICK GUIDES</span><span class="l-sep"> · </span><span class="l-zh" lang="zh-Hans">快速导览</span></div>'
+                 '<nav class="guide-grid" aria-label="Quick guides | 快速导览">' + "\n".join(guides) + '</nav>')
     art = ""
     if home_art:
         art = ('<img class="home-art" src="' + html.escape(_href(output, home_art), quote=True)
@@ -353,7 +372,7 @@ def _home_intro(output: str, page_map: dict[str, str], home_art: str | None = No
             '<span class="l-zh" lang="zh-Hans">一条故事线，多种研读路径。</span></div>'
             '<p class="l-en" lang="en">Begin with a short guide, follow a reading plan, or return to a topic. Use the switch at the top right to read in Chinese, in English, or in both, and keep each guide’s Draft status and source notes in view.</p>'
             '<p class="l-zh" lang="zh-Hans">从短篇导读开始，跟随阅读计划，或回到感兴趣的专题。可以用右上角的按钮切换中文、英文或中英对照；请同时留意各页的 Draft 状态与来源说明。</p>'
-            + start + art + '</div><nav class="collection-grid" aria-label="Choose a collection | 选择栏目">' + "\n".join(cards) + '</nav>')
+            + start + art + '</div><nav class="collection-grid" aria-label="Choose a collection | 选择栏目">' + "\n".join(cards) + '</nav>' + quick)
 
 
 def is_core_study(source: str) -> bool:
@@ -715,6 +734,13 @@ html.lang-ready .lang-switch { display: inline-flex; flex: none; border: 1px sol
   .lang-switch button { padding: .38rem .42rem; font-size: .7rem; }
 }
 @media print { .home-art { display: none; } }
+.guide-heading { margin: -1.4rem 0 .8rem; }
+.guide-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(11.5rem, 1fr)); gap: .65rem; margin-bottom: 3rem; }
+.guide-card { display: grid; gap: .3rem; align-content: start; padding: .85rem .95rem; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 10px; text-decoration: none; color: var(--text); transition: border-color .15s ease, transform .15s ease; }
+.guide-card:hover { border-color: var(--accent); transform: translateY(-1px); }
+.guide-card strong { font-size: .88rem; font-weight: 600; }
+@media (prefers-reduced-motion: reduce) { .guide-card { transition: none; } .guide-card:hover { transform: none; } }
+@media print { .guide-heading, .guide-grid { display: none; } }
 .hub-page ul:has(> li > a:only-child) { list-style: none; padding-left: 0; }
 .hub-page li:has(> a:only-child) > a { display: block; padding: .65rem 1rem .65rem 1.1rem; border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 10px; background: var(--surface); color: var(--text); text-decoration: none; line-height: 1.6; transition: border-color .15s ease, background-color .15s ease; }
 .hub-page li:has(> a:only-child) > a:hover { background: var(--accent-soft); border-color: var(--accent); }
