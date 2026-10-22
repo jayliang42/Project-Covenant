@@ -25,6 +25,7 @@ Bible_Timeline/Key_Passages_Bilingual.md
 Bible_Timeline/New_Testament_Timeline_Bilingual.md
 Bible_Timeline/Old_Testament_Timeline_Bilingual.md
 Bible_Timeline/Parables_of_Jesus_Bilingual.md
+Bible_Timeline/Prayers_in_the_Bible_Bilingual.md
 Bible_Timeline/README.md
 Bible_Timeline/两约之间至四福音_第二圣殿与罗马背景.md
 Bible_Timeline/使徒行传与保罗书信_旅程年代与城市史料对照.md
@@ -118,6 +119,7 @@ assets/art/golden-calf.svg
 assets/art/hidden-treasure.svg
 assets/art/high-priest.svg
 assets/art/hill-city.svg
+assets/art/incense-rising.svg
 assets/art/jacob-ladder.svg
 assets/art/jars-of-clay.svg
 assets/art/jericho-walls.svg

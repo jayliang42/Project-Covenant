@@ -400,6 +400,9 @@ God’s final renewal, with evil and death overcome and God dwelling with his pe
 Speaking with God: praising, thanking, confessing, asking, and listening. Jesus taught his followers a model prayer, often called the Lord’s Prayer (Matthew 6:9–13).<br>
 与神说话，包括赞美、感谢、认罪、祈求和聆听。耶稣教门徒一篇范例祷告，常称为“主祷文”（马太福音 6:9–13）。
 
+See [Prayers in the Bible](../Bible_Timeline/Prayers_in_the_Bible_Bilingual.md) for twenty-one prayers to read.<br>
+二十一篇可以阅读的祷告，见[圣经中的祷告](../Bible_Timeline/Prayers_in_the_Bible_Bilingual.md)。
+
 [Read more | 延伸阅读](../Bilingual_Notes/2026-05-17_Sunday_Growth_Through_Prayer.md)
 
 <a id="worship"></a>

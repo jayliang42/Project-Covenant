@@ -1891,12 +1891,34 @@ def lamp_path() -> ET.Element:
     return root
 
 
+def incense_rising() -> ET.Element:
+    root = scene("incense-rising", "Prayer like incense | 祷告如香",
+                 "In a dim room, thin smoke curls up from a small bronze incense bowl on a stand toward a high window full of light. | "
+                 "昏暗的屋子里，一缕细烟从架上的小铜香炉袅袅升起，飘向一扇充满光亮的高窗。", "#3a3430")
+    el(root, "rect", x=470, y=50, width=130, height=150, rx=60, fill="#f6e7b0")
+    el(root, "line", x1=535, y1=50, x2=535, y2=200, stroke="#3a3430", stroke_width=5)
+    el(root, "line", x1=470, y1=130, x2=600, y2=130, stroke="#3a3430", stroke_width=5)
+    el(root, "path", d="M470 200 L600 200 L520 450 L250 450 Z", fill="#f6e7b0", fill_opacity=0.06)
+    el(root, "path", d="M0 380 L800 380 L800 450 L0 450 Z", fill="#4e4339")
+    el(root, "rect", x=318, y=300, width=14, height=80, fill="#8f5c2f")
+    el(root, "path", d="M290 380 L360 380 L346 366 L304 366 Z", fill="#8f5c2f")
+    el(root, "path", d="M286 280 C 288 308, 362 308, 364 280 Z", fill="#b5793f")
+    el(root, "rect", x=282, y=274, width=86, height=10, rx=4, fill="#c69a3e")
+    for i, (dx, op) in enumerate([(0, 0.55), (14, 0.4), (-12, 0.35)]):
+        x = 325 + dx
+        el(root, "path", d=f"M{x} 272 C {x - 30} 236, {x + 30} 206, {x} 170 C {x - 30} 136, {x + 40} 110, {x + 90 + i * 20} 80",
+           fill="none", stroke="#d8d2c6", stroke_width=5 - i, stroke_opacity=op, stroke_linecap="round")
+    el(root, "circle", cx=325, cy=276, r=26, fill="#f0a93a", fill_opacity=0.15)
+    return root
+
+
 RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "papyrus-codex.svg": papyrus_codex,
     "story-procession.svg": story_procession,
     "parchment-map.svg": parchment_map,
     "lost-sheep.svg": lost_sheep,
     "lamp-path.svg": lamp_path,
+    "incense-rising.svg": incense_rising,
 }
 
 
