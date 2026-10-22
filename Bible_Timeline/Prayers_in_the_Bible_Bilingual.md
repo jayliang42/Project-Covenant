@@ -105,8 +105,8 @@ As you read each prayer, ask three simple questions:<br>
 
 - **Study prayer in the notes | 在笔记中学习祷告：** The teaching notes on [Spiritual Growth Through Prayer](../Bilingual_Notes/2026-05-17_Sunday_Growth_Through_Prayer.md) walk through the Lord’s Prayer.
   **在笔记中学习祷告：** 讲道笔记[借祷告属灵成长](../Bilingual_Notes/2026-05-17_Sunday_Growth_Through_Prayer.md)逐句讲解主祷文。
-- **Read the psalms | 读诗篇：** [Key Passages to Know](./Key_Passages_Bilingual.md) suggests psalms to read slowly, one at a time.
-  **读诗篇：** [值得熟悉的经文](./Key_Passages_Bilingual.md)推荐几篇可以慢慢逐篇阅读的诗篇。
+- **Pray the psalms | 用诗篇祷告：** [Psalms for Different Times](./Psalms_for_Different_Times_Bilingual.md) suggests psalms for fear, grief, guilt, thanks, waiting, and more.
+  **用诗篇祷告：** [不同处境中的诗篇](./Psalms_for_Different_Times_Bilingual.md)为恐惧、哀伤、愧疚、感恩、等候等处境推荐诗篇。
 - **Meet the people | 认识人物：** [People of the Bible](./Bible_People_Bilingual.md) tells more about Hannah, David, Elijah, Nehemiah, and others who pray here.
   **认识人物：** [圣经人物](./Bible_People_Bilingual.md)进一步介绍哈拿、大卫、以利亚、尼希米等在这里祷告的人。
 

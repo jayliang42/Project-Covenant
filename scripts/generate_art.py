@@ -1960,6 +1960,27 @@ def study_desk() -> ET.Element:
     return root
 
 
+def lyre_dawn() -> ET.Element:
+    root = scene("lyre-dawn", "A song at dawn | 黎明的诗歌",
+                 "At dawn, a simple wooden lyre rests against a rock beside still water, with the first light on the hills. | "
+                 "黎明时分，一把简朴的木制竖琴靠在静水边的岩石上，山丘上映着第一道晨光。", "#f0dcc4")
+    el(root, "circle", cx=600, cy=250, r=110, fill="#f2c56b", fill_opacity=0.45)
+    el(root, "circle", cx=600, cy=250, r=60, fill="#eaa94a", fill_opacity=0.85)
+    el(root, "path", d="M0 250 C 140 200, 300 230, 440 210 C 560 194, 680 220, 800 200 L800 290 L0 290 Z", fill="#b9a479")
+    el(root, "path", d=path([(0, 290)] + wave(0, 800, 290, 3, 260) + [(800, 450), (0, 450)]), fill="#9cc0c8")
+    for y in (320, 350, 385):
+        el(root, "line", x1=520, y1=y, x2=680, y2=y, stroke="#f6e7b0", stroke_width=3, stroke_opacity=0.5, stroke_linecap="round")
+    el(root, "path", d="M80 450 C 90 360, 180 330, 300 340 C 360 346, 390 400, 400 450 Z", fill="#8d8474")
+    g = ET.SubElement(root, NS + "g", {"transform": "translate(250 340) rotate(-12)"})
+    el(g, "path", d="M-60 0 C -70 -60, -60 -120, -40 -150 L-28 -146 C -44 -116, -50 -60, -44 0 Z", fill="#8e6644")
+    el(g, "path", d="M60 0 C 70 -60, 60 -120, 40 -150 L28 -146 C 44 -116, 50 -60, 44 0 Z", fill="#8e6644")
+    el(g, "rect", x=-50, y=-158, width=100, height=14, rx=5, fill="#6b4e33")
+    el(g, "path", d="M-60 -6 L60 -6 L56 26 L-56 26 Z", fill="#7a5537")
+    for x in range(-36, 40, 12):
+        el(g, "line", x1=x, y1=-146, x2=x * 0.9, y2=-6, stroke="#f4efe3", stroke_width=1.6, stroke_opacity=0.85)
+    return root
+
+
 RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "papyrus-codex.svg": papyrus_codex,
     "story-procession.svg": story_procession,
@@ -1969,6 +1990,7 @@ RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "incense-rising.svg": incense_rising,
     "notebook-pen.svg": notebook_pen,
     "study-desk.svg": study_desk,
+    "lyre-dawn.svg": lyre_dawn,
 }
 
 

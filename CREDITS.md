@@ -114,8 +114,8 @@ The cedar-cutting file’s English description cites 2 Samuel 5, while its title
 <a id="original-illustrations"></a>
 ## Original Illustrations | 原创插画
 
-Eighty-two simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
-本资料库有八十二幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
+Eighty-three simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
+本资料库有八十三幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
 
 | File / 文件 | Subject / 内容 | Used in / 使用位置 |
 | --- | --- | --- |
@@ -201,6 +201,7 @@ Eighty-two simple vector illustrations were drawn for this library in code, with
 | `assets/art/incense-rising.svg` | Prayer like incense / 祷告如香 | Prayers in the Bible / 圣经中的祷告 |
 | `assets/art/notebook-pen.svg` | Notes to keep / 记下的笔记 | Notes Hub; chronological index / 笔记中心；时间索引 |
 | `assets/art/study-desk.svg` | Reading with a guide / 带着导读来读 | Christian Book Studies / 基督教书籍研读 |
+| `assets/art/lyre-dawn.svg` | A song at dawn / 黎明的诗歌 | Psalms for Different Times / 不同处境中的诗篇 |
 
 Check them with `python3 scripts/generate_art.py --check`; the command fails if a committed file differs from the generator.<br>
 可用 `python3 scripts/generate_art.py --check` 检查；若已提交的文件与生成结果不一致，该命令会报错。
