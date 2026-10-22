@@ -403,6 +403,7 @@ def render_page(source: str, output: str, title: str, body: str,
     for path, label in (("PUBLICATION_POLICY.md", "Privacy | 隐私与发布"), ("LICENSE.md", "Licensing | 授权说明")):
         if path in page_map:
             policy_links.append(_link(_href(output, page_map[path]), label))
+    article_class = "reading-body hub-page" if source.rsplit("/", 1)[-1] == "README.md" else "reading-body"
     document = f'''<!doctype html>
 <html lang="zh-Hans">
 <head>
@@ -428,7 +429,7 @@ def render_page(source: str, output: str, title: str, body: str,
 {metadata}
 {intro}
 {mobile_toc}
-<article class="reading-body">
+<article class="{article_class}">
 {body}
 </article>
 {_pager(source, output, page_map, titles)}
@@ -711,4 +712,10 @@ html.lang-ready .lang-switch { display: inline-flex; flex: none; border: 1px sol
   .lang-switch button { padding: .38rem .42rem; font-size: .7rem; }
 }
 @media print { .home-art { display: none; } }
+.hub-page ul:has(> li > a:only-child) { list-style: none; padding-left: 0; }
+.hub-page li:has(> a:only-child) > a { display: block; padding: .65rem 1rem .65rem 1.1rem; border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 10px; background: var(--surface); color: var(--text); text-decoration: none; line-height: 1.6; transition: border-color .15s ease, background-color .15s ease; }
+.hub-page li:has(> a:only-child) > a:hover { background: var(--accent-soft); border-color: var(--accent); }
+.hub-page li:has(> a:only-child) + li { margin-top: .55rem; }
+@media (prefers-reduced-motion: reduce) { .hub-page li > a { transition: none; } }
+@media print { .hub-page li:has(> a:only-child) > a { border: 0; padding: 0; background: none; } }
 """
