@@ -750,6 +750,10 @@ html.lang-ready .lang-switch { display: inline-flex; flex: none; border: 1px sol
 .guide-card strong { font-size: .88rem; font-weight: 600; }
 @media (prefers-reduced-motion: reduce) { .guide-card { transition: none; } .guide-card:hover { transform: none; } }
 @media print { .guide-heading, .guide-grid { display: none; } }
+@media (prefers-color-scheme: dark) {
+  .study-art, .study-illustration, .home-art { filter: brightness(.82) saturate(.92); }
+}
+@media print { .study-art, .study-illustration, .home-art { filter: none; } }
 .reading-body > p:last-child:has(> a:first-child[href$="index.html"]) { margin-top: 2.6rem; font-size: .84rem; line-height: 1.9; color: var(--muted); }
 .reading-body > p:last-child:has(> a:first-child[href$="index.html"]) a { color: var(--muted); text-decoration-color: var(--line); }
 .reading-body > p:last-child:has(> a:first-child[href$="index.html"]) a:hover { color: var(--accent); text-decoration-color: currentColor; }
