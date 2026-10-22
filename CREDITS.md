@@ -114,8 +114,8 @@ The cedar-cutting file’s English description cites 2 Samuel 5, while its title
 <a id="original-illustrations"></a>
 ## Original Illustrations | 原创插画
 
-Seventeen simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
-本资料库有十七幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
+Forty-three simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
+本资料库有四十三幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
 
 | File / 文件 | Subject / 内容 | Used in / 使用位置 |
 | --- | --- | --- |
@@ -132,10 +132,36 @@ Seventeen simple vector illustrations were drawn for this library in code, with 
 | `assets/art/david-harp.svg` | A shepherd's lyre and sling / 牧童的琴与机弦 | Week 14 / 第 14 周 |
 | `assets/art/carmel-altar.svg` | Fire on Mount Carmel / 迦密山上的火 | 1 Kings; week 17 / 列王纪上；第 17 周 |
 | `assets/art/lions-den.svg` | Daniel in the lions' den / 狮子坑中的但以理 | Daniel; week 26 / 但以理书；第 26 周 |
-| `assets/art/bread-cup.svg` | Bread and cup / 饼与杯 | Week 40 / 第 40 周 |
+| `assets/art/bread-cup.svg` | Bread and cup / 饼与杯 | Weeks 40, 46 / 第 40、46 周 |
 | `assets/art/empty-tomb.svg` | The empty tomb at dawn / 清晨的空坟墓 | Week 41 / 第 41 周 |
 | `assets/art/pentecost.svg` | Pentecost / 五旬节 | Acts; week 42 / 使徒行传；第 42 周 |
 | `assets/art/paul-ship.svg` | A ship bound for Rome / 驶往罗马的船 | Week 48 / 第 48 周 |
+| `assets/art/jacob-ladder.svg` | Jacob's dream / 雅各的梦 | Genesis; week 4 / 创世记；第 4 周 |
+| `assets/art/lamb-altar.svg` | Altar and offering / 祭坛与献祭 | Leviticus; week 8 / 利未记；第 8 周 |
+| `assets/art/stone-tablets.svg` | Words to remember / 当记念的话 | Deuteronomy; week 10 / 申命记；第 10 周 |
+| `assets/art/jericho-walls.svg` | Around the walls of Jericho / 绕行耶利哥城 | Joshua; week 11 / 约书亚记；第 11 周 |
+| `assets/art/anointing.svg` | Oil for a new king / 膏立新王 | 1 Samuel; week 13 / 撒母耳记上；第 13 周 |
+| `assets/art/golden-calf.svg` | A divided kingdom / 分裂的王国 | Week 16 / 第 16 周 |
+| `assets/art/burning-coal.svg` | A coal from the altar / 坛上的红炭 | Isaiah; week 19 / 以赛亚书；第 19 周 |
+| `assets/art/exile-road.svg` | The road into exile / 被掳之路 | 2 Kings; week 20 / 列王纪下；第 20 周 |
+| `assets/art/water-tunnel.svg` | A tunnel for water / 引水的隧道 | Week 21 / 第 21 周 |
+| `assets/art/found-scroll.svg` | A scroll found in the temple / 在圣殿中找到的书卷 | 2 Chronicles; week 22 / 历代志下；第 22 周 |
+| `assets/art/potter-wheel.svg` | At the potter's house / 在窑匠家里 | Jeremiah; week 23 / 耶利米书；第 23 周 |
+| `assets/art/ruined-city.svg` | Jerusalem in ruins / 荒凉的耶路撒冷 | Lamentations; week 24 / 耶利米哀歌；第 24 周 |
+| `assets/art/dry-bones.svg` | The valley of dry bones / 枯骨的平原 | Ezekiel; week 25 / 以西结书；第 25 周 |
+| `assets/art/royal-scepter.svg` | The golden scepter / 金杖 | Esther; week 28 / 以斯帖记；第 28 周 |
+| `assets/art/sunrise-field.svg` | The sun of righteousness / 公义的日头 | Malachi; week 30 / 玛拉基书；第 30 周 |
+| `assets/art/whirlwind.svg` | Out of the whirlwind / 从旋风中 | Job; week 31 / 约伯记；第 31 周 |
+| `assets/art/seasons-tree.svg` | A time for everything / 凡事都有定时 | Ecclesiastes; week 33 / 传道书；第 33 周 |
+| `assets/art/jordan-dove.svg` | At the Jordan River / 在约旦河边 | John; week 36 / 约翰福音；第 36 周 |
+| `assets/art/galilee-boat.svg` | Fishing on the Sea of Galilee / 在加利利海打鱼 | Mark; week 37 / 马可福音；第 37 周 |
+| `assets/art/sower.svg` | The sower / 撒种的比喻 | Matthew; week 38 / 马太福音；第 38 周 |
+| `assets/art/palm-road.svg` | The road to Jerusalem / 往耶路撒冷的路 | Week 39 / 第 39 周 |
+| `assets/art/chariot-road.svg` | A chariot on the desert road / 旷野路上的车 | Week 43 / 第 43 周 |
+| `assets/art/table-fellowship.svg` | One family at one table / 同坐一桌的一家人 | Week 44 / 第 44 周 |
+| `assets/art/jars-of-clay.svg` | Treasure in jars of clay / 瓦器里的宝贝 | 2 Corinthians; week 47 / 哥林多后书；第 47 周 |
+| `assets/art/anchor-hope.svg` | An anchor for the soul / 灵魂的锚 | Hebrews; week 50 / 希伯来书；第 50 周 |
+| `assets/art/lamp-light.svg` | Light in the house / 屋中的光 | 1 John; week 51 / 约翰一书；第 51 周 |
 
 Check them with `python3 scripts/generate_art.py --check`; the command fails if a committed file differs from the generator.<br>
 可用 `python3 scripts/generate_art.py --check` 检查；若已提交的文件与生成结果不一致，该命令会报错。

@@ -586,7 +586,541 @@ def paul_ship() -> ET.Element:
     return root
 
 
+# --- Third set: one scene for every remaining week -------------------------
+
+def ground(root: ET.Element, y: float, color: str, amplitude: float = 14, length: float = 520, phase: float = 0.0) -> None:
+    el(root, "path", d=path([(0, y + 20)] + wave(0, 800, y, amplitude, length, phase) + [(800, 450), (0, 450)]), fill=color)
+
+
+def scene(name: str, title: str, desc: str, background: str) -> ET.Element:
+    root = canvas(name, 800, 450, title, desc)
+    sky(root, 800, 450, background)
+    return root
+
+
+def jacob_ladder() -> ET.Element:
+    root = scene("jacob-ladder", "Jacob's dream | 雅各的梦",
+                 "Under a starry sky, a man sleeps with his head on a stone while a stairway of light rises to heaven. | "
+                 "星空下，一个人枕着石头睡觉，一道光的阶梯直通到天上。", "#1f2b46")
+    for x, y in [(90, 60), (180, 120), (260, 40), (620, 70), (700, 130), (740, 40), (540, 30), (140, 200)]:
+        el(root, "circle", cx=x, cy=y, r=2.2, fill="#f4efe3")
+    el(root, "path", d="M360 330 L440 330 L520 0 L280 0 Z", fill="#f2d98c", fill_opacity=0.16)
+    for i in range(12):
+        y = 320 - i * 27
+        half = 40 + i * 6
+        el(root, "line", x1=400 - half, y1=y, x2=400 + half, y2=y, stroke="#f2d98c", stroke_width=4, stroke_opacity=0.9 - i * 0.05, stroke_linecap="round")
+    el(root, "line", x1=360, y1=330, x2=280, y2=10, stroke="#f2d98c", stroke_width=4, stroke_opacity=0.6)
+    el(root, "line", x1=440, y1=330, x2=520, y2=10, stroke="#f2d98c", stroke_width=4, stroke_opacity=0.6)
+    ground(root, 340, "#3b3a30", 8, 600)
+    el(root, "path", d="M240 384 C 250 366, 300 360, 330 370 C 360 364, 420 366, 440 384 Z", fill="#7b5d84")
+    el(root, "circle", cx=232, cy=372, r=11, fill="#8a5f43")
+    el(root, "path", d="M200 392 C 200 372, 236 368, 246 384 L246 392 Z", fill="#8d8474")
+    return root
+
+
+def lamb_altar() -> ET.Element:
+    root = scene("lamb-altar", "Altar and offering | 祭坛与献祭",
+                 "A lamb stands beside a bronze altar from which smoke rises before the curtained tabernacle. | "
+                 "一只羊羔站在铜坛旁，坛上烟气升起，后面是挂着幔子的会幕。", "#efe2c8")
+    el(root, "rect", x=420, y=120, width=300, height=200, fill="#e9dcc0", stroke="#b8a37a", stroke_width=2)
+    for x in range(440, 720, 40):
+        el(root, "line", x1=x, y1=120, x2=x, y2=320, stroke="#7b4f6b", stroke_width=10, stroke_opacity=0.35)
+    ground(root, 320, "#d6bf8f", 6, 700)
+    el(root, "rect", x=210, y=250, width=140, height=90, fill="#b5793f")
+    el(root, "rect", x=200, y=240, width=160, height=16, fill="#9b6634")
+    for x in (206, 354):
+        el(root, "path", d=f"M{x - 6} 240 L{x} 226 L{x + 6} 240 Z", fill="#9b6634")
+    for i, cx in enumerate((260, 290, 300)):
+        el(root, "path", d=f"M{cx} 236 C {cx - 30} {200 - i * 20}, {cx + 30} {170 - i * 20}, {cx - 10} {110 - i * 20}", fill="none", stroke="#9a948a", stroke_width=10 - i * 2, stroke_linecap="round", stroke_opacity=0.5)
+    group = ET.SubElement(root, NS + "g", {"transform": "translate(110 360)"})
+    for dx, dy, r in [(-20, -20, 18), (0, -26, 20), (20, -20, 18), (0, -12, 18)]:
+        el(group, "circle", cx=dx, cy=dy, r=r, fill="#fbf8f0")
+    el(group, "circle", cx=36, cy=-34, r=11, fill="#e8ddd0")
+    for x in (-18, 18):
+        el(group, "line", x1=x, y1=0, x2=x, y2=22, stroke="#5a4e40", stroke_width=4, stroke_linecap="round")
+    return root
+
+
+def stone_tablets() -> ET.Element:
+    root = scene("stone-tablets", "Words to remember | 当记念的话",
+                 "Two stone tablets rest at the foot of a mountain, with the promised land spreading out in the distance. | "
+                 "两块石版立在山脚，远处是展开的应许之地。", "#eae4d4")
+    el(root, "path", d="M0 260 L180 120 L330 240 L520 90 L800 260 L800 450 L0 450 Z", fill="#b3a68a")
+    ground(root, 280, "#9fb27f", 12, 600, 1.0)
+    ground(root, 330, "#c8b48a", 8, 700, 2.0)
+    for x in (300, 410):
+        el(root, "path", d=f"M{x} 380 L{x} 250 C {x} 214, {x + 90} 214, {x + 90} 250 L{x + 90} 380 Z", fill="#8d8474")
+        el(root, "path", d=f"M{x + 8} 372 L{x + 8} 254 C {x + 8} 226, {x + 82} 226, {x + 82} 254 L{x + 82} 372 Z", fill="#a39883")
+        for i in range(5):
+            y = 266 + i * 20
+            el(root, "line", x1=x + 22, y1=y, x2=x + 68 - (i % 2) * 14, y2=y, stroke="#6b6355", stroke_width=4, stroke_linecap="round")
+    return root
+
+
+def jericho_walls() -> ET.Element:
+    root = scene("jericho-walls", "Around the walls of Jericho | 绕行耶利哥城",
+                 "A line of people carrying horns walks around a walled city on a hill. | 一行人拿着角号，绕着山上有城墙的城行走。", "#f1e3c6")
+    ground(root, 250, "#d3b98a", 16, 500)
+    el(root, "rect", x=230, y=140, width=340, height=120, fill="#c4aa7e")
+    for x in range(230, 570, 34):
+        el(root, "rect", x=x, y=124, width=20, height=20, fill="#c4aa7e")
+    for x in (260, 360, 460):
+        el(root, "rect", x=x, y=180, width=18, height=24, fill="#7a5537")
+    el(root, "rect", x=380, y=210, width=40, height=50, fill="#5a4630")
+    ground(root, 300, "#b89c6a", 10, 400, 1.0)
+    for i in range(9):
+        x = 80 + i * 76
+        person(root, x, 380 + (i % 2) * 8, ROBES[i % len(ROBES)], SKIN[i % len(SKIN)], 0.9)
+        if i % 2 == 0:
+            el(root, "path", d=f"M{x + 6} {330 + (i % 2) * 8} C {x + 26} {316}, {x + 36} {312}, {x + 44} {300}", fill="none", stroke="#e1c27a", stroke_width=5, stroke_linecap="round")
+    return root
+
+
+def anointing() -> ET.Element:
+    root = scene("anointing", "Oil for a new king | 膏立新王",
+                 "An old prophet pours oil from a horn onto the head of a young shepherd kneeling before him. | "
+                 "年老的先知用角里的油，倒在跪在面前的年轻牧人头上。", "#eef0e2")
+    ground(root, 330, "#9fb27f", 10, 600)
+    person(root, 470, 380, "#7b5d84", "#a07052", 1.7)
+    el(root, "path", d="M430 250 C 420 236, 410 232, 396 238 L392 226 C 410 214, 430 222, 440 240 Z", fill="#d9c08e")
+    el(root, "path", d="M394 232 C 390 250, 388 262, 390 270", fill="none", stroke="#e1b444", stroke_width=4, stroke_linecap="round")
+    group = ET.SubElement(root, NS + "g", {"transform": "translate(380 380)"})
+    el(group, "path", d="M-20 0 L-16 -40 C -10 -52, 14 -52, 18 -40 L22 0 Z", fill="#4f6b52")
+    el(group, "circle", cx=0, cy=-64, r=12, fill="#b07a55")
+    el(group, "path", d="M-40 0 L-20 -10 L-16 0 Z", fill="#4f6b52")
+    for x, y in [(160, 360), (210, 372), (250, 356)]:
+        for dx, r in [(-10, 12), (6, 14), (20, 11)]:
+            el(root, "circle", cx=x + dx, cy=y, r=r, fill="#fbf8f0")
+        el(root, "circle", cx=x + 34, cy=y - 6, r=7, fill="#3e3a33")
+    return root
+
+
+def golden_calf() -> ET.Element:
+    root = scene("golden-calf", "A divided kingdom | 分裂的王国",
+                 "A golden calf stands on a stone pedestal where a road splits in two directions, toward two distant cities. | "
+                 "一尊金牛犊立在石座上，脚下的道路分成两条，通往远处两座城。", "#efe5d0")
+    ground(root, 260, "#c8b48a", 10, 600)
+    for x in (140, 640):
+        el(root, "rect", x=x - 50, y=200, width=100, height=60, fill="#bfa274")
+        el(root, "rect", x=x - 20, y=176, width=40, height=30, fill="#bfa274")
+    el(root, "path", d="M400 450 L380 330 C 360 300, 220 280, 150 262 L170 258 C 240 272, 380 290, 400 320 C 420 290, 560 272, 630 258 L650 262 C 580 280, 440 300, 420 330 L420 450 Z", fill="#e3d0a6")
+    el(root, "rect", x=340, y=290, width=120, height=50, fill="#8d8474")
+    group = ET.SubElement(root, NS + "g", {"transform": "translate(400 290)"})
+    el(group, "path", d="M-46 0 L-44 -34 C -40 -50, 30 -50, 40 -36 L44 0 L32 0 L30 -20 L-30 -20 L-32 0 Z", fill="#e1b444")
+    el(group, "circle", cx=44, cy=-46, r=14, fill="#e1b444")
+    el(group, "path", d="M36 -58 L30 -72 L42 -60 Z M52 -58 L58 -72 L48 -60 Z", fill="#c99a2e")
+    return root
+
+
+def burning_coal() -> ET.Element:
+    root = scene("burning-coal", "A coal from the altar | 坛上的红炭",
+                 "Smoke fills a temple hall as a glowing coal is lifted from the altar with tongs. | "
+                 "圣殿中烟云缭绕，有人用火剪从坛上夹起一块烧红的炭。", "#e7e0d4")
+    for x in (150, 650):
+        el(root, "rect", x=x - 30, y=60, width=60, height=330, fill="#c9bea8")
+    for cx, cy, r in [(300, 120, 80), (420, 90, 100), (540, 130, 80), (380, 180, 70)]:
+        el(root, "circle", cx=cx, cy=cy, r=r, fill="#ffffff", fill_opacity=0.55)
+    el(root, "path", d="M0 390 L800 390 L800 450 L0 450 Z", fill="#b39a6c")
+    el(root, "rect", x=320, y=300, width=160, height=90, fill="#b5793f")
+    el(root, "rect", x=310, y=292, width=180, height=14, fill="#9b6634")
+    for x in (350, 380, 420, 450):
+        el(root, "circle", cx=x, cy=290, r=12, fill="#e8742f")
+    el(root, "line", x1=520, y1=170, x2=432, y2=258, stroke="#6b4e33", stroke_width=6, stroke_linecap="round")
+    el(root, "line", x1=532, y1=180, x2=444, y2=268, stroke="#6b4e33", stroke_width=6, stroke_linecap="round")
+    el(root, "circle", cx=436, cy=266, r=13, fill="#f0a93a")
+    el(root, "circle", cx=436, cy=266, r=26, fill="#f0a93a", fill_opacity=0.25)
+    return root
+
+
+def exile_road() -> ET.Element:
+    root = scene("exile-road", "The road into exile | 被掳之路",
+                 "A long line of people carrying bundles walks along a dusty road away from their homeland under a pale sky. | "
+                 "灰白的天空下，一长列背着包袱的人沿着尘土飞扬的路离开故土。", "#e9e3d6")
+    ground(root, 230, "#c7b089", 14, 600)
+    el(root, "path", d="M0 330 C 200 300, 500 280, 800 240 L800 280 C 500 320, 200 350, 0 380 Z", fill="#e1cfa6")
+    for i in range(10):
+        x = 60 + i * 72
+        y = 368 - i * 11
+        s = 1.0 - i * 0.05
+        person(root, x, y, ROBES[i % len(ROBES)], SKIN[i % len(SKIN)], s)
+        el(root, "circle", cx=x + 10 * s, cy=y - 44 * s, r=10 * s, fill="#d9c7a1")
+    return root
+
+
+def water_tunnel() -> ET.Element:
+    root = scene("water-tunnel", "A tunnel for water | 引水的隧道",
+                 "Inside a narrow rock-cut tunnel, a small lamp lights water flowing toward the city. | "
+                 "一条凿在岩石里的狭窄隧道中，一盏小灯照着流向城里的水。", "#3d342b")
+    el(root, "path", d="M120 450 L200 120 C 260 60, 540 60, 600 120 L680 450 Z", fill="#7a6a55")
+    el(root, "path", d="M220 450 L270 160 C 310 110, 490 110, 530 160 L580 450 Z", fill="#2a241e")
+    el(root, "path", d="M260 450 C 300 400, 500 400, 540 450 Z", fill="#4f8a9a")
+    for i in range(4):
+        y = 420 + i * 8
+        el(root, "path", d=f"M{290 + i * 10} {y} C 360 {y - 10}, 440 {y - 10}, {510 - i * 10} {y}", fill="none", stroke="#a9d3dc", stroke_width=2, stroke_opacity=0.7)
+    for x, y in [(160, 200), (180, 300), (620, 210), (640, 320), (300, 90), (500, 90)]:
+        el(root, "line", x1=x, y1=y, x2=x + 20, y2=y + 10, stroke="#5a4e40", stroke_width=3, stroke_linecap="round")
+    el(root, "circle", cx=400, cy=300, r=70, fill="#f2c56b", fill_opacity=0.15)
+    el(root, "path", d="M370 330 C 370 312, 430 312, 434 326 L446 322 L440 334 C 420 344, 380 344, 370 330 Z", fill="#b5793f")
+    el(root, "path", d="M442 322 C 438 308, 442 298, 448 290 C 454 300, 456 312, 450 322 Z", fill="#f0a93a")
+    return root
+
+
+def found_scroll() -> ET.Element:
+    root = scene("found-scroll", "A scroll found in the temple | 在圣殿中找到的书卷",
+                 "An old scroll lies partly unrolled among stones and dust, lit by a beam of light. | "
+                 "一卷古老的书卷半展开地躺在石块与尘土之间，被一束光照亮。", "#4a4038")
+    el(root, "path", d="M300 0 L500 0 L620 450 L180 450 Z", fill="#f2d98c", fill_opacity=0.14)
+    el(root, "path", d="M0 340 L800 340 L800 450 L0 450 Z", fill="#6b5d4c")
+    for x, y, w2 in [(60, 300, 120), (620, 290, 140), (180, 320, 90), (560, 320, 80)]:
+        el(root, "rect", x=x, y=y, width=w2, height=46, rx=4, fill="#8d7f6a")
+    el(root, "path", d="M280 330 L520 330 L520 380 L280 380 Z", fill="#efe2c2")
+    el(root, "circle", cx=280, cy=355, r=26, fill="#d9c69c")
+    el(root, "circle", cx=520, cy=355, r=26, fill="#d9c69c")
+    el(root, "circle", cx=280, cy=355, r=8, fill="#8a6a48")
+    el(root, "circle", cx=520, cy=355, r=8, fill="#8a6a48")
+    for i in range(3):
+        y = 344 + i * 12
+        el(root, "line", x1=320, y1=y, x2=480, y2=y, stroke="#8f7a55", stroke_width=3, stroke_linecap="round", stroke_opacity=0.7)
+    return root
+
+
+def ruined_city() -> ET.Element:
+    root = scene("ruined-city", "Jerusalem in ruins | 荒凉的耶路撒冷",
+                 "Broken walls and fallen stones lie under drifting smoke, with a single tree still standing. | "
+                 "飘散的烟雾下，城墙坍塌、石块散落，只剩一棵树仍然站着。", "#d8d2c8")
+    for cx, cy, r in [(200, 80, 70), (320, 60, 60), (460, 90, 80)]:
+        el(root, "circle", cx=cx, cy=cy, r=r, fill="#9a948a", fill_opacity=0.45)
+    ground(root, 300, "#a8987a", 8, 600)
+    el(root, "path", d="M80 300 L80 200 L130 200 L130 170 L160 170 L170 230 L220 220 L240 300 Z", fill="#8d8474")
+    el(root, "path", d="M420 300 L430 180 L470 186 L480 150 L520 160 L540 240 L600 230 L620 300 Z", fill="#8d8474")
+    for x, y in [(270, 320), (300, 330), (340, 318), (380, 334), (650, 320), (690, 330), (240, 340)]:
+        el(root, "rect", x=x, y=y, width=34, height=20, rx=3, fill="#a39883", transform=f"rotate({(x % 7) * 5 - 15} {x + 17} {y + 10})")
+    el(root, "line", x1=720, y1=310, x2=720, y2=220, stroke="#5a4630", stroke_width=8)
+    for cx, cy, r in [(720, 200, 30), (700, 220, 22), (742, 222, 22)]:
+        el(root, "circle", cx=cx, cy=cy, r=r, fill="#6f8f55")
+    return root
+
+
+def potter_wheel() -> ET.Element:
+    root = scene("potter-wheel", "At the potter's house | 在窑匠家里",
+                 "A potter shapes a clay vessel on a turning wheel, with finished jars on a shelf behind him. | "
+                 "窑匠在转动的轮子上塑造陶器，身后的架子上放着做好的罐子。", "#efe1cb")
+    el(root, "rect", x=80, y=120, width=640, height=12, fill="#8e6644")
+    for x, hgt in [(120, 70), (200, 90), (280, 60), (560, 80), (640, 70)]:
+        el(root, "path", d=f"M{x - 22} 120 C {x - 34} {120 - hgt * 0.6}, {x - 10} {120 - hgt}, {x} {120 - hgt} C {x + 10} {120 - hgt}, {x + 34} {120 - hgt * 0.6}, {x + 22} 120 Z", fill="#b5793f")
+    el(root, "path", d="M0 360 L800 360 L800 450 L0 450 Z", fill="#9b7a55")
+    el(root, "rect", x=330, y=300, width=140, height=16, rx=8, fill="#6b4e33")
+    el(root, "rect", x=392, y=316, width=16, height=60, fill="#5a4630")
+    el(root, "path", d="M360 300 C 352 270, 372 240, 388 232 L412 232 C 428 240, 448 270, 440 300 Z", fill="#c48a52")
+    el(root, "path", d="M384 232 C 384 222, 416 222, 416 232 Z", fill="#a86f3c")
+    group = ET.SubElement(root, NS + "g", {"transform": "translate(540 380)"})
+    el(group, "path", d="M-30 0 L-24 -70 C -18 -86, 18 -86, 24 -70 L30 0 Z", fill="#4f6b52")
+    el(group, "circle", cx=0, cy=-98, r=14, fill="#8a5f43")
+    el(root, "line", x1=520, y1=316, x2=446, y2=280, stroke="#8a5f43", stroke_width=7, stroke_linecap="round")
+    return root
+
+
+def dry_bones() -> ET.Element:
+    root = scene("dry-bones", "The valley of dry bones | 枯骨的平原",
+                 "A wide valley scattered with dry bones, while a fresh wind blows in from the hills and green shoots appear. | "
+                 "宽阔的山谷里散满枯骨，一阵新风从山间吹来，地上冒出青绿的嫩芽。", "#ece3cf")
+    el(root, "path", d="M0 220 L140 150 L300 210 L460 140 L620 200 L800 150 L800 450 L0 450 Z", fill="#c2ad87")
+    ground(root, 280, "#d9c69c", 10, 700)
+    for x, y, a in [(120, 330, 10), (220, 360, -20), (320, 320, 30), (420, 370, -5), (540, 340, 15), (640, 380, -30), (180, 400, 40), (480, 410, -15)]:
+        el(root, "path", d=f"M{x - 26} {y} L{x + 26} {y}", stroke="#f6f0e1", stroke_width=7, stroke_linecap="round", transform=f"rotate({a} {x} {y})")
+        el(root, "circle", cx=x - 26, cy=y, r=5, fill="#f6f0e1", transform=f"rotate({a} {x} {y})")
+        el(root, "circle", cx=x + 26, cy=y, r=5, fill="#f6f0e1", transform=f"rotate({a} {x} {y})")
+    for i in range(4):
+        y = 120 + i * 28
+        el(root, "path", d=f"M{40 + i * 40} {y} C 220 {y - 30}, 420 {y + 30}, {760 - i * 30} {y - 10}", fill="none", stroke="#8fb3bb", stroke_width=4, stroke_linecap="round", stroke_opacity=0.7)
+    for x in (260, 380, 600, 700):
+        el(root, "path", d=f"M{x} 440 C {x - 2} 428, {x - 10} 420, {x - 16} 416 M{x} 440 C {x + 2} 428, {x + 10} 420, {x + 16} 416", fill="none", stroke="#6f9f4c", stroke_width=3, stroke_linecap="round")
+    return root
+
+
+def royal_scepter() -> ET.Element:
+    root = scene("royal-scepter", "The golden scepter | 金杖",
+                 "In a Persian throne room, a king on a raised throne extends a golden scepter toward a queen who approaches. | "
+                 "在波斯宫殿里，坐在高位上的王向走近的王后伸出金杖。", "#e9dfcf")
+    for x in (80, 240, 560, 720):
+        el(root, "rect", x=x - 18, y=60, width=36, height=330, fill="#cfc2a6")
+        el(root, "rect", x=x - 30, y=50, width=60, height=16, fill="#b8a37a")
+    el(root, "path", d="M0 390 L800 390 L800 450 L0 450 Z", fill="#9b7a55")
+    for i in range(3):
+        el(root, "rect", x=420 + i * 20, y=330 + i * 20, width=260 - i * 40, height=20, fill="#b39a6c")
+    el(root, "rect", x=520, y=200, width=110, height=130, rx=8, fill="#7b4f6b")
+    person(root, 575, 330, "#3f6c7a", "#a07052", 1.3)
+    el(root, "path", d="M558 240 L568 226 L576 240 L584 226 L594 240 Z", fill="#e1b444")
+    el(root, "line", x1=548, y1=280, x2=430, y2=250, stroke="#e1b444", stroke_width=5, stroke_linecap="round")
+    el(root, "circle", cx=428, cy=250, r=8, fill="#e1b444")
+    person(root, 360, 390, "#8b4b45", "#c08a63", 1.35)
+    el(root, "path", d="M342 300 L350 288 L360 300 L370 288 L378 300 Z", fill="#e1b444")
+    return root
+
+
+def sunrise_field() -> ET.Element:
+    root = scene("sunrise-field", "The sun of righteousness | 公义的日头",
+                 "A large sun rises over green fields, its rays spreading like wings, while young calves leap in the pasture. | "
+                 "一轮大日头从青绿的田野上升起，光芒像翅膀一样展开，小牛犊在草场上跳跃。", "#f7e4c3")
+    for i in range(11):
+        angle = math.radians(190 + i * 16)
+        el(root, "line", x1=400, y1=300, x2=400 + 420 * math.cos(angle), y2=300 + 420 * math.sin(angle), stroke="#f3c47a", stroke_width=12, stroke_opacity=0.35, stroke_linecap="round")
+    el(root, "circle", cx=400, cy=300, r=80, fill="#f0a93a")
+    ground(root, 300, "#9fbf7a", 14, 600)
+    ground(root, 350, "#7ea660", 10, 400, 2.0)
+    for x, y, jump in [(220, 380, 0), (300, 360, 1), (560, 380, 0)]:
+        group = ET.SubElement(root, NS + "g", {"transform": f"translate({x} {y - jump * 20}) rotate({-12 * jump})"})
+        el(group, "path", d="M-30 0 C -32 -24, 22 -26, 26 -6 L24 0 Z", fill="#a0703e")
+        el(group, "circle", cx=30, cy=-16, r=10, fill="#a0703e")
+        for lx in (-22, -10, 8, 18):
+            el(group, "line", x1=lx, y1=0, x2=lx + (4 if jump else 0), y2=18, stroke="#6b4e33", stroke_width=4, stroke_linecap="round")
+    return root
+
+
+def whirlwind() -> ET.Element:
+    root = scene("whirlwind", "Out of the whirlwind | 从旋风中",
+                 "A man sits on an ash heap beneath a vast swirling storm that fills the sky. | "
+                 "一个人坐在炉灰中，上方是充满天空的巨大旋风。", "#cfcfc7")
+    for i in range(7):
+        r = 40 + i * 30
+        el(root, "path", d=f"M{400 - r} {150} C {400 - r} {150 - r * 0.7}, {400 + r} {150 - r * 0.7}, {400 + r} {150 + 10}",
+           fill="none", stroke="#6f7c83", stroke_width=10 - i, stroke_linecap="round", stroke_opacity=0.75 - i * 0.07)
+    el(root, "path", d="M380 170 C 360 230, 420 260, 400 330", fill="none", stroke="#6f7c83", stroke_width=12, stroke_linecap="round", stroke_opacity=0.5)
+    ground(root, 350, "#8d8474", 6, 700)
+    el(root, "path", d="M280 380 C 300 350, 380 350, 400 380 Z", fill="#6b6355")
+    group = ET.SubElement(root, NS + "g", {"transform": "translate(340 370)"})
+    el(group, "path", d="M-24 0 C -26 -30, -14 -46, 0 -48 C 14 -46, 24 -30, 22 0 Z", fill="#8d7f6a")
+    el(group, "circle", cx=0, cy=-60, r=12, fill="#a07052")
+    return root
+
+
+def seasons_tree() -> ET.Element:
+    root = scene("seasons-tree", "A time for everything | 凡事都有定时",
+                 "A single tree is shown through four seasons side by side: blossom, full leaf, falling leaves, and bare branches in snow. | "
+                 "同一棵树并排呈现四季：开花、繁茂、落叶，以及雪中光秃的枝条。", "#f2ebdc")
+    seasons = [("#f6dfe2", "#e9a7b5"), ("#dfeccf", "#6f9f4c"), ("#f4e2c4", "#d9822b"), ("#e6ecef", None)]
+    for i, (back, leaf) in enumerate(seasons):
+        x0 = 20 + i * 192
+        el(root, "rect", x=x0, y=40, width=180, height=370, rx=12, fill=back)
+        cx = x0 + 90
+        el(root, "rect", x=cx - 7, y=250, width=14, height=120, fill="#6b4e33")
+        el(root, "path", d=f"M{cx} 280 L{cx - 40} 220 M{cx} 260 L{cx + 44} 200 M{cx} 300 L{cx + 30} 250", stroke="#6b4e33", stroke_width=6, stroke_linecap="round", fill="none")
+        if leaf:
+            for dx, dy, r in [(-40, 210, 30), (0, 180, 40), (44, 200, 32), (20, 240, 26), (-20, 250, 24)]:
+                el(root, "circle", cx=cx + dx, cy=dy, r=r * (0.7 if i == 2 else 1), fill=leaf, fill_opacity=0.9)
+        else:
+            for dx in (-40, -10, 30, 50):
+                el(root, "circle", cx=cx + dx, cy=120 + (dx % 3) * 30, r=3, fill="#ffffff")
+            el(root, "rect", x=x0, y=362, width=180, height=48, rx=10, fill="#ffffff")
+        if i == 2:
+            for dx, dy in [(-50, 330), (30, 350), (60, 310)]:
+                el(root, "circle", cx=cx + dx, cy=dy, r=5, fill=leaf)
+        el(root, "rect", x=x0, y=370, width=180, height=8, fill="#8e6644", fill_opacity=0.5)
+    return root
+
+
+def jordan_dove() -> ET.Element:
+    root = scene("jordan-dove", "At the Jordan River | 在约旦河边",
+                 "A dove descends through an opening in the clouds above a figure standing in a river. | "
+                 "云层裂开，一只鸽子降下，下方有一人站在河水中。", "#e6eef0")
+    el(root, "path", d="M330 0 L470 0 L440 300 L360 300 Z", fill="#f2d98c", fill_opacity=0.3)
+    for cx, cy, r in [(220, 60, 70), (580, 60, 70), (300, 30, 50), (500, 30, 50)]:
+        el(root, "circle", cx=cx, cy=cy, r=r, fill="#ffffff", fill_opacity=0.8)
+    ground(root, 260, "#a9bf8a", 10, 600)
+    el(root, "path", d="M0 330 C 200 300, 600 300, 800 330 L800 400 C 600 380, 200 380, 0 410 Z", fill="#8cbac6")
+    group = ET.SubElement(root, NS + "g", {"transform": "translate(400 140)"})
+    el(group, "path", d="M0 0 C -40 -20, -70 -10, -80 6 C -50 4, -30 10, 0 14 C 30 10, 50 4, 80 6 C 70 -10, 40 -20, 0 0 Z", fill="#ffffff")
+    el(group, "path", d="M-6 10 C -4 28, 4 28, 6 10 Z", fill="#ffffff")
+    el(group, "circle", cx=0, cy=4, r=7, fill="#ffffff")
+    person(root, 400, 360, "#e9dcc0", "#a07052", 1.3)
+    el(root, "path", d="M360 350 C 380 342, 420 342, 440 350", fill="none", stroke="#cfe6ee", stroke_width=3)
+    return root
+
+
+def galilee_boat() -> ET.Element:
+    root = scene("galilee-boat", "Fishing on the Sea of Galilee | 在加利利海打鱼",
+                 "A small fishing boat with a net floats on a calm lake ringed by green hills in morning light. | "
+                 "晨光中，一艘带着渔网的小船漂在宁静的湖面上，四周是青翠的山丘。", "#f3e9d6")
+    el(root, "circle", cx=640, cy=110, r=40, fill="#f0b25a")
+    el(root, "path", d="M0 220 C 150 150, 300 190, 420 170 C 560 150, 680 190, 800 170 L800 260 L0 260 Z", fill="#8fae73")
+    el(root, "path", d="M0 250 L800 250 L800 450 L0 450 Z", fill="#7fb0bd")
+    for i in range(6):
+        y = 280 + i * 26
+        el(root, "line", x1=60 + i * 30, y1=y, x2=200 + i * 40, y2=y, stroke="#e3f1f4", stroke_width=2, stroke_opacity=0.6)
+    el(root, "path", d="M280 330 C 300 360, 480 360, 520 330 L530 316 L270 318 Z", fill="#7a4a2b")
+    el(root, "line", x1=400, y1=318, x2=400, y2=200, stroke="#4a3020", stroke_width=5)
+    el(root, "path", d="M404 206 L460 300 L404 304 Z", fill="#ece0c6")
+    el(root, "path", d="M520 330 C 560 340, 600 360, 640 400", fill="none", stroke="#5a4630", stroke_width=2)
+    for i in range(6):
+        el(root, "path", d=f"M{540 + i * 18} {340 + i * 10} L{560 + i * 18} {380 + i * 6}", stroke="#5a4630", stroke_width=1.5)
+    person(root, 340, 322, "#4f6b52", "#8a5f43", 0.8)
+    person(root, 470, 322, "#a0703e", "#b07a55", 0.8)
+    return root
+
+
+def sower() -> ET.Element:
+    root = scene("sower", "The sower | 撒种的比喻",
+                 "A sower scatters seed across a field showing a hard path, rocky ground, thorns, and good soil with tall grain. | "
+                 "撒种的人把种子撒在田里，可以看见硬路、石头地、荆棘和长出高高麦穗的好土。", "#f3e6c8")
+    el(root, "path", d="M0 250 L800 250 L800 450 L0 450 Z", fill="#b39a6c")
+    el(root, "path", d="M0 290 L800 270 L800 300 L0 320 Z", fill="#d8c8a2")
+    for x in range(60, 260, 40):
+        el(root, "circle", cx=x, cy=380 + (x % 3) * 10, r=14, fill="#9a948a")
+    for x in range(300, 480, 30):
+        el(root, "path", d=f"M{x} 420 L{x + 10} 360 L{x + 20} 420 M{x - 6} 390 L{x + 26} 380", stroke="#5f7a45", stroke_width=3, fill="none")
+    for x in range(520, 780, 22):
+        el(root, "line", x1=x, y1=430, x2=x, y2=340, stroke="#c99a35", stroke_width=4, stroke_linecap="round")
+        el(root, "path", d=f"M{x - 5} 345 C {x - 6} 326, {x + 6} 326, {x + 5} 345 Z", fill="#e1b444")
+    group = ET.SubElement(root, NS + "g", {"transform": "translate(160 280)"})
+    el(group, "path", d="M-20 0 L-16 -60 C -10 -76, 16 -76, 22 -60 L26 0 Z", fill="#6d7f4a")
+    el(group, "circle", cx=2, cy=-88, r=13, fill="#8a5f43")
+    el(group, "path", d="M22 -56 C 48 -66, 70 -58, 84 -44", fill="none", stroke="#8a5f43", stroke_width=6, stroke_linecap="round")
+    for dx, dy in [(100, -40), (120, -20), (140, -46), (160, -10), (110, 0)]:
+        el(root, "circle", cx=160 + dx, cy=280 + dy, r=3, fill="#7a5537")
+    return root
+
+
+def palm_road() -> ET.Element:
+    root = scene("palm-road", "The road to Jerusalem | 往耶路撒冷的路",
+                 "Palm branches lie along a road that climbs toward a walled city on a hill. | 棕树枝铺在通往山上那座有城墙之城的路上。", "#f4e6cc")
+    el(root, "path", d="M420 120 L700 120 L700 200 L420 200 Z", fill="#d9c08e")
+    for x in range(420, 700, 30):
+        el(root, "rect", x=x, y=106, width=18, height=16, fill="#d9c08e")
+    el(root, "path", d="M540 200 L540 160 C 540 140, 580 140, 580 160 L580 200 Z", fill="#7a5537")
+    ground(root, 200, "#c7b089", 10, 600)
+    el(root, "path", d="M100 450 C 260 380, 420 300, 560 210 L580 214 C 460 310, 340 390, 260 450 Z", fill="#e7d5ad")
+    for x, y, a in [(170, 420, -30), (240, 390, -20), (300, 360, -40), (360, 320, -25), (420, 290, -35), (470, 258, -20)]:
+        el(root, "path", d=f"M{x - 34} {y} C {x - 10} {y - 6}, {x + 10} {y - 6}, {x + 34} {y}", fill="none", stroke="#4f7a3a", stroke_width=4, transform=f"rotate({a} {x} {y})")
+        for k in range(-3, 4):
+            el(root, "line", x1=x + k * 9, y1=y - 2, x2=x + k * 9 + 6, y2=y - 14, stroke="#6f9f4c", stroke_width=3, stroke_linecap="round", transform=f"rotate({a} {x} {y})")
+    el(root, "line", x1=90, y1=330, x2=90, y2=170, stroke="#7a5537", stroke_width=10)
+    for a in range(0, 360, 45):
+        el(root, "path", d=f"M90 170 C 120 160, 150 170, 170 190", fill="none", stroke="#4f7a3a", stroke_width=6, stroke_linecap="round", transform=f"rotate({a} 90 170)")
+    return root
+
+
+def chariot_road() -> ET.Element:
+    root = scene("chariot-road", "A chariot on the desert road | 旷野路上的车",
+                 "A traveler reads a scroll in a chariot on a desert road while another man runs alongside. | "
+                 "旷野的路上，一位旅人坐在车上读书卷，另一人在车旁奔跑。", "#f3e2c0")
+    ground(root, 260, "#e0c592", 12, 700)
+    el(root, "path", d="M0 360 C 300 330, 500 330, 800 300 L800 340 C 500 370, 300 370, 0 400 Z", fill="#ecdab2")
+    el(root, "path", d="M360 330 L520 330 L540 270 L380 270 Z", fill="#a0703e")
+    el(root, "circle", cx=420, cy=340, r=30, fill="none", stroke="#5a4630", stroke_width=6)
+    el(root, "line", x1=390, y1=340, x2=450, y2=340, stroke="#5a4630", stroke_width=3)
+    el(root, "line", x1=420, y1=310, x2=420, y2=370, stroke="#5a4630", stroke_width=3)
+    el(root, "line", x1=540, y1=300, x2=620, y2=310, stroke="#5a4630", stroke_width=4)
+    group = ET.SubElement(root, NS + "g", {"transform": "translate(650 340)"})
+    el(group, "path", d="M-40 0 L-36 -30 C -30 -40, 30 -40, 36 -30 L40 0 Z", fill="#8a6a48")
+    el(group, "path", d="M30 -34 L50 -60 L60 -54 L44 -28 Z", fill="#8a6a48")
+    for x in (-30, -14, 14, 30):
+        el(group, "line", x1=x, y1=0, x2=x + 4, y2=30, stroke="#6b4e33", stroke_width=4, stroke_linecap="round")
+    person(root, 460, 280, "#7b4f6b", "#6e4a33", 1.0)
+    el(root, "rect", x=470, y=232, width=28, height=10, rx=4, fill="#efe2c2")
+    person(root, 300, 390, "#4f6b52", "#b07a55", 1.05)
+    return root
+
+
+def table_fellowship() -> ET.Element:
+    root = scene("table-fellowship", "One family at one table | 同坐一桌的一家人",
+                 "People of many backgrounds sit together around a long table sharing bread and fruit. | "
+                 "不同背景的人围坐在一张长桌旁，一同分享饼和水果。", "#f1e5d1")
+    el(root, "rect", x=100, y=260, width=600, height=26, rx=6, fill="#8e6644")
+    el(root, "rect", x=130, y=286, width=16, height=90, fill="#6b4e33")
+    el(root, "rect", x=654, y=286, width=16, height=90, fill="#6b4e33")
+    for i, x in enumerate((160, 260, 360, 460, 560, 640)):
+        person(root, x, 262, ROBES[i % len(ROBES)], SKIN[(i * 3) % len(SKIN)], 1.05)
+    el(root, "rect", x=100, y=250, width=600, height=14, rx=6, fill="#a87a50")
+    for x in (220, 420, 600):
+        el(root, "path", d=f"M{x - 30} 250 C {x - 30} 226, {x + 30} 226, {x + 30} 250 Z", fill="#c98a45")
+    for x, c in [(320, "#8b4b45"), (336, "#e1b444"), (512, "#6f9f4c"), (528, "#8b4b45")]:
+        el(root, "circle", cx=x, cy=242, r=9, fill=c)
+    el(root, "path", d="M0 376 L800 376 L800 450 L0 450 Z", fill="#c9b48a")
+    return root
+
+
+def jars_of_clay() -> ET.Element:
+    root = scene("jars-of-clay", "Treasure in jars of clay | 瓦器里的宝贝",
+                 "Three plain clay jars sit on a dark shelf; one is cracked, and warm light shines out through the crack. | "
+                 "幽暗的架子上放着三个朴素的瓦器，其中一个有裂缝，温暖的光从裂缝中透出来。", "#2f2a26")
+    el(root, "path", d="M0 330 L800 330 L800 450 L0 450 Z", fill="#5a4630")
+    el(root, "rect", x=0, y=322, width=800, height=12, fill="#6b4e33")
+    el(root, "circle", cx=400, cy=230, r=170, fill="#f2c56b", fill_opacity=0.12)
+    for x, hgt, light in [(220, 150, False), (400, 190, True), (580, 140, False)]:
+        el(root, "path", d=f"M{x - 40} 322 C {x - 70} {322 - hgt * 0.5}, {x - 40} {322 - hgt}, {x - 18} {322 - hgt} L{x + 18} {322 - hgt} C {x + 40} {322 - hgt}, {x + 70} {322 - hgt * 0.5}, {x + 40} 322 Z", fill="#a86f3c")
+        el(root, "rect", x=x - 22, y=322 - hgt - 12, width=44, height=14, rx=4, fill="#8f5c2f")
+        if light:
+            el(root, "path", d=f"M{x - 4} {322 - hgt + 30} L{x + 10} {322 - hgt + 70} L{x - 6} {322 - hgt + 100} L{x + 8} {322 - hgt + 140}", fill="none", stroke="#fbe08a", stroke_width=5, stroke_linecap="round")
+            for i in range(5):
+                angle = math.radians(-30 + i * 15)
+                el(root, "line", x1=x + 14, y1=322 - hgt + 80, x2=x + 14 + 120 * math.cos(angle), y2=322 - hgt + 80 + 120 * math.sin(angle), stroke="#fbe08a", stroke_width=3, stroke_opacity=0.35, stroke_linecap="round")
+    return root
+
+
+def anchor_hope() -> ET.Element:
+    root = scene("anchor-hope", "An anchor for the soul | 灵魂的锚",
+                 "A large anchor holds fast on the sea floor while waves move above it, with a ship riding safely at the surface. | "
+                 "一只大锚牢牢抓住海底，上方海浪起伏，水面上的船安稳地停着。", "#c9dde3")
+    el(root, "path", d=path([(0, 450)] + wave(0, 800, 120, 10, 160) + [(800, 450)]), fill="#5f97a8")
+    el(root, "path", d=path([(0, 450)] + wave(0, 800, 200, 6, 220, 1.0) + [(800, 450)]), fill="#3f7385")
+    el(root, "path", d="M0 400 C 200 380, 600 390, 800 400 L800 450 L0 450 Z", fill="#c2ad87")
+    el(root, "path", d="M330 108 C 350 124, 450 124, 470 108 L476 96 L324 96 Z", fill="#7a4a2b")
+    el(root, "line", x1=400, y1=96, x2=400, y2=40, stroke="#4a3020", stroke_width=4)
+    el(root, "path", d="M404 44 L440 90 L404 92 Z", fill="#ece0c6")
+    el(root, "path", d="M400 118 C 380 200, 420 260, 400 300", fill="none", stroke="#3a3530", stroke_width=3, stroke_dasharray="6 4")
+    el(root, "circle", cx=400, cy=304, r=10, fill="none", stroke="#3a3530", stroke_width=5)
+    el(root, "line", x1=400, y1=314, x2=400, y2=400, stroke="#3a3530", stroke_width=10, stroke_linecap="round")
+    el(root, "line", x1=370, y1=332, x2=430, y2=332, stroke="#3a3530", stroke_width=8, stroke_linecap="round")
+    el(root, "path", d="M340 370 C 350 400, 380 410, 400 410 C 420 410, 450 400, 460 370", fill="none", stroke="#3a3530", stroke_width=10, stroke_linecap="round")
+    el(root, "path", d="M332 362 L346 360 L342 376 Z M468 362 L454 360 L458 376 Z", fill="#3a3530")
+    return root
+
+
+def lamp_light() -> ET.Element:
+    root = scene("lamp-light", "Light in the house | 屋中的光",
+                 "A lamp on a stand fills a simple room with warm light, pushing back the darkness at the edges. | "
+                 "灯台上的灯把朴素的屋子照得温暖明亮，把暗处推到墙角。", "#2c2722")
+    el(root, "circle", cx=400, cy=190, r=300, fill="#f2c56b", fill_opacity=0.10)
+    el(root, "circle", cx=400, cy=190, r=180, fill="#f2c56b", fill_opacity=0.14)
+    el(root, "circle", cx=400, cy=190, r=90, fill="#f2c56b", fill_opacity=0.2)
+    el(root, "path", d="M0 360 L800 360 L800 450 L0 450 Z", fill="#6b4e33")
+    el(root, "rect", x=392, y=210, width=16, height=150, fill="#8f5c2f")
+    el(root, "path", d="M360 360 L440 360 L420 340 L380 340 Z", fill="#8f5c2f")
+    el(root, "path", d="M360 210 C 360 190, 440 190, 450 200 L462 196 L456 210 C 440 220, 380 222, 360 210 Z", fill="#b5793f")
+    el(root, "path", d="M458 196 C 452 178, 458 164, 466 152 C 474 166, 476 182, 468 196 Z", fill="#f0a93a")
+    el(root, "path", d="M460 192 C 458 182, 462 174, 466 168 C 470 176, 470 186, 466 192 Z", fill="#fbe08a")
+    el(root, "rect", x=120, y=150, width=110, height=90, fill="#3d342b", stroke="#5a4630", stroke_width=6)
+    el(root, "rect", x=600, y=260, width=120, height=100, rx=6, fill="#5a4630")
+    return root
+
+
 ARTWORKS: dict[str, Callable[[], ET.Element]] = {
+    "jacob-ladder.svg": jacob_ladder,
+    "lamb-altar.svg": lamb_altar,
+    "stone-tablets.svg": stone_tablets,
+    "jericho-walls.svg": jericho_walls,
+    "anointing.svg": anointing,
+    "golden-calf.svg": golden_calf,
+    "burning-coal.svg": burning_coal,
+    "exile-road.svg": exile_road,
+    "water-tunnel.svg": water_tunnel,
+    "found-scroll.svg": found_scroll,
+    "ruined-city.svg": ruined_city,
+    "potter-wheel.svg": potter_wheel,
+    "dry-bones.svg": dry_bones,
+    "royal-scepter.svg": royal_scepter,
+    "sunrise-field.svg": sunrise_field,
+    "whirlwind.svg": whirlwind,
+    "seasons-tree.svg": seasons_tree,
+    "jordan-dove.svg": jordan_dove,
+    "galilee-boat.svg": galilee_boat,
+    "sower.svg": sower,
+    "palm-road.svg": palm_road,
+    "chariot-road.svg": chariot_road,
+    "table-fellowship.svg": table_fellowship,
+    "jars-of-clay.svg": jars_of_clay,
+    "anchor-hope.svg": anchor_hope,
+    "lamp-light.svg": lamp_light,
     "joseph-granary.svg": joseph_granary,
     "sea-crossing.svg": sea_crossing,
     "wilderness-camp.svg": wilderness_camp,

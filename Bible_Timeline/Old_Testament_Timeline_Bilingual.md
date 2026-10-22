@@ -8,8 +8,8 @@
 > The [Old Testament](../Glossary/README.md#old-testament) moves from [creation](../Glossary/README.md#creation) through promise, rescue, kingdom, and [exile](../Glossary/README.md#exile). Return brings a new beginning but does not resolve every problem. The dates here are approximate, and several early periods remain disputed.<br>
 > 旧约从[创造](../Glossary/README.md#creation)走向[应许](../Glossary/README.md#promise)、拯救、王国与[被掳](../Glossary/README.md#exile)。归回带来新开始，但并非所有问题都已解决。这里的年代是大致估计，部分早期阶段仍有争议。
 
-旧约时间线双语版。
-Bilingual Old Testament timeline.
+这份旧约时间线中英对照，帮助你看清旧约各卷在故事中的位置。
+This bilingual Old Testament timeline shows where each Old Testament book fits in the story.
 
 ## Section Jump Table | 章节跳转表
 
@@ -47,7 +47,7 @@ The Old Testament moves from creation to exile and partial return. Its central q
 6. Conquest and Judges
    进地与士师
 7. United Kingdom
-   联合王国
+   统一王国
 8. Divided Kingdom
    分裂王国
 9. Exile
@@ -193,9 +193,9 @@ The kingdom splits, and the prophets explain that political collapse is tied to 
 - Main books: 2 Kings 17-25, 2 Chronicles, Ezekiel, Daniel, Lamentations, parts of Jeremiah
   主要书卷：列王纪下 17-25、历代志下、以西结书、但以理书、耶利米哀歌、耶利米书部分内容
 - Main people: exiles, prophets in exile
-  主要人物：被掳百姓、被掳时期先知
+  主要人物：被掳的百姓、被掳时期的先知
 - Key themes: judgment, loss, lament, hope, sovereignty, new covenant
-  关键词：审判、失落、哀歌、盼望、主权、新约
+  关键词：审判、失落、哀歌、盼望、主权、新的约
 
 #### Why it matters | 为什么重要
 
@@ -253,16 +253,16 @@ The people come back, but the story still feels incomplete. This creates deep ex
 The Old Testament is doing at least five things at once:<br>
 旧约至少同时在做五件事：
 
-1. It tells real history.
-   讲述真实历史。
+1. It tells Israel's story as the history of God's dealings with his people.
+   把以色列的故事讲述为神与祂子民来往的历史。
 2. It reveals God's character.
-   启示神的性情。
+   启示神的属性与性情。
 3. It exposes human sin and covenant failure.
    暴露人的罪与背约。
-4. It builds the categories needed to understand Jesus.
-   建立理解耶稣所需要的神学范畴。
+4. It supplies the ideas and images needed to understand Jesus.
+   提供理解耶稣所需要的概念与图像。
 5. It keeps alive the promise that God will save, restore, and dwell with his people.
-   一直维持那个盼望：神要拯救、恢复，并与祂的子民同住。
+   始终守住一个盼望：神要拯救、恢复，并与祂的子民同住。
 
 <a id="bridge-to-the-new-testament"></a>
 

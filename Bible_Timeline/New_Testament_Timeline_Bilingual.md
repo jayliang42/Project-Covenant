@@ -8,8 +8,8 @@
 > The [New Testament](../Glossary/README.md#new-testament) centers on Jesus and the early communities that follow him. The Gospels, Acts, letters, and Revelation serve different purposes. Use the timeline and maps to locate a passage, then read it in context.<br>
 > 新约以耶稣和早期跟随祂的群体为中心。[福音书](../Glossary/README.md#gospels)、使徒行传、书信和启示录各有不同用途。先用时间线和地图定位，再回到上下文阅读。
 
-新约时间线双语版。
-Bilingual New Testament timeline.
+这份新约时间线中英对照，帮助你看清新约各卷在故事中的位置。
+This bilingual New Testament timeline shows where each New Testament book fits in the story.
 
 四福音开始前的希腊化、马加比、哈斯摩尼、希律家族和罗马行政背景，见[《两约之间至四福音：第二圣殿、希腊化与罗马世界》](./两约之间至四福音_第二圣殿与罗马背景.md)。
 
@@ -120,7 +120,7 @@ The Messiah does not appear as an isolated new idea. He arrives as the fulfillme
 
 
 Jesus reveals who God is, what the kingdom is, and what true humanity looks like.<br>
-耶稣显明神是谁、天国是什么样，以及真正的人应该是什么样。
+耶稣显明神是谁、天国是什么样子，也显明一个真正的人该怎样活。
 
 <a id="nt-stage-03"></a>
 ### 3. Cross and Resurrection | 十字架与复活
@@ -136,7 +136,7 @@ Jesus reveals who God is, what the kingdom is, and what true humanity looks like
 
 
 The cross is the center of [redemption](../Glossary/README.md#redemption), and the resurrection is God's vindication of the Son and the beginning of [new creation](../Glossary/README.md#new-creation) life.<br>
-十字架是[救赎](../Glossary/README.md#redemption)中心，复活则是父神对圣子的印证，也是[新创造](../Glossary/README.md#new-creation)生命的开端。
+十字架是[救赎](../Glossary/README.md#redemption)的中心，复活则是父神对圣子的印证，也是[新创造](../Glossary/README.md#new-creation)生命的开端。
 
 <a id="nt-stage-04"></a>
 ### 4. Ascension and Pentecost | 升天与五旬节
@@ -258,7 +258,7 @@ The seven cities were real urban communities existing at the same time, and toge
 - Early church growth period: James, Galatians, 1-2 Thessalonians.
   教会早期成长阶段：雅各书、加拉太书、帖撒罗尼迦前后书。
 - Missionary and church-formation period: Corinthians, Romans, Prison Epistles.
-  宣教与建堂阶段：哥林多前后书、罗马书、监狱书信等。
+  宣教与建立教会阶段：哥林多前后书、罗马书、监狱书信等。
 - Pastoral leadership and later church life: 1-2 Timothy, Titus, 1-2 Peter, 1-3 John, Jude.
   牧养领袖与后期教会生活阶段：提摩太前后书、提多书、彼得前后书、约翰一二三书、犹大书。
 - Hebrews and Revelation stand with strong theological and pastoral force, though their exact contexts are discussed in different ways.

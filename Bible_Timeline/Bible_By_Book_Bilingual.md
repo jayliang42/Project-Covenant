@@ -54,6 +54,10 @@ Use this file when your question is not only “what happened next?” but also 
 - **Start with:** Genesis 12:1–9 — God calls Abram and promises that all nations will be blessed through his family.
   **先读：**创世记 12:1–9——神呼召亚伯兰，应许地上万族都要因他的家族得福。
 
+![A man sleeps on a stone beneath a stairway of light rising to the stars / 一人枕石而睡，上方有通往星空的光之阶梯](../assets/art/jacob-ladder.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 <a id="exodus"></a>
 ### Exodus | 出埃及记
 
@@ -78,6 +82,10 @@ Use this file when your question is not only “what happened next?” but also 
 - **Start with:** Leviticus 19:1–18 — Holiness reaches daily life, ending with “love your neighbor as yourself.”
   **先读：**利未记 19:1–18——圣洁落实到日常生活，并以“爱人如己”作结。
 
+![A lamb beside a bronze altar with rising smoke before the tabernacle / 会幕前，羊羔站在冒烟的铜坛旁](../assets/art/lamb-altar.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 <a id="numbers"></a>
 ### Numbers | 民数记
 
@@ -98,6 +106,10 @@ Use this file when your question is not only “what happened next?” but also 
 - **Start with:** Deuteronomy 6:1–9 — The call to love God with all your heart and to teach it at home.
   **先读：**申命记 6:1–9——呼召人尽心爱神，并在家中把这话教导下一代。
 
+![Two stone tablets at the foot of a mountain overlooking the land / 两块石版立在山脚，俯望应许之地](../assets/art/stone-tablets.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 <a id="historical-books"></a>
 
 ## Historical Books | 历史书
@@ -111,6 +123,10 @@ Use this file when your question is not only “what happened next?” but also 
   **主要作用：**以色列进入并开始得着应许给亚伯拉罕的土地。
 - **Start with:** Joshua 1:1–9 — God commissions Joshua: be strong and courageous, and keep the law close.
   **先读：**约书亚记 1:1–9——神差派约书亚：要刚强壮胆，常常默想律法。
+
+![People carrying horns walk around a walled city / 众人拿着角号绕着有城墙的城行走](../assets/art/jericho-walls.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
 
 <a id="judges"></a>
 ### Judges | 士师记
@@ -146,6 +162,10 @@ Use this file when your question is not only “what happened next?” but also 
 - **Start with:** 1 Samuel 16:1–13 — God chooses young David, looking at the heart rather than appearance.
   **先读：**撒母耳记上 16:1–13——神拣选年轻的大卫；人看外貌，神看内心。
 
+![A prophet pours oil from a horn onto a kneeling young shepherd / 先知用角里的油膏抹跪着的年轻牧人](../assets/art/anointing.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 <a id="2-samuel"></a>
 ### 2 Samuel | 撒母耳记下
 
@@ -180,6 +200,10 @@ Use this file when your question is not only “what happened next?” but also 
 - **Start with:** 2 Kings 17:6–18 — The book explains why the northern kingdom fell to Assyria.
   **先读：**列王纪下 17:6–18——书卷解释北国以色列为何被亚述所灭。
 
+![A long line of people with bundles walking away along a dusty road / 一长列背着包袱的人沿尘土路远去](../assets/art/exile-road.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 <a id="1-chronicles"></a>
 ### 1 Chronicles | 历代志上
 
@@ -199,6 +223,10 @@ Use this file when your question is not only “what happened next?” but also 
   **主要作用：**从圣殿、君王、改革和守约角度重述犹大的历史。
 - **Start with:** 2 Chronicles 36:15–23 — Exile, then Cyrus's decree that opens the way home.
   **先读：**历代志下 36:15–23——从被掳到古列下诏，为归回打开道路。
+
+![An old scroll lies unrolled among stones in a beam of light / 一卷古卷在光中半展于石块之间](../assets/art/found-scroll.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
 
 <a id="ezra"></a>
 ### Ezra | 以斯拉记
@@ -234,6 +262,10 @@ Use this file when your question is not only “what happened next?” but also 
 - **Start with:** Esther 4:1–17 — Mordecai and Esther face a deadly decree: “for such a time as this.”
   **先读：**以斯帖记 4:1–17——面对灭族的诏令，末底改与以斯帖说出“现今的机会”。
 
+![A king extends a golden scepter toward an approaching queen / 王向走近的王后伸出金杖](../assets/art/royal-scepter.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 <a id="wisdom-and-poetry"></a>
 
 ## Wisdom and Poetry | 智慧文学与诗歌
@@ -247,6 +279,10 @@ Use this file when your question is not only “what happened next?” but also 
   **主要作用：**探讨苦难、义人为何受苦，以及神智慧的奥秘。
 - **Start with:** Job 38:1–18 — God answers Job out of the whirlwind with questions about creation.
   **先读：**约伯记 38:1–18——神从旋风中回答约伯，以创造之事向他发问。
+
+![A man sits on an ash heap beneath a swirling storm / 一人坐在炉灰中，上方是旋风](../assets/art/whirlwind.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
 
 <a id="psalms"></a>
 ### Psalms | 诗篇
@@ -282,6 +318,10 @@ Use this file when your question is not only “what happened next?” but also 
 - **Start with:** Ecclesiastes 3:1–15 — A time for everything, and life received as God's gift.
   **先读：**传道书 3:1–15——凡事都有定时；人生是神所赐的礼物。
 
+![One tree shown in spring, summer, autumn, and winter / 同一棵树的春夏秋冬](../assets/art/seasons-tree.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 <a id="song-of-songs"></a>
 ### Song of Songs | 雅歌
 
@@ -306,6 +346,10 @@ Use this file when your question is not only “what happened next?” but also 
 - **Start with:** Isaiah 52:13–53:12 — The servant who suffers for others, a passage the New Testament applies to Jesus.
   **先读：**以赛亚书 52:13–53:12——为众人受苦的仆人；新约把这段经文应用在耶稣身上。
 
+![A glowing coal lifted from the altar with tongs in a smoke-filled hall / 烟云缭绕的殿中，有人用火剪夹起坛上的红炭](../assets/art/burning-coal.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 <a id="jeremiah"></a>
 ### Jeremiah | 耶利米书
 
@@ -315,6 +359,10 @@ Use this file when your question is not only “what happened next?” but also 
   **主要作用：**警告将临的审判，并应许神要另立新约，把律法写在人心上。
 - **Start with:** Jeremiah 31:31–34 — God promises a new covenant written on the heart.
   **先读：**耶利米书 31:31–34——神应许要另立新约，把律法写在人心上。
+
+![A potter shapes a jar on a turning wheel / 窑匠在转轮上塑造陶罐](../assets/art/potter-wheel.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
 
 <a id="lamentations"></a>
 ### Lamentations | 耶利米哀歌
@@ -326,6 +374,10 @@ Use this file when your question is not only “what happened next?” but also 
 - **Start with:** Lamentations 3:19–33 — In the middle of grief, the writer still confesses that God's mercies are new every morning.
   **先读：**耶利米哀歌 3:19–33——在哀伤之中仍承认：神的怜悯每早晨都是新的。
 
+![Broken walls and fallen stones under drifting smoke / 飘烟下坍塌的城墙与散落的石块](../assets/art/ruined-city.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 <a id="ezekiel"></a>
 ### Ezekiel | 以西结书
 
@@ -335,6 +387,10 @@ Use this file when your question is not only “what happened next?” but also 
   **主要作用：**宣告审判，显明神的荣耀在被掳之地也同在，并应许赐人新心、恢复祂的子民。
 - **Start with:** Ezekiel 37:1–14 — The valley of dry bones: God can bring his people back to life.
   **先读：**以西结书 37:1–14——枯骨复生的异象：神能使祂的子民重新活过来。
+
+![A valley of scattered bones with wind and green shoots / 散满枯骨的山谷，有风吹来，也有新芽](../assets/art/dry-bones.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
 
 <a id="daniel"></a>
 ### Daniel | 但以理书
@@ -488,6 +544,10 @@ Use this file when your question is not only “what happened next?” but also 
 - **Start with:** Malachi 3:1–4; 4:4–6 — The promised messenger and Elijah, whom the Gospels connect with John the Baptist.
   **先读：**玛拉基书 3:1–4；4:4–6——应许中的使者与以利亚；福音书把他与施洗约翰联系起来。
 
+![A great sunrise over fields where young calves leap / 日头从田野升起，小牛犊在草场跳跃](../assets/art/sunrise-field.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 <a id="gospels-and-acts"></a>
 
 ## Gospels and Acts | 福音书与使徒行传
@@ -502,6 +562,10 @@ Use this file when your question is not only “what happened next?” but also 
 - **Start with:** Matthew 5:1–16 — The opening of the Sermon on the Mount: the Beatitudes, salt and light.
   **先读：**马太福音 5:1–16——登山宝训的开头：八福、盐和光。
 
+![A sower scattering seed over path, rocks, thorns, and good soil / 撒种的人把种子撒在路旁、石头地、荆棘和好土里](../assets/art/sower.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 <a id="mark"></a>
 ### Mark | 马可福音
 
@@ -511,6 +575,10 @@ Use this file when your question is not only “what happened next?” but also 
   **主要作用：**以紧凑的节奏讲述耶稣，展现祂在行动中的权柄，以及走向十字架的道路。
 - **Start with:** Mark 8:27–38 — “Who do you say I am?” and the call to take up the cross.
   **先读：**马可福音 8:27–38——“你们说我是谁？”以及背起十字架的呼召。
+
+![A fishing boat with a net on a calm lake among green hills / 青山环抱的宁静湖上，一艘带网的渔船](../assets/art/galilee-boat.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
 
 <a id="luke"></a>
 ### Luke | 路加福音
@@ -531,6 +599,10 @@ Use this file when your question is not only “what happened next?” but also 
   **主要作用：**强调耶稣是启示父神、赐永生的圣子。
 - **Start with:** John 1:1–18 — The Word who was with God becomes flesh and lives among us.
   **先读：**约翰福音 1:1–18——太初与神同在的道成了肉身，住在我们中间。
+
+![A dove descends from opened clouds above a figure in a river / 云层裂开，鸽子降在河中之人上方](../assets/art/jordan-dove.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
 
 <a id="acts"></a>
 ### Acts | 使徒行传
@@ -589,6 +661,10 @@ These letters carry Paul's name and were written to churches or coworkers during
   **主要作用：**保罗为自己的事奉辩护，指出神的能力在人的软弱上显得完全，并劝勉信徒慷慨奉献。
 - **Start with:** 2 Corinthians 4:1–18 — Treasure in jars of clay, and hope that does not lose heart.
   **先读：**哥林多后书 4:1–18——宝贝放在瓦器里；我们不丧胆。
+
+![Light shining from a crack in a plain clay jar / 光从朴素瓦器的裂缝中透出](../assets/art/jars-of-clay.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
 
 <a id="galatians"></a>
 ### Galatians | 加拉太书
@@ -706,6 +782,10 @@ These eight letters are named after their authors or, in the case of Hebrews, th
 - **Start with:** Hebrews 11:1–12:3 — A long list of people who lived by faith, ending with “looking to Jesus.”
   **先读：**希伯来书 11:1–12:3——一长串凭信心生活的人，最后归结于“仰望耶稣”。
 
+![An anchor holds fast on the sea floor beneath a ship on the waves / 锚牢牢抓住海底，船在浪上安稳](../assets/art/anchor-hope.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 <a id="james"></a>
 ### James | 雅各书
 
@@ -745,6 +825,10 @@ These eight letters are named after their authors or, in the case of Hebrews, th
   **主要作用：**教导神是光、神是爱，使信徒得着确据，并用“耶稣是成了肉身来的”来检验各种教导。
 - **Start with:** 1 John 4:7–21 — God is love, and love casts out fear.
   **先读：**约翰一书 4:7–21——神就是爱；爱既完全，就把惧怕除去。
+
+![A lamp on a stand fills a dark room with warm light / 灯台上的灯照亮幽暗的屋子](../assets/art/lamp-light.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
 
 <a id="2-john"></a>
 ### 2 John | 约翰二书
