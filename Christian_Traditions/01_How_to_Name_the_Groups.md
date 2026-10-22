@@ -8,6 +8,10 @@
 > Christian labels can describe a [church](../Glossary/README.md#church) body, a wider tradition, a movement, or an approach to theology. These levels should not be treated as interchangeable. Check a group’s own descriptions before drawing conclusions about its members.<br>
 > 基督教标签可能指[教会](../Glossary/README.md#church)组织、大传统、运动或神学取向。这些层次不能互相替代。判断成员之前，请先核对群体如何描述自己。
 
+![One tree rising from a single trunk into several large branches / 一棵树从同一根树干分出几根大枝](../assets/art/branching-tree.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 > A vocabulary map for distinguishing church bodies, cross-denominational movements, theological approaches, and political labels.
 > 这是一张术语地图，用来区分教会组织、跨宗派运动、神学取向与政治标签。
 

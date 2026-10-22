@@ -93,6 +93,7 @@ assets/art/barley-harvest.svg
 assets/art/basin-towel.svg
 assets/art/bethlehem-star.svg
 assets/art/bible-library.svg
+assets/art/branching-tree.svg
 assets/art/bread-cup.svg
 assets/art/bridge-reconcile.svg
 assets/art/burning-coal.svg
@@ -113,6 +114,7 @@ assets/art/hill-city.svg
 assets/art/jacob-ladder.svg
 assets/art/jars-of-clay.svg
 assets/art/jericho-walls.svg
+assets/art/john-signs.svg
 assets/art/jonah.svg
 assets/art/jordan-dove.svg
 assets/art/joseph-granary.svg
@@ -148,11 +150,15 @@ assets/art/sower.svg
 assets/art/stone-tablets.svg
 assets/art/sunrise-field.svg
 assets/art/table-fellowship.svg
+assets/art/translation-books.svg
 assets/art/triune-light.svg
+assets/art/wanderer-home.svg
 assets/art/water-tunnel.svg
+assets/art/weighing-evidence.svg
 assets/art/well-cup.svg
 assets/art/whirlwind.svg
 assets/art/wilderness-camp.svg
+assets/art/word-cards.svg
 assets/illustrations/dore-abraham.jpg
 assets/illustrations/dore-between-testaments.jpg
 assets/illustrations/dore-church.jpg

@@ -2,9 +2,15 @@
 
 > Status: Draft (AI draft; not human reviewed) | 状态：Draft（AI 草稿，未人工审阅）
 
-These short explanations are a starting point, not a substitute for reading a passage. A word may have a different emphasis in another book. / 这些白话解释只是起点，不能代替阅读经文；同一个词在不同书卷中，侧重点可能不同。
+These short explanations are a starting point, not a substitute for reading a passage. A word may have a different emphasis in another book.<br>
+这些白话解释只是起点，不能代替阅读经文；同一个词在不同书卷中，侧重点可能不同。
 
-First-use links follow the recommended beginner route and point to the page that introduces the term there; they do not claim the earliest word occurrence across the repository. / “首次使用”链接按推荐入门顺序，指向该路线首次介绍此词的页面，并非仓库全文的最早用词统计。
+Each “first use” link points to the page where the recommended beginner route first introduces the word. It is not a count of the word’s earliest appearance anywhere in the library.<br>
+每个“首次使用”链接指向推荐入门路线中第一次介绍这个词的页面，并不是统计这个词在整个资料库里最早出现的位置。
+
+![Word cards spread on a desk beside a pencil and an open notebook / 书桌上的词卡、铅笔和打开的笔记本](../assets/art/word-cards.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
 
 <a id="glossary-index"></a>
 ## Find a Word | 查找词语

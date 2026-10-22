@@ -1575,6 +1575,155 @@ NOTE_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
 }
 
 
+
+# --- Fifth set: guide pages ------------------------------------------------
+
+def john_signs() -> ET.Element:
+    root = scene("john-signs", "Signs and sayings in John | 约翰福音的记号与宣告",
+                 "A still life on a table: six stone water jars, a loaf of bread, a lit lamp, a grapevine, and a small gate. | "
+                 "桌上的静物：六口石缸、一块饼、一盏点亮的灯、一枝葡萄藤和一扇小门。", "#efe5d2")
+    el(root, "rect", x=0, y=330, width=800, height=120, fill="#8e6644")
+    el(root, "rect", x=0, y=322, width=800, height=12, fill="#a87a50")
+    for i in range(6):
+        x = 70 + i * 52
+        hgt = 110 - (i % 2) * 14
+        el(root, "path", d=f"M{x - 20} 322 L{x - 24} {322 - hgt + 20} C {x - 24} {322 - hgt}, {x + 24} {322 - hgt}, {x + 24} {322 - hgt + 20} L{x + 20} 322 Z", fill="#b8ad98")
+        el(root, "rect", x=x - 16, y=322 - hgt - 6, width=32, height=10, rx=3, fill="#9c917c")
+    el(root, "path", d="M420 322 C 410 286, 520 276, 520 322 Z", fill="#c98a45")
+    el(root, "path", d="M440 300 L452 288 M466 296 L478 284 M492 298 L504 286", fill="none", stroke="#a86f3c", stroke_width=3, stroke_linecap="round")
+    el(root, "circle", cx=580, cy=240, r=70, fill="#f2c56b", fill_opacity=0.2)
+    el(root, "path", d="M548 300 C 548 286, 610 284, 618 292 L628 288 L624 300 C 610 310, 556 312, 548 300 Z", fill="#b5793f")
+    el(root, "rect", x=578, y=300, width=12, height=22, fill="#8f5c2f")
+    el(root, "path", d="M624 288 C 618 272, 624 260, 630 250 C 636 262, 638 276, 630 288 Z", fill="#f0a93a")
+    el(root, "path", d="M660 120 C 700 160, 650 200, 700 240 C 730 260, 700 300, 720 322", fill="none", stroke="#6b4e33", stroke_width=5)
+    for x, y in [(690, 150), (676, 200), (710, 236), (712, 290)]:
+        el(root, "path", d=f"M{x} {y} C {x + 20} {y - 18}, {x + 40} {y - 4}, {x + 30} {y + 14} C {x + 20} {y + 6}, {x + 6} {y + 8}, {x} {y} Z", fill="#5f8f50")
+    for x, y in [(700, 176), (712, 182), (706, 192), (718, 196), (712, 206)]:
+        el(root, "circle", cx=x, cy=y, r=6, fill="#7b4f6b")
+    el(root, "rect", x=372, y=214, width=4, height=108, fill="#6b4e33")
+    el(root, "rect", x=372, y=232, width=36, height=80, fill="none", stroke="#7a5537", stroke_width=5)
+    for x in range(381, 408, 9):
+        el(root, "line", x1=x, y1=232, x2=x, y2=312, stroke="#7a5537", stroke_width=3)
+    return root
+
+
+def weighing_evidence() -> ET.Element:
+    root = scene("weighing-evidence", "Weighing the evidence | 衡量证据",
+                 "A balance scale holds scrolls on one pan and a stack of notes on the other, with a magnifying glass resting nearby. | "
+                 "天平一边放着书卷，另一边放着一叠笔记，旁边放着一把放大镜。", "#e9e4d8")
+    el(root, "rect", x=0, y=350, width=800, height=100, fill="#8e6644")
+    el(root, "rect", x=0, y=342, width=800, height=12, fill="#a87a50")
+    el(root, "path", d="M360 342 L440 342 L420 322 L380 322 Z", fill="#6b4e33")
+    el(root, "rect", x=394, y=110, width=12, height=214, fill="#7a5537")
+    el(root, "circle", cx=400, cy=104, r=12, fill="#c69a3e")
+    el(root, "line", x1=220, y1=128, x2=580, y2=116, stroke="#7a5537", stroke_width=8, stroke_linecap="round")
+    for x, y in ((230, 128), (570, 116)):
+        el(root, "line", x1=x, y1=y, x2=x - 50, y2=y + 120, stroke="#5a4e40", stroke_width=2)
+        el(root, "line", x1=x, y1=y, x2=x + 50, y2=y + 120, stroke="#5a4e40", stroke_width=2)
+        el(root, "path", d=f"M{x - 70} {y + 120} L{x + 70} {y + 120} C {x + 60} {y + 146}, {x - 60} {y + 146}, {x - 70} {y + 120} Z", fill="#c69a3e")
+    for i in range(3):
+        y = 236 - i * 16
+        el(root, "rect", x=184, y=y, width=92, height=14, rx=7, fill="#e9d6a6", stroke="#b89a62", stroke_width=1.5)
+    for i in range(4):
+        el(root, "rect", x=530 + (i % 2) * 4, y=222 - i * 8, width=80, height=8, fill="#f4efe3", stroke="#c9b8a0", stroke_width=1)
+    el(root, "circle", cx=640, cy=310, r=30, fill="#c9dde3", fill_opacity=0.6, stroke="#3a3530", stroke_width=6)
+    el(root, "line", x1=662, y1=330, x2=700, y2=342, stroke="#3a3530", stroke_width=9, stroke_linecap="round")
+    return root
+
+
+def wanderer_home() -> ET.Element:
+    root = scene("wanderer-home", "The long road home | 回家的长路",
+                 "At dusk a lone traveler walks a winding road across the hills toward a distant house with a lit window. | "
+                 "黄昏时，一位独行的旅人沿着蜿蜒的山路，走向远处一扇亮着灯的房子。", "#4a4f6e")
+    stars(root, [(80, 50), (180, 90), (300, 40), (460, 70), (620, 40), (720, 90), (560, 120)])
+    el(root, "path", d="M0 260 C 160 220, 320 250, 480 230 C 600 216, 700 230, 800 220 L800 450 L0 450 Z", fill="#5d5a5e")
+    el(root, "path", d="M0 320 C 200 290, 420 330, 800 300 L800 450 L0 450 Z", fill="#47483f")
+    el(root, "path", d="M120 450 C 200 400, 160 360, 300 330 C 420 304, 460 280, 600 250 L612 252 C 480 290, 440 316, 320 344 C 200 372, 240 410, 180 450 Z", fill="#8d8474")
+    el(root, "rect", x=616, y=216, width=44, height=34, fill="#8d7a5a")
+    el(root, "path", d="M610 218 L638 196 L666 218 Z", fill="#6f5e44")
+    el(root, "rect", x=630, y=226, width=12, height=12, fill="#fbe08a")
+    el(root, "circle", cx=636, cy=232, r=26, fill="#fbe08a", fill_opacity=0.18)
+    person(root, 236, 400, "#7b5d84", "#8a5f43", 1.0)
+    el(root, "line", x1=252, y1=400, x2=258, y2=340, stroke="#7a5537", stroke_width=4, stroke_linecap="round")
+    return root
+
+
+def branching_tree() -> ET.Element:
+    root = scene("branching-tree", "One trunk, many branches | 同一树干，许多枝子",
+                 "A broad tree rises from a single trunk and spreads into several large limbs, each with leaves of a slightly different green. | "
+                 "一棵大树从同一根树干长出，分成几根大枝，每根枝上的叶子绿得略有不同。", "#e8eee2")
+    ground(root, 360, "#8fb46e", 6, 600)
+    el(root, "path", d="M380 380 L372 250 C 370 230, 430 230, 428 250 L420 380 Z", fill="#7a5537")
+    limbs = [(250, 140, "#4f7d45"), (330, 90, "#5f8f50"), (470, 90, "#3f6b3a"), (550, 140, "#6f9f4c"), (400, 70, "#557f4a")]
+    for x, y, color in limbs:
+        el(root, "path", d=f"M400 260 C {400 + (x - 400) * 0.4} 220, {x} {y + 70}, {x} {y + 30}", fill="none", stroke="#7a5537", stroke_width=12, stroke_linecap="round")
+    for x, y, color in limbs:
+        el(root, "circle", cx=x, cy=y, r=62, fill=color)
+        el(root, "circle", cx=x - 30, cy=y + 22, r=34, fill=color)
+        el(root, "circle", cx=x + 32, cy=y + 20, r=36, fill=color)
+    for dx in (-40, -14, 14, 40):
+        el(root, "path", d=f"M400 378 C {400 + dx} 400, {400 + dx * 2} 410, {400 + dx * 3} 430", fill="none", stroke="#7a5537", stroke_width=5, stroke_linecap="round")
+    return root
+
+
+def translation_books() -> ET.Element:
+    root = scene("translation-books", "One message, many languages | 同一信息，多种语言",
+                 "Several open books sit side by side, their lines of text drawn in different patterns to suggest different scripts. | "
+                 "几本打开的书并排摆放，书页上的文字线条形态各异，表示不同的文字。", "#eae3d3")
+    el(root, "rect", x=0, y=340, width=800, height=110, fill="#8e6644")
+    for i, (x, color) in enumerate([(110, "#7c5a3a"), (300, "#456346"), (490, "#3f6c7a"), (680, "#8b4b45")]):
+        el(root, "path", d=f"M{x - 86} 330 L{x} 342 L{x + 86} 330 L{x + 86} 200 L{x} 212 L{x - 86} 200 Z", fill=color)
+        el(root, "path", d=f"M{x - 80} 322 L{x - 2} 334 L{x - 2} 214 L{x - 80} 202 Z", fill="#fbf8f0")
+        el(root, "path", d=f"M{x + 80} 322 L{x + 2} 334 L{x + 2} 214 L{x + 80} 202 Z", fill="#f4efe3")
+        for side in (-1, 1):
+            for row in range(6):
+                y = 222 + row * 16
+                x0, x1 = x + side * 10, x + side * 70
+                if i == 0:
+                    el(root, "line", x1=x0, y1=y, x2=x1, y2=y - side * 0, stroke="#8a8172", stroke_width=3)
+                elif i == 1:
+                    for k in range(5):
+                        cx = x0 + side * (6 + k * 12)
+                        el(root, "rect", x=cx - 4, y=y - 4, width=8, height=8, fill="none", stroke="#8a8172", stroke_width=1.5)
+                elif i == 2:
+                    el(root, "path", d=f"M{x0} {y} " + " ".join(f"Q {x0 + side * (k * 12 + 6)} {y - 6}, {x0 + side * (k * 12 + 12)} {y}" for k in range(5)), fill="none", stroke="#8a8172", stroke_width=2)
+                else:
+                    for k in range(4):
+                        el(root, "line", x1=x0 + side * k * 16, y1=y, x2=x0 + side * (k * 16 + 10), y2=y, stroke="#8a8172", stroke_width=3)
+    return root
+
+
+def word_cards() -> ET.Element:
+    root = scene("word-cards", "Words to learn | 要学的词",
+                 "Index cards are spread on a desk beside a pencil and an open notebook, ready for learning new words. | "
+                 "书桌上摊着几张卡片，旁边有一支铅笔和一本打开的笔记本，预备学习新词。", "#e6dcc8")
+    el(root, "rect", x=0, y=0, width=800, height=450, rx=18, fill="#a87a50")
+    for i in range(6):
+        el(root, "line", x1=0, y1=40 + i * 75, x2=800, y2=60 + i * 75, stroke="#9b6e46", stroke_width=3)
+    cards = [(170, 150, -8, "#fbf8f0"), (330, 120, 5, "#f6e7b0"), (230, 290, 4, "#e4eef0"), (420, 260, -6, "#fbf8f0"), (560, 140, 9, "#e8eee2")]
+    for x, y, angle, color in cards:
+        g = ET.SubElement(root, NS + "g", {"transform": f"translate({x} {y}) rotate({angle})"})
+        el(g, "rect", x=-80, y=-50, width=160, height=100, rx=6, fill=color, stroke="#c9b8a0", stroke_width=1.5)
+        el(g, "line", x1=-64, y1=-24, x2=40, y2=-24, stroke="#456346", stroke_width=6, stroke_linecap="round")
+        for row in range(3):
+            el(g, "line", x1=-64, y1=0 + row * 16, x2=60 - row * 18, y2=0 + row * 16, stroke="#a39466", stroke_width=3, stroke_linecap="round")
+    el(root, "path", d="M600 280 L760 300 L740 420 L580 400 Z", fill="#fbf8f0")
+    el(root, "line", x1=670, y1=290, x2=650, y2=410, stroke="#c9b8a0", stroke_width=3)
+    el(root, "line", x1=500, y1=420, x2=640, y2=330, stroke="#e2a84a", stroke_width=10, stroke_linecap="round")
+    el(root, "path", d="M640 330 L654 320 L648 336 Z", fill="#3a3530")
+    return root
+
+
+GUIDE_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
+    "john-signs.svg": john_signs,
+    "weighing-evidence.svg": weighing_evidence,
+    "wanderer-home.svg": wanderer_home,
+    "branching-tree.svg": branching_tree,
+    "translation-books.svg": translation_books,
+    "word-cards.svg": word_cards,
+}
+
+
 ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "jacob-ladder.svg": jacob_ladder,
     "lamb-altar.svg": lamb_altar,
@@ -1620,6 +1769,7 @@ ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "rebuilding.svg": rebuilding,
     "open-bible.svg": open_book,
     **NOTE_ARTWORKS,
+    **GUIDE_ARTWORKS,
 }
 
 

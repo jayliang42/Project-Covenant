@@ -114,8 +114,8 @@ The cedar-cutting file’s English description cites 2 Samuel 5, while its title
 <a id="original-illustrations"></a>
 ## Original Illustrations | 原创插画
 
-Sixty-six simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
-本资料库有六十六幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
+Seventy-two simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
+本资料库有七十二幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
 
 | File / 文件 | Subject / 内容 | Used in / 使用位置 |
 | --- | --- | --- |
@@ -185,6 +185,12 @@ Sixty-six simple vector illustrations were drawn for this library in code, with 
 | `assets/art/morning-prayer.svg` | Growing in prayer / 在祷告中成长 | Spiritual Growth Through Prayer / 借祷告属灵成长 |
 | `assets/art/hidden-treasure.svg` | Treasure in heaven / 积攒财宝在天上 | Treasuring Jesus / 以耶稣为至宝 |
 | `assets/art/lilies-birds.svg` | Birds of the air, lilies of the field / 天上的飞鸟，野地的百合 | Overcoming Worry / 胜过忧虑 |
+| `assets/art/john-signs.svg` | Signs and sayings in John / 约翰福音的记号与宣告 | Seek the Truth guide / 《求真寻道》导读 |
+| `assets/art/weighing-evidence.svg` | Weighing the evidence / 衡量证据 | Evidence That Demands a Verdict guide / 《铁证待判》导读 |
+| `assets/art/wanderer-home.svg` | The long road home / 回家的长路 | Song of a Wanderer guide / 《游子吟》导读 |
+| `assets/art/branching-tree.svg` | One trunk, many branches / 同一树干，许多枝子 | How to Name Christian Groups / 怎样给基督教群体命名 |
+| `assets/art/translation-books.svg` | One message, many languages / 同一信息，多种语言 | Bible Translations / 圣经译本 |
+| `assets/art/word-cards.svg` | Words to learn / 要学的词 | Glossary / 词汇表 |
 
 Check them with `python3 scripts/generate_art.py --check`; the command fails if a committed file differs from the generator.<br>
 可用 `python3 scripts/generate_art.py --check` 检查；若已提交的文件与生成结果不一致，该命令会报错。

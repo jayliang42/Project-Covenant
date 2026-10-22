@@ -5,6 +5,10 @@
 > Access guides and reading profiles for Bible translations used alongside this study library.<br>
 > 本区收录与本资料库配合使用的圣经译本获取指南与阅读定位。
 
+![Several open books whose lines are drawn in different scripts / 几本打开的书，书页上是不同形态的文字](../assets/art/translation-books.svg)
+
+*Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。* [About the illustrations | 插画说明](../CREDITS.md#original-illustrations)
+
 ## Available Guides | 当前指南
 
 - [International Standard Version (ISV) | ISV 获取与 ESL 阅读指南](./ISV_International_Standard_Version_Access_and_ESL_Guide.md)
