@@ -481,5 +481,8 @@ hr { border: 0; height: 1px; background: linear-gradient(to right, transparent, 
   .study-art { opacity: .94; }
 }
 @media (prefers-reduced-motion: reduce) { .collection-card { transition: none; } .collection-card:hover { transform: none; } }
-@media print { .study-art { box-shadow: none; max-height: 90mm; width: auto; } .reading-body h2::before { display: none; } }
+p:has(> a[href="#week-index"]:first-child) { font-size: .8rem; line-height: 1.8; color: var(--muted); padding-top: .9rem; border-top: 1px dashed var(--line); }
+p:has(> a[href="#week-index"]:first-child) a { text-decoration: none; padding: .15rem .1rem; }
+p:has(> a[href="#week-index"]:first-child) a:hover { text-decoration: underline; }
+@media print { .study-art { box-shadow: none; max-height: 90mm; width: auto; } .reading-body h2::before { display: none; } p:has(> a[href="#week-index"]:first-child) { display: none; } }
 """
