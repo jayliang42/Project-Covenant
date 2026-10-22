@@ -34,6 +34,7 @@ STORY_ROUTE = (
     "Bible_Timeline/Bible_People_Bilingual.md",
     "Bible_Timeline/Bible_Covenants_Bilingual.md",
     "Bible_Timeline/Parables_of_Jesus_Bilingual.md",
+    "Bible_Timeline/Key_Passages_Bilingual.md",
     "Bible_Timeline/52周圣经故事线_查经与史料阅读计划.md",
     "Bible_Timeline/Bible_Timeline_Cheat_Sheet.md",
 )
@@ -55,6 +56,7 @@ QUICK_GUIDES = (
     ("Maps/Bible_Places_Bilingual.md", "Places | 圣经地名", "Key places, each linked to a map. | 重要地点，附地图链接。"),
     ("Bible_Timeline/Bible_Covenants_Bilingual.md", "Covenants | 圣经中的约", "The five covenants that carry the story. | 贯穿故事的五个约。"),
     ("Bible_Timeline/Parables_of_Jesus_Bilingual.md", "Parables | 耶稣的比喻", "Nineteen parables and how to read them. | 十九个比喻及读法。"),
+    ("Bible_Timeline/Key_Passages_Bilingual.md", "Key Passages | 值得熟悉的经文", "Thirty-six passages worth knowing well. | 三十六段值得熟悉的经文。"),
 )
 
 # --- Language display -------------------------------------------------------

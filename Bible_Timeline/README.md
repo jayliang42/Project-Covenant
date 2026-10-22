@@ -14,6 +14,7 @@
 | Meet the people who carry the story<br>认识推动故事的人物 | [People of the Bible / 圣经人物](./Bible_People_Bilingual.md) | Full bilingual<br>完整双语 |
 | Follow the covenants that hold the story together<br>顺着贯穿故事的约来读 | [Covenants of the Bible / 圣经中的约](./Bible_Covenants_Bilingual.md) | Full bilingual<br>完整双语 |
 | Read Jesus’ parables with simple steps<br>用简单步骤读耶稣的比喻 | [Parables of Jesus / 耶稣的比喻](./Parables_of_Jesus_Bilingual.md) | Full bilingual<br>完整双语 |
+| Get to know passages Christians read most often<br>熟悉最常读的经文 | [Key Passages to Know / 值得熟悉的经文](./Key_Passages_Bilingual.md) | Full bilingual<br>完整双语 |
 | Understand the whole story in one sitting<br>一次看懂大故事 | [Bible Timeline Overview / 圣经时间线总览](./Bible_Timeline_Bilingual.md) | Full bilingual<br>完整双语 |
 | See every book’s role<br>逐卷看承上启下 | [Bible by Book / 按书卷梳理圣经](./Bible_By_Book_Bilingual.md) | Full bilingual<br>完整双语 |
 | Study through a year<br>一年串读 | [52-Week Storyline Plan / 52 周故事线计划](./52周圣经故事线_查经与史料阅读计划.md) | Full bilingual<br>完整双语 |
@@ -28,6 +29,7 @@
 - [People of the Bible | 圣经人物](./Bible_People_Bilingual.md)
 - [Covenants of the Bible | 圣经中的约](./Bible_Covenants_Bilingual.md)
 - [Parables of Jesus | 耶稣的比喻](./Parables_of_Jesus_Bilingual.md)
+- [Key Passages to Know | 值得熟悉的经文](./Key_Passages_Bilingual.md)
 - [Old Testament Timeline | 旧约时间线](./Old_Testament_Timeline_Bilingual.md)
 - [New Testament Timeline | 新约时间线](./New_Testament_Timeline_Bilingual.md)
 - [Bible Timeline Cheat Sheet | 一页式速查表](./Bible_Timeline_Cheat_Sheet.md)

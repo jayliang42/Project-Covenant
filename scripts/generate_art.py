@@ -1873,11 +1873,30 @@ def lost_sheep() -> ET.Element:
     return root
 
 
+def lamp_path() -> ET.Element:
+    root = scene("lamp-path", "A lamp for the path | 脚前的灯",
+                 "At night, a small oil lamp held low lights the next few steps of a winding path through dark hills. | "
+                 "夜里，一盏放低的小油灯照亮了穿过幽暗山丘的蜿蜒小路上接下来的几步。", "#1f2638")
+    stars(root, [(90, 50), (210, 90), (330, 40), (520, 70), (650, 110), (740, 50)])
+    el(root, "path", d="M0 230 C 160 190, 320 220, 460 200 C 600 180, 700 200, 800 190 L800 450 L0 450 Z", fill="#2b3229")
+    el(root, "path", d="M0 300 C 200 270, 420 300, 800 270 L800 450 L0 450 Z", fill="#323a2e")
+    el(root, "path", d="M300 450 C 330 400, 300 360, 380 330 C 440 310, 470 290, 520 260 L532 262 C 486 296, 456 318, 396 340 C 324 368, 352 406, 336 450 Z", fill="#4a4a3c")
+    el(root, "circle", cx=330, cy=392, r=120, fill="#f2c56b", fill_opacity=0.10)
+    el(root, "circle", cx=330, cy=392, r=70, fill="#f2c56b", fill_opacity=0.16)
+    el(root, "path", d="M300 450 C 330 400, 300 360, 380 330 L396 340 C 324 368, 352 406, 336 450 Z", fill="#c9b48a", fill_opacity=0.55)
+    el(root, "path", d="M290 382 C 290 368, 344 366, 352 374 L364 370 L360 384 C 344 392, 300 394, 290 382 Z", fill="#b5793f")
+    el(root, "path", d="M360 370 C 354 354, 360 342, 366 332 C 372 344, 374 358, 368 370 Z", fill="#f0a93a")
+    el(root, "path", d="M362 366 C 360 358, 362 350, 366 344 C 369 352, 369 360, 366 366 Z", fill="#fbe08a")
+    el(root, "path", d="M300 386 C 290 404, 270 414, 250 420", fill="none", stroke="#b07a55", stroke_width=12, stroke_linecap="round")
+    return root
+
+
 RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "papyrus-codex.svg": papyrus_codex,
     "story-procession.svg": story_procession,
     "parchment-map.svg": parchment_map,
     "lost-sheep.svg": lost_sheep,
+    "lamp-path.svg": lamp_path,
 }
 
 
