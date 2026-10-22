@@ -114,8 +114,8 @@ The cedar-cutting file’s English description cites 2 Samuel 5, while its title
 <a id="original-illustrations"></a>
 ## Original Illustrations | 原创插画
 
-Ninety simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
-本资料库有九十幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
+Ninety-four simple vector illustrations were drawn for this library in code, with AI assistance, by `scripts/generate_art.py`; no photographs, third-party artwork, or image-generation models were used. They are original content of this library and follow the same license as its original text. Like the rest of the site, they are Draft and are not historical or archaeological evidence.<br>
+本资料库有九十四幅简单的矢量插画，由 `scripts/generate_art.py` 在 AI 辅助下用代码绘制，没有使用照片、第三方画作或图像生成模型。它们属于本资料库的原创内容，授权方式与原创文字相同；和网站其他内容一样仍为 Draft，也不是历史或考古证据。
 
 | File / 文件 | Subject / 内容 | Used in / 使用位置 |
 | --- | --- | --- |
@@ -209,6 +209,10 @@ Ninety simple vector illustrations were drawn for this library in code, with AI 
 | `assets/art/temple-courts.svg` | The temple courts / 圣殿的院子 | Second Temple and Roman World / 第二圣殿与罗马世界 |
 | `assets/art/dig-layers.svg` | Layers in the ground / 地下的地层 | Evidence Index / 史料与考古旁证索引 |
 | `assets/art/seven-lamps.svg` | Seven lampstands / 七个灯台 | Hebrews to Revelation / 希伯来书至启示录 |
+| `assets/art/five-scrolls.svg` | Five scrolls / 五卷书 | The Five Books of Moses / 摩西五经 |
+| `assets/art/split-crown.svg` | A kingdom divided / 王国分裂 | Divided Kingdom to Return / 分裂王国至归回 |
+| `assets/art/roman-road.svg` | The road to the cities / 通往城市的大路 | Acts and Paul / 使徒行传与保罗书信 |
+| `assets/art/scroll-jars.svg` | Scrolls kept in jars / 存放在陶罐里的书卷 | Ancient Old Testament Book Lists / 古代旧约书目 |
 
 Check them with `python3 scripts/generate_art.py --check`; the command fails if a committed file differs from the generator.<br>
 可用 `python3 scripts/generate_art.py --check` 检查；若已提交的文件与生成结果不一致，该命令会报错。

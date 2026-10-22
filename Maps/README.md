@@ -2,14 +2,20 @@
 
 > Status: Draft (AI draft; not human reviewed) | 状态：Draft（AI 草稿，未人工审阅）
 
+<a id="in-three-sentences"></a>
+> **In Three Sentences | 三句话读懂本篇**
+>
+> The Bible’s story moves across real lands, from Mesopotamia and Egypt to Galilee, Jerusalem, and Rome. This page gathers eleven simple bilingual maps, each paired with the guide it belongs to. The maps are teaching sketches: borders, routes, and some locations are approximate, and each map says where scholars disagree.<br>
+> 圣经的故事发生在真实的土地上，从美索不达米亚、埃及到加利利、耶路撒冷和罗马。本页收集了十一幅简明的双语地图，每幅都配有相应的导读。这些地图是教学示意图：边界、路线和部分地点只是大致位置，每幅图都会说明学者之间的分歧。
+
 Looking for a single place? [Places of the Bible](./Bible_Places_Bilingual.md) introduces twenty-five key places in story order and links each one to the map below that shows it.<br>
 想查某一个地方？[圣经地名](./Bible_Places_Bilingual.md)按故事顺序介绍二十五个重要地点，并链接到下方标出它的地图。
 
 <a id="maps-index"></a>
 ## Map Index | 地图索引
 
-These locally generated maps support reading the Bible’s story, the Gospels, Acts, and Revelation. They work without internet access, map tiles, scripts, or downloaded fonts. On a narrow screen, scroll inside the map or open its SVG link at full size.<br>
-本地生成的地图辅助圣经故事线、福音书、使徒行传与启示录阅读，不需要网络、地图瓦片、脚本或下载字体。窄屏可在图内横向滚动，或打开完整 SVG。
+Choose a map to jump to it, or open the guide it belongs to. On a phone, scroll sideways inside a map, or open the full-size image with the link under it.<br>
+点击地图名称可跳到该图，也可以打开配套的导读。在手机上，可以在地图内左右滑动，或用图下方的链接打开完整大图。
 
 | Map / 地图 | Read alongside / 配套阅读 |
 | --- | --- |
@@ -57,7 +63,7 @@ The Temple Mount outline and Kidron course are teaching sketches. A marks the Ho
 
 **Sources | 来源：** [Holy Sepulchre custodians / 圣墓教堂管理方](https://www.custodia.org/en/sanctuaries/basilica-of-the-holy-sepulchre/) · [Garden Tomb association / 花园墓管理方](https://gardentomb.com/about/) · [Credits | 署名](../CREDITS.md#batch2-map-data)
 
-[Open full SVG | 打开完整SVG](../assets/maps/jerusalem-jesus.svg)
+[Open the full-size map | 打开完整大图](../assets/maps/jerusalem-jesus.svg)
 
 <a id="map-abraham-journey"></a>
 ## Abraham’s Journey | 亚伯拉罕的旅程
@@ -69,7 +75,7 @@ Genesis 11:31–13:18 supplies the named sequence. Southern Ur is one identifica
 
 **Sources | 来源：** [Coordinate sources and limits / 坐标来源与限制](../CREDITS.md#batch2-map-data) · [Credits | 署名](../CREDITS.md#batch2-map-data)
 
-[Open full SVG | 打开完整SVG](../assets/maps/abraham-journey.svg)
+[Open the full-size map | 打开完整大图](../assets/maps/abraham-journey.svg)
 
 <a id="map-exodus-models"></a>
 ## Exodus: Two Route Models | 出埃及：两种路线模型
@@ -81,7 +87,7 @@ Routes AND locations are disputed. A illustrates a southern-Sinai route family a
 
 **Sources | 来源：** [Hoffmeier, Ancient Israel in Sinai (2005), chapters 4–7 / 相关研究](https://academic.oup.com/book/36060) · [Anati’s research account / Anati研究说明](https://www.harkarkom.com/SinaiDiscoveries.php?more=all) · [Credits | 署名](../CREDITS.md#batch2-map-data)
 
-[Open full SVG | 打开完整SVG](../assets/maps/exodus-models.svg)
+[Open the full-size map | 打开完整大图](../assets/maps/exodus-models.svg)
 
 <a id="map-divided-kingdoms"></a>
 ## The Divided Kingdoms | 王国分裂：北国与南国
@@ -93,7 +99,7 @@ The shading is a broad ninth-century teaching envelope, not a precise frontier o
 
 **Sources | 来源：** [Coordinate sources and limits / 坐标来源与限制](../CREDITS.md#batch2-map-data) · [Credits | 署名](../CREDITS.md#batch2-map-data)
 
-[Open full SVG | 打开完整SVG](../assets/maps/divided-kingdoms.svg)
+[Open the full-size map | 打开完整大图](../assets/maps/divided-kingdoms.svg)
 
 <a id="map-exile-empires"></a>
 ## Empires in the Exile Story | 被掳时期的帝国
@@ -105,7 +111,7 @@ Three separate panels show broad Neo-Assyrian, Neo-Babylonian and Achaemenid Per
 
 **Sources | 来源：** [Met: Assyria / 大都会博物馆亚述资料](https://www.metmuseum.org/exhibitions/listings/2014/assyria-to-iberia) · [Met: Achaemenid Persia / 波斯资料](https://www.metmuseum.org/essays/the-achaemenid-persian-empire-550-330-b-c) · [Credits | 署名](../CREDITS.md#batch2-map-data)
 
-[Open full SVG | 打开完整SVG](../assets/maps/exile-empires.svg)
+[Open the full-size map | 打开完整大图](../assets/maps/exile-empires.svg)
 
 <a id="map-seven-churches"></a>
 ## The Seven Churches of Revelation | 启示录七教会
@@ -117,7 +123,7 @@ Revelation 1:11 and chapters 2–3 provide the seven names and order. The dashed
 
 **Sources | 来源：** [Coordinate sources and limits / 坐标来源与限制](../CREDITS.md#batch2-map-data) · [Credits | 署名](../CREDITS.md#batch2-map-data)
 
-[Open full SVG | 打开完整SVG](../assets/maps/seven-churches.svg)
+[Open the full-size map | 打开完整大图](../assets/maps/seven-churches.svg)
 
 <a id="map-galilee-ministry"></a>
 ## Jesus’ Ministry in Galilee | 耶稣在加利利的事工
@@ -129,7 +135,7 @@ Luke 4:16–30, John 2:1–11 and 4:46–54, and Mark 1:21–39 supply reading r
 
 **Sources | 来源：** [Cana candidates / 迦拿候选点](https://www.openbible.info/geo/ancient/a031bda/cana) · [Data and licenses / 数据与授权](../CREDITS.md#ministry-map-data)
 
-[Open full SVG | 打开完整SVG](../assets/maps/galilee-ministry.svg)
+[Open the full-size map | 打开完整大图](../assets/maps/galilee-ministry.svg)
 
 <a id="map-gospel-expansion"></a>
 ## From Jerusalem to the Ends of the Earth | 从耶路撒冷到地极
@@ -141,14 +147,14 @@ The two panels distinguish the nearby regions of Acts 1:8 from selected cities i
 
 **Sources | 来源：** Acts 1:8; 8:5; 11–19; 28 / 使徒行传1:8；8:5；11–19；28章 · [Data and licenses / 数据与授权](../CREDITS.md#ministry-map-data)
 
-[Open full SVG | 打开完整SVG](../assets/maps/acts-gospel-expansion.svg)
+[Open the full-size map | 打开完整大图](../assets/maps/acts-gospel-expansion.svg)
 
 <a id="storyline-graphic"></a>
 ## One-Page Storyline | 一页故事线
 
 ![Ten story stages, disputed dates and an undated future hope / 十个故事阶段、争议年代与不定期的盼望](../assets/maps/bible-storyline.svg)
 
-[Read First Steps | 阅读第一步](../Bible_Timeline/First_Steps_Bilingual.md) · [Open full SVG | 打开完整SVG](../assets/maps/bible-storyline.svg)
+[Read First Steps | 阅读第一步](../Bible_Timeline/First_Steps_Bilingual.md) · [Open the full-size map | 打开完整大图](../assets/maps/bible-storyline.svg)
 
 <a id="map-sources"></a>
 ## Sources and Reproduction | 来源与重现

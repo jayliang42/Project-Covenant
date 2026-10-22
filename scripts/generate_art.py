@@ -2170,6 +2170,103 @@ def seven_lamps() -> ET.Element:
     return root
 
 
+def five_scrolls() -> ET.Element:
+    root = scene("five-scrolls", "Five scrolls | 五卷书",
+                 "Five rolled scrolls lie side by side on a wooden table, lit by a small oil lamp. | "
+                 "五卷卷起的书卷并排放在木桌上，旁边一盏小油灯照着它们。", "#3a322a")
+    el(root, "circle", cx=640, cy=270, r=170, fill="#f2c56b", fill_opacity=0.10)
+    el(root, "path", d="M0 330 L800 330 L800 450 L0 450 Z", fill="#2a241e")
+    el(root, "rect", x=90, y=300, width=620, height=24, rx=4, fill="#8e6644")
+    for x in (120, 670):
+        el(root, "rect", x=x, y=322, width=16, height=80, fill="#6b4e33")
+    for i in range(5):
+        x = 140 + i * 92
+        y = 254
+        el(root, "rect", x=x, y=y, width=56, height=46, rx=4, fill="#e9d9b4")
+        for k in range(3):
+            el(root, "line", x1=x + 8, y1=y + 12 + k * 11, x2=x + 48, y2=y + 12 + k * 11, stroke="#cdb88c", stroke_width=2)
+        for cx in (x, x + 56):
+            el(root, "rect", x=cx - 6, y=y - 6, width=12, height=58, rx=5, fill="#a8784a")
+            el(root, "circle", cx=cx, cy=y - 8, r=5, fill="#7a5537")
+            el(root, "circle", cx=cx, cy=y + 54, r=5, fill="#7a5537")
+    el(root, "path", d="M610 300 C 610 278, 670 278, 670 300 Z", fill="#b5793f")
+    el(root, "path", d="M664 286 L692 278 L690 290 L668 296 Z", fill="#b5793f")
+    el(root, "path", d="M690 278 C 680 262, 692 250, 690 236 C 704 250, 706 268, 690 278 Z", fill="#fbe08a")
+    return root
+
+
+def split_crown() -> ET.Element:
+    root = scene("split-crown", "A kingdom divided | 王国分裂",
+                 "A golden crown lies broken into two halves on a stone, with a gap between them, under a gray sky. | "
+                 "灰色天空下，一顶金冠断成两半，放在石头上，两半之间隔着一道缝隙。", "#d9dde0")
+    el(root, "path", d=path([(0, 300)] + wave(0, 800, 292, 10, 520, 0.4) + [(800, 450), (0, 450)]), fill="#a9a08c")
+    el(root, "path", d="M160 330 C 200 290, 600 290, 640 330 L660 380 L140 380 Z", fill="#8a8479")
+    el(root, "path", d="M160 330 C 260 316, 540 316, 640 330", fill="none", stroke="#a39d92", stroke_width=4)
+    for dx, sign in ((-34, -1), (34, 1)):
+        g = ET.SubElement(root, NS + "g", {"transform": f"translate({400 + dx} 318) rotate({sign * 8})"})
+        if sign < 0:
+            pts = [(-130, 0), (-130, -70), (-100, -40), (-70, -90), (-40, -40), (-12, -76), (0, -60), (-8, -30), (4, 0)]
+        else:
+            pts = [(-4, 0), (8, -30), (0, -60), (12, -76), (40, -40), (70, -90), (100, -40), (130, -70), (130, 0)]
+        el(g, "path", d=path(pts), fill="#d9a441")
+        x0 = -130 if sign < 0 else -4
+        el(g, "rect", x=x0, y=-22, width=134, height=22, fill="#c99436")
+        for gx in ((-100, -60, -24) if sign < 0 else (24, 60, 100)):
+            el(g, "circle", cx=gx, cy=-11, r=6, fill="#8e3b46" if gx % 3 else "#3f6f8f")
+    return root
+
+
+def roman_road() -> ET.Element:
+    root = scene("roman-road", "The road to the cities | 通往城市的大路",
+                 "A paved stone road with a milestone winds over green hills toward a harbor city, where a ship with a square sail waits on the sea. | "
+                 "一条铺石大路经过一块里程碑，蜿蜒越过绿色山丘，通向海港城市；海面上停着一艘方帆船。", "#e4eef0")
+    el(root, "path", d=path([(0, 200)] + wave(0, 800, 196, 4, 260) + [(800, 230), (0, 230)]), fill="#7fb7c4")
+    el(root, "rect", x=0, y=226, width=800, height=8, fill="#7fb7c4")
+    for x, w, h in [(560, 40, 40), (604, 30, 56), (640, 50, 34), (696, 36, 48), (736, 44, 30)]:
+        el(root, "rect", x=x, y=230 - h, width=w, height=h, fill="#efe6d0")
+        el(root, "rect", x=x, y=230 - h, width=w, height=6, fill="#c96f4a")
+    el(root, "path", d="M470 200 L470 168 L500 182 Z", fill="#f4efe3")
+    el(root, "path", d="M452 202 L520 202 L512 212 L460 212 Z", fill="#7a5537")
+    el(root, "line", x1=486, y1=202, x2=486, y2=160, stroke="#5a3e2a", stroke_width=3)
+    el(root, "rect", x=474, y=166, width=26, height=30, fill="#efe2c4")
+    el(root, "path", d="M0 240 C 220 220, 520 250, 800 228 L800 450 L0 450 Z", fill="#8fb46e")
+    el(root, "path", d="M0 300 C 240 270, 560 300, 800 276 L800 450 L0 450 Z", fill="#7aa35c")
+    el(root, "path", d="M120 450 C 200 380, 360 330, 560 236 L590 238 C 420 340, 300 400, 280 450 Z", fill="#c9b48a")
+    for i in range(14):
+        t = i / 13
+        x1 = 120 + (560 - 120) * t + (1 - t) * t * 60
+        x2 = 280 + (590 - 280) * t + (1 - t) * t * 40
+        y = 450 - (450 - 236) * t
+        el(root, "line", x1=f"{x1:.1f}", y1=f"{y:.1f}", x2=f"{x2:.1f}", y2=f"{y:.1f}", stroke="#ad9a72", stroke_width=2)
+    el(root, "rect", x=236, y=318, width=24, height=56, rx=10, fill="#b8b2a6")
+    el(root, "line", x1=242, y1=336, x2=254, y2=336, stroke="#8a8479", stroke_width=3)
+    el(root, "line", x1=242, y1=346, x2=254, y2=346, stroke="#8a8479", stroke_width=3)
+    for x, y in [(60, 330), (700, 330), (740, 380), (90, 400)]:
+        el(root, "circle", cx=x, cy=y, r=20, fill="#4f7d45")
+        el(root, "rect", x=x - 3, y=y + 14, width=6, height=16, fill="#6b4e33")
+    return root
+
+
+def scroll_jars() -> ET.Element:
+    root = scene("scroll-jars", "Scrolls kept in jars | 存放在陶罐里的书卷",
+                 "Inside the mouth of a rocky cave, tall clay jars hold rolled scrolls, while the desert and a pale sky show through the opening. | "
+                 "岩洞口内，几只高高的陶罐里放着卷起的书卷，透过洞口可以看见旷野和淡色的天空。", "#5a4a3c")
+    el(root, "path", d="M210 60 C 330 20, 520 30, 600 90 C 640 140, 630 240, 600 330 L200 330 C 170 240, 160 120, 210 60 Z", fill="#f0e2c4")
+    el(root, "path", d="M200 330 C 300 290, 500 300, 600 330 Z", fill="#d8b98a")
+    el(root, "path", d="M240 300 C 320 260, 420 250, 560 290 L600 330 L200 330 Z", fill="#e3c58e")
+    el(root, "path", d="M0 330 L800 330 L800 450 L0 450 Z", fill="#4a3d32")
+    for x, h in [(270, 130), (360, 150), (450, 120), (540, 140)]:
+        base = 400
+        el(root, "path", d=f"M{x - 30} {base} C {x - 44} {base - h * 0.5}, {x - 36} {base - h + 10}, {x - 18} {base - h} L{x + 18} {base - h} C {x + 36} {base - h + 10}, {x + 44} {base - h * 0.5}, {x + 30} {base} Z", fill="#c48a52")
+        el(root, "rect", x=x - 22, y=base - h - 8, width=44, height=10, rx=4, fill="#a86f3c")
+        for k in (0.35, 0.6):
+            el(root, "line", x1=x - 34, y1=base - h * k, x2=x + 34, y2=base - h * k, stroke="#a86f3c", stroke_width=2)
+        el(root, "rect", x=x - 7, y=base - h - 30, width=14, height=26, rx=6, fill="#e9d9b4")
+    for x, y in [(650, 404), (690, 410)]:
+        el(root, "rect", x=x - 26, y=y - 10, width=52, height=18, rx=8, fill="#e9d9b4")
+    return root
+
+
 RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "papyrus-codex.svg": papyrus_codex,
     "story-procession.svg": story_procession,
@@ -2187,6 +2284,10 @@ RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "temple-courts.svg": temple_courts,
     "dig-layers.svg": dig_layers,
     "seven-lamps.svg": seven_lamps,
+    "five-scrolls.svg": five_scrolls,
+    "split-crown.svg": split_crown,
+    "roman-road.svg": roman_road,
+    "scroll-jars.svg": scroll_jars,
 }
 
 

@@ -120,6 +120,7 @@ assets/art/dig-layers.svg
 assets/art/dry-bones.svg
 assets/art/empty-tomb.svg
 assets/art/exile-road.svg
+assets/art/five-scrolls.svg
 assets/art/found-scroll.svg
 assets/art/galilee-boat.svg
 assets/art/garden-thorn.svg
@@ -163,9 +164,11 @@ assets/art/race-course.svg
 assets/art/rebuilding.svg
 assets/art/refining-fire.svg
 assets/art/river-of-life.svg
+assets/art/roman-road.svg
 assets/art/royal-scepter.svg
 assets/art/ruined-city.svg
 assets/art/scribe-copying.svg
+assets/art/scroll-jars.svg
 assets/art/sea-crossing.svg
 assets/art/seasons-tree.svg
 assets/art/secret-room.svg
@@ -173,6 +176,7 @@ assets/art/seven-lamps.svg
 assets/art/shared-yoke.svg
 assets/art/shepherd.svg
 assets/art/sower.svg
+assets/art/split-crown.svg
 assets/art/stone-tablets.svg
 assets/art/story-procession.svg
 assets/art/study-desk.svg

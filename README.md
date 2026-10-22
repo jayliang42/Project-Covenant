@@ -7,7 +7,7 @@
 The order is narrative, not a proportional timescale. Early date ranges are debated; creation, fall, and new creation are not assigned calendar dates.<br>
 图按叙事顺序排列，不按时间比例；早期年代区间有争议，创造、堕落与新创造不设公历日期。
 
-[Open full SVG | 打开完整图](./assets/maps/bible-storyline.svg)
+[Open the full-size map | 打开完整大图](./assets/maps/bible-storyline.svg)
 
 > A bilingual study library for spiritual growth, sermon learning, and the Bible’s unified storyline.
 > 一个用于灵命成长、讲道学习与整本圣经故事线研读的中英双语资料库。
