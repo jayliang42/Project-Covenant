@@ -698,11 +698,17 @@ html.lang-ready .lang-switch { display: inline-flex; flex: none; border: 1px sol
 .header-note { margin-left: auto; }
 @media (max-width: 50rem) { .lang-switch button { padding: .4rem .55rem; } }
 @media print { .lang-switch { display: none !important; } }
-.home-art { display: block; width: 100%; height: auto; margin: 2rem 0 .5rem; border-radius: 14px; box-shadow: 0 1px 2px rgba(0, 0, 0, .06), 0 10px 28px rgba(41, 46, 41, .10); }
+.home-art { display: block; width: 100%; max-width: 100%; height: auto; margin: 2rem 0 .5rem; border-radius: 14px; box-shadow: 0 1px 2px rgba(0, 0, 0, .06), 0 10px 28px rgba(41, 46, 41, .10); }
 @media (max-width: 50rem) {
   .site-subtitle { display: none; }
-  .site-title { white-space: nowrap; }
+  .site-title { min-width: 0; line-height: 1.2; }
   .header-inner { gap: .5rem; }
+}
+@media (max-width: 24rem) {
+  .header-inner { padding: .6rem .75rem; gap: .4rem; }
+  .site-title { gap: .4rem; font-size: .88rem; }
+  .site-mark { width: 1.55rem; height: 1.75rem; font-size: 1.1rem; }
+  .lang-switch button { padding: .38rem .42rem; font-size: .7rem; }
 }
 @media print { .home-art { display: none; } }
 """
