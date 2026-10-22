@@ -532,6 +532,7 @@ h2, h3, h4, h5, h6 { line-height: 1.45; scroll-margin-top: 5.5rem; }
 .reading-body p { margin: 1rem 0; }
 .reading-body li + li { margin-top: .4rem; }
 .reading-body ul, .reading-body ol { padding-left: 1.6rem; }
+.reading-body ol { padding-left: 2.2rem; }
 .reading-body strong { font-weight: 650; }
 blockquote { margin: 1.5rem 0; padding: .3rem 1.15rem; border-left: 3px solid var(--accent); background: var(--accent-soft); color: var(--muted); font-size: .96em; }
 code { background: var(--code); padding: .12em .32em; border-radius: .2rem; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: .85em; }
