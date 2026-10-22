@@ -744,6 +744,7 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             self.assertEqual(10, year_plan.count('class="study-illustration"'))
             self.assertEqual(42, year_plan.count('class="study-art"'))
             self.assertEqual(8, home.count('class="guide-card"'))
+            self.assertEqual(8, home.count('class="guide-thumb"'))
             self.assertIn('<article class="reading-body hub-page">', (output / "Bilingual_Notes/index.html").read_text(encoding="utf-8"))
             self.assertIn('<article class="reading-body">', year_plan)
             for note in sorted((output / "Bilingual_Notes").glob("20*.html")):

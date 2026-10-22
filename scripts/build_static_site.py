@@ -842,13 +842,14 @@ def _page_html(
     page: _Page, page_map: dict[str, str],
     page_titles: dict[str, str] | None = None,
     home_art: str | None = None,
+    guide_art: frozenset[str] = frozenset(),
 ) -> bytes:
     if "README.md" not in page_map:
         raise SiteBuildError("SITE_ROOT_PAGE_MISSING")
     return site_reader.render_page(
         page.source_path, page.output_path, page.title, page.body,
         page_map, page_titles or {page.source_path: page.title}, SITE_CSS_PATH,
-        home_art=home_art,
+        home_art=home_art, guide_art=guide_art,
     )
 
 
@@ -912,10 +913,12 @@ def _load_expected_site(
 
     page_titles = {page.source_path: page.title for page in pages}
     expected: dict[str, bytes] = {SITE_CSS_PATH: SITE_CSS, SITE_JS_PATH: SITE_JS, **asset_files}
+    guide_art = frozenset(path for path in asset_files if path.startswith("assets/art/"))
     for page in pages:
         expected[page.output_path] = _page_html(
             page, page_map, page_titles,
             home_art=HOME_ART_PATH if HOME_ART_PATH in asset_files else None,
+            guide_art=guide_art,
         )
     if len(expected) > MAX_SITE_FILES:
         raise SiteBuildError("SITE_FILE_LIMIT_EXCEEDED")

@@ -57,14 +57,14 @@ COLLECTIONS = (
 
 # Short beginner guides surfaced on the home page, in reading order.
 QUICK_GUIDES = (
-    ("Bible_Timeline/Bible_Reading_Toolkit_Bilingual.md", "Reading Toolkit | 读经工具箱", "Find a passage and read each kind of writing. | 查经文出处，读懂不同文体。"),
-    ("Bible_Timeline/Bible_People_Bilingual.md", "People | 圣经人物", "Who’s who, in story order. | 按故事顺序认识主要人物。"),
-    ("Maps/Bible_Places_Bilingual.md", "Places | 圣经地名", "Key places, each linked to a map. | 重要地点，附地图链接。"),
-    ("Bible_Timeline/Bible_Covenants_Bilingual.md", "Covenants | 圣经中的约", "The five covenants that carry the story. | 贯穿故事的五个约。"),
-    ("Bible_Timeline/Parables_of_Jesus_Bilingual.md", "Parables | 耶稣的比喻", "Nineteen parables and how to read them. | 十九个比喻及读法。"),
-    ("Bible_Timeline/Key_Passages_Bilingual.md", "Key Passages | 值得熟悉的经文", "Thirty-six passages worth knowing well. | 三十六段值得熟悉的经文。"),
-    ("Bible_Timeline/Prayers_in_the_Bible_Bilingual.md", "Prayers | 圣经中的祷告", "Twenty-one prayers to learn from. | 二十一篇可以学习的祷告。"),
-    ("Bible_Timeline/Psalms_for_Different_Times_Bilingual.md", "Psalms for Different Times | 不同处境中的诗篇", "A psalm for what you are going through. | 为当下处境找一篇诗篇。"),
+    ("Bible_Timeline/Bible_Reading_Toolkit_Bilingual.md", "Reading Toolkit | 读经工具箱", "Find a passage and read each kind of writing. | 查经文出处，读懂不同文体。", "assets/art/open-bible.svg", "An open Bible | 打开的圣经"),
+    ("Bible_Timeline/Bible_People_Bilingual.md", "People | 圣经人物", "Who’s who, in story order. | 按故事顺序认识主要人物。", "assets/art/story-procession.svg", "People of the story | 故事中的人物"),
+    ("Maps/Bible_Places_Bilingual.md", "Places | 圣经地名", "Key places, each linked to a map. | 重要地点，附地图链接。", "assets/art/parchment-map.svg", "An old map | 一幅旧地图"),
+    ("Bible_Timeline/Bible_Covenants_Bilingual.md", "Covenants | 圣经中的约", "The five covenants that carry the story. | 贯穿故事的五个约。", "assets/art/ark-rainbow.svg", "A rainbow after the flood | 洪水之后的彩虹"),
+    ("Bible_Timeline/Parables_of_Jesus_Bilingual.md", "Parables | 耶稣的比喻", "Nineteen parables and how to read them. | 十九个比喻及读法。", "assets/art/lost-sheep.svg", "The sheep that was found | 找回的羊"),
+    ("Bible_Timeline/Key_Passages_Bilingual.md", "Key Passages | 值得熟悉的经文", "Thirty-six passages worth knowing well. | 三十六段值得熟悉的经文。", "assets/art/lamp-path.svg", "A lamp for the path | 脚前的灯"),
+    ("Bible_Timeline/Prayers_in_the_Bible_Bilingual.md", "Prayers | 圣经中的祷告", "Twenty-one prayers to learn from. | 二十一篇可以学习的祷告。", "assets/art/incense-rising.svg", "Prayer like incense | 祷告如香"),
+    ("Bible_Timeline/Psalms_for_Different_Times_Bilingual.md", "Psalms for Different Times | 不同处境中的诗篇", "A psalm for what you are going through. | 为当下处境找一篇诗篇。", "assets/art/lyre-dawn.svg", "A song at dawn | 黎明的诗歌"),
 )
 
 # --- Language display -------------------------------------------------------
@@ -352,7 +352,8 @@ def _pager(source: str, output: str, page_map: dict[str, str], titles: dict[str,
     return '<nav class="reading-pager" aria-label="Continue reading | 继续阅读">' + "\n".join(links) + "</nav>"
 
 
-def _home_intro(output: str, page_map: dict[str, str], home_art: str | None = None) -> str:
+def _home_intro(output: str, page_map: dict[str, str], home_art: str | None = None,
+                guide_art: frozenset[str] = frozenset()) -> str:
     first = next((path for path in STORY_ROUTE[1:] if path in page_map), None)
     start = _link(_href(output, page_map[first]), "Start reading | 开始阅读 →", css="start-reading") if first else ""
     cards = []
@@ -363,11 +364,14 @@ def _home_intro(output: str, page_map: dict[str, str], home_art: str | None = No
         href = html.escape(_href(output, page_map[hub]), quote=True)
         cards.append(f'<a class="collection-card" href="{href}"><span class="collection-number">{index:02d}</span><strong>{bilingual_label(label)}</strong><span class="collection-description">{bilingual_label(description)}</span></a>')
     guides = []
-    for path, label, description in QUICK_GUIDES:
+    for path, label, description, art_path, art_alt in QUICK_GUIDES:
         if path not in page_map:
             continue
         href = html.escape(_href(output, page_map[path]), quote=True)
-        guides.append(f'<a class="guide-card" href="{href}"><strong>{bilingual_label(label)}</strong><span class="collection-description">{bilingual_label(description)}</span></a>')
+        thumb = ""
+        if art_path in guide_art:
+            thumb = '<img class="guide-thumb" src="' + html.escape(_href(output, art_path), quote=True) + '" alt="' + html.escape(art_alt, quote=True) + '">'
+        guides.append(f'<a class="guide-card" href="{href}">{thumb}<strong>{bilingual_label(label)}</strong><span class="collection-description">{bilingual_label(description)}</span></a>')
     quick = ""
     if guides:
         quick = ('<div class="eyebrow guide-heading"><span class="l-en" lang="en">QUICK GUIDES</span><span class="l-sep"> · </span><span class="l-zh" lang="zh-Hans">快速导览</span></div>'
@@ -413,7 +417,7 @@ def reading_time(body: str, *, include_short: bool = False) -> str:
 
 def render_page(source: str, output: str, title: str, body: str,
                 page_map: dict[str, str], titles: dict[str, str], css_path: str,
-                home_art: str | None = None) -> bytes:
+                home_art: str | None = None, guide_art: frozenset[str] = frozenset()) -> bytes:
     """Compose reading navigation around untouched, trusted renderer output."""
     if "README.md" not in page_map or page_map.get(source) != output:
         raise ValueError("READER_PAGE_MAP_INVALID")
@@ -428,7 +432,7 @@ def render_page(source: str, output: str, title: str, body: str,
     estimate = reading_time(body, include_short=is_core_study(source))
     if estimate:
         metadata += '<p class="reading-time">' + bilingual_label(estimate) + '</p>'
-    intro = _home_intro(output, page_map, home_art) if source == "README.md" else ""
+    intro = _home_intro(output, page_map, home_art, guide_art) if source == "README.md" else ""
     mobile_toc = '<details class="mobile-toc"><summary>' + bilingual_label("On this page | 本页目录") + '</summary>' + toc + '</details>' if toc else ""
     right_toc = '<aside class="outline-sidebar"><div class="sidebar-label">' + bilingual_label("On this page | 本页目录") + '</div>' + toc + '</aside>' if toc else '<div class="outline-sidebar"></div>'
     policy_links = []
@@ -750,10 +754,15 @@ html.lang-ready .lang-switch { display: inline-flex; flex: none; border: 1px sol
 .guide-card { display: grid; gap: .3rem; align-content: start; padding: .85rem .95rem; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 10px; text-decoration: none; color: var(--text); transition: border-color .15s ease, transform .15s ease; }
 .guide-card:hover { border-color: var(--accent); transform: translateY(-1px); }
 .guide-card strong { font-size: .88rem; font-weight: 600; }
+.guide-thumb { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 6px; margin-bottom: .3rem; }
+@media (max-width: 34rem) {
+  .guide-card { grid-template-columns: 4.75rem 1fr; column-gap: .8rem; }
+  .guide-thumb { grid-row: span 2; aspect-ratio: 1; margin-bottom: 0; }
+}
 @media (prefers-reduced-motion: reduce) { .guide-card { transition: none; } .guide-card:hover { transform: none; } }
 @media print { .guide-heading, .guide-grid { display: none; } }
 @media (prefers-color-scheme: dark) {
-  .study-art, .study-illustration, .home-art { filter: brightness(.82) saturate(.92); }
+  .study-art, .study-illustration, .home-art, .guide-thumb { filter: brightness(.82) saturate(.92); }
 }
 @media print { .study-art, .study-illustration, .home-art { filter: none; } }
 .reading-body > p:last-child:has(> a:first-child[href$="index.html"]) { margin-top: 2.6rem; font-size: .84rem; line-height: 1.9; color: var(--muted); }
