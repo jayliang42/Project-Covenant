@@ -32,6 +32,7 @@ STORY_ROUTE = (
     "Bible_Timeline/Bible_By_Book_Bilingual.md",
     "Bible_Timeline/Bible_Reading_Toolkit_Bilingual.md",
     "Bible_Timeline/Bible_People_Bilingual.md",
+    "Bible_Timeline/Bible_Covenants_Bilingual.md",
     "Bible_Timeline/52周圣经故事线_查经与史料阅读计划.md",
     "Bible_Timeline/Bible_Timeline_Cheat_Sheet.md",
 )

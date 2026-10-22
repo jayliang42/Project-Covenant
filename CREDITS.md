@@ -129,16 +129,16 @@ Seventy-seven simple vector illustrations were drawn for this library in code, w
 | `assets/art/sea-crossing.svg` | Crossing the sea / 过红海 | Exodus; week 6; Bible Timeline / 出埃及记；第 6 周；圣经时间线 |
 | `assets/art/wilderness-camp.svg` | Camp in the wilderness / 旷野中的营地 | Week 9 / 第 9 周 |
 | `assets/art/barley-harvest.svg` | Barley harvest near Bethlehem / 伯利恒附近的麦收 | Ruth; week 12 / 路得记；第 12 周 |
-| `assets/art/david-harp.svg` | A shepherd's lyre and sling / 牧童的琴与机弦 | Week 14; Bible Timeline / 第 14 周；圣经时间线 |
+| `assets/art/david-harp.svg` | A shepherd's lyre and sling / 牧童的琴与机弦 | Week 14; Bible Timeline; Covenants of the Bible / 第 14 周；圣经时间线；圣经中的约 |
 | `assets/art/carmel-altar.svg` | Fire on Mount Carmel / 迦密山上的火 | 1 Kings; week 17; Bible Timeline / 列王纪上；第 17 周；圣经时间线 |
 | `assets/art/lions-den.svg` | Daniel in the lions' den / 狮子坑中的但以理 | Daniel; week 26 / 但以理书；第 26 周 |
-| `assets/art/bread-cup.svg` | Bread and cup / 饼与杯 | Weeks 40, 46 / 第 40、46 周 |
+| `assets/art/bread-cup.svg` | Bread and cup / 饼与杯 | Weeks 40, 46; Covenants of the Bible / 第 40、46 周；圣经中的约 |
 | `assets/art/empty-tomb.svg` | The empty tomb at dawn / 清晨的空坟墓 | Week 41; Bible Timeline / 第 41 周；圣经时间线 |
 | `assets/art/pentecost.svg` | Pentecost / 五旬节 | Acts; week 42; Bible Timeline / 使徒行传；第 42 周；圣经时间线 |
 | `assets/art/paul-ship.svg` | A ship bound for Rome / 驶往罗马的船 | Week 48 / 第 48 周 |
 | `assets/art/jacob-ladder.svg` | Jacob's dream / 雅各的梦 | Genesis; week 4 / 创世记；第 4 周 |
 | `assets/art/lamb-altar.svg` | Altar and offering / 祭坛与献祭 | Leviticus; week 8 / 利未记；第 8 周 |
-| `assets/art/stone-tablets.svg` | Words to remember / 当记念的话 | Deuteronomy; week 10 / 申命记；第 10 周 |
+| `assets/art/stone-tablets.svg` | Words to remember / 当记念的话 | Deuteronomy; week 10; Covenants of the Bible / 申命记；第 10 周；圣经中的约 |
 | `assets/art/jericho-walls.svg` | Around the walls of Jericho / 绕行耶利哥城 | Joshua; week 11; Bible Timeline; Joshua to Kingdom Formation / 约书亚记；第 11 周；圣经时间线；约书亚至王国形成 |
 | `assets/art/anointing.svg` | Oil for a new king / 膏立新王 | 1 Samuel; week 13 / 撒母耳记上；第 13 周 |
 | `assets/art/golden-calf.svg` | A divided kingdom / 分裂的王国 | Week 16 / 第 16 周 |
@@ -191,8 +191,8 @@ Seventy-seven simple vector illustrations were drawn for this library in code, w
 | `assets/art/branching-tree.svg` | One trunk, many branches / 同一树干，许多枝子 | How to Name Christian Groups / 怎样给基督教群体命名 |
 | `assets/art/translation-books.svg` | One message, many languages / 同一信息，多种语言 | Bible Translations / 圣经译本 |
 | `assets/art/word-cards.svg` | Words to learn / 要学的词 | Glossary / 词汇表 |
-| `assets/art/ark-rainbow.svg` | After the flood / 洪水之后 | Bible Timeline / 圣经时间线 |
-| `assets/art/abraham-stars.svg` | Count the stars / 数一数天上的星 | Bible Timeline / 圣经时间线 |
+| `assets/art/ark-rainbow.svg` | After the flood / 洪水之后 | Bible Timeline; Covenants of the Bible / 圣经时间线；圣经中的约 |
+| `assets/art/abraham-stars.svg` | Count the stars / 数一数天上的星 | Bible Timeline; Covenants of the Bible / 圣经时间线；圣经中的约 |
 | `assets/art/papyrus-codex.svg` | An early papyrus book / 早期的蒲草纸抄本 | Resurrection and Early Witnesses / 复活与早期见证 |
 | `assets/art/story-procession.svg` | People of the story / 故事中的人物 | People of the Bible / 圣经人物 |
 | `assets/art/parchment-map.svg` | An old map / 一幅旧地图 | Places of the Bible / 圣经地名 |

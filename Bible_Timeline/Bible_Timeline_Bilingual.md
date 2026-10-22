@@ -417,8 +417,8 @@ The dates of Joel and Obadiah are debated, so their placement here is only a com
   创造解释了人的尊严，以及世界原初的美善。
 - The fall explains sin, death, and the need for redemption.
   堕落解释了罪、死亡和救赎的必要。
-- Covenants provide the structural backbone of the storyline.
-  各个“约”构成整条圣经故事线的重要骨架。
+- Covenants provide the structural backbone of the storyline; see [Covenants of the Bible](./Bible_Covenants_Bilingual.md).
+  各个“约”构成整条圣经故事线的重要骨架，见[圣经中的约](./Bible_Covenants_Bilingual.md)。
 - Israel's story prepares for the Messiah.
   以色列的历史是在为弥赛亚作预备。
 - Jesus fulfills the whole Bible and holds it together around himself.
