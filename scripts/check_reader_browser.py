@@ -74,6 +74,15 @@ def layout(page) -> None:
         loaded,
         accent: getComputedStyle(document.body).getPropertyValue('--accent').trim(),
         overflow: document.documentElement.scrollWidth > innerWidth + 1,
+        culprit: (() => {
+          if (document.documentElement.scrollWidth <= innerWidth + 1) return '';
+          let worst = '', right = innerWidth + 1;
+          for (const el of document.querySelectorAll('body *')) {
+            const box = el.getBoundingClientRect();
+            if (box.right > right) { right = box.right; worst = el.tagName.toLowerCase() + '.' + (el.getAttribute('class') || '') + ' right=' + Math.round(box.right); }
+          }
+          return worst;
+        })(),
         main: document.querySelectorAll('main').length,
         article: document.querySelectorAll('article.reading-body').length,
         images: [...document.images].every(img => img.complete && img.naturalWidth > 0 && img.alt.trim() && ['file:', location.protocol].includes(new URL(img.currentSrc).protocol)),
@@ -82,6 +91,8 @@ def layout(page) -> None:
       };
     }""")
     require(state["loaded"] and bool(state["accent"]), "BROWSER_CSS_NOT_LOADED")
+    if state["overflow"]:
+        print(f"browser_overflow_element={state['culprit']}", flush=True)
     require(not state["overflow"], "BROWSER_HORIZONTAL_OVERFLOW")
     require(state["main"] == state["article"] == 1, "BROWSER_STRUCTURE_INVALID")
     require(state["active"] == 0, "BROWSER_ACTIVE_CONTENT")
@@ -236,6 +247,9 @@ def run(site: Path, output: Path) -> dict:
                 result["failed_script_line"] = trace.tb_lineno
             trace = trace.tb_next
         result["error_code"] = str(error) if isinstance(error, BrowserCheckError) else "BROWSER_RUNTIME_ERROR"
+        print(f"browser_failed_at={result.get('last_protocol')}:{result.get('last_page_index')}:"
+              f"{pages[result.get('last_page_index', 0)].relative_to(site).as_posix() if pages else ''}:"
+              f"{result.get('last_width')}", flush=True)
         raise BrowserCheckError(result["error_code"]) from None
     finally:
         (output / "report.json").write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
