@@ -76,7 +76,7 @@ These instructions apply to the entire repository unless a deeper `AGENTS.md` ad
 - Build website files only with `scripts/build_static_site.py` from that verified snapshot and retained digest. The builder must emit exactly one HTML page per approved Markdown page plus local CSS and validated, allowlisted local assets; it must not copy the source manifest or integrity metadata into the site.
 - Create offline ZIP files only with `scripts/package_offline_site.py` from that same verified snapshot and digest. Keep generated archives outside the repository; never package the maintenance checkout or a separately edited site directory.
 - Follow `STATIC_MIRROR_DEPLOYMENT.md` before any public upload. Keep the ZIP output parent and final path under the trusted release job's exclusive control, and do not claim a hosted mirror is live until its final URL, representative pages, response headers, and access have been tested.
-- The first static site must remain script-free and must not add analytics, forms, comments, remote fonts, remote images, source maps, or identifying repository links. Hosting response headers and account ownership require a separate deployment review.
+- The static site must not load remote or third-party scripts. Its only script is the local language switch (`assets/lang.js`, generated from `scripts/site_reader.py`), which makes no network request and stores only the reader's display choice in that browser; pages must stay fully readable in both languages without it. The site must not add analytics, forms, comments, remote fonts, remote images, source maps, or identifying repository links. Hosting response headers and account ownership require a separate deployment review.
 - The public repository may be owned by the maintainer's own GitHub account, but its Git history must not expose earlier personal email addresses. Publish from a new non-fork repository whose history begins with one clean import of the reviewed tree, authored and committed with the account's GitHub noreply address; never push, merge, or mirror this repository's older history into it. Once the clean repository is live, make the older repository private.
 - The clean repository may carry the full maintained source, including scripts, tests, and workflows, so that the reading site keeps building from it. Before every push, confirm with `git log --format='%an <%ae> | %cn <%ce>'` that each new commit uses the noreply address and the account handle rather than a personal name.
 
@@ -96,7 +96,7 @@ These instructions apply to the entire repository unless a deeper `AGENTS.md` ad
 - 网站文件只能由 `scripts/build_static_site.py` 从已验证快照和另行保存的摘要生成。构建器必须为每份获准 Markdown 只生成一个 HTML 页面及本地 CSS 与经过验证、列入白名单的本地素材，不得把源清单或完整性元数据复制进站点。
 - 离线 ZIP 只能由 `scripts/package_offline_site.py` 从同一份已验证快照和摘要生成。生成的压缩包必须放在仓库外；不得打包维护工作区或另行编辑过的站点目录。
 - 任何公开上传都必须先遵循 `STATIC_MIRROR_DEPLOYMENT.md`。ZIP 输出父目录和最终路径必须由可信发布任务独占控制；在最终网址、代表性页面、响应头和访问结果实测通过之前，不得声称在线镜像已经上线。
-- 初版静态站点必须保持无脚本，也不得加入分析追踪、表单、评论、远程字体、远程图片、source map 或可识别源仓库链接。托管响应头与账号归属需要单独进行部署复核。
+- 静态站点不得加载远程或第三方脚本。唯一的脚本是本地语言切换（`assets/lang.js`，由 `scripts/site_reader.py` 生成）：它不发出任何网络请求，只在读者的浏览器里记住显示模式；即使没有它，页面也必须能完整地中英对照阅读。站点也不得加入分析追踪、表单、评论、远程字体、远程图片、source map 或可识别源仓库链接。托管响应头与账号归属需要单独进行部署复核。
 - 公开仓库可以放在维护者本人的 GitHub 账号下，但其 Git 历史不得暴露过去使用的个人邮箱。公开版必须是全新、非 fork 的仓库，历史从一次干净导入的已复核文件树开始，author 与 committer 都使用该账号的 GitHub noreply 邮箱；不得向其推送、合并或镜像本仓库的旧历史。干净仓库上线后，把旧仓库设为私有。
 - 干净仓库可以包含完整的维护源文件（含脚本、测试和 workflow），以便阅读网站继续从中构建。每次推送前，用 `git log --format='%an <%ae> | %cn <%ce>'` 确认每个新提交都使用 noreply 邮箱和账号名，而不是个人姓名。
 

@@ -59,7 +59,7 @@ def fingerprint(root: Path) -> str:
         require(not path.is_symlink(), "BROWSER_SYMLINK_FORBIDDEN")
         if path.is_file():
             name = path.relative_to(root).as_posix()
-            require(name.endswith(".html") or name == "assets/site.css" or (name.startswith(("assets/maps/", "assets/art/")) and name.endswith(".svg")) or (name.startswith("assets/illustrations/") and name.endswith(".jpg")),
+            require(name.endswith(".html") or name in {"assets/site.css", "assets/lang.js"} or (name.startswith(("assets/maps/", "assets/art/")) and name.endswith(".svg")) or (name.startswith("assets/illustrations/") and name.endswith(".jpg")),
                     "BROWSER_UNEXPECTED_SITE_FILE")
             digest.update(name.encode() + b"\0" + path.read_bytes())
     return digest.hexdigest()
@@ -77,16 +77,18 @@ def layout(page) -> None:
         main: document.querySelectorAll('main').length,
         article: document.querySelectorAll('article.reading-body').length,
         images: [...document.images].every(img => img.complete && img.naturalWidth > 0 && img.alt.trim() && ['file:', location.protocol].includes(new URL(img.currentSrc).protocol)),
-        active: document.querySelectorAll('script,iframe,form,input').length
+        active: document.querySelectorAll('iframe,form,input').length,
+        scripts: [...document.scripts].map(script => script.getAttribute('src') || 'inline')
       };
     }""")
     require(state["loaded"] and bool(state["accent"]), "BROWSER_CSS_NOT_LOADED")
     require(not state["overflow"], "BROWSER_HORIZONTAL_OVERFLOW")
     require(state["main"] == state["article"] == 1, "BROWSER_STRUCTURE_INVALID")
     require(state["active"] == 0, "BROWSER_ACTIVE_CONTENT")
+    require(len(state["scripts"]) == 1 and state["scripts"][0].endswith("assets/lang.js"), "BROWSER_UNEXPECTED_SCRIPT")
     require(state["images"], "BROWSER_IMAGE_NOT_LOADED")
     policy = page.locator('meta[http-equiv="Content-Security-Policy"]').get_attribute("content")
-    require("script-src 'none'" in (policy or ""), "BROWSER_CSP_MISSING")
+    require("script-src 'self'" in (policy or "") and "unsafe" not in (policy or ""), "BROWSER_CSP_MISSING")
 
 
 def toggle_by_keyboard(page, selector: str) -> None:

@@ -39,6 +39,7 @@ else:
 
 SITE_FORMAT = "project-covenant-static-site/v1"
 SITE_CSS_PATH = "assets/site.css"
+SITE_JS_PATH = site_reader.SITE_JS_PATH
 MAX_SITE_FILES = publication_export.MAX_FILES
 MAX_SITE_FILE_BYTES = 8 * 1024 * 1024
 MAX_SITE_TOTAL_BYTES = 100 * 1024 * 1024
@@ -77,6 +78,7 @@ NAVIGATION = (
 )
 
 SITE_CSS = site_reader.SITE_CSS
+SITE_JS = site_reader.LANG_JS
 
 
 class SiteBuildError(RuntimeError):
@@ -141,7 +143,7 @@ def source_path_to_output(source_path: str) -> str:
 def _page_map(source_paths: list[str]) -> dict[str, str]:
     result: dict[str, str] = {}
     portable: dict[str, str] = {}
-    all_output_paths: set[str] = {SITE_CSS_PATH}
+    all_output_paths: set[str] = {SITE_CSS_PATH, SITE_JS_PATH}
     for source in sorted(source_paths):
         output = source_path_to_output(source)
         key = _portable_key(output)
@@ -604,6 +606,17 @@ class _MarkdownRenderer:
     def inline(self, text: str) -> str:
         return _render_inline(text, self.source_path, self.output_path, self.page_map)
 
+    def _paragraph(self, lines: list[str]) -> str:
+        """Render a paragraph, marking each source line's language when lines pair up."""
+        whole = self.inline(" ".join(lines))
+        if len(lines) == 1:
+            return site_reader.bilingual_html(whole)
+        rendered = [self.inline(line) for line in lines]
+        languages = [site_reader.text_language(line) for line in rendered]
+        if "en" not in languages or "zh" not in languages:
+            return site_reader.bilingual_html(whole)
+        return " ".join(site_reader.bilingual_html(line) for line in rendered)
+
     def heading_id(self, heading: str) -> str | None:
         base = _heading_slug(heading)
         if base in self.explicit_ids:
@@ -633,7 +646,10 @@ class _MarkdownRenderer:
             else:
                 prefix = ""
             rendered_lines = [self.inline(line) for line in item.lines]
-            content = "<br>".join(rendered_lines)
+            content = "".join(
+                site_reader.bilingual_html(line + ("<br>" if index < len(rendered_lines) - 1 else ""))
+                for index, line in enumerate(rendered_lines)
+            )
             output.append(f"<li>{prefix}{content}")
             for child in item.children:
                 output.append(self.render_list(child))
@@ -687,7 +703,7 @@ class _MarkdownRenderer:
                     f' id="{html.escape(identifier, quote=True)}"' if identifier else ""
                 )
                 output.append(
-                    f"<h{level}{attribute}>{self.inline(heading_text)}</h{level}>"
+                    f"<h{level}{attribute}>{site_reader.bilingual_html(self.inline(heading_text))}</h{level}>"
                 )
                 cursor += 1
                 continue
@@ -737,7 +753,7 @@ class _MarkdownRenderer:
                             f' class="{aligns[index]}"' if aligns[index] else ""
                         )
                         table.append(
-                            f'<th scope="col"{class_attribute}>{self.inline(cell)}</th>'
+                            f'<th scope="col"{class_attribute}>{site_reader.bilingual_html(self.inline(cell))}</th>'
                         )
                     table.extend(["</tr>", "</thead>", "<tbody>"])
                     for row in rows:
@@ -747,7 +763,7 @@ class _MarkdownRenderer:
                                 f' class="{aligns[index]}"' if aligns[index] else ""
                             )
                             table.append(
-                                f"<td{class_attribute}>{self.inline(cell)}</td>"
+                                f"<td{class_attribute}>{site_reader.bilingual_html(self.inline(cell))}</td>"
                             )
                         table.append("</tr>")
                     table.extend(["</tbody>", "</table>", "</div>"])
@@ -783,7 +799,7 @@ class _MarkdownRenderer:
                     break
                 paragraph_lines.append(next_stripped)
                 cursor += 1
-            output.append(f"<p>{self.inline(' '.join(paragraph_lines))}</p>")
+            output.append(f"<p>{self._paragraph(paragraph_lines)}</p>")
 
         return "\n".join(output)
 
@@ -890,7 +906,7 @@ def _load_expected_site(
         )
 
     page_titles = {page.source_path: page.title for page in pages}
-    expected: dict[str, bytes] = {SITE_CSS_PATH: SITE_CSS, **asset_files}
+    expected: dict[str, bytes] = {SITE_CSS_PATH: SITE_CSS, SITE_JS_PATH: SITE_JS, **asset_files}
     for page in pages:
         expected[page.output_path] = _page_html(page, page_map, page_titles)
     if len(expected) > MAX_SITE_FILES:
@@ -919,7 +935,7 @@ ALLOWED_TAG_ATTRIBUTES: dict[str, set[str]] = {
     "details": {"class"},
     "summary": set(),
     "footer": {"class"},
-    "div": {"class"},
+    "div": {"class", "role", "aria-label"},
     "p": {"class"},
     "h1": {"id"},
     "h2": {"id"},
@@ -943,7 +959,9 @@ ALLOWED_TAG_ATTRIBUTES: dict[str, set[str]] = {
     "td": {"class"},
     "hr": set(),
     "br": set(),
-    "span": {"class", "aria-hidden", "role", "tabindex", "aria-label"},
+    "span": {"class", "aria-hidden", "role", "tabindex", "aria-label", "lang"},
+    "script": {"src"},
+    "button": {"type", "data-lang-choice", "aria-pressed"},
     "img": {"src", "alt", "class"},
 }
 
@@ -960,6 +978,8 @@ class _HTMLPolicyParser(HTMLParser):
         self.csp_values: list[str] = []
         self.referrer_values: list[str] = []
         self.element_counts: dict[str, int] = {}
+        self.scripts: list[str] = []
+        self.in_script = False
 
     def handle_decl(self, decl: str) -> None:
         if decl.casefold() != "doctype html":
@@ -968,6 +988,14 @@ class _HTMLPolicyParser(HTMLParser):
 
     def handle_comment(self, data: str) -> None:
         raise SiteBuildError("SITE_HTML_COMMENT_FORBIDDEN")
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag.casefold() == "script":
+            self.in_script = False
+
+    def handle_data(self, data: str) -> None:
+        if self.in_script and data.strip():
+            raise SiteBuildError("SITE_INLINE_SCRIPT_FORBIDDEN")
 
     def handle_pi(self, data: str) -> None:
         raise SiteBuildError("SITE_HTML_PROCESSING_INSTRUCTION_FORBIDDEN")
@@ -1015,6 +1043,13 @@ class _HTMLPolicyParser(HTMLParser):
             if not values.get("src") or not values.get("alt", "").strip():
                 raise SiteBuildError("SITE_IMAGE_ALT_OR_SOURCE_REQUIRED")
             self.images.append(values)
+        if tag == "script":
+            if "src" not in values:
+                raise SiteBuildError("SITE_INLINE_SCRIPT_FORBIDDEN")
+            self.scripts.append(values["src"])
+            self.in_script = True
+        if tag == "button" and (values.get("type") != "button" or values.get("data-lang-choice") not in {"zh", "en", "both"}):
+            raise SiteBuildError("SITE_BUTTON_INVALID")
         if tag == "link":
             if values.get("rel") != "stylesheet" or "href" not in values:
                 raise SiteBuildError("SITE_STYLESHEET_LINK_INVALID")
@@ -1050,6 +1085,11 @@ def _normalize_site_path(current_path: str, href_path: str) -> str:
 def _validate_generated_site(files: dict[str, bytes]) -> None:
     if SITE_CSS_PATH not in files or not files:
         raise SiteBuildError("SITE_CSS_MISSING")
+    if files.get(SITE_JS_PATH) != SITE_JS:
+        raise SiteBuildError("SITE_SCRIPT_UNEXPECTED")
+    script_lower = SITE_JS.lower()
+    if any(token in script_lower for token in (b"http", b"fetch", b"xmlhttprequest", b"import", b"eval", b"websocket", b"sendbeacon", b"cookie", b"innerhtml")):
+        raise SiteBuildError("SITE_SCRIPT_REMOTE_OR_UNSAFE")
     css = files[SITE_CSS_PATH]
     css_lower = css.lower()
     if any(
@@ -1065,7 +1105,7 @@ def _validate_generated_site(files: dict[str, bytes]) -> None:
         "default-src 'none'",
         "style-src 'self'",
         "img-src 'self'",
-        "script-src 'none'",
+        "script-src 'self'",
         "connect-src 'none'",
         "object-src 'none'",
         "form-action 'none'",
@@ -1115,6 +1155,8 @@ def _validate_generated_site(files: dict[str, bytes]) -> None:
         stylesheet = _normalize_site_path(path, parser.stylesheets[0])
         if stylesheet != SITE_CSS_PATH:
             raise SiteBuildError("SITE_STYLESHEET_LINK_INVALID")
+        if len(parser.scripts) != 1 or _normalize_site_path(path, parser.scripts[0]) != SITE_JS_PATH:
+            raise SiteBuildError("SITE_SCRIPT_INVALID")
         for image in parser.images:
             parsed_image = urlsplit(image["src"])
             if parsed_image.scheme or parsed_image.netloc or parsed_image.query or parsed_image.fragment:

@@ -1,4 +1,4 @@
-"""Script-free reading chrome for already-rendered, approved site pages.
+"""Reading chrome for already-rendered, approved site pages (one local language-switch script).
 
 This module never loads repository files or fetches remote content. Every link
 is selected from the verified page map supplied by the static-site builder.
@@ -15,9 +15,10 @@ from pathlib import PurePosixPath
 from urllib.parse import quote
 
 
+SITE_JS_PATH = "assets/lang.js"
 CSP = (
     "default-src 'none'; style-src 'self'; img-src 'self'; font-src 'none'; "
-    "script-src 'none'; connect-src 'none'; object-src 'none'; frame-src 'none'; "
+    "script-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'; "
     "form-action 'none'; base-uri 'none'"
 )
 
@@ -44,6 +45,148 @@ COLLECTIONS = (
 )
 
 
+# --- Language display -------------------------------------------------------
+# Paired English/Chinese text is marked at build time so a reader can choose
+# Chinese, English, or both. Marking never removes text: with no script the
+# page shows both languages exactly as before.
+
+_CJK = re.compile(r"[㐀-䶿一-鿿豈-﫿]")
+_LATIN = re.compile(r"[A-Za-z]")
+_TAG = re.compile(r"<[^>]*>")
+_SEPARATOR = re.compile(r"\s+[|/]\s+|\s*｜\s*")
+_VOID_TAGS = {"br", "img", "hr", "meta", "link"}
+LANG_EN = "en"
+LANG_ZH = "zh-Hans"
+
+
+def text_language(fragment: str) -> str | None:
+    """Return "en", "zh", or None (neutral or genuinely mixed) for an HTML fragment."""
+    text = html.unescape(_TAG.sub(" ", fragment))
+    chinese = len(_CJK.findall(text))
+    latin = len(_LATIN.findall(text))
+    if not chinese and not latin:
+        return None
+    if not chinese:
+        return "en"
+    if not latin:
+        return "zh"
+    ratio = chinese * 3 / latin
+    if ratio >= 2.5:
+        return "zh"
+    if ratio <= 0.4:
+        return "en"
+    return None
+
+
+def _top_level_separators(fragment: str) -> list[tuple[int, int]]:
+    """Separator spans that sit outside every tag, so splitting keeps markup balanced."""
+    depth = 0
+    spans: list[tuple[int, int]] = []
+    cursor = 0
+    while cursor < len(fragment):
+        if fragment[cursor] == "<":
+            close = fragment.find(">", cursor)
+            if close < 0:
+                return []
+            tag = fragment[cursor + 1:close].strip()
+            name = re.match(r"/?([A-Za-z0-9]+)", tag)
+            if name and name.group(1).casefold() not in _VOID_TAGS and not tag.endswith("/"):
+                depth += -1 if tag.startswith("/") else 1
+            cursor = close + 1
+            continue
+        if depth == 0:
+            match = _SEPARATOR.match(fragment, cursor)
+            if match and match.end() > match.start():
+                spans.append((match.start(), match.end()))
+                cursor = match.end()
+                continue
+        cursor += 1
+    return spans if depth == 0 else []
+
+
+def _wrap(fragment: str, language: str) -> str:
+    code = LANG_EN if language == "en" else LANG_ZH
+    return f'<span class="l-{language}" lang="{code}">{fragment}</span>'
+
+
+_LABEL = re.compile(r"^(\s*)<strong>(.*?)</strong>(.*)$", re.S)
+
+
+def _split_pair(inner: str) -> tuple[str, str] | None:
+    """Split a two-language label such as "Read | 阅读：" into (English, Chinese)."""
+    separators = _top_level_separators(inner)
+    if len(separators) != 1:
+        return None
+    left, right = inner[:separators[0][0]], inner[separators[0][1]:]
+    colon = ""
+    for mark in ("：", ":"):
+        if right.endswith(mark) or left.endswith(mark):
+            colon = mark
+    left, right = left.rstrip("：:"), right.rstrip("：:")
+    languages = (text_language(left), text_language(right))
+    if languages == ("en", "zh"):
+        english, chinese = left, right
+    elif languages == ("zh", "en"):
+        english, chinese = right, left
+    else:
+        return None
+    return english + (":" if colon else ""), chinese + ("：" if colon else "")
+
+
+def bilingual_html(fragment: str) -> str:
+    """Mark one rendered line (or heading/cell) by language, splitting "EN | 中文" pairs."""
+    stripped = fragment.strip()
+    if not stripped:
+        return fragment
+    label = _LABEL.match(fragment)
+    if label:
+        pair = _split_pair(label.group(2))
+        if pair:
+            english, chinese = pair
+            marked_label = (f'<span class="l-bi"><strong>{label.group(2)}</strong></span>'
+                            f'<span class="l-en1" lang="{LANG_EN}"><strong>{english}</strong></span>'
+                            f'<span class="l-zh1" lang="{LANG_ZH}"><strong>{chinese}</strong></span>')
+            rest = label.group(3)
+            if not rest.strip():
+                return label.group(1) + marked_label + rest
+            rest_language = text_language(rest)
+            if rest_language and not _top_level_separators(rest):
+                return label.group(1) + _wrap(marked_label + rest, rest_language)
+            return label.group(1) + marked_label + bilingual_html(rest)
+    separators = _top_level_separators(fragment)
+    if separators:
+        parts: list[str] = []
+        glue: list[str] = []
+        start = 0
+        for left, right in separators:
+            parts.append(fragment[start:left])
+            glue.append(fragment[left:right])
+            start = right
+        parts.append(fragment[start:])
+        languages = [text_language(part) for part in parts]
+        if all(languages) and "en" in languages and "zh" in languages:
+            if len(parts) == 2 and languages[0] != languages[1]:
+                return (_wrap(parts[0], languages[0]) + f'<span class="l-sep">{glue[0]}</span>'
+                        + _wrap(parts[1], languages[1]))
+            english = " · ".join(part.strip() for part, lang in zip(parts, languages) if lang == "en")
+            chinese = " · ".join(part.strip() for part, lang in zip(parts, languages) if lang == "zh")
+            return (f'<span class="l-bi">{fragment}</span>'
+                    f'<span class="l-en1" lang="{LANG_EN}">{english}</span>'
+                    f'<span class="l-zh1" lang="{LANG_ZH}">{chinese}</span>')
+    language = text_language(fragment)
+    return _wrap(fragment, language) if language else fragment
+
+
+def bilingual_label(text: str) -> str:
+    """Escape a plain chrome label such as "Home | 首页" and mark its languages."""
+    return bilingual_html(html.escape(text))
+
+
+def strip_single_language_copies(fragment: str) -> str:
+    """Remove the extra one-language copies so outlines and timings count text once."""
+    return re.sub(r'<span class="l-(?:en1|zh1)" lang="[^"]+">.*?</span>', "", fragment, flags=re.S)
+
+
 @dataclass(frozen=True)
 class Heading:
     identifier: str
@@ -61,9 +204,12 @@ class _OutlineParser(HTMLParser):
         self.pending_anchor = ""
         self.active: tuple[str, str, int] | None = None
         self.parts: list[str] = []
+        self.copy_depth = 0
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         values = dict(attrs)
+        if tag == "span" and (self.copy_depth or values.get("class") in {"l-en1", "l-zh1"}):
+            self.copy_depth += 1
         identifier = values.get("id") or ""
         if identifier:
             self.ids.add(identifier)
@@ -79,6 +225,9 @@ class _OutlineParser(HTMLParser):
             self.parts.append(" ")
 
     def handle_endtag(self, tag: str) -> None:
+        if tag == "span" and self.copy_depth:
+            self.copy_depth -= 1
+            return
         if self.active and tag == self.active[0]:
             _, identifier, level = self.active
             title = " ".join("".join(self.parts).split())
@@ -88,6 +237,8 @@ class _OutlineParser(HTMLParser):
             self.parts = []
 
     def handle_data(self, data: str) -> None:
+        if self.copy_depth:
+            return
         if self.active:
             self.parts.append(data)
         elif data.strip():
@@ -113,7 +264,7 @@ def _link(href: str, label: str, *, css: str = "", current: bool = False) -> str
     attributes = f' class="{html.escape(css, quote=True)}"' if css else ""
     if current:
         attributes += ' aria-current="page"'
-    return f'<a href="{html.escape(href, quote=True)}"{attributes}>{html.escape(label)}</a>'
+    return f'<a href="{html.escape(href, quote=True)}"{attributes}>{bilingual_label(label)}</a>'
 
 
 def collection_order(source: str, page_map: dict[str, str]) -> list[str]:
@@ -161,7 +312,7 @@ def _chapter_nav(source: str, output: str, page_map: dict[str, str], titles: dic
         "<li>" + _link(_href(output, page_map[path]), _title(path, titles), current=source == path) + "</li>"
         for path in ordered
     )
-    return '<div class="sidebar-label">In this collection | 本栏篇目</div><nav class="chapter-nav" aria-label="Collection contents | 栏目目录"><ol>' + links + "</ol></nav>"
+    return '<div class="sidebar-label">' + bilingual_label("In this collection | 本栏篇目") + '</div><nav class="chapter-nav" aria-label="Collection contents | 栏目目录"><ol>' + links + "</ol></nav>"
 
 
 def _pager(source: str, output: str, page_map: dict[str, str], titles: dict[str, str]) -> str:
@@ -175,7 +326,7 @@ def _pager(source: str, output: str, page_map: dict[str, str], titles: dict[str,
         if 0 <= position < len(ordered):
             target = ordered[position]
             href = html.escape(_href(output, page_map[target]), quote=True)
-            links.append(f'<a class="{css}" href="{href}"><span class="pager-label">{label}</span><strong>{html.escape(_title(target, titles))}</strong></a>')
+            links.append(f'<a class="{css}" href="{href}"><span class="pager-label">{bilingual_label(label)}</span><strong>{bilingual_label(_title(target, titles))}</strong></a>')
     return '<nav class="reading-pager" aria-label="Continue reading | 继续阅读">' + "\n".join(links) + "</nav>"
 
 
@@ -188,7 +339,7 @@ def _home_intro(output: str, page_map: dict[str, str]) -> str:
         if hub not in page_map:
             continue
         href = html.escape(_href(output, page_map[hub]), quote=True)
-        cards.append(f'<a class="collection-card" href="{href}"><span class="collection-number">{index:02d}</span><strong>{html.escape(label)}</strong><span class="collection-description">{html.escape(description)}</span></a>')
+        cards.append(f'<a class="collection-card" href="{href}"><span class="collection-number">{index:02d}</span><strong>{bilingual_label(label)}</strong><span class="collection-description">{bilingual_label(description)}</span></a>')
     return ('<div class="book-intro"><div class="eyebrow">A READING LIBRARY · 阅读资料库</div>'
             '<div class="book-tagline">One story. Many ways to explore.<br>一条故事线，多种研读路径。</div>'
             '<p>Begin with a short guide, follow a reading plan, or return to a topic. Read in English or Chinese, and keep each guide’s Draft status and source notes in view.</p>'
@@ -210,7 +361,7 @@ def is_core_study(source: str) -> bool:
 
 def reading_time(body: str, *, include_short: bool = False) -> str:
     """A declared reading aid, estimating one language rather than adding both."""
-    text = html.unescape(re.sub(r"<[^>]*>", " ", body))
+    text = html.unescape(re.sub(r"<[^>]*>", " ", strip_single_language_copies(body)))
     english_words = len(re.findall(r"[A-Za-z]+(?:['’][A-Za-z]+)*", text))
     chinese_characters = len(re.findall(r"[\u3400-\u9fff]", text))
     minutes = max(english_words / 200, chinese_characters / 350)
@@ -234,13 +385,13 @@ def render_page(source: str, output: str, title: str, body: str,
     ordered = collection_order(source, page_map)
     position = f'{ordered.index(source) + 1:02d} / {len(ordered):02d}' if source in ordered else ""
     collection_label = next((label for folder, label, _ in COLLECTIONS if PurePosixPath(source).parent.as_posix() == folder), "Reading library | 阅读资料库")
-    metadata = f'<div class="reading-meta"><span class="reading-collection">{html.escape(collection_label)}</span><span class="reading-position">{position}</span></div>'
+    metadata = f'<div class="reading-meta"><span class="reading-collection">{bilingual_label(collection_label)}</span><span class="reading-position">{position}</span></div>'
     estimate = reading_time(body, include_short=is_core_study(source))
     if estimate:
-        metadata += '<p class="reading-time">' + html.escape(estimate) + '</p>'
+        metadata += '<p class="reading-time">' + bilingual_label(estimate) + '</p>'
     intro = _home_intro(output, page_map) if source == "README.md" else ""
-    mobile_toc = '<details class="mobile-toc"><summary>On this page | 本页目录</summary>' + toc + '</details>' if toc else ""
-    right_toc = '<aside class="outline-sidebar"><div class="sidebar-label">On this page | 本页目录</div>' + toc + '</aside>' if toc else '<div class="outline-sidebar"></div>'
+    mobile_toc = '<details class="mobile-toc"><summary>' + bilingual_label("On this page | 本页目录") + '</summary>' + toc + '</details>' if toc else ""
+    right_toc = '<aside class="outline-sidebar"><div class="sidebar-label">' + bilingual_label("On this page | 本页目录") + '</div>' + toc + '</aside>' if toc else '<div class="outline-sidebar"></div>'
     policy_links = []
     for path, label in (("PUBLICATION_POLICY.md", "Privacy | 隐私与发布"), ("LICENSE.md", "Licensing | 授权说明")):
         if path in page_map:
@@ -254,16 +405,18 @@ def render_page(source: str, output: str, title: str, body: str,
 <meta http-equiv="Content-Security-Policy" content="{CSP}">
 <title>{html.escape(title)} · Project Covenant</title>
 <link rel="stylesheet" href="{html.escape(_href(output, css_path), quote=True)}">
+<script src="{html.escape(_href(output, SITE_JS_PATH), quote=True)}"></script>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content | 跳到正文</a>
 <header class="site-header"><div class="header-inner">
 <a class="site-title" href="{html.escape(home, quote=True)}"><span class="site-mark" aria-hidden="true">C</span>Project Covenant <span class="site-subtitle">圣约计划</span></a>
-<span class="header-note">Read at your own pace | 按自己的节奏阅读</span>
+<span class="header-note">{bilingual_label("Read at your own pace | 按自己的节奏阅读")}</span>
+<div class="lang-switch" role="group" aria-label="Language | 语言"><button type="button" data-lang-choice="zh" aria-pressed="false">中文</button><button type="button" data-lang-choice="en" aria-pressed="false">EN</button><button type="button" data-lang-choice="both" aria-pressed="false">中英</button></div>
 </div></header>
-<div class="mobile-navigation"><details><summary>Library &amp; chapters | 资料与篇目</summary>{library}{chapter_nav}</details></div>
+<div class="mobile-navigation"><details><summary>{bilingual_label("Library & chapters | 资料与篇目")}</summary>{library}{chapter_nav}</details></div>
 <div class="reading-layout">
-<aside class="library-sidebar"><div class="sidebar-label">Explore | 浏览资料</div>{library}{chapter_nav}<div class="sidebar-note">No account. No tracking.<br>无需账号，不记录阅读行为。</div></aside>
+<aside class="library-sidebar"><div class="sidebar-label">{bilingual_label("Explore | 浏览资料")}</div>{library}{chapter_nav}<div class="sidebar-note"><span class="l-en" lang="en">No account. No tracking.<br></span><span class="l-zh" lang="zh-Hans">无需账号，不记录阅读行为。</span></div></aside>
 <main id="main-content" class="content" tabindex="-1">
 {metadata}
 {intro}
@@ -272,11 +425,11 @@ def render_page(source: str, output: str, title: str, body: str,
 {body}
 </article>
 {_pager(source, output, page_map, titles)}
-<div class="reading-end"><a href="#main-content">Back to top | 返回页首 ↑</a></div>
+<div class="reading-end"><a href="#main-content">{bilingual_label("Back to top | 返回页首 ↑")}</a></div>
 </main>
 {right_toc}
 </div>
-<footer class="site-footer"><div class="footer-inner"><p>Read carefully. Keep the sources close. | 细读正文，保留来源。</p><p>No analytics, forms, comments, or remote assets. | 不使用分析追踪、表单、评论或远程资源。</p><nav aria-label="Publication information | 发布说明">{' · '.join(policy_links)}</nav></div></footer>
+<footer class="site-footer"><div class="footer-inner"><p>{bilingual_label("Read carefully. Keep the sources close. | 细读正文，保留来源。")}</p><p>{bilingual_label("No analytics, forms, comments, or remote assets. | 不使用分析追踪、表单、评论或远程资源。")}</p><nav aria-label="Publication information | 发布说明">{' · '.join(policy_links)}</nav></div></footer>
 </body>
 </html>
 '''
@@ -423,6 +576,41 @@ summary { cursor: pointer; padding: .75rem .9rem; font-size: .8rem; color: var(-
 """.encode("utf-8")
 
 
+# The only script: a local language switch. It makes no network request and
+# stores nothing but the reader's chosen display mode in this browser.
+LANG_JS = """\
+(function () {
+  "use strict";
+  var KEY = "project-covenant-language";
+  var MODES = ["zh", "en", "both"];
+  var root = document.documentElement;
+  function saved() { try { return window.localStorage.getItem(KEY); } catch (error) { return null; } }
+  function remember(mode) { try { window.localStorage.setItem(KEY, mode); } catch (error) { return; } }
+  function apply(mode) {
+    if (MODES.indexOf(mode) < 0) { mode = "both"; }
+    root.setAttribute("data-lang", mode);
+    root.setAttribute("lang", mode === "en" ? "en" : "zh-Hans");
+    var buttons = document.querySelectorAll("[data-lang-choice]");
+    for (var index = 0; index < buttons.length; index += 1) {
+      buttons[index].setAttribute("aria-pressed", String(buttons[index].getAttribute("data-lang-choice") === mode));
+    }
+  }
+  root.classList.add("lang-ready");
+  apply(saved());
+  document.addEventListener("DOMContentLoaded", function () {
+    apply(root.getAttribute("data-lang"));
+    document.addEventListener("click", function (event) {
+      var button = event.target && event.target.closest ? event.target.closest("[data-lang-choice]") : null;
+      if (!button) { return; }
+      var mode = button.getAttribute("data-lang-choice");
+      apply(mode);
+      remember(mode);
+    });
+  });
+}());
+""".encode("utf-8")
+
+
 SITE_CSS += b"""
 .study-illustration { display: block; max-width: 100%; width: auto; max-height: 36rem; height: auto; margin: 1.25rem auto; }
 .map-viewport { display: block; width: 100%; max-width: 100%; overflow-x: auto; border: 1px solid var(--line); background: #fff; margin: 1.25rem 0; }
@@ -485,4 +673,22 @@ p:has(> a[href="#week-index"]:first-child) { font-size: .8rem; line-height: 1.8;
 p:has(> a[href="#week-index"]:first-child) a { text-decoration: none; padding: .15rem .1rem; }
 p:has(> a[href="#week-index"]:first-child) a:hover { text-decoration: underline; }
 @media print { .study-art { box-shadow: none; max-height: 90mm; width: auto; } .reading-body h2::before { display: none; } p:has(> a[href="#week-index"]:first-child) { display: none; } }
+"""
+
+# Language display: both languages by default; the local switch narrows it.
+SITE_CSS += b"""
+.l-en1, .l-zh1 { display: none; }
+html[data-lang="en"] .l-zh, html[data-lang="en"] .l-sep, html[data-lang="en"] .l-bi, html[data-lang="en"] .l-zh1 { display: none; }
+html[data-lang="zh"] .l-en, html[data-lang="zh"] .l-sep, html[data-lang="zh"] .l-bi, html[data-lang="zh"] .l-en1 { display: none; }
+html[data-lang="en"] .l-en1, html[data-lang="zh"] .l-zh1 { display: inline; }
+.lang-switch { display: none; }
+html.lang-ready .lang-switch { display: inline-flex; flex: none; border: 1px solid var(--line); border-radius: 999px; padding: 2px; background: var(--background); }
+.lang-switch button { font: inherit; font-size: .75rem; line-height: 1; padding: .45rem .7rem; border: 0; border-radius: 999px; background: transparent; color: var(--muted); cursor: pointer; }
+.lang-switch button:hover { color: var(--accent); }
+.lang-switch button[aria-pressed="true"] { background: var(--accent); color: var(--surface); }
+.lang-switch button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.header-inner { gap: .75rem; }
+.header-note { margin-left: auto; }
+@media (max-width: 50rem) { .lang-switch button { padding: .4rem .55rem; } }
+@media print { .lang-switch { display: none !important; } }
 """

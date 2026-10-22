@@ -101,6 +101,20 @@ def create_current_worktree_snapshot(root: Path) -> str:
     return digest
 
 
+
+LANGUAGE_SCRIPT = re.compile(r'<script src="(?:\.\./)*assets/lang\.js"></script>')
+
+
+def without_language_script(text: str) -> str:
+    """Remove the one allowed local language-switch script tag before checking for scripts."""
+    return LANGUAGE_SCRIPT.sub("", text)
+
+
+def visible_text(page: str) -> str:
+    """Bilingual reading text with language marks removed, as shown in "both" mode."""
+    without_copies = re.sub(r'<span class="l-(?:en1|zh1)" lang="[^"]+">.*?</span>', "", page, flags=re.S)
+    return re.sub(r"<[^>]+>", "", without_copies)
+
 class _VisibleText(HTMLParser):
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
@@ -195,10 +209,10 @@ _No transcripts. | 没有逐字稿。_
         self.assertIn("<strong>Start</strong>", rendered)
         self.assertIn("<ol>", rendered)
         self.assertIn("<ul>", rendered)
-        self.assertIn("Child item<br>中文续行", rendered)
+        self.assertIn('<span class="l-en" lang="en">Child item<br></span><span class="l-zh" lang="zh-Hans">中文续行</span>', rendered)
         self.assertIn("☑", rendered)
         self.assertIn("<blockquote>", rendered)
-        self.assertIn('<th scope="col" class="align-right">Count</th>', rendered)
+        self.assertIn('<th scope="col" class="align-right"><span class="l-en" lang="en">Count</span></th>', rendered)
         self.assertIn("<pre><code>&lt;script&gt;", rendered)
         self.assertNotIn("<script>", rendered)
         self.assertIn("____ / ____", rendered)
@@ -353,9 +367,9 @@ class StaticSiteIntegrationTests(unittest.TestCase):
             report = build_site(snapshot, digest, output)
 
             self.assertEqual(2, report.page_count)
-            self.assertEqual(3, report.file_count)
+            self.assertEqual(4, report.file_count)
             self.assertEqual(
-                {"assets/site.css", "docs/guide.html", "index.html"},
+                {"assets/lang.js", "assets/site.css", "docs/guide.html", "index.html"},
                 {
                     path.relative_to(output).as_posix()
                     for path in output.rglob("*")
@@ -370,7 +384,8 @@ class StaticSiteIntegrationTests(unittest.TestCase):
             self.assertIn('id="start"', guide)
             self.assertNotIn("publication/site-content.txt", home + guide)
             self.assertNotIn("github.com", (home + guide).lower())
-            self.assertNotIn("<script", (home + guide).lower())
+            self.assertNotIn("<script", without_language_script(home + guide).lower())
+            self.assertIn('<script src="../assets/lang.js"></script>', guide)
             self.assertNotIn("http://", (home + guide).lower())
             all_output = b"".join(
                 path.read_bytes() for path in output.rglob("*") if path.is_file()
@@ -405,7 +420,7 @@ class StaticSiteIntegrationTests(unittest.TestCase):
             html = (output / "index.html").read_text(encoding="utf-8")
 
             self.assertIn("&lt;script&gt;alert(1)&lt;/script&gt;", html)
-            self.assertNotIn("<script", html.lower())
+            self.assertNotIn("<script", without_language_script(html).lower())
             self.assertIn('rel="external noopener noreferrer"', html)
             self.assertIn('referrerpolicy="no-referrer"', html)
             for directive in (
@@ -617,7 +632,7 @@ class StaticSiteIntegrationTests(unittest.TestCase):
             home = (output / "index.html").read_text(encoding="utf-8")
             self.assertIn("Project Covenant | 圣约计划", home)
             self.assertNotIn("Changed", home)
-            self.assertNotIn("<script", home.lower())
+            self.assertNotIn("<script", without_language_script(home).lower())
 
 
 class CurrentPublicationCorpusTests(unittest.TestCase):
@@ -632,7 +647,7 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             report = build_site(snapshot, digest, output)
 
             self.assertEqual(83, report.page_count)
-            self.assertEqual(149, report.file_count)
+            self.assertEqual(150, report.file_count)
             file_paths = {
                 path.relative_to(output).as_posix()
                 for path in output.rglob("*")
@@ -682,8 +697,8 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
                 self.assertNotIn(name.removesuffix(".md") + ".html", home)
             terms_page = (output / terms_output).read_text(encoding="utf-8")
             self.assertIn('href="index.html#column-index"', terms_page)
-            self.assertIn("Evangelical | 福音派", terms_page)
-            self.assertIn("How This Library Is Made | 资料库如何编写", home)
+            self.assertIn("Evangelical | 福音派", visible_text(terms_page))
+            self.assertIn("How This Library Is Made | 资料库如何编写", visible_text(home))
             self.assertNotIn("reviewed study notes", home)
             for source_path in manifest_paths:
                 if source_path in {"README.md", "CREDITS.md"} or source_path.startswith((
@@ -713,7 +728,7 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
                 page = (output / source_path_to_output(source_path)).read_text(encoding="utf-8")
                 with self.subTest(core_page=source_path):
                     self.assertIn('id="in-three-sentences"', page)
-                    self.assertIn("In Three Sentences | 三句话读懂本篇", page)
+                    self.assertIn("In Three Sentences | 三句话读懂本篇", visible_text(page))
                     self.assertIn('class="reading-time"', page)
 
             media_paths = {path for path in file_paths if path.endswith((".jpg", ".svg"))}
@@ -759,7 +774,7 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             )
             self.assertIn("CC BY-NC-SA 4.0", license_page)
             self.assertIn("MIT License", license_page)
-            self.assertIn("Material Not Relicensed Here | 本项目没有重新授权的材料", license_page)
+            self.assertIn("Material Not Relicensed Here | 本项目没有重新授权的材料", visible_text(license_page))
 
             mirror_page = (output / "STATIC_MIRROR_DEPLOYMENT.html").read_text(
                 encoding="utf-8"

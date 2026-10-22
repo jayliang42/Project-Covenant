@@ -30,13 +30,14 @@ class OfflinePackageIntegrationTests(unittest.TestCase):
             report = create_offline_package(snapshot, digest, output)
 
             self.assertEqual(2, report.page_count)
-            self.assertEqual(3, report.site_file_count)
+            self.assertEqual(4, report.site_file_count)
             self.assertEqual(report.package_bytes, output.stat().st_size)
             self.assertEqual(64, len(report.package_sha256))
             with zipfile.ZipFile(output) as archive:
                 infos = archive.infolist()
                 self.assertEqual(
                     {
+                        "project-covenant-offline/assets/lang.js",
                         "project-covenant-offline/assets/site.css",
                         "project-covenant-offline/docs/guide.html",
                         "project-covenant-offline/index.html",

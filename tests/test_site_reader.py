@@ -174,9 +174,17 @@ class ReaderTests(unittest.TestCase):
     def test_static_privacy_and_accessibility_styles(self):
         page = self.render()
         tags = ParsedPage(page).tags
-        self.assertFalse(any(tag in {'script', 'form', 'iframe', 'img', 'input'} for tag, _ in tags))
+        self.assertFalse(any(tag in {'form', 'iframe', 'img', 'input'} for tag, _ in tags))
+        scripts = [attrs for tag, attrs in tags if tag == 'script']
+        self.assertEqual(1, len(scripts))
+        self.assertTrue(dict(scripts[0])['src'].endswith('assets/lang.js'))
+        self.assertEqual(['src'], list(dict(scripts[0])))
         self.assertFalse(any(name.startswith('on') for _, attrs in tags for name in attrs))
-        self.assertIn("script-src 'none'", page)
+        self.assertIn("script-src 'self'", page)
+        self.assertNotIn("script-src 'unsafe", page)
+        script = site_reader.LANG_JS.lower()
+        for token in [b'http', b'fetch', b'xmlhttprequest', b'import', b'eval', b'cookie', b'innerhtml']:
+            self.assertNotIn(token, script)
         self.assertIn('name="referrer" content="no-referrer"', page)
         css = site_reader.SITE_CSS.lower()
         for token in [b'url(', b'@import', b'@font-face', b'http://', b'https://']:
@@ -187,6 +195,28 @@ class ReaderTests(unittest.TestCase):
     def test_rejects_inconsistent_page_map(self):
         with self.assertRaises(ValueError):
             site_reader.render_page('README.md', 'other.html', 'Home', '', self.mapping, self.sources, 'assets/site.css')
+
+
+class LanguageMarkTests(unittest.TestCase):
+    def test_pairs_lines_labels_and_mixed_headings(self):
+        mark = site_reader.bilingual_html
+        self.assertEqual('<span class="l-en" lang="en">Read slowly.</span>', mark('Read slowly.'))
+        self.assertEqual('<span class="l-zh" lang="zh-Hans">慢慢读。</span>', mark('慢慢读。'))
+        self.assertIn('<span class="l-sep"> | </span>', mark('In Three Sentences | 三句话读懂本篇'))
+        mixed = mark('Week 1 | 第 1 周｜Creation | 创造')
+        self.assertIn('<span class="l-en1" lang="en">Week 1 · Creation</span>', mixed)
+        self.assertIn('<span class="l-zh1" lang="zh-Hans">第 1 周 · 创造</span>', mixed)
+        label = mark('<strong>Language status | 语言状态:</strong> Fully bilingual.')
+        self.assertTrue(label.startswith('<span class="l-en" lang="en">'))
+        self.assertIn('<strong>语言状态：</strong>', label)
+        # A short Chinese aside does not move an English sentence into Chinese.
+        self.assertIn('l-en', mark('Many readers use the Chinese Union Version (和合本) for this.'))
+        # Markup inside a link or emphasis is never split.
+        self.assertNotIn('l-sep', mark('<a href="#x">Guide | 指南</a>'))
+
+    def test_outline_and_reading_time_count_text_once(self):
+        body = '<h2 id="a">' + site_reader.bilingual_html('Week 1 | 第 1 周｜Creation | 创造') + '</h2>'
+        self.assertEqual(['Week 1 | 第 1 周｜Creation | 创造'], [item.title for item in site_reader.outline(body)])
 
 
 class ReaderIntegrationTests(unittest.TestCase):
@@ -202,7 +232,7 @@ class ReaderIntegrationTests(unittest.TestCase):
             second = build_static_site.verify_site(snapshot, digest, root / 'site')
             self.assertEqual(first, second)
             self.assertIn('class="reading-body"', (root / 'site/docs/guide.html').read_text())
-            self.assertEqual(first.page_count + 1, first.file_count)
+            self.assertEqual(first.page_count + 2, first.file_count)
 
     def test_new_native_tags_do_not_allow_event_handlers(self):
         from scripts import build_static_site

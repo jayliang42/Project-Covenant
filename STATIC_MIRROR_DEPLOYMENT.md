@@ -28,8 +28,8 @@ Project Covenant 已能从经过复核的发布快照生成可重现的静态站
 Publish only the files produced by `scripts/build_static_site.py` from the same verified snapshot and retained content-set digest. Never upload the repository, `.git`, a recursively copied working tree, a separately edited site directory, or files outside the exact allowlist recorded in `publication/site-content.txt`.<br>
 只能发布由 `scripts/build_static_site.py` 使用同一份已验证快照及另行保存的内容集摘要生成的文件。不得上传整个仓库、`.git`、递归复制的工作区、另行编辑过的站点目录，或 `publication/site-content.txt` 精确白名单以外的文件。
 
-The first mirror must remain static and script-free. It must not add analytics, comments, forms, cookies, remote fonts, remote images, source maps, injected advertising, or links that expose an identifying maintenance account.<br>
-初版镜像必须保持纯静态且不含脚本，不得加入分析追踪、评论、表单、Cookie、远程字体、远程图片、source map、注入式广告，或暴露可识别维护账号的链接。
+The mirror must remain static. Its only script is the local language switch (`assets/lang.js`), which makes no network request and stores only the reader's display choice in the browser. It must not add analytics, comments, forms, cookies, remote fonts, remote images, source maps, injected advertising, or links that expose an identifying maintenance account.<br>
+镜像必须保持纯静态；唯一的脚本是本地语言切换（`assets/lang.js`），它不发出网络请求，只在浏览器中记住显示模式。不得加入分析追踪、评论、表单、Cookie、远程字体、远程图片、source map、注入式广告，或暴露可识别维护账号的链接。
 
 <a id="host-requirements"></a>
 ## Host Requirements | 托管要求
@@ -44,7 +44,7 @@ The generated pages need only same-origin CSS. A compatible baseline policy is s
 生成页面只需要加载同源 CSS。下面给出一组兼容的基线策略；选定托管服务后，必须在实际线上响应中测试语法和支持情况。把 `frame-ancestors` 写入 HTML meta 标签，不等同于通过 HTTP 响应头发送它。
 
 ```text
-Content-Security-Policy: default-src 'none'; style-src 'self'; img-src 'none'; font-src 'none'; script-src 'none'; connect-src 'none'; object-src 'none'; frame-src 'none'; form-action 'none'; base-uri 'none'; frame-ancestors 'none'
+Content-Security-Policy: default-src 'none'; style-src 'self'; img-src 'self'; font-src 'none'; script-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'; form-action 'none'; base-uri 'none'; frame-ancestors 'none'
 X-Content-Type-Options: nosniff
 Referrer-Policy: no-referrer
 Permissions-Policy: camera=(), microphone=(), geolocation=()
