@@ -29,7 +29,7 @@ Each “first use” link points to the page where the recommended beginner rout
 <a id="bible"></a>
 ### Bible | 圣经
 
-A collection of books that Christians read as Scripture, with different kinds of writing.
+A collection of books that Christians read as Scripture. It contains many kinds of writing, such as stories, poems, and letters.
 基督徒视为圣经的多卷书合集，包含故事、诗歌、书信等不同文体。
 
 [First use in First Steps | 入门路线首次使用](../Bible_Timeline/First_Steps_Bilingual.md#first-steps-overview)
@@ -45,8 +45,8 @@ The part of the Christian Bible that tells of creation and Israel before Jesus. 
 <a id="new-testament"></a>
 ### New Testament | 新约
 
-The Christian writings about Jesus and the early church; here the word names a collection of books.
-关于耶稣与早期教会的基督教文献；这里指一组书卷。
+The collection of twenty-seven Christian books about Jesus and the early church.
+记述耶稣与早期教会的二十七卷基督教书卷。
 
 [First use in First Steps | 入门路线首次使用](../Bible_Timeline/First_Steps_Bilingual.md#stop-jesus)
 
@@ -85,8 +85,8 @@ A committed relationship with promises and responsibilities. In the Bible, God e
 <a id="promise"></a>
 ### Promise | 应许
 
-What God commits to do; readers follow how the story carries that commitment forward.
-神承诺要做的事；阅读时可以追踪这份承诺怎样延续。
+Something God commits himself to do. Much of the Bible’s story follows how God keeps his promises over time.
+神承诺要做的事。圣经故事的许多部分，都在追踪神怎样随着时间成就祂的应许。
 
 [First use in First Steps | 入门路线首次使用](../Bible_Timeline/First_Steps_Bilingual.md#stop-covenant)
 
@@ -102,7 +102,7 @@ God gives life and good gifts so that people can live well and share good with o
 ### Faith | 信心
 
 Trusting God and responding to him, even without having every question answered.
-信任神并作出回应，不是先把所有问题解决。
+信任神并作出回应，并不需要先解决所有问题。
 
 [First use in First Steps | 入门路线首次使用](../Bible_Timeline/First_Steps_Bilingual.md#stop-covenant)
 
@@ -112,7 +112,7 @@ Trusting God and responding to him, even without having every question answered.
 <a id="grace"></a>
 ### Grace | 恩典
 
-God freely gives favor and help; people do not buy it or earn it by being impressive.
+God’s favor and help, given freely; people cannot buy it or earn it.
 神白白施恩和帮助，人不能靠交易或表现换取。
 
 [First use in First Steps | 入门路线首次使用](../Bible_Timeline/First_Steps_Bilingual.md#stop-jesus)
@@ -144,8 +144,8 @@ God rescues people from sin and death and brings them into life with him.
 <a id="redemption"></a>
 ### Redemption | 救赎
 
-Rescue described with the picture of release from slavery or debt. The surrounding passage explains the picture.
-用脱离奴役或债务来说明拯救；具体含义要看经文。
+Rescue pictured as being set free from slavery or debt. Each passage shows how the picture is being used.
+用脱离奴役或债务的图像来说明拯救；每段经文怎样使用这个图像，要看上下文。
 
 [First use in First Steps | 入门路线首次使用](../Bible_Timeline/First_Steps_Bilingual.md#stop-exodus)
 
@@ -184,7 +184,7 @@ The four New Testament books Matthew, Mark, Luke, and John. They tell of Jesus�
 <a id="kingdom"></a>
 ### Kingdom of God | 国度（神的国）
 
-God putting things right through his rule. The phrase is not simply the name of a territory.
+God’s own rule, putting things right. It is more than the name of a place.
 神掌权并使生命归正；这个词不只是一个地域名称。
 
 [First use in First Steps | 入门路线首次使用](../Bible_Timeline/First_Steps_Bilingual.md#stop-kingdom)
@@ -283,8 +283,8 @@ The movable worship tent in Israel’s wilderness story, a sign of God dwelling 
 <a id="temple"></a>
 ### Temple | 圣殿
 
-The worship center in Jerusalem in the biblical story. Different temples and building periods must not be treated as one unchanged structure.
-圣经故事中耶路撒冷的敬拜中心；不同圣殿及建造时期不能视为从未改变的同一建筑。
+The center of worship in Jerusalem in the biblical story. More than one temple stood there at different times, so they should not be treated as one unchanged building.
+圣经故事中耶路撒冷的敬拜中心。不同时期先后有过不止一座圣殿，不能把它们看成始终不变的同一座建筑。
 
 [First use in First Steps | 入门路线首次使用](../Bible_Timeline/First_Steps_Bilingual.md#stop-kingdom)
 
@@ -311,7 +311,7 @@ The festival that remembers Israel’s rescue from Egypt. The New Testament also
 ### Exodus | 出埃及
 
 Israel’s departure from slavery in Egypt in the biblical story; it is also the English name of the second book of the Bible.
-圣经故事中以色列脱离埃及奴役的经历，也是一卷圣经书的名称。
+圣经故事中以色列脱离埃及奴役的经历，也是圣经第二卷书（出埃及记）的名称。
 
 [First use in First Steps | 入门路线首次使用](../Bible_Timeline/First_Steps_Bilingual.md#stop-exodus)
 
@@ -385,8 +385,8 @@ A Jewish festival that forms the setting of Acts 2, where the Spirit equips Jesu
 <a id="new-creation"></a>
 ### New creation | 新创造
 
-God’s final renewal, with evil and death overcome and God dwelling with his people. The hope is not a date-setting exercise.
-神最终更新万有，胜过罪恶与死亡，与子民同住；这份盼望不是让人推算日期。
+God’s final renewal, with evil and death overcome and God dwelling with his people. It is a hope to live by, not a puzzle for predicting dates.
+神最终更新万有，胜过罪恶与死亡，与子民同住。这是一份让人据以生活的盼望，不是用来推算日期的谜题。
 
 [First use in First Steps | 入门路线首次使用](../Bible_Timeline/First_Steps_Bilingual.md#stop-new-creation)
 
