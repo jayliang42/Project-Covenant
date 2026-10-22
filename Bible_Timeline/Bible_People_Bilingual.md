@@ -326,6 +326,8 @@ On the island of Patmos, a servant of Jesus named John receives visions for seve
   **看整个故事：** [圣经时间线](./Bible_Timeline_Bilingual.md)把这些人物放进十二个故事阶段。
 - **Read a book | 读一卷书：** [Bible by Book](./Bible_By_Book_Bilingual.md) shows where each book fits and suggests one passage to start with.
   **读一卷书：** [按书卷梳理圣经](./Bible_By_Book_Bilingual.md)说明每卷书的位置，并推荐一段入门经文。
+- **Find a place | 查地点：** [Places of the Bible](../Maps/Bible_Places_Bilingual.md) explains where these people lived and traveled.
+  **查地点：** [圣经地名](../Maps/Bible_Places_Bilingual.md)说明这些人物生活和走过的地方。
 - **Find a reference | 查经文出处：** The [Bible Reading Toolkit](./Bible_Reading_Toolkit_Bilingual.md) explains how to find a passage such as Genesis 12:1–3.
   **查经文出处：** [读经工具箱](./Bible_Reading_Toolkit_Bilingual.md)说明怎样找到“创世记 12:1–3”这类经文。
 

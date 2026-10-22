@@ -646,14 +646,14 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
 
             report = build_site(snapshot, digest, output)
 
-            self.assertEqual(84, report.page_count)
-            self.assertEqual(184, report.file_count)
+            self.assertEqual(85, report.page_count)
+            self.assertEqual(186, report.file_count)
             file_paths = {
                 path.relative_to(output).as_posix()
                 for path in output.rglob("*")
                 if path.is_file()
             }
-            self.assertEqual(84, sum(path.endswith(".html") for path in file_paths))
+            self.assertEqual(85, sum(path.endswith(".html") for path in file_paths))
             self.assertEqual(
                 {build_static_site.SITE_CSS_PATH},
                 {path for path in file_paths if path.endswith(".css")},
@@ -669,10 +669,10 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             ]
             # One source heading-shaped line is inside a fenced Markdown example.
             self.assertEqual(
-                2435,
+                2468,
                 sum(len(re.findall(r"<h[1-6](?: |>)", text)) for text in html_texts),
             )
-            self.assertEqual(251, sum(text.count("<table>") for text in html_texts))
+            self.assertEqual(252, sum(text.count("<table>") for text in html_texts))
             self.assertEqual(24, sum(text.count("<pre><code>") for text in html_texts))
             self.assertGreaterEqual(sum(text.count("<a ") for text in html_texts), 1850)
 
@@ -732,7 +732,7 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
                     self.assertIn('class="reading-time"', page)
 
             media_paths = {path for path in file_paths if path.endswith((".jpg", ".svg"))}
-            self.assertEqual(98, len(media_paths))
+            self.assertEqual(99, len(media_paths))
             for media_path in media_paths:
                 self.assertEqual((REPO_ROOT / media_path).read_bytes(), (output / media_path).read_bytes())
             self.assertIn('href="Maps/index.html"', home)

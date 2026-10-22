@@ -2,6 +2,9 @@
 
 > Status: Draft (AI draft; not human reviewed) | 状态：Draft（AI 草稿，未人工审阅）
 
+Looking for a single place? [Places of the Bible](./Bible_Places_Bilingual.md) introduces twenty-five key places in story order and links each one to the map below that shows it.<br>
+想查某一个地方？[圣经地名](./Bible_Places_Bilingual.md)按故事顺序介绍二十五个重要地点，并链接到下方标出它的地图。
+
 <a id="maps-index"></a>
 ## Map Index | 地图索引
 

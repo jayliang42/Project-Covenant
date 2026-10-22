@@ -84,6 +84,7 @@ Christian_Traditions/01_How_to_Name_the_Groups.md
 Christian_Traditions/README.md
 Glossary/README.md
 LICENSE.md
+Maps/Bible_Places_Bilingual.md
 Maps/README.md
 PUBLICATION_POLICY.md
 README.md
@@ -136,6 +137,7 @@ assets/art/open-cage.svg
 assets/art/open-hands.svg
 assets/art/palm-road.svg
 assets/art/papyrus-codex.svg
+assets/art/parchment-map.svg
 assets/art/paul-ship.svg
 assets/art/pentecost.svg
 assets/art/potter-wheel.svg

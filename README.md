@@ -25,6 +25,7 @@ The order is narrative, not a proportional timescale. Early date ranges are deba
 | Understand denominations and theological terms | 了解宗派与神学术语 | [Christian Traditions / 基督教传统](./Christian_Traditions/README.md) |
 | Look up common Bible words | 用白话查常见圣经词语 | [Glossary / 词汇表](./Glossary/README.md) |
 | Read offline maps with bilingual place names | 阅读带双语地名的离线地图 | [Maps / 地图](./Maps/README.md) |
+| Find out where a place in the Bible is and what happened there | 查圣经中的地方在哪里、发生过什么 | [Places of the Bible / 圣经地名](./Maps/Bible_Places_Bilingual.md) |
 | Explore history and archaeology carefully | 查看史料、考古与证据边界 | [Bible Timeline Research Hub / 时间线研究中心](./Bible_Timeline/README.md) |
 | Understand the public-content boundary | 了解公开内容边界 | [Privacy and Publication Policy / 隐私与发布政策](./PUBLICATION_POLICY.md) |
 | Prepare a GitHub-independent mirror | 准备可脱离 GitHub 的阅读镜像 | [Static Mirror Deployment / 静态镜像部署](./STATIC_MIRROR_DEPLOYMENT.md) |
@@ -137,6 +138,7 @@ Project-Covenant/
 ### Maps | 地图
 
 - [Offline Bible Maps | 离线圣经地图](./Maps/README.md)
+- [Places of the Bible | 圣经地名](./Maps/Bible_Places_Bilingual.md)
 - [Credits and Licenses | 资料来源与授权](./CREDITS.md)
 
 ## Research Boundaries | 研究边界

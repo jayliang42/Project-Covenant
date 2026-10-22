@@ -1821,9 +1821,38 @@ def story_procession() -> ET.Element:
     return root
 
 
+def parchment_map() -> ET.Element:
+    root = scene("parchment-map", "An old map | 一幅旧地图",
+                 "A sheet of old parchment shows hills, a sea with waves, a winding dotted road between small towns, and a compass rose in the corner. | "
+                 "一张旧羊皮纸上画着山丘、起伏的海、连接几座小城的蜿蜒虚线道路，角落里有一个罗盘。", "#5a4630")
+    el(root, "path", d="M70 50 L730 40 L750 400 L60 410 Z", fill="#e9d6a6")
+    el(root, "path", d="M70 50 L730 40 L750 400 L60 410 Z", fill="none", stroke="#b89a62", stroke_width=6)
+    el(root, "path", d="M60 410 C 120 380, 140 300, 110 250 C 90 200, 130 140, 120 50 L70 50 Z", fill="#9cc0c8", fill_opacity=0.7)
+    for y in (120, 180, 240, 300, 360):
+        el(root, "path", d=f"M78 {y} q 8 -6 16 0 t 16 0", fill="none", stroke="#3f6c7a", stroke_width=2)
+    for x, y, size in [(330, 130, 34), (372, 120, 44), (414, 134, 30), (560, 270, 36), (600, 262, 46)]:
+        el(root, "path", d=f"M{x - size} {y + size * 0.6} L{x} {y - size * 0.6} L{x + size} {y + size * 0.6} Z", fill="#c4a777", stroke="#7a5537", stroke_width=2)
+    road = [(170, 330), (240, 300), (300, 320), (380, 260), (460, 240), (520, 300), (640, 340), (700, 300)]
+    el(root, "path", d=path(road, close=False), fill="none", stroke="#8b4b45", stroke_width=4, stroke_dasharray="10 8", stroke_linecap="round")
+    for x, y in (road[0], road[3], road[5], road[7]):
+        el(root, "rect", x=x - 10, y=y - 12, width=20, height=14, fill="#8e6644")
+        el(root, "path", d=f"M{x - 13} {y - 12} L{x} {y - 22} L{x + 13} {y - 12} Z", fill="#6b4e33")
+    cx, cy = 640, 120
+    el(root, "circle", cx=cx, cy=cy, r=46, fill="none", stroke="#7a5537", stroke_width=2)
+    for angle, length in ((0, 52), (90, 52), (180, 52), (270, 52), (45, 30), (135, 30), (225, 30), (315, 30)):
+        a = math.radians(angle - 90)
+        tip = (cx + length * math.cos(a), cy + length * math.sin(a))
+        left = (cx + 8 * math.cos(a - math.pi / 2), cy + 8 * math.sin(a - math.pi / 2))
+        right = (cx + 8 * math.cos(a + math.pi / 2), cy + 8 * math.sin(a + math.pi / 2))
+        el(root, "path", d=path([left, tip, right]), fill="#8b4b45" if angle == 0 else "#7a5537")
+    el(root, "circle", cx=cx, cy=cy, r=5, fill="#e9d6a6", stroke="#7a5537", stroke_width=2)
+    return root
+
+
 RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "papyrus-codex.svg": papyrus_codex,
     "story-procession.svg": story_procession,
+    "parchment-map.svg": parchment_map,
 }
 
 
