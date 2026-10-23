@@ -1101,8 +1101,12 @@ html:not([data-lang="en"]):not([data-lang="zh"]) .reading-body :is(h2,h3) > .l-z
 .reading-section { margin: .8rem 0; border: 1px solid var(--line); border-radius: .6rem; background: var(--surface); }
 .reading-section > summary { padding: 1rem 1.1rem; color: var(--text); }
 .reading-section > summary::marker { color: var(--accent); }
+.reading-section > summary > .anchor { display: inline; top: 0; scroll-margin-top: 6rem; }
 .reading-section > summary :is(h2,h3) { display: inline; font-size: 1rem; font-weight: 550; line-height: 1.6; margin: 0; text-wrap: pretty; }
 .reading-section > summary :is(h2,h3) > .l-zh { margin-left: 1rem; }
+html:not([data-lang="en"]):not([data-lang="zh"]) .reading-section > summary h3 > .l-bi { display: none; }
+html:not([data-lang="en"]):not([data-lang="zh"]) .reading-section > summary h3 > .l-en1 { display: inline; }
+html:not([data-lang="en"]):not([data-lang="zh"]) .reading-section > summary h3 > .l-zh1 { display: block; margin: .2em 0 0 1rem; font-size: .85em; font-weight: 450; }
 .reading-section[open] > summary { border-bottom: 1px solid var(--line); }
 .section-content { padding: 1.2rem; }
 .section-content > :last-child { margin-bottom: 0; }
