@@ -33,6 +33,7 @@ Bible_Timeline/Parables_of_Jesus_Bilingual.md
 Bible_Timeline/Prayers_in_the_Bible_Bilingual.md
 Bible_Timeline/Psalms_for_Different_Times_Bilingual.md
 Bible_Timeline/README.md
+Bible_Timeline/Sermon_on_the_Mount_Bilingual.md
 Bible_Timeline/Ten_Commandments_Bilingual.md
 Bible_Timeline/两约之间至四福音_第二圣殿与罗马背景.md
 Bible_Timeline/使徒行传与保罗书信_旅程年代与城市史料对照.md
@@ -175,6 +176,7 @@ assets/art/river-of-life.svg
 assets/art/roman-road.svg
 assets/art/royal-scepter.svg
 assets/art/ruined-city.svg
+assets/art/salt-light.svg
 assets/art/scribe-copying.svg
 assets/art/scroll-jars.svg
 assets/art/sea-crossing.svg

@@ -48,6 +48,7 @@ Short, fully bilingual guides for looking something up or reading one theme at a
 
 - [Parables of Jesus | 耶稣的比喻](./Parables_of_Jesus_Bilingual.md)
 - [Miracles of Jesus | 耶稣的神迹](./Miracles_of_Jesus_Bilingual.md)
+- [The Sermon on the Mount at a Glance | 登山宝训概览](./Sermon_on_the_Mount_Bilingual.md)
 
 <a id="topic-reading-prayer"></a>
 ### Reading and Prayer | 读经与祷告

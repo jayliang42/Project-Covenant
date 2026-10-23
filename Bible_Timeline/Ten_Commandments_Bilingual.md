@@ -86,8 +86,8 @@ The words are the same in every case; only the way they are counted differs. Whe
 When asked which commandment is greatest, Jesus quoted two other passages of the Law: love the Lord your God with all your heart, soul, and mind (Deuteronomy 6:5), and love your neighbor as yourself (Leviticus 19:18). He said that all the Law and the Prophets hang on these two (Matthew 22:37–40).<br>
 有人问耶稣哪一条诫命最大，耶稣引用了律法书中另外两处经文：要尽心、尽性、尽意爱主你的神（申命记 6:5），以及要爱人如己（利未记 19:18）。祂说，全部律法和先知的道理，都是以这两条为总纲（马太福音 22:37–40）。
 
-In the Sermon on the Mount, Jesus also showed that the commandments reach the heart: anger and contempt break the spirit of “do not murder,” and lustful looking breaks the spirit of “do not commit adultery” (Matthew 5:21–30). Paul later wrote that love does no harm to a neighbor, so love is the fulfillment of the [law](../Glossary/README.md#law) (Romans 13:8–10).<br>
-在登山宝训中，耶稣也说明诫命触及人心：怒气和轻蔑违背了“不可杀人”的精意，动淫念的眼光违背了“不可奸淫”的精意（马太福音 5:21–30）。保罗后来写道，爱是不加害于人的，所以爱就完全了[律法](../Glossary/README.md#law)（罗马书 13:8–10）。
+In the [Sermon on the Mount](./Sermon_on_the_Mount_Bilingual.md), Jesus also showed that the commandments reach the heart: anger and contempt break the spirit of “do not murder,” and lustful looking breaks the spirit of “do not commit adultery” (Matthew 5:21–30). Paul later wrote that love does no harm to a neighbor, so love is the fulfillment of the [law](../Glossary/README.md#law) (Romans 13:8–10).<br>
+在[登山宝训](./Sermon_on_the_Mount_Bilingual.md)中，耶稣也说明诫命触及人心：怒气和轻蔑违背了“不可杀人”的精意，动淫念的眼光违背了“不可奸淫”的精意（马太福音 5:21–30）。保罗后来写道，爱是不加害于人的，所以爱就完全了[律法](../Glossary/README.md#law)（罗马书 13:8–10）。
 
 <a id="next-steps"></a>
 ## What to Read Next | 下一步读什么

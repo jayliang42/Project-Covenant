@@ -2503,6 +2503,28 @@ def daily_bread() -> ET.Element:
     return root
 
 
+def salt_light() -> ET.Element:
+    root = scene("salt-light", "Salt and light | 盐和光",
+                 "On a wooden shelf, a small clay oil lamp burns on a tall stand, lighting the room, beside an open bowl heaped with white salt. | "
+                 "木架上，一盏小陶油灯放在高高的灯台上燃着，照亮屋子；旁边是一只盛满白盐的敞口碗。", "#33302e")
+    el(root, "circle", cx=402, cy=150, r=170, fill="#f2c56b", fill_opacity=0.10)
+    el(root, "path", d="M0 330 L800 330 L800 450 L0 450 Z", fill="#26221f")
+    el(root, "rect", x=140, y=310, width=520, height=22, rx=4, fill="#8e6644")
+    el(root, "path", d="M330 310 L390 310 L378 296 L342 296 Z", fill="#7a5537")
+    el(root, "rect", x=352, y=196, width=16, height=100, fill="#8e6644")
+    el(root, "path", d="M324 196 L396 196 L386 184 L334 184 Z", fill="#7a5537")
+    el(root, "path", d="M330 184 C 330 160, 380 160, 384 172 L404 166 L398 180 C 392 186, 340 188, 330 184 Z", fill="#c06a3c")
+    el(root, "circle", cx=352, cy=168, r=5, fill="#8f4a28")
+    el(root, "path", d="M402 166 C 392 146, 404 132, 400 116 C 416 132, 418 152, 402 166 Z", fill="#ef8a3a")
+    el(root, "path", d="M402 162 C 397 150, 404 142, 402 132 C 410 142, 411 154, 402 162 Z", fill="#fbe08a")
+    el(root, "path", d="M478 294 C 490 272, 520 264, 525 264 C 532 264, 560 272, 572 294 Z", fill="#f4f1ea")
+    el(root, "path", d="M462 292 L588 292 C 584 320, 466 320, 462 292 Z", fill="#6f8ea0")
+    el(root, "path", d="M462 292 L588 292", stroke="#58778a", stroke_width=4)
+    for x, y in [(500, 284), (520, 276), (545, 282)]:
+        el(root, "circle", cx=x, cy=y, r=2.5, fill="#dcd6ca")
+    return root
+
+
 RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "papyrus-codex.svg": papyrus_codex,
     "story-procession.svg": story_procession,
@@ -2535,6 +2557,7 @@ RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "reading-generations.svg": reading_generations,
     "sinai-cloud.svg": sinai_cloud,
     "daily-bread.svg": daily_bread,
+    "salt-light.svg": salt_light,
 }
 
 

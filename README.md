@@ -115,6 +115,7 @@ Project-Covenant/
 - [Feasts of the Bible | 圣经中的节期](./Bible_Timeline/Feasts_of_the_Bible_Bilingual.md)
 - [Parables of Jesus | 耶稣的比喻](./Bible_Timeline/Parables_of_Jesus_Bilingual.md)
 - [Miracles of Jesus | 耶稣的神迹](./Bible_Timeline/Miracles_of_Jesus_Bilingual.md)
+- [The Sermon on the Mount at a Glance | 登山宝训概览](./Bible_Timeline/Sermon_on_the_Mount_Bilingual.md)
 - [Key Passages to Know | 值得熟悉的经文](./Bible_Timeline/Key_Passages_Bilingual.md)
 - [Prayers in the Bible | 圣经中的祷告](./Bible_Timeline/Prayers_in_the_Bible_Bilingual.md)
 - [The Lord’s Prayer, Line by Line | 主祷文逐句读](./Bible_Timeline/Lords_Prayer_Bilingual.md)
