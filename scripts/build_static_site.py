@@ -747,7 +747,11 @@ class _MarkdownRenderer:
                             raise SiteBuildError("SITE_TABLE_COLUMN_MISMATCH")
                         rows.append(row)
                         cursor += 1
-                    table = ['<div class="table-scroll">', "<table>", "<thead>", "<tr>"]
+                    table = [
+                        '<div class="table-scroll" role="region" tabindex="0" '
+                        'aria-label="Table, scroll horizontally | 表格，可横向滚动">',
+                        "<table>", "<thead>", "<tr>",
+                    ]
                     for index, cell in enumerate(headers):
                         class_attribute = (
                             f' class="{aligns[index]}"' if aligns[index] else ""
@@ -943,10 +947,12 @@ ALLOWED_TAG_ATTRIBUTES: dict[str, set[str]] = {
     "main": {"id", "class", "tabindex"},
     "aside": {"class"},
     "article": {"class"},
-    "details": {"class"},
+    "details": {"class", "open"},
     "summary": set(),
     "footer": {"class"},
-    "div": {"class", "role", "aria-label"},
+    "figure": {"class"},
+    "figcaption": {"class"},
+    "div": {"class", "role", "aria-label", "tabindex"},
     "p": {"class", "lang"},
     "h1": {"id"},
     "h2": {"id"},
@@ -972,7 +978,7 @@ ALLOWED_TAG_ATTRIBUTES: dict[str, set[str]] = {
     "br": set(),
     "span": {"class", "aria-hidden", "role", "tabindex", "aria-label", "lang"},
     "script": {"src"},
-    "button": {"type", "data-lang-choice", "aria-pressed"},
+    "button": {"type", "data-lang-choice", "data-reader-action", "aria-pressed"},
     "img": {"src", "alt", "class"},
 }
 
@@ -1059,8 +1065,17 @@ class _HTMLPolicyParser(HTMLParser):
                 raise SiteBuildError("SITE_INLINE_SCRIPT_FORBIDDEN")
             self.scripts.append(values["src"])
             self.in_script = True
-        if tag == "button" and (values.get("type") != "button" or values.get("data-lang-choice") not in {"zh", "en", "both"}):
-            raise SiteBuildError("SITE_BUTTON_INVALID")
+        if tag == "details" and "open" in values and values["open"] != "open":
+            raise SiteBuildError("SITE_DETAILS_OPEN_INVALID")
+        if tag == "div" and "tabindex" in values and values["tabindex"] != "0":
+            raise SiteBuildError("SITE_TABINDEX_INVALID")
+        if tag == "button":
+            language = values.get("data-lang-choice")
+            reader_action = values.get("data-reader-action")
+            valid_language = language in {"zh", "en", "both"} and reader_action is None
+            valid_reader_action = reader_action in {"expand", "collapse"} and language is None
+            if values.get("type") != "button" or not (valid_language or valid_reader_action):
+                raise SiteBuildError("SITE_BUTTON_INVALID")
         if tag == "link":
             if values.get("rel") != "stylesheet" or "href" not in values:
                 raise SiteBuildError("SITE_STYLESHEET_LINK_INVALID")

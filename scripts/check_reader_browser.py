@@ -18,6 +18,8 @@ from time import monotonic, sleep
 from urllib.parse import quote, unquote, urljoin, urlsplit
 
 WIDTHS = (320, 390, 768, 1024, 1440)
+YEAR_PLAN = "Bible_Timeline/52周圣经故事线_查经与史料阅读计划.html"
+RESEARCH_PAGE = "Bible_Timeline/摩西五经_历史背景与证据边界.html"
 
 
 class BrowserCheckError(RuntimeError):
@@ -27,6 +29,16 @@ class BrowserCheckError(RuntimeError):
 def require(condition: bool, code: str) -> None:
     if not condition:
         raise BrowserCheckError(code)
+
+
+def wait_for_state(page, expression: str, code: str, argument=None) -> None:
+    """Poll via protocol evaluation without Playwright's CSP-blocked eval poller."""
+    deadline = monotonic() + 5
+    while monotonic() < deadline:
+        if page.evaluate(expression, argument):
+            return
+        sleep(0.05)
+    raise BrowserCheckError(code)
 
 
 class SiteHandler(SimpleHTTPRequestHandler):
@@ -177,6 +189,154 @@ def interactions(page, home: str, output: Path, mode: str) -> None:
             "BROWSER_SKIP_FOCUS_FAILED")
 
 
+def reading_sections(page, home: str) -> None:
+    """Exercise disclosure navigation once per protocol, including old anchors."""
+    plan = urljoin(home, quote(YEAR_PLAN))
+    page.emulate_media(color_scheme="light", reduced_motion="reduce")
+    page.set_viewport_size({"width": 390, "height": 900})
+    page.goto(plan, wait_until="load")
+    sections = page.locator("details.reading-section")
+    require(sections.count() == 52, "BROWSER_WEEK_SECTION_COUNT")
+    require(page.locator("details.reading-section[open]").count() == 0,
+            "BROWSER_SECTIONS_NOT_COLLAPSED")
+    section = sections.filter(has=page.locator('[id="week-35"]'))
+    require(section.count() == 1, "BROWSER_WEEK_ANCHOR_MISSING")
+    heading_id = section.locator("summary h3").get_attribute("id")
+    require(bool(heading_id), "BROWSER_WEEK_HEADING_ID_MISSING")
+
+    for fragment in ("week-35", heading_id):
+        page.goto(plan + "#" + quote(fragment), wait_until="load")
+        wait_for_state(page, "id => document.getElementById(id).closest('details').open",
+                       "BROWSER_DEEP_LINK_NOT_OPENED", fragment)
+        require(section.locator(".section-content").is_visible(), "BROWSER_DEEP_LINK_HIDDEN")
+        require(page.locator("details.reading-section[open]").count() == 1,
+                "BROWSER_DEEP_LINK_OPENED_UNRELATED_SECTIONS")
+
+    page.locator('[data-reader-action="expand"]').click()
+    require(page.locator("details.reading-section[open]").count() == 52,
+            "BROWSER_EXPAND_ALL_FAILED")
+    layout(page)
+    page.locator('[data-reader-action="collapse"]').click()
+    require(page.locator("details.reading-section[open]").count() == 0,
+            "BROWSER_COLLAPSE_ALL_FAILED")
+
+    # The existing week-index link must reopen a closed section even when its
+    # fragment is already current and the browser emits no hashchange event.
+    week_link = page.locator('article a[href="#week-35"]').first
+    week_link.click()
+    page.wait_for_url(plan + "#week-35")
+    require(section.evaluate("el => el.open"), "BROWSER_WEEK_LINK_DID_NOT_OPEN")
+    section.locator("summary").click()
+    require(not section.evaluate("el => el.open"), "BROWSER_SECTION_CLOSE_FAILED")
+    week_link.click()
+    require(section.evaluate("el => el.open"), "BROWSER_SAME_HASH_DID_NOT_OPEN")
+
+    page.locator('article a[href="#week-36"]').first.click()
+    page.wait_for_url(plan + "#week-36")
+    section.locator("summary").click()
+    require(not section.evaluate("el => el.open"), "BROWSER_HISTORY_SETUP_FAILED")
+    page.go_back()
+    page.wait_for_url(plan + "#week-35")
+    wait_for_state(page, "() => document.getElementById('week-35').closest('details').open",
+                   "BROWSER_HISTORY_SECTION_NOT_OPENED")
+    require(section.locator(".section-content").is_visible(), "BROWSER_HISTORY_TARGET_HIDDEN")
+
+    # Chromium's print media emulation does not emit these lifecycle events.
+    # Dispatch both events while applying real print CSS, then check restoration.
+    before_print = sections.evaluate_all("items => items.map(el => el.open)")
+    page.evaluate("window.dispatchEvent(new Event('beforeprint'))")
+    page.emulate_media(media="print")
+    require(page.locator("details.reading-section[open]").count() == 52,
+            "BROWSER_PRINT_SECTIONS_CLOSED")
+    require(sections.locator(".section-content").evaluate_all(
+        "items => items.length === 52 && items.every(el => el.getBoundingClientRect().height > 0)"),
+        "BROWSER_PRINT_CONTENT_HIDDEN")
+    require(not page.locator(".section-tools").is_visible(), "BROWSER_PRINT_CONTROLS_VISIBLE")
+    page.emulate_media(media="screen")
+    page.evaluate("window.dispatchEvent(new Event('afterprint'))")
+    require(sections.evaluate_all("items => items.map(el => el.open)") == before_print,
+            "BROWSER_PRINT_STATE_NOT_RESTORED")
+    print("browser_interaction=sections-deep-links-history-print", flush=True)
+
+
+def reading_presentation(page, home: str, output: Path, mode: str) -> None:
+    """Check the redesigned components in four representative display modes."""
+    research = urljoin(home, quote(RESEARCH_PAGE))
+    for width in (390, 1280):
+        for theme in ("light", "dark"):
+            page.set_viewport_size({"width": width, "height": 900})
+            page.emulate_media(color_scheme=theme, reduced_motion="reduce")
+            page.goto(research, wait_until="load")
+            page.locator('[data-lang-choice="both"]').click()
+            page.locator('[data-reader-action="expand"]').click()
+            layout(page)
+            maps = page.locator(".map-figure .map-viewport")
+            require(maps.count() > 0, "BROWSER_MAP_FIGURES_MISSING")
+            require(maps.evaluate_all("""items => items.every(el => {
+              const image = el.querySelector('img');
+              const target = new URL(el.href);
+              return image && image.getBoundingClientRect().width <= el.clientWidth + 1 &&
+                el.scrollWidth <= el.clientWidth + 1 && target.href === image.src &&
+                target.pathname.endsWith('.svg') && target.protocol === location.protocol &&
+                target.host === location.host;
+            })"""), "BROWSER_MAP_CLIPPED_OR_REMOTE")
+            cards = page.locator(".table-cards")
+            require(cards.count() > 0, "BROWSER_TABLE_CARDS_MISSING")
+            if width == 390:
+                require(cards.evaluate_all("items => items.every(el => el.scrollWidth <= el.clientWidth + 1)"),
+                        "BROWSER_TABLE_CARD_OVERFLOW")
+                require(cards.locator(".table-cell-label").first.is_visible(),
+                        "BROWSER_TABLE_CARD_LABEL_HIDDEN")
+            else:
+                require(not cards.locator(".table-cell-label").first.is_visible(),
+                        "BROWSER_DESKTOP_CARD_LABEL_VISIBLE")
+                for language, visible, hidden in (("both", "zh", "en"), ("en", "en", "zh")):
+                    page.locator(f'[data-lang-choice="{language}"]').click()
+                    toc = page.locator(".outline-sidebar .reader-toc")
+                    require(toc.locator(f".l-{visible}").first.is_visible(),
+                            "BROWSER_TOC_LANGUAGE_MISSING")
+                    require(not toc.locator(f".l-{hidden}").first.is_visible(),
+                            "BROWSER_TOC_DUPLICATE_LANGUAGE")
+                page.locator('[data-lang-choice="both"]').click()
+            page.evaluate("window.scrollTo(0, 1000)")
+            wait_for_state(page, "() => document.documentElement.classList.contains('reader-scrolled')",
+                           "BROWSER_READING_POSITION_NOT_UPDATED")
+            require(abs(page.locator(".site-header").bounding_box()["y"]) <= 1,
+                    "BROWSER_STICKY_HEADER_GAP")
+            require(page.locator(".floating-top").is_visible(), "BROWSER_FLOATING_TOP_HIDDEN")
+            page.screenshot(path=str(output / f"{mode}-{width}-{theme}-research.png"))
+            page.locator(".floating-top").click()
+            wait_for_state(page, "() => scrollY < 300", "BROWSER_FLOATING_TOP_FAILED")
+            print(f"browser_presentation={mode}:{width}:{theme}", flush=True)
+
+    # Follow the actual map link once, including file-mode offline navigation.
+    map_link = page.locator(".map-figure .map-viewport").first
+    target = urljoin(page.url, map_link.get_attribute("href") or "")
+    map_link.click()
+    page.wait_for_url(target)
+    require(page.locator("svg").count() == 1, "BROWSER_FULL_MAP_NOT_OPENED")
+    page.emulate_media(color_scheme="light", reduced_motion="no-preference")
+
+
+def without_javascript(browser, home: str, route_request) -> None:
+    """The complete year plan remains readable when enhancement is unavailable."""
+    context = browser.new_context(java_script_enabled=False, viewport={"width": 390, "height": 900})
+    context.route("**/*", route_request)
+    try:
+        page = context.new_page()
+        page.goto(urljoin(home, quote(YEAR_PLAN)) + "#week-35", wait_until="load")
+        require(page.locator("details.reading-section[open]").count() == 52,
+                "BROWSER_NO_JS_CONTENT_COLLAPSED")
+        require(not page.locator(".section-tools").is_visible(), "BROWSER_NO_JS_CONTROLS_VISIBLE")
+        require(page.locator("details.reading-section .section-content").evaluate_all(
+            "items => items.length === 52 && items.every(el => el.getBoundingClientRect().height > 0)"),
+            "BROWSER_NO_JS_CONTENT_HIDDEN")
+        layout(page)
+    finally:
+        context.close()
+    print("browser_interaction=no-javascript", flush=True)
+
+
 def run(site: Path, output: Path) -> dict:
     from playwright.sync_api import sync_playwright
 
@@ -231,6 +391,9 @@ def run(site: Path, output: Path) -> dict:
                         result["layout_checks"] += 1
                 home = (site / "index.html").as_uri() if mode == "file" else base + "index.html"
                 interactions(page, home, output, mode)
+                reading_sections(page, home)
+                reading_presentation(page, home, output, mode)
+                without_javascript(browser, home, route_request)
                 print(f"browser_{mode}_pages={len(pages)}", flush=True)
             context.close()
             browser.close()

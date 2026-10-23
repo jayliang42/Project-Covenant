@@ -1,12 +1,13 @@
 from __future__ import annotations
 
 import tempfile
+import re
 import unittest
 from html.parser import HTMLParser
 from pathlib import Path, PurePosixPath
 from urllib.parse import unquote, urlsplit
 
-from scripts import site_reader
+from scripts import build_static_site, site_reader
 
 
 class ParsedPage(HTMLParser):
@@ -76,6 +77,11 @@ class ReaderTests(unittest.TestCase):
     def test_outline_falls_back_to_h3_and_ignores_code(self):
         self.assertEqual([site_reader.Heading("sub", "Subsection", 3)], site_reader.outline('<pre>&lt;h2 id="fake"&gt;Code&lt;/h2&gt;</pre><h3 id="sub">Subsection</h3>'))
 
+    def test_toc_keeps_chinese_place_names_with_latin_names_visible(self):
+        toc = site_reader._toc('<h2 id="jericho">5.1 Jericho / Tell es-Sultan | 5.1 耶利哥／Tell es-Sultan</h2>')
+        self.assertIn('<span class="l-zh" lang="zh-Hans">5.1 耶利哥／Tell es-Sultan</span>', toc)
+        self.assertIn('<span class="l-en" lang="en">5.1 Jericho / Tell es-Sultan</span>', toc)
+
     def test_no_toc_when_document_has_no_linkable_sections(self):
         page = self.render(body='<h1>Guide</h1><p>Text</p>')
         self.assertNotIn('class="reader-toc"', page)
@@ -133,13 +139,136 @@ class ReaderTests(unittest.TestCase):
                 '<table><tbody><tr><td><a href="../Glossary/index.html">Glossary</a></td></tr></tbody></table>\n</div>\n')
         self.assertIn('Route Guide | 路线导航', self.render(body=body))
 
-    def test_partial_language_status_moves_into_header_note(self):
+    def test_partial_language_status_moves_to_end_note_without_losing_the_boundary(self):
         body = ('<h1 id="guide">Guide | 指南</h1>\n<blockquote>\n<p><strong>Language status | 语言状态：</strong> '
-                'Paired research draft. / 中英对照研究草稿。</p>\n</blockquote>\n<h2 id="a">A | 甲</h2>\n')
+                'Paired research draft; translation is not a new source-verification result. / '
+                '中英对照研究草稿；补译不等于重新核实来源。</p>\n</blockquote>\n<h2 id="a">A | 甲</h2>\n<p>Body.</p>\n')
         page = self.render(body=body)
-        self.assertIn('<div class="page-note">', page)
-        article = page[page.index('<article'):]
-        self.assertLess(article.index('class="page-note"'), article.index('</header>'))
+        article = page[page.index('<article'):page.index('</article>')]
+        header = article[:article.index('</header>')]
+        self.assertNotIn('Language status', header)
+        self.assertNotIn('语言状态', header)
+        self.assertIn('<details class="editorial-note">', article)
+        self.assertGreater(article.index('class="editorial-note"'), article.index('<p>Body.</p>'))
+        self.assertIn('translation is not a new source-verification result', article)
+        self.assertIn('补译不等于重新核实来源', article)
+
+    def test_mixed_book_facts_keep_facts_in_body_and_language_note_at_end(self):
+        body = ('<h1 id="guide">Guide | 指南</h1>\n'
+                '<blockquote>\n<p>Summary. | 摘要。</p>\n</blockquote>\n'
+                '<blockquote>\n<p>Edition: 2020. | 版本：2020。</p>\n'
+                '<p>Language status | 语言状态: Paired draft. / 对照草稿。</p>\n</blockquote>\n'
+                '<h2 id="a">A | 甲</h2>\n<p>Body.</p>\n')
+        page = self.render(source="Book_Studies/guide.md", body=body)
+        article = page[page.index('<article'):page.index('</article>')]
+        self.assertIn('<div class="book-facts">\n<p>Edition: 2020. | 版本：2020。</p>', article)
+        self.assertEqual(1, article.count('Edition: 2020.'))
+        self.assertGreater(article.index('Language status'), article.index('<p>Body.</p>'))
+
+    def test_long_research_sections_keep_headings_content_and_all_anchor_ids(self):
+        body = ('<h1 id="guide">Guide | 指南</h1>\n<h2 id="research">Research | 研究</h2>\n'
+                '<a id="evidence-a" class="anchor" aria-hidden="true"></a>\n'
+                '<h3 id="entry-a">Entry A | 条目甲</h3>\n<p>' + 'alpha ' * 2000 + '</p>\n'
+                '<h4 id="source-a">Source A | 来源甲</h4>\n<p>Source boundary. | 来源边界。</p>\n'
+                '<a id="evidence-b" class="anchor" aria-hidden="true"></a>\n'
+                '<h3 id="entry-b">Entry B | 条目乙</h3>\n<p>' + 'beta ' * 2000 + '</p>\n'
+                '<h2 id="conclusion">Conclusion | 结论</h2>\n<p>Conclusion stays visible.</p>\n')
+        page = self.render(body=body)
+        article = page[page.index('<article'):page.index('</article>')]
+        self.assertEqual(2, article.count('<details class="reading-section" open="open">'))
+        self.assertEqual(ParsedPage(body).ids, ParsedPage(article).ids)
+        self.assertEqual(6, len(re.findall(r'<h[1-6](?: |>)', article)))
+        self.assertEqual(2000, article.count('alpha '))
+        self.assertEqual(2000, article.count('beta '))
+        self.assertIn('</details>\n<h2 id="conclusion">', article)
+        self.assertIn('data-reader-action="expand"', article)
+        self.assertIn('data-reader-action="collapse"', article)
+
+    def test_short_article_subsections_are_not_folded(self):
+        body = '<h1 id="guide">Guide | 指南</h1>\n<h3 id="short">Short | 简短</h3>\n<p>A brief explanation.</p>\n'
+        self.assertNotIn('class="reading-section"', self.render(body=body))
+
+    def test_map_figure_preserves_image_sources_and_limits_with_a_local_full_size_link(self):
+        mapping = {**self.mapping, "assets/maps/example.svg": "assets/maps/example.svg", "CREDITS.md": "CREDITS.html"}
+        body = build_static_site.render_markdown_body(
+            "Bible_Timeline/First_Steps_Bilingual.md",
+            '# Guide | 指南\n\n'
+            '<a id="map-example"></a>\n\n## Map | 地图\n\n'
+            '![Map with disputed locations / 地点有争议的地图](../assets/maps/example.svg)\n\n'
+            'Locations are disputed.\n地点有争议。\n\n'
+            '**Sources | 来源：** [Source / 来源](https://example.org/source) · '
+            '[Credits | 署名](../CREDITS.md)\n\n'
+            '[Open the full-size map | 打开完整大图](../assets/maps/example.svg)\n\n'
+            '## After map | 地图之后\n', mapping,
+        )
+        page = self.render(body=body, mapping=mapping)
+        figure = re.search(r'<figure class="map-figure">.*?</figure>', page, re.S).group(0)
+        self.assertIn('<a class="map-viewport" href="../assets/maps/example.svg"><img ', figure)
+        self.assertEqual(1, figure.count('<img '))
+        self.assertIn('alt="Map with disputed locations / 地点有争议的地图"', figure)
+        caption = figure[figure.index('<figcaption>'):]
+        self.assertIn('Locations are disputed.', caption)
+        self.assertIn('地点有争议。', caption)
+        self.assertIn('href="https://example.org/source" rel="external noopener noreferrer" referrerpolicy="no-referrer"', caption)
+        self.assertIn('href="../CREDITS.html"', caption)
+        self.assertNotIn('Open the full-size map', caption)
+        self.assertIn('View full-size map', caption)
+        self.assertIn('查看大图', caption)
+        self.assertIn('id="map-example"', page)
+
+    def test_wide_table_cards_retain_bilingual_column_labels_and_cell_values(self):
+        body = build_static_site.render_markdown_body(
+            "README.md", '# Guide | 指南\n\n'
+            '| Evidence / 证据 | Supports / 支持 | Limits / 限制 |\n| --- | --- | --- |\n'
+            '| Tablet / 泥版 | Place / 地点 | No route / 不证明路线 |\n'
+            '| Scroll / 书卷 | Text / 文本 | No event / 不证明事件 |\n', self.mapping,
+        )
+        page = self.render(body=body)
+        article = page[page.index('<article'):page.index('</article>')]
+        self.assertIn('class="table-scroll table-cards" role="region" tabindex="0"', article)
+        self.assertEqual(1, article.count('<table>'))
+        self.assertEqual(6, article.count('class="table-cell-label" aria-hidden="true"'))
+        self.assertEqual(6, article.count('class="table-cell-value"'))
+        labels = re.findall(r'<span class="table-cell-label" aria-hidden="true">(.*?)</span><span class="table-cell-value">', article, re.S)
+        self.assertEqual(6, len(labels))
+        self.assertIn('<span class="l-en" lang="en">Evidence</span>', labels[0])
+        self.assertIn('<span class="l-zh" lang="zh-Hans">证据</span>', labels[0])
+        self.assertEqual(labels[:3], labels[3:])
+        self.assertEqual(1, article.count('No route'))
+        self.assertEqual(1, article.count('不证明路线'))
+        self.assertEqual(1, article.count('No event'))
+
+    def test_visual_table_labels_do_not_duplicate_focusable_links(self):
+        body = ('<div class="table-scroll">\n<table><thead><tr>'
+                '<th><a href="#date">Date | 年代</a></th><th>B</th><th>C</th>'
+                '</tr></thead><tbody><tr><td>One</td><td>Two</td><td>Three</td>'
+                '</tr></tbody></table>\n</div>')
+        shaped = site_reader._reading_tables(body)
+        self.assertEqual(1, shaped.count('href="#date"'))
+        self.assertIn('<span class="table-cell-label" aria-hidden="true">Date | 年代</span>', shaped)
+
+    def test_two_column_tables_keep_the_scrollable_table_layout(self):
+        body = build_static_site.render_markdown_body(
+            "README.md", '# Guide | 指南\n\n| Term / 术语 | Meaning / 含义 |\n| --- | --- |\n| One / 一 | First / 第一 |\n', self.mapping,
+        )
+        page = self.render(body=body)
+        self.assertIn('class="table-scroll" role="region" tabindex="0"', page)
+        self.assertNotIn('class="table-cell-label"', page)
+
+    def test_section_index_keeps_all_ids_and_only_drops_in_page_navigation(self):
+        for identifier in ('section-index', 'route-table'):
+            with self.subTest(identifier=identifier):
+                body = ('<h1 id="guide">Guide | 指南</h1>\n'
+                        f'<a id="{identifier}-alias" class="anchor" aria-hidden="true"></a>\n'
+                        f'<h2 id="{identifier}">Index | 索引</h2>\n'
+                        '<div class="table-scroll" role="region" tabindex="0" aria-label="Table">\n'
+                        '<table><tbody><tr><td><a href="#a">A</a></td></tr></tbody></table>\n</div>\n'
+                        '<h2 id="a">A | 甲</h2>\n')
+                article = self.render(body=body)
+                self.assertNotIn('<table>', article)
+                self.assertTrue(ParsedPage(body).ids.issubset(ParsedPage(article).ids))
+                external = body.replace('href="#a"', 'href="../Glossary/index.html"')
+                self.assertIn('<table>', self.render(body=external))
 
     def test_reading_time_counts_one_language_and_omits_short_pages(self):
         self.assertEqual("", site_reader.reading_time("<p>A short page.</p>"))

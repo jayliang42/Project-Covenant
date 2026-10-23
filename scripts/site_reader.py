@@ -317,11 +317,18 @@ def _toc(body: str) -> str:
     headings = outline(body)
     if not headings:
         return ""
-    links = "\n".join(
-        "<li>" + _link("#" + quote(item.identifier, safe="-._~:"), item.title) + "</li>"
-        for item in headings
-    )
-    return '<nav class="reader-toc" aria-label="On this page | 本页目录"><ul>' + links + "</ul></nav>"
+    links: list[str] = []
+    for item in headings:
+        # Place names can contain Latin words on both sides (e.g. Tell
+        # es-Sultan). A clear EN | 中文 heading should not depend on ratios.
+        pair = re.split(r"\s+\|\s+", item.title)
+        label = bilingual_label(item.title)
+        if len(pair) == 2 and not _CJK.search(pair[0]) and _CJK.search(pair[1]):
+            label = (_wrap(html.escape(pair[0]), "en") + '<span class="l-sep"> | </span>'
+                     + _wrap(html.escape(pair[1]), "zh"))
+        href = "#" + quote(item.identifier, safe="-._~:")
+        links.append('<li><a href="' + html.escape(href, quote=True) + '">' + label + '</a></li>')
+    return '<nav class="reader-toc" aria-label="On this page | 本页目录"><ul>' + '\n'.join(links) + "</ul></nav>"
 
 
 def _stacked_label(text: str) -> str:
@@ -475,8 +482,8 @@ _ILLUSTRATION_NOTE = re.compile(
     r'<a href="[^"]*CREDITS\.html#original-illustrations">About the illustrations \| 插画说明</a></p>\n'
 )
 _ROUTE_GUIDE = re.compile(
-    r'(?P<anchors>(?:' + _ANCHOR + r')*)<h2 id="(?P<id>route-guide[^"]*)">.*?</h2>\n'
-    r'<div class="table-scroll">\n(?P<table><table>.*?</table>)\n</div>\n', re.S
+    r'(?P<anchors>(?:' + _ANCHOR + r')*)<h2 id="(?P<id>(?:route-guide|section-index|route-table)[^"]*)">.*?</h2>\n'
+    r'<div class="table-scroll"[^>]*>\n(?P<table><table>.*?</table>)\n</div>\n', re.S
 )
 _BACK_LINKS = re.compile(r'<p>(?P<links>(?:<a href="[^"]*">[^<]*</a>(?: · )?)+)</p>\n?$')
 _LABEL_PARAGRAPH = re.compile(r'<p>(<span class="l-bi"><strong>[^<]*</strong></span>.*?)</p>', re.S)
@@ -557,13 +564,127 @@ def shape_article(body: str) -> ShapedArticle:
     limit = first_section.start() if first_section else len(after)
     head, tail = after[:limit], after[limit:]
     for match in list(_BLOCKQUOTE.finditer(head))[::-1]:
-        if not _is_language_status(match.group("inner")):
+        paragraphs = re.findall(r'<p>.*?</p>\n', match.group("inner"), re.S)
+        language_notes = [paragraph for paragraph in paragraphs if _is_language_status(paragraph)]
+        if not language_notes:
             continue
-        if _FULLY_BILINGUAL not in match.group("inner"):
-            shaped.notes = '<div class="page-note">\n' + match.group("inner") + "</div>\n" + shaped.notes
-        head = head[:match.start()] + head[match.end():]
+        inner = ''.join(language_notes)
+        if _FULLY_BILINGUAL not in inner:
+            shaped.notes = ('<details class="editorial-note"><summary>'
+                            + bilingual_label("About this text | 本文整理说明") + '</summary>\n'
+                            + inner + "</details>\n" + shaped.notes)
+        remaining = ''.join(paragraph for paragraph in paragraphs if paragraph not in language_notes)
+        replacement = '<div class="book-facts">\n' + remaining + '</div>\n' if remaining else ''
+        head = head[:match.start()] + replacement + head[match.end():]
     shaped.body = head + tail
     return shaped
+
+
+_SECTION_HEADING = re.compile(
+    r'(?P<anchors>(?:' + _ANCHOR + r')*)<h(?P<level>[1-6]) id="(?P<id>[^"]+)">'
+    r'(?P<title>.*?)</h(?P=level)>\n', re.S
+)
+
+
+def _reading_sections(body: str) -> str:
+    """Fold long, independently readable entries, keeping all original IDs/text."""
+    # The year plan uses H1 for its parts. Give it one document title and a
+    # useful H2 outline, with the original weekly H2 entries one level below.
+    if re.search(r'<h1 id="', body):
+        in_part = False
+
+        def hierarchy(match: re.Match[str]) -> str:
+            nonlocal in_part
+            level = int(match.group("level"))
+            if level == 1:
+                in_part = True
+                level = 2
+            elif in_part:
+                level = min(6, level + 1)
+            return (match.group("anchors") + f'<h{level} id="{match.group("id")}">'
+                    + match.group("title") + f'</h{level}>\n')
+
+        body = _SECTION_HEADING.sub(hierarchy, body)
+
+    estimate = reading_time(body)
+    if not estimate or int(estimate.split()[0]) < 20:
+        return body
+    headings = list(_SECTION_HEADING.finditer(body))
+    pieces: list[str] = []
+    cursor = 0
+    for index, heading in enumerate(headings):
+        level = int(heading.group("level"))
+        is_matrix = level == 2 and "Evidence Matrix" in heading.group("title")
+        if heading.start() < cursor or (level != 3 and not is_matrix):
+            continue
+        end = next((other.start() for other in headings[index + 1:]
+                    if int(other.group("level")) <= level), len(body))
+        contents = body[heading.end():end]
+        if not contents.strip():
+            continue
+        # Keep the week index and explanatory front matter open. Weekly
+        # sections and research subsections can be read independently.
+        if 'id="week-01"' in body and not re.search(r'id="week-\d\d"', heading.group("anchors")):
+            continue
+        pieces.append(body[cursor:heading.start()])
+        pieces.append('<details class="reading-section" open="open">\n<summary>'
+                      + heading.group(0) + '</summary>\n<div class="section-content">\n'
+                      + contents + '</div>\n</details>\n')
+        cursor = end
+    if not pieces:
+        return body
+    pieces.append(body[cursor:])
+    controls = ('<div class="section-tools"><p>'
+                + bilingual_label("Read one section at a time, or open the full text. | 可以逐节阅读，也可以展开全文。")
+                + '</p><div class="section-buttons"><button type="button" data-reader-action="expand">'
+                + bilingual_label("Expand all | 展开全文") + '</button>'
+                + '<button type="button" data-reader-action="collapse">'
+                + bilingual_label("Collapse sections | 收起小节") + '</button></div></div>\n')
+    return controls + ''.join(pieces)
+
+
+_MAP_PARAGRAPH = re.compile(
+    r'<p><span class="map-viewport"[^>]*>(?P<image><img [^>]*class="study-map"[^>]*>)</span></p>\n'
+    r'(?P<caption>(?:<p>(?:(?!</p>).)*</p>\n)*)', re.S
+)
+
+
+def _reading_maps(body: str) -> str:
+    """Group verified local maps and their adjacent notes; never change sources."""
+    def figure(match: re.Match[str]) -> str:
+        image = match.group("image")
+        source = re.search(r'src="([^"]+)"', image)
+        if source is None:
+            return match.group(0)
+        caption = match.group("caption")
+        caption = re.sub(r'<p><a href="[^"]+">Open the full-size map \| 打开完整大图</a></p>\n', '', caption)
+        return ('<figure class="map-figure"><a class="map-viewport" href="' + source.group(1) + '">'
+                + image + '</a><figcaption><p class="map-action"><a href="' + source.group(1) + '">'
+                + bilingual_label("View full-size map ↗ | 查看大图 ↗") + '</a></p>\n'
+                + caption + '</figcaption></figure>\n')
+    return _MAP_PARAGRAPH.sub(figure, body)
+
+
+def _reading_tables(body: str) -> str:
+    """Keep semantic tables; repeat their column labels only in mobile cards."""
+    def table(match: re.Match[str]) -> str:
+        fragment = match.group(0)
+        headers = re.findall(r'<th(?: [^>]*)?>(.*?)</th>', fragment, re.S)
+        if len(headers) < 3:
+            return fragment
+        index = 0
+
+        def cell(cell_match: re.Match[str]) -> str:
+            nonlocal index
+            # Repeated visual labels must not add hidden-but-focusable links.
+            label = re.sub(r'<a\b[^>]*>(.*?)</a>', r'\1', headers[index % len(headers)], flags=re.S)
+            index += 1
+            return (cell_match.group(1) + '<span class="table-cell-label" aria-hidden="true">'
+                    + label + '</span><span class="table-cell-value">' + cell_match.group(2) + '</span></td>')
+
+        fragment = fragment.replace('class="table-scroll"', 'class="table-scroll table-cards"', 1)
+        return re.sub(r'(<td(?: [^>]*)?>)(.*?)</td>', cell, fragment, flags=re.S)
+    return re.sub(r'<div class="table-scroll"[^>]*>\n<table>.*?</table>\n</div>', table, body, flags=re.S)
 
 
 def _status_badge(status: tuple[str, str, str] | None) -> str:
@@ -583,6 +704,7 @@ def render_page(source: str, output: str, title: str, body: str,
     is_home = source == "README.md"
     is_hub = source.rsplit("/", 1)[-1] == "README.md"
     shaped = shape_article(body)
+    shaped.body = _reading_sections(shaped.body)
     toc = _toc(shaped.body)
     home = _href(output, page_map["README.md"])
     ordered = collection_order(source, page_map)
@@ -608,10 +730,13 @@ def render_page(source: str, output: str, title: str, body: str,
     if shaped.title or kicker or meta:
         header = ('<header class="article-header">\n'
                   + (f'<div class="article-kicker">{kicker}</div>\n' if kicker else "")
-                  + shaped.anchors + shaped.title + shaped.lede + meta + shaped.notes
+                  + shaped.anchors + shaped.title + shaped.lede + meta
                   + (_home_actions(output, page_map) if is_home else "")
                   + "</header>\n")
-    article_body = shaped.body
+    article_body = _reading_tables(_reading_maps(shaped.body))
+    if source == "Glossary/README.md":
+        article_body = re.sub(r'(<h2 id="find-a-word[^"]*">.*?</h2>\n)(.*?)(?=<a id="terms-0")',
+                              r'\1<div class="word-index">\2</div>\n', article_body, flags=re.S)
     if is_home:
         art = ""
         if home_art:
@@ -626,7 +751,8 @@ def render_page(source: str, output: str, title: str, body: str,
         article_body = art + article_body
 
     mobile_toc = '<details class="mobile-toc"><summary>' + bilingual_label("On this page | 本页目录") + '</summary>' + toc + '</details>\n' if toc else ""
-    right_toc = '<aside class="outline-sidebar"><div class="sidebar-label">' + bilingual_label("On this page | 本页目录") + '</div>' + toc + '</aside>' if toc else ""
+    position = '<p class="reading-position">' + bilingual_label("Section | 章节") + ' <span class="section-position"></span></p>'
+    right_toc = '<aside class="outline-sidebar"><div class="sidebar-label">' + bilingual_label("On this page | 本页目录") + '</div>' + position + toc + '</aside>' if toc else ""
     footer_links = []
     for path, label in ((ABOUT_PAGE, "About | 关于"), ("CREDITS.md", "Credits | 署名与来源"),
                         ("PUBLICATION_POLICY.md", "Privacy | 隐私与发布"), ("LICENSE.md", "Licensing | 授权说明")):
@@ -662,7 +788,7 @@ def render_page(source: str, output: str, title: str, body: str,
 <div class="reading-layout{' has-outline' if toc else ''}">
 <main id="main-content" class="content" tabindex="-1">
 <article class="{article_class}">
-{header}{mobile_toc}{article_body}
+{header}{mobile_toc}{article_body}{shaped.notes}
 </article>
 {_pager(source, output, page_map, titles)}
 {_series(source, output, page_map, titles)}
@@ -670,6 +796,7 @@ def render_page(source: str, output: str, title: str, body: str,
 </main>
 {right_toc}
 </div>
+<a class="floating-top" href="#main-content">{bilingual_label("Back to top ↑ | 回到顶部 ↑")}</a>
 <footer class="site-footer"><div class="footer-inner"><p class="footer-title"><span class="site-mark" aria-hidden="true">C</span>Project Covenant · 圣约计划</p>{illustration_note}<p>{bilingual_label("No account, no tracking, no remote assets. | 无需账号，不追踪阅读，不加载远程资源。")}</p><nav aria-label="About this site | 关于本站">{' · '.join(footer_links)}</nav></div></footer>
 </body>
 </html>
@@ -755,7 +882,7 @@ summary { cursor: pointer; padding: .75rem .9rem; font-size: .85rem; color: var(
 .article-kicker a { color: var(--accent); text-decoration: none; font-weight: 600; }
 .article-kicker a:hover { text-decoration: underline; }
 .kicker-position { font-variant-numeric: tabular-nums; letter-spacing: .1em; color: var(--faint); white-space: nowrap; }
-.reading-body h1 { font-family: var(--serif); font-size: clamp(2rem, 4.2vw, 2.85rem); line-height: 1.22; font-weight: 600; letter-spacing: -.02em; margin: 0 0 1.25rem; text-wrap: balance; }
+.reading-body h1 { font-family: var(--sans); font-size: clamp(1.9rem, 3.4vw, 2.6rem); line-height: 1.3; font-weight: 550; letter-spacing: -.025em; margin: 0 0 1.25rem; text-wrap: balance; }
 .lede { font-size: 1.12rem; line-height: 1.8; color: var(--muted); margin: 0 0 1.4rem; }
 .lede p { margin: 0 0 .7rem; }
 .lede p.lede-label { font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: .45rem; }
@@ -771,7 +898,7 @@ summary { cursor: pointer; padding: .75rem .9rem; font-size: .85rem; color: var(
 .reading-body { font-size: 1.0625rem; line-height: 1.9; }
 .reading-body p { margin: 0 0 1.25rem; }
 .reading-body h2, .reading-body h3, .reading-body h4 { scroll-margin-top: 5.5rem; text-wrap: balance; }
-.reading-body h2 { font-family: var(--serif); font-size: 1.6rem; line-height: 1.35; font-weight: 600; letter-spacing: -.01em; margin: 3.4rem 0 1.1rem; }
+.reading-body h2 { font-family: var(--sans); font-size: 1.5rem; line-height: 1.5; font-weight: 550; letter-spacing: -.01em; margin: 3.4rem 0 1.1rem; }
 .reading-body h3 { font-size: 1.18rem; line-height: 1.5; font-weight: 650; margin: 2.4rem 0 .8rem; }
 .reading-body h4, .reading-body h5, .reading-body h6 { font-size: 1rem; font-weight: 650; margin: 1.8rem 0 .6rem; }
 .reading-body p, .reading-body li { text-wrap: pretty; }
@@ -814,7 +941,7 @@ tbody tr:hover td { background: color-mix(in srgb, var(--accent-soft) 45%, trans
 p:has(> img.study-art, > img.study-illustration) + p:has(> em:first-child) { margin-top: -1.2rem; font-size: .8rem; line-height: 1.65; color: var(--muted); text-align: center; }
 .map-viewport { display: block; width: 100%; max-width: 100%; overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: #fff; margin: 1.8rem 0; }
 .map-viewport:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
-.study-map { display: block; min-width: 1100px; width: 100%; height: auto; max-width: none; }
+.study-map { display: block; width: 100%; height: auto; max-width: 100%; }
 
 /* Hub pages: link lists read as a table of contents */
 .hub-page ul:has(> li > a:only-child) { list-style: none; padding-left: 0; }
@@ -827,7 +954,7 @@ p:has(> img.study-art, > img.study-illustration) + p:has(> em:first-child) { mar
 
 /* Home */
 .home-page .article-header { margin-bottom: 1rem; }
-.home-page h1 { font-size: clamp(2.3rem, 5.5vw, 3.4rem); }
+.home-page h1 { font-size: clamp(2.2rem, 4.8vw, 3rem); font-weight: 500; }
 .home-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .8rem 1.2rem; margin-top: 1.6rem; }
 .home-hint { margin: 0; color: var(--muted); font-size: .82rem; line-height: 1.6; max-width: 26rem; }
 .start-reading { display: inline-block; padding: .7rem 1.25rem; background: var(--accent); color: var(--surface); border-radius: 999px; text-decoration: none; font-size: .92rem; font-weight: 600; }
@@ -867,7 +994,7 @@ p:has(> img.study-art, > img.study-illustration) + p:has(> em:first-child) { mar
 /* Responsive */
 @media (max-width: 82rem) {
   .reading-layout { grid-template-columns: minmax(0, 1fr) minmax(0, var(--measure)) minmax(0, 1fr); column-gap: 2rem; }
-  .reading-layout.has-outline { grid-template-columns: minmax(0, 1fr) minmax(0, var(--measure)) minmax(11rem, 13rem); }
+  .reading-layout.has-outline { grid-template-columns: minmax(0, 1fr) minmax(0, var(--measure)) minmax(0, 1fr); }
   .reading-layout.has-outline .content { grid-column: 2; }
 }
 @media (max-width: 68rem) {
@@ -948,6 +1075,89 @@ html:not([data-lang]) .reading-body p > .l-en + .l-zh, html[data-lang="both"] .r
 html:not([data-lang]) .reading-body p > .l-zh + .l-en, html[data-lang="both"] .reading-body p > .l-zh + .l-en { display: block; margin-top: .45rem; }
 .article-meta .l-sep { color: var(--faint); }
 
+/* A quieter reading hierarchy shared by every collection. */
+html:not([data-lang="en"]) .reader-toc a:has(.l-zh, .l-zh1) .l-en,
+html:not([data-lang="en"]) .reader-toc a:has(.l-zh, .l-zh1) .l-en1,
+html:not([data-lang="en"]) .reader-toc a:has(.l-zh, .l-zh1) .l-bi,
+html:not([data-lang="en"]) .reader-toc a:has(.l-zh, .l-zh1) .l-sep { display: none; }
+html:not([data-lang="en"]) .reader-toc .l-zh1 { display: inline; }
+.reader-toc a[aria-current="location"] { color: var(--accent); border-left: 2px solid var(--accent); background: var(--accent-soft); }
+.reading-position { display: none; margin: -.3rem 0 .8rem; color: var(--muted); font-size: .75rem; }
+.reader-ready .reading-position { display: block; }
+.reading-position .l-sep { color: var(--faint); }
+html:not([data-lang="en"]) .reading-position .l-en,
+html:not([data-lang="en"]) .reading-position .l-sep { display: none; }
+html:not([data-lang="en"]):not([data-lang="zh"]) .reading-body :is(h2,h3) > .l-sep { display: none; }
+html:not([data-lang="en"]):not([data-lang="zh"]) .reading-body :is(h2,h3) > .l-zh { display: block; font-size: .85em; font-weight: 450; margin-top: .2em; }
+.book-facts { margin: 1.5rem 0; padding: 1rem 0; border-block: 1px solid var(--line); color: var(--muted); font-size: .88rem; }
+.book-facts p:last-child { margin-bottom: 0; }
+.editorial-note { margin: 2.5rem 0 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
+.editorial-note p { padding: 0 .9rem; }
+.section-tools { display: none; margin: 0 0 2rem; padding: 1rem 0; border-block: 1px solid var(--line); font-size: .82rem; color: var(--muted); }
+.reader-ready .section-tools { display: block; }
+.section-tools p { margin: 0 0 .7rem; }
+.section-buttons { display: flex; gap: .6rem; flex-wrap: wrap; }
+.section-buttons button { font: inherit; color: var(--accent); background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: .5rem .8rem; cursor: pointer; }
+.reading-section { margin: .8rem 0; border: 1px solid var(--line); border-radius: .6rem; background: var(--surface); }
+.reading-section > summary { padding: 1rem 1.1rem; color: var(--text); }
+.reading-section > summary::marker { color: var(--accent); }
+.reading-section > summary :is(h2,h3) { display: inline; font-size: 1rem; font-weight: 550; line-height: 1.6; margin: 0; text-wrap: pretty; }
+.reading-section > summary :is(h2,h3) > .l-zh { margin-left: 1rem; }
+.reading-section[open] > summary { border-bottom: 1px solid var(--line); }
+.section-content { padding: 1.2rem; }
+.section-content > :last-child { margin-bottom: 0; }
+.section-content .anchor { top: 0; scroll-margin-top: 6rem; }
+.map-figure { margin: 2rem 0; }
+.map-figure .map-viewport { margin: 0; overflow: hidden; cursor: zoom-in; }
+.map-figure figcaption { padding: .9rem .15rem 0; font-size: .84rem; line-height: 1.8; color: var(--muted); }
+.map-figure figcaption p { margin-bottom: .7rem; }
+.map-action { font-weight: 600; }
+.map-action a { text-decoration: none; }
+.map-figure .study-map { transition: filter .15s; }
+.map-viewport:hover .study-map { filter: brightness(.96); }
+@media (prefers-color-scheme: dark) { .map-figure .study-map { filter: brightness(.88) saturate(.92); } }
+.table-scroll { border-block: 1px solid var(--line); padding-bottom: .2rem; }
+.table-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.table-scroll::before { content: "Scroll to explore ↔ / 左右滑动查看"; display: block; position: sticky; left: 0; width: fit-content; max-width: 100%; font-size: .72rem; color: var(--muted); padding: .45rem 0; }
+html[data-lang="en"] .table-scroll::before { content: "Scroll to explore ↔"; }
+html[data-lang="zh"] .table-scroll::before { content: "左右滑动查看 ↔"; }
+.table-cell-label { display: none; }
+th { background: var(--raised); }
+th:first-child, td:first-child { padding-left: .75rem; }
+th:last-child, td:last-child { padding-right: .75rem; }
+.word-index ul { list-style: none; padding: 0; }
+.word-index li { padding: 1rem 0; border-bottom: 1px solid var(--line); }
+.word-index a { display: inline-block; padding: .12rem .4rem; margin: .2rem 0; border-radius: .3rem; background: var(--raised); text-decoration: none; font-size: .85rem; }
+.floating-top { display: none; position: fixed; right: 1.2rem; bottom: 1.2rem; z-index: 12; padding: .6rem .9rem; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); box-shadow: var(--shadow); font-size: .8rem; text-decoration: none; }
+.reader-scrolled .floating-top { display: block; }
+html:not([data-lang="en"]) .floating-top .l-en,
+html:not([data-lang="en"]) .floating-top .l-sep { display: none; }
+@media (max-width: 40rem) {
+  .reading-body h1 { font-size: 1.75rem; line-height: 1.35; }
+  .home-page h1 { font-size: 2rem; }
+  .lede { font-size: 1rem; line-height: 1.8; }
+  .reading-section > summary { padding: .9rem; }
+  .section-content { padding: .9rem; }
+  .table-cards { border: 0; overflow: visible; background: none; }
+  .table-cards::before { display: none; }
+  .table-cards table, .table-cards tbody { display: block; min-width: 0; width: 100%; }
+  .table-cards thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .table-cards tr { display: block; padding: .75rem .9rem; margin: .7rem 0; border: 1px solid var(--line); border-radius: .6rem; background: var(--surface); }
+  .table-cards td { display: block; padding: .5rem 0; border: 0; text-align: left; white-space: normal; }
+  .table-cards td + td { border-top: 1px solid var(--line); }
+  .table-cell-label { display: block; margin-bottom: .15rem; font-size: .73rem; color: var(--muted); font-weight: 600; }
+  .table-cell-value { display: block; }
+  .floating-top { right: .7rem; bottom: .7rem; font-size: .75rem; }
+}
+@media print {
+  .floating-top, .section-tools, .reading-position { display: none !important; }
+  .reading-section { border: 0; background: none; }
+  .reading-section > summary { border: 0 !important; padding: .5rem 0; }
+  .section-content { padding: 0; }
+  .table-scroll::before { display: none; }
+  .map-figure { break-inside: avoid; }
+}
+
 /* Week-index return links in the year plan stay quiet. */
 p:has(> a[href="#week-index"]:first-child) { font-size: .8rem; line-height: 1.8; color: var(--muted); padding-top: .9rem; border-top: 1px dashed var(--line); }
 p:has(> a[href="#week-index"]:first-child) a { text-decoration: none; padding: .15rem .1rem; }
@@ -956,8 +1166,8 @@ p:has(> a[href="#week-index"]:first-child) a:hover { text-decoration: underline;
 """.encode("utf-8")
 
 
-# The only script: a local language switch. It makes no network request and
-# stores nothing but the reader's chosen display mode in this browser.
+# The only script: local reading controls. It makes no network request and
+# stores nothing but the reader's chosen language display mode in this browser.
 LANG_JS = """\
 (function () {
   "use strict";
@@ -979,12 +1189,87 @@ LANG_JS = """\
   apply(saved());
   document.addEventListener("DOMContentLoaded", function () {
     apply(root.getAttribute("data-lang"));
+    var sections = Array.from(document.querySelectorAll("details.reading-section"));
+    var tocLinks = Array.from(document.querySelectorAll(".outline-sidebar .reader-toc a"));
+    var allLinks = Array.from(document.querySelectorAll(".reader-toc a"));
+    var positions = document.querySelectorAll(".section-position");
+    var pending = false;
+    function targetFor(hash) {
+      try { return document.getElementById(decodeURIComponent(hash.slice(1))); }
+      catch (error) { return null; }
+    }
+    function reveal(hash, scroll) {
+      var target = targetFor(hash);
+      if (!target) { return; }
+      var parent = target.parentElement;
+      while (parent) {
+        if (parent.tagName === "DETAILS") { parent.open = true; }
+        parent = parent.parentElement;
+      }
+      if (scroll) {
+        window.requestAnimationFrame(function () { target.scrollIntoView({block: "start"}); });
+      }
+    }
+    function updateReading() {
+      pending = false;
+      root.classList.toggle("reader-scrolled", window.scrollY > 600);
+      var current = -1;
+      tocLinks.forEach(function (link, index) {
+        var target = targetFor(link.hash);
+        if (target && target.getBoundingClientRect().top <= 150) { current = index; }
+      });
+      allLinks.forEach(function (link) {
+        if (current >= 0 && link.hash === tocLinks[current].hash) { link.setAttribute("aria-current", "location"); }
+        else { link.removeAttribute("aria-current"); }
+      });
+      positions.forEach(function (position) { position.textContent = Math.max(0, current + 1) + " / " + tocLinks.length; });
+    }
+    function schedule() {
+      if (!pending) { pending = true; window.requestAnimationFrame(updateReading); }
+    }
+    sections.forEach(function (section) {
+      section.open = false;
+      section.addEventListener("toggle", schedule);
+    });
+    root.classList.add("reader-ready");
+    reveal(window.location.hash, true);
+    window.addEventListener("hashchange", function () { reveal(window.location.hash, true); });
+    window.addEventListener("scroll", schedule, {passive: true});
+    window.addEventListener("resize", schedule);
+    window.addEventListener("load", schedule);
+    var printClosed = [];
+    window.addEventListener("beforeprint", function () {
+      printClosed = sections.filter(function (section) { return !section.open; });
+      printClosed.forEach(function (section) { section.open = true; });
+    });
+    window.addEventListener("afterprint", function () {
+      printClosed.forEach(function (section) { section.open = false; });
+    });
+    document.addEventListener("keydown", function (event) {
+      if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "f") {
+        sections.forEach(function (section) { section.open = true; });
+      }
+    });
+    schedule();
     document.addEventListener("click", function (event) {
+      var action = event.target && event.target.closest ? event.target.closest("[data-reader-action]") : null;
+      if (action) {
+        sections.forEach(function (section) { section.open = action.getAttribute("data-reader-action") === "expand"; });
+        schedule();
+        return;
+      }
+      var link = event.target && event.target.closest ? event.target.closest('a[href^="#"]') : null;
+      if (link) {
+        reveal(link.hash, true);
+        var mobileToc = link.closest(".mobile-toc");
+        if (mobileToc) { mobileToc.open = false; }
+      }
       var button = event.target && event.target.closest ? event.target.closest("[data-lang-choice]") : null;
       if (!button) { return; }
       var mode = button.getAttribute("data-lang-choice");
       apply(mode);
       remember(mode);
+      schedule();
     });
   });
 }());

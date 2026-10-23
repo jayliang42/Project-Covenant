@@ -524,7 +524,9 @@ def empty_tomb() -> ET.Element:
     sky(root, w, h, "#f6dcc0")
     for i in range(9):
         angle = math.radians(200 + i * 17)
-        el(root, "line", x1=600, y1=230, x2=600 + 420 * math.cos(angle) * -1, y2=230 + 420 * math.sin(angle),
+        # Fix serialization precision across platform math libraries.
+        el(root, "line", x1=600, y1=230,
+           x2=f"{600 + 420 * math.cos(angle) * -1:.6f}", y2=f"{230 + 420 * math.sin(angle):.6f}",
            stroke="#f7c98a", stroke_width=10, stroke_opacity=0.35, stroke_linecap="round")
     el(root, "circle", cx=600, cy=230, r=50, fill="#f3a95a")
     el(root, "path", d="M0 450 L0 140 C 120 110, 300 120, 420 200 C 460 240, 470 300, 470 450 Z", fill="#a39883")

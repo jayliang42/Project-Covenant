@@ -212,6 +212,11 @@ _No transcripts. | 没有逐字稿。_
         self.assertIn('<span class="l-en" lang="en">Child item<br></span><span class="l-zh" lang="zh-Hans">中文续行</span>', rendered)
         self.assertIn("☑", rendered)
         self.assertIn("<blockquote>", rendered)
+        self.assertIn(
+            '<div class="table-scroll" role="region" tabindex="0" '
+            'aria-label="Table, scroll horizontally | 表格，可横向滚动">',
+            rendered,
+        )
         self.assertIn('<th scope="col" class="align-right"><span class="l-en" lang="en">Count</span></th>', rendered)
         self.assertIn("<pre><code>&lt;script&gt;", rendered)
         self.assertNotIn("<script>", rendered)
@@ -263,6 +268,47 @@ _No transcripts. | 没有逐字稿。_
 
 
 class HtmlPolicyTests(unittest.TestCase):
+    def test_accepts_only_the_reader_controls_and_semantic_figure_markup(self) -> None:
+        markup = (
+            '<figure class="map-figure"><figcaption class="map-caption">Map</figcaption></figure>'
+            '<details class="reading-section" open="open"><summary>Section</summary></details>'
+            '<div class="table-scroll" role="region" tabindex="0" aria-label="Table"></div>'
+            '<button type="button" data-reader-action="expand">Expand</button>'
+            '<button type="button" data-reader-action="collapse">Collapse</button>'
+            '<button type="button" data-lang-choice="zh" aria-pressed="false">中文</button>'
+            '<button type="button" data-lang-choice="en" aria-pressed="false">EN</button>'
+            '<button type="button" data-lang-choice="both" aria-pressed="true">中英</button>'
+        )
+        parser = build_static_site._HTMLPolicyParser("index.html")
+        parser.feed(markup)
+        parser.close()
+        self.assertEqual(1, parser.element_counts["figure"])
+        self.assertEqual(5, parser.element_counts["button"])
+
+    def test_rejects_unrecognized_reader_controls_and_image_attributes(self) -> None:
+        cases = (
+            ('<button type="button" data-reader-action="delete">No</button>', "SITE_BUTTON_INVALID"),
+            ('<button type="submit" data-reader-action="expand">No</button>', "SITE_BUTTON_INVALID"),
+            ('<button type="button">No</button>', "SITE_BUTTON_INVALID"),
+            ('<button type="button" data-reader-action="expand" data-lang-choice="zh">No</button>', "SITE_BUTTON_INVALID"),
+            ('<button type="button" data-lang-choice="unknown">No</button>', "SITE_BUTTON_INVALID"),
+            ('<details open="false"></details>', "SITE_DETAILS_OPEN_INVALID"),
+            ('<details open=""></details>', "SITE_DETAILS_OPEN_INVALID"),
+            ('<details open></details>', "SITE_HTML_ATTRIBUTE_INVALID"),
+            ('<div tabindex="1"></div>', "SITE_TABINDEX_INVALID"),
+            ('<div tabindex="-1"></div>', "SITE_TABINDEX_INVALID"),
+            ('<figure style="display:none"></figure>', "SITE_HTML_ATTRIBUTE_FORBIDDEN"),
+            ('<figcaption onclick="alert(1)"></figcaption>', "SITE_HTML_ATTRIBUTE_FORBIDDEN"),
+            ('<img src="assets/maps/map.svg" alt="Map" width="100">', "SITE_HTML_ATTRIBUTE_FORBIDDEN"),
+            ('<img src="assets/maps/map.svg" alt="Map" srcset="other.svg">', "SITE_HTML_ATTRIBUTE_FORBIDDEN"),
+            ('<img src="assets/maps/map.svg" alt="">', "SITE_IMAGE_ALT_OR_SOURCE_REQUIRED"),
+        )
+        for markup, error_code in cases:
+            with self.subTest(markup=markup), self.assertRaises(SiteBuildError) as context:
+                parser = build_static_site._HTMLPolicyParser("index.html")
+                parser.feed(markup)
+            self.assertEqual(error_code, context.exception.code)
+
     def test_rejects_active_markup_unsafe_links_and_hidden_metadata(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
@@ -668,11 +714,13 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
                 if path.endswith(".html")
             ]
             # One source heading-shaped line is inside a fenced Markdown example.
+            # Three book-guide section indexes now use the reader outline;
+            # their heading IDs remain anchors, and their local-only tables go.
             self.assertEqual(
-                2594,
+                2591,
                 sum(len(re.findall(r"<h[1-6](?: |>)", text)) for text in html_texts),
             )
-            self.assertEqual(251, sum(text.count("<table>") for text in html_texts))
+            self.assertEqual(248, sum(text.count("<table>") for text in html_texts))
             self.assertEqual(24, sum(text.count("<pre><code>") for text in html_texts))
             self.assertGreaterEqual(sum(text.count("<a ") for text in html_texts), 1850)
 
@@ -683,6 +731,20 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             self.assertIn('href="Christian_Traditions/index.html"', home)
             self.assertIn('href="01_How_to_Name_the_Groups.html"', traditions_hub)
             manifest_paths = parse_manifest((REPO_ROOT / MANIFEST_PATH).read_bytes())
+            render_map = {
+                path: source_path_to_output(path) if path.endswith(".md") else path
+                for path in manifest_paths
+            }
+            for source_path in (path for path in manifest_paths if path.endswith(".md")):
+                with self.subTest(preserved_source_anchors=source_path):
+                    source_body = build_static_site.render_markdown_body(
+                        source_path, (REPO_ROOT / source_path).read_text(encoding="utf-8"), render_map,
+                    )
+                    rendered_page = (output / source_path_to_output(source_path)).read_text(encoding="utf-8")
+                    source_ids = set(re.findall(r'\bid="([^"]+)"', source_body))
+                    page_ids = re.findall(r'\bid="([^"]+)"', rendered_page)
+                    self.assertTrue(source_ids.issubset(page_ids), source_ids - set(page_ids))
+                    self.assertEqual(len(page_ids), len(set(page_ids)))
             archived_names = {
                 path.name for path in (REPO_ROOT / "archive/Christian_Traditions").glob("*.md")
             }
@@ -742,11 +804,19 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             self.assertIn('href="Maps/index.html"', home)
             maps_page = (output / "Maps/index.html").read_text(encoding="utf-8")
             self.assertEqual(11, maps_page.count('class="map-viewport"'))
+            self.assertEqual(11, maps_page.count('<figure class="map-figure">'))
             first_steps = (output / "Bible_Timeline/First_Steps_Bilingual.html").read_text(encoding="utf-8")
             self.assertEqual(10, first_steps.count('class="study-illustration"'))
             year_plan = (output / "Bible_Timeline/52周圣经故事线_查经与史料阅读计划.html").read_text(encoding="utf-8")
             self.assertEqual(10, year_plan.count('class="study-illustration"'))
             self.assertEqual(42, year_plan.count('class="study-art"'))
+            self.assertEqual(1, len(re.findall(r'<h1(?: |>)', year_plan)))
+            self.assertEqual(52, year_plan.count('<details class="reading-section" open="open">'))
+            year_outline = re.search(r'<nav class="reader-toc"[^>]*>.*?</nav>', year_plan, re.S).group(0)
+            self.assertIn('part-1', year_outline)
+            self.assertNotIn('href="#week-01"', year_outline)
+            for week in range(1, 53):
+                self.assertIn(f'id="week-{week:02d}"', year_plan)
             self.assertEqual(8, home.count('class="guide-card"'))
             self.assertEqual(8, home.count('class="guide-thumb"'))
             self.assertIn('<article class="reading-body hub-page">', (output / "Bilingual_Notes/index.html").read_text(encoding="utf-8"))

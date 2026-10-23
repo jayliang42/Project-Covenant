@@ -14,8 +14,8 @@ Looking for a single place? [Places of the Bible](./Bible_Places_Bilingual.md) i
 <a id="maps-index"></a>
 ## Map Index | 地图索引
 
-Choose a map to jump to it, or open the guide it belongs to. On a phone, scroll sideways inside a map, or open the full-size image with the link under it.<br>
-点击地图名称可跳到该图，也可以打开配套的导读。在手机上，可以在地图内左右滑动，或用图下方的链接打开完整大图。
+Choose a map to jump to it, or open the guide it belongs to. Tap a map or its full-size link to inspect the labels and details.<br>
+点击地图名称可跳到该图，也可以打开配套的导读。点击图片或图下的大图链接，可以放大查看地名与细节。
 
 | Map / 地图 | Read alongside / 配套阅读 |
 | --- | --- |
