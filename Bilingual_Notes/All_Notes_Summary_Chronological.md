@@ -50,8 +50,8 @@ This transcript is more event-like than sermon-like. It begins with an explanati
 
 ## 2025-12-21 Sunday | Christmas Invitation Sermon | Sunday Teaching | 主日讲道：圣诞福音邀请
 
-This sermon is built around the idea of invitation, beginning with the familiar image of a wedding invitation list and then moving toward the [gospel](../Glossary/README.md#gospel) invitation of Christmas. A key illustration is Albert McMakin inviting Billy Graham to hear the gospel, which becomes the model for how one ordinary invitation can alter many lives. The preacher asks listeners to consider who in their circle has not yet heard the message of Christ. Christmas is presented not mainly as family routine or sentiment, but as a moment to extend the invitation to relationship with Jesus.<br>
-这篇讲道围绕“邀请”展开，先从婚礼邀请名单这个常见画面切入，再把焦点转到圣诞和福音所发出的邀请。一个重要例子是 Albert McMakin 邀请 Billy Graham 去听福音，这被用来说明，一个看似普通的邀请，可能改变极多人的生命。讲员邀请听众思考：自己的生活圈里还有谁尚未听见基督的信息。圣诞因此不再只是家人团聚或节日仪式，也成为向人发出“与耶稣建立关系”之邀请的时刻。
+This sermon is built around the idea of invitation, beginning with the familiar image of a wedding invitation list and then moving toward the [gospel](../Glossary/README.md#gospel) invitation of Christmas. A reported illustration concerns Albert McMakin inviting Billy Graham to hear the gospel; as the [individual note](./2025-12-21_Sunday_The_Gospel_Invitation.md) explains, the invitation details still need a traceable source and should not be treated as verified history. The preacher asks listeners to consider who in their circle has not yet heard the message of Christ. Christmas is presented not mainly as family routine or sentiment, but as a moment to extend the invitation to relationship with Jesus.<br>
+这篇讲道围绕“邀请”展开，先从婚礼邀请名单这个常见画面切入，再把焦点转到圣诞和福音所发出的邀请。讲道使用了 Albert McMakin 邀请 Billy Graham 去听福音的例证；如[单篇笔记](./2025-12-21_Sunday_The_Gospel_Invitation.md)所说明，邀请细节仍待找到可追查的出处，不应把这个例子当作已经核实的历史事实。讲员邀请听众思考：自己的生活圈里还有谁尚未听见基督的信息。圣诞因此不再只是家人团聚或节日仪式，也成为向人发出“与耶稣建立关系”之邀请的时刻。
 
 ## 2026-01-04 Sunday | Church Community Vision Session | Sunday Fellowship | 主日团契：教会群体异象分享
 
@@ -80,8 +80,8 @@ This sermon draws from 1 Peter 5, beginning with exhortations to elders and then
 
 ## 2026-01-28 Wednesday | Triune God Creation Study Part 1 | Wednesday Fellowship | 周三团契：三一神与创造（上）
 
-This discussion appears to compare the Christian doctrine of the Trinity with non-triune conceptions of God, arguing that only a triune God can be eternally loving without depending on [creation](../Glossary/README.md#creation) in order to become loving. References to Aristotle and philosophical concerns suggest that the group is thinking through why God's goodness and love cannot be adequately grounded in a solitary deity. The conversation also moves into implications for human relationships, marriage, and the dignity of women, suggesting that trinitarian theology is not abstract but socially consequential. Creation here is understood as the overflow of already-existing divine love.<br>
-这场讨论大概在比较基督教的三一神观，与各种非三一的神观，核心论点是：只有三一神才能在永恒里就是爱的，而不需要先[创造](../Glossary/README.md#creation)世界、再靠受造物来“成为有爱”。提到亚里士多德和哲学问题，说明讨论是在认真思考：如果神只是一个孤立单体，那祂的良善和爱到底如何成立。谈话后面还延伸到婚姻、男女关系和女性尊严，说明三一神学不是抽象概念，而会真实影响人怎么看待人与关系。这里对创造的理解，也不是“神需要点什么才创造”，而是神已经存在的爱的 overflowing {涌流}。
+This discussion appears to explore the Christian belief that the Father, Son, and Spirit eternally share love, so that [creation](../Glossary/README.md#creation) is a free gift rather than something God needs in order to become loving. It contrasts this confession with an imagined solitary deity dependent on creatures for an object of love. As the [individual note](./2026-01-28_Wednesday_Creation_from_Triune_Love_Part_1.md) explains, this is a theological inference within the Christian account of creation, not a formal proof that settles all questions about other conceptions of God. The practical emphasis is gratitude and generous love in human relationships.<br>
+这场讨论看来是在探索基督教的信念：父、子、圣灵永恒地彼此相爱，因此[创造](../Glossary/README.md#creation)是自由的恩赐，不是神为了成为有爱而必须拥有的对象。讨论把这一宣认与一种假想的孤立神观作对比：后者需要依靠受造物才有爱的对象。如[单篇笔记](./2026-01-28_Wednesday_Creation_from_Triune_Love_Part_1.md)所说明，这是基督教创造观中的神学推论，不是能够解决其他神观所有问题的形式证明。实际应用的重点，是在人际关系中活出感恩与慷慨的爱。
 
 ## 2026-01-28 Wednesday | Triune God Creation Study Part 2 | Wednesday Fellowship | 周三团契：三一神与创造（下）
 
@@ -131,7 +131,7 @@ This transcript seems to continue through the Beatitudes, stressing that they ar
 ## 2026-03-29 Sunday | Jesus' Kingdom Sermon | Sunday Teaching | 主日讲道：耶稣的天国信息
 
 This sermon clearly works through Matthew 5:13-16, especially the images of salt, light, and a city on a hill. The preacher argues that Jesus gives his followers a new identity, a new mission, and a new hero. Kingdom people are outwardly insignificant in the world's eyes, yet through Christ they become preserving, illuminating, and attractive witnesses in the world. The message culminates christologically: Jesus himself is the light of the world, and because he entered darkness and was crucified on a hill, his people can now shine together as a radiant community.<br>
-这篇讲道明显在讲马太福音 5:13-16，尤其是盐、光和山上之城这些图像。讲员的主线是：耶稣赐给跟随祂的人一个新的身份、一个新的使命、以及一位新的英雄。天国子民在世界眼里往往并不显眼，但借着基督，他们却成为保存败坏、驱散黑暗、并吸引人上山来看的见证群体。整篇最后很强地收束到基督本身：耶稣自己是世界的光，祂进入黑暗、在山上被钉十字架，因此祂的百姓如今也能一同成为发光的城。
+这篇讲道明显在讲马太福音 5:13-16，尤其是盐、光和山上之城这些图像。讲员的主线是：耶稣赐给跟随祂的人一个新的身份、一个新的使命、以及一位新的英雄。天国子民在世界眼里往往并不显眼，但借着基督，他们却成为抵抗败坏、驱散黑暗、并吸引人上山来看的见证群体。整篇最后很强地收束到基督本身：耶稣自己是世界的光，祂进入黑暗、在山上被钉十字架，因此祂的百姓如今也能一同成为发光的城。
 
 ## 2026-04-12 Sunday | Sermon on Anger and Reconciliation | Sunday Teaching | 主日讲道：怒气与和好
 
@@ -155,8 +155,8 @@ Working through Matthew 6:19-24, this sermon contrasts earthly treasure with Chr
 
 ## 2026-05-31 Sunday | Overcoming Worry | Sunday Teaching | 主日讲道：胜过忧虑
 
-On Matthew 6:25-34, the speaker explains worry as an attempt to control what only a good and sovereign Father can finally hold. Jesus' care for anxious [disciples](../Glossary/README.md#disciple) is not careless optimism: he directs them to the Father who feeds birds, clothes flowers, and knows their needs. The sermon calls the church to seek the kingdom first through gospel meditation, prayer, Scripture-shaped inner speech, and honest community.<br>
-这篇马太福音 6:25-34 的信息把忧虑解释为：人试图掌控那些最终只能由良善、掌权的父来承担的事。耶稣对焦虑[门徒](../Glossary/README.md#disciple)的关怀并非轻率乐观；祂把他们带向那位喂养飞鸟、装饰百合、并知道他们需要的父。讲道呼召教会借着默想福音、祷告、用经文重塑内在对话，以及诚实的群体生活，先求神的国。
+On Matthew 6:25-34, the speaker distinguishes appropriate concern from consuming worry that seeks to control what only a good and sovereign Father can finally hold. Jesus' care for anxious [disciples](../Glossary/README.md#disciple) is not careless optimism: he directs them to the Father who feeds birds, clothes flowers, and knows their needs. The sermon calls the church to seek the kingdom first through gospel meditation, prayer, Scripture-shaped inner speech, and honest community. As the [individual note](./2026-05-31_Sunday_Overcoming_Worry.md) makes clear, these practices do not replace appropriate help, and the passage should not be used to shame people experiencing mental-health suffering.<br>
+这篇马太福音 6:25-34 的信息区分恰当的关心与吞噬人的忧虑；后者试图掌控那些最终只能由良善、掌权的父来承担的事。耶稣对焦虑[门徒](../Glossary/README.md#disciple)的关怀并非轻率乐观；祂把他们带向那位喂养飞鸟、装饰百合、并知道他们需要的父。讲道呼召教会借着默想福音、祷告、用经文重塑内在对话，以及诚实的群体生活，先求神的国。如[单篇笔记](./2026-05-31_Sunday_Overcoming_Worry.md)所说明，这些操练不取代合宜的帮助，这段经文也不应被用来羞辱正经历心理健康困境的人。
 
 ## 2026-08-02 Sunday | Emotions and God's Presence | Sunday Teaching | 主日讲道：情绪与神的同在
 

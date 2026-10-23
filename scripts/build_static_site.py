@@ -50,6 +50,14 @@ MAX_INLINE_DEPTH = 64
 
 HEADING = re.compile(r"^( {0,3})(#{1,6})[ \t]+(.+?)\s*$")
 STABLE_ANCHOR = re.compile(r'^<a id="([A-Za-z0-9][A-Za-z0-9._:-]*)"></a>$')
+# Preserve published heading URLs when an editorial correction changes a title.
+# These exact aliases do not expand the Markdown or HTML attribute allowlists.
+LEGACY_HEADING_ALIASES = {
+    (
+        "Book_Studies/游子吟_永恒在召唤_全书解读与阅读指南.md",
+        "five-category-reading-method-五类阅读法",
+    ): ("four-layer-reading-method-四层阅读法",),
+}
 LINE_BREAK = re.compile(r"(?i)^<br\s*/?>")
 FENCE = re.compile(r"^( {0,3})(`{3,}|~{3,})(.*)$")
 LIST_ITEM = re.compile(r"^( *)(-|(\d+)\.)[ \t]+(.*)$")
@@ -699,6 +707,13 @@ class _MarkdownRenderer:
                 level = len(heading.group(2))
                 heading_text = heading.group(3).rstrip("#").rstrip()
                 identifier = self.heading_id(heading_text)
+                for alias in LEGACY_HEADING_ALIASES.get((self.source_path, identifier), ()):
+                    if alias in self.used_ids:
+                        raise SiteBuildError("SITE_LEGACY_ANCHOR_CONFLICT")
+                    self.used_ids.add(alias)
+                    output.append(
+                        f'<a id="{html.escape(alias, quote=True)}" class="anchor" aria-hidden="true"></a>'
+                    )
                 attribute = (
                     f' id="{html.escape(identifier, quote=True)}"' if identifier else ""
                 )

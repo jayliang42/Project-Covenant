@@ -227,6 +227,20 @@ _No transcripts. | 没有逐字稿。_
         self.assertIn("%E8%B5%84%E6%96%99/%E6%8C%87%E5%8D%97.html#part", rendered)
         self.assertIn("<hr>", rendered)
 
+    def test_corrected_book_heading_preserves_its_published_fragment(self) -> None:
+        path = "Book_Studies/游子吟_永恒在召唤_全书解读与阅读指南.md"
+        mapping = {path: "Book_Studies/guide.html", "README.md": "index.html"}
+        source = '<a id="evidence-method"></a>\n\n## Five-Category Reading Method | 五类阅读法\n'
+        rendered = build_static_site.render_markdown_body(path, source, mapping)
+        for identifier in (
+            "evidence-method",
+            "four-layer-reading-method-四层阅读法",
+            "five-category-reading-method-五类阅读法",
+        ):
+            self.assertEqual(rendered.count(f'id="{identifier}"'), 1)
+        other_page = build_static_site.render_markdown_body("README.md", source, mapping)
+        self.assertNotIn('id="four-layer-reading-method-四层阅读法"', other_page)
+
     def test_tilde_fence_escapes_markup_without_rendering_links(self) -> None:
         source = """\
 # Safe | 安全

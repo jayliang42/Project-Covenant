@@ -33,7 +33,7 @@ For the full course sequence, read the [Delighting in the Trinity Discipleship G
 ## Big Idea | 核心信息
 
 The Holy Spirit is not a spiritual force Christians use to improve themselves. He is the fully divine, personal Spirit who gives life, unites believers to [Christ](../Glossary/README.md#christ), makes them know the Father's welcome, and patiently reshapes their desires and lives into the likeness of the Son.<br>
-圣灵不是基督徒用来改善自己的属灵力量；祂是完全属神、具有位格的圣灵，赐下生命，使信徒与[基督](../Glossary/README.md#christ)联合，使人认识父的接纳，并耐心地把人的渴望与生命塑造成圣子的样式。
+圣灵不是基督徒用来改善自己的属灵力量；祂是具有完全神性、具有位格的圣灵，赐下生命，使信徒与[基督](../Glossary/README.md#christ)联合，使人认识父的接纳，并耐心地把人的渴望与生命塑造成圣子的样式。
 
 ## Scripture Anchors | 经文锚点
 
