@@ -24,6 +24,7 @@ Bible_Timeline/Feasts_of_the_Bible_Bilingual.md
 Bible_Timeline/First_Steps_Bilingual.md
 Bible_Timeline/How_the_Bible_Came_to_Us_Bilingual.md
 Bible_Timeline/Key_Passages_Bilingual.md
+Bible_Timeline/Lords_Prayer_Bilingual.md
 Bible_Timeline/Miracles_of_Jesus_Bilingual.md
 Bible_Timeline/Names_of_God_Bilingual.md
 Bible_Timeline/New_Testament_Timeline_Bilingual.md
@@ -117,6 +118,7 @@ assets/art/carmel-altar.svg
 assets/art/chariot-road.svg
 assets/art/compass-rose.svg
 assets/art/creation-dawn.svg
+assets/art/daily-bread.svg
 assets/art/david-harp.svg
 assets/art/dig-layers.svg
 assets/art/dry-bones.svg

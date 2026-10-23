@@ -54,6 +54,7 @@ Short, fully bilingual guides for looking something up or reading one theme at a
 
 - [Key Passages to Know | 值得熟悉的经文](./Key_Passages_Bilingual.md)
 - [Prayers in the Bible | 圣经中的祷告](./Prayers_in_the_Bible_Bilingual.md)
+- [The Lord’s Prayer, Line by Line | 主祷文逐句读](./Lords_Prayer_Bilingual.md)
 - [Psalms for Different Times | 不同处境中的诗篇](./Psalms_for_Different_Times_Bilingual.md)
 
 ## Core Bilingual Guides | 核心双语导读

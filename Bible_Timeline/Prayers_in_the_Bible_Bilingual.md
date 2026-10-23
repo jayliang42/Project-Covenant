@@ -89,8 +89,8 @@ As you read each prayer, ask three simple questions:<br>
 <a id="jesus-and-church"></a>
 ## Jesus and the Church at Prayer | 耶稣与教会的祷告
 
-17. **The Lord’s Prayer | 主祷文** — Matthew 6:9–13. Jesus teaches his followers to pray first for God’s name, kingdom, and will, then for bread, forgiveness, and deliverance.
-    马太福音 6:9–13。耶稣教导门徒先为神的名、神的国、神的旨意祷告，然后才为饮食、赦免和救脱祷告。
+17. **The Lord’s Prayer | 主祷文** — Matthew 6:9–13. Jesus teaches his followers to pray first for God’s name, kingdom, and will, then for bread, forgiveness, and deliverance. See [The Lord’s Prayer, Line by Line](./Lords_Prayer_Bilingual.md).
+    马太福音 6:9–13。耶稣教导门徒先为神的名、神的国、神的旨意祷告，然后才为饮食、赦免和救脱祷告。见[主祷文逐句读](./Lords_Prayer_Bilingual.md)。
 18. **Jesus in Gethsemane | 耶稣在客西马尼园的祷告** — Mark 14:32–42. In anguish before the cross, Jesus asks the Father to take the cup away, yet prays, “not what I will, but what you will.”
     马可福音 14:32–42。耶稣在十字架前极其难过，求父把这杯撤去，却仍祷告说：“不要从我的意思，只要从你的意思。”
 19. **Jesus prays for his followers | 耶稣为跟随者祷告** — John 17. Before his arrest, Jesus prays that his followers will be kept, made holy, and united, including those who will believe later.

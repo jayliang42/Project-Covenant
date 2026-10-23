@@ -41,6 +41,7 @@ STORY_ROUTE = (
     "Bible_Timeline/Miracles_of_Jesus_Bilingual.md",
     "Bible_Timeline/Key_Passages_Bilingual.md",
     "Bible_Timeline/Prayers_in_the_Bible_Bilingual.md",
+    "Bible_Timeline/Lords_Prayer_Bilingual.md",
     "Bible_Timeline/Psalms_for_Different_Times_Bilingual.md",
     "Bible_Timeline/52周圣经故事线_查经与史料阅读计划.md",
     "Bible_Timeline/Bible_Timeline_Cheat_Sheet.md",

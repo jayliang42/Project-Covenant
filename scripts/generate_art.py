@@ -2483,6 +2483,26 @@ def sinai_cloud() -> ET.Element:
     return root
 
 
+def daily_bread() -> ET.Element:
+    root = scene("daily-bread", "Bread for today | 今日的饮食",
+                 "Morning light falls through a small window onto a wooden table, where a round loaf of bread sits beside a cup of water. | "
+                 "晨光从一扇小窗照进来，落在木桌上；桌上放着一个圆面包，旁边有一杯水。", "#3f3530")
+    el(root, "rect", x=520, y=60, width=140, height=150, rx=6, fill="#f3e2b8")
+    el(root, "line", x1=590, y1=60, x2=590, y2=210, stroke="#3f3530", stroke_width=8)
+    el(root, "line", x1=520, y1=135, x2=660, y2=135, stroke="#3f3530", stroke_width=8)
+    el(root, "path", d="M520 210 L660 210 L580 300 L270 300 Z", fill="#f3e2b8", fill_opacity=0.16)
+    el(root, "path", d="M0 330 L800 330 L800 450 L0 450 Z", fill="#2c2420")
+    el(root, "rect", x=120, y=300, width=560, height=26, rx=4, fill="#8e6644")
+    for x in (150, 630):
+        el(root, "rect", x=x, y=324, width=20, height=90, fill="#6b4e33")
+    el(root, "path", d="M250 300 C 250 236, 410 236, 410 300 Z", fill="#d9a35c")
+    for x in (290, 330, 370):
+        el(root, "path", d=f"M{x - 12} 262 C {x - 4} 254, {x + 4} 254, {x + 12} 262", fill="none", stroke="#b5793f", stroke_width=4, stroke_linecap="round")
+    el(root, "path", d="M470 300 L476 250 L516 250 L522 300 Z", fill="#c8d8de")
+    el(root, "path", d="M474 268 L518 268 L521 298 L471 298 Z", fill="#9cc3cc")
+    return root
+
+
 RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "papyrus-codex.svg": papyrus_codex,
     "story-procession.svg": story_procession,
@@ -2514,6 +2534,7 @@ RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "winding-path.svg": winding_path,
     "reading-generations.svg": reading_generations,
     "sinai-cloud.svg": sinai_cloud,
+    "daily-bread.svg": daily_bread,
 }
 
 
