@@ -4,6 +4,7 @@
 # Inclusion means privacy and link review passed, not that full translation is complete.
 # 列入表示已通过隐私与链接复核，不代表全文翻译已经完成；语言状态以各导航页为准。
 
+ABOUT.md
 Bible_Timeline/00_研究总索引与路线图.md
 Bible_Timeline/52卷主读_逐卷四时钟年代画像.md
 Bible_Timeline/52卷主读_逐卷旁证类型画像.md

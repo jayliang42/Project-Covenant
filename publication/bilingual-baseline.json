@@ -2,6 +2,7 @@
   "schema": 1,
   "algorithm": "adjacent-latin-v1",
   "files": {
+    "ABOUT.md": 0,
     "Bible_Timeline/00_研究总索引与路线图.md": 0,
     "Bible_Timeline/52卷主读_逐卷四时钟年代画像.md": 0,
     "Bible_Timeline/52卷主读_逐卷旁证类型画像.md": 0,

@@ -8,9 +8,13 @@ The static site now presents the approved study library as a book-style reading 
 
 ## Reading Features | 阅读功能
 
-The home page offers a short starting route and collection entrances. Reading pages include collection navigation, an outline derived from actual rendered heading IDs, previous/next documents, and a back-to-top link. On small screens, native expandable menus replace the desktop sidebars.
+The home page is a reader landing page: a short introduction, a start button, topic-guide cards, and the library index. Maintenance material lives on the About page. Reading pages use one centered column with the collection links in the top bar, an outline derived from actual rendered heading IDs at the side, and previous/next documents plus the full collection list at the end. On small screens, native expandable menus replace the top links and the outline.
 
-首页提供简短入门路线和分类入口。阅读页包括栏目导航、根据正文真实标题锚点生成的页内目录、上一篇与下一篇，以及返回页首链接。小屏幕使用浏览器原生折叠菜单替代桌面侧栏。
+首页是面向读者的落地页：简短介绍、开始阅读按钮、专题导读卡片和资料索引；维护类内容放在“关于本资料库”页面。阅读页使用居中单栏，栏目链接放在顶部，侧边显示根据正文真实标题锚点生成的页内目录，文末提供上一篇、下一篇和本栏全部篇目。小屏幕使用浏览器原生折叠菜单替代顶部链接和页内目录。
+
+Every article starts with the same header: collection and position, title, the page's own summary, and one meta line with a small review-status badge and the reading time. The site moves or drops only repeated reading aids that the Markdown keeps for GitHub: the review-status quote becomes the badge; a “fully bilingual” language-status box is dropped, and any other language-status note moves under the title; a route table that only links to sections of the same page is dropped because the outline replaces it; the per-image “original illustration” line is replaced by one footer note; and a final row of “Back to …” links is replaced by the previous/next navigation. Every anchor ID those blocks carried is kept, so existing links still work.
+
+每篇文章使用统一的开头：栏目与位置、标题、本篇摘要，以及一行包含审阅状态小标签和阅读时间的信息。网站只移动或省略 Markdown 为 GitHub 保留的重复阅读辅助：审阅状态引用框改为小标签；“完整双语”的语言状态框省略，其他语言状态说明移到标题下方；只链接本页小节的路线表由页内目录取代；每张插图下的“原创插画”说明改为页脚统一说明；文末的“返回……”链接行由上一篇／下一篇导航取代。这些区块原有的锚点 ID 全部保留，旧链接仍然有效。
 
 The design includes system-following dark mode, keyboard focus indicators, a skip-to-content link, reduced-motion support, horizontally scrollable tables, and print styles. Credited maps and public-domain illustrations are local files; no remote fonts, images, or runtime dependencies are added.
 
@@ -22,15 +26,15 @@ The number above a document is its position in the current collection, not a rec
 
 ## Reading Estimates and Print Layout | 阅读时间与打印版式
 
-Long articles receive a bilingual reading-time estimate at the start of the generated page. The static builder uses 200 English words or 350 Chinese characters per minute, takes the longer language estimate, and adds a 35% upper allowance. It omits estimates below three minutes. These are rough reading aids, excluding linked Bible passages, study, and reflection; they do not measure an individual reader. / 长文在生成页面开头显示双语阅读时间。静态构建按每分钟200个英文词或350个汉字，取两种语言较长的估计，并增加35%的上限余量；不足三分钟不显示。这只是粗略提示，不包含另开的经文、研读和思考，也不衡量个别读者。
+Long articles receive a short bilingual reading-time estimate (“5 min read | 约 5 分钟”) in the article header. The static builder uses 200 English words or 350 Chinese characters per minute, takes the longer language estimate, and rounds up. It omits estimates below three minutes except on study pages. These are rough reading aids, excluding linked Bible passages, study, and reflection; they do not measure an individual reader. / 长文在文章开头显示简短的双语阅读时间（“5 min read | 约 5 分钟”）。静态构建按每分钟200个英文词或350个汉字，取两种语言较长的估计并向上取整；除研读页外，不足三分钟不显示。这只是粗略提示，不包含另开的经文、研读和思考，也不衡量个别读者。
 
-The reading column is capped at 44rem; phone text is 17px with a 1.95 line height. Tables and large maps scroll within their own regions, and illustrations shrink to the available width. Print styles hide navigation and introductory controls and constrain images to fit the page. All of this is CSS; no reading script or remote font is added. / 正文最大宽度为44rem；手机字号17px、行高1.95。表格和大地图在各自区域内滚动，插画适应可用宽度。打印时隐藏导航与入口控件，并限制图片高度以适合纸张。这些效果由CSS实现，不增加阅读脚本或远程字体。
+The reading column is capped at 42rem; body text is 17px with a 1.85–1.9 line height, and in side-by-side mode each language starts on its own line. Tables and large maps scroll within their own regions, and illustrations shrink to the available width. Print styles hide navigation and introductory controls and constrain images to fit the page. All of this is CSS; no reading script or remote font is added. / 正文最大宽度为42rem；正文字号17px、行高1.85–1.9；中英对照模式下两种语言各自另起一行。表格和大地图在各自区域内滚动，插画适应可用宽度。打印时隐藏导航与入口控件，并限制图片高度以适合纸张。这些效果由CSS实现，不增加阅读脚本或远程字体。
 
 ## Content and Safety | 内容与安全
 
-Original Markdown, body text, citations, language-status notes, filenames, and publication permissions are unchanged. Navigation can only target pages present in the verified allowlist. Major headings are preferred for long-page outlines; third-level headings are used when there are no major headings.
+Original Markdown, body text, citations, filenames, and publication permissions are unchanged; only the repeated reading aids listed above are moved or dropped in the rendered page. Navigation can only target pages present in the verified allowlist. Major headings are preferred for long-page outlines; third-level headings are used when there are no major headings.
 
-原有 Markdown、正文、引文、语言状态说明、文件名及发布权限均不改变。导航只能指向已验证白名单中存在的页面。长文目录优先显示二级标题；没有二级标题时使用三级标题。
+原有 Markdown、正文、引文、文件名及发布权限均不改变；渲染页面只移动或省略上文列出的重复阅读辅助。导航只能指向已验证白名单中存在的页面。长文目录优先显示二级标题；没有二级标题时使用三级标题。
 
 The output still contains exactly one HTML file per approved Markdown page and one local stylesheet plus approved local maps and illustrations. Scripts, tracking, forms, comments, remote assets, and source-repository links remain prohibited. The layout does not imply that untranslated source material is fully bilingual.
 

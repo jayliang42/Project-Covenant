@@ -158,7 +158,7 @@ def interactions(page, home: str, output: Path, mode: str) -> None:
 
     page.emulate_media(color_scheme="dark", reduced_motion="reduce")
     require(page.evaluate("getComputedStyle(document.body).backgroundColor") ==
-            "rgb(25, 28, 25)", "BROWSER_DARK_MODE_FAILED")
+            "rgb(21, 25, 22)", "BROWSER_DARK_MODE_FAILED")
     require(page.evaluate("getComputedStyle(document.documentElement).scrollBehavior") ==
             "auto", "BROWSER_REDUCED_MOTION_FAILED")
     layout(page)

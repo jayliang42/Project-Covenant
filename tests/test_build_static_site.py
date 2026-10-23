@@ -646,14 +646,14 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
 
             report = build_site(snapshot, digest, output)
 
-            self.assertEqual(98, report.page_count)
-            self.assertEqual(229, report.file_count)
+            self.assertEqual(99, report.page_count)
+            self.assertEqual(230, report.file_count)
             file_paths = {
                 path.relative_to(output).as_posix()
                 for path in output.rglob("*")
                 if path.is_file()
             }
-            self.assertEqual(98, sum(path.endswith(".html") for path in file_paths))
+            self.assertEqual(99, sum(path.endswith(".html") for path in file_paths))
             self.assertEqual(
                 {build_static_site.SITE_CSS_PATH},
                 {path for path in file_paths if path.endswith(".css")},
@@ -669,10 +669,10 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             ]
             # One source heading-shaped line is inside a fenced Markdown example.
             self.assertEqual(
-                2611,
+                2594,
                 sum(len(re.findall(r"<h[1-6](?: |>)", text)) for text in html_texts),
             )
-            self.assertEqual(269, sum(text.count("<table>") for text in html_texts))
+            self.assertEqual(251, sum(text.count("<table>") for text in html_texts))
             self.assertEqual(24, sum(text.count("<pre><code>") for text in html_texts))
             self.assertGreaterEqual(sum(text.count("<a ") for text in html_texts), 1850)
 
@@ -696,12 +696,15 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
                 self.assertNotIn(name.removesuffix(".md") + ".html", traditions_hub)
                 self.assertNotIn(name.removesuffix(".md") + ".html", home)
             terms_page = (output / terms_output).read_text(encoding="utf-8")
-            self.assertIn('href="index.html#column-index"', terms_page)
+            self.assertIn('<span class="kicker-label"><a href="index.html">', terms_page)
             self.assertIn("Evangelical | 福音派", visible_text(terms_page))
-            self.assertIn("How This Library Is Made | 资料库如何编写", visible_text(home))
+            about = (output / "ABOUT.html").read_text(encoding="utf-8")
+            self.assertIn('href="ABOUT.html"', home)
+            self.assertIn("How This Library Is Made | 资料库如何编写", visible_text(about))
+            self.assertNotIn("How This Library Is Made", visible_text(home))
             self.assertNotIn("reviewed study notes", home)
             for source_path in manifest_paths:
-                if source_path in {"README.md", "CREDITS.md"} or source_path.startswith((
+                if source_path in {"README.md", "ABOUT.md", "CREDITS.md"} or source_path.startswith((
                     "Bible_Timeline/", "Bible_Translations/", "Bilingual_Notes/",
                     "Book_Studies/", "Christian_Traditions/", "Maps/",
                 )):
@@ -711,7 +714,8 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
                     rendered_page = (output / source_path_to_output(source_path)).read_text(
                         encoding="utf-8"
                     )
-                    self.assertIn("Status: Draft (AI draft; not human reviewed)", rendered_page)
+                    self.assertIn('<span class="status-badge">Draft</span>', rendered_page)
+                    self.assertIn("AI draft; not human reviewed", visible_text(rendered_page))
 
             core_sources = [
                 path for path in manifest_paths
@@ -750,7 +754,7 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             for note in sorted((output / "Bilingual_Notes").glob("20*.html")):
                 with self.subTest(teaching_note_art=note.name):
                     self.assertEqual(1, note.read_text(encoding="utf-8").count('class="study-art"'))
-            self.assertEqual(52, year_plan.count('href="#week-index"') - 2)
+            self.assertEqual(52, year_plan.count('href="#week-index"') - 1)
 
             book_hub_output = "Book_Studies/index.html"
             book_hub = (output / book_hub_output).read_text(encoding="utf-8")
@@ -769,15 +773,15 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
                 self.assertIn(f'href="{guide_href}"', book_hub)
                 self.assertIn(title_marker, book_hub)
                 guide = (output / guide_output).read_text(encoding="utf-8")
-                self.assertIn('href="index.html#library-index"', guide)
-                self.assertIn('href="#book-index"', guide)
+                self.assertIn('<span class="kicker-label"><a href="index.html">', guide)
+                self.assertIn('id="book-index"', guide)
 
             license_page = (output / "LICENSE.html").read_text(encoding="utf-8")
             self.assertIn('href="LICENSE.html">Licensing | 授权说明</a>', home)
             self.assertIn(
-                'href="STATIC_MIRROR_DEPLOYMENT.html">Static Mirror Deployment / '
+                'href="STATIC_MIRROR_DEPLOYMENT.html">Static Mirror Deployment | '
                 "静态镜像部署</a>",
-                home,
+                about,
             )
             self.assertIn("CC BY-NC-SA 4.0", license_page)
             self.assertIn("MIT License", license_page)
@@ -786,7 +790,8 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             mirror_page = (output / "STATIC_MIRROR_DEPLOYMENT.html").read_text(
                 encoding="utf-8"
             )
-            self.assertIn('href="index.html">Back to Project Home | 返回项目首页</a>', mirror_page)
+            self.assertNotIn("Back to Project Home", visible_text(mirror_page))
+            self.assertIn('class="footer-title"', mirror_page)
             self.assertIn(
                 'href="PUBLICATION_POLICY.html"><code>PUBLICATION_POLICY.md</code></a>',
                 mirror_page,
@@ -807,12 +812,9 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
             ).read_text(encoding="utf-8")
             self.assertIn('href="#batch-11"', evidence_index)
             self.assertIn('id="batch-11"', evidence_index)
-            self.assertIn('href="#top"', evidence_index)
-            self.assertIn(
-                'href="index.html">Back to the Bible Timeline Research Hub | '
-                "返回圣经时间线研究中心</a>",
-                evidence_index,
-            )
+            self.assertIn('id="top"', evidence_index)
+            self.assertNotIn("Back to the Bible Timeline Research Hub", visible_text(evidence_index))
+            self.assertIn('class="reading-pager"', evidence_index)
 
             visible = _VisibleText()
             visible.feed("\n".join(html_texts))

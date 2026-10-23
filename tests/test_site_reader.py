@@ -81,25 +81,80 @@ class ReaderTests(unittest.TestCase):
         self.assertNotIn('class="reader-toc"', page)
         self.assertNotIn('class="mobile-toc"', page)
 
-    def test_body_is_preserved_byte_for_byte(self):
-        self.assertIn('<article class="reading-body">\n' + self.body + '\n</article>', self.render())
+    def test_title_moves_into_reading_header_and_body_follows_untouched(self):
+        page = self.render()
+        self.assertIn('<header class="article-header">', page)
+        self.assertIn('<h1 id="guide">Guide | 指南</h1>\n', page)
+        self.assertLess(page.index('<h1 id="guide">'), page.index('</header>\n<details class="mobile-toc">'))
+        self.assertIn('<h2 id="start-开始">Start | 开始</h2><p>Body &amp; sources. | 正文与来源。</p>\n</article>', page)
+
+    def test_body_without_title_is_preserved_byte_for_byte(self):
+        body = '<h2 id="start-开始">Start | 开始</h2><p>Body.</p>'
+        page = self.render(body=body)
+        self.assertIn('</header>\n<details class="mobile-toc">', page)
+        self.assertIn('</details>\n' + body + '\n</article>', page)
+
+    def test_status_route_caption_and_back_links_are_reshaped_but_ids_survive(self):
+        body = (
+            '<a id="top" class="anchor" aria-hidden="true"></a>\n'
+            '<blockquote>\n<p><span class="l-en" lang="en">Status: Draft (AI draft; not human reviewed)</span>'
+            '<span class="l-sep"> | </span><span class="l-zh" lang="zh-Hans">状态：Draft（AI 草稿，未人工审阅）</span></p>\n</blockquote>\n'
+            '<h1 id="guide">Guide | 指南</h1>\n'
+            '<a id="in-three-sentences" class="anchor" aria-hidden="true"></a>\n'
+            '<blockquote>\n<p><span class="l-bi"><strong>In Three Sentences | 三句话读懂本篇</strong></span></p>\n<p>Summary. | 摘要。</p>\n</blockquote>\n'
+            '<blockquote>\n<p>Language status | 语言状态: Fully bilingual, paragraph by paragraph.</p>\n<p>语言状态 | Language status：全文按段落提供中英双语。</p>\n</blockquote>\n'
+            '<p><img class="study-art" src="../assets/art/x.svg" alt="Art | 插画"></p>\n'
+            '<p><em>Original illustration for this library; not historical evidence. / 本资料库原创插画，不作为历史证据。</em> '
+            '<a href="../CREDITS.html#original-illustrations">About the illustrations | 插画说明</a></p>\n'
+            '<a id="route-guide" class="anchor" aria-hidden="true"></a>\n'
+            '<h2 id="route-guide-路线导航">Route Guide | 路线导航</h2>\n'
+            '<div class="table-scroll">\n<table><tbody><tr><td><a href="#start-开始">Start</a></td></tr></tbody></table>\n</div>\n'
+            '<h2 id="start-开始">Start | 开始</h2>\n<p>Body.</p>\n'
+            '<p><a href="../index.html">Back to Project Covenant | 返回项目首页</a> · <a href="index.html">Back to the hub | 返回导航</a></p>\n'
+        )
+        page = self.render(body=body)
+        article = page[page.index('<article'):page.index('</article>')]
+        self.assertIn('<span class="status-badge">Draft</span>', article)
+        self.assertIn('AI draft; not human reviewed', article)
+        self.assertNotIn('Status: Draft', article)
+        self.assertIn('<div class="lede">', article)
+        self.assertIn('<p class="lede-label">', article)
+        self.assertNotIn('Fully bilingual', article)
+        self.assertNotIn('Original illustration', article)
+        self.assertNotIn('Route Guide', article)
+        self.assertNotIn('Back to Project Covenant', article)
+        self.assertIn('class="study-art"', article)
+        for identifier in ('top', 'in-three-sentences', 'route-guide', 'route-guide-路线导航', 'start-开始'):
+            self.assertIn(f'id="{identifier}"', article)
+
+    def test_route_table_that_links_elsewhere_is_kept(self):
+        body = ('<h1 id="guide">Guide | 指南</h1>\n<a id="route-guide" class="anchor" aria-hidden="true"></a>\n'
+                '<h2 id="route-guide">Route Guide | 路线导航</h2>\n<div class="table-scroll">\n'
+                '<table><tbody><tr><td><a href="../Glossary/index.html">Glossary</a></td></tr></tbody></table>\n</div>\n')
+        self.assertIn('Route Guide | 路线导航', self.render(body=body))
+
+    def test_partial_language_status_moves_into_header_note(self):
+        body = ('<h1 id="guide">Guide | 指南</h1>\n<blockquote>\n<p><strong>Language status | 语言状态：</strong> '
+                'Paired research draft. / 中英对照研究草稿。</p>\n</blockquote>\n<h2 id="a">A | 甲</h2>\n')
+        page = self.render(body=body)
+        self.assertIn('<div class="page-note">', page)
+        article = page[page.index('<article'):]
+        self.assertLess(article.index('class="page-note"'), article.index('</header>'))
 
     def test_reading_time_counts_one_language_and_omits_short_pages(self):
         self.assertEqual("", site_reader.reading_time("<p>A short page.</p>"))
         bilingual = "<p>" + "word " * 600 + "</p><p>" + "字" * 1050 + "</p>"
         estimate = site_reader.reading_time(bilingual)
-        self.assertIn("3–5 min", estimate)
-        self.assertIn("按一种语言", estimate)
+        self.assertEqual("3 min read | 约 3 分钟", estimate)
         rendered = self.render(body=bilingual)
         self.assertIn('class="reading-time"', rendered)
-        self.assertIn("excludes assigned Bible reading and reflection", rendered)
 
     def test_short_studies_have_reading_time_while_short_navigation_does_not(self):
         for source in ("Bible_Timeline/First_Steps_Bilingual.md", "Book_Studies/guide.md"):
             with self.subTest(source=source):
                 page = self.render(source=source)
                 self.assertIn('class="reading-time"', page)
-                self.assertIn("about 1–2 min", page)
+                self.assertIn("1 min read", page)
         for source in ("README.md", "Book_Studies/README.md"):
             with self.subTest(source=source):
                 self.assertNotIn('class="reading-time"', self.render(source=source))
@@ -135,7 +190,9 @@ class ReaderTests(unittest.TestCase):
     def test_home_has_only_existing_start_and_collection_links(self):
         page = self.render(source="README.md")
         self.assertIn('href="Bible_Timeline/First_Steps_Bilingual.html" class="start-reading"', page)
-        self.assertEqual(2, page.count('class="collection-card"'))
+        self.assertEqual(0, page.count('class="collection-card"'))
+        self.assertIn('href="Bible_Timeline/index.html"', page)
+        self.assertIn('href="Book_Studies/index.html"', page)
         self.assertIn('to read in Chinese, in English, or in both', page)
 
     def test_markup_escapes_titles_and_encodes_unicode_paths(self):
