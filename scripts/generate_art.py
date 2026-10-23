@@ -2525,6 +2525,23 @@ def salt_light() -> ET.Element:
     return root
 
 
+def voices_together() -> ET.Element:
+    root = scene("voices-together", "Saying it together | 一同宣认",
+                 "A row of people of different ages and colors stands side by side beneath three tall arched windows filled with warm light. | "
+                 "一排年龄不同、衣着各异的人并肩站在三扇高高的拱形窗下，窗中透进温暖的光。", "#e8e1d4")
+    for x in (190, 400, 610):
+        el(root, "path", d=f"M{x - 60} 280 L{x - 60} 120 C {x - 60} 40, {x + 60} 40, {x + 60} 120 L{x + 60} 280 Z", fill="#f6e3b0")
+        el(root, "line", x1=x, y1=60, x2=x, y2=280, stroke="#e8e1d4", stroke_width=6)
+        el(root, "line", x1=x - 60, y1=160, x2=x + 60, y2=160, stroke="#e8e1d4", stroke_width=6)
+    el(root, "path", d="M0 300 L800 300 L800 450 L0 450 Z", fill="#c9b48a")
+    el(root, "path", d="M130 300 L670 300 L760 450 L40 450 Z", fill="#f6e3b0", fill_opacity=0.25)
+    people = [(110, "#7a5f8f", "#c99a6e", 1.0), (190, "#4f7d6a", "#b8875c", 0.9), (265, "#a35d3c", "#8e6a46", 1.05), (345, "#3f6f8f", "#c99a6e", 0.75),
+              (420, "#d9a441", "#b8875c", 1.0), (500, "#8e3b46", "#c99a6e", 0.95), (580, "#5f8f50", "#8e6a46", 0.8), (660, "#c96f4a", "#b8875c", 1.0)]
+    for x, robe, skin, sc in people:
+        person(root, x, 380, robe, skin, 1.4 * sc)
+    return root
+
+
 RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "papyrus-codex.svg": papyrus_codex,
     "story-procession.svg": story_procession,
@@ -2558,6 +2575,7 @@ RESEARCH_ARTWORKS: dict[str, Callable[[], ET.Element]] = {
     "sinai-cloud.svg": sinai_cloud,
     "daily-bread.svg": daily_bread,
     "salt-light.svg": salt_light,
+    "voices-together.svg": voices_together,
 }
 
 

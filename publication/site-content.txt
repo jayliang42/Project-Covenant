@@ -14,6 +14,7 @@ Bible_Timeline/52周圣经故事线_查经与史料阅读计划.md
 Bible_Timeline/52周圣经故事线_精读通读双档打卡版.md
 Bible_Timeline/66卷承上启下总表.md
 Bible_Timeline/66卷接收史深度审计_CAT_USE_COM_LEC_VER.md
+Bible_Timeline/Apostles_Creed_Bilingual.md
 Bible_Timeline/Bible_By_Book_Bilingual.md
 Bible_Timeline/Bible_Covenants_Bilingual.md
 Bible_Timeline/Bible_People_Bilingual.md
@@ -199,6 +200,7 @@ assets/art/temple-courts.svg
 assets/art/translation-books.svg
 assets/art/triune-light.svg
 assets/art/unfolded-map.svg
+assets/art/voices-together.svg
 assets/art/wanderer-home.svg
 assets/art/water-tunnel.svg
 assets/art/weighing-evidence.svg

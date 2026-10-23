@@ -94,6 +94,8 @@ Chinese Bibles also differ in how they translate the general word for God: some 
 
 - **Look up the words | 查词语：** The [Glossary](../Glossary/README.md) explains [Lord](../Glossary/README.md#lord), [Messiah](../Glossary/README.md#messiah), and [Trinity](../Glossary/README.md#trinity) in plain language.
   **查词语：** [词汇表](../Glossary/README.md)用白话解释[主](../Glossary/README.md#lord)、[弥赛亚](../Glossary/README.md#messiah)和[三一](../Glossary/README.md#trinity)。
+- **Confess the faith | 宣认信仰：** [The Apostles’ Creed, Phrase by Phrase](./Apostles_Creed_Bilingual.md) shows how Father, Son, and Spirit are confessed together.
+  **宣认信仰：** [使徒信经逐句读](./Apostles_Creed_Bilingual.md)说明信徒怎样一同宣认圣父、圣子和圣灵。
 - **Pray with these names | 用这些名字祷告：** [Prayers in the Bible](./Prayers_in_the_Bible_Bilingual.md) shows how people in Scripture addressed God.
   **用这些名字祷告：** [圣经中的祷告](./Prayers_in_the_Bible_Bilingual.md)说明圣经中的人怎样称呼神、向祂祷告。
 

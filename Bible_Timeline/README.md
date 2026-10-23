@@ -41,6 +41,7 @@ Short, fully bilingual guides for looking something up or reading one theme at a
 - [Covenants of the Bible | 圣经中的约](./Bible_Covenants_Bilingual.md)
 - [The Ten Commandments | 十诫](./Ten_Commandments_Bilingual.md)
 - [Names and Titles of God | 神的名字与称号](./Names_of_God_Bilingual.md)
+- [The Apostles’ Creed, Phrase by Phrase | 使徒信经逐句读](./Apostles_Creed_Bilingual.md)
 - [Feasts of the Bible | 圣经中的节期](./Feasts_of_the_Bible_Bilingual.md)
 
 <a id="topic-jesus"></a>

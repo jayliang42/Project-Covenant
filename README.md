@@ -112,6 +112,7 @@ Project-Covenant/
 - [Covenants of the Bible | 圣经中的约](./Bible_Timeline/Bible_Covenants_Bilingual.md)
 - [The Ten Commandments | 十诫](./Bible_Timeline/Ten_Commandments_Bilingual.md)
 - [Names and Titles of God | 神的名字与称号](./Bible_Timeline/Names_of_God_Bilingual.md)
+- [The Apostles’ Creed, Phrase by Phrase | 使徒信经逐句读](./Bible_Timeline/Apostles_Creed_Bilingual.md)
 - [Feasts of the Bible | 圣经中的节期](./Bible_Timeline/Feasts_of_the_Bible_Bilingual.md)
 - [Parables of Jesus | 耶稣的比喻](./Bible_Timeline/Parables_of_Jesus_Bilingual.md)
 - [Miracles of Jesus | 耶稣的神迹](./Bible_Timeline/Miracles_of_Jesus_Bilingual.md)
