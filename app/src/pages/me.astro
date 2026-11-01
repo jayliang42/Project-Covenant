@@ -1,0 +1,70 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import TrackCard from '../components/TrackCard.astro';
+import T from '../components/T.astro';
+import Icon from '../components/Icon.astro';
+import { loadTracks } from '../lib/content';
+const tracks = await loadTracks();
+---
+<AppLayout title="我的">
+  <header class="page-head">
+    <h1><T zh="我的" en="Me" /></h1>
+  </header>
+
+  <article class="card stats">
+    <div class="stat"><Icon name="sparkle" /><strong data-stat="week">0</strong><small><T zh="本周学习天数" en="Days this week" /></small></div>
+    <div class="stat"><Icon name="check" /><strong data-stat="done">0</strong><small><T zh="完成的课" en="Lessons done" /></small></div>
+    <div class="stat"><Icon name="clock" /><strong data-stat="minutes">0</strong><small><T zh="学习分钟" en="Minutes" /></small></div>
+  </article>
+
+  <h2 class="section-title left"><T zh="进度" en="Progress" /></h2>
+  <div class="track-grid compact">
+    {tracks.map((t) => <TrackCard track={t} />)}
+  </div>
+
+  <h2 class="section-title left"><T zh="阅读设置" en="Reading settings" /></h2>
+  <section class="card settings">
+    <div class="setting">
+      <span><T zh="语言" en="Language" /></span>
+      <div class="seg" role="group">
+        <button type="button" data-set-lang="zh">中文</button>
+        <button type="button" data-set-lang="both">中英对照</button>
+        <button type="button" data-set-lang="en">English</button>
+      </div>
+    </div>
+    <div class="setting">
+      <span><T zh="字号" en="Text size" /></span>
+      <div class="seg" role="group">
+        <button type="button" data-set-size="m"><T zh="标准" en="Normal" /></button>
+        <button type="button" data-set-size="l"><T zh="大" en="Large" /></button>
+        <button type="button" data-set-size="xl"><T zh="特大" en="Extra large" /></button>
+      </div>
+    </div>
+    <div class="setting">
+      <span><T zh="外观" en="Appearance" /></span>
+      <div class="seg" role="group">
+        <button type="button" data-set-theme="system"><T zh="跟随系统" en="System" /></button>
+        <button type="button" data-set-theme="light"><T zh="浅色" en="Light" /></button>
+        <button type="button" data-set-theme="dark"><T zh="深色" en="Dark" /></button>
+      </div>
+    </div>
+  </section>
+
+  <h2 class="section-title left"><T zh="学习记录" en="Your data" /></h2>
+  <section class="card settings">
+    <p class="muted"><T zh="学习记录只保存在这台设备的浏览器里，不上传、不需要账号。换手机前可以先导出备份。" en="Progress is stored only in this device's browser — no uploads, no account. Export a backup before switching devices." /></p>
+    <div class="actions">
+      <button type="button" class="btn" data-export><T zh="导出备份" en="Export backup" /></button>
+      <label class="btn"><T zh="导入备份" en="Import backup" /><input type="file" accept="application/json,.json" data-import hidden /></label>
+      <button type="button" class="btn btn-danger" data-reset>
+        <span class="when-idle"><T zh="清除学习记录" en="Clear progress" /></span>
+        <span class="when-armed"><T zh="再点一次确认清除" en="Tap again to confirm" /></span>
+      </button>
+    </div>
+  </section>
+
+  <h2 class="section-title left"><T zh="关于" en="About" /></h2>
+  <section class="card about">
+    <p><T zh="课程由 AI 辅助起草，标有“草稿”的内容尚未经过人工审阅。经文链接打开外部阅读网站；本应用不内置受版权保护的译本。" en="Lessons are AI-assisted drafts; anything marked “Draft” has not been reviewed by a person. Scripture links open an external reader; the app bundles no copyrighted translations." /></p>
+  </section>
+</AppLayout>

@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.astro/
+# Copied from ../assets at build time by scripts/sync-assets.mjs
+public/repo-assets/
+# Generated from icon.svg / maskable.svg by scripts/sync-assets.mjs
+public/icons/*.png

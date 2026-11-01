@@ -1,0 +1,28 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import Bi from '../components/Bi.astro';
+import T from '../components/T.astro';
+import Icon from '../components/Icon.astro';
+import { LIBRARY_SECTIONS } from '../data/library';
+import { libraryUrl } from '../lib/content';
+import { LIBRARY_BASE_URL } from '../config';
+---
+<AppLayout title="资料库" wide>
+  <header class="page-head">
+    <h1><T zh="资料库" en="Library" /></h1>
+    <p class="muted"><T zh="课程之外，这里是完整的双语研读资料。可以按需查阅。" en="Beyond the lessons: the full bilingual study library, to look things up as you need." /></p>
+  </header>
+  <div class="library-grid">
+    {LIBRARY_SECTIONS.map((sec) => (
+      <section class="card library-section">
+        <h2><Bi text={sec.title} /></h2>
+        <ul>
+          {sec.items.map((it) => (
+            <li><a href={libraryUrl(it.path)} target="_blank" rel="noopener"><span><Bi text={it} /></span><Icon name="external" size={14} /></a></li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </div>
+  <p class="center"><a class="btn" href={LIBRARY_BASE_URL} target="_blank" rel="noopener"><T zh="打开完整资料库" en="Open the full library" /><Icon name="external" size={16} /></a></p>
+</AppLayout>

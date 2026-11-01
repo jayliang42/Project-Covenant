@@ -1,0 +1,19 @@
+# 对圣经好奇 | Curious about the Bible
+title: { zh: 对圣经好奇, en: Curious }
+who: { zh: 我对圣经好奇，想知道它在讲什么, en: I'm curious what the Bible is about }
+tagline: { zh: 不需要任何背景，从零开始, en: No background needed — start from zero }
+description:
+  zh: 用几分钟一课的节奏，认识圣经是一本什么样的书、它讲的那一条大故事，以及故事中心的人物。不预设你的信仰立场。
+  en: In a few minutes per lesson, meet the Bible as a book, the one big story it tells, and the person at its centre. No faith commitment assumed.
+color: "#c27a1a"
+art: bible-library
+units:
+  - id: what-is-it
+    title: { zh: 圣经是一本什么书, en: What kind of book is it? }
+    summary: { zh: 66 卷、两约、多种文体, en: "66 books, two testaments, many kinds of writing" }
+  - id: big-story
+    title: { zh: 一条大故事, en: One big story }
+    summary: { zh: 从创造到新创造, en: From creation to new creation }
+  - id: jesus
+    title: { zh: 耶稣是谁, en: Who is Jesus? }
+    summary: { zh: 故事的中心人物, en: The person at the centre of the story }

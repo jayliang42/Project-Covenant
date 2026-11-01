@@ -1,0 +1,132 @@
+---
+import { render } from 'astro:content';
+import AppLayout from '../../layouts/AppLayout.astro';
+import Bi from '../../components/Bi.astro';
+import T from '../../components/T.astro';
+import Icon from '../../components/Icon.astro';
+import { loadTracks, artUrl, lessonUrl, trackUrl, passageUrl, libraryUrl, type LessonEntry, type TrackNode } from '../../lib/content';
+
+export async function getStaticPaths() {
+  const tracks = await loadTracks();
+  return tracks.flatMap((track) =>
+    track.path.map((lesson, i) => ({
+      params: { id: lesson.id },
+      props: { lesson, track, prev: track.path[i - 1], next: track.path[i + 1], index: i },
+    })),
+  );
+}
+const { lesson, track, prev, next, index } = Astro.props as {
+  lesson: LessonEntry; track: TrackNode; prev?: LessonEntry; next?: LessonEntry; index: number;
+};
+const d = lesson.data;
+const unit = track.units.find((u) => u.id === d.unit)!;
+const { Content } = await render(lesson);
+---
+<AppLayout title={d.title.zh} description={d.summary.zh} accent={track.data.color} back={{ href: trackUrl(track.id), label: track.data.title.zh }}>
+  <article class="lesson" data-lesson-id={lesson.id}>
+    <header class="lesson-head">
+      <p class="crumbs">
+        <a href={trackUrl(track.id)}><Bi text={track.data.title} /></a>
+        <span aria-hidden="true">›</span>
+        <Bi text={unit.title} />
+      </p>
+      <h1><Bi text={d.title} /></h1>
+      <p class="lead"><Bi text={d.summary} /></p>
+      <p class="lesson-meta">
+        <span><Icon name="clock" size={16} /><T zh={`约 ${d.minutes} 分钟`} en={`${d.minutes} min read`} /></span>
+        <span><T zh={`第 ${index + 1} / ${track.path.length} 课`} en={`Lesson ${index + 1} of ${track.path.length}`} /></span>
+        {d.review === 'draft'
+          ? <span class="badge draft" title="AI draft; not human reviewed"><T zh="草稿 · 待人工审阅" en="Draft · not yet reviewed" /></span>
+          : <span class="badge reviewed"><T zh="已审阅" en="Reviewed" /></span>}
+      </p>
+    </header>
+
+    {d.art && <img class="lesson-art" src={artUrl(d.art)} alt="" />}
+
+    {d.scripture.length > 0 && (
+      <section class="scripture" aria-label="Scripture">
+        <h2 class="block-title"><Icon name="book" size={18} /><T zh="今天读的经文" en="Read today" /></h2>
+        <ul>
+          {d.scripture.map((s) => (
+            <li>
+              {s.text && <blockquote><Bi text={s.text} /></blockquote>}
+              <a href={passageUrl(s.refEn)} target="_blank" rel="noopener">
+                <span data-lang="zh">{s.ref}</span><span data-lang="en">{s.refEn}</span>
+                <Icon name="external" size={14} />
+              </a>
+              {s.text && <small class="muted"><T zh="和合本（1919）/ WEB" en="CUV (1919) / WEB" /></small>}
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <div class="prose">
+      <Content />
+    </div>
+
+    {d.reflect.length > 0 && (
+      <section class="reflect">
+        <h2 class="block-title"><Icon name="pen" size={18} /><T zh="想一想" en="Reflect" /></h2>
+        <ol>{d.reflect.map((r) => <li><Bi text={r} /></li>)}</ol>
+      </section>
+    )}
+
+    {d.check.length > 0 && (
+      <section class="checks">
+        <h2 class="block-title"><Icon name="quiz" size={18} /><T zh="小测验" en="Quick check" /></h2>
+        {d.check.map((q, qi) => (
+          <div class="quiz" data-quiz data-answer={q.answer}>
+            <p class="quiz-q"><span class="quiz-n">{qi + 1}</span><span><Bi text={q.q} /></span></p>
+            <div class="quiz-options">
+              {q.options.map((o, oi) => <button type="button" data-option={oi}><Bi text={o} /></button>)}
+            </div>
+            <p class="quiz-result" data-quiz-result hidden>
+              <strong class="right-msg"><T zh="答对了。" en="Correct." /></strong>
+              <strong class="wrong-msg"><T zh="再想想，正确答案已标出。" en="Not quite — the right answer is marked." /></strong>
+              {q.explain && <> <Bi text={q.explain} /></>}
+            </p>
+          </div>
+        ))}
+      </section>
+    )}
+
+    {d.further.length > 0 && (
+      <section class="further">
+        <h2 class="block-title"><Icon name="library" size={18} /><T zh="想读得更深" en="Go deeper" /></h2>
+        <ul>
+          {d.further.map((f) => (
+            <li><a href={libraryUrl(f.path)} target="_blank" rel="noopener"><span><Bi text={f.label} /></span><Icon name="external" size={14} /></a></li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <div class="complete-bar">
+      <button type="button" class="btn btn-primary btn-complete" data-complete aria-pressed="false">
+        <Icon name="check" />
+        <span class="when-todo"><T zh="完成这一课" en="Mark complete" /></span>
+        <span class="when-done"><T zh="已完成" en="Completed" /></span>
+      </button>
+    </div>
+
+    <section class="after-complete" data-after-complete hidden>
+      {next
+        ? <a class="card next-card" href={lessonUrl(next)}>
+            <span class="eyebrow"><T zh="下一课" en="Next lesson" /></span>
+            <strong><Bi text={next.data.title} /></strong>
+            <Icon name="right" />
+          </a>
+        : <a class="card next-card" href={trackUrl(track.id)}>
+            <span class="eyebrow"><T zh="本路径目前的课程都读完了" en="That's every lesson in this path for now" /></span>
+            <strong><T zh="回到路径" en="Back to the path" /></strong>
+            <Icon name="right" />
+          </a>}
+    </section>
+
+    <nav class="pager">
+      {prev ? <a href={lessonUrl(prev)}><Icon name="left" size={18} /><span><Bi text={prev.data.title} /></span></a> : <span></span>}
+      {next ? <a href={lessonUrl(next)} class="right"><span><Bi text={next.data.title} /></span><Icon name="right" size={18} /></a> : <span></span>}
+    </nav>
+  </article>
+</AppLayout>

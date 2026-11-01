@@ -1,0 +1,12 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import T from '../components/T.astro';
+import { url } from '../lib/content';
+---
+<AppLayout title="找不到页面">
+  <section class="page-head center">
+    <h1><T zh="找不到这个页面" en="Page not found" /></h1>
+    <p class="muted"><T zh="如果你正在离线使用，这一页可能还没有缓存。" en="If you're offline, this page may not be cached yet." /></p>
+    <p><a class="btn btn-primary" href={url('')}><T zh="回到首页" en="Back home" /></a></p>
+  </section>
+</AppLayout>

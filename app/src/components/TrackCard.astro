@@ -1,0 +1,26 @@
+---
+import type { TrackNode } from '../lib/content';
+import { artUrl, trackUrl } from '../lib/content';
+import Bi from './Bi.astro';
+import T from './T.astro';
+import ProgressRing from './ProgressRing.astro';
+interface Props { track: TrackNode; mode?: 'choose' | 'browse' }
+const { track, mode = 'browse' } = Astro.props;
+const planned = track.units.flatMap((u) => u.lessons).length - track.path.length;
+---
+<a class="track-card" href={trackUrl(track.id)} style={`--track:${track.data.color}`}
+   data-choose-track={mode === 'choose' ? track.id : undefined} data-track-card={track.id}>
+  {track.data.art && <img class="track-art" src={artUrl(track.data.art)} alt="" loading="lazy" />}
+  <div class="track-body">
+    {mode === 'choose'
+      ? <p class="track-who"><Bi text={track.data.who} /></p>
+      : <h3 class="track-title"><Bi text={track.data.title} /></h3>}
+    <p class="track-tagline"><Bi text={track.data.tagline} /></p>
+    <p class="track-meta">
+      <T zh={`${track.units.length} 个单元 · ${track.path.length} 课`} en={`${track.units.length} units · ${track.path.length} lessons`} />
+      {planned > 0 && <span class="muted"> · <T zh={`${planned} 课筹备中`} en={`${planned} coming`} /></span>}
+    </p>
+  </div>
+  {mode === 'browse' && <ProgressRing track={track.id} total={track.path.length} color={track.data.color} size={48} />}
+  <span class="mine-badge" data-mine-badge><T zh="我的路径" en="My path" /></span>
+</a>

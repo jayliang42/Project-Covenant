@@ -1,0 +1,12 @@
+---
+/**
+ * Content text in two languages. 中文 / EN modes show one; 中英 shows both,
+ * with English as a quieter second line. Falls back to Chinese if no English.
+ */
+import type { Text } from '../lib/content';
+interface Props { text: Text; class?: string }
+const { text, class: cls } = Astro.props;
+---
+{text.en
+  ? <><span data-lang="zh" class:list={['bi-zh', cls]}>{text.zh}</span><span data-lang="en" class:list={['bi-en', cls]}>{text.en}</span></>
+  : <span data-lang="both" class:list={['bi-zh', cls]}>{text.zh}</span>}

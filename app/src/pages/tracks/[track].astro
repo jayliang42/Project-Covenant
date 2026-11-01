@@ -1,0 +1,77 @@
+---
+import AppLayout from '../../layouts/AppLayout.astro';
+import Bi from '../../components/Bi.astro';
+import T from '../../components/T.astro';
+import Icon from '../../components/Icon.astro';
+import ProgressRing from '../../components/ProgressRing.astro';
+import { loadTracks, artUrl, lessonUrl, url, type TrackNode } from '../../lib/content';
+
+export async function getStaticPaths() {
+  const tracks = await loadTracks();
+  return tracks.map((track) => ({ params: { track: track.id }, props: { track } }));
+}
+const { track } = Astro.props as { track: TrackNode };
+const d = track.data;
+---
+<AppLayout title={d.title.zh} description={d.description.zh} accent={d.color} back={{ href: url('tracks/'), label: '路径' }}>
+  <header class="track-hero">
+    {d.art && <img class="track-hero-art" src={artUrl(d.art)} alt="" />}
+    <div class="track-hero-text">
+      <p class="eyebrow"><T zh="学习路径" en="Learning path" /></p>
+      <h1><Bi text={d.title} /></h1>
+      <p class="lead"><Bi text={d.description} /></p>
+      <div class="track-hero-actions">
+        <ProgressRing track={track.id} total={track.path.length} color={d.color} />
+        <button type="button" class="btn" data-set-track={track.id}><T zh="设为我的路径" en="Make this my path" /></button>
+        <span class="pill" data-is-my-track={track.id} hidden><Icon name="check" size={16} /><T zh="我的路径" en="My path" /></span>
+      </div>
+    </div>
+  </header>
+
+  <ol class="units">
+    {track.units.map((unit, ui) => (
+      <li class="unit">
+        <div class="unit-head" data-unit-progress={`${track.id}:${unit.id}`}>
+          <span class="unit-num">{ui + 1}</span>
+          <div>
+            <h2><Bi text={unit.title} /></h2>
+            {unit.summary && <p class="muted"><Bi text={unit.summary} /></p>}
+          </div>
+          <span class="unit-bar" aria-hidden="true"><span></span></span>
+          <small class="unit-label" data-unit-label></small>
+        </div>
+        <ol class="path">
+          {unit.lessons.map((l) =>
+            l.data.status === 'published' ? (
+              <li class="node" data-lesson-node={l.id}>
+                <a href={lessonUrl(l)}>
+                  <span class="node-dot"><Icon name="check" size={18} class="node-check" /><Icon name="book" size={18} class="node-book" /></span>
+                  <span class="node-card">
+                    <span class="node-text">
+                      <strong><Bi text={l.data.title} /></strong>
+                      <small class="muted"><Bi text={l.data.summary} /></small>
+                    </span>
+                    <span class="node-time"><T zh={`${l.data.minutes} 分钟`} en={`${l.data.minutes} min`} /></span>
+                  </span>
+                </a>
+              </li>
+            ) : (
+              <li class="node planned">
+                <div>
+                  <span class="node-dot"><Icon name="lock" size={16} /></span>
+                  <span class="node-card">
+                    <span class="node-text">
+                      <strong><Bi text={l.data.title} /></strong>
+                      <small class="muted"><T zh="筹备中" en="Coming soon" /></small>
+                    </span>
+                  </span>
+                </div>
+              </li>
+            ),
+          )}
+          {unit.lessons.length === 0 && <li class="node planned"><div><span class="node-dot"></span><span class="node-card"><span class="node-text muted"><T zh="本单元的课程筹备中" en="Lessons for this unit are coming" /></span></span></div></li>}
+        </ol>
+      </li>
+    ))}
+  </ol>
+</AppLayout>

@@ -1,0 +1,19 @@
+{
+  "name": "圣约学堂 Covenant Learn",
+  "short_name": "圣约学堂",
+  "description": "一步一步读懂圣经：从好奇到扎根。Understand the Bible step by step.",
+  "lang": "zh-Hans",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f7f4ee",
+  "theme_color": "#1f3a5f",
+  "categories": ["education", "books"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

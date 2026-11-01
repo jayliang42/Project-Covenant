@@ -1,0 +1,19 @@
+# 多年信徒 | Going deeper
+title: { zh: 扎根成长, en: Going deeper }
+who: { zh: 我信主多年，想读得更深、更扎实, en: I've followed Jesus for years and want deeper roots }
+tagline: { zh: 圣经神学、历史背景、带领他人, en: "Biblical theology, history, and leading others" }
+description:
+  zh: 为信主多年的弟兄姊妹准备：顺着圣约与主题线读整本圣经，把经文放回历史处境，并学习带领查经。
+  en: For mature believers — trace covenant and theme lines through the whole Bible, read texts in their historical setting, and learn to lead studies.
+color: "#4a4f9c"
+art: river-of-life
+units:
+  - id: whole-bible
+    title: { zh: 整本圣经的脉络, en: The shape of the whole Bible }
+    summary: { zh: 圣约与主题线, en: Covenants and theme lines }
+  - id: background
+    title: { zh: 历史背景, en: Historical background }
+    summary: { zh: 把经文放回处境, en: Reading texts in their setting }
+  - id: leading
+    title: { zh: 带领他人, en: Leading others }
+    summary: { zh: 学习带查经, en: Learning to lead a study }

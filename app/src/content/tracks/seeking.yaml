@@ -1,0 +1,19 @@
+# 慕道 | Seeking
+title: { zh: 认真思考信仰, en: Seeking }
+who: { zh: 我在认真思考要不要信, en: I'm seriously considering faith }
+tagline: { zh: 带着问题来，问题是受欢迎的, en: Bring your questions — they are welcome }
+description:
+  zh: 为慕道朋友准备：诚实面对大问题，看清历史与证据能说明什么、不能说明什么，再了解基督信仰的核心邀请。
+  en: For seekers — face the big questions honestly, see what history and evidence can and cannot show, and hear the heart of the Christian invitation.
+color: "#2a7f86"
+art: wanderer-home
+units:
+  - id: big-questions
+    title: { zh: 大问题, en: The big questions }
+    summary: { zh: 神、苦难、意义, en: "God, suffering, meaning" }
+  - id: history
+    title: { zh: 历史与证据, en: History and evidence }
+    summary: { zh: 证据能说明什么，不能说明什么, en: What evidence can and cannot show }
+  - id: invitation
+    title: { zh: 福音的邀请, en: The gospel invitation }
+    summary: { zh: 信是什么意思, en: What it means to believe }

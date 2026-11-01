@@ -1,0 +1,138 @@
+---
+import '../styles/global.css';
+import { APP } from '../config';
+import { loadTracks, url, trackUrl, lessonUrl } from '../lib/content';
+import Icon from '../components/Icon.astro';
+import T from '../components/T.astro';
+import Bi from '../components/Bi.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** Accent colour for the page (track colour). */
+  accent?: string;
+  /** Show a back arrow in the mobile top bar. */
+  back?: { href: string; label: string };
+  wide?: boolean;
+}
+const { title, description = APP.tagline.zh, accent, back, wide = false } = Astro.props;
+const pageTitle = title ? `${title} · ${APP.name.zh}` : `${APP.name.zh} | ${APP.name.en}`;
+const tracks = await loadTracks();
+
+const here = Astro.url.pathname;
+
+// Compact course map for the client script (progress, "continue", stats).
+const appData = {
+  tracks: tracks.map((t) => ({
+    id: t.id,
+    color: t.data.color,
+    title: t.data.title,
+    url: trackUrl(t.id),
+    lessons: t.path.map((l) => ({ id: l.id, title: l.data.title, unit: l.data.unit, minutes: l.data.minutes, url: lessonUrl(l) })),
+    units: t.units.map((u) => ({ id: u.id, title: u.title, lessons: u.lessons.filter((l) => l.data.status === 'published').map((l) => l.id) })),
+  })),
+};
+const tabs = [
+  { href: url(''), icon: 'home', zh: '首页', en: 'Home', match: (p: string) => p === url('') },
+  { href: url('tracks/'), icon: 'path', zh: '路径', en: 'Paths', match: (p: string) => p.startsWith(url('tracks/')) || p.startsWith(url('learn/')) },
+  { href: url('library/'), icon: 'library', zh: '资料库', en: 'Library', match: (p: string) => p.startsWith(url('library/')) },
+  { href: url('me/'), icon: 'user', zh: '我的', en: 'Me', match: (p: string) => p.startsWith(url('me/')) },
+] as const;
+---
+<!doctype html>
+<html lang="zh-Hans" data-lang-mode="zh" data-theme="system" data-size="m" data-has-track="no" style={accent ? `--accent:${accent}` : undefined}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content={APP.themeColor} />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content={APP.name.zh} />
+    <link rel="manifest" href={url('manifest.webmanifest')} />
+    <link rel="icon" href={url('icons/icon.svg')} type="image/svg+xml" />
+    <link rel="apple-touch-icon" href={url('icons/apple-touch-icon.png')} />
+    <script is:inline>
+      // Apply saved reader settings before first paint (no flash).
+      try {
+        var s = JSON.parse(localStorage.getItem('covenant-learn:v1') || '{}');
+        var d = document.documentElement, o = s.settings || {};
+        if (o.lang) d.dataset.langMode = o.lang;
+        if (o.theme) d.dataset.theme = o.theme;
+        if (o.size) d.dataset.size = o.size;
+        if (s.track) { d.dataset.hasTrack = 'yes'; d.dataset.track = s.track; }
+        if (o.lang === 'en') d.lang = 'en';
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main"><T zh="跳到正文" en="Skip to content" /></a>
+
+    <aside class="sidebar" aria-label="Navigation">
+      <a class="brand" href={url('')}>
+        <img src={url('icons/icon.svg')} alt="" width="36" height="36" />
+        <span><strong><T zh={APP.name.zh} en={APP.name.en} /></strong><small><T zh={APP.name.en} en={APP.name.zh} /></small></span>
+      </a>
+      <nav class="side-nav">
+        {tabs.map((t) => (
+          <a href={t.href} aria-current={t.match(here) ? 'page' : undefined}>
+            <Icon name={t.icon} /><T zh={t.zh} en={t.en} />
+          </a>
+        ))}
+      </nav>
+      <div class="side-tracks">
+        <p class="side-label"><T zh="学习路径" en="Learning paths" /></p>
+        {tracks.map((t) => (
+          <a href={trackUrl(t.id)} style={`--track:${t.data.color}`} data-side-track={t.id}
+             aria-current={here.startsWith(trackUrl(t.id)) ? 'page' : undefined}>
+            <span class="dot"></span><Bi text={t.data.title} />
+            <span class="side-count" data-track-count={t.id} data-total={t.path.length}></span>
+          </a>
+        ))}
+      </div>
+      <div class="side-foot">
+        <div class="lang-switch" role="group" aria-label="Language / 语言">
+          <button type="button" data-set-lang="zh">中文</button>
+          <button type="button" data-set-lang="both">中英</button>
+          <button type="button" data-set-lang="en">EN</button>
+        </div>
+      </div>
+    </aside>
+
+    <header class="topbar">
+      {back
+        ? <a class="topbar-back" href={back.href}><Icon name="left" /><span>{back.label}</span></a>
+        : <a class="topbar-brand" href={url('')}><img src={url('icons/icon.svg')} alt="" width="28" height="28" /><T zh={APP.name.zh} en={APP.name.en} /></a>}
+      <button type="button" class="lang-cycle" data-cycle-lang aria-label="切换语言 / Switch language">
+        <Icon name="lang" size={20} /><span data-lang-label>中文</span>
+      </button>
+    </header>
+
+    <main id="main" class:list={['main', { wide }]}>
+      <slot />
+    </main>
+
+    <nav class="tabbar" aria-label="Tabs">
+      {tabs.map((t) => (
+        <a href={t.href} aria-current={t.match(here) ? 'page' : undefined}>
+          <Icon name={t.icon} /><small><T zh={t.zh} en={t.en} /></small>
+        </a>
+      ))}
+    </nav>
+
+    <script type="application/json" id="app-data" set:html={JSON.stringify(appData).replace(/</g, "\\u003c")} />
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+
+    <script>
+      import '../scripts/app';
+    </script>
+    {import.meta.env.PROD && (
+      <script is:inline define:vars={{ sw: url('sw.js'), scope: url('') }}>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function () { navigator.serviceWorker.register(sw, { scope: scope }).catch(function () {}); });
+        }
+      </script>
+    )}
+  </body>
+</html>

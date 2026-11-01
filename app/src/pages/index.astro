@@ -1,0 +1,58 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import TrackCard from '../components/TrackCard.astro';
+import T from '../components/T.astro';
+import Icon from '../components/Icon.astro';
+import { APP } from '../config';
+import { loadTracks, url } from '../lib/content';
+const tracks = await loadTracks();
+---
+<AppLayout wide>
+  <!-- First visit: pick a starting point. -->
+  <section class="onboarding" data-show-when="no-track">
+    <div class="hero">
+      <img class="hero-icon" src={url('icons/icon.svg')} alt="" width="64" height="64" />
+      <h1><T zh={APP.name.zh} en={APP.name.en} /></h1>
+      <p class="hero-sub"><T zh={APP.tagline.zh} en={APP.tagline.en} /></p>
+    </div>
+    <h2 class="section-title"><T zh="你现在是哪一种情况？" en="Where are you right now?" /></h2>
+    <p class="muted center"><T zh="选一个起点就好，之后随时可以换，也可以几条路径一起读。" en="Pick a starting point. You can switch any time or follow several paths." /></p>
+    <div class="track-grid choose">
+      {tracks.map((t) => <TrackCard track={t} mode="choose" />)}
+    </div>
+  </section>
+
+  <!-- Returning learner: dashboard. -->
+  <section class="dashboard" data-show-when="has-track">
+    <header class="dash-head">
+      <p class="eyebrow"><T zh="我的路径" en="My path" /></p>
+      <h1 class="dash-title"><a data-home-track-link href={url('tracks/')}><span data-home-track></span></a></h1>
+    </header>
+
+    <div class="dash-grid">
+      <article class="card continue" data-continue>
+        <p class="muted"><T zh="正在载入…" en="Loading…" /></p>
+      </article>
+
+      <article class="card stats">
+        <div class="stat"><Icon name="sparkle" /><strong data-stat="week">0</strong><small><T zh="本周学习天数" en="Days this week" /></small></div>
+        <div class="stat"><Icon name="check" /><strong data-stat="done">0</strong><small><T zh="完成的课" en="Lessons done" /></small></div>
+        <div class="stat"><Icon name="clock" /><strong data-stat="minutes">0</strong><small><T zh="学习分钟" en="Minutes" /></small></div>
+      </article>
+    </div>
+
+    <h2 class="section-title left"><T zh="所有学习路径" en="All learning paths" /></h2>
+    <div class="track-grid">
+      {tracks.map((t) => <TrackCard track={t} />)}
+    </div>
+
+    <a class="card library-teaser" href={url('library/')}>
+      <Icon name="library" size={28} />
+      <span>
+        <strong><T zh="完整资料库" en="The full library" /></strong>
+        <small class="muted"><T zh="时间线、人物、地图、讲道笔记和研究专题" en="Timelines, people, maps, sermon notes and research" /></small>
+      </span>
+      <Icon name="right" />
+    </a>
+  </section>
+</AppLayout>

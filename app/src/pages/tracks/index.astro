@@ -1,0 +1,16 @@
+---
+import AppLayout from '../../layouts/AppLayout.astro';
+import TrackCard from '../../components/TrackCard.astro';
+import T from '../../components/T.astro';
+import { loadTracks } from '../../lib/content';
+const tracks = await loadTracks();
+---
+<AppLayout title="学习路径" wide>
+  <header class="page-head">
+    <h1><T zh="学习路径" en="Learning paths" /></h1>
+    <p class="muted"><T zh="四条路径，按你所在的阶段排列。每条都可以单独读。" en="Four paths, arranged by where you are. Each stands on its own." /></p>
+  </header>
+  <div class="track-grid">
+    {tracks.map((t) => <TrackCard track={t} />)}
+  </div>
+</AppLayout>

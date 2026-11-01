@@ -1,0 +1,14 @@
+---
+/** Circular progress; the client script fills it from local progress via data-track-progress. */
+interface Props { track: string; total: number; color: string; size?: number }
+const { track, total, color, size = 56 } = Astro.props;
+const r = 15.5;
+const c = 2 * Math.PI * r;
+---
+<span class="ring" data-track-progress={track} data-total={total} style={`--c:${color};--size:${size}px`}>
+  <svg viewBox="0 0 36 36" aria-hidden="true">
+    <circle cx="18" cy="18" r={r} class="ring-bg" />
+    <circle cx="18" cy="18" r={r} class="ring-fg" stroke-dasharray={c} stroke-dashoffset={c} data-circ={c} />
+  </svg>
+  <span class="ring-label" data-ring-label>0/{total}</span>
+</span>

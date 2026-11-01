@@ -1,0 +1,19 @@
+# 初信 | New believer
+title: { zh: 刚开始信, en: New believer }
+who: { zh: 我刚信主，想打好根基, en: I've just come to faith and want a solid start }
+tagline: { zh: 读经、祷告、信仰的核心, en: "Scripture, prayer, and the core of the faith" }
+description:
+  zh: 为初信的弟兄姊妹准备：建立每天读经和祷告的习惯，逐句明白信经与主祷文，学习在教会中一起成长。
+  en: For new believers — build daily habits of reading and prayer, understand the creed and the Lord's Prayer line by line, and grow together in a church.
+color: "#4f8a3c"
+art: stepping-stones
+units:
+  - id: daily
+    title: { zh: 每天的根基, en: Daily foundations }
+    summary: { zh: 读经与祷告, en: Reading and prayer }
+  - id: core
+    title: { zh: 信仰的核心, en: The core of the faith }
+    summary: { zh: 使徒信经逐句读, en: "The Apostles' Creed, phrase by phrase" }
+  - id: church
+    title: { zh: 在教会中成长, en: Growing in the church }
+    summary: { zh: 洗礼、圣餐、团契, en: "Baptism, communion, fellowship" }
