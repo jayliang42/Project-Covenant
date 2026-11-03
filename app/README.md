@@ -5,6 +5,14 @@
 A responsive learning app (web + installable PWA) built on top of the Project Covenant library. It offers four learning paths: Curious, Seeking, New believer and Going deeper.<br>
 在 Project Covenant 资料库之上做的响应式学习应用（网页＋可安装的 PWA），分为四条学习路径：对圣经好奇、认真思考信仰、刚开始信、扎根成长。
 
+<a id="product-blueprint"></a>
+## Product & UI/UX Blueprint | 产品结构与 UI/UX 全景设计图
+
+The multi-artboard blueprint below summarizes the seven core screens, prototype interaction flows, Editorial Scriptorium design tokens, three-mode bilingual engine (`中文` / `中英` / `EN`), and local-first cross-path recommendation architecture.<br>
+下方的多画板设计图汇总了七个核心界面画板、原型交互连线、「温润书卷」设计规范、三态双语切换机制（`中文` / `中英` / `EN`），以及纯本地跨路径推荐与双层内容架构。
+
+![Covenant Learn Figma Product Blueprint | 圣约学堂产品结构与 UI/UX 全景设计图](./covenant-learn-figma-blueprint.svg)
+
 <a id="quick-start"></a>
 ## Quick Start | 快速开始
 

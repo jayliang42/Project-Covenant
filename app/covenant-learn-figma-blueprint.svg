@@ -1,0 +1,773 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1580" width="2400" height="1580" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <!-- Figma Dotted Canvas Pattern -->
+    <pattern id="figma-Grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.1" fill="#32363f" />
+    </pattern>
+    <!-- Drop Shadow for Artboards -->
+    <filter id="artboard-shadow" x="-5%" y="-5%" width="112%" height="114%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+    <filter id="pill-shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+    <!-- Prototype Blue Arrow Marker -->
+    <marker id="proto-arrow" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 1 2 L 10 6 L 1 10 z" fill="#0d99ff" />
+    </marker>
+    <!-- Redline Spec Marker -->
+    <marker id="redline-arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 2 L 8 5 L 0 8 z" fill="#f24822" />
+    </marker>
+  </defs>
+
+  <!-- 1. Canvas Background -->
+  <rect width="2400" height="1580" fill="#181a1f" />
+  <rect width="2400" height="1580" fill="url(#figma-Grid)" />
+
+  <!-- 2. Figma Top Bar -->
+  <rect x="0" y="0" width="2400" height="54" fill="#2c2c2c" />
+  <line x1="0" y1="54" x2="2400" y2="54" stroke="#3e3e3e" stroke-width="1" />
+  <!-- Figma Left Tools -->
+  <rect x="18" y="13" width="28" height="28" rx="6" fill="#0d99ff" />
+  <text x="32" y="32" fill="#ffffff" font-size="15" font-weight="700" text-anchor="middle">✦</text>
+  <rect x="58" y="13" width="84" height="28" rx="5" fill="#383838" />
+  <text x="100" y="31" fill="#e5e5e5" font-size="12" font-weight="600" text-anchor="middle">Move / Frame</text>
+  <rect x="150" y="13" width="112" height="28" rx="5" fill="#0d99ff" fill-opacity="0.2" stroke="#0d99ff" stroke-width="1" />
+  <text x="206" y="31" fill="#6cc0ff" font-size="12" font-weight="600" text-anchor="middle">☍ Prototype 连线</text>
+  <rect x="270" y="13" width="106" height="28" rx="5" fill="#f24822" fill-opacity="0.2" stroke="#f24822" stroke-width="1" />
+  <text x="323" y="31" fill="#ff8b70" font-size="12" font-weight="600" text-anchor="middle">⊢ Redline 标注</text>
+
+  <!-- Figma Center Title -->
+  <text x="1200" y="25" fill="#ababab" font-size="12" font-weight="500" text-anchor="middle">Drafts  /  Project Covenant · 圣约计划</text>
+  <text x="1200" y="43" fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">圣约学堂 Covenant Learn v1.0 — 产品架构 · 全页面视觉稿 · 交互原型流 (6 Artboards)</text>
+
+  <!-- Figma Right Controls -->
+  <rect x="2140" y="13" width="110" height="28" rx="6" fill="#0d99ff" />
+  <text x="2195" y="31" fill="#ffffff" font-size="12" font-weight="700" text-anchor="middle">▶ Present 原型</text>
+  <rect x="2262" y="13" width="116" height="28" rx="6" fill="#383838" />
+  <text x="2320" y="31" fill="#e5e5e5" font-size="12" font-weight="600" text-anchor="middle">100% · HD Canvas</text>
+
+  <!-- ====================================================================== -->
+  <!-- ROW 1 SECTION BANNER -->
+  <!-- ====================================================================== -->
+  <rect x="60" y="76" width="2280" height="36" rx="8" fill="#23262e" stroke="#363b47" />
+  <text x="80" y="99" fill="#f5c26b" font-size="13" font-weight="700">FLOW 01 · 核心用户旅程画布（Onboarding 零阻力首屏  →  Dashboard 回归仪表盘与跨路径推荐  →  Track Map 路径单元地图  →  Lesson 单课沉浸双语研读）</text>
+  <text x="2320" y="99" fill="#9ca5b2" font-size="12" text-anchor="end">温润书卷设计系统 (Editorial Scriptorium · #F6F1E7 / #1C3554 / #94662B)</text>
+
+  <!-- ====================================================================== -->
+  <!-- ARTBOARD 1: Mobile 01_Onboarding_零阻力首屏 (x=60, y=148, w=360, h=670) -->
+  <!-- ====================================================================== -->
+  <g transform="translate(60, 148)">
+    <!-- Frame Label -->
+    <text x="0" y="-10" fill="#7aa2f7" font-size="12" font-weight="700">01_Mobile_Onboarding · 首次访问首屏</text>
+    <text x="360" y="-10" fill="#6e7681" font-size="11" text-anchor="end">375 × 812</text>
+    <!-- Device Frame -->
+    <rect x="0" y="0" width="360" height="670" rx="22" fill="#f6f1e7" stroke="#454a54" stroke-width="2" filter="url(#artboard-shadow)" />
+
+    <!-- Topbar -->
+    <rect x="2" y="2" width="356" height="44" rx="20" fill="#fcf9f2" />
+    <line x1="2" y1="46" x2="358" y2="46" stroke="#dcd2bf" />
+    <rect x="16" y="13" width="22" height="22" rx="5" fill="#1c3554" />
+    <text x="27" y="28" fill="#ffffff" font-size="12" font-weight="700" text-anchor="middle">约</text>
+    <text x="46" y="29" fill="#1b222c" font-size="14" font-weight="700">圣约学堂</text>
+    <rect x="278" y="12" width="66" height="24" rx="12" fill="#f6f1e7" stroke="#dcd2bf" />
+    <text x="311" y="28" fill="#1b222c" font-size="11" font-weight="600" text-anchor="middle">🌐 中英</text>
+
+    <!-- Hero -->
+    <text x="18" y="68" fill="#94662b" font-size="10" font-weight="700" letter-spacing="0.8">中英双语 · 圣经研读学堂</text>
+    <text x="18" y="90" fill="#1b222c" font-size="19" font-weight="700">圣约学堂 · Covenant Learn</text>
+    <text x="18" y="108" fill="#5c6470" font-size="11">按你现在的阶段，一课一课读懂圣经 · 零注册零追踪</text>
+    <line x1="18" y1="118" x2="342" y2="118" stroke="#dcd2bf" stroke-width="3" />
+
+    <!-- Quick Start Big Questions -->
+    <text x="18" y="138" fill="#1b222c" font-size="12" font-weight="700">免选路径 · 6 分钟先读一个最常问的问题</text>
+
+    <!-- Big Question Card 1 (Active Prototype Source) -->
+    <rect x="18" y="146" width="324" height="74" rx="8" fill="#fcf9f2" stroke="#0d99ff" stroke-width="2" />
+    <rect x="28" y="154" width="92" height="16" rx="8" fill="#94662b" fill-opacity="0.15" />
+    <text x="74" y="165" fill="#94662b" font-size="9.5" font-weight="700" text-anchor="middle">大问题 · 约 7 分钟</text>
+    <text x="28" y="184" fill="#1b222c" font-size="12.5" font-weight="700">如果有一位良善的神，为什么世界上有苦难？</text>
+    <text x="28" y="200" fill="#5c6470" font-size="10.5">圣经没有用廉价口号打发痛苦，而是把眼泪写进诗篇与十架。</text>
+    <text x="292" y="212" fill="#1c3554" font-size="10.5" font-weight="700">立即阅读 →</text>
+    <!-- Prototype Node Circle -->
+    <circle cx="342" cy="183" r="6" fill="#0d99ff" stroke="#ffffff" stroke-width="2" />
+
+    <!-- Big Question Card 2 -->
+    <rect x="18" y="226" width="324" height="62" rx="8" fill="#fcf9f2" stroke="#dcd2bf" />
+    <rect x="28" y="234" width="92" height="15" rx="7" fill="#94662b" fill-opacity="0.15" />
+    <text x="74" y="245" fill="#94662b" font-size="9.5" font-weight="700" text-anchor="middle">零基础 · 约 5 分钟</text>
+    <text x="28" y="263" fill="#1b222c" font-size="12" font-weight="700">圣经到底是一本怎样的书？ (66 卷书的图书馆)</text>
+    <text x="28" y="279" fill="#5c6470" font-size="10">跨越千年的叙事、诗歌、智慧与书信如何串成一个故事。</text>
+
+    <!-- Track Chooser Section -->
+    <text x="18" y="310" fill="#1b222c" font-size="12" font-weight="700">或者，按你现在的阶段选一条学习路径</text>
+
+    <!-- Mobile Horizontal Track Cards -->
+    <g transform="translate(18, 318)">
+      <!-- Track 1 -->
+      <rect x="0" y="0" width="324" height="62" rx="8" fill="#fcf9f2" stroke="#dcd2bf" />
+      <rect x="0" y="0" width="324" height="3" rx="2" fill="#9a5b13" />
+      <rect x="0" y="3" width="88" height="59" rx="6" fill="#eee6d6" />
+      <text x="44" y="36" fill="#9a5b13" font-size="11" font-weight="700" text-anchor="middle">📜 书卷导览</text>
+      <text x="100" y="22" fill="#1b222c" font-size="12" font-weight="700">我想先弄清楚圣经是什么</text>
+      <text x="100" y="38" fill="#5c6470" font-size="10">初识圣经 · First Look · 不预设信仰背景</text>
+      <text x="100" y="53" fill="#9a5b13" font-size="10" font-weight="600">3 单元 · 7 课 →</text>
+    </g>
+
+    <g transform="translate(18, 386)">
+      <!-- Track 2 (Prototype Connected) -->
+      <rect x="0" y="0" width="324" height="62" rx="8" fill="#fcf9f2" stroke="#0d99ff" stroke-width="2" />
+      <rect x="0" y="0" width="324" height="3" rx="2" fill="#1f5f78" />
+      <rect x="0" y="3" width="88" height="59" rx="6" fill="#e2ecef" />
+      <text x="44" y="36" fill="#1f5f78" font-size="11" font-weight="700" text-anchor="middle">🧭 慕道求索</text>
+      <text x="100" y="22" fill="#1b222c" font-size="12" font-weight="700">我有不少疑问，想认真探索信仰</text>
+      <text x="100" y="38" fill="#5c6470" font-size="10">慕道求索 · Exploring Faith · 苦难与历史证据</text>
+      <text x="100" y="53" fill="#1f5f78" font-size="10" font-weight="600">3 单元 · 6 课 →</text>
+      <circle cx="324" cy="31" r="6" fill="#0d99ff" stroke="#ffffff" stroke-width="2" />
+    </g>
+
+    <g transform="translate(18, 454)">
+      <!-- Track 3 -->
+      <rect x="0" y="0" width="324" height="62" rx="8" fill="#fcf9f2" stroke="#dcd2bf" />
+      <rect x="0" y="0" width="324" height="3" rx="2" fill="#2b6a4c" />
+      <rect x="0" y="3" width="88" height="59" rx="6" fill="#e3efe8" />
+      <text x="44" y="36" fill="#2b6a4c" font-size="11" font-weight="700" text-anchor="middle">🌱 初信根基</text>
+      <text x="100" y="22" fill="#1b222c" font-size="12" font-weight="700">我刚信主，想一步一步打好根基</text>
+      <text x="100" y="38" fill="#5c6470" font-size="10">初信根基 · New Believer · 读经、祷告与信经</text>
+      <text x="100" y="53" fill="#2b6a4c" font-size="10" font-weight="600">3 单元 · 5 课 →</text>
+    </g>
+
+    <g transform="translate(18, 522)">
+      <!-- Track 4 -->
+      <rect x="0" y="0" width="324" height="62" rx="8" fill="#fcf9f2" stroke="#dcd2bf" />
+      <rect x="0" y="0" width="324" height="3" rx="2" fill="#5d437a" />
+      <rect x="0" y="3" width="88" height="59" rx="6" fill="#ece6f2" />
+      <text x="44" y="36" fill="#5d437a" font-size="11" font-weight="700" text-anchor="middle">🏛 深耕研经</text>
+      <text x="100" y="22" fill="#1b222c" font-size="12" font-weight="700">我想把整本圣经脉络和背景读深</text>
+      <text x="100" y="38" fill="#5c6470" font-size="10">深耕研经 · Going Deeper · 圣约主线与查经带领</text>
+      <text x="100" y="53" fill="#5d437a" font-size="10" font-weight="600">3 单元 · 4 课 →</text>
+    </g>
+
+    <!-- Bottom Tabbar (≥44px Touch Target) -->
+    <rect x="2" y="614" width="356" height="54" rx="20" fill="#fcf9f2" />
+    <line x1="2" y1="614" x2="358" y2="614" stroke="#dcd2bf" />
+    <text x="48" y="646" fill="#1c3554" font-size="11" font-weight="700" text-anchor="middle">⌂ 首页</text>
+    <text x="136" y="646" fill="#5c6470" font-size="11" text-anchor="middle">☍ 路径</text>
+    <text x="224" y="646" fill="#5c6470" font-size="11" text-anchor="middle">▤ 资料库</text>
+    <text x="312" y="646" fill="#5c6470" font-size="11" text-anchor="middle">☺ 我的</text>
+
+    <!-- Redline Spec Annotation -->
+    <line x1="-14" y1="614" x2="-14" y2="668" stroke="#f24822" stroke-width="1.5" />
+    <line x1="-18" y1="614" x2="-10" y2="614" stroke="#f24822" stroke-width="1.5" />
+    <line x1="-18" y1="668" x2="-10" y2="668" stroke="#f24822" stroke-width="1.5" />
+    <rect x="-56" y="631" width="38" height="18" rx="4" fill="#f24822" />
+    <text x="-37" y="643" fill="#ffffff" font-size="9.5" font-weight="700" text-anchor="middle">62px</text>
+  </g>
+
+  <!-- ====================================================================== -->
+  <!-- ARTBOARD 2: Desktop 02_Dashboard_回归仪表盘 (x=480, y=148, w=690, h=670) -->
+  <!-- ====================================================================== -->
+  <g transform="translate(480, 148)">
+    <text x="0" y="-10" fill="#7aa2f7" font-size="12" font-weight="700">🖥 02_Desktop_Dashboard · 回归学习仪表盘（含 HackerTube 本地跨路径推荐）</text>
+    <text x="690" y="-10" fill="#6e7681" font-size="11" text-anchor="end">1280 × 800</text>
+    <rect x="0" y="0" width="690" height="670" rx="14" fill="#f6f1e7" stroke="#454a54" stroke-width="2" filter="url(#artboard-shadow)" />
+
+    <!-- Left Sidebar (w=165 scaled from 268px) -->
+    <rect x="2" y="2" width="164" height="666" rx="12" fill="#fcf9f2" />
+    <line x1="166" y1="2" x2="166" y2="668" stroke="#dcd2bf" />
+    <!-- Brand -->
+    <rect x="16" y="20" width="26" height="26" rx="6" fill="#1c3554" />
+    <text x="29" y="38" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle">约</text>
+    <text x="50" y="32" fill="#1b222c" font-size="13" font-weight="700">圣约学堂</text>
+    <text x="50" y="45" fill="#5c6470" font-size="9.5">Covenant Learn</text>
+
+    <!-- Side Nav -->
+    <rect x="12" y="64" width="142" height="28" rx="6" fill="#eee6d6" />
+    <text x="24" y="82" fill="#1c3554" font-size="11.5" font-weight="700">⌂  首页 · Home</text>
+    <text x="24" y="110" fill="#1b222c" font-size="11.5">☍  路径 · Paths</text>
+    <text x="24" y="136" fill="#1b222c" font-size="11.5">▤  资料库 · Library</text>
+    <text x="24" y="162" fill="#1b222c" font-size="11.5">☺  我的 · Me</text>
+
+    <!-- Side Tracks -->
+    <text x="20" y="198" fill="#5c6470" font-size="9.5" font-weight="700" letter-spacing="0.8">学习路径 PATHS</text>
+    <circle cx="24" cy="218" r="4" fill="#9a5b13" />
+    <text x="36" y="222" fill="#1b222c" font-size="11">初识圣经</text>
+    <text x="146" y="222" fill="#5c6470" font-size="10" text-anchor="end">2/7</text>
+
+    <circle cx="24" cy="244" r="4" fill="#1f5f78" />
+    <text x="36" y="248" fill="#1f5f78" font-size="11" font-weight="700">慕道求索</text>
+    <text x="146" y="248" fill="#1f5f78" font-size="10" font-weight="700" text-anchor="end">2/6</text>
+
+    <circle cx="24" cy="270" r="4" fill="#2b6a4c" />
+    <text x="36" y="274" fill="#1b222c" font-size="11">初信根基</text>
+    <text x="146" y="274" fill="#5c6470" font-size="10" text-anchor="end">1/5</text>
+
+    <circle cx="24" cy="296" r="4" fill="#5d437a" />
+    <text x="36" y="300" fill="#1b222c" font-size="11">深耕研经</text>
+
+    <!-- Language Pill at bottom of sidebar -->
+    <rect x="16" y="622" width="134" height="28" rx="14" fill="#eee6d6" stroke="#dcd2bf" />
+    <text x="38" y="640" fill="#5c6470" font-size="10.5" text-anchor="middle">中文</text>
+    <rect x="58" y="625" width="48" height="22" rx="11" fill="#fcf9f2" />
+    <text x="82" y="640" fill="#1b222c" font-size="10.5" font-weight="700" text-anchor="middle">中英</text>
+    <text x="126" y="640" fill="#5c6470" font-size="10.5" text-anchor="middle">EN</text>
+
+    <!-- Redline Sidebar Width -->
+    <line x1="2" y1="595" x2="166" y2="595" stroke="#f24822" stroke-width="1.5" marker-start="url(#redline-arrow)" marker-end="url(#redline-arrow)" />
+    <rect x="52" y="585" width="64" height="18" rx="4" fill="#f24822" />
+    <text x="84" y="597" fill="#ffffff" font-size="9.5" font-weight="700" text-anchor="middle">268px 侧栏</text>
+
+    <!-- Main Dashboard Area (x=190, w=476) -->
+    <text x="190" y="34" fill="#94662b" font-size="10" font-weight="700">我的路径 · MY PATH</text>
+    <text x="190" y="56" fill="#1f5f78" font-size="18" font-weight="700">慕道求索 · Exploring Faith</text>
+    <line x1="190" y1="68" x2="666" y2="68" stroke="#dcd2bf" />
+
+    <!-- Continue Card + Stats Card Row -->
+    <rect x="190" y="82" width="296" height="118" rx="10" fill="#fcf9f2" stroke="#dcd2bf" />
+    <rect x="190" y="82" width="296" height="3.5" rx="2" fill="#1f5f78" />
+    <text x="206" y="104" fill="#94662b" font-size="10" font-weight="700">继续学习 · CONTINUE</text>
+    <text x="206" y="126" fill="#1b222c" font-size="14" font-weight="700">03 · 有神吗？可以从哪里开始想？</text>
+    <text x="206" y="144" fill="#5c6470" font-size="10.5">常问的大问题 · 约 7 分钟</text>
+    <rect x="206" y="158" width="92" height="30" rx="6" fill="#1f5f78" />
+    <text x="252" y="177" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">继续学习 →</text>
+
+    <!-- Stats Card -->
+    <rect x="498" y="82" width="168" height="118" rx="10" fill="#fcf9f2" stroke="#dcd2bf" />
+    <text x="530" y="132" fill="#1b222c" font-size="18" font-weight="700" text-anchor="middle">4</text>
+    <text x="530" y="152" fill="#5c6470" font-size="9.5" text-anchor="middle">本周天数</text>
+    <text x="582" y="132" fill="#1b222c" font-size="18" font-weight="700" text-anchor="middle">5</text>
+    <text x="582" y="152" fill="#5c6470" font-size="9.5" text-anchor="middle">完成课程</text>
+    <text x="634" y="132" fill="#1b222c" font-size="18" font-weight="700" text-anchor="middle">32</text>
+    <text x="634" y="152" fill="#5c6470" font-size="9.5" text-anchor="middle">学习分钟</text>
+
+    <!-- HackerTube For You Section ([data-for-you]) -->
+    <text x="190" y="226" fill="#1b222c" font-size="13" font-weight="700">为你推荐下一步 · Recommended for you</text>
+    <text x="666" y="226" fill="#5c6470" font-size="10" text-anchor="end">基于本机进度推算 · 零云端追踪</text>
+
+    <!-- 3 For-You Cards -->
+    <g transform="translate(190, 236)">
+      <rect x="0" y="0" width="152" height="116" rx="8" fill="#fcf9f2" stroke="#94662b" stroke-width="1.5" />
+      <rect x="10" y="10" width="124" height="16" rx="8" fill="#94662b" fill-opacity="0.15" />
+      <text x="72" y="21" fill="#94662b" font-size="9" font-weight="700" text-anchor="middle">背景脉络 · 美善与破裂</text>
+      <text x="10" y="42" fill="#1b222c" font-size="11.5" font-weight="700">创造与堕落：世界为</text>
+      <text x="10" y="57" fill="#1b222c" font-size="11.5" font-weight="700">什么既美好又破碎？</text>
+      <text x="10" y="77" fill="#5c6470" font-size="9.5">创世记前 3 章如何解释人的</text>
+      <text x="10" y="90" fill="#5c6470" font-size="9.5">尊贵与关系破裂的根源。</text>
+      <text x="10" y="107" fill="#9a5b13" font-size="9.5" font-weight="700">初识圣经 · 约 6 分钟 →</text>
+    </g>
+
+    <g transform="translate(352, 236)">
+      <rect x="0" y="0" width="152" height="116" rx="8" fill="#fcf9f2" stroke="#dcd2bf" />
+      <rect x="10" y="10" width="124" height="16" rx="8" fill="#94662b" fill-opacity="0.15" />
+      <text x="72" y="21" fill="#94662b" font-size="9" font-weight="700" text-anchor="middle">诚实回应 · 在眼泪中祷告</text>
+      <text x="10" y="42" fill="#1b222c" font-size="11.5" font-weight="700">怎样学习祷告？从主</text>
+      <text x="10" y="57" fill="#1b222c" font-size="11.5" font-weight="700">祷文开始</text>
+      <text x="10" y="77" fill="#5c6470" font-size="9.5">不是背诵外交辞令，而是向</text>
+      <text x="10" y="90" fill="#5c6470" font-size="9.5">天父诚实倾心吐意。</text>
+      <text x="10" y="107" fill="#2b6a4c" font-size="9.5" font-weight="700">初信根基 · 约 6 分钟 →</text>
+    </g>
+
+    <g transform="translate(514, 236)">
+      <rect x="0" y="0" width="152" height="116" rx="8" fill="#fcf9f2" stroke="#dcd2bf" />
+      <rect x="10" y="10" width="124" height="16" rx="8" fill="#94662b" fill-opacity="0.15" />
+      <text x="72" y="21" fill="#94662b" font-size="9" font-weight="700" text-anchor="middle">跨路径拓展 · 深耕研经</text>
+      <text x="10" y="42" fill="#1b222c" font-size="11.5" font-weight="700">圣约：串起整本圣经</text>
+      <text x="10" y="57" fill="#1b222c" font-size="11.5" font-weight="700">的一条主线</text>
+      <text x="10" y="77" fill="#5c6470" font-size="9.5">从亚伯拉罕、摩西、大卫到</text>
+      <text x="10" y="90" fill="#5c6470" font-size="9.5">新约的救赎历史脊椎。</text>
+      <text x="10" y="107" fill="#5d437a" font-size="9.5" font-weight="700">深耕研经 · 约 7 分钟 →</text>
+    </g>
+
+    <!-- All Learning Paths Grid (2x2 compact preview) -->
+    <text x="190" y="378" fill="#1b222c" font-size="13" font-weight="700">所有学习路径 · All learning paths</text>
+
+    <g transform="translate(190, 388)">
+      <rect x="0" y="0" width="232" height="92" rx="8" fill="#fcf9f2" stroke="#dcd2bf" />
+      <rect x="0" y="0" width="232" height="3" fill="#9a5b13" />
+      <text x="14" y="26" fill="#9a5b13" font-size="12" font-weight="700">初识圣经 · First Look</text>
+      <text x="14" y="44" fill="#5c6470" font-size="10">给第一次接触圣经的读者</text>
+      <text x="14" y="74" fill="#5c6470" font-size="10">3 单元 · 7 课</text>
+      <circle cx="200" cy="62" r="18" fill="none" stroke="#eee6d6" stroke-width="3.5" />
+      <circle cx="200" cy="62" r="18" fill="none" stroke="#9a5b13" stroke-width="3.5" stroke-dasharray="35 80" />
+      <text x="200" y="66" fill="#5c6470" font-size="9.5" font-weight="700" text-anchor="middle">2/7</text>
+    </g>
+
+    <g transform="translate(434, 388)">
+      <rect x="0" y="0" width="232" height="92" rx="8" fill="#fcf9f2" stroke="#1f5f78" stroke-width="1.5" />
+      <rect x="0" y="0" width="232" height="3" fill="#1f5f78" />
+      <rect x="156" y="10" width="64" height="16" rx="8" fill="#1f5f78" />
+      <text x="188" y="21" fill="#ffffff" font-size="9" font-weight="700" text-anchor="middle">我的路径</text>
+      <text x="14" y="26" fill="#1f5f78" font-size="12" font-weight="700">慕道求索 · Exploring</text>
+      <text x="14" y="44" fill="#5c6470" font-size="10">苦难、理性、历史与信仰</text>
+      <text x="14" y="74" fill="#5c6470" font-size="10">3 单元 · 6 课</text>
+      <circle cx="200" cy="62" r="18" fill="none" stroke="#eee6d6" stroke-width="3.5" />
+      <circle cx="200" cy="62" r="18" fill="none" stroke="#1f5f78" stroke-width="3.5" stroke-dasharray="40 80" />
+      <text x="200" y="66" fill="#5c6470" font-size="9.5" font-weight="700" text-anchor="middle">2/6</text>
+    </g>
+
+    <g transform="translate(190, 490)">
+      <rect x="0" y="0" width="232" height="84" rx="8" fill="#fcf9f2" stroke="#dcd2bf" />
+      <rect x="0" y="0" width="232" height="3" fill="#2b6a4c" />
+      <text x="14" y="26" fill="#2b6a4c" font-size="12" font-weight="700">初信根基 · New Believer</text>
+      <text x="14" y="44" fill="#5c6470" font-size="10">读经、祷告、信经与教会生活</text>
+      <text x="14" y="70" fill="#5c6470" font-size="10">3 单元 · 5 课</text>
+    </g>
+
+    <g transform="translate(434, 490)">
+      <rect x="0" y="0" width="232" height="84" rx="8" fill="#fcf9f2" stroke="#dcd2bf" />
+      <rect x="0" y="0" width="232" height="3" fill="#5d437a" />
+      <text x="14" y="26" fill="#5d437a" font-size="12" font-weight="700">深耕研经 · Going Deeper</text>
+      <text x="14" y="44" fill="#5c6470" font-size="10">圣约主线、历史背景与查经带领</text>
+      <text x="14" y="70" fill="#5c6470" font-size="10">3 单元 · 4 课</text>
+    </g>
+
+    <!-- Full Library Teaser Banner -->
+    <rect x="190" y="590" width="476" height="56" rx="8" fill="#fcf9f2" stroke="#dcd2bf" />
+    <text x="210" y="615" fill="#1b222c" font-size="12" font-weight="700">▤  完整资料库 · The full library (99 篇白名单深度专题)</text>
+    <text x="210" y="633" fill="#5c6470" font-size="10">时间线、人物、地图、讲道笔记和研究专题 · 与 21 课微课双向互通</text>
+    <text x="646" y="622" fill="#1c3554" font-size="14" font-weight="700" text-anchor="end">→</text>
+  </g>
+
+  <!-- ====================================================================== -->
+  <!-- ARTBOARD 3: Mobile 03_Track_Map_路径单元地图 (x=1230, y=148, w=360, h=670) -->
+  <!-- ====================================================================== -->
+  <g transform="translate(1230, 148)">
+    <text x="0" y="-10" fill="#7aa2f7" font-size="12" font-weight="700">03_Mobile_Track_Map · 路径单元地图</text>
+    <text x="360" y="-10" fill="#6e7681" font-size="11" text-anchor="end">375 × 812</text>
+    <rect x="0" y="0" width="360" height="670" rx="22" fill="#f6f1e7" stroke="#454a54" stroke-width="2" filter="url(#artboard-shadow)" />
+
+    <!-- Topbar -->
+    <rect x="2" y="2" width="356" height="44" rx="20" fill="#fcf9f2" />
+    <line x1="2" y1="46" x2="358" y2="46" stroke="#dcd2bf" />
+    <text x="18" y="29" fill="#1b222c" font-size="13" font-weight="700">‹ 路径 · Paths</text>
+    <rect x="278" y="12" width="66" height="24" rx="12" fill="#f6f1e7" stroke="#dcd2bf" />
+    <text x="311" y="28" fill="#1b222c" font-size="11" font-weight="600" text-anchor="middle">🌐 中英</text>
+
+    <!-- Track Hero -->
+    <rect x="18" y="58" width="324" height="64" rx="8" fill="#e2ecef" stroke="#dcd2bf" />
+    <text x="32" y="84" fill="#1f5f78" font-size="15" font-weight="700">慕道求索 · Exploring Faith</text>
+    <text x="32" y="104" fill="#5c6470" font-size="10.5">带着诚实的疑问，探索苦难、理性、历史与信仰</text>
+    <line x1="18" y1="132" x2="342" y2="132" stroke="#dcd2bf" stroke-width="3" />
+
+    <!-- Unit 1 Header -->
+    <circle cx="35" cy="158" r="15" fill="#1f5f78" fill-opacity="0.15" stroke="#1f5f78" />
+    <text x="35" y="163" fill="#1f5f78" font-size="12" font-weight="700" text-anchor="middle">1</text>
+    <text x="60" y="155" fill="#1b222c" font-size="13" font-weight="700">常问的大问题 · Big Questions</text>
+    <rect x="60" y="164" width="230" height="5" rx="2.5" fill="#eee6d6" />
+    <rect x="60" y="164" width="153" height="5" rx="2.5" fill="#1f5f78" />
+    <text x="342" y="162" fill="#5c6470" font-size="11" font-weight="600" text-anchor="end">2/3</text>
+
+    <!-- Vertical Path Line -->
+    <line x1="35" y1="194" x2="35" y2="365" stroke="#dcd2bf" stroke-width="2" />
+
+    <!-- Lesson Node 1 (Done) -->
+    <circle cx="35" cy="208" r="15" fill="#1f5f78" />
+    <text x="35" y="213" fill="#ffffff" font-size="12" font-weight="700" text-anchor="middle">✓</text>
+    <rect x="60" y="186" width="282" height="46" rx="8" fill="#fcf9f2" stroke="#dcd2bf" />
+    <text x="72" y="206" fill="#1b222c" font-size="11.5" font-weight="700">可以带着疑问来吗？圣经里的提问者</text>
+    <text x="72" y="222" fill="#5c6470" font-size="10">已完成 · 约 5 分钟</text>
+
+    <!-- Lesson Node 2 (Done & Active Link to Reader) -->
+    <circle cx="35" cy="266" r="15" fill="#1f5f78" />
+    <text x="35" y="271" fill="#ffffff" font-size="12" font-weight="700" text-anchor="middle">✓</text>
+    <rect x="60" y="244" width="282" height="46" rx="8" fill="#fcf9f2" stroke="#0d99ff" stroke-width="2" />
+    <text x="72" y="264" fill="#1b222c" font-size="11.5" font-weight="700">如果有一位良善的神，为什么有苦难？</text>
+    <text x="72" y="280" fill="#1f5f78" font-size="10" font-weight="600">已完成 · 点击复读 · 约 7 分钟</text>
+    <circle cx="342" cy="267" r="6" fill="#0d99ff" stroke="#ffffff" stroke-width="2" />
+
+    <!-- Lesson Node 3 (Current Highlighted) -->
+    <circle cx="35" cy="324" r="15" fill="#fcf9f2" stroke="#1f5f78" stroke-width="2.5" />
+    <text x="35" y="328" fill="#1f5f78" font-size="11" font-weight="700" text-anchor="middle">📖</text>
+    <rect x="60" y="302" width="282" height="46" rx="8" fill="#fcf9f2" stroke="#1f5f78" stroke-width="2" />
+    <text x="72" y="322" fill="#1b222c" font-size="11.5" font-weight="700">有神吗？可以从哪里开始想这个问题？</text>
+    <text x="72" y="338" fill="#94662b" font-size="10" font-weight="700">当前待读 (.node.current) · 约 7 分钟</text>
+
+    <!-- Unit 2 Header -->
+    <circle cx="35" cy="392" r="15" fill="#1f5f78" fill-opacity="0.15" stroke="#1f5f78" />
+    <text x="35" y="397" fill="#1f5f78" font-size="12" font-weight="700" text-anchor="middle">2</text>
+    <text x="60" y="389" fill="#1b222c" font-size="13" font-weight="700">历史与证据 · History &amp; Evidence</text>
+    <rect x="60" y="398" width="230" height="5" rx="2.5" fill="#eee6d6" />
+    <text x="342" y="396" fill="#5c6470" font-size="11" font-weight="600" text-anchor="end">0/2</text>
+
+    <line x1="35" y1="422" x2="35" y2="510" stroke="#dcd2bf" stroke-width="2" />
+    <circle cx="35" cy="442" r="15" fill="#fcf9f2" stroke="#1f5f78" stroke-width="1.5" />
+    <rect x="60" y="420" width="282" height="44" rx="8" fill="#fcf9f2" stroke="#dcd2bf" />
+    <text x="72" y="440" fill="#1b222c" font-size="11.5" font-weight="700">历史与考古能给我们看什么？</text>
+    <text x="72" y="455" fill="#5c6470" font-size="10">史料与考古旁证边界 · 约 7 分钟</text>
+
+    <circle cx="35" cy="498" r="15" fill="#fcf9f2" stroke="#1f5f78" stroke-width="1.5" />
+    <rect x="60" y="476" width="282" height="44" rx="8" fill="#fcf9f2" stroke="#dcd2bf" />
+    <text x="72" y="496" fill="#1b222c" font-size="11.5" font-weight="700">圣经古卷与抄本：我们今天读到的可靠吗？</text>
+    <text x="72" y="511" fill="#5c6470" font-size="10">死海古卷与文本鉴别学 · 约 7 分钟</text>
+
+    <!-- Unit 3 Header -->
+    <circle cx="35" cy="554" r="15" fill="#1f5f78" fill-opacity="0.15" stroke="#1f5f78" />
+    <text x="35" y="559" fill="#1f5f78" font-size="12" font-weight="700" text-anchor="middle">3</text>
+    <text x="60" y="556" fill="#1b222c" font-size="13" font-weight="700">福音的邀请 · 06「相信」是什么意思</text>
+
+    <!-- Bottom Tabbar -->
+    <rect x="2" y="614" width="356" height="54" rx="20" fill="#fcf9f2" />
+    <line x1="2" y1="614" x2="358" y2="614" stroke="#dcd2bf" />
+    <text x="48" y="646" fill="#5c6470" font-size="11" text-anchor="middle">⌂ 首页</text>
+    <text x="136" y="646" fill="#1f5f78" font-size="11" font-weight="700" text-anchor="middle">☍ 路径</text>
+    <text x="224" y="646" fill="#5c6470" font-size="11" text-anchor="middle">▤ 资料库</text>
+    <text x="312" y="646" fill="#5c6470" font-size="11" text-anchor="middle">☺ 我的</text>
+  </g>
+
+  <!-- ====================================================================== -->
+  <!-- ARTBOARD 4: Desktop 04_Lesson_Reader_单课双语研读 (x=1650, y=148, w=690, h=670) -->
+  <!-- ====================================================================== -->
+  <g transform="translate(1650, 148)">
+    <text x="0" y="-10" fill="#7aa2f7" font-size="12" font-weight="700">🖥 04_Desktop_Lesson_Reader · 单课 6 步闭环（经文+双语+笔记+测验+延伸理由+快捷键）</text>
+    <text x="690" y="-10" fill="#6e7681" font-size="11" text-anchor="end">1280 × 920</text>
+    <rect x="0" y="0" width="690" height="670" rx="14" fill="#f6f1e7" stroke="#454a54" stroke-width="2" filter="url(#artboard-shadow)" />
+
+    <!-- Left Sidebar (Compact) -->
+    <rect x="2" y="2" width="136" height="666" rx="12" fill="#fcf9f2" />
+    <line x1="138" y1="2" x2="138" y2="668" stroke="#dcd2bf" />
+    <text x="16" y="32" fill="#1b222c" font-size="12.5" font-weight="700">圣约学堂</text>
+    <text x="16" y="68" fill="#5c6470" font-size="11">⌂ 首页</text>
+    <rect x="10" y="80" width="118" height="24" rx="5" fill="#eee6d6" />
+    <text x="16" y="96" fill="#1f5f78" font-size="11" font-weight="700">☍ 路径</text>
+    <text x="16" y="122" fill="#5c6470" font-size="11">▤ 资料库</text>
+    <text x="16" y="146" fill="#5c6470" font-size="11">☺ 我的</text>
+
+    <!-- Reader Main Column (x=166, w=496) -->
+    <!-- ① First Eye: Lesson Head -->
+    <text x="166" y="28" fill="#1f5f78" font-size="10.5" font-weight="700">慕道求索 › 常问的大问题</text>
+    <rect x="528" y="14" width="134" height="18" rx="9" fill="#f24822" />
+    <text x="595" y="26" fill="#ffffff" font-size="9.5" font-weight="700" text-anchor="middle">① 第一眼：命题与预期</text>
+    <text x="166" y="50" fill="#1b222c" font-size="16" font-weight="700">如果有一位良善的神，为什么世界上有苦难？</text>
+    <text x="166" y="68" fill="#5c6470" font-size="11">If God is good, why is there suffering? · 约 7 分钟 · 第 2/6 课 · 草稿·待人工审阅</text>
+    <line x1="166" y1="78" x2="662" y2="78" stroke="#dcd2bf" stroke-width="3" />
+
+    <!-- ② Second Eye: Public-Domain Scripture Card -->
+    <rect x="166" y="88" width="496" height="84" rx="6" fill="#f3ede0" stroke="#dcd2bf" />
+    <rect x="166" y="88" width="496" height="2.5" fill="#94662b" />
+    <text x="180" y="106" fill="#1f5f78" font-size="11" font-weight="700">📖 今天读的经文 · Read today (诗 34:18 · Psalm 34:18)</text>
+    <rect x="516" y="93" width="136" height="17" rx="8" fill="#94662b" />
+    <text x="584" y="104" fill="#ffffff" font-size="9" font-weight="700" text-anchor="middle">② 第二眼：公有领域经文</text>
+    <text x="180" y="126" fill="#1b222c" font-size="11.5" font-weight="600">「耶和华靠近伤心的人，拯救灵性痛悔的人。」</text>
+    <text x="180" y="144" fill="#5c6470" font-size="10.5">"Yahweh is near to those who have a broken heart, and saves those who have a crushed spirit."</text>
+    <text x="180" y="163" fill="#5c6470" font-size="9.5">和合本（1919）/ WEB 公有领域译本 · 在 Bible Gateway 读整段 ↗</text>
+
+    <!-- Bilingual Prose Snippet -->
+    <text x="166" y="192" fill="#1b222c" font-size="12" font-weight="700">一、圣经从不假装痛苦不存在 | Scripture Never Pretends Pain Isn't Real</text>
+    <text x="166" y="210" fill="#1b222c" font-size="10.5">整卷约伯记和超过三分之一的诗篇（哀歌诗），都在诚实地向神呐喊：「为什么？」</text>
+    <text x="166" y="226" fill="#5c6470" font-size="10">The entire book of Job and over a third of the Psalms are honest laments crying out to God, "Why?"</text>
+
+    <!-- ③ Third Eye: Reflect + Private Note ([data-lesson-note]) -->
+    <rect x="166" y="240" width="496" height="92" rx="8" fill="#eee6d6" stroke="#dcd2bf" />
+    <text x="180" y="258" fill="#1f5f78" font-size="11" font-weight="700">✎ 想一想 · 我的私密思考笔记（仅保存在本机浏览器 · 按 N 键聚焦）</text>
+    <text x="648" y="258" fill="#2d6a4f" font-size="9.5" font-weight="700" text-anchor="end">✓ 已自动保存</text>
+    <rect x="180" y="266" width="468" height="56" rx="5" fill="#fcf9f2" stroke="#0d99ff" stroke-width="1.5" />
+    <text x="190" y="286" fill="#1b222c" font-size="10.5">约伯记里朋友们的「标准答案」反而加重了伤害，而神允许诚实的眼泪……</text>
+    <text x="190" y="306" fill="#5c6470" font-size="9.5">[localStorage.notes['seeking/02-why-is-there-suffering'] · 250ms 防抖写入]</text>
+    <circle cx="180" cy="294" r="6" fill="#0d99ff" stroke="#ffffff" stroke-width="2" />
+
+    <!-- Quick Check Quiz -->
+    <rect x="166" y="342" width="496" height="82" rx="8" fill="#fcf9f2" stroke="#dcd2bf" />
+    <text x="180" y="360" fill="#1b222c" font-size="11" font-weight="700">❓ 小测验：当人在苦难中向神呼喊「为什么」时，诗篇展现了怎样的态度？</text>
+    <rect x="180" y="368" width="468" height="24" rx="5" fill="#e5f2eb" stroke="#2d6a4f" />
+    <text x="192" y="384" fill="#2d6a4f" font-size="10.5" font-weight="700">✓ 答对了：诗篇把诚实的眼泪与哀告直接带到神面前，收录在圣经正典里。</text>
+    <text x="180" y="412" fill="#5c6470" font-size="9.5">解析：诗篇中有大量哀歌，显明神接纳人在痛苦中的诚实倾诉。</text>
+
+    <!-- HackerTube Context-First Further Reading (further[].why) -->
+    <text x="166" y="444" fill="#1f5f78" font-size="11" font-weight="700">▤ 想读得更深 · Go deeper（HackerTube 语境化延伸导语 further[].why）</text>
+    <rect x="166" y="452" width="496" height="52" rx="6" fill="#fcf9f2" stroke="#dcd2bf" />
+    <text x="180" y="470" fill="#1b222c" font-size="11" font-weight="700">不同时刻的诗篇：哀歌与安慰 · Psalms for Different Times ↗</text>
+    <text x="180" y="488" fill="#5c6470" font-size="9.5">为什么值得读：按焦虑、哀伤、孤独与等候分类整理诗篇，当不知道怎样开口时，可直接借用古人的眼泪祷告。</text>
+
+    <rect x="166" y="510" width="496" height="52" rx="6" fill="#fcf9f2" stroke="#dcd2bf" />
+    <text x="180" y="528" fill="#1b222c" font-size="11" font-weight="700">在盼望中面对苦难（双语讲道研读笔记） · Suffering with Hope ↗</text>
+    <text x="180" y="546" fill="#5c6470" font-size="9.5">为什么值得读：结合经文深读受苦中的神学张力——基督徒的盼望不是掩饰疼痛，而是确信神亲自进入苦难。</text>
+
+    <!-- Complete Button + Next Lesson Card -->
+    <rect x="334" y="572" width="160" height="36" rx="8" fill="#2d6a4f" />
+    <text x="414" y="594" fill="#ffffff" font-size="12" font-weight="700" text-anchor="middle">✓ 已完成 (按 C 键)</text>
+
+    <!-- Pager & Keyboard Hint Bar -->
+    <line x1="166" y1="618" x2="662" y2="618" stroke="#dcd2bf" />
+    <text x="166" y="636" fill="#5c6470" font-size="10">‹ 上一课：可以带着疑问来吗？</text>
+    <text x="662" y="636" fill="#1f5f78" font-size="10" font-weight="700" text-anchor="end">下一课：有神吗？可以从哪里开始想 ›</text>
+    <text x="414" y="656" fill="#94662b" font-size="10" font-weight="600" text-anchor="middle">⌨ 快捷键：按 L 切换语言 · ← / → 上下课 · N 写笔记 · C 标记完成</text>
+  </g>
+
+  <!-- ====================================================================== -->
+  <!-- PROTOTYPE BLUE FLOW NOODLES (ROW 1 - ROUTED CLEANLY IN GUTTERS) -->
+  <!-- ====================================================================== -->
+  <!-- Noodle 1: Onboarding Track 2 -> Dashboard (Set My Track) -->
+  <path d="M 402 565 C 442 565, 438 325, 476 325" fill="none" stroke="#0d99ff" stroke-width="2.5" marker-end="url(#proto-arrow)" />
+  <rect x="394" y="425" width="108" height="22" rx="11" fill="#0d99ff" filter="url(#pill-shadow)" />
+  <text x="448" y="440" fill="#ffffff" font-size="10" font-weight="700" text-anchor="middle">选路径 → 仪表盘</text>
+
+  <!-- Noodle 2: Dashboard Continue / Path -> Track Map -->
+  <path d="M 1146 582 C 1188 582, 1188 265, 1226 265" fill="none" stroke="#0d99ff" stroke-width="2.5" marker-end="url(#proto-arrow)" />
+  <rect x="1146" y="405" width="108" height="22" rx="11" fill="#0d99ff" filter="url(#pill-shadow)" />
+  <text x="1200" y="420" fill="#ffffff" font-size="10" font-weight="700" text-anchor="middle">进入路径地图 →</text>
+
+  <!-- Noodle 3: Track Map Node 2 -> Lesson Reader -->
+  <path d="M 1572 415 C 1612 415, 1608 245, 1646 245" fill="none" stroke="#0d99ff" stroke-width="2.5" marker-end="url(#proto-arrow)" />
+  <rect x="1564" y="315" width="110" height="22" rx="11" fill="#0d99ff" filter="url(#pill-shadow)" />
+  <text x="1619" y="330" fill="#ffffff" font-size="10" font-weight="700" text-anchor="middle">点击节点 → 读课</text>
+
+  <!-- Noodle 4: Top Gutter Express Path: Onboarding Big Question 1 -> Lesson Reader -->
+  <path d="M 402 331 C 446 331, 446 122, 1025 122 C 1600 122, 1610 198, 1646 198" fill="none" stroke="#0d99ff" stroke-width="2.2" stroke-dasharray="6 4" marker-end="url(#proto-arrow)" />
+  <rect x="900" y="110" width="250" height="22" rx="11" fill="#0d99ff" filter="url(#pill-shadow)" />
+  <text x="1025" y="125" fill="#ffffff" font-size="10" font-weight="700" text-anchor="middle">⚡ 免选路径：点 6 分钟大问题 → 直达单课阅读</text>
+
+  <!-- ====================================================================== -->
+  <!-- ROW 2 SECTION BANNER -->
+  <!-- ====================================================================== -->
+  <rect x="60" y="886" width="2280" height="36" rx="8" fill="#23262e" stroke="#363b47" />
+  <text x="80" y="909" fill="#f5c26b" font-size="13" font-weight="700">FLOW 02 · 本地隐私闭环与设计规范画布（Me 本机私密笔记与备份  ·  Design System 温润书卷设计规范  ·  Product Architecture 双层内容与推荐架构图）</text>
+  <text x="2320" y="909" fill="#9ca5b2" font-size="12" text-anchor="end">零账号 · 零第三方字体 · 零云端追踪 · 158 项 PWA 离线预缓存</text>
+
+  <!-- ====================================================================== -->
+  <!-- ARTBOARD 5: Mobile 05_Me_&_Private_Notes (x=60, y=954, w=360, h=570) -->
+  <!-- ====================================================================== -->
+  <g transform="translate(60, 954)">
+    <text x="0" y="-10" fill="#7aa2f7" font-size="12" font-weight="700">05_Mobile_Me_Notes · 私密笔记与备份</text>
+    <text x="360" y="-10" fill="#6e7681" font-size="11" text-anchor="end">375 × 760</text>
+    <rect x="0" y="0" width="360" height="570" rx="22" fill="#f6f1e7" stroke="#454a54" stroke-width="2" filter="url(#artboard-shadow)" />
+
+    <text x="18" y="34" fill="#1b222c" font-size="17" font-weight="700">我的学习 · My Learning</text>
+    <text x="18" y="52" fill="#5c6470" font-size="10">学习进度与思考笔记保存在这台设备的浏览器里，不上传任何服务器</text>
+    <line x1="18" y1="62" x2="342" y2="62" stroke="#dcd2bf" />
+
+    <!-- 4 Stats Row -->
+    <rect x="18" y="72" width="324" height="62" rx="8" fill="#fcf9f2" stroke="#dcd2bf" />
+    <text x="58" y="102" fill="#1b222c" font-size="16" font-weight="700" text-anchor="middle">4</text>
+    <text x="58" y="120" fill="#5c6470" font-size="9.5" text-anchor="middle">本周天数</text>
+    <text x="138" y="102" fill="#1b222c" font-size="16" font-weight="700" text-anchor="middle">5</text>
+    <text x="138" y="120" fill="#5c6470" font-size="9.5" text-anchor="middle">完成的课</text>
+    <text x="218" y="102" fill="#1b222c" font-size="16" font-weight="700" text-anchor="middle">32</text>
+    <text x="218" y="120" fill="#5c6470" font-size="9.5" text-anchor="middle">学习分钟</text>
+    <text x="298" y="102" fill="#94662b" font-size="16" font-weight="700" text-anchor="middle">3</text>
+    <text x="298" y="120" fill="#94662b" font-size="9.5" font-weight="700" text-anchor="middle">思考笔记</text>
+
+    <!-- Settings Card -->
+    <text x="18" y="154" fill="#1b222c" font-size="12" font-weight="700">阅读设置 · Reading settings</text>
+    <rect x="18" y="162" width="324" height="106" rx="8" fill="#fcf9f2" stroke="#dcd2bf" />
+    <text x="32" y="186" fill="#1b222c" font-size="11" font-weight="600">语言 · Language</text>
+    <rect x="188" y="171" width="140" height="24" rx="12" fill="#eee6d6" />
+    <text x="258" y="187" fill="#1b222c" font-size="10" font-weight="700" text-anchor="middle">中文 / 中英对照 / EN</text>
+
+    <text x="32" y="218" fill="#1b222c" font-size="11" font-weight="600">字号 · Text size</text>
+    <rect x="188" y="203" width="140" height="24" rx="12" fill="#eee6d6" />
+    <text x="258" y="219" fill="#1b222c" font-size="10" font-weight="700" text-anchor="middle">标准 / 大 (112%) / 特大</text>
+
+    <text x="32" y="250" fill="#1b222c" font-size="11" font-weight="600">外观 · Appearance</text>
+    <rect x="188" y="235" width="140" height="24" rx="12" fill="#eee6d6" />
+    <text x="258" y="251" fill="#1b222c" font-size="10" font-weight="700" text-anchor="middle">跟随系统 / 浅色 / 深色</text>
+
+    <!-- My Private Reflection Notes ([data-my-notes]) -->
+    <text x="18" y="290" fill="#1b222c" font-size="12" font-weight="700">我的思考笔记 · My reflection notes</text>
+    <rect x="18" y="298" width="324" height="132" rx="8" fill="#fcf9f2" stroke="#0d99ff" stroke-width="1.5" />
+
+    <rect x="28" y="308" width="304" height="54" rx="6" fill="#f6f1e7" stroke="#dcd2bf" />
+    <text x="38" y="324" fill="#1c3554" font-size="10.5" font-weight="700">如果有一位良善的神，为什么世界上有苦难？</text>
+    <text x="322" y="324" fill="#1f5f78" font-size="9" font-weight="700" text-anchor="end">慕道求索</text>
+    <text x="38" y="342" fill="#1b222c" font-size="10">约伯记里朋友们的「标准答案」反而加重了伤害，而神允许诚实的眼泪……</text>
+
+    <rect x="28" y="368" width="304" height="52" rx="6" fill="#f6f1e7" stroke="#dcd2bf" />
+    <text x="38" y="384" fill="#1c3554" font-size="10.5" font-weight="700">圣经到底是一本怎样的书？</text>
+    <text x="322" y="384" fill="#9a5b13" font-size="9" font-weight="700" text-anchor="end">初识圣经</text>
+    <text x="38" y="402" fill="#1b222c" font-size="10">原来圣经不是一时一人写的单本书，而是跨越千年的 66 卷图书馆。</text>
+
+    <!-- Backup Actions -->
+    <text x="18" y="452" fill="#1b222c" font-size="12" font-weight="700">学习记录备份 · Backup &amp; Armed Reset</text>
+    <rect x="18" y="462" width="102" height="34" rx="6" fill="#fcf9f2" stroke="#dcd2bf" />
+    <text x="69" y="483" fill="#1b222c" font-size="10.5" font-weight="700" text-anchor="middle">⬇ 导出备份</text>
+    <rect x="128" y="462" width="102" height="34" rx="6" fill="#fcf9f2" stroke="#dcd2bf" />
+    <text x="179" y="483" fill="#1b222c" font-size="10.5" font-weight="700" text-anchor="middle">⬆ 恢复备份</text>
+    <rect x="238" y="462" width="104" height="34" rx="6" fill="#fcf9f2" stroke="#9e2a2b" />
+    <text x="290" y="483" fill="#9e2a2b" font-size="10.5" font-weight="700" text-anchor="middle">清除本机记录</text>
+
+    <!-- Bottom Tabbar -->
+    <rect x="2" y="514" width="356" height="54" rx="20" fill="#fcf9f2" />
+    <line x1="2" y1="514" x2="358" y2="514" stroke="#dcd2bf" />
+    <text x="48" y="546" fill="#5c6470" font-size="11" text-anchor="middle">⌂ 首页</text>
+    <text x="136" y="546" fill="#5c6470" font-size="11" text-anchor="middle">☍ 路径</text>
+    <text x="224" y="546" fill="#5c6470" font-size="11" text-anchor="middle">▤ 资料库</text>
+    <text x="312" y="546" fill="#1c3554" font-size="11" font-weight="700" text-anchor="middle">☺ 我的</text>
+  </g>
+
+  <!-- Noodle 5: Lesson Note -> Me Notes Artboard (Routed in Horizontal Channel y=856) -->
+  <path d="M 1830 442 C 1625 442, 1625 856, 1020 856 C 446 856, 446 1295, 405 1295" fill="none" stroke="#0d99ff" stroke-width="2.2" stroke-dasharray="6 4" marker-end="url(#proto-arrow)" />
+  <rect x="900" y="844" width="250" height="22" rx="11" fill="#0d99ff" filter="url(#pill-shadow)" />
+  <text x="1025" y="859" fill="#ffffff" font-size="10" font-weight="700" text-anchor="middle">✎ Auto-save 私密思考笔记 → 自动汇总至「我的」</text>
+
+  <!-- ====================================================================== -->
+  <!-- ARTBOARD 6: Design System & Tokens Spec (x=480, y=954, w=860, h=570) -->
+  <!-- ====================================================================== -->
+  <g transform="translate(480, 954)">
+    <text x="0" y="-10" fill="#f5c26b" font-size="12" font-weight="700">🎨 06_Design_System_Spec · 「温润书卷 (Editorial Scriptorium)」设计规范与组件库</text>
+    <text x="860" y="-10" fill="#6e7681" font-size="11" text-anchor="end">Design Tokens &amp; Anti-Slop Rules</text>
+    <rect x="0" y="0" width="860" height="570" rx="14" fill="#21252e" stroke="#454a54" stroke-width="2" filter="url(#artboard-shadow)" />
+
+    <!-- Color Palette Tokens -->
+    <text x="24" y="34" fill="#ffffff" font-size="14" font-weight="700">1. 双模式书卷色板 (Light Parchment &amp; Dark Manuscript Tokens)</text>
+
+    <!-- Swatches Row -->
+    <g transform="translate(24, 48)">
+      <rect x="0" y="0" width="126" height="72" rx="8" fill="#f6f1e7" stroke="#dcd2bf" />
+      <text x="10" y="48" fill="#1b222c" font-size="11" font-weight="700">--bg · 暖米宣纸</text>
+      <text x="10" y="64" fill="#5c6470" font-size="10">#F6F1E7</text>
+
+      <rect x="138" y="0" width="126" height="72" rx="8" fill="#fcf9f2" stroke="#dcd2bf" />
+      <text x="148" y="48" fill="#1b222c" font-size="11" font-weight="700">--surface · 书页</text>
+      <text x="148" y="64" fill="#5c6470" font-size="10">#FCF9F2</text>
+
+      <rect x="276" y="0" width="126" height="72" rx="8" fill="#1c3554" />
+      <text x="286" y="48" fill="#ffffff" font-size="11" font-weight="700">--accent · 藏青</text>
+      <text x="286" y="64" fill="#cbd5e1" font-size="10">#1C3554</text>
+
+      <rect x="414" y="0" width="126" height="72" rx="8" fill="#94662b" />
+      <text x="424" y="48" fill="#ffffff" font-size="11" font-weight="700">--gold · 古铜金</text>
+      <text x="424" y="64" fill="#fef3c7" font-size="10">#94662B</text>
+
+      <rect x="552" y="0" width="126" height="72" rx="8" fill="#11151c" stroke="#2b3544" />
+      <text x="562" y="48" fill="#e8e3d8" font-size="11" font-weight="700">Dark --bg · 夜读</text>
+      <text x="562" y="64" fill="#9ca5b2" font-size="10">#11151C</text>
+
+      <rect x="690" y="0" width="122" height="72" rx="8" fill="#181e27" stroke="#2b3544" />
+      <text x="700" y="48" fill="#d6a75c" font-size="11" font-weight="700">Dark --surface</text>
+      <text x="700" y="64" fill="#9ca5b2" font-size="10">#181E27</text>
+    </g>
+
+    <!-- Track Semantic Accents -->
+    <text x="24" y="150" fill="#ffffff" font-size="14" font-weight="700">2. 四条分众路径语义色 (Track Semantic Colors)</text>
+    <g transform="translate(24, 162)">
+      <rect x="0" y="0" width="194" height="44" rx="6" fill="#9a5b13" />
+      <text x="14" y="27" fill="#ffffff" font-size="11.5" font-weight="700">📜 初识圣经 Curious · #9A5B13</text>
+
+      <rect x="206" y="0" width="194" height="44" rx="6" fill="#1f5f78" />
+      <text x="220" y="27" fill="#ffffff" font-size="11.5" font-weight="700">🧭 慕道求索 Seeking · #1F5F78</text>
+
+      <rect x="412" y="0" width="194" height="44" rx="6" fill="#2b6a4c" />
+      <text x="426" y="27" fill="#ffffff" font-size="11.5" font-weight="700">🌱 初信根基 New · #2B6A4C</text>
+
+      <rect x="618" y="0" width="194" height="44" rx="6" fill="#5d437a" />
+      <text x="632" y="27" fill="#ffffff" font-size="11.5" font-weight="700">🏛 深耕研经 Deeper · #5D437A</text>
+    </g>
+
+    <!-- Typography & Hierarchy Specs -->
+    <text x="24" y="238" fill="#ffffff" font-size="14" font-weight="700">3. 排版阶梯与去 AI 廉价感规范 (Typography &amp; Anti-Slop Rules)</text>
+    <rect x="24" y="250" width="812" height="142" rx="8" fill="#181a1f" stroke="#363b47" />
+    <text x="40" y="276" fill="#f5c26b" font-size="12" font-weight="700">• 标题与经文衬线栈 (--font-serif)：</text>
+    <text x="255" y="276" fill="#e5e5e5" font-size="11.5">"Iowan Old Style", "Palatino", "Georgia", "Songti SC", "Noto Serif CJK SC", serif（零外部字体请求）</text>
+    <text x="40" y="302" fill="#f5c26b" font-size="12" font-weight="700">• 正文与界面无衬线栈 (--font)：</text>
+    <text x="255" y="302" fill="#e5e5e5" font-size="11.5">-apple-system, "PingFang SC", "Noto Sans SC", sans-serif · 正文行高 1.85，单栏阅读宽 45rem</text>
+    <text x="40" y="328" fill="#f5c26b" font-size="12" font-weight="700">• 书卷细部语言：</text>
+    <text x="255" y="328" fill="#e5e5e5" font-size="11.5">章首采用双线分割 (3px double #dcd2bf)，卡片采用顶部 2–3px 细金/路径色顶线，严禁左侧粗彩条与紫蓝渐变</text>
+    <text x="40" y="354" fill="#f5c26b" font-size="12" font-weight="700">• 双语无缝切换机制：</text>
+    <text x="255" y="354" fill="#e5e5e5" font-size="11.5">rehype-bilingual.mjs 构建期自动标记段落语言；HTML 根节点 data-lang-mode="zh|both|en" 纯 CSS 零闪烁切换</text>
+    <text x="40" y="378" fill="#f5c26b" font-size="12" font-weight="700">• 全触控与打印适配：</text>
+    <text x="255" y="378" fill="#e5e5e5" font-size="11.5">所有按钮/选项最小高度 44px；内置 @media print 样式，一键隐藏导航栏并输出干净纸质查经讲义</text>
+
+    <!-- LocalStorage & Privacy Spec -->
+    <text x="24" y="422" fill="#ffffff" font-size="14" font-weight="700">4. 本机状态机结构 (localStorage['covenant-learn:v1'])</text>
+    <rect x="24" y="434" width="812" height="114" rx="8" fill="#181a1f" stroke="#363b47" />
+    <text x="40" y="458" fill="#7dcfff" font-size="11.5" font-family="monospace">{ v: 1, track: "seeking", last: "seeking/02-why-is-there-suffering",</text>
+    <text x="40" y="480" fill="#7dcfff" font-size="11.5" font-family="monospace">  completed: { "curious/01-a-library-of-books": 1730592000000, ... },</text>
+    <text x="40" y="502" fill="#7dcfff" font-size="11.5" font-family="monospace">  notes: { "seeking/02-why-is-there-suffering": "我的私密思考笔记（仅存本机，随导出 JSON 备份）" },</text>
+    <text x="40" y="524" fill="#7dcfff" font-size="11.5" font-family="monospace">  days: { "2026-11-02": true }, settings: { lang: "both", theme: "system", size: "m" } }</text>
+  </g>
+
+  <!-- ====================================================================== -->
+  <!-- ARTBOARD 7: Product Structure & Dual-Engine Map (x=1390, y=954, w=950, h=570) -->
+  <!-- ====================================================================== -->
+  <g transform="translate(1390, 954)">
+    <text x="0" y="-10" fill="#f5c26b" font-size="12" font-weight="700">🧭 07_Product_Architecture_Map · 产品结构思路图（三段时间维度 × 双层内容引擎 × 跨路径推荐）</text>
+    <text x="950" y="-10" fill="#6e7681" font-size="11" text-anchor="end">System &amp; Content Blueprint</text>
+    <rect x="0" y="0" width="950" height="570" rx="14" fill="#21252e" stroke="#454a54" stroke-width="2" filter="url(#artboard-shadow)" />
+
+    <!-- Layer 1: 3-Horizon Entry -->
+    <rect x="24" y="24" width="902" height="128" rx="10" fill="#181a1f" stroke="#363b47" />
+    <text x="42" y="48" fill="#f5c26b" font-size="13" font-weight="700">第一层：三段时间维度用户体验设计 (Time-Horizon UX Strategy)</text>
+
+    <rect x="42" y="60" width="276" height="76" rx="8" fill="#232730" stroke="#94662b" />
+    <text x="56" y="80" fill="#f5c26b" font-size="11.5" font-weight="700">⚡ 前 5 秒 · 免配置直达 (Zero-Friction)</text>
+    <text x="56" y="98" fill="#d1d5db" font-size="10.5">不强制注册或选路径；首屏直接提供 3 个</text>
+    <text x="56" y="114" fill="#d1d5db" font-size="10.5">6 分钟高频大问题（苦难/圣经是什么/有神吗）</text>
+
+    <rect x="336" y="60" width="276" height="76" rx="8" fill="#232730" stroke="#0d99ff" />
+    <text x="350" y="80" fill="#6cc0ff" font-size="11.5" font-weight="700">📖 前 5 分钟 · 单课自包含闭环</text>
+    <text x="350" y="98" fill="#d1d5db" font-size="10.5">公有领域经文内嵌 + 段落双语切换 + 私密</text>
+    <text x="350" y="114" fill="#d1d5db" font-size="10.5">思考笔记 + 互动单选测验，零外跳走完一课</text>
+
+    <rect x="630" y="60" width="276" height="76" rx="8" fill="#232730" stroke="#2b6a4c" />
+    <text x="644" y="80" fill="#6ee7b7" font-size="11.5" font-weight="700">🌱 长期复访 · 本地智能生长</text>
+    <text x="644" y="98" fill="#d1d5db" font-size="10.5">基于 last 与 completed 自动生成跨路径推</text>
+    <text x="644" y="114" fill="#d1d5db" font-size="10.5">荐 ([data-for-you]) + 私密笔记库与备份</text>
+
+    <!-- Layer 2: Upper Content Engine (21 Lessons) -->
+    <rect x="24" y="172" width="902" height="176" rx="10" fill="#181a1f" stroke="#363b47" />
+    <text x="42" y="196" fill="#6cc0ff" font-size="13" font-weight="700">第二层（上层引擎）：圣约学堂 /learn/ · 21 课结构化双语微课 + RELATED_BRIDGES 跨路径关联图谱</text>
+
+    <rect x="42" y="210" width="204" height="120" rx="8" fill="#232730" stroke="#9a5b13" />
+    <text x="54" y="232" fill="#f59e0b" font-size="11.5" font-weight="700">初识圣经 Curious (7 课)</text>
+    <text x="54" y="252" fill="#d1d5db" font-size="10">01 66 卷图书馆 · 02 文体</text>
+    <text x="54" y="268" fill="#d1d5db" font-size="10">03 正典传递 · 04 四幕故事</text>
+    <text x="54" y="284" fill="#d1d5db" font-size="10">05 创造与堕落 · 06 耶稣是谁</text>
+    <text x="54" y="300" fill="#d1d5db" font-size="10">07 耶稣教导的核心</text>
+
+    <rect x="262" y="210" width="204" height="120" rx="8" fill="#232730" stroke="#1f5f78" />
+    <text x="274" y="232" fill="#38bdf8" font-size="11.5" font-weight="700">慕道求索 Seeking (6 课)</text>
+    <text x="274" y="252" fill="#d1d5db" font-size="10">01 欢迎提问 · 02 苦难问题</text>
+    <text x="274" y="268" fill="#d1d5db" font-size="10">03 有神吗 · 04 历史与考古</text>
+    <text x="274" y="284" fill="#d1d5db" font-size="10">05 古卷抄本 · 06 相信的意义</text>
+    <text x="274" y="308" fill="#94a3b8" font-size="9.5">⇄ 与初识/初信/深耕双向桥接</text>
+
+    <rect x="482" y="210" width="204" height="120" rx="8" fill="#232730" stroke="#2b6a4c" />
+    <text x="494" y="232" fill="#34d399" font-size="11.5" font-weight="700">初信根基 New (5 课)</text>
+    <text x="494" y="252" fill="#d1d5db" font-size="10">01 每天读经 · 02 主祷文祷告</text>
+    <text x="494" y="268" fill="#d1d5db" font-size="10">03 全能的父 · 04 独生子基督</text>
+    <text x="494" y="284" fill="#d1d5db" font-size="10">05 洗礼、圣餐与教会生活</text>
+    <text x="494" y="308" fill="#94a3b8" font-size="9.5">⇄ 承接慕道 · 输送深耕</text>
+
+    <rect x="702" y="210" width="204" height="120" rx="8" fill="#232730" stroke="#5d437a" />
+    <text x="714" y="232" fill="#c084fc" font-size="11.5" font-weight="700">深耕研经 Deeper (4 课)</text>
+    <text x="714" y="252" fill="#d1d5db" font-size="10">01 圣约脊椎 · 02 借基督读旧约</text>
+    <text x="714" y="268" fill="#d1d5db" font-size="10">03 第二圣殿与罗马世界</text>
+    <text x="714" y="284" fill="#d1d5db" font-size="10">04 归纳法小组查经带领</text>
+    <text x="714" y="308" fill="#94a3b8" font-size="9.5">⇄ 直通 99 篇深度研究专题</text>
+
+    <!-- Connector Arrows down to Layer 3 -->
+    <text x="475" y="366" fill="#f5c26b" font-size="11.5" font-weight="700" text-anchor="middle">⬇ 通过 43 条语境化推荐语 (further[].why) 无缝衔接到下层深度资料库 ⬇</text>
+
+    <!-- Layer 3: Lower Content Engine (99 Library Docs) -->
+    <rect x="24" y="380" width="902" height="166" rx="10" fill="#181a1f" stroke="#363b47" />
+    <text x="42" y="406" fill="#6ee7b7" font-size="13" font-weight="700">第三层（下层引擎）：Project Covenant 静态阅读站 / · 99 篇经审计双语资料库 (publication/site-content.txt)</text>
+
+    <rect x="42" y="420" width="204" height="108" rx="8" fill="#232730" stroke="#363b47" />
+    <text x="54" y="442" fill="#ffffff" font-size="11" font-weight="700">Bible_Timeline/ (时间线与工具)</text>
+    <text x="54" y="462" fill="#9ca5b2" font-size="10">• 66 卷逐卷导览与十一条主题线</text>
+    <text x="54" y="478" fill="#9ca5b2" font-size="10">• 圣约专题 / 主祷文 / 使徒信经</text>
+    <text x="54" y="494" fill="#9ca5b2" font-size="10">• 史料考古旁证与复活历史边界</text>
+    <text x="54" y="510" fill="#9ca5b2" font-size="10">• 66 卷接收史深度审计</text>
+
+    <rect x="262" y="420" width="204" height="108" rx="8" fill="#232730" stroke="#363b47" />
+    <text x="274" y="442" fill="#ffffff" font-size="11" font-weight="700">Bilingual_Notes/ (双语讲道研读)</text>
+    <text x="274" y="462" fill="#9ca5b2" font-size="10">• 三一之爱与创造 / 苦难中的盼望</text>
+    <text x="274" y="478" fill="#9ca5b2" font-size="10">• 借着基督读圣经 / 大祭司基督</text>
+    <text x="274" y="494" fill="#9ca5b2" font-size="10">• 仆人式领导 / 教会作为神的家</text>
+    <text x="274" y="510" fill="#9ca5b2" font-size="10">• 全部去识别化并通过隐私审计</text>
+
+    <rect x="482" y="420" width="204" height="108" rx="8" fill="#232730" stroke="#363b47" />
+    <text x="494" y="442" fill="#ffffff" font-size="11" font-weight="700">Book_Studies/ &amp; Translations/</text>
+    <text x="494" y="462" fill="#9ca5b2" font-size="10">• 《求真寻道：约翰福音问答》</text>
+    <text x="494" y="478" fill="#9ca5b2" font-size="10">• 《游子吟》解读与证据边界</text>
+    <text x="494" y="494" fill="#9ca5b2" font-size="10">• 《铁证待判》版本辨析指南</text>
+    <text x="494" y="510" fill="#9ca5b2" font-size="10">• 中英圣经译本对照与共读指南</text>
+
+    <rect x="702" y="420" width="204" height="108" rx="8" fill="#232730" stroke="#363b47" />
+    <text x="714" y="442" fill="#ffffff" font-size="11" font-weight="700">Christian_Traditions/ &amp; Maps</text>
+    <text x="714" y="462" fill="#9ca5b2" font-size="10">• 宗派、跨宗派运动与神学区分</text>
+    <text x="714" y="478" fill="#9ca5b2" font-size="10">• 圣经历史地图集与人物图谱</text>
+    <text x="714" y="494" fill="#9ca5b2" font-size="10">• 双语核心神学词汇表 (Glossary)</text>
+    <text x="714" y="510" fill="#9ca5b2" font-size="10">• 离线 ZIP 打包与 SHA-256 校验</text>
+  </g>
+</svg>
