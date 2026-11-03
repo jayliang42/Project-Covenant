@@ -9,6 +9,8 @@ export interface State {
   track?: string;
   /** lessonId -> ISO date completed */
   completed: Record<string, string>;
+  /** lessonId -> private reflection note (stored locally only) */
+  notes: Record<string, string>;
   /** last opened lesson id */
   last?: string;
   /** distinct local dates (YYYY-MM-DD) with any completed lesson */
@@ -16,12 +18,25 @@ export interface State {
   settings: { lang: LangMode; theme: 'system' | 'light' | 'dark'; size: 'm' | 'l' | 'xl' };
 }
 
-const fresh = (): State => ({ v: 1, completed: {}, days: [], settings: { lang: 'zh', theme: 'system', size: 'm' } });
+const fresh = (): State => ({
+  v: 1,
+  completed: {},
+  notes: {},
+  days: [],
+  settings: { lang: 'zh', theme: 'system', size: 'm' },
+});
 
 export function load(): State {
   try {
     const raw = JSON.parse(localStorage.getItem(KEY) || 'null');
-    if (raw && raw.v === 1) return { ...fresh(), ...raw, settings: { ...fresh().settings, ...raw.settings } };
+    if (raw && raw.v === 1) {
+      return {
+        ...fresh(),
+        ...raw,
+        notes: raw.notes && typeof raw.notes === 'object' ? raw.notes : {},
+        settings: { ...fresh().settings, ...raw.settings },
+      };
+    }
   } catch {
     /* storage unavailable or corrupted: start fresh */
   }
@@ -63,6 +78,13 @@ export function setComplete(id: string, done: boolean) {
   });
 }
 
+export function setNote(id: string, text: string) {
+  update((s) => {
+    if (text.trim()) s.notes[id] = text;
+    else delete s.notes[id];
+  });
+}
+
 /** Days studied in the current week (Mon–Sun). Gentle stat; no streak pressure. */
 export function daysThisWeek(s = state) {
   const now = new Date();
@@ -78,7 +100,12 @@ export function exportJson() {
 export function importJson(text: string) {
   const data = JSON.parse(text);
   if (!data || data.v !== 1 || typeof data.completed !== 'object') throw new Error('not a Covenant Learn backup');
-  update((s) => Object.assign(s, fresh(), data, { settings: { ...fresh().settings, ...data.settings } }));
+  update((s) =>
+    Object.assign(s, fresh(), data, {
+      notes: data.notes && typeof data.notes === 'object' ? data.notes : {},
+      settings: { ...fresh().settings, ...data.settings },
+    }),
+  );
 }
 export function reset() {
   update((s) => Object.assign(s, fresh(), { settings: s.settings }));

@@ -1,4 +1,5 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
+import siteContentRaw from '../../../publication/site-content.txt?raw';
 import { LIBRARY_BASE_URL, PASSAGE_URL, TRACK_ORDER } from '../config';
 
 export type TrackEntry = CollectionEntry<'tracks'>;
@@ -23,11 +24,21 @@ export const trackOf = (lesson: LessonEntry) => lesson.id.split('/')[0];
 
 let cache: Promise<TrackNode[]> | undefined;
 
+function loadLibraryAllowlist(): Set<string> {
+  return new Set(
+    siteContentRaw
+      .split(/\r?\n/)
+      .map((line: string) => line.trim())
+      .filter((line: string) => Boolean(line) && !line.startsWith('#')),
+  );
+}
+
 /** Loads tracks + lessons and checks that they fit together (fails the build if not). */
 export function loadTracks(): Promise<TrackNode[]> {
   cache ??= (async () => {
     const tracks = await getCollection('tracks');
     const lessons = await getCollection('lessons');
+    const allowlist = loadLibraryAllowlist();
     const problems: string[] = [];
 
     for (const id of TRACK_ORDER) {
@@ -44,7 +55,17 @@ export function loadTracks(): Promise<TrackNode[]> {
       for (const [i, q] of l.data.check.entries()) {
         if (q.answer >= q.options.length) problems.push(`lessons/${l.id}.md check #${i + 1}: answer ${q.answer} is out of range (options start at 0)`);
       }
-      if (l.data.status === 'published' && !l.body?.trim()) problems.push(`lessons/${l.id}.md is published but has no body text`);
+      for (const f of l.data.further) {
+        const [file] = f.path.split('#');
+        if (allowlist && !allowlist.has(file)) {
+          problems.push(`lessons/${l.id}.md further path "${file}" is not in publication/site-content.txt`);
+        }
+      }
+      if (l.data.status === 'published') {
+        if (!l.body?.trim()) problems.push(`lessons/${l.id}.md is published but has no body text`);
+        if (!l.data.title.en) problems.push(`lessons/${l.id}.md is published but missing title.en`);
+        if (!l.data.summary.en) problems.push(`lessons/${l.id}.md is published but missing summary.en`);
+      }
     }
     if (problems.length) throw new Error('Content problems:\n  - ' + problems.join('\n  - '));
 
@@ -65,15 +86,24 @@ export function loadTracks(): Promise<TrackNode[]> {
 // ---------- URLs ----------
 
 const BASE = import.meta.env.BASE_URL.replace(/\/?$/, '/');
-export const url = (path = '') => BASE + path.replace(/^\//, '');
+export const url = (p = '') => BASE + p.replace(/^\//, '');
 export const lessonUrl = (lesson: LessonEntry | string) => url(`learn/${typeof lesson === 'string' ? lesson : lesson.id}/`);
 export const trackUrl = (id: string) => url(`tracks/${id}/`);
 export const artUrl = (name?: string) => (name ? url(`repo-assets/art/${name}.svg`) : undefined);
 export const passageUrl = (refEn: string) => PASSAGE_URL.replace('{q}', encodeURIComponent(refEn));
 
-/** Repository Markdown path (e.g. "Bible_Timeline/X.md#frag") → library page URL. */
-export function libraryUrl(path: string) {
-  const [file, hash] = path.split('#');
+/**
+ * Repository Markdown path (e.g. "Bible_Timeline/X.md#frag") → library page URL.
+ * When built under `<prefix>/learn/`, links resolve to `<prefix>/` on the same host
+ * so GitHub Pages and static mirrors work without hardcoding the domain.
+ */
+export function libraryUrl(mdPath: string) {
+  const [file, hash] = mdPath.split('#');
   const html = file.replace(/(^|\/)README\.md$/, '$1index.html').replace(/\.md$/, '.html');
-  return LIBRARY_BASE_URL + encodeURI(html) + (hash ? `#${hash}` : '');
+  const base = BASE.endsWith('/learn/')
+    ? BASE.slice(0, -'learn/'.length)
+    : LIBRARY_BASE_URL.endsWith('/')
+      ? LIBRARY_BASE_URL
+      : `${LIBRARY_BASE_URL}/`;
+  return base + encodeURI(html) + (hash ? `#${hash}` : '');
 }

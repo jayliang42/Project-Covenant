@@ -27,12 +27,14 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(
       fetch(req)
         .then((res) => {
-          const copy = res.clone();
-          caches.open(CACHE).then((c) => c.put(req, copy));
+          if (res.ok) {
+            const copy = res.clone();
+            caches.open(CACHE).then((c) => c.put(req, copy));
+          }
           return res;
         })
         .catch(() =>
-          caches.match(req).then((hit) => hit || caches.match(BASE + '404.html')),
+          caches.match(req, { ignoreSearch: true }).then((hit) => hit || caches.match(BASE + '404.html')),
         ),
     );
     return;
@@ -40,7 +42,7 @@ self.addEventListener('fetch', (event) => {
 
   // Assets: cache first.
   event.respondWith(
-    caches.match(req).then(
+    caches.match(req, { ignoreSearch: true }).then(
       (hit) =>
         hit ||
         fetch(req).then((res) => {

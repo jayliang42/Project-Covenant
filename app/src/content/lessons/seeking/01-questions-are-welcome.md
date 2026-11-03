@@ -1,53 +1,83 @@
 ---
-title: { zh: 问题是受欢迎的, en: Questions are welcome }
+title:
+  zh: 圣经欢迎诚实的疑问：从多马与拿但业说起
+  en: The Bible Welcomes Honest Questions — Thomas and Nathanael
 summary:
-  zh: 认真思考信仰，从诚实地提问开始。圣经里也有很多带着疑问来的人。
-  en: Taking faith seriously starts with honest questions, and the Bible is full of people who came with doubts.
+  zh: 怀疑不等于敌人。福音书里那些当面提问的人，耶稣是怎样对待他们的？
+  en: Doubt is not the enemy. How did Jesus treat the people who questioned him to his face?
 unit: big-questions
 order: 1
 minutes: 6
-art: wanderer-home
+status: published
+review: draft
+art: open-hands
 scripture:
-  - { ref: "约 1:45-46", refEn: "John 1:45-46" }
-  - { ref: "约 20:24-29", refEn: "John 20:24-29" }
-  - { ref: "徒 17:11", refEn: "Acts 17:11" }
+  - ref: 约翰福音 1:45-46
+    refEn: John 1:45-46
+    text:
+      zh: 腓力找着拿但业，对他说：“摩西在律法上所写的和众先知所记的那一位，我们遇见了，就是约瑟的儿子拿撒勒人耶稣。”拿但业对他说：“拿撒勒还能出什么好的吗？”腓力说：“你来看！”
+      en: 'Philip found Nathanael, and said to him, "We have found him, of whom Moses in the law, and the prophets, wrote: Jesus of Nazareth, the son of Joseph." Nathanael said to him, "Can any good thing come out of Nazareth?" Philip said to him, "Come and see!"'
+  - ref: 马可福音 9:24
+    refEn: Mark 9:24
+    text:
+      zh: 孩子的父亲立时喊着说：“我信！但我信不足，求主帮助。”
+      en: 'Immediately the father of the child cried out with tears, "I believe. Help my unbelief!"'
+  - ref: 约翰福音 20:24-29
+    refEn: John 20:24-29
+    text:
+      zh: 过了八日，门徒又在屋里，多马也和他们同在。门都关了。耶稣来站在当中说：“愿你们平安！”就对多马说：“伸过你的指头来，摸我的手；伸出你的手来，探入我的肋旁。不要疑惑，总要信！”
+      en: 'After eight days, his disciples were inside again, and Thomas was with them. Jesus came, the doors being locked, and stood in the midst, and said, "Peace be to you." Then he said to Thomas, "Reach here your finger, and see my hands. Reach here your hand, and put it into my side. Don’t be unbelieving, but believing."'
 reflect:
-  - { zh: 如果只能问一个关于信仰的问题，你会问什么？把它写下来。, en: "If you could ask just one question about faith, what would it be? Write it down." }
-  - { zh: 拿但业说“你来看”之后才去看。有什么能帮你“来看”，比如读一卷福音书，或者找人聊聊？, en: "Nathanael was told “come and see”. What would help you “come and see” — reading a Gospel, or talking with someone?" }
+  - zh: 你现在对基督教信仰最核心的一两个疑问是什么？试着把它们具体写下来。
+    en: What are your one or two most honest questions about the Christian faith right now? Try stating them plainly.
+  - zh: “我信，但我信不足，求主帮助”这句话，为什么会出现在圣经里？
+    en: Why do you think a prayer like "I believe; help my unbelief" was preserved inside the Gospels?
 check:
-  - q: { zh: 多马说要亲眼看见才信，耶稣怎样回应他？, en: "How did Jesus respond to Thomas, who wanted to see before believing?" }
+  - q:
+      zh: 当拿但业质疑“拿撒勒还能出什么好的吗”时，腓力的回答是什么？
+      en: When Nathanael asked "Can anything good come out of Nazareth?", how did Philip reply?
     options:
-      - { zh: 责备他以后不许再问, en: Rebuked him and told him never to ask again }
-      - { zh: 主动来到他面前，请他来看、来摸, en: Came to him and invited him to look and touch }
+      - { zh: "批评他不虔诚", en: "Scolded him for being unspiritual" }
+      - { zh: "“你来看！”——邀请他亲自接触和查考", en: "\"Come and see!\" — an invitation to look for himself" }
+      - { zh: "拒绝再和他说话", en: "Refused to speak with him" }
     answer: 1
-    explain: { zh: 约翰福音 20:27 记载耶稣请多马来看他的手、摸他的肋旁。, en: John 20:27 records Jesus inviting Thomas to see his hands and touch his side. }
+    explain:
+      zh: 《约翰福音》整卷书都在发出“你来看”的邀请，而不是强迫人闭嘴接受。
+      en: The whole Gospel of John extends a "come and see" invitation rather than demanding blind silence.
 further:
-  - { label: { zh: 《求真寻道》约翰福音研经问答, en: "Seek the Truth: John study guide" }, path: "Book_Studies/求真寻道_约翰福音研经问答_使用指南.md" }
-  - { label: { zh: 《游子吟》全书解读, en: "Song of a Wanderer: guide" }, path: "Book_Studies/游子吟_永恒在召唤_全书解读与阅读指南.md" }
+  - label: { zh: "《求真寻道：约翰福音研经问答》使用指南", en: "John Study & Inquiry Guide" }
+    path: Book_Studies/求真寻道_约翰福音研经问答_使用指南.md
+    why: { zh: "围绕约翰福音中的七个记号与人物对话设计，适合带着真实疑问一步步走进文本亲自考察。", en: "Built around the seven signs and dialogues in John's Gospel for seekers who want to examine the text firsthand." }
+  - label: { zh: "《游子吟》全书解读与阅读指南", en: "Song of a Wanderer Reading Guide" }
+    path: Book_Studies/游子吟_永恒在召唤_全书解读与阅读指南.md
+    why: { zh: "梳理华人知识分子最常问的理性、科学与信仰问题，并严格标明哪些论点有证据支撑、哪些需要更新。", en: "Addresses classic questions from Chinese intellectuals on science, reason, and faith while noting evidence boundaries." }
 ---
 
-## 带着问题来 | Come with your questions
+## 提问不是没礼貌 | Asking is not disrespect
 
-神存在吗？为什么会有苦难？耶稣真的复活了吗？如果你心里有这些问题，你不是“不够属灵”，而是在认真对待一件重要的事。
+有些朋友走进教会或翻开圣经时，心里有个顾虑：“如果我问太多问题，会不会显得不够尊重？”<br>
+Many people approaching church or the Bible carry a quiet worry: "If I ask too many questions, will I seem disrespectful?"
 
-Does God exist? Why is there suffering? Did Jesus really rise? If you carry these questions, you are not “unspiritual”. You are taking something important seriously.
+但如果你直接打开圣经，会发现里面充满了尖锐、甚至带点刺的问题。《诗篇》里有人问神“你为什么忘记我？”；先知哈巴谷问神为什么容让恶人得势；在四福音书里，更是不断有人当面向耶稣提问。<br>
+Yet when you open the Bible itself, it is full of sharp, unvarnished questions. Psalmists ask God, "Why have you forgotten me?"; the prophet Habakkuk asks why the wicked prosper; and in the Gospels people question Jesus to his face again and again.
 
-## 圣经里的提问者 | Questioners in the Bible
+## 两个人物：拿但业与多马 | Two faces: Nathanael and Thomas
 
-拿但业听说耶稣来自拿撒勒，第一反应是怀疑：“拿撒勒还能出什么好的吗？”腓力没有和他争辩，只说：“你来看。”（约 1:46）
+在《约翰福音》第 1 章，拿但业听说弥赛亚来自小村镇拿撒勒，第一反应是句大实话：“拿撒勒还能出什么好的吗？”他的朋友腓力没有跟他吵架，只说了三个字：**“你来看！”** 而当拿但业走到耶稣面前，耶稣反而称赞他是个“心里没有诡诈”的真诚人。<br>
+In John 1, when Nathanael hears that the promised Messiah comes from the backwater village of Nazareth, his first reaction is blunt: "Can anything good come out of Nazareth?" His friend Philip does not argue; he simply says, **"Come and see!"** And when Nathanael walks up, Jesus commends him as an honest man "in whom there is no deceit."
 
-When Nathanael heard Jesus came from Nazareth, he scoffed: “Can any good thing come out of Nazareth?” Philip didn't argue. He said, “Come and see” (John 1:46).
+到了《约翰福音》第 20 章，门徒多马没亲眼见到复活的耶稣，就说：“我非看见他手上的钉痕……我总不信。”八天之后，耶稣再次显现，没有把多马赶出师门，而是主动伸出手对他说：“伸过你的指头来，摸我的手。”<br>
+In John 20, the disciple Thomas misses seeing the risen Jesus and says flatly that unless he sees the nail marks for himself, he will not believe. Eight days later Jesus appears, does not expel Thomas, and holds out his hands: "Put your finger here, and see my hands."
 
-多马说，除非亲眼看见、亲手摸到，他总不信。耶稣没有把他赶走，而是来到他面前（约 20:24-29）。庇哩亚人听了保罗的话，也天天查考圣经，要看看是不是这样（徒 17:11）。
+## 分清两种“怀疑” | Two kinds of doubt
 
-Thomas said he would not believe unless he saw and touched. Jesus did not send him away; he came to him (John 20:24–29). The Bereans examined the Scriptures every day to see whether what Paul said was true (Acts 17:11).
+在寻道过程中，区分两种态度很有帮助：<br>
+As you explore, it helps to separate two very different postures:
 
-## 一个诚实的方法 | An honest way to explore
+- **找借口的怀疑**：其实不想知道答案，提问只是为了把话题挡在门外。<br>
+  **Defensive cynicism**: Using questions as a shield because we do not actually want to find out.
+- **求真的怀疑**：因为这件事太重要，不愿意糊里糊涂地信，所以认真查考证据、认真面对心里的结。<br>
+  **Truth-seeking doubt**: Taking the question seriously enough that we refuse to fake belief and want to examine the evidence honestly.
 
-有些问题可以找到清楚的答案，有些只能看见方向，还有一些需要你自己做出判断。这条路径会尽量分清这三种情况。
-
-Some questions have clear answers, some only show a direction, and some call for your own judgement. This path will try to say which is which.
-
-一个简单的起点：花一两个星期读完约翰福音，每读一段就写下一个问题。不必急着得出结论。
-
-A simple start: read John's Gospel over a week or two and write down one question after each section. There's no need to rush to a conclusion.
+这条“慕道探索”路径就是为第二种人准备的。带着你的问题往下走——“你来看”。<br>
+This "Seeking" path is built for the second kind. Bring your real questions with you — "come and see."

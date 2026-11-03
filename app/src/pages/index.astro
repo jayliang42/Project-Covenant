@@ -1,22 +1,69 @@
 ---
 import AppLayout from '../layouts/AppLayout.astro';
 import TrackCard from '../components/TrackCard.astro';
+import Bi from '../components/Bi.astro';
 import T from '../components/T.astro';
 import Icon from '../components/Icon.astro';
 import { APP } from '../config';
-import { loadTracks, url } from '../lib/content';
+import { loadTracks, lessonUrl, url } from '../lib/content';
 const tracks = await loadTracks();
+
+const bigQuestions = [
+  {
+    id: 'seeking/02-why-is-there-suffering',
+    tag: { zh: '大问题 · 约 7 分钟', en: 'Big Question · 7 min' },
+    title: { zh: '如果有一位良善的神，为什么世界上有苦难？', en: 'If God is good, why is there suffering?' },
+    summary: { zh: '圣经没有用廉价的口号打发痛苦，而是把眼泪写进了诗篇、约伯记与十字架。', en: 'Scripture does not offer cheap slogans; it brings tears into the Psalms, Job, and the cross.' },
+  },
+  {
+    id: 'curious/01-a-library-of-books',
+    tag: { zh: '零基础 · 约 5 分钟', en: 'First Look · 5 min' },
+    title: { zh: '圣经到底是一本怎样的书？', en: 'What kind of book is the Bible?' },
+    summary: { zh: '它不是一时一人写成的单本书，而是跨越千年、由 66 卷不同文体组成的图书馆。', en: 'Not a single volume by one author, but a library of 66 books written across centuries.' },
+  },
+  {
+    id: 'seeking/03-does-god-exist',
+    tag: { zh: '大问题 · 约 7 分钟', en: 'Big Question · 7 min' },
+    title: { zh: '有神吗？可以从哪里开始想这个问题？', en: 'Does God exist? Where can we begin?' },
+    summary: { zh: '宇宙的秩序、人的道德直觉与历史中的耶稣，分别指向什么，又有什么证据边界？', en: 'What do cosmic order, moral intuition, and Jesus in history point to, and what are their limits?' },
+  },
+];
 ---
 <AppLayout wide>
-  <!-- First visit: pick a starting point. -->
+  <!-- First visit: zero-friction entry + path selection. -->
   <section class="onboarding" data-show-when="no-track">
     <div class="hero">
-      <img class="hero-icon" src={url('icons/icon.svg')} alt="" width="64" height="64" />
-      <h1><T zh={APP.name.zh} en={APP.name.en} /></h1>
+      <div class="hero-brand">
+        <img class="hero-icon" src={url('icons/icon.svg')} alt="" width="52" height="52" />
+        <div>
+          <p class="eyebrow"><T zh="中英双语 · 圣经研读学堂" en="Bilingual Bible Study & Inquiry" /></p>
+          <h1><T zh={APP.name.zh} en={APP.name.en} /></h1>
+        </div>
+      </div>
       <p class="hero-sub"><T zh={APP.tagline.zh} en={APP.tagline.en} /></p>
     </div>
-    <h2 class="section-title"><T zh="你现在是哪一种情况？" en="Where are you right now?" /></h2>
-    <p class="muted center"><T zh="选一个起点就好，之后随时可以换，也可以几条路径一起读。" en="Pick a starting point. You can switch any time or follow several paths." /></p>
+
+    <div class="quick-start-block">
+      <div class="section-head-row">
+        <h2 class="section-title left"><T zh="免选路径 · 6 分钟先读一个最常问的问题" en="No setup needed · Start with a 6-minute question" /></h2>
+        <small class="muted"><T zh="无需注册，直接打开就能读" en="No account required — open and read immediately" /></small>
+      </div>
+      <div class="question-grid">
+        {bigQuestions.map((q) => (
+          <a class="question-card" href={lessonUrl(q.id)}>
+            <span class="question-tag"><Bi text={q.tag} /></span>
+            <strong class="question-title"><Bi text={q.title} /></strong>
+            <p class="muted small"><Bi text={q.summary} /></p>
+            <span class="question-cta"><T zh="立即阅读" en="Read now" /> <Icon name="right" size={16} /></span>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <div class="section-head-row">
+      <h2 class="section-title left"><T zh="或者，按你现在的阶段选一条学习路径" en="Or choose a learning path for where you are" /></h2>
+      <small class="muted"><T zh="随时可以切换，也可以几条路径一起读" en="Switch any time or follow several paths" /></small>
+    </div>
     <div class="track-grid choose">
       {tracks.map((t) => <TrackCard track={t} mode="choose" />)}
     </div>
@@ -39,6 +86,14 @@ const tracks = await loadTracks();
         <div class="stat"><Icon name="check" /><strong data-stat="done">0</strong><small><T zh="完成的课" en="Lessons done" /></small></div>
         <div class="stat"><Icon name="clock" /><strong data-stat="minutes">0</strong><small><T zh="学习分钟" en="Minutes" /></small></div>
       </article>
+    </div>
+
+    <div class="for-you-block" data-for-you-wrap hidden>
+      <div class="section-head-row">
+        <h2 class="section-title left"><T zh="为你推荐下一步" en="Recommended for you" /></h2>
+        <small class="muted"><T zh="基于本机学习记录推算 · 零云端追踪" en="Computed locally from your progress · zero tracking" /></small>
+      </div>
+      <div class="question-grid" data-for-you></div>
     </div>
 
     <h2 class="section-title left"><T zh="所有学习路径" en="All learning paths" /></h2>

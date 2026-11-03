@@ -65,7 +65,7 @@ const lessons = defineCollection({
     reflect: z.array(text).default([]),
     check: z.array(question).default([]),
     further: z
-      .array(z.object({ label: text, path: z.string() }))
+      .array(z.object({ label: text, path: z.string(), why: text.optional() }))
       .default([]),
   }),
 });

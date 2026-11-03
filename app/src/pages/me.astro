@@ -15,9 +15,15 @@ const tracks = await loadTracks();
     <div class="stat"><Icon name="sparkle" /><strong data-stat="week">0</strong><small><T zh="本周学习天数" en="Days this week" /></small></div>
     <div class="stat"><Icon name="check" /><strong data-stat="done">0</strong><small><T zh="完成的课" en="Lessons done" /></small></div>
     <div class="stat"><Icon name="clock" /><strong data-stat="minutes">0</strong><small><T zh="学习分钟" en="Minutes" /></small></div>
+    <div class="stat"><Icon name="pen" /><strong data-stat="notes">0</strong><small><T zh="思考笔记" en="Notes saved" /></small></div>
   </article>
 
-  <h2 class="section-title left"><T zh="进度" en="Progress" /></h2>
+  <h2 class="section-title left"><T zh="我的思考笔记" en="My reflection notes" /></h2>
+  <section class="card notes-panel" data-my-notes>
+    <p class="muted"><T zh="正在载入笔记…" en="Loading notes…" /></p>
+  </section>
+
+  <h2 class="section-title left"><T zh="路径进度" en="Path progress" /></h2>
   <div class="track-grid compact">
     {tracks.map((t) => <TrackCard track={t} />)}
   </div>
@@ -65,6 +71,6 @@ const tracks = await loadTracks();
 
   <h2 class="section-title left"><T zh="关于" en="About" /></h2>
   <section class="card about">
-    <p><T zh="课程由 AI 辅助起草，标有“草稿”的内容尚未经过人工审阅。经文链接打开外部阅读网站；本应用不内置受版权保护的译本。" en="Lessons are AI-assisted drafts; anything marked “Draft” has not been reviewed by a person. Scripture links open an external reader; the app bundles no copyrighted translations." /></p>
+    <p><T zh="课程由 AI 辅助起草，标有“草稿”的内容尚未经过人工审阅。课内摘录的经文均采用公有领域译本（1919 年《官话和合本》与 World English Bible），经文链接可打开外部阅读网站查看完整上下文；本应用不内置受版权保护的现代译本。" en="Lessons are AI-assisted drafts; anything marked “Draft” has not been reviewed by a person. Quoted verses use public-domain translations (1919 Chinese Union Version and World English Bible), and external links open full passages online; no copyrighted translations are bundled." /></p>
   </section>
 </AppLayout>

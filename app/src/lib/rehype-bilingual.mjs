@@ -11,9 +11,9 @@
 
 const CJK = /[㐀-鿿豈-﫿]/g;
 const LATIN_WORD = /[A-Za-z]+(?:['’][A-Za-z]+)*/g;
-const BLOCKS = new Set(['p', 'li', 'h2', 'h3', 'h4', 'h5', 'h6', 'dt', 'dd', 'figcaption']);
-const CONTAINERS = new Set(['blockquote', 'ul', 'ol', 'section', 'div', 'details', 'dl', 'root']);
-const SKIP = new Set(['table', 'pre', 'code', 'script', 'style', 'svg']);
+const BLOCKS = new Set(['p', 'li', 'h2', 'h3', 'h4', 'h5', 'h6', 'dt', 'dd', 'figcaption', 'th', 'td']);
+const CONTAINERS = new Set(['blockquote', 'ul', 'ol', 'section', 'div', 'details', 'dl', 'table', 'thead', 'tbody', 'tr', 'root']);
+const SKIP = new Set(['pre', 'code', 'script', 'style', 'svg']);
 
 function textOf(node) {
   if (node.type === 'text') return node.value;
@@ -25,7 +25,7 @@ export function detectLang(value) {
   const cjk = (value.match(CJK) || []).length;
   const latin = (value.match(LATIN_WORD) || []).length;
   if (!cjk && !latin) return null;
-  return cjk >= latin && cjk > 0 ? 'zh' : 'en';
+  return (cjk >= latin || (cjk >= 2 && cjk * 2 >= latin)) && cjk > 0 ? 'zh' : 'en';
 }
 
 const isBr = (n) => n.type === 'element' && n.tagName === 'br';
@@ -74,6 +74,11 @@ function tagBlock(el) {
     (c) => c.type === 'element' && (CONTAINERS.has(c.tagName) || c.tagName === 'p'),
   );
   if (hasBlockChildren) return visit(el); // e.g. a loose <li> holding <p>s
+  if (el.tagName === 'th' || el.tagName === 'td') {
+    if (splitHeadingPipe(el)) return;
+    if (el.children.some(isBr) && splitOnBreaks(el)) return;
+    return;
+  }
   if (/^h[2-6]$/.test(el.tagName) && splitHeadingPipe(el)) return;
   if (el.children.some(isBr) && splitOnBreaks(el)) return;
   const lang = detectLang(textOf(el));

@@ -12,7 +12,7 @@ interface Props {
   /** Accent colour for the page (track colour). */
   accent?: string;
   /** Show a back arrow in the mobile top bar. */
-  back?: { href: string; label: string };
+  back?: { href: string; label: string | { zh: string; en?: string } };
   wide?: boolean;
 }
 const { title, description = APP.tagline.zh, accent, back, wide = false } = Astro.props;
@@ -28,7 +28,7 @@ const appData = {
     color: t.data.color,
     title: t.data.title,
     url: trackUrl(t.id),
-    lessons: t.path.map((l) => ({ id: l.id, title: l.data.title, unit: l.data.unit, minutes: l.data.minutes, url: lessonUrl(l) })),
+    lessons: t.path.map((l) => ({ id: l.id, title: l.data.title, summary: l.data.summary, unit: l.data.unit, minutes: l.data.minutes, url: lessonUrl(l) })),
     units: t.units.map((u) => ({ id: u.id, title: u.title, lessons: u.lessons.filter((l) => l.data.status === 'published').map((l) => l.id) })),
   })),
 };
@@ -102,7 +102,7 @@ const tabs = [
 
     <header class="topbar">
       {back
-        ? <a class="topbar-back" href={back.href}><Icon name="left" /><span>{back.label}</span></a>
+        ? <a class="topbar-back" href={back.href}><Icon name="left" /><span>{typeof back.label === 'string' ? back.label : <T zh={back.label.zh} en={back.label.en} />}</span></a>
         : <a class="topbar-brand" href={url('')}><img src={url('icons/icon.svg')} alt="" width="28" height="28" /><T zh={APP.name.zh} en={APP.name.en} /></a>}
       <button type="button" class="lang-cycle" data-cycle-lang aria-label="切换语言 / Switch language">
         <Icon name="lang" size={20} /><span data-lang-label>中文</span>

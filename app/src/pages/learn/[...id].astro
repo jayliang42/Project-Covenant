@@ -22,7 +22,7 @@ const d = lesson.data;
 const unit = track.units.find((u) => u.id === d.unit)!;
 const { Content } = await render(lesson);
 ---
-<AppLayout title={d.title.zh} description={d.summary.zh} accent={track.data.color} back={{ href: trackUrl(track.id), label: track.data.title.zh }}>
+<AppLayout title={d.title.zh} description={d.summary.zh} accent={track.data.color} back={{ href: trackUrl(track.id), label: track.data.title }}>
   <article class="lesson" data-lesson-id={lesson.id}>
     <header class="lesson-head">
       <p class="crumbs">
@@ -50,11 +50,13 @@ const { Content } = await render(lesson);
           {d.scripture.map((s) => (
             <li>
               {s.text && <blockquote><Bi text={s.text} /></blockquote>}
-              <a href={passageUrl(s.refEn)} target="_blank" rel="noopener">
-                <span data-lang="zh">{s.ref}</span><span data-lang="en">{s.refEn}</span>
-                <Icon name="external" size={14} />
-              </a>
-              {s.text && <small class="muted"><T zh="和合本（1919）/ WEB" en="CUV (1919) / WEB" /></small>}
+              <div class="scripture-foot">
+                <a class="scripture-ref" href={passageUrl(s.refEn)} target="_blank" rel="noopener">
+                  <span data-lang="zh">{s.ref}</span><span class="ref-sep" aria-hidden="true"> · </span><span data-lang="en">{s.refEn}</span>
+                  <Icon name="external" size={14} />
+                </a>
+                {s.text && <small class="muted"><T zh="和合本（1919）/ WEB 公有领域译本" en="CUV (1919) / WEB public domain" /></small>}
+              </div>
             </li>
           ))}
         </ul>
@@ -69,6 +71,23 @@ const { Content } = await render(lesson);
       <section class="reflect">
         <h2 class="block-title"><Icon name="pen" size={18} /><T zh="想一想" en="Reflect" /></h2>
         <ol>{d.reflect.map((r) => <li><Bi text={r} /></li>)}</ol>
+        <div class="reflect-note">
+          <div class="reflect-note-head">
+            <label for="lesson-note-input" class="reflect-note-label">
+              <T zh="我的私密思考笔记（仅保存在本机浏览器）" en="My private reflection note (stored only in this browser)" />
+            </label>
+            <span class="note-saved-badge" data-note-saved hidden>
+              <T zh="已自动保存" en="Saved locally" />
+            </span>
+          </div>
+          <textarea
+            id="lesson-note-input"
+            class="reflect-textarea"
+            rows="3"
+            data-lesson-note
+            placeholder="写下你的疑问、亮光或回应…… / Write your questions, insights, or response..."
+          ></textarea>
+        </div>
       </section>
     )}
 
@@ -96,7 +115,15 @@ const { Content } = await render(lesson);
         <h2 class="block-title"><Icon name="library" size={18} /><T zh="想读得更深" en="Go deeper" /></h2>
         <ul>
           {d.further.map((f) => (
-            <li><a href={libraryUrl(f.path)} target="_blank" rel="noopener"><span><Bi text={f.label} /></span><Icon name="external" size={14} /></a></li>
+            <li>
+              <a href={libraryUrl(f.path)} target="_blank" rel="noopener">
+                <span class="further-copy">
+                  <strong class="further-label"><Bi text={f.label} /></strong>
+                  {f.why && <small class="further-why muted"><Bi text={f.why} /></small>}
+                </span>
+                <Icon name="external" size={14} />
+              </a>
+            </li>
           ))}
         </ul>
       </section>
@@ -125,8 +152,15 @@ const { Content } = await render(lesson);
     </section>
 
     <nav class="pager">
-      {prev ? <a href={lessonUrl(prev)}><Icon name="left" size={18} /><span><Bi text={prev.data.title} /></span></a> : <span></span>}
-      {next ? <a href={lessonUrl(next)} class="right"><span><Bi text={next.data.title} /></span><Icon name="right" size={18} /></a> : <span></span>}
+      {prev ? <a href={lessonUrl(prev)} data-prev-lesson><Icon name="left" size={18} /><span><Bi text={prev.data.title} /></span></a> : <span></span>}
+      {next ? <a href={lessonUrl(next)} class="right" data-next-lesson><span><Bi text={next.data.title} /></span><Icon name="right" size={18} /></a> : <span></span>}
     </nav>
+
+    <p class="kbd-hint muted small" aria-hidden="true">
+      <T
+        zh="快捷键：按 L 切换语言 · ← / → 上下课 · N 写笔记 · C 标记完成"
+        en="Shortcuts: L language · ← / → prev/next · N note · C complete"
+      />
+    </p>
   </article>
 </AppLayout>

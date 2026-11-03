@@ -51,13 +51,14 @@ check:
     answer: 1           # 正确选项的位置，从 0 开始数
     explain: { zh: 为什么。, en: Why. }
 further:
-  - { label: { zh: 资料库里的相关页面, en: Related library page }, path: "Bible_Timeline/Key_Passages_Bilingual.md" }
+  - label: { zh: 资料库里的相关页面, en: Related library page }
+    path: "Bible_Timeline/Key_Passages_Bilingual.md"
+    why: { zh: 一句话说明为什么值得延伸读这篇资料。, en: One sentence on why this deep-dive page is worth reading next. }
 ---
 
 ## 小标题 | Heading
 
-中文段落。
-
+中文段落。<br>
 English paragraph.
 ```
 

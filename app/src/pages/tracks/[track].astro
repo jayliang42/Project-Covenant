@@ -13,7 +13,7 @@ export async function getStaticPaths() {
 const { track } = Astro.props as { track: TrackNode };
 const d = track.data;
 ---
-<AppLayout title={d.title.zh} description={d.description.zh} accent={d.color} back={{ href: url('tracks/'), label: '路径' }}>
+<AppLayout title={d.title.zh} description={d.description.zh} accent={d.color} back={{ href: url('tracks/'), label: { zh: '路径', en: 'Paths' } }}>
   <header class="track-hero">
     {d.art && <img class="track-hero-art" src={artUrl(d.art)} alt="" />}
     <div class="track-hero-text">

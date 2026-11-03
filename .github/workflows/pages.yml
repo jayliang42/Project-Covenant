@@ -15,7 +15,7 @@ concurrency:
 jobs:
   build:
     if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
       - name: Check out committed source
@@ -49,6 +49,24 @@ jobs:
           python3 scripts/build_static_site.py build --snapshot "$snapshot_dir" --expected-content-set-sha256 "$content_digest" --output "$site_dir"
           python3 scripts/build_static_site.py verify --snapshot "$snapshot_dir" --expected-content-set-sha256 "$content_digest" --input "$site_dir"
 
+      - name: Set up Node.js for learning app
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+
+      - name: Build learning app under /learn/
+        working-directory: app
+        env:
+          ASTRO_TELEMETRY_DISABLED: 1
+          BASE_PATH: /Project-Covenant/learn/
+        run: |
+          npm ci
+          npm run check
+          npm run build
+          cp -R dist "$RUNNER_TEMP/covenant-pages-site/learn"
+
       - name: Upload verified Pages artifact
         uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
         with:
@@ -57,7 +75,7 @@ jobs:
   deploy:
     if: github.ref == 'refs/heads/main'
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       pages: write
       id-token: write
