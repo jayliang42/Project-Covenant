@@ -324,6 +324,22 @@ class ReaderTests(unittest.TestCase):
         self.assertIn('href="Book_Studies/index.html"', page)
         self.assertIn('to read in Chinese, in English, or in both', page)
 
+    def test_home_shelf_lists_each_existing_collection_once_with_its_size(self):
+        page = self.render(source="README.md")
+        shelf = page[page.index('<nav class="shelf"'):]
+        shelf = shelf[:shelf.index('</nav>')]
+        hubs = [path for path in self.sources if path.endswith("/README.md")]
+        self.assertEqual(len(hubs), shelf.count('class="spine spine-'))
+        self.assertIn('class="spine spine-1" href="Bible_Timeline/index.html"', shelf)
+        self.assertIn('<span class="spine-no" aria-hidden="true">01</span>', shelf)
+        self.assertIn(' pages</span>', shelf)
+        self.assertNotIn('class="shelf"', self.render())
+
+    def test_reading_progress_is_css_only(self):
+        self.assertIn(b"animation-timeline: scroll(root block)", site_reader.SITE_CSS)
+        self.assertIn(b"@supports (animation-timeline: scroll())", site_reader.SITE_CSS)
+        self.assertEqual(1, self.render().count("<script"))
+
     def test_markup_escapes_titles_and_encodes_unicode_paths(self):
         titles = dict(self.sources)
         titles["Bible_Timeline/研究 甲.md"] = '<script>unsafe</script> & "quotes"'

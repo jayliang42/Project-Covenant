@@ -431,6 +431,30 @@ def _guide_grid(output: str, page_map: dict[str, str], guide_art: frozenset[str]
             + '</p><nav class="guide-grid" aria-label="Topic guides | 专题导读">' + "\n".join(guides) + "</nav></div>")
 
 
+def _shelf(output: str, page_map: dict[str, str]) -> str:
+    """The collections as a stack of book spines: number, name, note, and size."""
+    spines = []
+    for directory, label, description, _ in COLLECTIONS:
+        hub = directory + "/README.md"
+        if hub not in page_map:
+            continue
+        number = len(spines) + 1
+        count = len(collection_order(hub, page_map))
+        size = bilingual_label(f"{count} pages | {count} 篇" if count != 1 else "1 page | 1 篇")
+        href = html.escape(_href(output, page_map[hub]), quote=True)
+        spines.append(
+            f'<a class="spine spine-{number}" href="{href}"><span class="spine-no" aria-hidden="true">{number:02d}</span>'
+            f'<span class="spine-text"><strong>{bilingual_label(label)}</strong>'
+            f'<span class="spine-note">{bilingual_label(description)}</span></span>'
+            f'<span class="spine-size">{size}</span></a>')
+    if not spines:
+        return ""
+    return ('<div class="home-section" aria-label="The shelves | 书架"><div class="section-kicker">'
+            + bilingual_label("The shelves | 书架") + '</div><p class="section-intro">'
+            + bilingual_label("Every collection in the library, one spine each. | 资料库的每个栏目，各占一条书脊。")
+            + '</p><nav class="shelf" aria-label="The shelves | 书架">' + "\n".join(spines) + "</nav></div>")
+
+
 def _home_actions(output: str, page_map: dict[str, str]) -> str:
     first = next((path for path in STORY_ROUTE[1:] if path in page_map), None)
     if not first:
@@ -742,7 +766,7 @@ def render_page(source: str, output: str, title: str, body: str,
         if home_art:
             art = ('<p class="home-figure"><img class="home-art" src="' + html.escape(_href(output, home_art), quote=True)
                    + '" alt="The Bible as a library of 66 books on two shelves | 两层书架上的 66 卷圣经"></p>\n')
-        guides = _guide_grid(output, page_map, guide_art)
+        guides = "\n".join(part for part in (_shelf(output, page_map), _guide_grid(output, page_map, guide_art)) if part)
         marker = article_body.find(_anchor(HOME_GUIDES_BEFORE))
         if guides and marker >= 0:
             article_body = article_body[:marker] + guides + "\n" + article_body[marker:]
@@ -835,6 +859,12 @@ a:focus-visible, summary:focus-visible, button:focus-visible { outline: 2px soli
 /* Header */
 .site-header { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--background) 92%, transparent); backdrop-filter: saturate(1.4) blur(10px); -webkit-backdrop-filter: saturate(1.4) blur(10px); border-bottom: 1px solid var(--line); }
 .header-inner { max-width: var(--max); margin: auto; padding: .6rem 1.5rem; display: flex; align-items: center; gap: 1.25rem; min-height: 3.75rem; }
+/* Reading progress: a CSS-only line under the header, where scroll timelines exist. */
+@supports (animation-timeline: scroll()) {
+  .site-header::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: var(--accent); transform-origin: 0 50%; transform: scaleX(0); animation: reading-progress linear both; animation-timeline: scroll(root block); }
+  body:has(.home-page) .site-header::after { display: none; }
+  @keyframes reading-progress { to { transform: scaleX(1); } }
+}
 .site-title { display: flex; align-items: center; gap: .6rem; color: var(--text); text-decoration: none; flex: none; line-height: 1.2; }
 .site-mark { display: inline-grid; place-items: center; width: 1.85rem; height: 2.1rem; border: 1.5px solid var(--accent); border-radius: 2px 7px 7px 2px; color: var(--accent); font: 1.3rem/1 var(--serif); flex: none; }
 .site-name { font-weight: 650; letter-spacing: -.015em; }
@@ -964,6 +994,22 @@ p:has(> img.study-art, > img.study-illustration) + p:has(> em:first-child) { mar
 .home-section { margin: 3.2rem 0; }
 .section-kicker { font-family: var(--serif); font-size: 1.6rem; font-weight: 600; line-height: 1.35; }
 .section-intro { color: var(--muted); font-size: .95rem; }
+/* Home sections are numbered like the parts of a printed guide. */
+.home-page { counter-reset: home-part; }
+.home-page > h2 { counter-increment: home-part; }
+.home-page > h2::before { content: counter(home-part, decimal-leading-zero); display: block; margin-bottom: .35rem; font-family: var(--serif); font-size: .95rem; font-weight: 500; letter-spacing: .08em; color: var(--accent); font-variant-numeric: lining-nums; }
+/* The shelves: each collection is one book spine. */
+.shelf { display: grid; gap: .5rem; }
+.spine { --spine: var(--accent); display: grid; grid-template-columns: 3.1rem minmax(0, 1fr) auto; align-items: stretch; min-height: 4.4rem; overflow: hidden; border-radius: 12px; background: color-mix(in srgb, var(--spine) 9%, var(--surface)); border: 1px solid color-mix(in srgb, var(--spine) 20%, var(--line)); text-decoration: none; color: var(--text); transition: transform .18s ease, box-shadow .18s ease; }
+.reading-body a.spine { color: var(--text); text-decoration: none; }
+.spine:hover { transform: translateX(4px); box-shadow: var(--shadow); }
+.spine-no { display: grid; place-items: center; background: var(--spine); color: #fff; font-family: var(--serif); font-size: 1.05rem; font-weight: 600; font-variant-numeric: lining-nums; box-shadow: inset -6px 0 8px -6px rgba(0, 0, 0, .3); }
+.spine-text { display: flex; flex-direction: column; justify-content: center; gap: .1rem; padding: .7rem 1rem; min-width: 0; }
+.spine-text strong { font-size: 1.02rem; font-weight: 650; line-height: 1.45; }
+.spine-note { color: var(--muted); font-size: .84rem; line-height: 1.55; }
+.spine-size { align-self: center; padding: 0 1rem 0 .4rem; color: var(--muted); font-size: .76rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.spine-1 { --spine: #7a5a3a; } .spine-2 { --spine: #b07a2a; } .spine-3 { --spine: #6f8048; } .spine-4 { --spine: #3f6b4a; }
+.spine-5 { --spine: #3d6c7c; } .spine-6 { --spine: #5b7896; } .spine-7 { --spine: #7c4a66; }
 .guide-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .guide-card { display: grid; gap: .3rem; align-content: start; padding: .8rem .8rem 1rem; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; text-decoration: none; color: var(--text); transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease; }
 .reading-body a.guide-card { color: var(--text); text-decoration: none; }
@@ -1021,6 +1067,9 @@ p:has(> img.study-art, > img.study-illustration) + p:has(> em:first-child) { mar
   table { font-size: .87rem; line-height: 1.65; }
   th, td { padding: .6rem .6rem; }
   .guide-grid { grid-template-columns: 1fr; gap: .7rem; }
+  .spine { grid-template-columns: 2.6rem minmax(0, 1fr); }
+  .spine-no { grid-row: 1 / span 2; }
+  .spine-size { grid-column: 2; align-self: start; padding: 0 1rem .7rem; margin-top: -.45rem; }
   .guide-card { grid-template-columns: 5.25rem 1fr; column-gap: .9rem; padding: .7rem; }
   .guide-thumb { grid-row: span 2; aspect-ratio: 1; }
   .guide-card strong { margin-top: 0; }
@@ -1040,8 +1089,9 @@ p:has(> img.study-art, > img.study-illustration) + p:has(> em:first-child) { mar
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .guide-card, .reading-pager a { transition: none; }
-  .guide-card:hover { transform: none; }
+  .guide-card, .reading-pager a, .spine { transition: none; }
+  .guide-card:hover, .spine:hover { transform: none; }
+  .site-header::after { display: none; }
 }
 @media print {
   :root { color-scheme: light; --background: white; --surface: white; --raised: white; --text: black; --muted: #333; --faint: #555; --line: #aaa; --accent: #222; --accent-soft: #eee; --code: #eee; }

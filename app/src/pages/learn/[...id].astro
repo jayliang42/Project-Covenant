@@ -23,6 +23,7 @@ const unit = track.units.find((u) => u.id === d.unit)!;
 const { Content } = await render(lesson);
 ---
 <AppLayout title={d.title.zh} description={d.summary.zh} accent={track.data.color} back={{ href: trackUrl(track.id), label: track.data.title }}>
+  <div class="read-progress" aria-hidden="true"></div>
   <article class="lesson" data-lesson-id={lesson.id}>
     <header class="lesson-head">
       <p class="crumbs">

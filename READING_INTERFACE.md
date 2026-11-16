@@ -12,6 +12,10 @@ The home page is a reader landing page: a short introduction, a start button, to
 
 首页是面向读者的落地页：简短介绍、开始阅读按钮、专题导读卡片和资料索引；维护类内容放在“关于本资料库”页面。阅读页使用居中单栏，栏目链接放在顶部，侧边显示根据正文真实标题锚点生成的页内目录，文末提供上一篇、下一篇和本栏全部篇目。小屏幕使用浏览器原生折叠菜单替代顶部链接和页内目录。
 
+On the home page, the collections also appear as a shelf: one numbered book spine per collection, with its name, a one-line note, and its page count. The home page's main sections are numbered. Under the header, a thin line shows how far down a page the reader is; it is CSS only (a scroll timeline), is skipped where the browser lacks support or the reader prefers reduced motion, and adds no script.
+
+首页还把各栏目排成一个书架：每个栏目一条带编号的书脊，写着名称、一句说明和篇数；首页的主要章节带编号。页眉下方有一条细线显示读到页面的什么位置；它只用 CSS（滚动时间线）实现，浏览器不支持或读者偏好减少动效时不显示，也不增加任何脚本。
+
 Every article starts with the same header: collection and position, title, the page's own summary, and one meta line with a small review-status badge and the reading time. The site moves or drops only repeated reading aids that the Markdown keeps for GitHub: the review-status quote becomes the badge; a “fully bilingual” language-status box is dropped, and other language-status notes move into an expandable editorial note at the end; a route table that only links to sections of the same page is dropped because the outline replaces it; the per-image “original illustration” line is replaced by one footer note; and a final row of “Back to …” links is replaced by the previous/next navigation. Every anchor ID those blocks carried is kept, so existing links still work.
 
 每篇文章使用统一的开头：栏目与位置、标题、本篇摘要，以及一行包含审阅状态小标签和阅读时间的信息。网站只移动或省略 Markdown 为 GitHub 保留的重复阅读辅助：审阅状态引用框改为小标签；“完整双语”的语言状态框省略，其他语言状态说明移到文末可展开的整理说明；只链接本页小节的路线表由页内目录取代；每张插图下的“原创插画”说明改为页脚统一说明；文末的“返回……”链接行由上一篇／下一篇导航取代。这些区块原有的锚点 ID 全部保留，旧链接仍然有效。

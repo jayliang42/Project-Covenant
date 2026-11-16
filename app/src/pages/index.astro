@@ -28,25 +28,31 @@ const bigQuestions = [
     summary: { zh: '宇宙的秩序、人的道德直觉与历史中的耶稣，分别指向什么，又有什么证据边界？', en: 'What do cosmic order, moral intuition, and Jesus in history point to, and what are their limits?' },
   },
 ];
+const firstLook = bigQuestions[1];
 ---
 <AppLayout wide>
   <!-- First visit: zero-friction entry + path selection. -->
   <section class="onboarding" data-show-when="no-track">
     <div class="hero">
-      <div class="hero-brand">
-        <img class="hero-icon" src={url('icons/icon.svg')} alt="" width="52" height="52" />
-        <div>
-          <p class="eyebrow"><T zh="中英双语 · 圣经研读学堂" en="Bilingual Bible Study & Inquiry" /></p>
-          <h1><T zh={APP.name.zh} en={APP.name.en} /></h1>
-        </div>
+      <div class="hero-mark">
+        <img src={url('icons/icon.svg')} alt="" width="34" height="34" />
+        <p class="eyebrow"><T zh={`${APP.name.zh} · 中英双语`} en={`${APP.name.en} · Bilingual`} /></p>
       </div>
-      <p class="hero-sub"><T zh={APP.tagline.zh} en={APP.tagline.en} /></p>
+      <h1 class="display">
+        <span data-ui="zh">{APP.headline.zh.map((line) => <span class="display-line">{line}</span>)}</span>
+        <span data-ui="en">{APP.headline.en.map((line) => <span class="display-line">{line}</span>)}</span>
+      </h1>
+      <p class="hero-sub"><T zh="每课 5–10 分钟，四条学习路径。不用注册，学习记录只留在你的设备上。" en="Lessons take 5–10 minutes, on four learning paths. No account, and your progress stays on your device." /></p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href={lessonUrl(firstLook.id)}><T zh="先读第一课 · 约 5 分钟" en="Read a first lesson · 5 min" /><Icon name="right" size={18} /></a>
+        <a class="btn btn-ghost" href="#paths"><T zh="选一条学习路径" en="Choose a learning path" /></a>
+      </div>
     </div>
 
     <div class="quick-start-block">
       <div class="section-head-row">
-        <h2 class="section-title left"><T zh="免选路径 · 6 分钟先读一个最常问的问题" en="No setup needed · Start with a 6-minute question" /></h2>
-        <small class="muted"><T zh="无需注册，直接打开就能读" en="No account required — open and read immediately" /></small>
+        <h2 class="section-title left"><T zh="先读一个最常问的问题" en="Start with a common question" /></h2>
+        <small class="muted"><T zh="不用选路径，也不用注册，打开就能读" en="No path to choose and no account — open and read" /></small>
       </div>
       <div class="question-grid">
         {bigQuestions.map((q) => (
@@ -60,7 +66,7 @@ const bigQuestions = [
       </div>
     </div>
 
-    <div class="section-head-row">
+    <div class="section-head-row" id="paths">
       <h2 class="section-title left"><T zh="或者，按你现在的阶段选一条学习路径" en="Or choose a learning path for where you are" /></h2>
       <small class="muted"><T zh="随时可以切换，也可以几条路径一起读" en="Switch any time or follow several paths" /></small>
     </div>

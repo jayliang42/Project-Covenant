@@ -28,7 +28,11 @@ export function detectLang(value) {
   return (cjk >= latin || (cjk >= 2 && cjk * 2 >= latin)) && cjk > 0 ? 'zh' : 'en';
 }
 
-const isBr = (n) => n.type === 'element' && n.tagName === 'br';
+// A hand-written <br> in Markdown reaches rehype as a raw HTML node, not an
+// element, so both forms count as a line break between the two languages.
+const RAW_BR = /^<br\s*\/?>$/i;
+const isBr = (n) =>
+  (n.type === 'element' && n.tagName === 'br') || (n.type === 'raw' && RAW_BR.test(String(n.value).trim()));
 const hasLang = (n) => n.properties && (n.properties.lang || n.properties.dataLang);
 const span = (lang, children) => ({
   type: 'element',

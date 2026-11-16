@@ -833,6 +833,8 @@ class CurrentPublicationCorpusTests(unittest.TestCase):
                 self.assertIn(f'id="week-{week:02d}"', year_plan)
             self.assertEqual(8, home.count('class="guide-card"'))
             self.assertEqual(8, home.count('class="guide-thumb"'))
+            self.assertEqual(7, home.count('class="spine spine-'))
+            self.assertLess(home.index('<nav class="shelf"'), home.index('<nav class="guide-grid"'))
             self.assertIn('<article class="reading-body hub-page">', (output / "Bilingual_Notes/index.html").read_text(encoding="utf-8"))
             self.assertIn('<article class="reading-body">', year_plan)
             for note in sorted((output / "Bilingual_Notes").glob("20*.html")):

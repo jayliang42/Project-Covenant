@@ -32,7 +32,7 @@ const d = track.data;
     {track.units.map((unit, ui) => (
       <li class="unit">
         <div class="unit-head" data-unit-progress={`${track.id}:${unit.id}`}>
-          <span class="unit-num">{ui + 1}</span>
+          <span class="unit-num">{String(ui + 1).padStart(2, '0')}</span>
           <div>
             <h2><Bi text={unit.title} /></h2>
             {unit.summary && <p class="muted"><Bi text={unit.summary} /></p>}

@@ -7,6 +7,11 @@ export const APP = {
     zh: '一步一步读懂圣经：从好奇到扎根。',
     en: 'Understand the Bible step by step, from curiosity to deep roots.',
   },
+  /** The tagline as two display lines for the home page statement. */
+  headline: {
+    zh: ['一步一步读懂圣经', '从好奇到扎根'],
+    en: ['Understand the Bible step by step,', 'from curiosity to deep roots.'],
+  },
   themeColor: '#1c3554',
 };
 

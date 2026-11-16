@@ -62,6 +62,10 @@ app/
 
 - **Responsive:** phones get a top bar and bottom tabs; at 1024px and wider there is a sidebar. Reading columns are capped for comfort, and safe areas are respected for notched phones and standalone mode.<br>
   **响应式：**手机用顶部栏＋底部标签栏，1024px 以上切换为侧边栏；正文限制行宽，并适配刘海屏和安装后的全屏模式。
+- **Visual language:** warm paper, large serif statements, soft cards with big corners, pill buttons and chips, and thin rules instead of boxes. Learning paths are shown as numbered book spines in their own colours. Dark mode uses a warm charcoal, and each path's colour is lightened there so links and buttons stay readable.<br>
+  **视觉语言：**暖纸底色、大号衬线标题、大圆角的柔和卡片、胶囊形按钮和标签，用细线代替方框。学习路径做成带编号的书脊，各用自己的颜色。深色模式用暖炭色，并把每条路径的颜色调亮，保证链接和按钮看得清。
+- **Small reading aids:** the first questions scroll sideways on phones, and a thin line at the top of a lesson shows how far you have read. The line is CSS only and appears where the browser supports scroll timelines.<br>
+  **阅读小辅助：**手机上“先读一个问题”的卡片可以横向滑动；课程页顶部有一条细线显示读到哪里。这条线只用 CSS 实现，在支持滚动时间线的浏览器里才显示。
 - **Bite-sized lessons** (5–10 minutes) on a visible path, with scripture, reflection questions, a quick check, and links into the full library.<br>
   **短课程**（5–10 分钟），排在清楚可见的路径上，每课有经文、思考题、小测验和延伸阅读。
 - **Gentle progress:** a weekly day count instead of streak pressure. Missing a day costs nothing.<br>
