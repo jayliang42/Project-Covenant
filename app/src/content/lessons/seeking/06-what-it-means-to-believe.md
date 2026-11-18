@@ -1,10 +1,10 @@
 ---
 title:
-  zh: “信”到底是什么意思？
-  en: What does it actually mean to "believe"?
+  zh: “信”是什么意思？
+  en: What does it mean to "believe"?
 summary:
-  zh: 圣经里的“信”不是大脑强行同意一条没把握的结论，而是从“知道”走向“信靠与委身”。
-  en: In Scripture, faith is not forcing your brain to assent to a guess; it is moving from knowing about someone to trusting them.
+  zh: 圣经里的“信”包含知道、认同和信靠三层意思，最后落在把自己托付给基督。
+  en: In Scripture, faith includes knowing, agreeing, and trusting, and it ends in entrusting yourself to Christ.
 unit: invitation
 order: 1
 minutes: 6
@@ -23,76 +23,76 @@ scripture:
       zh: 你们得救是本乎恩，也因着信；这并不是出于自己，乃是神所赐的；也不是出于行为，免得有人自夸。
       en: For by grace you have been saved through faith, and that not of yourselves; it is the gift of God, not of works, that no one would boast.
 reflect:
-  - zh: “相信椅子能承重”和“真正坐到椅子上去”有什么区别？这对你理解圣经里的“信”有什么启发？
-    en: What is the difference between agreeing that a chair can hold your weight and actually sitting down in it? How does that clarify biblical faith?
-  - zh: 你觉得现在阻碍你往前走一步的，主要是理智上的疑问，还是心里对于“交出方向盘”的顾虑？
-    en: Right now, is what holds you back mainly an intellectual question, or a hesitation about handing over the steering wheel of your life?
+  - zh: “相信椅子能承重”和“真的坐到椅子上”有什么区别？这对理解圣经里的“信”有什么帮助？
+    en: What is the difference between agreeing that a chair can hold your weight and actually sitting in it? How does that help explain biblical faith?
+  - zh: 你觉得现在拦着你往前走一步的，主要是理智上的疑问，还是不愿意把人生的主权交出去？
+    en: Right now, what holds you back more, intellectual questions or reluctance to hand over control of your life?
 check:
   - q:
       zh: 根据《以弗所书》2:8-9，一个人得以与神和好（得救）的根基是什么？
       en: According to Ephesians 2:8–9, what is the basis on which a person is saved and reconciled to God?
     options:
       - { zh: "靠自己先攒够道德积分、表现完美", en: "Earning enough moral points and becoming perfect first" }
-      - { zh: "本乎神的恩典（白白的礼物），借着信心领受，而不是出于自己的功德行为", en: "By God's grace (an unearned gift), received through faith rather than human merit" }
+      - { zh: "本乎神的恩典（白白的礼物），借着信心领受，与自己的功德行为无关", en: "By God's grace (an unearned gift), received through faith and not earned by human merit" }
       - { zh: "靠背诵足够多的神学名词", en: "Memorizing enough theological vocabulary" }
     answer: 1
     explain:
-      zh: 信心不是我们拿去向神换取救恩的“钞票”，而是伸出空手去接住神在基督里白白赐下的恩典。
-      en: Faith is not currency we pay to earn salvation; it is an open hand receiving the gift God gives freely in Christ.
+      zh: 信心好比伸出空手，接受神在基督里白白赐下的恩典。它不是拿去换救恩的代价。
+      en: Faith is like holding out an empty hand to receive the grace God freely gives in Christ. It is not a price paid for salvation.
   - q:
-      zh: 圣经里的“悔改”（希腊文 metanoia）最核心的意思是什么？
-      en: What is the core meaning of "repentance" (Greek metanoia) in the New Testament?
+      zh: 圣经里的“悔改”（希腊文 metanoia）主要是什么意思？
+      en: What is the main meaning of "repentance" (Greek metanoia) in the New Testament?
     options:
       - { zh: "陷入无休止的自我厌恶", en: "Endless self-hatred" }
-      - { zh: "心意与方向的调转——从背向神、自己作主，转回面向神、领受他的赦免与引导", en: "A turning of mind and direction — turning from self-rule back toward God to receive his mercy and leadership" }
+      - { zh: "心意和方向的转变：从背向神、自己作主，转回来面向神，领受他的赦免和引导", en: "A change of mind and direction: turning from self-rule back toward God to receive his forgiveness and leading" }
       - { zh: "发誓自己以后再也不会有任何软弱", en: "Promising you will never stumble again" }
     answer: 1
     explain:
-      zh: 悔改和信靠就像一枚硬币的两面：转身离开旧方向（悔改），同时投向基督的怀抱（信靠）。
+      zh: 悔改和信靠是同一个动作的两面：离开原来的方向（悔改），转向基督（信靠）。
       en: "Repentance and faith are two sides of one step: turning from the old direction and trusting Christ."
 further:
   - label: { zh: "福音的邀请（双语讲道研读笔记）", en: "The Gospel Invitation" }
     path: Bilingual_Notes/2025-12-21_Sunday_The_Gospel_Invitation.md
-    why: { zh: "进一步阐明为什么福音不是一套道德考核标准，而是神在基督里向人发出的白白邀请与生命更新。", en: "Clarifies why the gospel is not a moral exam, but God's gracious invitation and life-renewing gift in Christ." }
+    why: { zh: "说明福音是神在基督里白白发出的邀请和赐下的新生命，与道德考核是两回事。", en: "Explains that the gospel is God's free invitation and gift of new life in Christ, which is a different thing from a moral exam." }
   - label: { zh: "第一步：怎样开始读圣经", en: "First Steps: How to Start" }
     path: Bible_Timeline/First_Steps_Bilingual.md
-    why: { zh: "如果你愿意迈出下一步亲自读圣经，这份指南提供了最温和、无压力的起步路线图。", en: "If you are ready to explore Scripture for yourself, this guide offers a gentle, low-pressure starting roadmap." }
+    why: { zh: "如果你想自己开始读圣经，这份指南给出一条轻松的入门路线。", en: "If you want to start reading Scripture for yourself, this guide offers a gentle starting route." }
 ---
 
-## 拆掉一个误解：“信”不是闭着眼睛硬信 | Clearing up a myth: Faith is not blind make-believe
+## “信”不等于闭着眼睛相信 | Faith does not mean believing with your eyes shut
 
-在日常中文里，有人把“信”理解成：“虽然没什么根据，但我闭上眼睛强迫自己点头。”如果那是信仰，越诚实的人反而越难信。<br>
-In casual conversation, "faith" is sometimes caricatured as shutting your eyes and forcing yourself to agree to something without evidence. If that were faith, honest people would rightly hesitate.
+日常说话里，有人把“信”理解成：没什么根据，也闭上眼睛强迫自己点头。如果信仰是这样，越认真的人越难信。<br>
+In everyday speech some people take "faith" to mean forcing yourself to agree with no grounds, eyes shut. If that were faith, the more careful a person was, the harder it would be to believe.
 
-但在新约希腊文里，“信”（*pistis* / *pisteuo*）的意思是**“信靠、托付、建立忠诚的关系”**。它包含三个层层递进的维度：<br>
-In New Testament Greek, however, the word for faith (*pistis* / *pisteuo*) means **trust, reliance, and personal commitment**. Classic Christian teaching distinguishes three steps inside real faith:
+新约希腊文里的“信”（*pistis* / *pisteuo*）意思是**信靠、托付、建立忠诚的关系**。传统的基督教教导把它分成三层：<br>
+In New Testament Greek, the word for faith (*pistis* / *pisteuo*) means **trust, entrusting, and a relationship of loyalty**. Classic Christian teaching describes three parts:
 
-1. **知道（Knowledge）**：先听明福音到底在讲什么——神是谁、耶稣是谁、他做了什么。<br>
-   **Knowing the content**: Hearing clearly who Jesus is and what he has done.
-2. **认同（Assent）**：在理智与良心上承认这是真实的，不只是好听的故事。<br>
-   **Recognizing it as true**: Seeing that this message is real and trustworthy.
-3. **信靠（Personal Trust）**：真正把自己的生命托付给这位复活的主——就像不仅承认一把椅子很结实，而且真正坐上去。<br>
-   **Personal trust**: Actually resting your weight on him — the difference between agreeing a chair is sturdy and sitting down in it.
+1. **知道（Knowledge）**：先听明白福音讲的是什么：神是谁，耶稣是谁，他做了什么。<br>
+   **Knowledge**: First hearing clearly what the gospel says: who God is, who Jesus is, and what he has done.
+2. **认同（Assent）**：在理智和良心上承认这是真的。<br>
+   **Assent**: Accepting in mind and conscience that this is true.
+3. **信靠（Personal Trust）**：把自己的生命托付给这位复活的主。好比你承认一把椅子结实，然后真的坐上去。<br>
+   **Personal trust**: Entrusting your life to this risen Lord. It is like agreeing that a chair is sturdy and then actually sitting in it.
 
-## 恩典与信心：不是“考及格才准进门” | Grace and faith: Not passing an exam to get in
+## 恩典在先 | Grace comes first
 
-许多慕道朋友迟迟不敢迈出这一步，是因为觉得：“我还不配，我还有很多缺点，等我先改好了再信。”<br>
-Many seekers hesitate at the threshold because they think, "I am not good enough yet; let me clean up my life first, and then come to God."
+许多慕道的朋友迟迟不敢迈出这一步，因为觉得：“我还不配，我还有很多缺点，等我先改好了再信。”<br>
+Many seekers hold back from this step because they think: "I am not worthy yet. I have many faults. Let me fix myself first and then believe."
 
-但这恰恰把福音倒过来了。如果人能靠自己改好、靠积德自救，耶稣就不需要上十字架了。《以弗所书》2:8-9 把福音说得极清楚：**“你们得救是本乎恩，也因着信；这并不是出于自己，乃是神所赐的；也不是出于行为，免得有人自夸。”**<br>
-Yet that reverses the Gospel. If we could fix ourselves by our own moral effort, Jesus would never have needed to go to the cross. Ephesians 2:8–9 puts it plainly: **"For by grace you have been saved through faith, and that not of yourselves; it is the gift of God, not of works, that no one would boast."**
+这样想，是把福音的次序弄反了。如果人能靠自己改好、靠积德自救，耶稣就不必上十字架。《以弗所书》2:8-9 说得很清楚：**“你们得救是本乎恩，也因着信；这并不是出于自己，乃是神所赐的；也不是出于行为，免得有人自夸。”**<br>
+This gets the order of the gospel backwards. If people could fix themselves and save themselves by good deeds, Jesus would not have needed to go to the cross. Ephesians 2:8–9 says it clearly: **"For by grace you have been saved through faith, and that not of yourselves; it is the gift of God, not of works, that no one would boast."**
 
-医院不是为健康模范开的，而是为承认自己需要医治的病人开的。信心不是你拿去向神邀功的奖状，而是伸出空手，接住神白白赐下的赦免与新生命。<br>
-A hospital is not for people who already have a clean bill of health; it is for those who know they need a physician. Faith is not a trophy you present to God; it is an empty hand receiving his free mercy.
+医院是为病人开的，来的人要承认自己需要医治。信心也是这样：伸出空手，接受神白白赐下的赦免和新生命。它不是拿去向神邀功的奖状。<br>
+A hospital is for the sick, and those who come admit they need treatment. Faith is the same: holding out an empty hand to receive the forgiveness and new life God freely gives. It is not a certificate to present to God for credit.
 
-## 如果你想回应，可以怎样迈出这一步？ | How does a person take this step?
+## 如果你想回应 | If you want to respond
 
-如果你在探索中已经渐渐看清耶稣是谁，想要回应他的邀请，不需要等待某种神秘的闪电，也不需要背诵复杂的套话。你可以安静下来，诚实地用自己的话向神祷告：<br>
-If you have begun to see who Jesus is and want to respond to him, you do not need a formulaic script. You can speak to God honestly in your own words:
+如果你在探索中渐渐看清了耶稣是谁，想回应他的邀请，不需要等什么特别的感觉，也不需要背一套固定的话。你可以安静下来，用自己的话向神祷告：<br>
+If, as you explore, you have come to see who Jesus is and want to respond to his invitation, you do not need to wait for a special feeling or recite a set form of words. You can become quiet and pray to God in your own words:
 
-- **承认（悔改）**：承认自己过去习惯自己作主，带着许多亏欠、骄傲与破碎，愿意从今天起转向他。<br>
-  **Turn (Repent)**: Admit that you have lived on your own terms, and tell him you want to turn back to him.
-- **领受（信靠）**：感谢耶稣在十字架上担当你的罪、从死里复活，求他赦免你，进入你的生命作你的救主和主。<br>
-  **Receive (Trust)**: Thank Jesus for dying for your sins and rising again, and ask him to forgive you and lead your life as Savior and Lord.
-- **同行（扎根）**：继续读神的话，并走进一间忠实传讲圣经的地方教会，与其他基督徒一同成长（这也是下一条“初信根基”路径的内容）。<br>
-  **Walk together**: Keep reading Scripture and connect with a faithful local church where you can grow alongside other believers — the focus of our next path, "New Believer Foundations."
+- **承认（悔改）**：承认自己过去习惯自己作主，有许多亏欠、骄傲和破碎，愿意从今天起转向他。<br>
+  **Admit (repent)**: Admit that you have been used to ruling your own life, with much that is wrong, proud, and broken, and that from today you want to turn to him.
+- **领受（信靠）**：感谢耶稣在十字架上担当你的罪，又从死里复活。求他赦免你，进入你的生命，作你的救主和主。<br>
+  **Receive (trust)**: Thank Jesus for bearing your sins on the cross and rising from the dead. Ask him to forgive you, to come into your life, and to be your Savior and Lord.
+- **同行（扎根）**：继续读神的话，并加入一间忠实传讲圣经的地方教会，和其他基督徒一同成长。下一条路径“刚开始信”讲的就是这些。<br>
+  **Walk together (take root)**: Keep reading God's word, and join a local church that teaches the Bible faithfully, to grow together with other Christians. The next path, New believer, is about these things.

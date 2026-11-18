@@ -96,6 +96,20 @@ The reader can switch between 中文, EN and 中英. The app works out each para
 English is optional while drafting; untranslated text is shown in every mode. Tables are always shown in full.<br>
 草稿阶段英文可以先不写，没有翻译的内容在所有模式下都会显示。表格总是完整显示。
 
+<a id="plain-writing"></a>
+## Plain Writing | 平实的写法
+
+Lessons should read like one person explaining something to a friend. The full rule is section 8 of the repository `AGENTS.md`; the short version is below.<br>
+课程读起来应该像一个人在给朋友讲解。完整规则见仓库 `AGENTS.md` 第 8 节，下面是简要版。
+
+- State the point directly. Do not use "not X but Y" or "not just X but also Y".<br>直接说要说的事。不用“不是……而是……”“不只是……更是……”。
+- Let people and God do the acting. Use few metaphors and write no slogans.<br>让人和神作动作的主语。少用比喻，不写金句。
+- Keep the subject close to its verb, and put one idea in one sentence.<br>主语和谓语靠近，一句话只讲一件事。
+- Keep the connecting words a reader needs. Do not compress a sentence until it must be read twice.<br>保留读者需要的连接词。不要把句子压缩到要读两遍才懂。
+- Avoid intensifying words such as "profound", "crucial", and "truly".<br>不用“深刻”“极其”“真正”“核心”这类强调词。
+- Use a short phrase or a question as a heading. In English, avoid em dashes.<br>标题用短语或问句。中文不用破折号（——）插入补充说明。
+- A style edit must leave the facts unchanged.<br>改文风时不能改变事实。
+
 <a id="scripture"></a>
 ## Scripture | 经文
 

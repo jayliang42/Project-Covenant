@@ -1,10 +1,10 @@
 ---
 title:
   zh: 历史与考古能说明什么、不能说明什么
-  en: What History and Archaeology Can — and Cannot — Show
+  en: What history and archaeology can and cannot show
 summary:
-  zh: 碑文、抄本和遗址能帮我们核实背景，但证据有边界，诚实比夸大更有力。
-  en: Inscriptions, manuscripts, and ruins anchor the background — but evidence has boundaries, and honesty is stronger than hype.
+  zh: 碑文、抄本和遗址可以帮我们核实圣经的历史背景。它们能证明的范围有限，不应夸大。
+  en: Inscriptions, manuscripts, and ruins help us check the Bible's historical background. What they can prove is limited and should not be overstated.
 unit: history
 order: 1
 minutes: 7
@@ -33,47 +33,47 @@ check:
       en: The Tel Dan Stele (found in 1993) mentions the "House of David." What does a find like this directly establish?
     options:
       - { zh: "直接证明大卫做过的每一件事和每一个神迹", en: "It proves every deed and miracle attributed to David" }
-      - { zh: "说明在主前 9 世纪的外邦铭文中，“大卫王朝”是真实被承认的历史政权，并非晚期虚构", en: "It shows that in the 9th century BC, neighboring rulers recognized a dynasty of David as a real historical house, not a late fiction" }
+      - { zh: "说明主前 9 世纪的外邦铭文已经把“大卫家”当作一个实际存在的王朝，它不是后人虚构的", en: "It shows that a 9th-century BC inscription from a neighboring kingdom referred to a dynasty of David as a real royal house, so it was not a later invention" }
       - { zh: "什么都说明不了", en: "Nothing at all" }
     answer: 1
     explain:
-      zh: 铭文确认了人物与王朝的历史坐标；至于神学意义，需要结合圣经文本本身来理解。分清这两层才算诚实。
-      en: The inscription confirms the historical existence of the dynasty; theological meaning comes from the biblical text. Keeping those layers distinct is basic honesty.
+      zh: 铭文能说明这个王朝在历史上存在。它的神学意义要从圣经文本去理解。这两件事要分开说。
+      en: The inscription shows that the dynasty existed in history. Its theological meaning has to be drawn from the biblical text. The two should be kept separate.
 further:
   - label: { zh: "史料与考古旁证索引", en: "Historical & Archaeological Evidence Index" }
     path: Bible_Timeline/史料与考古旁证索引.md
-    why: { zh: "逐项列出黑方尖碑、居鲁士铭筒、彼拉多石碑与塔西佗史料，并严格标明每件文物的支持范围与局限。", en: "Lists inscriptions and external chronicles item by item, stating clearly what each artifact corroborates and its limits." }
+    why: { zh: "逐项列出黑方尖碑、居鲁士铭筒、彼拉多石碑和塔西佗的记载，并标明每一项能支持什么、不能支持什么。", en: "Lists inscriptions and outside records one by one, stating what each supports and what it does not." }
   - label: { zh: "复活与早期见证：文本史与历史研究边界", en: "Resurrection & Early Witness: Historical Boundaries" }
     path: Bible_Timeline/复活与早期见证_文本史与历史研究边界.md
-    why: { zh: "详考哥林多前书 15 章早期信经、空坟墓与门徒转变的历史证据，以及史学方法与信仰回应的边界。", en: "Examines the early creed of 1 Cor 15, the empty tomb, and the disciples' transformation alongside historical method boundaries." }
+    why: { zh: "查考哥林多前书 15 章的早期信经、空坟墓和门徒转变的历史证据，并说明历史研究能做到哪一步。", en: "Examines the early creed in 1 Corinthians 15, the empty tomb, and the change in the disciples, and explains how far historical method can go." }
   - label: { zh: "《铁证待判》版本辨析与研读指南", en: "Evidence That Demands a Verdict Study Guide" }
     path: Book_Studies/铁证待判_版本辨析与全书研读指南.md
-    why: { zh: "梳理经典护教资料的核心证据链，并核查哪些数据在当代学术界仍然稳固、哪些旧版数字应当弃用。", en: "Audits classic apologetic evidence chains, separating arguments that hold up in modern scholarship from outdated figures." }
+    why: { zh: "整理这本护教书的主要论据，并核查哪些数据今天仍然站得住、哪些旧数字应当停用。", en: "Reviews the book's main arguments and checks which figures still hold up in current scholarship and which older numbers should be dropped." }
 ---
 
-## 圣经不是架空神话 | Not set in "once upon a time"
+## 圣经写的是有年代、有地点的事 | The Bible records events with dates and places
 
-有些宗教经典发生在没有时间、没有地理坐标的远古神话里。但圣经的写法很不一样：它不断写出当时的埃及法老、亚述王、巴比伦王、波斯王古列、罗马皇帝奥古斯都、犹太巡抚本丢·彼拉多。<br>
-Some religious texts take place in a timeless mythical mist. The Bible reads very differently: it keeps naming Egyptian pharaohs, Assyrian and Babylonian kings, Cyrus of Persia, the Roman emperor Augustus, and the prefect Pontius Pilate.
+有些宗教经典讲的故事没有具体的时间和地点。圣经的写法不同，它不断提到当时的统治者：埃及法老、亚述王、巴比伦王、波斯王古列、罗马皇帝奥古斯都、犹太巡抚本丢·彼拉多。<br>
+Some religious texts tell stories with no particular time or place. The Bible is written differently. It keeps naming the rulers of the day: Egyptian pharaohs, kings of Assyria and Babylon, Cyrus of Persia, the Roman emperor Augustus, and Pontius Pilate, prefect of Judea.
 
-这种写法意味着：圣经主动把自己放在人类公共历史的地图上，允许后人去核对它的时代背景。<br>
-By writing this way, the biblical authors placed their accounts on the public map of human history, where their background can be checked.
+这样写，后人就可以拿其他历史资料来核对它的时代背景。<br>
+Because it is written this way, later readers can check its historical setting against other sources.
 
-## 考古能做什么：三个真实例子 | What archaeology can do: three real examples
+## 考古能做什么：三个例子 | What archaeology can do: three examples
 
-1. **但丘碑文（Tel Dan Stele，主前 9 世纪）**：曾有学者怀疑“大卫王”只是后人编出来的传说人物。但 1993 年在以色列北部出土的亚兰文残碑上，出现了“大卫家”（*bytdwd*）字样，说明大卫王朝在当时的国际政治中是真实存在的。<br>
-   **Tel Dan Stele (9th century BC)**: Some scholars once doubted whether King David was historical. In 1993 an Aramaic inscription found in northern Israel referred to the "House of David" (*bytdwd*), confirming that David's dynasty was a known political reality.
-2. **希西家水道与西罗亚池铭文（主前 8 世纪末）**：《列王纪下》20:20 记载犹大王希西家挖水道引水入城以防亚述围城；这条穿岩隧道和里面的古希伯来文铭文至今仍在耶路撒冷地下。<br>
-   **Hezekiah's Tunnel and the Siloam Inscription (late 8th century BC)**: 2 Kings 20:20 notes that King Hezekiah cut a water tunnel into Jerusalem before the Assyrian siege; the rock-cut tunnel and its Paleo-Hebrew inscription still exist beneath Jerusalem.
-3. **彼拉多石碑与迦百农会堂**：新约提到的罗马长官、加利利城镇、税吏、公会制度，与第一世纪罗马—犹太历史高度吻合。<br>
-   **The Pilate Stone and first-century Galilee**: Roman officials, Galilean towns, tax customs, and synagogue life in the Gospels fit first-century Roman-Jewish history closely.
+1. **但丘碑文（Tel Dan Stele，主前 9 世纪）**：曾有学者怀疑大卫王只是后人编出来的传说人物。1993 年，以色列北部出土了一块亚兰文残碑，上面有“大卫家”（*bytdwd*）字样。这说明当时的邻国已经知道有一个大卫王朝。<br>
+   **Tel Dan Stele (9th century BC)**: Some scholars once doubted that King David was a historical figure. In 1993 a broken Aramaic inscription was found in northern Israel bearing the words "House of David" (*bytdwd*). It shows that neighboring kingdoms of the time knew of a dynasty of David.
+2. **希西家水道与西罗亚铭文（主前 8 世纪末）**：《列王纪下》20:20 记载犹大王希西家挖水道引水入城，防备亚述围城。这条凿穿岩石的隧道今天还在耶路撒冷地下，里面发现过一段古希伯来文铭文。<br>
+   **Hezekiah's Tunnel and the Siloam Inscription (late 8th century BC)**: 2 Kings 20:20 records that King Hezekiah of Judah cut a tunnel to bring water into the city before the Assyrian siege. The rock-cut tunnel still runs beneath Jerusalem, and an inscription in ancient Hebrew was found inside it.
+3. **彼拉多石碑与迦百农会堂**：新约提到的罗马长官、加利利城镇、税吏和公会制度，与第一世纪罗马和犹太的历史资料相符。<br>
+   **The Pilate Stone and the synagogue at Capernaum**: The Roman officials, Galilean towns, tax collectors, and council system mentioned in the New Testament agree with what is known of first-century Roman and Jewish history.
 
-## 同样重要：证据不能做什么 | Equally important: what evidence cannot do
+## 证据不能做什么 | What evidence cannot do
 
-在这个项目里，我们坚持一条原则：**绝不把“背景吻合”夸大成“神迹已被实验室证明”**。<br>
-Across Project Covenant we hold to a strict rule: **never inflate background agreement into "science has proved a miracle."**
+这个项目有一条原则：**背景相符，不等于神迹已被证明，不能把前者说成后者**。<br>
+This project keeps one rule: **agreement in background is not proof of a miracle, and the first must never be presented as the second.**
 
-- 考古确认了耶路撒冷在第一世纪有钉十字架的刑罚，也确认了彼拉多其人；但**“耶稣的死是为世人的罪”**是使徒见证与神学宣告，不是铲子能挖出来的。<br>
-  Archaeology confirms Roman crucifixion in first-century Judea and confirms Pontius Pilate; **that Jesus died for our sins** is apostolic witness and theological proclamation, not something a trowel can dig up.
-- 历史研究可以说明：在耶稣被钉十字架后短短几年内，门徒们就坚信见到复活的主，甚至愿意为此受苦（见《哥林多前书》15:3-8 保存的极早期信经）；但你要不要信靠这位复活的主，仍然是一个需要你亲自做出的信心回应。<br>
-  History can show that within a few years of the crucifixion, Jesus' followers were proclaiming him risen — preserved in the very early creed of 1 Corinthians 15:3-8 — and willing to suffer for that witness. Whether you will trust that risen Lord remains a personal step of faith.
+- 考古可以确认第一世纪的耶路撒冷有钉十字架的刑罚，也可以确认彼拉多确有其人。**“耶稣为世人的罪而死”**是使徒的见证和神学宣告，考古发掘证明不了。<br>
+  Archaeology can confirm that crucifixion was practiced in first-century Jerusalem and that Pilate was a real person. **That Jesus died for the sins of the world** is the apostles' testimony and a theological claim, which excavation cannot prove.
+- 历史研究可以说明：耶稣被钉十字架后短短几年内，门徒就坚信自己见到了复活的主，并愿意为此受苦（见《哥林多前书》15:3-8 保存的早期信经）。至于你要不要信靠这位复活的主，需要你自己作出信心的回应。<br>
+  Historical study can show that within a few years of the crucifixion, the disciples were convinced they had seen the risen Lord and were willing to suffer for it (see the early creed preserved in 1 Corinthians 15:3–8). Whether you will trust this risen Lord is a response of faith that you must make yourself.

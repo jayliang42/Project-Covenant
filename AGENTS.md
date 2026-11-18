@@ -141,3 +141,29 @@ After snapshot verification, build and independently verify the static site with
 Governance files such as `AGENTS.md` and `CONTRIBUTING.md` may instead use complete mirrored English and Chinese sections when their headings and claim order match exactly. This exception does not apply to public study guides, indexes, or entry pages.
 
 `AGENTS.md` 和 `CONTRIBUTING.md` 等治理文件可改用完整对照的英文与中文分区，但标题和论点顺序必须完全一致。此例外不适用于公开研读指南、索引或入口页。
+
+## 8. Plain Writing Style | 平实写作风格
+
+These rules apply to new and revised reader-facing text in the library and the learning app, in both languages. Bring an older page into line when it is edited. A reader should understand each sentence on the first pass.
+
+- State the point directly. Do not use contrast frames such as "not X but Y", "not just X but also Y", "不是……而是……", or "不只是……更是……". A plain negative that carries a fact (for example, "the Sadducees did not accept the resurrection") is fine.
+- Let people and God do the acting. Do not make an abstract thing act like a person: write "people in the Psalms question God", and avoid "Scripture wrestles with pain". Use metaphors sparingly and do not write slogans.
+- Keep the subject close to its verb. Do not stack long modifiers in front of a noun. Put one idea in one sentence.
+- Keep the connecting words a reader needs, such as "that", "because", "so", 因为, 所以, and 就. Do not shorten a sentence so far that it must be read twice.
+- Avoid inflated and intensifying words such as profound, powerful, stunning, crucial, truly, deeply, 深刻, 震撼, 极其, 真正, and 核心. A fixed doctrinal phrase such as "truly God and truly human" may stay.
+- Use plain headings: a short phrase or a question that says what the section covers.
+- In English, use a period, comma, or colon where an em dash would go. In Chinese, do not use the dash (——) for asides.
+- Before committing, read each sentence aloud. Rewrite it if you would not say it to a friend, or if a reader would need to read it twice.
+- A style edit must leave the facts unchanged. When a rewrite would change a claim, check the claim first and report the change.
+
+这些规则适用于资料库和学习应用中新写和修改的、给读者看的文字，中英文都适用。旧页面在被修改时一并改到符合这些规则。读者应当读一遍就明白每一句话。
+
+- 直接说要说的事。不用“not X but Y”“not just X but also Y”“不是……而是……”“不只是……更是……”这类对照句式。陈述事实的普通否定句可以用（例如“撒都该人不信复活”）。
+- 让人和神作动作的主语。不要让抽象的东西像人一样行动：写“《诗篇》里有人向神发问”，不写“圣经与痛苦角力”。少用比喻，不写金句。
+- 主语和谓语靠近。名词前面不堆长定语。一句话只讲一件事。
+- 保留读者需要的连接词，例如 "that"、"because"、"so"、因为、所以、就。不要把句子压缩到要读两遍才懂。
+- 不用夸大和强调的词，例如 profound、powerful、stunning、crucial、truly、deeply、深刻、震撼、极其、真正、核心。固定的教义用语（如“完全的神，完全的人”）可以保留。
+- 标题用平实的写法：一个短语或一个问句，说明这一节讲什么。
+- 英文里本来要用破折号的地方，改用句号、逗号或冒号。中文不用破折号（——）插入补充说明。
+- 提交之前，把每句话念出来。如果你不会这样对朋友说，或者读者要读两遍才懂，就重写。
+- 改文风时不能改变事实。如果改写会改变某个论断，先核对这个论断，并在报告里说明改了什么。

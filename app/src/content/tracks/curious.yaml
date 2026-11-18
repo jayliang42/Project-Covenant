@@ -1,10 +1,10 @@
 # 对圣经好奇 | Curious about the Bible
 title: { zh: 对圣经好奇, en: Curious }
 who: { zh: 我对圣经好奇，想知道它在讲什么, en: I'm curious what the Bible is about }
-tagline: { zh: 不需要任何背景，从零开始, en: No background needed — start from zero }
+tagline: { zh: 不需要任何背景，从零开始, en: No background needed. Start from zero. }
 description:
-  zh: 用几分钟一课的节奏，认识圣经是一本什么样的书、它讲的那一条大故事，以及故事中心的人物。不预设你的信仰立场。
-  en: In a few minutes per lesson, meet the Bible as a book, the one big story it tells, and the person at its centre. No faith commitment assumed.
+  zh: 每课几分钟。了解圣经是一本什么样的书，它讲的大故事，以及故事的中心人物。不预设你信什么。
+  en: A few minutes per lesson. Learn what kind of book the Bible is, the big story it tells, and the person at its centre. No faith commitment is assumed.
 color: "#c27a1a"
 art: bible-library
 units:

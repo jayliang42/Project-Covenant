@@ -3,8 +3,8 @@ title:
   zh: 新约背后的第二圣殿与罗马世界
   en: The Second Temple and Roman world behind the New Testament
 summary:
-  zh: 为什么旧约结尾与马太福音之间隔了四百年？法利赛人、撒都该人、希律与罗马帝国是怎么回事？
-  en: What happened in the four centuries between Malachi and Matthew — and who were the Pharisees, Sadducees, Herodians, and Romans?
+  zh: 旧约结尾和《马太福音》之间隔了大约四百年。这段时间发生了什么？法利赛人、撒都该人、希律和罗马的统治是怎么来的？
+  en: About four centuries lie between Malachi and Matthew. What happened in that time, and where did the Pharisees, Sadducees, Herod, and Roman rule come from?
 unit: background
 order: 1
 minutes: 8
@@ -23,13 +23,13 @@ scripture:
       zh: 凯撒提庇留作罗马皇帝第十五年，本丢·彼拉多作犹太巡抚，希律作加利利分封的王……亚那和该亚法作大祭司。那时，撒迦利亚的儿子约翰在旷野里，神的话临到他。
       en: Now in the fifteenth year of the reign of Tiberius Caesar, Pontius Pilate being governor of Judea, and Herod being tetrarch of Galilee... in the high priesthood of Annas and Caiaphas, the word of God came to John, the son of Zechariah, in the wilderness.
 reflect:
-  - zh: 当你了解第一世纪犹太人分成了法利赛人、撒都该人、奋锐党人等不同群体，再读福音书里他们向耶稣提的问题（如“纳不纳税给凯撒”“有没有复活”），会看出什么新的层次？
-    en: Once you know how Pharisees, Sadducees, and Zealots differed in the first century, how does that sharpen your reading of the questions they asked Jesus ("Is it lawful to pay taxes to Caesar?" "Is there a resurrection?")?
+  - zh: 第一世纪的犹太人分成法利赛人、撒都该人、奋锐党人等群体。知道这一点以后，再读福音书里人们问耶稣的问题（如“纳不纳税给凯撒”“有没有复活”），你会多看到什么？
+    en: Once you know how Pharisees, Sadducees, and Zealots differed in the first century, what more do you notice in the questions people asked Jesus ("Is it lawful to pay taxes to Caesar?" "Is there a resurrection?")?
   - zh: 保罗说“及至时候满足，神就差遣他的儿子”（加 4:4）。希腊语言的普及、罗马的道路交通与犹太会堂的分布，怎样在历史中为福音传开预备了条件？
-    en: Paul wrote that God sent his Son "when the fullness of time came" (Galatians 4:4). How did common Greek, Roman roads, and synagogue networks across the Mediterranean prepare the stage for the early church?
+    en: Paul wrote that God sent his Son "when the fullness of time came" (Galatians 4:4). How did common Greek, Roman roads, and synagogue networks across the Mediterranean help the gospel spread?
 check:
   - q:
-      zh: 在旧约《玛拉基书》到新约《马太福音》之间的四百年（两约之间/第二圣殿时期），犹太地依次经历了哪些帝国或政权的统治？
+      zh: 从旧约《玛拉基书》到新约《马太福音》的大约四百年（两约之间），犹太地先后受过哪些帝国或政权的统治？
       en: During the roughly four centuries between the end of the Old Testament and the birth of Jesus, which sequence of powers ruled Judea?
     options:
       - { zh: "亚述 → 巴比伦", en: "Assyria → Babylon" }
@@ -37,60 +37,60 @@ check:
       - { zh: "一直独立，没有任何外来政权", en: "Uninterrupted independence with no foreign empires" }
     answer: 1
     explain:
-      zh: 这一连串政权更替解释了为什么新约時代通行希腊文、既有犹太公会又有罗马巡抚，并且百姓对弥赛亚拯救充满迫切期待。
-      en: This historical sequence explains why first-century Judea spoke Greek alongside Aramaic, had both a Jewish Sanhedrin and a Roman prefect, and longed intensely for Messianic deliverance.
+      zh: 因为这几次政权更替，新约时代通行希腊文，犹太地既有犹太公会，又有罗马巡抚，百姓也迫切盼望弥赛亚来拯救。
+      en: Because of these changes of rule, first-century Judea used Greek alongside Aramaic, had both a Jewish Sanhedrin and a Roman prefect, and longed for the Messiah to deliver it.
   - q:
-      zh: 福音书里经常出现的“法利赛人”和“撒都该人”有什么核心差别？
+      zh: 福音书里经常出现的“法利赛人”和“撒都该人”有什么主要差别？
       en: What was a key difference between the Pharisees and the Sadducees in the Gospels and Acts?
     options:
       - { zh: "两者完全一样，只是名字不同", en: "They were identical groups under two names" }
-      - { zh: "法利赛人重视摩西律法与口传传统、相信死人复活与天使，在民间会堂影响大；撒都该人主要由把持圣殿的大祭司贵族组成，只接受摩西五经，不信复活（徒 23:8）", en: "Pharisees prized the Torah and oral tradition, affirmed bodily resurrection, and had strong influence among the people; Sadducees were priestly elites centered on the Temple who accepted only the Pentateuch and denied resurrection (Acts 23:8)" }
+      - { zh: "法利赛人重视摩西律法和口传传统，相信死人复活和天使，在民间会堂影响大；撒都该人主要是掌管圣殿的大祭司贵族，不接受口传传统，也不信复活（徒 23:8）", en: "Pharisees valued the Torah and oral tradition, believed in resurrection and angels, and had strong influence among the people; Sadducees were mainly priestly aristocrats in charge of the Temple who rejected the oral tradition and denied the resurrection (Acts 23:8)" }
       - { zh: "他们都是罗马派来的外邦军官", en: "Both were Gentile Roman military officers" }
     answer: 1
     explain:
-      zh: 《使徒行传》23:8 明确总结了这两派的差异，帮我们读懂福音书里关于复活、安息日与洁净礼的辩论背景。
-      en: Acts 23:8 explicitly summarizes this contrast, illuminating the debates over Sabbath, purity, and resurrection in the Gospels.
+      zh: 《使徒行传》23:8 概括了两派在复活、天使和灵这几点上的分歧。知道这些分歧，就更容易读懂福音书里关于复活的辩论。
+      en: Acts 23:8 sums up where the two groups disagreed about resurrection, angels, and spirits. Knowing this makes the Gospel debates about resurrection easier to follow.
 further:
   - label: { zh: "两约之间至四福音：第二圣殿与罗马背景", en: "Second Temple & Roman Background Guide" }
     path: Bible_Timeline/两约之间至四福音_第二圣殿与罗马背景.md
-    why: { zh: "系统梳理波斯、希腊化、马加比王朝到希律家族与犹太诸教派的四百年历史断层。", en: "Bridges the 400-year gap from Persia, Hellenism, and the Maccabees to the Herodian dynasty and Jewish sects." }
+    why: { zh: "按时间讲述这四百年：波斯、希腊化、马加比王朝、希律家族，以及犹太各教派。", en: "Walks through the 400 years in order: Persia, Hellenism, the Maccabees, the Herodian family, and the Jewish groups." }
   - label: { zh: "使徒行传与保罗书信：旅程年代与城市史料对照", en: "Acts & Pauline Cities Historical Guide" }
     path: Bible_Timeline/使徒行传与保罗书信_旅程年代与城市史料对照.md
-    why: { zh: "把视野从犹太地扩展到安提阿、腓立比、哥林多与以弗所等罗马城市，看清早期书信的社会现场。", en: "Extends the historical lens to Roman cities like Antioch, Philippi, Corinth, and Ephesus behind Paul's letters." }
+    why: { zh: "介绍安提阿、腓立比、哥林多、以弗所等罗马城市，说明保罗的书信是写给什么样的社会环境。", en: "Describes Roman cities such as Antioch, Philippi, Corinth, and Ephesus, and the social setting Paul's letters were written into." }
 ---
 
-## 翻过一页空白纸，历史其实走了四百年 | Turning one blank page covers four hundred years
+## 翻过一页，历史过了四百年 | One page turned, four hundred years passed
 
-当你读完旧约最后一卷《玛拉基书》，当时的犹太人刚从巴比伦流亡归回，活在**波斯帝国**治下，说着亚兰文与希伯来文。可是当你翻过一页纸，打开新约《马太福音》，眼前的世界突然全变了：**罗马军团**驻扎在城里，分封王是**希律**，通行语言成了**希腊文**，街上出现了旧约里从未提过的**法利赛人、撒都该人、希律党人和奋锐党人**。<br>
-At the close of Malachi, the last book of the Old Testament, a small Jewish community has returned from Babylon under the **Persian Empire**. Turn a single page to Matthew, and the stage has transformed: **Roman legions** occupy the land, **Herod** rules as client king, **Greek** is the shared language of commerce, and the streets are filled with groups never mentioned in the Old Testament — **Pharisees, Sadducees, Herodians, and Zealots**.
+旧约最后一卷是《玛拉基书》。那时犹太人已经从巴比伦归回，生活在**波斯帝国**治下，说亚兰文和希伯来文。翻过一页，打开新约的《马太福音》，情况已经大不相同：**罗马军队**驻在当地，**希律**是罗马册封的王，通行的语言是**希腊文**，还出现了旧约里没有提过的群体，如**法利赛人、撒都该人、希律党人和奋锐党人**。<br>
+The last book of the Old Testament is Malachi. By then the Jews had returned from Babylon and lived under the **Persian Empire**, speaking Aramaic and Hebrew. Turn one page to Matthew in the New Testament, and things are very different. **Roman troops** are stationed in the land, **Herod** rules as a king appointed by Rome, **Greek** is the common language, and there are groups the Old Testament never mentions, such as the **Pharisees, Sadducees, Herodians, and Zealots**.
 
-这四百年被称为**“两约之间”**或**“第二圣殿时期（Second Temple Period）”**。看懂这四百年的四幕历史，新约的许多细节就会立刻立体起来。<br>
-Those four centuries are known as the **Intertestamental** or **Second Temple Period**. Seeing the four historical shifts in that period brings the New Testament into sharp focus.
+这四百年常被称为**“两约之间”**，属于更长的**“第二圣殿时期”（Second Temple Period）**。了解这段历史，新约里的许多细节就容易明白。<br>
+These four centuries are often called the **Intertestamental Period**. They fall within the longer **Second Temple Period**. Knowing this history makes many details in the New Testament easier to understand.
 
-## 四百年间的四次政权更替 | Four shifts between Malachi and Matthew
+## 四百年间的四次政权更替 | Four changes of rule in four hundred years
 
-1. **波斯时期（至主前 332 年）**：犹太人重建了耶路撒冷的第二圣殿（所罗巴伯圣殿），各地开始形成以宣读律法和祷告为中心的“会堂”（Synagogue）传统。<br>
-   **The Persian era (to 332 BC)**: Returning exiles rebuilt the Second Temple in Jerusalem, and local synagogues began taking shape as centers of Scripture reading and prayer.
-2. **亚历山大与希腊化时期（主前 332–167 年）**：亚历山大大帝东征后，通用希腊文（Koine Greek）成为整个东地中海的共同语言；居住在埃及亚历山大的犹太学者把希伯来旧约译成希腊文**《七十士译本》（Septuagint, LXX）**，成为后来新约作者经常引用的旧约译本。<br>
-   **Alexander and the Hellenistic era (332–167 BC)**: Koine Greek became the common tongue of the eastern Mediterranean, and Jewish scholars in Alexandria translated the Hebrew Scriptures into Greek — the **Septuagint (LXX)**, often quoted by New Testament writers.
-3. **马加比抗争与哈斯摩尼王朝（主前 167–63 年）**：塞琉古王安条克四世强行污秽圣殿、禁止守律法，引发犹太祭司马加比家族起义，重洁圣殿（修殿节/光明节的由来，见约 10:22），建立约百年的犹太自治王朝。<br>
-   **The Maccabean Revolt and Hasmonean rule (167–63 BC)**: When the Seleucid ruler Antiochus IV Epiphanes desecrated the Temple, the Maccabean revolt rededicated the Temple (the origin of Hanukkah / the Feast of Dedication in John 10:22) and established a century of Jewish self-rule.
-4. **罗马统治与希律王朝（主前 63 年起）**：罗马将军庞培进占耶路撒冷。大希律王受罗马册封统治犹太地，大力扩建耶路撒冷圣殿；他死后领土分封给几个儿子，而犹太地（Judea）则改由罗马巡抚（如本丢·彼拉多）直接管辖。<br>
-   **Roman rule and the Herodian dynasty (from 63 BC)**: The Roman general Pompey took Jerusalem. Herod the Great ruled as a Roman client king and massively expanded the Temple complex; after his death his kingdom was divided, with Judea placed under Roman prefects such as Pontius Pilate.
+1. **波斯时期（至主前 332 年）**：犹太人重建了耶路撒冷的圣殿，即第二圣殿（所罗巴伯圣殿）。一般认为，以宣读律法和祷告为中心的“会堂”（Synagogue）也是在被掳之后逐渐形成的。<br>
+   **The Persian era (to 332 BC)**: The Jews rebuilt the temple in Jerusalem, known as the Second Temple (Zerubbabel's temple). It is generally thought that synagogues, centered on reading the Law and prayer, also took shape gradually after the exile.
+2. **亚历山大与希腊化时期（主前 332–167 年）**：亚历山大大帝东征以后，通用希腊文（Koine Greek）成为东地中海地区的共同语言。埃及亚历山大城的犹太学者把希伯来文的旧约译成希腊文，这就是**《七十士译本》（Septuagint, LXX）**。后来新约作者常引用这个译本。<br>
+   **Alexander and the Hellenistic era (332–167 BC)**: After the conquests of Alexander the Great, Koine Greek became the common language of the eastern Mediterranean. Jewish scholars in Alexandria in Egypt translated the Hebrew Scriptures into Greek. This is the **Septuagint (LXX)**, which the New Testament writers later often quoted.
+3. **马加比起义与哈斯摩尼王朝（主前 167–63 年）**：塞琉古王安条克四世玷污圣殿，禁止犹太人守律法。祭司家族马加比起义，洁净并重新奉献了圣殿。修殿节（光明节）由此而来（见约 10:22）。此后犹太人自治了约一百年。<br>
+   **The Maccabean revolt and Hasmonean rule (167–63 BC)**: The Seleucid king Antiochus IV desecrated the Temple and forbade Jews to keep the Law. The priestly Maccabee family revolted, then cleansed and rededicated the Temple. This is the origin of Hanukkah, the Feast of Dedication (see John 10:22). About a century of Jewish self-rule followed.
+4. **罗马统治与希律王朝（主前 63 年起）**：罗马将军庞培攻占耶路撒冷。后来大希律受罗马册封，统治犹太地，并大规模扩建耶路撒冷的圣殿。他死后，领土分给了几个儿子。再后来，犹太地（Judea）改由罗马巡抚直接管辖，本丢·彼拉多就是其中一位。<br>
+   **Roman rule and the Herodian dynasty (from 63 BC)**: The Roman general Pompey took Jerusalem. Later Herod the Great ruled the land as a king appointed by Rome and greatly enlarged the Temple in Jerusalem. After his death his territory was divided among several sons. Later still, Judea came under the direct rule of Roman prefects, one of whom was Pontius Pilate.
 
-## 第一世纪犹太社会的四个不同回应 | Four Jewish responses in the first century
+## 第一世纪犹太人的四种回应 | Four Jewish responses in the first century
 
-面对外邦罗马的统治和圣约应许的迟延，第一世纪的犹太社会分化出几种截然不同的路线：<br>
-Faced with Roman occupation and longing for God's promises, first-century Jewish society developed distinct movements:
+罗马人统治着犹太地，神的应许又迟迟没有实现。在这种处境下，第一世纪的犹太人走了几条不同的路：<br>
+Rome ruled the land, and God's promises were still unfulfilled. In that situation, first-century Jews took several different paths:
 
-- **法利赛人（Pharisees）**：多为平民学者，热心持守摩西律法与“口传传统”（遗传），相信死人复活、天使与末日审判，在各地会堂极有威望。<br>
-  **Pharisees**: Lay teachers devoted to the Torah and oral traditions, affirming bodily resurrection and angels, and influential in local synagogues.
-- **撒都该人（Sadducees）**：与圣殿大祭司家族紧密相连的贵族阶层，对罗马政权采取妥协合作态度，只承认摩西五经，不信死人复活（太 22:23；徒 23:8）。<br>
-  **Sadducees**: Aristocratic priestly elites tied to the Jerusalem Temple who collaborated pragmatically with Rome, accepted only the five books of Moses, and denied the resurrection (Matthew 22:23; Acts 23:8).
-- **爱色尼人（Essenes / 昆兰群体）**：认为当时的耶路撒冷圣殿已经腐败，退居旷野过洁净生活、抄写经卷（死海古卷的主要保存者）。<br>
-  **Essenes (and the Qumran community)**: Withdrew from what they saw as a compromised Temple establishment to live in strict purity in the wilderness, preserving the Dead Sea Scrolls.
-- **奋锐党与武装抗罗运动（Zealots）**：主张效法当年马加比起义，用刀剑武力推翻罗马统治。<br>
-  **Zealots and revolutionary movements**: Advocated armed resistance to overthrow Roman rule by force.
+- **法利赛人（Pharisees）**：多数是平民出身的律法教师。他们热心遵守摩西律法和“口传传统”（遗传），相信死人复活、天使和末日审判，在各地会堂很有威望。<br>
+  **Pharisees**: Mostly teachers of the Law from among the common people. They were devoted to the Law of Moses and to the oral tradition, believed in the resurrection of the dead, angels, and a final judgment, and were highly respected in local synagogues.
+- **撒都该人（Sadducees）**：与圣殿大祭司家族关系密切的贵族。他们与罗马当局合作，不接受法利赛人的口传传统，也不信死人复活（太 22:23；徒 23:8）。<br>
+  **Sadducees**: Aristocrats closely tied to the high-priestly families of the Temple. They cooperated with the Roman authorities, rejected the oral tradition of the Pharisees, and denied the resurrection of the dead (Matthew 22:23; Acts 23:8).
+- **爱色尼人（Essenes）**：他们认为耶路撒冷的圣殿已经败坏，于是退到旷野，过严格的洁净生活。许多学者认为，保存死海古卷的昆兰群体与爱色尼人有关。<br>
+  **Essenes**: They believed the Temple in Jerusalem had become corrupt, so they withdrew to the wilderness to live in strict purity. Many scholars think the Qumran community, which preserved the Dead Sea Scrolls, was connected with the Essenes.
+- **奋锐党和武装抗罗的运动（Zealots）**：主张效法马加比起义，用武力推翻罗马的统治。<br>
+  **Zealots and armed resistance movements**: They wanted to follow the example of the Maccabean revolt and overthrow Roman rule by force.
 
-当你带着这幅地图重读福音书，就会明白为什么耶稣既不走撒都该人的妥协路线、也不走奋锐党的刀剑路线，而是呼召税吏马太与奋锐党的西门同坐一桌，走上十字架成全真正的救赎。<br>
-Reading the Gospels with this map shows why Jesus fit none of their boxes — calling both Matthew the tax collector and Simon the Zealot into one fellowship, and going to the cross to bring a deeper deliverance.
+了解这些背景再读福音书，可以看到耶稣没有走撒都该人与罗马合作的路，也没有走奋锐党的武力路线。他呼召了税吏马太，也呼召了奋锐党的西门，让他们同作门徒。他自己走上十字架，成就救赎。<br>
+Reading the Gospels with this background, we can see that Jesus took neither the Sadducees' path of cooperation with Rome nor the Zealots' path of armed force. He called Matthew the tax collector and Simon the Zealot to be disciples together. He himself went to the cross to accomplish redemption.

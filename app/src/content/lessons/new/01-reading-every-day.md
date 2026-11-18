@@ -1,10 +1,10 @@
 ---
 title:
   zh: 怎样开始每天读一点圣经（观察 · 解释 · 应用）
-  en: How to Read a Little Every Day — Observe, Interpret, Apply
+  en: How to read a little every day (observe, interpret, apply)
 summary:
-  zh: 不用一次读很多。用三个简单问题，把每天 10 分钟变成扎根的习惯。
-  en: You do not need marathon sessions. Three simple questions turn ten minutes a day into deep roots.
+  zh: 不用一次读很多。每天 10 分钟，问三个简单的问题，慢慢养成习惯。
+  en: You do not need to read a lot at once. Ten minutes a day with three simple questions slowly builds a habit.
 unit: daily
 order: 1
 minutes: 6
@@ -25,8 +25,8 @@ scripture:
 reflect:
   - zh: 在你现在的一天里，哪一个 10 分钟最安静、最容易固定下来读一段经文？
     en: In your current daily routine, which ten-minute window is quietest and easiest to protect for reading a short passage?
-  - zh: 回想一次你把经文“断章取义”或听人断章取义的经历：为什么“它原本在对谁说”这么重要？
-    en: Why does asking "what did this mean to its original hearers first?" protect us from twisting a verse?
+  - zh: 回想一次你自己或别人断章取义的经历。为什么先弄清“这话原本是对谁说的”很重要？
+    en: Think of a time you, or someone else, took a verse out of context. Why does it matter to ask first whom the words were originally spoken to?
 check:
   - q:
       zh: “归纳式读经”的三个基本步骤按顺序是？
@@ -42,41 +42,41 @@ check:
 further:
   - label: { zh: "读经工具箱：归纳法、文体与常见误区", en: "Bible Reading Toolkit: Method, Genres & Pitfalls" }
     path: Bible_Timeline/Bible_Reading_Toolkit_Bilingual.md
-    why: { zh: "提供观察、解释、应用三步法的具体清单，帮你把每天 15 分钟读经变成有深度的对话。", en: "Gives a practical checklist for observation, interpretation, and application in your daily 15-minute reading." }
+    why: { zh: "给出观察、解释、应用三步的具体清单，可以用在每天 15 分钟的读经里。", en: "Gives a practical checklist for observation, interpretation, and application in your daily 15-minute reading." }
   - label: { zh: "52 周圣经故事线阅读计划", en: "52-Week Bible Storyline Reading Plan" }
     path: Bible_Timeline/52周圣经故事线_精读通读双档打卡版.md
-    why: { zh: "提供精读与通读两档按周打卡表，让你在一年内顺着救赎历史主线读完圣经核心篇章。", en: "Offers two paced weekly checklists (focused or full) so you can trace the biblical storyline across a year." }
+    why: { zh: "提供精读和通读两档按周的进度表，一年内顺着圣经故事线读完主要篇章。", en: "Offers two weekly checklists (focused or full) for following the biblical storyline across a year." }
 ---
 
-## 溪水旁的树，不是一天长成的 | Trees by the stream grow slowly
+## 每天读一点，比偶尔读很多有用 | A little every day beats a lot now and then
 
-刚信主或刚决定认真读经时，最容易犯的错是头三天一口气读十章，第四天太累就彻底停下。《诗篇》第 1 篇把喜爱神话语的人比作“栽在溪水旁的树”——树不是靠一次暴雨长大的，而是靠每天不断吸水。<br>
-A common mistake at the start is reading ten chapters in a burst for three days and quitting on day four. Psalm 1 pictures a person rooted in God's word as "a tree planted by streams of water" — trees grow not from a single cloudburst, but from steady daily water.
+刚信主或刚决定认真读经的人，常常头三天一口气读十章，第四天太累，就完全停了。《诗篇》第 1 篇把喜爱神话语的人比作“栽在溪水旁的树”。树靠每天吸水长大，一场暴雨帮不了多少。<br>
+People who have just come to faith, or just decided to read the Bible seriously, often read ten chapters at a stretch for three days, tire out on the fourth, and stop altogether. Psalm 1 compares a person who delights in God's word to "a tree planted by streams of water." A tree grows by taking in water every day, and one downpour does little for it.
 
-每天固定 10–15 分钟，读一小段（比如 10–20 节），远比偶尔突击更有用。<br>
-Ten to fifteen quiet minutes a day with a short paragraph (ten to twenty verses) builds far more than occasional marathons.
+每天固定 10–15 分钟，读一小段（比如 10–20 节），比偶尔突击有用得多。<br>
+A fixed ten to fifteen minutes a day with a short passage (say ten to twenty verses) does far more than an occasional long session.
 
-## 三个问题读懂一段经文 | Three questions for any passage
+## 读一段经文时问三个问题 | Three questions for any passage
 
-打开一段经文时，先求神让你安静下来，然后慢读两遍，问自己三个问题：<br>
-Before reading, pause for a brief prayer to quiet your heart. Read the paragraph twice, then ask three questions:
+读之前，先求神让你安静下来。把这一段慢慢读两遍，然后问自己三个问题：<br>
+Before reading, ask God to quiet your heart. Read the passage slowly twice, then ask yourself three questions:
 
-### 1. 观察：这里写了什么？（What does it say?）
+### 1. 观察：这里写了什么？ | 1. Observe: what does it say?
 
-先别急着找“人生大道理”。像看现场一样看：有哪些人物？发生了什么？哪个词重复出现？有没有“因此”“所以”“但是”这样的转折？<br>
-Do not rush to a moral lesson yet. Look closely at the text: Who is speaking? What happens? Which words repeat? Where are connectors like "therefore" or "but"?
+先不要急着找人生道理。仔细看经文：有哪些人物？发生了什么？哪个词反复出现？有没有“因此”“所以”“但是”这样的连接词？<br>
+Do not hurry to find a life lesson. Look closely at the text. Who is in it? What happens? Which words repeat? Are there connecting words such as "therefore," "so," or "but"?
 
-### 2. 解释：这在当时是什么意思？（What did it mean?）
+### 2. 解释：这在当时是什么意思？ | 2. Interpret: what did it mean then?
 
-这一段处在哪一卷书？上下文在讲什么？对当时的听众来说，作者要传达的核心信息是什么？这一步帮我们避免“断章取义”。<br>
-Where does this paragraph sit in the book? What was the author saying to the original readers? This step guards us against ripping a verse out of context.
+这一段在哪一卷书里？上下文在讲什么？作者要对当时的听众说什么？这一步可以防止断章取义。<br>
+Which book is this passage in? What is the surrounding text about? What was the author saying to the first hearers? This step guards against taking a verse out of context.
 
-### 3. 应用：今天我该怎样回应？（How should I respond?）
+### 3. 应用：今天我怎样回应？ | 3. Apply: how do I respond today?
 
-这段经文让我看见神的什么属性？显明了我心里的什么盲点？今天有一件什么具体的小事，我可以照着去行，或者在祷告里交托给神？<br>
-What does this passage show me about God? What blind spot or need does it uncover in me? What is one concrete response or prayer I can bring into today?
+这段经文让我看见神是怎样的一位？让我看见自己心里的什么问题？今天有哪一件具体的小事，我可以照着去做，或者在祷告里交给神？<br>
+What does this passage show me about God? What does it show me about my own heart? What is one small, concrete thing today that I can do in response, or hand over to God in prayer?
 
-## 从哪一卷开始？ | Which book should I start with?
+## 从哪一卷开始 | Which book to start with
 
-如果你还没选好第一卷书，可以先从**《马可福音》**（共 16 章，每天半章，一个月读完）或**《腓立比书》**（共 4 章，温暖简短的书信）开始。<br>
-If you have not picked a book yet, start with **Mark** (16 chapters — half a chapter a day finishes in a month) or **Philippians** (4 short, warm chapters).
+如果还没选好第一卷书，可以从**《马可福音》**（共 16 章，每天半章，一个月读完）或**《腓立比书》**（共 4 章，一封简短亲切的书信）开始。<br>
+If you have not chosen a first book, start with **Mark** (16 chapters; half a chapter a day finishes it in a month) or **Philippians** (4 chapters, a short and warm letter).

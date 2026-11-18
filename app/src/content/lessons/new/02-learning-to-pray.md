@@ -1,10 +1,10 @@
 ---
 title:
   zh: 怎样祷告：从耶稣教的主祷文开始
-  en: How to Pray — Starting with the Lord's Prayer
+  en: How to pray, starting with the Lord's Prayer
 summary:
-  zh: 祷告不是背诵漂亮词藻，而是儿女对天父说话。耶稣给了我们一份最清楚的范本。
-  en: Prayer is not performing fancy words; it is speaking to a Father. Jesus gave us a clear pattern.
+  zh: 祷告是儿女对天父说话，不需要漂亮的词句。耶稣教了一篇可以照着学的祷文。
+  en: Prayer is a child speaking to the Father, and needs no fine words. Jesus taught a prayer we can learn from.
 unit: daily
 order: 2
 minutes: 6
@@ -19,7 +19,7 @@ scripture:
       en: "Our Father in heaven, may your name be kept holy. Let your Kingdom come. Let your will be done on earth as it is in heaven. Give us today our daily bread. Forgive us our debts, as we also forgive our debtors. Bring us not into temptation, but deliver us from the evil one."
 reflect:
   - zh: 主祷文为什么先求“愿你的国降临”，后求“我们日用的饮食”？这个顺序给你什么启发？
-    en: Why does the Lord's Prayer ask for God's name and kingdom before asking for daily bread? What does that order do to an anxious heart?
+    en: Why does the Lord's Prayer ask for God's kingdom before asking for daily bread? What do you learn from that order?
   - zh: 今天你可以用自己的话，照着主祷文的六个方向做一次两分钟的祷告吗？
     en: Can you take two minutes today to pray through the six lines of the Lord's Prayer in your own words?
 check:
@@ -28,52 +28,52 @@ check:
       en: In Matthew 6, what did Jesus warn his disciples not to do when praying?
     options:
       - { zh: "不要在屋里一个人祷告", en: "Never pray alone in a room" }
-      - { zh: "不要故意做给别人看，也不要以为话多了才蒙垂听", en: "Do not pray to show off to others, or think piling up babbling words forces God to listen" }
+      - { zh: "不要故意做给别人看，也不要以为话多了才蒙垂听", en: "Do not pray to be seen by others, or think that many words will make God listen" }
       - { zh: "不要为日常生活需要祷告", en: "Never pray about daily needs" }
     answer: 1
     explain:
-      zh: 天父看重的是真实的信心与关系，而不是表演或喋喋不休的重复。
-      en: The Father cares about honest trust and relationship, not performance or mechanical repetition.
+      zh: 天父看重真实的信心和关系，不看重表演和重复的话。
+      en: The Father values real trust and relationship, and does not value performance or empty repetition.
 further:
   - label: { zh: "主祷文双语细读", en: "The Lord's Prayer (Bilingual Study)" }
     path: Bible_Timeline/Lords_Prayer_Bilingual.md
-    why: { zh: "逐句拆解耶稣所教的六项祈求，看清主祷文如何先对齐神的荣耀，再托住日常的饮食与饶恕。", en: "Walks phrase by phrase through the six petitions of the Lord's Prayer—from God's glory to daily bread and forgiveness." }
+    why: { zh: "逐句讲解耶稣教的六项祈求：先求神的荣耀，再求日用的饮食和饶恕。", en: "Goes line by line through the six petitions of the Lord's Prayer, from God's glory to daily bread and forgiveness." }
   - label: { zh: "圣经中的祷告选读", en: "Prayers in the Bible" }
     path: Bible_Timeline/Prayers_in_the_Bible_Bilingual.md
-    why: { zh: "汇集摩西、哈拿、大卫、但以理、耶稣与保罗的真实祷告文本，作为日常操练的范本。", en: "Collects landmark prayers from Moses, Hannah, David, Daniel, Jesus, and Paul as models for daily practice." }
+    why: { zh: "收集摩西、哈拿、大卫、但以理、耶稣和保罗的祷告，可以作为日常祷告的范本。", en: "Collects prayers of Moses, Hannah, David, Daniel, Jesus, and Paul as models for daily prayer." }
 ---
 
-## 门徒也问过“怎么祷告” | Even the disciples asked "how?"
+## 门徒也问过怎样祷告 | The disciples also asked how to pray
 
-如果你觉得“我不会祷告，不知道开口说什么”，你一点也不孤单。耶稣的门徒跟着他走了很久，有一天也专门来请求他：“求主教导我们祷告。”<br>
-If you feel awkward praying — unsure what to say — you are in good company. After walking with Jesus and watching him pray, his own disciples came and asked, "Lord, teach us to pray."
+如果你觉得“我不会祷告，不知道说什么”，很多人和你一样。耶稣的门徒跟了他很久，有一天也来请求他：“求主教导我们祷告。”<br>
+If you feel you do not know how to pray or what to say, many people feel the same. Jesus' disciples had followed him a long time when one day they too asked him, "Lord, teach us to pray."
 
-耶稣的回答，就是著名的**《主祷文》**（马太福音 6:9-13；路加福音 11:2-4）。它既可以逐字诵读，更是一份帮我们校准心方向的祷告骨架。<br>
-Jesus answered with what we call the **Lord's Prayer** (Matthew 6:9–13; Luke 11:2–4). You can pray its exact words, and you can also use it as a framework for your own words.
+耶稣的回答就是**《主祷文》**（马太福音 6:9-13；路加福音 11:2-4）。可以逐字诵读，也可以把它当作祷告的提纲，按它的方向用自己的话祷告。<br>
+Jesus answered with the **Lord's Prayer** (Matthew 6:9–13; Luke 11:2–4). You can pray it word for word, or use it as an outline and pray along its lines in your own words.
 
-## 第一句：“我们在天上的父” | First words: "Our Father in heaven"
+## “我们在天上的父” | "Our Father in heaven"
 
-这一句同时包含两件事：<br>
-This opening address holds two truths together:
+这一句包含两点：<br>
+This opening holds two things:
 
-- **“父”**：神不是冷冰冰的考官，也不是需要你贿赂的偶像；借着耶稣，你可以像孩子回到父亲面前那样坦然开口。<br>
-  **"Father"**: God is not a distant examiner or an idol to be bribed; through Jesus, you can come with the honesty of a child.
-- **“在天上的”**：他又是统管万有的创造主，比你眼前的难处更大、更有智慧。<br>
-  **"In heaven"**: He is also the Creator over all things — larger and wiser than the trouble in front of you.
+- **“父”**：神愿意你来到他面前。借着耶稣，你可以像孩子对父亲那样坦然开口。他不像冷冰冰的考官，也不像需要人贿赂的偶像。<br>
+  **"Father"**: God wants you to come to him. Through Jesus you can speak as openly as a child to a father. He is not like a cold examiner, or an idol that must be bribed.
+- **“在天上的”**：他也是统管万有的创造主，比你眼前的难处更大，也更有智慧。<br>
+  **"In heaven"**: He is also the Creator who rules over all things, greater and wiser than the trouble in front of you.
 
-## 前半段：先对齐神的荣耀与国度 | First half: Align with God's glory and kingdom
+## 前半段：神的名、神的国、神的旨意 | First half: God's name, kingdom, and will
 
-很多时候我们一开口就是一长串焦虑清单。耶稣教我们先抬头看神：愿你的名被尊崇、愿你的国降临、愿你的旨意成就。这不是说我们的需要不重要，而是当心先对准神，焦虑的尺寸就会恢复正常。<br>
-Left to ourselves, we start prayer with a rush of anxieties. Jesus teaches us to look up first: your name, your kingdom, your will. Our needs still matter, but lifting our eyes first puts our worries back in proportion.
+我们常常一开口就是一长串让自己焦虑的事。耶稣教我们先仰望神：愿你的名被尊为圣，愿你的国降临，愿你的旨意成就。我们的需要仍然重要。先把心转向神，再看自己的难处，就不会把它看得过大。<br>
+We often begin prayer with a long list of worries. Jesus teaches us to look to God first: may your name be honored, may your kingdom come, may your will be done. Our needs still matter. When we turn to God first and then look at our troubles, we no longer see them as larger than they are.
 
-## 后半段：把每天真实的需要带到神面前 | Second half: Bring your real daily needs
+## 后半段：为每天的需要祷告 | Second half: praying for daily needs
 
-接着，耶稣鼓励我们为三件极其具体的事祷告：<br>
-Then Jesus invites us to ask for three concrete daily things:
+接着，耶稣教我们为三件具体的事祷告：<br>
+Then Jesus teaches us to pray for three concrete things:
 
-1. **日用的饮食**：今天的工作、家庭、生计、体力，都可以交托。<br>
-   **Daily bread**: Today's work, family, livelihood, and strength all belong in prayer.
-2. **饶恕与和好**：“免我们的债，如同我们免了人的债”——承认自己的亏欠，也求神赐力量放下对别人的苦毒。<br>
-   **Forgiveness and reconciliation**: Confessing our own sins and asking for grace to release bitterness toward others.
-3. **胜过试探与保护**：求神在软弱和诱惑中保守我们的心。<br>
-   **Strength in temptation**: Asking God to guard our steps where we are weak.
+1. **日用的饮食**：今天的工作、家庭、生计、体力，都可以交托给神。<br>
+   **Daily bread**: Today's work, family, livelihood, and strength can all be entrusted to God.
+2. **饶恕与和好**：“免我们的债，如同我们免了人的债。”承认自己的亏欠，也求神给我们力量，放下对别人的苦毒。<br>
+   **Forgiveness and reconciliation**: "Forgive us our debts, as we also forgive our debtors." We admit our own wrongs, and ask God for strength to let go of bitterness toward others.
+3. **胜过试探，得蒙保守**：求神在我们软弱和受诱惑的时候保守我们的心。<br>
+   **Strength in temptation, and protection**: We ask God to guard our hearts when we are weak and tempted.

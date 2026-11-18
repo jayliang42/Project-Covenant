@@ -9,92 +9,92 @@ interface TrackInfo { id: string; color: string; title: Text; url: string; lesso
 
 const RELATED_BRIDGES: Record<string, { id: string; reason: Text }[]> = {
   'curious/01-a-library-of-books': [
-    { id: 'seeking/05-manuscripts', reason: { zh: '跨路径求证 · 抄本怎么留存', en: 'Cross-path · How manuscripts survived' } },
-    { id: 'new/01-reading-every-day', reason: { zh: '实践延伸 · 每天 15 分钟读经法', en: 'Practical step · 15-min daily reading' } },
+    { id: 'seeking/05-manuscripts', reason: { zh: '想查证 · 抄本是怎样保存下来的', en: 'Checking the evidence · How the manuscripts survived' } },
+    { id: 'new/01-reading-every-day', reason: { zh: '动手做 · 每天读经 15 分钟', en: 'Try it · Reading 15 minutes a day' } },
   ],
   'curious/02-many-kinds-of-writing': [
-    { id: 'deeper/02-reading-the-ot-through-christ', reason: { zh: '进阶视角 · 在不同文体中读出基督', en: 'Deeper lens · Reading genres through Christ' } },
-    { id: 'new/01-reading-every-day', reason: { zh: '实践延伸 · 按文体开始日常读经', en: 'Practical step · Daily reading by genre' } },
+    { id: 'deeper/02-reading-the-ot-through-christ', reason: { zh: '读深一点 · 怎样在旧约里读出基督', en: 'Going deeper · Reading the Old Testament through Christ' } },
+    { id: 'new/01-reading-every-day', reason: { zh: '动手做 · 开始每天读经', en: 'Try it · Start reading every day' } },
   ],
   'curious/03-how-the-bible-came-to-us': [
-    { id: 'seeking/05-manuscripts', reason: { zh: '跨路径深挖 · 死海古卷与抄本互校', en: 'Deep dive · Dead Sea Scrolls & textual criticism' } },
-    { id: 'seeking/04-what-history-can-show', reason: { zh: '历史互证 · 考古与史料的边界', en: 'Historical lens · Archaeology & evidence limits' } },
+    { id: 'seeking/05-manuscripts', reason: { zh: '读深一点 · 死海古卷和抄本比对', en: 'Going deeper · The Dead Sea Scrolls and comparing manuscripts' } },
+    { id: 'seeking/04-what-history-can-show', reason: { zh: '想查证 · 考古和史料能说明什么', en: 'Checking the evidence · What archaeology and sources can show' } },
   ],
   'curious/04-one-story': [
-    { id: 'deeper/01-covenant-thread', reason: { zh: '跨路径深挖 · 串起全书的圣约主线', en: 'Deep dive · The covenant backbone of Scripture' } },
-    { id: 'curious/05-creation-and-fall', reason: { zh: '顺着读 · 故事的起点与破裂', en: 'Next up · Creation and the fracture' } },
+    { id: 'deeper/01-covenant-thread', reason: { zh: '读深一点 · 贯穿全书的圣约', en: 'Going deeper · The covenants that run through the Bible' } },
+    { id: 'curious/05-creation-and-fall', reason: { zh: '接着读 · 创造和堕落', en: 'Next · Creation and fall' } },
   ],
   'curious/05-creation-and-fall': [
-    { id: 'seeking/02-why-is-there-suffering', reason: { zh: '大问题延伸 · 为什么世界会有苦难', en: 'Big question · Why is there suffering?' } },
-    { id: 'new/03-i-believe-in-god-the-father', reason: { zh: '基要延伸 · 创造天地的主是谁', en: 'Foundation · Who is the Maker of heaven and earth?' } },
+    { id: 'seeking/02-why-is-there-suffering', reason: { zh: '相关问题 · 世界上为什么有苦难', en: 'Related question · Why is there suffering?' } },
+    { id: 'new/03-i-believe-in-god-the-father', reason: { zh: '相关一课 · 创造天地的主是谁', en: 'Related lesson · Who is the Maker of heaven and earth?' } },
   ],
   'curious/06-who-is-jesus': [
-    { id: 'seeking/04-what-history-can-show', reason: { zh: '历史求证 · 史学界如何看耶稣与空坟墓', en: 'Historical lens · Historians on Jesus & the empty tomb' } },
-    { id: 'new/04-jesus-christ-his-only-son', reason: { zh: '基要延伸 · 基督的身份与救赎工作', en: 'Foundation · Christ’s person and redemptive work' } },
+    { id: 'seeking/04-what-history-can-show', reason: { zh: '想查证 · 历史学家怎样看耶稣和空坟墓', en: 'Checking the evidence · Historians on Jesus and the empty tomb' } },
+    { id: 'new/04-jesus-christ-his-only-son', reason: { zh: '相关一课 · 基督是谁，做了什么', en: 'Related lesson · Who Christ is and what he did' } },
   ],
   'curious/07-what-jesus-taught': [
-    { id: 'seeking/06-what-it-means-to-believe', reason: { zh: '跨路径延伸 · 恩典与道德努力有什么不同', en: 'Cross-path · Grace vs. moral scorekeeping' } },
-    { id: 'new/02-learning-to-pray', reason: { zh: '实践延伸 · 照着耶稣教的主祷文开口', en: 'Practical step · Praying with the Lord’s Prayer' } },
+    { id: 'seeking/06-what-it-means-to-believe', reason: { zh: '相关问题 · 恩典和道德努力有什么不同', en: 'Related question · How grace differs from moral effort' } },
+    { id: 'new/02-learning-to-pray', reason: { zh: '动手做 · 用主祷文祷告', en: 'Try it · Praying the Lord’s Prayer' } },
   ],
   'seeking/01-questions-are-welcome': [
-    { id: 'seeking/02-why-is-there-suffering', reason: { zh: '最常问 · 良善的神与真实苦难', en: 'Most asked · A good God and real suffering' } },
-    { id: 'curious/01-a-library-of-books', reason: { zh: '全景入门 · 先看清圣经这本「图书馆」', en: 'First look · See how the 66-book library works' } },
+    { id: 'seeking/02-why-is-there-suffering', reason: { zh: '最常问 · 良善的神和苦难', en: 'Most asked · A good God and suffering' } },
+    { id: 'curious/01-a-library-of-books', reason: { zh: '入门 · 圣经是一本怎样的书', en: 'First look · What kind of book the Bible is' } },
   ],
   'seeking/02-why-is-there-suffering': [
-    { id: 'curious/05-creation-and-fall', reason: { zh: '背景脉络 · 世界为何既美善又伤痕累累', en: 'Context · Why the world is both noble and broken' } },
-    { id: 'new/02-learning-to-pray', reason: { zh: '诚实回应 · 如何在困惑与眼泪中祷告', en: 'Honest response · Praying through lament and tears' } },
+    { id: 'curious/05-creation-and-fall', reason: { zh: '背景 · 世界为什么又美又痛', en: 'Background · Why the world is both beautiful and broken' } },
+    { id: 'new/02-learning-to-pray', reason: { zh: '动手做 · 在困惑和眼泪中怎样祷告', en: 'Try it · Praying in confusion and tears' } },
   ],
   'seeking/03-does-god-exist': [
-    { id: 'seeking/04-what-history-can-show', reason: { zh: '下一步求证 · 从哲学线索走向历史现场', en: 'Next inquiry · From cosmic clues to historical evidence' } },
-    { id: 'new/03-i-believe-in-god-the-father', reason: { zh: '延伸阅读 · 圣经所说的神是怎样的一位', en: 'Further look · Who is the God Scripture speaks of?' } },
+    { id: 'seeking/04-what-history-can-show', reason: { zh: '接着读 · 历史能说明什么', en: 'Next · What history can show' } },
+    { id: 'new/03-i-believe-in-god-the-father', reason: { zh: '相关一课 · 圣经所说的神是怎样的一位', en: 'Related lesson · Who is the God the Bible speaks of?' } },
   ],
   'seeking/04-what-history-can-show': [
-    { id: 'deeper/03-second-temple-world', reason: { zh: '历史现场 · 走进第二圣殿与罗马帝国', en: 'Historical world · Second Temple & Roman context' } },
-    { id: 'seeking/05-manuscripts', reason: { zh: '文本求证 · 古卷抄本有没有被篡改', en: 'Textual inquiry · Were the manuscripts altered?' } },
+    { id: 'deeper/03-second-temple-world', reason: { zh: '背景 · 第二圣殿时期和罗马帝国', en: 'Background · The Second Temple period and the Roman Empire' } },
+    { id: 'seeking/05-manuscripts', reason: { zh: '想查证 · 抄本有没有被改过', en: 'Checking the evidence · Were the manuscripts changed?' } },
   ],
   'seeking/05-manuscripts': [
-    { id: 'curious/03-how-the-bible-came-to-us', reason: { zh: '脉络总览 · 正典形成与现代圣经译本', en: 'Overview · Canon formation & modern translations' } },
-    { id: 'seeking/06-what-it-means-to-believe', reason: { zh: '核心落点 · 证据看清之后，相信意味着什么', en: 'Key question · Beyond evidence, what is faith?' } },
+    { id: 'curious/03-how-the-bible-came-to-us', reason: { zh: '概览 · 正典的形成和现代译本', en: 'Overview · How the canon formed, and modern translations' } },
+    { id: 'seeking/06-what-it-means-to-believe', reason: { zh: '接着读 · “信”是什么意思', en: 'Next · What it means to believe' } },
   ],
   'seeking/06-what-it-means-to-believe': [
-    { id: 'new/01-reading-every-day', reason: { zh: '起步实践 · 怎样开始每天自己读圣经', en: 'First habit · How to start reading daily' } },
-    { id: 'new/04-jesus-christ-his-only-son', reason: { zh: '基要扎根 · 更深认识耶稣基督的救恩', en: 'Foundation · Deeper into the gospel of Christ' } },
+    { id: 'new/01-reading-every-day', reason: { zh: '动手做 · 怎样开始每天读圣经', en: 'Try it · How to start reading daily' } },
+    { id: 'new/04-jesus-christ-his-only-son', reason: { zh: '相关一课 · 耶稣基督和他的救恩', en: 'Related lesson · Jesus Christ and his salvation' } },
   ],
   'new/01-reading-every-day': [
-    { id: 'curious/02-many-kinds-of-writing', reason: { zh: '读经工具 · 辨认叙事、诗篇与书信文体', en: 'Reading tool · Recognizing biblical genres' } },
-    { id: 'deeper/04-leading-a-study', reason: { zh: '进阶方法 · 观察、解释、应用的归纳法', en: 'Next level · Observation, interpretation, application' } },
+    { id: 'curious/02-many-kinds-of-writing', reason: { zh: '读经工具 · 分辨叙事、诗歌和书信', en: 'Reading tool · Telling narrative, poetry, and letters apart' } },
+    { id: 'deeper/04-leading-a-study', reason: { zh: '读深一点 · 观察、解释、应用', en: 'Going deeper · Observation, interpretation, application' } },
   ],
   'new/02-learning-to-pray': [
-    { id: 'new/03-i-believe-in-god-the-father', reason: { zh: '信仰根基 · 认识我们在祷告中呼求的天父', en: 'Foundation · Knowing the Father we pray to' } },
-    { id: 'seeking/02-why-is-there-suffering', reason: { zh: '深度共鸣 · 诗篇如何把眼泪带进祷告', en: 'Deep resonance · How the Psalms bring tears to prayer' } },
+    { id: 'new/03-i-believe-in-god-the-father', reason: { zh: '相关一课 · 我们祷告时呼求的天父', en: 'Related lesson · The Father we pray to' } },
+    { id: 'seeking/02-why-is-there-suffering', reason: { zh: '相关问题 · 神是良善的，为什么有苦难', en: 'Related question · If God is good, why is there suffering?' } },
   ],
   'new/03-i-believe-in-god-the-father': [
-    { id: 'curious/05-creation-and-fall', reason: { zh: '故事起点 · 创造的美善与人的护理', en: 'Story origin · Creation’s goodness and care' } },
-    { id: 'deeper/01-covenant-thread', reason: { zh: '整全视野 · 天父在历史中立约的信实', en: 'Whole-Bible view · The Father’s covenant faithfulness' } },
+    { id: 'curious/05-creation-and-fall', reason: { zh: '背景 · 创造的美善和人的堕落', en: 'Background · The goodness of creation and the fall' } },
+    { id: 'deeper/01-covenant-thread', reason: { zh: '读深一点 · 神在历史中立的约', en: 'Going deeper · The covenants God made in history' } },
   ],
   'new/04-jesus-christ-his-only-son': [
-    { id: 'deeper/02-reading-the-ot-through-christ', reason: { zh: '跨路径深挖 · 从整本旧约读出基督的预表', en: 'Deep dive · Reading the Old Testament through Christ' } },
-    { id: 'curious/06-who-is-jesus', reason: { zh: '福音书肖像 · 回到四福音看耶稣的生平', en: 'Gospel portrait · Jesus’ life in the four Gospels' } },
+    { id: 'deeper/02-reading-the-ot-through-christ', reason: { zh: '读深一点 · 旧约怎样指向基督', en: 'Going deeper · How the Old Testament points to Christ' } },
+    { id: 'curious/06-who-is-jesus', reason: { zh: '相关一课 · 四福音书里的耶稣', en: 'Related lesson · Jesus in the four Gospels' } },
   ],
   'new/05-baptism-and-communion': [
-    { id: 'deeper/01-covenant-thread', reason: { zh: '神学脉络 · 「用我血所立的新约」从何而来', en: 'Theological thread · Where “the new covenant in my blood” comes from' } },
-    { id: 'deeper/04-leading-a-study', reason: { zh: '团契实践 · 在群体中一起研读与彼此建造', en: 'Community practice · Studying Scripture together' } },
+    { id: 'deeper/01-covenant-thread', reason: { zh: '读深一点 · “用我血所立的新约”从哪里来', en: 'Going deeper · Where “the new covenant in my blood” comes from' } },
+    { id: 'deeper/04-leading-a-study', reason: { zh: '动手做 · 和别人一起查经', en: 'Try it · Studying the Bible with others' } },
   ],
   'deeper/01-covenant-thread': [
-    { id: 'deeper/02-reading-the-ot-through-christ', reason: { zh: '顺着深读 · 圣约如何汇聚在基督身上', en: 'Next deep dive · How the covenants converge in Christ' } },
-    { id: 'new/05-baptism-and-communion', reason: { zh: '礼仪呼应 · 圣约记号在洗礼与圣餐中的延续', en: 'Sacramental echo · Covenant signs in baptism & communion' } },
+    { id: 'deeper/02-reading-the-ot-through-christ', reason: { zh: '接着读 · 各个圣约怎样在基督里成全', en: 'Next · How the covenants are fulfilled in Christ' } },
+    { id: 'new/05-baptism-and-communion', reason: { zh: '相关一课 · 洗礼和圣餐', en: 'Related lesson · Baptism and the Lord’s Supper' } },
   ],
   'deeper/02-reading-the-ot-through-christ': [
-    { id: 'deeper/03-second-temple-world', reason: { zh: '历史纵深 · 新约引用旧约时的第二圣殿语境', en: 'Historical depth · Second Temple context of NT citations' } },
-    { id: 'new/04-jesus-christ-his-only-son', reason: { zh: '信经核心 · 先知、祭司、君王三重职分', en: 'Creedal core · Prophet, Priest, and King' } },
+    { id: 'deeper/03-second-temple-world', reason: { zh: '背景 · 第二圣殿时期', en: 'Background · The Second Temple period' } },
+    { id: 'new/04-jesus-christ-his-only-son', reason: { zh: '相关一课 · 信经里的耶稣基督', en: 'Related lesson · Jesus Christ in the Creed' } },
   ],
   'deeper/03-second-temple-world': [
-    { id: 'seeking/04-what-history-can-show', reason: { zh: '历史互证 · 约瑟夫斯、塔西佗与考古铭文', en: 'Historical cross-check · Josephus, Tacitus & inscriptions' } },
-    { id: 'deeper/04-leading-a-study', reason: { zh: '查经实践 · 把历史背景转化为好问题', en: 'Study practice · Turning historical context into good questions' } },
+    { id: 'seeking/04-what-history-can-show', reason: { zh: '想查证 · 约瑟夫斯、塔西佗和考古铭文', en: 'Checking the evidence · Josephus, Tacitus, and inscriptions' } },
+    { id: 'deeper/04-leading-a-study', reason: { zh: '动手做 · 用历史背景设计查经问题', en: 'Try it · Using historical background to write study questions' } },
   ],
   'deeper/04-leading-a-study': [
-    { id: 'new/01-reading-every-day', reason: { zh: '个人根基 · 先建立自己的日常读经节奏', en: 'Personal rhythm · Grounding group study in daily reading' } },
-    { id: 'curious/02-many-kinds-of-writing', reason: { zh: '文体敏感度 · 帮小组成员分清叙事与书信', en: 'Genre sensitivity · Helping a group read genres well' } },
+    { id: 'new/01-reading-every-day', reason: { zh: '相关一课 · 先养成自己每天读经的习惯', en: 'Related lesson · Build your own daily reading habit first' } },
+    { id: 'curious/02-many-kinds-of-writing', reason: { zh: '读经工具 · 帮组员分清叙事和书信', en: 'Reading tool · Helping a group tell narrative from letters' } },
   ],
 };
 
@@ -298,8 +298,8 @@ function renderForYou(s: State, primaryNextId?: string) {
     const cand = nextIn(t, s);
     if (cand) {
       pushPick(cand.id, {
-        zh: `跨路径拓展 · ${t.title.zh}`,
-        en: `Cross-path pick · ${t.title.en || t.title.zh}`,
+        zh: `另一条路径 · ${t.title.zh}`,
+        en: `Another path · ${t.title.en || t.title.zh}`,
       });
     }
   }
@@ -359,7 +359,7 @@ function setupLesson() {
     const done = !store.get().completed[id];
     store.setComplete(id, done);
     if (done) {
-      toast('完成了！做得好', 'Lesson complete — well done');
+      toast('完成了！做得好', 'Lesson complete. Well done.');
       after?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
   });
