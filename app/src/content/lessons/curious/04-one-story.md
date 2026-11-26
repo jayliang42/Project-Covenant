@@ -50,8 +50,8 @@ further:
 
 ## 每卷书都在一个大故事里 | Every book sits in one larger story
 
-如果把圣经当成名言集，随手抽一句来读，很容易读偏，因为每一卷书都在一个更大的故事里。许多圣经学者把这个故事分成**六幕**：<br>
-If you treat the Bible as a book of quotations and pull out single lines, it is easy to misread them, because every book sits inside a larger story. Many Bible scholars divide that story into **six acts**:
+如果把圣经当成名言集，随手抽一句来读，很容易读偏，因为每一卷书都在一个更大的故事里。有些圣经学者（例如《圣经的戏剧》一书的作者巴塞洛缪和戈欣）把这个故事分成**六幕**：<br>
+If you treat the Bible as a book of quotations and pull out single lines, it is easy to misread them, because every book sits inside a larger story. Some Bible scholars (for example Craig Bartholomew and Michael Goheen in *The Drama of Scripture*) divide that story into **six acts**:
 
 ## 第一幕：创造（创世记 1–2） | Act 1: Creation (Genesis 1–2)
 
