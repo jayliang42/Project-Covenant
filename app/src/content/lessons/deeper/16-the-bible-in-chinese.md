@@ -67,11 +67,11 @@ On the Protestant side, two complete Chinese Bibles were finished at almost the 
 
 - **马士曼和拉沙的译本**：在印度塞兰坡翻译，1822 年出版全本。<br>
   **Marshman and Lassar**: Translated at Serampore in India, with the whole Bible published in 1822.
-- **马礼逊和米怜的译本**：马礼逊 1807 年来到广州，和米怜在 1819 年译完全本，1823 年出版。<br>
-  **Morrison and Milne**: Robert Morrison arrived in Guangzhou in 1807. He and William Milne finished the whole Bible in 1819, and it was published in 1823.
+- **马礼逊和米怜的译本**：马礼逊 1807 年来到广州，和米怜在 1819 年译完全本，1823 年在马六甲出版。<br>
+  **Morrison and Milne**: Robert Morrison arrived in Guangzhou in 1807. He and William Milne finished the whole Bible in 1819, and it was published in Malacca in 1823.
 
-19 世纪 50 年代，几个差会合作出版了文言文的“委办译本”。<br>
-In the 1850s, several mission societies jointly published the Delegates' Version in classical Chinese.
+1843 年，几个差会的传教士在香港开会，决定合作翻译文言文的“委办译本”。新约在 1852 年出版。旧约后来由麦都思等英国传教士译完，全本在 1850 年代中期出版。<br>
+In 1843, missionaries from several mission societies met in Hong Kong and agreed to translate the Delegates' Version together, in classical Chinese. The New Testament was published in 1852. British missionaries led by Walter Medhurst later finished the Old Testament, and the whole Bible came out in the mid-1850s.
 
 ## 和合本 | The Union Version
 
