@@ -6,7 +6,7 @@ summary:
   zh: 旧约结尾和《马太福音》之间隔了大约四百年。这段时间发生了什么？法利赛人、撒都该人、希律和罗马的统治是怎么来的？
   en: About four centuries lie between Malachi and Matthew. What happened in that time, and where did the Pharisees, Sadducees, Herod, and Roman rule come from?
 unit: background
-order: 1
+order: 2
 minutes: 8
 status: published
 review: draft
