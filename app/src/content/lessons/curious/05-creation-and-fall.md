@@ -86,5 +86,5 @@ Genesis 3 tells how things went wrong: humans stopped trusting God's goodness an
 
 ## 神问：“你在哪里？” | God asks, "Where are you?"
 
-人躲起来之后，神来到园中。他说的第一句话是**“你在哪里？”**，是在找人。神还应许，将来有一位“女人的后裔”要伤蛇的头（创 3:15）。圣经后面的故事，讲的就是神怎样一步步把躲藏的人找回来。<br>
+人躲起来之后，神来到园中。他说的第一句话是<strong>“你在哪里？”</strong>，是在找人。神还应许，将来有一位“女人的后裔”要伤蛇的头（创 3:15）。圣经后面的故事，讲的就是神怎样一步步把躲藏的人找回来。<br>
 After the humans hid, God came into the garden. His first words were **"Where are you?"** He was looking for them. God also promised that one day an offspring of the woman would crush the serpent's head (Genesis 3:15). The rest of the Bible tells how God, step by step, brings back the people who hid.

@@ -61,7 +61,7 @@ further:
 
 ## 基督徒需要教会 | Christians need the church
 
-在看重个人的今天，人很容易觉得：“信仰是我和神之间的私事，我自己在家读经就够了。”新约的说法不同：一个人信靠基督，就与元首基督连结，同时也成为**基督的身体（林前 12:12-27）**的一部分，成为**“神家里的人”（弗 2:19）**。<br>
+在看重个人的今天，人很容易觉得：“信仰是我和神之间的私事，我自己在家读经就够了。”新约的说法不同：一个人信靠基督，就与元首基督连结，同时也成为<strong>基督的身体（林前 12:12-27）</strong>的一部分，成为<strong>“神家里的人”（弗 2:19）</strong>。<br>
 In a culture that prizes the individual, it is easy to think: "Faith is a private matter between me and God, and reading the Bible at home is enough." The New Testament says otherwise. A person who trusts Christ is joined to Christ the Head, and at the same time becomes part of **"the body of Christ" (1 Corinthians 12:12–27)** and a member of **"the household of God" (Ephesians 2:19)**.
 
 炉子里烧红的炭挤在一起能保持热度，单独夹出来放在地上，很快就凉了。新约里有许多“彼此”的命令，如彼此相爱、彼此担当、彼此劝勉。这些命令只有在实际的教会群体里才能实行。<br>

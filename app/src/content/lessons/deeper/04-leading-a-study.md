@@ -59,7 +59,7 @@ further:
 带小组查经容易出两种问题。一种是带领者一个人讲四十分钟，其他人只是听，没有人自己读经文。另一种是经文念过一遍就放下，大家各谈各的感想，到最后没有人清楚这段经文在讲什么。<br>
 Two things easily go wrong in a small-group Bible study. In one, the leader talks for forty minutes while everyone else only listens, and no one reads the passage for themselves. In the other, the passage is read once and set aside, people share whatever comes to mind, and by the end no one is sure what the passage is about.
 
-《提摩太后书》2:15 和 2:24 提出两个要求：**“按着正意分解真理的道”**（忠于经文），以及**“温温和和地待众人，善于教导，存心忍耐”**（关心在场的人）。<br>
+《提摩太后书》2:15 和 2:24 提出两个要求：**“按着正意分解真理的道”**（忠于经文），以及<strong>“温温和和地待众人，善于教导，存心忍耐”</strong>（关心在场的人）。<br>
 2 Timothy 2:15 and 2:24 give two requirements: **"properly handling the word of truth"** (faithfulness to the text) and being **"gentle toward all, able to teach, patient"** (care for the people in the room).
 
 ## 45–60 分钟查经的四个步骤 | Four steps for a 45–60 minute study

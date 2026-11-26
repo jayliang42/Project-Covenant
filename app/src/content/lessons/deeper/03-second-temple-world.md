@@ -64,14 +64,14 @@ further:
 旧约最后一卷是《玛拉基书》。那时犹太人已经从巴比伦归回，生活在**波斯帝国**治下，说亚兰文和希伯来文。翻过一页，打开新约的《马太福音》，情况已经大不相同：**罗马军队**驻在当地，**希律**是罗马册封的王，通行的语言是**希腊文**，还出现了旧约里没有提过的群体，如**法利赛人、撒都该人、希律党人和奋锐党人**。<br>
 The last book of the Old Testament is Malachi. By then the Jews had returned from Babylon and lived under the **Persian Empire**, speaking Aramaic and Hebrew. Turn one page to Matthew in the New Testament, and things are very different. **Roman troops** are stationed in the land, **Herod** rules as a king appointed by Rome, **Greek** is the common language, and there are groups the Old Testament never mentions, such as the **Pharisees, Sadducees, Herodians, and Zealots**.
 
-这四百年常被称为**“两约之间”**，属于更长的**“第二圣殿时期”（Second Temple Period）**。了解这段历史，新约里的许多细节就容易明白。<br>
+这四百年常被称为<strong>“两约之间”</strong>，属于更长的<strong>“第二圣殿时期”（Second Temple Period）</strong>。了解这段历史，新约里的许多细节就容易明白。<br>
 These four centuries are often called the **Intertestamental Period**. They fall within the longer **Second Temple Period**. Knowing this history makes many details in the New Testament easier to understand.
 
 ## 四百年间的四次政权更替 | Four changes of rule in four hundred years
 
 1. **波斯时期（至主前 332 年）**：犹太人重建了耶路撒冷的圣殿，即第二圣殿（所罗巴伯圣殿）。一般认为，以宣读律法和祷告为中心的“会堂”（Synagogue）也是在被掳之后逐渐形成的。<br>
    **The Persian era (to 332 BC)**: The Jews rebuilt the temple in Jerusalem, known as the Second Temple (Zerubbabel's temple). It is generally thought that synagogues, centered on reading the Law and prayer, also took shape gradually after the exile.
-2. **亚历山大与希腊化时期（主前 332–167 年）**：亚历山大大帝东征以后，通用希腊文（Koine Greek）成为东地中海地区的共同语言。埃及亚历山大城的犹太学者把希伯来文的旧约译成希腊文，这就是**《七十士译本》（Septuagint, LXX）**。后来新约作者常引用这个译本。<br>
+2. **亚历山大与希腊化时期（主前 332–167 年）**：亚历山大大帝东征以后，通用希腊文（Koine Greek）成为东地中海地区的共同语言。埃及亚历山大城的犹太学者把希伯来文的旧约译成希腊文，这就是<strong>《七十士译本》（Septuagint, LXX）</strong>。后来新约作者常引用这个译本。<br>
    **Alexander and the Hellenistic era (332–167 BC)**: After the conquests of Alexander the Great, Koine Greek became the common language of the eastern Mediterranean. Jewish scholars in Alexandria in Egypt translated the Hebrew Scriptures into Greek. This is the **Septuagint (LXX)**, which the New Testament writers later often quoted.
 3. **马加比起义与哈斯摩尼王朝（主前 167–63 年）**：塞琉古王安条克四世玷污圣殿，禁止犹太人守律法。祭司家族马加比起义，洁净并重新奉献了圣殿。修殿节（光明节）由此而来（见约 10:22）。从主前 141 年左右到主前 63 年，犹太地由哈斯摩尼王朝治理，起初仍在塞琉古王国之下，后来完全独立。<br>
    **The Maccabean revolt and Hasmonean rule (167–63 BC)**: The Seleucid king Antiochus IV desecrated the Temple and forbade Jews to keep the Law. The priestly Maccabee family revolted, then cleansed and rededicated the Temple. This is the origin of Hanukkah, the Feast of Dedication (see John 10:22). From about 141 BC until 63 BC Judea was ruled by the Hasmonean dynasty, at first under Seleucid overlordship and later fully independent.

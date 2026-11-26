@@ -77,7 +77,7 @@ Jesus then takes the Old Testament law down to the heart. He says it is not enou
 
 ## 比喻：用日常的事讲道 | Parables: teaching through everyday things
 
-耶稣常用当时的日常事情讲道：农夫撒种、妇人找钱币、牧人找迷羊、父亲和儿子。最著名的是《路加福音》15 章**两个儿子（浪子回头）**的比喻：<br>
+耶稣常用当时的日常事情讲道：农夫撒种、妇人找钱币、牧人找迷羊、父亲和儿子。最著名的是《路加福音》15 章<strong>两个儿子（浪子回头）</strong>的比喻：<br>
 Jesus often taught through everyday things of his time: a farmer sowing, a woman searching for a coin, a shepherd looking for a lost sheep, a father and his sons. The best known is the parable of **the two sons (the Prodigal Son)** in Luke 15:
 
 - **小儿子**离家挥霍，代表公然远离神、把人生弄糟的人。他满心羞愧往回走，父亲“相离还远”就跑过去抱住他。<br>

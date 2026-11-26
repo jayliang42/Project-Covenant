@@ -70,7 +70,7 @@ John states why he wrote his letter: “These things I have written to you who b
 
 ## 确据建立在什么上面 | What assurance rests on
 
-**第一，神的应许。**耶稣说：“我又赐给他们永生；他们永不灭亡，谁也不能从我手里把他们夺去”（约 10:28）。这句话的重点在耶稣的手，不在羊的力气。<br>
+**第一，神的应许**。耶稣说：“我又赐给他们永生；他们永不灭亡，谁也不能从我手里把他们夺去”（约 10:28）。这句话的重点在耶稣的手，不在羊的力气。<br>
 **First, God's promise.** Jesus says, “I give eternal life to them. They will never perish, and no one will snatch them out of my hand” (John 10:28). The weight of the sentence falls on Jesus' hand, and the sheep's strength is not mentioned.
 
 **第二，圣灵的见证。**“圣灵与我们的心同证我们是神的儿女”（罗 8:16）。信徒能向神喊“父”，愿意回到他面前，这是圣灵在人心里做的事。<br>

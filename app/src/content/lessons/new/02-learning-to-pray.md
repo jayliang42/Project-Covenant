@@ -48,7 +48,7 @@ further:
 如果你觉得“我不会祷告，不知道说什么”，很多人和你一样。耶稣的门徒跟了他很久，有一天也来请求他：“求主教导我们祷告。”<br>
 If you feel you do not know how to pray or what to say, many people feel the same. Jesus' disciples had followed him a long time when one day they too asked him, "Lord, teach us to pray."
 
-耶稣的回答就是**《主祷文》**（马太福音 6:9-13；路加福音 11:2-4）。可以逐字诵读，也可以把它当作祷告的提纲，按它的方向用自己的话祷告。<br>
+耶稣的回答就是<strong>《主祷文》</strong>（马太福音 6:9-13；路加福音 11:2-4）。可以逐字诵读，也可以把它当作祷告的提纲，按它的方向用自己的话祷告。<br>
 Jesus answered with the **Lord's Prayer** (Matthew 6:9–13; Luke 11:2–4). You can pray it word for word, or use it as an outline and pray along its lines in your own words.
 
 ## “我们在天上的父” | "Our Father in heaven"

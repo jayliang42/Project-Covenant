@@ -73,7 +73,7 @@ Because it is written this way, later readers can check its historical setting a
 这个项目有一条原则：**背景相符，不等于神迹已被证明，不能把前者说成后者**。<br>
 This project keeps one rule: **agreement in background is not proof of a miracle, and the first must never be presented as the second.**
 
-- 考古可以确认第一世纪的耶路撒冷有钉十字架的刑罚，也可以确认彼拉多确有其人。**“耶稣为世人的罪而死”**是使徒的见证和神学宣告，考古发掘证明不了。<br>
+- 考古可以确认第一世纪的耶路撒冷有钉十字架的刑罚，也可以确认彼拉多确有其人。<strong>“耶稣为世人的罪而死”</strong>是使徒的见证和神学宣告，考古发掘证明不了。<br>
   Archaeology can confirm that crucifixion was practiced in first-century Jerusalem and that Pilate was a real person. **That Jesus died for the sins of the world** is the apostles' testimony and a theological claim, which excavation cannot prove.
 - 历史研究可以说明：耶稣被钉十字架后短短几年内，门徒就坚信自己见到了复活的主，并愿意为此受苦（见《哥林多前书》15:3-8 保存的早期信经）。至于你要不要信靠这位复活的主，需要你自己作出信心的回应。<br>
   Historical study can show that within a few years of the crucifixion, the disciples were convinced they had seen the risen Lord and were willing to suffer for it (see the early creed preserved in 1 Corinthians 15:3–8). Whether you will trust this risen Lord is a response of faith that you must make yourself.

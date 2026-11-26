@@ -78,5 +78,5 @@ What does this passage show me about God? What does it show me about my own hear
 
 ## 从哪一卷开始 | Which book to start with
 
-如果还没选好第一卷书，可以从**《马可福音》**（共 16 章，每天半章，一个月读完）或**《腓立比书》**（共 4 章，一封简短亲切的书信）开始。<br>
+如果还没选好第一卷书，可以从<strong>《马可福音》</strong>（共 16 章，每天半章，一个月读完）或<strong>《腓立比书》</strong>（共 4 章，一封简短亲切的书信）开始。<br>
 If you have not chosen a first book, start with **Mark** (16 chapters; half a chapter a day finishes it in a month) or **Philippians** (4 chapters, a short and warm letter).

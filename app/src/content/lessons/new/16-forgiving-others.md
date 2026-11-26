@@ -75,13 +75,13 @@ Forgiveness also includes praying for the other person and wishing them good. Th
 
 ## 饶恕不等于什么 | What forgiveness does not mean
 
-- **不等于说“没关系”。**饶恕的前提是确实有人做错了事。<br>
+- **不等于说“没关系”**。饶恕的前提是确实有人做错了事。<br>
   **It does not mean saying “it was nothing.”** Forgiveness assumes that a real wrong was done.
-- **不等于马上恢复信任。**饶恕可以由一个人决定，和好需要两个人，信任要靠对方的悔改和时间来重建。<br>
+- **不等于马上恢复信任**。饶恕可以由一个人决定，和好需要两个人，信任要靠对方的悔改和时间来重建。<br>
   **It does not mean trusting again at once.** One person can decide to forgive. Reconciliation takes two, and trust is rebuilt through the other person's repentance and through time.
-- **不等于留在危险里。**如果有人正在伤害你，你可以离开，可以寻求帮助，也可以报警。这样做和饶恕并不冲突。<br>
+- **不等于留在危险里**。如果有人正在伤害你，你可以离开，可以寻求帮助，也可以报警。这样做和饶恕并不冲突。<br>
   **It does not mean staying in danger.** If someone is harming you, you may leave, seek help, and call the police. Doing so does not conflict with forgiveness.
-- **不等于不再难过。**伤口愈合需要时间。你可以一边难过，一边选择不报复。<br>
+- **不等于不再难过**。伤口愈合需要时间。你可以一边难过，一边选择不报复。<br>
   **It does not mean the pain is gone.** Wounds take time to heal. You can still hurt and still choose to give up revenge.
 
 ## 很难饶恕的时候 | When forgiving is hard

@@ -74,7 +74,7 @@ The numbers make a sentence quick to find, but they can also cut a single though
 
 ## 从哪一卷开始读？ | Which book should you start with?
 
-第一次读圣经，不一定要从《创世记》第一页读起。很多人建议从**《马可福音》**开始。它是四本福音书里最短的一本，只有 16 章，一直在讲耶稣做了什么、说了什么。每天读一章，大约两个多星期就能读完。<br>
+第一次读圣经，不一定要从《创世记》第一页读起。很多人建议从<strong>《马可福音》</strong>开始。它是四本福音书里最短的一本，只有 16 章，一直在讲耶稣做了什么、说了什么。每天读一章，大约两个多星期就能读完。<br>
 You do not have to start on the first page of Genesis. Many people suggest starting with **the Gospel of Mark**. It is the shortest of the four Gospels, with only 16 chapters, and it stays focused on what Jesus did and said. At one chapter a day, you can finish it in a little over two weeks.
 
 读的时候可以准备一个本子，每章记下一件让你印象深的事，和一个你想问的问题。不懂的地方先记下来，不用停下来全部弄明白。<br>

@@ -61,7 +61,7 @@ further:
 
 ## 初信者需要一份信仰纲要 | New believers need a summary of the faith
 
-刚信主的时候，读经、听道会遇到很多新词：创造、救赎、称义、成圣、教会、复活。怎样把它们连成一个清楚的整体？从早期教会开始，基督徒受洗前都要学习一份简明的信仰告白。其中最著名、各宗派通用的是**《使徒信经》（Apostles' Creed）**。<br>
+刚信主的时候，读经、听道会遇到很多新词：创造、救赎、称义、成圣、教会、复活。怎样把它们连成一个清楚的整体？从早期教会开始，基督徒受洗前都要学习一份简明的信仰告白。其中最著名、各宗派通用的是<strong>《使徒信经》（Apostles' Creed）</strong>。<br>
 When you first believe, reading the Bible and hearing sermons bring many new words: creation, redemption, justification, sanctification, the church, resurrection. How do they fit into one clear whole? From the early church on, Christians preparing for baptism learned a short confession of faith. The best known, used across denominations, is the **Apostles' Creed**.
 
 《使徒信经》分三段：**一、我信上帝，全能的父；二、我信我主耶稣基督；三、我信圣灵。**<br>
@@ -81,7 +81,7 @@ This line holds three things Scripture teaches about God:
 
 ## 独一真神：父、子、圣灵（三位一体） | One God: Father, Son, and Holy Spirit (the Trinity)
 
-基督徒坚信**只有一位真神**（申 6:4），又奉**“父、子、圣灵的名”**施洗（太 28:19，原文的“名”是单数）。这两件事怎样放在一起？圣经启示，这位独一的真神从永远到永远以**父、子、圣灵三个位格**存在，三位彼此相爱。<br>
+基督徒坚信**只有一位真神**（申 6:4），又奉<strong>“父、子、圣灵的名”</strong>施洗（太 28:19，原文的“名”是单数）。这两件事怎样放在一起？圣经启示，这位独一的真神从永远到永远以**父、子、圣灵三个位格**存在，三位彼此相爱。<br>
 Christians firmly believe there is **only one true God** (Deuteronomy 6:4), and they baptize in **"the name of the Father and of the Son and of the Holy Spirit"** (Matthew 28:19, where "name" is singular in the original). How do these fit together? Scripture reveals that the one true God exists from eternity to eternity as **three persons, Father, Son, and Holy Spirit**, who love one another.
 
 三位一体的教义是福音的根基：**创造世界以前，父已经爱子（约 17:24）**。所以“神就是爱”（约壹 4:8）说的是神从永远就有的实情。救恩就是天父差遣圣子，又赐下圣灵，把我们带进三一真神里面本来就有的爱和喜乐。<br>

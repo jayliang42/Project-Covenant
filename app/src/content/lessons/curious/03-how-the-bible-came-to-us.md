@@ -61,7 +61,7 @@ further:
 
 ## 书写与正典 | Writing and the canon
 
-圣经各卷最初写在莎草纸（papyrus）或羊皮（parchment）上。旧约主要用**希伯来文**写成，《但以理书》和《以斯拉记》有几章用亚兰文。新约用**通用希腊文（Koine Greek）**写成，这是第一世纪地中海世界通行的语言，方便在各城之间传阅。<br>
+圣经各卷最初写在莎草纸（papyrus）或羊皮（parchment）上。旧约主要用**希伯来文**写成，《但以理书》和《以斯拉记》有几章用亚兰文。新约用<strong>通用希腊文（Koine Greek）</strong>写成，这是第一世纪地中海世界通行的语言，方便在各城之间传阅。<br>
 The books of the Bible were first written on papyrus and parchment. The Old Testament was written mainly in **Hebrew**, with a few chapters of Daniel and Ezra in Aramaic. The New Testament was written in **Koine Greek**, the shared language of the first-century Mediterranean world, which made it easy to pass from city to city.
 
 “正典”（Canon）原意是“准绳”，也指公认的书目。这份书目是在历史中逐渐确定的：信仰群体承认并汇集了那些带有先知和使徒权柄、在敬拜中长期诵读的书卷。没有哪一次会议凭空定出过这份书目。<br>
@@ -69,7 +69,7 @@ The books of the Bible were first written on papyrus and parchment. The Old Test
 
 ## 手抄与核对 | Copying and checking
 
-印刷术出现之前，圣经靠手抄流传。犹太传统中的**马所拉文士（Masoretes）**抄写希伯来旧约时非常严谨，会统计字母、词频和中间字，防止漏抄。新约由早期基督徒在罗马帝国各地传抄，留下了数千份希腊文抄本和早期译本。<br>
+印刷术出现之前，圣经靠手抄流传。犹太传统中的<strong>马所拉文士（Masoretes）</strong>抄写希伯来旧约时非常严谨，会统计字母、词频和中间字，防止漏抄。新约由早期基督徒在罗马帝国各地传抄，留下了数千份希腊文抄本和早期译本。<br>
 Before printing, Scripture was passed on by hand. Jewish **Masoretic scribes** copied the Hebrew Bible with great care, counting letters and words and marking the middle word to catch omissions. Early Christians copied the New Testament across the Roman Empire and left thousands of Greek manuscripts and early translations.
 
 1947 年，在死海边的昆兰洞穴发现了**死海古卷（Dead Sea Scrolls）**。它把现存希伯来圣经抄本的年代往前推了一千多年，到主前 3 世纪至主后 1 世纪。学者因此可以直接比较相隔千年的抄本，看文本有多稳定、有哪些差异。<br>

@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
 import yaml
@@ -128,6 +129,28 @@ def check_style(fm: dict, body: str) -> list[str]:
     return probs
 
 
+def _punct(ch: str) -> bool:
+    return unicodedata.category(ch)[0] in "PS"
+
+
+def check_emphasis(body: str) -> list[str]:
+    """CommonMark does not close **bold** after punctuation when a letter follows, nor open it
+    before punctuation when a letter precedes. Chinese text has no spaces, so this bites."""
+    probs = []
+    for line in body.split("\n"):
+        parts = line.split("**")
+        for i in range(1, len(parts)):
+            before, after = parts[i - 1][-1:], parts[i][:1]
+            if not before or not after or before.isspace() or after.isspace():
+                continue
+            closing = i % 2 == 0
+            if closing and _punct(before) and not _punct(after):
+                probs.append(f"bold will not close (move the punctuation outside, or use <strong>): …{parts[i - 1][-12:]}**{parts[i][:6]}…")
+            if not closing and _punct(after) and not _punct(before):
+                probs.append(f"bold will not open (move the punctuation outside, or use <strong>): …{parts[i - 1][-6:]}**{parts[i][:12]}…")
+    return probs
+
+
 def check_pairing(fm: dict, body: str) -> list[str]:
     probs = []
     lines = body.split("\n")
@@ -213,7 +236,8 @@ def check_quotes(raw_fm: str, body: str) -> list[str]:
 
 def check(path: Path) -> list[str]:
     _, fm, raw_fm, body = split(path)
-    return check_scripture(fm) + check_style(fm, body) + check_pairing(fm, body) + check_quotes(raw_fm, body)
+    return (check_scripture(fm) + check_style(fm, body) + check_pairing(fm, body)
+            + check_emphasis(body) + check_quotes(raw_fm, body))
 
 
 def main() -> int:

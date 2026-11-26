@@ -72,7 +72,7 @@ The Bible does not ask for blind belief. It asks us to notice three signposts we
 为什么有万物存在，而不是什么都没有？为什么宇宙遵循精密的物理定律，这些定律能用数学描述，又使生命得以存在？<br>
 Why is there something and not nothing? Why does the universe follow precise physical laws that can be described mathematically and that allow life to exist?
 
-这些观察算不上实验室里的物理证明。但它们合理地指向一位有智慧的创造主（诗 19:1）。**自然科学和信仰也并不冲突**。科学能解释水壶里的水怎样因分子运动而沸腾。“有人想泡茶”能解释这壶水为什么被烧开。两种解释可以同时成立。同样，弄懂了自然界的机制，并不能因此排除创造主的存在。<br>
+这些观察算不上实验室里的物理证明。但它们合理地指向一位有智慧的创造主（诗 19:1）**。自然科学和信仰也并不冲突**。科学能解释水壶里的水怎样因分子运动而沸腾。“有人想泡茶”能解释这壶水为什么被烧开。两种解释可以同时成立。同样，弄懂了自然界的机制，并不能因此排除创造主的存在。<br>
 These observations are not a laboratory proof. But they point reasonably toward a wise Creator (Psalm 19:1). **Natural science and faith do not conflict either.** Science can explain how the water in a kettle boils through the motion of molecules. "Someone wanted tea" explains why the kettle was put on. Both explanations can be true at once. In the same way, understanding the mechanisms of nature does not rule out a Creator.
 
 ## 路标二：人心里的道德直觉（罗马书 2:14-15） | Signpost 2: The moral sense within us (Romans 2:14–15)
