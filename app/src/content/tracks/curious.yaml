@@ -3,8 +3,8 @@ title: { zh: 对圣经好奇, en: Curious }
 who: { zh: 我对圣经好奇，想知道它在讲什么, en: I'm curious what the Bible is about }
 tagline: { zh: 不需要任何背景，从零开始, en: No background needed. Start from zero. }
 description:
-  zh: 每课几分钟。了解圣经是一本什么样的书，它讲的大故事，以及故事的中心人物。不预设你信什么。
-  en: A few minutes per lesson. Learn what kind of book the Bible is, the big story it tells, and the person at its centre. No faith commitment is assumed.
+  zh: 每课几分钟。了解圣经是一本什么样的书，它讲的大故事，故事的中心人物，以及故事怎样结局。不预设你信什么。
+  en: A few minutes per lesson. Learn what kind of book the Bible is, the big story it tells, the person at its centre, and how the story ends. No faith commitment is assumed.
 color: "#c27a1a"
 art: bible-library
 units:
@@ -13,7 +13,10 @@ units:
     summary: { zh: 66 卷、两约、多种文体, en: "66 books, two testaments, many kinds of writing" }
   - id: big-story
     title: { zh: 一条大故事, en: One big story }
-    summary: { zh: 从创造到新创造, en: From creation to new creation }
+    summary: { zh: 从创造到被掳归回, en: From creation to the return from exile }
   - id: jesus
     title: { zh: 耶稣是谁, en: Who is Jesus? }
     summary: { zh: 故事的中心人物, en: The person at the centre of the story }
+  - id: story-end
+    title: { zh: 故事的结局, en: How the story ends }
+    summary: { zh: 教会的开始和新天新地, en: The church begins and all things are made new }

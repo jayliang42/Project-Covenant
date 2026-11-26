@@ -15,13 +15,13 @@ scripture:
   - ref: 马可福音 8:27-29
     refEn: Mark 8:27-29
     text:
-      zh: 耶稣和门徒出去，往凯撒利亚·腓立比的村庄去；在路上问门徒说：“人说我是谁？”他们说：“有人说是施洗的约翰；有人说是以利亚；还有人说是先知里的一位。”耶稣又问他们说：“你们说我是谁？”彼得回答说：“你是基督。”
-      en: 'Jesus went out, with his disciples, into the villages of Caesarea Philippi. On the way he asked his disciples, "Who do men say that I am?" They told him, saying, "John the Baptizer, and others say Elijah, but others, one of the prophets." He said to them, "But who do you say that I am?" Peter answered, "You are the Christ."'
+      zh: "耶稣和门徒出去，往凯撒利亚·腓立比村庄去；在路上问门徒说：“人说我是谁？”他们说：“有人说是施洗的约翰；有人说是以利亚；又有人说是先知里的一位。”又问他们说：“你们说我是谁？”彼得回答说：“你是基督。”"
+      en: "Jesus went out, with his disciples, into the villages of Caesarea Philippi. On the way he asked his disciples, “Who do men say that I am?” They told him, “John the Baptizer, and others say Elijah, but others: one of the prophets.” He said to them, “But who do you say that I am?” Peter answered, “You are the Christ.”"
   - ref: 马可福音 10:45
     refEn: Mark 10:45
     text:
-      zh: 因为人子来，并不是要受人的服事，乃是要服事人，并且要舍命作多人的赎价。
-      en: For even the Son of Man came not to be served, but to serve, and to give his life as a ransom for many.
+      zh: "因为人子来，并不是要受人的服事，乃是要服事人，并且要舍命作多人的赎价。”"
+      en: "For the Son of Man also came not to be served, but to serve, and to give his life as a ransom for many.”"
 reflect:
   - zh: 耶稣问门徒：“你们说我是谁？”如果今天有人问你对耶稣的印象，你会怎么回答？
     en: Jesus asked his disciples, "But who do you say that I am?" If someone asked what you think of Jesus today, what would you say?

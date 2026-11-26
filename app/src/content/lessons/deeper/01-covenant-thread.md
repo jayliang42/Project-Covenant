@@ -15,18 +15,18 @@ scripture:
   - ref: 创世记 12:1-3
     refEn: Genesis 12:1-3
     text:
-      zh: 耶和华对亚伯兰说：“你要离开本地、本族、父家，往我所要指示你的地去。我必叫你成为大国。我必赐福给你，叫你的名为大；你也要叫别人得福。为你祝福的，我必赐福与他；那咒诅你的，我必咒诅他。地上的万族都要因你得福。”
-      en: 'Now Yahweh said to Abram, "Leave your country, and your relatives, and your father’s house, and go to the land that I will show you. I will make of you a great nation. I will bless you and make your name great. You will be a blessing. I will bless those who bless you, and I will curse him who treats you with contempt. All the families of the earth will be blessed through you."'
+      zh: "耶和华对亚伯兰说：“你要离开本地、本族、父家，往我所要指示你的地去。我必叫你成为大国。我必赐福给你，叫你的名为大；你也要叫别人得福。为你祝福的，我必赐福与他；那咒诅你的，我必咒诅他。地上的万族都要因你得福。”"
+      en: "Now Yahweh said to Abram, “Leave your country, and your relatives, and your father’s house, and go to the land that I will show you. I will make of you a great nation. I will bless you and make your name great. You will be a blessing. I will bless those who bless you, and I will curse him who treats you with contempt. All the families of the earth will be blessed through you.”"
   - ref: 耶利米书 31:31-34
     refEn: Jeremiah 31:31-34
     text:
-      zh: 耶和华说：“日子将到，我要与以色列家和犹大家另立新约……我要将我的律法放在他们里面，写在他们心上。我要作他们的神，他们要作我的子民。”
-      en: '“Behold, the days come,” says Yahweh, “that I will make a new covenant with the house of Israel, and with the house of Judah... I will put my law in their inward parts, and in their heart will I write it; and I will be their God, and they shall be my people.”'
+      zh: "耶和华说：“日子将到，我要与以色列家和犹大家另立新约，不像我拉着他们祖宗的手，领他们出埃及地的时候，与他们所立的约。我虽作他们的丈夫，他们却背了我的约。这是耶和华说的。”耶和华说：“那些日子以后，我与以色列家所立的约乃是这样：我要将我的律法放在他们里面，写在他们心上。我要作他们的神，他们要作我的子民。他们各人不再教导自己的邻舍和自己的弟兄说：‘你该认识耶和华’，因为他们从最小的到至大的都必认识我。我要赦免他们的罪孽，不再记念他们的罪恶。这是耶和华说的。”"
+      en: "“Behold, the days come,” says Yahweh, “that I will make a new covenant with the house of Israel, and with the house of Judah: not according to the covenant that I made with their fathers in the day that I took them by the hand to bring them out of the land of Egypt; which covenant of mine they broke, although I was a husband to them,” says Yahweh. “But this is the covenant that I will make with the house of Israel after those days,” says Yahweh: “I will put my law in their inward parts, and I will write it in their heart. I will be their God, and they shall be my people. They will no longer each teach his neighbor, and every man teach his brother, saying, ‘Know Yahweh;’ for they will all know me, from their least to their greatest,” says Yahweh: “for I will forgive their iniquity, and I will remember their sin no more.”"
   - ref: 路加福音 22:20
     refEn: Luke 22:20
     text:
-      zh: 饭后也照样拿起杯来，说：“这杯是用我血所立的新约，是为你们流出来的。”
-      en: 'Likewise, he took the cup after supper, saying, "This cup is the new covenant in my blood, which is poured out for you."'
+      zh: "饭后也照样拿起杯来，说：“这杯是用我血所立的新约，是为你们流出来的。"
+      en: "Likewise, he took the cup after supper, saying, “This cup is the new covenant in my blood, which is poured out for you."
 reflect:
   - zh: 为什么每一重圣约最后都指向同一句话：“我要作他们的神，他们要作我的子民”？
     en: "Why does covenant after covenant return to the same promise: \"I will be their God, and they shall be my people\"?"

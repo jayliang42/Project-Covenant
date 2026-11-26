@@ -15,13 +15,13 @@ scripture:
   - ref: 约翰福音 1:12
     refEn: John 1:12
     text:
-      zh: 凡接待他的，就是信他名的人，他就赐他们权柄，作神的儿女。
-      en: But as many as received him, to them he gave the right to become God’s children, to those who believe in his name.
+      zh: "凡接待他的，就是信他名的人，他就赐他们权柄作神的儿女。"
+      en: "But as many as received him, to them he gave the right to become God’s children, to those who believe in his name:"
   - ref: 以弗所书 2:8-9
     refEn: Ephesians 2:8-9
     text:
-      zh: 你们得救是本乎恩，也因着信；这并不是出于自己，乃是神所赐的；也不是出于行为，免得有人自夸。
-      en: For by grace you have been saved through faith, and that not of yourselves; it is the gift of God, not of works, that no one would boast.
+      zh: "你们得救是本乎恩，也因着信；这并不是出于自己，乃是神所赐的；也不是出于行为，免得有人自夸。"
+      en: "for by grace you have been saved through faith, and that not of yourselves; it is the gift of God, not of works, that no one would boast."
 reflect:
   - zh: “相信椅子能承重”和“真的坐到椅子上”有什么区别？这对理解圣经里的“信”有什么帮助？
     en: What is the difference between agreeing that a chair can hold your weight and actually sitting in it? How does that help explain biblical faith?

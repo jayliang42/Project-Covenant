@@ -12,16 +12,11 @@ status: published
 review: draft
 art: stepping-stones
 scripture:
-  - ref: 路加福音 24:25-27, 44-45
-    refEn: Luke 24:25-27, 44-45
-    text:
-      zh: 耶稣对他们说：“无知的人哪，先知所说的一切话，你们的心信得太迟钝了！基督这样受害，又进入他的荣耀，岂不是应当的吗？”于是从摩西和众先知起，凡经上所指着自己的话，都给他们讲解明白了。
-      en: 'He said to them, "Foolish men, and slow of heart to believe in all that the prophets have spoken! Didn’t the Christ have to suffer these things and to enter into his glory?" Beginning from Moses and from all the prophets, he explained to them in all the Scriptures the things concerning himself.'
   - ref: 希伯来书 1:1-2
     refEn: Hebrews 1:1-2
     text:
-      zh: 神既在古时借着众先知多次多方地晓谕列祖，就在这末世借着他儿子晓谕我们。
-      en: God, having in the past spoken to the fathers through the prophets at many times and in various ways, has at the end of these days spoken to us by his Son.
+      zh: "神既在古时借着众先知多次多方地晓谕列祖，就在这末世借着他儿子晓谕我们；又早已立他为承受万有的，也曾借着他创造诸世界。"
+      en: "God, having in the past spoken to the fathers through the prophets at many times and in various ways, has at the end of these days spoken to us by his Son, whom he appointed heir of all things, through whom also he made the worlds."
 reflect:
   - zh: 如果只把旧约人物当成“道德模范”（比如“像大卫一样勇敢打败你的歌利亚”），我们会漏掉旧约要说的什么？
     en: If we treat Old Testament figures only as moral examples ("be brave like David against your giants"), what do we miss in the text?
@@ -62,7 +57,7 @@ The risen Jesus came and walked with them. "Beginning from Moses and from all th
 Readers of the Old Testament often go wrong in one of two ways:
 
 1. **只当道德故事读（Moralism）**：把亚伯拉罕、摩西、大卫只当作“好榜样”，读完的结论只是“我也要更勇敢、更诚实”。可是旧约如实记下了这些人的软弱和失败。连最好的领袖也需要被拯救。<br>
-   **Moralism**: Treating Abraham, Moses, and David only as good examples, so that the only takeaway is "I should be braver and more honest." But the Old Testament records the weaknesses and failures of these men plainly. Even the best leaders needed to be saved.
+   **Moralism**: Treating Abraham, Moses, and David only as good examples, so that the only takeaway is "I should be braver and more truthful." But the Old Testament records the weaknesses and failures of these men plainly. Even the best leaders needed to be saved.
 2. **脱离上下文的牵强附会（Allegorizing）**：不管经文原来在讲什么，看见“木头”就说是十字架，看见“红色”就说是宝血。这样读经就成了猜谜。<br>
    **Allegorizing without context**: Ignoring what the passage is about, and calling every piece of wood the cross and every red thing the blood. Reading the Bible then becomes a guessing game.
 
@@ -73,7 +68,7 @@ The New Testament writers model three ways of reading that are grounded in histo
 
 - **应许与成全（Promise → Fulfillment）**：神与亚伯拉罕、大卫立约时所作的应许，以及先知对受苦仆人的盼望（如以赛亚书 53 章），都在耶稣身上实现。<br>
   **Promise and fulfillment**: The promises God made in his covenants with Abraham and David, and the prophets' hope for a Suffering Servant (as in Isaiah 53), are fulfilled in Jesus.
-- **历史预表（Typology）**：逾越节的羔羊、出埃及的拯救、会幕和圣殿里神的同在、大祭司作中保的职分，都是历史上真实存在过的。《希伯来书》称这些制度为“影像”和“影儿”（来 8:5，10:1）。神设立它们，是要预备人认识真正的羔羊和大祭司。<br>
+- **历史预表（Typology）**：逾越节的羔羊、出埃及的拯救、会幕和圣殿里神的同在、大祭司作中保的职分，都是历史上真实存在过的。《希伯来书》称这些制度为“影像”和“影儿”（来 8:5，10:1）。神设立它们，是要预备人认出那位羔羊和大祭司。<br>
   **Historical typology**: The Passover lamb, the rescue from Egypt, God's presence in the tabernacle and temple, and the high priest's work as mediator all existed in history. Hebrews calls these institutions a "shadow" (Hebrews 8:5; 10:1). God set them up to prepare people to recognize the true Lamb and the true High Priest.
 - **人的失败与渴望（Human failure → Need）**：《士师记》说：“那时以色列中没有王，各人任意而行。”《列王纪》里的王一个接一个失败。读者因此盼望一位公义的君王，福音回应的正是这个盼望。<br>
   **Human failure and longing**: Judges says that in those days Israel had no king and everyone did what was right in his own eyes. In Kings, one ruler after another fails. Readers are left longing for a righteous king, and the Gospel answers that longing.

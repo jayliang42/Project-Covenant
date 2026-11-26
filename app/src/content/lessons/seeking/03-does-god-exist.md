@@ -15,13 +15,13 @@ scripture:
   - ref: 诗篇 19:1-2
     refEn: Psalm 19:1-2
     text:
-      zh: 诸天述说神的荣耀；穹苍传扬他的手段。这日到那日发出言语；这夜到那夜传出知识。
-      en: The heavens declare the glory of God. The expanse shows his handiwork. Day after day they pour fourth speech, and night after night they display knowledge.
+      zh: "诸天述说神的荣耀；穹苍传扬他的手段。这日到那日发出言语；这夜到那夜传出知识。"
+      en: "The heavens declare the glory of God. The expanse shows his handiwork. Day after day they pour out speech, and night after night they display knowledge."
   - ref: 罗马书 2:14-15
     refEn: Romans 2:14-15
     text:
-      zh: 没有律法的外邦人若顺着本性行律法上的事，他们虽然没有律法，自己就是自己的律法。这是显出律法的功用刻在他们心里，他们是非之心同作见证。
-      en: For when Gentiles who don’t have the law do by nature the things of the law, these, not having the law, are a law to themselves, in that they show the work of the law written in their hearts, their conscience testifying with them.
+      zh: "没有律法的外邦人若顺着本性行律法上的事，他们虽然没有律法，自己就是自己的律法。这是显出律法的功用刻在他们心里，他们是非之心同作见证，并且他们的思念互相较量，或以为是，或以为非。"
+      en: "For when Gentiles who don’t have the law do by nature the things of the law, these, not having the law, are a law to themselves, in that they show the work of the law written in their hearts, their conscience testifying with them, and their thoughts among themselves accusing or else excusing them."
 reflect:
   - zh: 仰望星空、看到精密的自然规律，或者心里强烈觉得“欺压弱者就是邪恶”的时候，你认为这些直觉指向什么？
     en: When you look at the mathematical order of nature, or feel strongly that cruelty to the helpless is wrong, what do you think those intuitions point toward?
@@ -86,7 +86,7 @@ Romans 2:15 describes conscience as the work of the law written on human hearts.
 ## 路标三：神有没有说话（约翰福音 1:14, 18） | Signpost 3: Has God spoken? (John 1:14, 18)
 
 只看星空和良心，我们能感到背后似乎有一位造物主，却无法确知他的心意。基督教信仰的中心宣告是：**这位创造主说话了**。他在历史中借着众先知说话，最后在拿撒勒人耶稣身上亲自来到人间：“从来没有人看见神，只有在父怀里的独生子将他表明出来”（约 1:18）。<br>
-From the stars and conscience alone, we may sense a Creator behind them, but we cannot know his mind. The central claim of the Christian faith is that **this Creator has spoken**. He spoke in history through the prophets, and finally came among us in person in Jesus of Nazareth: "No one has seen God at any time. The one and only Son, who is in the bosom of the Father, he has declared him" (John 1:18).
+From the stars and conscience alone, we may sense a Creator behind them, but we cannot know his mind. The central claim of the Christian faith is that **this Creator has spoken**. He spoke in history through the prophets, and finally came among us in person in Jesus of Nazareth: "No one has seen God at any time. The one and only Son, who is in the bosom of the Father, has declared him" (John 1:18).
 
 所以，想弄清有没有神，下一步可以直接读福音书里的耶稣，看他值不值得你认识和信靠。<br>
 So a good next step in asking whether God exists is to read about Jesus in the Gospels and see whether he is worth knowing and trusting.

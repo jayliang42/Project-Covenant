@@ -15,13 +15,13 @@ scripture:
   - ref: 马太福音 5:3-6
     refEn: Matthew 5:3-6
     text:
-      zh: 虚心的人有福了！因为天国是他们的。哀恸的人有福了！因为他们必得安慰。温柔的人有福了！因为他们必承受地土。饥渴慕义的人有福了！因为他们必得饱足。
-      en: Blessed are the poor in spirit, for theirs is the Kingdom of Heaven. Blessed are those who mourn, for they shall be comforted. Blessed are the gentle, for they shall inherit the earth. Blessed are those who hunger and thirst after righteousness, for they shall be filled.
+      zh: "虚心的人有福了！因为天国是他们的。哀恸的人有福了！因为他们必得安慰。温柔的人有福了！因为他们必承受地土。饥渴慕义的人有福了！因为他们必得饱足。"
+      en: "“Blessed are the poor in spirit, for theirs is the Kingdom of Heaven. Blessed are those who mourn, for they shall be comforted. Blessed are the gentle, for they shall inherit the earth. Blessed are those who hunger and thirst after righteousness, for they shall be filled."
   - ref: 路加福音 15:20
     refEn: Luke 15:20
     text:
-      zh: 于是起来，往他父亲那里去。相离还远，他父亲看见，就动了慈心，跑去抱着他的颈项，连连与他亲嘴。
-      en: He arose, and came to his father. But while he was still far off, his father saw him, and was moved with compassion, and ran, and fell on his neck, and kissed him.
+      zh: "于是起来，往他父亲那里去。相离还远，他父亲看见，就动了慈心，跑去抱着他的颈项，连连与他亲嘴。"
+      en: "“He arose, and came to his father. But while he was still far off, his father saw him, and was moved with compassion, and ran, and fell on his neck, and kissed him."
 reflect:
   - zh: 耶稣为什么说“虚心的人有福了”（虚心指灵里贫穷，知道自己需要神）？这和今天社会看重强者的想法有什么不同？
     en: Why did Jesus begin with "Blessed are the poor in spirit" (those who know their need of God)? How does that differ from our culture's admiration for the self-sufficient?
@@ -61,8 +61,8 @@ further:
 
 ## 中心信息：神的国近了 | The central message: the kingdom of God is near
 
-耶稣出来传道，中心信息是一句话：**“神的国近了，你们应当悔改，信福音！”**（可 1:15）。“神的国”（也叫“天国”）指**神仁爱、公义的掌权进入这个破碎的世界**。它的范围比“人死后去的地方”大。<br>
-When Jesus began to preach, his central message was one sentence: **"The Kingdom of God is at hand! Repent, and believe in the good news"** (Mark 1:15). "The kingdom of God" (also called "the kingdom of heaven") means **God's loving and just rule entering this broken world**. It covers more than a place people go after death.
+耶稣出来传道，中心信息是一句话：**“日期满了，神的国近了。你们当悔改，信福音！”**（可 1:15）。“神的国”（也叫“天国”）指**神仁爱、公义的掌权进入这个破碎的世界**。它的范围比“人死后去的地方”大。<br>
+When Jesus began to preach, his central message was one sentence: **"The time is fulfilled, and God’s Kingdom is at hand! Repent, and believe in the Good News"** (Mark 1:15). "The kingdom of God" (also called "the kingdom of heaven") means **God's loving and just rule entering this broken world**. It covers more than a place people go after death.
 
 要了解耶稣的教导，可以先读两处：**《登山宝训》**（马太福音 5–7 章）和他的**比喻**。<br>
 Two good places to start with Jesus' teaching are the **Sermon on the Mount** (Matthew 5–7) and his **parables**.

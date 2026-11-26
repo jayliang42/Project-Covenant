@@ -15,18 +15,18 @@ scripture:
   - ref: 加拉太书 4:4-5
     refEn: Galatians 4:4-5
     text:
-      zh: 及至时候满足，神就差遣他的儿子，为女子所生，且生在律法以下，要把律法以下的人赎出来，叫我们得着儿子的名分。
-      en: But when the fullness of the time came, God sent out his Son, born to a woman, born under the law, that he might redeem those who were under the law, that we might receive the adoption of sons.
+      zh: "及至时候满足，神就差遣他的儿子，为女子所生，且生在律法以下，要把律法以下的人赎出来，叫我们得着儿子的名分。"
+      en: "But when the fullness of the time came, God sent out his Son, born to a woman, born under the law, that he might redeem those who were under the law, that we might receive the adoption of children."
   - ref: 路加福音 3:1-2
     refEn: Luke 3:1-2
     text:
-      zh: 凯撒提庇留作罗马皇帝第十五年，本丢·彼拉多作犹太巡抚，希律作加利利分封的王……亚那和该亚法作大祭司。那时，撒迦利亚的儿子约翰在旷野里，神的话临到他。
-      en: Now in the fifteenth year of the reign of Tiberius Caesar, Pontius Pilate being governor of Judea, and Herod being tetrarch of Galilee... in the high priesthood of Annas and Caiaphas, the word of God came to John, the son of Zechariah, in the wilderness.
+      zh: "凯撒提庇留在位第十五年，本丢·彼拉多作犹太巡抚，希律作加利利分封的王，他兄弟腓力作以土利亚和特拉可尼地方分封的王，吕撒聂作亚比利尼分封的王，亚那和该亚法作大祭司。那时，撒迦利亚的儿子约翰在旷野里，神的话临到他。"
+      en: "Now in the fifteenth year of the reign of Tiberius Caesar, Pontius Pilate being governor of Judea, and Herod being tetrarch of Galilee, and his brother Philip tetrarch of the region of Ituraea and Trachonitis, and Lysanias tetrarch of Abilene, in the high priesthood of Annas and Caiaphas, the word of God came to John, the son of Zacharias, in the wilderness."
 reflect:
   - zh: 第一世纪的犹太人分成法利赛人、撒都该人、奋锐党人等群体。知道这一点以后，再读福音书里人们问耶稣的问题（如“纳不纳税给凯撒”“有没有复活”），你会多看到什么？
     en: Once you know how Pharisees, Sadducees, and Zealots differed in the first century, what more do you notice in the questions people asked Jesus ("Is it lawful to pay taxes to Caesar?" "Is there a resurrection?")?
   - zh: 保罗说“及至时候满足，神就差遣他的儿子”（加 4:4）。希腊语言的普及、罗马的道路交通与犹太会堂的分布，怎样在历史中为福音传开预备了条件？
-    en: Paul wrote that God sent his Son "when the fullness of time came" (Galatians 4:4). How did common Greek, Roman roads, and synagogue networks across the Mediterranean help the gospel spread?
+    en: Paul wrote that God sent his Son "when the fullness of the time came" (Galatians 4:4). How did common Greek, Roman roads, and synagogue networks across the Mediterranean help the gospel spread?
 check:
   - q:
       zh: 从旧约《玛拉基书》到新约《马太福音》的大约四百年（两约之间），犹太地先后受过哪些帝国或政权的统治？

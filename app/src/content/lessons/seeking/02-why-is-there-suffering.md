@@ -15,13 +15,13 @@ scripture:
   - ref: 诗篇 34:18
     refEn: Psalm 34:18
     text:
-      zh: 耶和华靠近伤心的人，拯救灵性痛悔的人。
-      en: Yahweh is near to those who have a broken heart, and saves those who have a crushed spirit.
+      zh: "耶和华靠近伤心的人，拯救灵性痛悔的人。"
+      en: "Yahweh is near to those who have a broken heart, and saves those who have a crushed spirit."
   - ref: 约翰福音 11:33-35
     refEn: John 11:33-35
     text:
-      zh: 耶稣看见她哭，并看见与她同来的犹太人也哭，就心里悲叹，又甚忧愁，便说：“你们把他安放在哪里？”他们回答说：“请主来看。”耶稣哭了。
-      en: 'When Jesus therefore saw her weeping, and the Jews who came with her weeping, he groaned in the spirit, and was troubled, and said, "Where have you laid him?" They told him, "Lord, come and see." Jesus wept.'
+      zh: "耶稣看见她哭，并看见与她同来的犹太人也哭，就心里悲叹，又甚忧愁，便说：“你们把他安放在哪里？”他们回答说：“请主来看。”耶稣哭了。"
+      en: "When Jesus therefore saw her weeping, and the Jews weeping who came with her, he groaned in the spirit, and was troubled, and said, “Where have you laid him?” They told him, “Lord, come and see.” Jesus wept."
 reflect:
   - zh: 当有人正在经历痛苦时，为什么“你一定是因为做了错事才遭报应”（约伯三个朋友的说法）既冷酷、又不符合圣经？
     en: When someone is hurting, why is the claim "you must have done something bad to deserve this" (the argument of Job's three friends) both cruel and unbiblical?
@@ -74,7 +74,7 @@ In Job, the Psalms, and the four Gospels, Scripture first rules out three answer
 
 1. **“痛苦只是幻觉”**：圣经承认痛苦是真实的。死亡在圣经里被称为“仇敌”（林前 15:26），耶稣在朋友拉撒路的坟墓前流了泪（约 11:35）。<br>
    **"Pain is only an illusion"**: Scripture treats pain as real. It calls death an "enemy" (1 Corinthians 15:26), and Jesus wept at the grave of his friend Lazarus (John 11:35).
-2. **“受苦一定是因为犯了罪”**：约伯无故失去一切，三个朋友却认定他暗中犯了罪。全书结尾，神责备这三个朋友说得不对（伯 42:7）。耶稣也否定了“生来瞎眼是因为他自己或父母犯了罪”的说法（约 9:1-3）。<br>
+2. **“受苦一定是因为犯了罪”**：约伯无故失去一切，三个朋友却认定他暗中犯了罪。全书结尾，神责备这三个朋友说得不对（伯 42:7）。耶稣也否定了一种说法：这人生来瞎眼，是因为他自己或父母犯了罪（约 9:1-3）。<br>
    **"Suffering always means you sinned"**: When Job lost everything without cause, his three friends insisted he had sinned in secret. At the end of the book God rebukes the three friends for not speaking rightly (Job 42:7). Jesus also rejected the idea that a man was born blind because he or his parents had sinned (John 9:1–3).
 3. **“信徒应该强颜欢笑”**：《诗篇》里超过三分之一是“哀歌”（lament）。圣经教人把“我的神，你为什么远离我”这样的话直接带到神面前。<br>
    **"Believers should put on a smile"**: Over a third of the Psalms are laments. Scripture teaches people to bring words like "My God, why are you so far from me?" straight to God.

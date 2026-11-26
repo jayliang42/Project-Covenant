@@ -15,13 +15,13 @@ scripture:
   - ref: 使徒行传 2:41-42
     refEn: Acts 2:41-42
     text:
-      zh: 于是领受他话的人就受了洗。那一天，门徒约添了三千人，都恒心遵守使徒的教训，彼此交接，擘饼，祈祷。
-      en: Then those who gladly received his word were baptized. There were added that day about three thousand souls. They continued steadfastly in the apostles’ teaching and fellowship, in the breaking of bread, and in prayer.
+      zh: "于是领受他话的人就受了洗。那一天，门徒约添了三千人，都恒心遵守使徒的教训，彼此交接，擘饼，祈祷。"
+      en: "Then those who gladly received his word were baptized. There were added that day about three thousand souls. They continued steadfastly in the apostles’ teaching and fellowship, in the breaking of bread, and prayer."
   - ref: 哥林多前书 11:26
     refEn: 1 Corinthians 11:26
     text:
-      zh: 你们每逢吃这饼，喝这杯，是表明主的死，直等到他来。
-      en: For as often as you eat this bread and drink this cup, you proclaim the Lord’s death until he comes.
+      zh: "你们每逢吃这饼，喝这杯，是表明主的死，直等到他来。"
+      en: "For as often as you eat this bread and drink this cup, you proclaim the Lord’s death until he comes."
 reflect:
   - zh: 有人说“我自己在家看圣经就好了，不需要去教会”。根据新约（如《使徒行传》2:42 和“基督的身体”的比喻），为什么基督徒需要群体？
     en: Some say, "I can follow Jesus alone at home without a church." In light of Acts 2:42 and Paul's image of "one body," why do believers need a community?
@@ -61,8 +61,8 @@ further:
 
 ## 基督徒需要教会 | Christians need the church
 
-在看重个人的今天，人很容易觉得：“信仰是我和神之间的私事，我自己在家读经就够了。”新约的说法不同：一个人信靠基督，就与元首基督连结，同时也成为**“基督的身体”（林前 12:12-27）**的一部分，成为**“神家里的人”（弗 2:19）**。<br>
-In a culture that prizes the individual, it is easy to think: "Faith is a private matter between me and God, and reading the Bible at home is enough." The New Testament says otherwise. A person who trusts Christ is joined to Christ the Head, and at the same time becomes part of **"the body of Christ" (1 Corinthians 12:12–27)** and a member of **"God's household" (Ephesians 2:19)**.
+在看重个人的今天，人很容易觉得：“信仰是我和神之间的私事，我自己在家读经就够了。”新约的说法不同：一个人信靠基督，就与元首基督连结，同时也成为**基督的身体（林前 12:12-27）**的一部分，成为**“神家里的人”（弗 2:19）**。<br>
+In a culture that prizes the individual, it is easy to think: "Faith is a private matter between me and God, and reading the Bible at home is enough." The New Testament says otherwise. A person who trusts Christ is joined to Christ the Head, and at the same time becomes part of **"the body of Christ" (1 Corinthians 12:12–27)** and a member of **"the household of God" (Ephesians 2:19)**.
 
 炉子里烧红的炭挤在一起能保持热度，单独夹出来放在地上，很快就凉了。新约里有许多“彼此”的命令，如彼此相爱、彼此担当、彼此劝勉。这些命令只有在实际的教会群体里才能实行。<br>
 A glowing coal stays hot among the others in the stove. Taken out alone and set on the ground, it soon cools. The New Testament has many "one another" commands, such as love one another, bear one another's burdens, and encourage one another. They can only be carried out in an actual church community.

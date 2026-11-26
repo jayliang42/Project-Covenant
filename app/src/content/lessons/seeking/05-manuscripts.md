@@ -15,13 +15,13 @@ scripture:
   - ref: 彼得后书 1:16
     refEn: 2 Peter 1:16
     text:
-      zh: 我们从前将我们主耶稣基督的大能和他降临的事告诉你们，并不是随从乖巧捏造的虚言，乃是亲眼见过他的威荣。
-      en: For we did not follow cunningly devised fables, when we made known to you the power and coming of our Lord Jesus Christ, but we were eyewitnesses of his majesty.
+      zh: "我们从前将我们主耶稣基督的大能和他降临的事告诉你们，并不是随从乖巧捏造的虚言，乃是亲眼见过他的威荣。"
+      en: "For we didn’t follow cunningly devised fables when we made known to you the power and coming of our Lord Jesus Christ, but we were eyewitnesses of his majesty."
   - ref: 约翰福音 20:30-31
     refEn: John 20:30-31
     text:
-      zh: 耶稣在门徒面前另外行了许多神迹，没有记在这书上。但记这些事，要叫你们信耶稣是基督，是神的儿子，并且叫你们信了他，就可以因他的名得生命。
-      en: Therefore Jesus did many other signs in the presence of his disciples, which are not written in this book; but these are written, that you may believe that Jesus is the Christ, the Son of God, and that believing you may have life in his name.
+      zh: "耶稣在门徒面前另外行了许多神迹，没有记在这书上。但记这些事要叫你们信耶稣是基督，是神的儿子，并且叫你们信了他，就可以因他的名得生命。"
+      en: "Therefore Jesus did many other signs in the presence of his disciples, which are not written in this book; but these are written, that you may believe that Jesus is the Christ, the Son of God, and that believing you may have life in his name."
 reflect:
   - zh: 抄本有成千上万份，分散在各地，彼此还有抄写上的差异。为什么这种情况比只有一个机构掌握唯一版本更难被人篡改？
     en: There are thousands of manuscripts, copied in different regions, with copying differences among them. Why is that harder to tamper with than a single copy held by one institution?

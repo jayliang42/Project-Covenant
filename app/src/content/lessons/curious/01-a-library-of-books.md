@@ -15,13 +15,13 @@ scripture:
   - ref: 路加福音 1:1-4
     refEn: Luke 1:1-4
     text:
-      zh: 提阿非罗大人哪，有好些人提笔作书，述说在我们中间所成就的事，是照传道的人从起初亲眼看见又传给我们的。这些事我既从起头都详细考察了，就定意要按着次序写给你，使你知道所学之道都是确实的。
-      en: Since many have undertaken to set in order a narrative of those matters which have been fulfilled among us, even as those who from the beginning were eyewitnesses and servants of the word delivered them to us, it seemed good to me also, having traced the course of all things accurately from the first, to write to you in order, most excellent Theophilus; that you might know the certainty concerning the things wherein you were instructed.
+      zh: "提阿非罗大人哪，有好些人提笔作书，述说在我们中间所成就的事，是照传道的人从起初亲眼看见又传给我们的。a这些事我既从起头都详细考察了，就定意要按着次序写给你，使你知道所学之道都是确实的。"
+      en: "Since many have undertaken to set in order a narrative concerning those matters which have been fulfilled among us, even as those who from the beginning were eyewitnesses and servants of the word delivered them to us, it seemed good to me also, having traced the course of all things accurately from the first, to write to you in order, most excellent Theophilus; that you might know the certainty concerning the things in which you were instructed."
   - ref: 提摩太后书 3:16
     refEn: 2 Timothy 3:16
     text:
-      zh: 圣经都是神所默示的，于教训、督责、使人归正、教导人学义都是有益的。
-      en: Every Scripture is God-breathed and profitable for teaching, for reproof, for correction, and for instruction which is in righteousness.
+      zh: "圣经都是神所默示的，于教训、督责、使人归正、教导人学义都是有益的，"
+      en: "Every Scripture is God-breathed and profitable for teaching, for reproof, for correction, and for instruction in righteousness,"
 reflect:
   - zh: 在读这一课之前，你以为圣经是一本怎样的书？
     en: Before this lesson, what kind of book did you picture the Bible to be?

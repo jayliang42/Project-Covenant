@@ -15,8 +15,8 @@ scripture:
   - ref: 马太福音 6:6-13
     refEn: Matthew 6:6-13
     text:
-      zh: 我们在天上的父：愿人都尊你的名为圣。愿你的国降临；愿你的旨意行在地上，如同行在天上。我们日用的饮食，今日赐给我们。免我们的债，如同我们免了人的债。不叫我们遇见试探；救我们脱离凶恶。
-      en: "Our Father in heaven, may your name be kept holy. Let your Kingdom come. Let your will be done on earth as it is in heaven. Give us today our daily bread. Forgive us our debts, as we also forgive our debtors. Bring us not into temptation, but deliver us from the evil one."
+      zh: "你祷告的时候，要进你的内屋，关上门，祷告你在暗中的父；你父在暗中察看，必然报答你。你们祷告，不可像外邦人，用许多重复话，他们以为话多了必蒙垂听。你们不可效法他们；因为你们没有祈求以先，你们所需用的，你们的父早已知道了。所以，你们祷告要这样说：我们在天上的父：愿人都尊你的名为圣。愿你的国降临；愿你的旨意行在地上，如同行在天上。我们日用的饮食，今日赐给我们。免我们的债，如同我们免了人的债。不叫我们遇见试探；救我们脱离凶恶。因为国度、权柄、荣耀，全是你的，直到永远。阿们！"
+      en: "But you, when you pray, enter into your inner room, and having shut your door, pray to your Father who is in secret, and your Father who sees in secret will reward you openly. In praying, don’t use vain repetitions, as the Gentiles do; for they think that they will be heard for their much speaking. Therefore don’t be like them, for your Father knows what things you need, before you ask him. Pray like this: ‘Our Father in heaven, may your name be kept holy. Let your Kingdom come. Let your will be done on earth as it is in heaven. Give us today our daily bread. Forgive us our debts, as we also forgive our debtors. Bring us not into temptation, but deliver us from the evil one. For yours is the Kingdom, the power, and the glory forever. Amen.’"
 reflect:
   - zh: 主祷文为什么先求“愿你的国降临”，后求“我们日用的饮食”？这个顺序给你什么启发？
     en: Why does the Lord's Prayer ask for God's kingdom before asking for daily bread? What do you learn from that order?

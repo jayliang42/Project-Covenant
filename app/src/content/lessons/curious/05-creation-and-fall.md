@@ -12,16 +12,11 @@ status: published
 review: draft
 art: garden-thorn
 scripture:
-  - ref: 创世记 1:27, 31
-    refEn: Genesis 1:27, 31
-    text:
-      zh: 神就照着自己的形像造人，乃是照着他的形像造男造女……神看着一切所造的都甚好。
-      en: God created man in his own image. In God’s image he created him; male and female he created them... God saw everything that he had made, and, behold, it was very good.
   - ref: 创世记 3:8-10
     refEn: Genesis 3:8-10
     text:
-      zh: 天起了凉风，耶和华神在园中行走。那人和他妻子听见神的声音，就藏在园里的树木中，躲避耶和华神的面。耶和华神呼唤那人，对他说：“你在哪里？”他说：“我在园中听见你的声音，我就害怕；因为我赤身露体，我便藏了。”
-      en: 'They heard the voice of Yahweh God walking in the garden in the cool of the day, and the man and his wife hid themselves from the presence of Yahweh God among the trees of the garden. Yahweh God called to the man, and said to him, "Where are you?" He said, "I heard your voice in the garden, and I was afraid, because I was naked; and I hid myself."'
+      zh: "天起了凉风，耶和华神在园中行走。那人和他妻子听见神的声音，就藏在园里的树木中，躲避耶和华神的面。耶和华神呼唤那人，对他说：“你在哪里？”他说：“我在园中听见你的声音，我就害怕；因为我赤身露体，我便藏了。”"
+      en: "They heard Yahweh God’s voice walking in the garden in the cool of the day, and the man and his wife hid themselves from the presence of Yahweh God among the trees of the garden. Yahweh God called to the man, and said to him, “Where are you?” The man said, “I heard your voice in the garden, and I was afraid, because I was naked; so I hid myself.”"
 reflect:
   - zh: 人有神的形像，却偏离了神。这两点怎样同时说明人的尊贵和人的败坏？
     en: Humans are made in God’s image, yet have turned away from God. How do these two facts together explain both human dignity and human cruelty?

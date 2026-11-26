@@ -12,16 +12,11 @@ status: published
 review: draft
 art: empty-tomb
 scripture:
-  - ref: 约翰福音 1:1, 14
-    refEn: John 1:1, 14
-    text:
-      zh: 太初有道，道与神同在，道就是神……道成了肉身，住在我们中间，充充满满地有恩典有真理。我们也见过他的荣光，正是父独生子的荣光。
-      en: In the beginning was the Word, and the Word was with God, and the Word was God... The Word became flesh, and lived among us. We saw his glory, such glory as of the one and only Son of the Father, full of grace and truth.
   - ref: 罗马书 4:25
     refEn: Romans 4:25
     text:
-      zh: 耶稣被交给人，是为我们的过犯；复活，是为叫我们称义。
-      en: He was delivered up for our trespasses, and was raised for our justification.
+      zh: "耶稣被交给人，是为我们的过犯；复活，是为叫我们称义。"
+      en: "who was delivered up for our trespasses, and was raised for our justification."
 reflect:
   - zh: 拯救人类的那一位，为什么必须既是完全的神（有能力拯救），又是完全的人（能代表人，体恤人的软弱）？
     en: Why did our Mediator need to be both truly God (able to save) and truly human (able to represent us and sympathize with our weakness)?
@@ -54,7 +49,7 @@ further:
   - label: { zh: "使徒信经双语导读", en: "Apostles' Creed (Bilingual Guide)" }
     path: Bible_Timeline/Apostles_Creed_Bilingual.md
     why: { zh: "逐句讲解信经第二段：基督降生、受难、复活、升天和再来，以及每句的经文根据。", en: "Explains the Creed's second section line by line: Christ's birth, suffering, resurrection, ascension, and return, with the Scripture behind each." }
-  - label: { zh: "基督——我们的大祭司（双语讲道研读笔记）", en: "Christ Our Great High Priest" }
+  - label: { zh: "基督是我们的大祭司（双语讲道研读笔记）", en: "Christ Our Great High Priest" }
     path: Bilingual_Notes/2026-02-04_Wednesday_Christ_Our_Great_High_Priest.md
     why: { zh: "根据希伯来书讲解：耶稣是替我们献上的羔羊，也是如今在天父右边体恤我们软弱的大祭司。", en: "Shows from Hebrews that Jesus is the once-for-all sacrifice and also the Great High Priest who sympathizes with us today." }
 ---
@@ -73,7 +68,7 @@ The center of Christianity is the redemption God accomplished for us in history 
 John 1:14 says, "The Word became flesh, and lived among us." The eternal Son was born as a man through the virgin Mary. He did not lay aside his deity, and the humanity he took was real, with a human body and soul.
 
 这为什么重要？早期教父常这样总结：**只有完全的人，才能真实地代表人类顺服神，在十字架上替人受死，并体恤我们的软弱（来 4:15）。只有完全的神，才能胜过死亡，担当世人的罪，把永生赐给人。**<br>
-Why does this matter? The early church fathers often summed it up this way: **only one who is fully human can truly represent humanity in obeying God, die on the cross in our place, and sympathize with our weaknesses (Hebrews 4:15). Only one who is fully God can overcome death, bear the sins of the world, and give eternal life.**
+Why does this matter? The early church fathers often summed it up this way: **only one who is fully human can represent humanity in obeying God, die on the cross in our place, and sympathize with our weaknesses (Hebrews 4:15). Only one who is fully God can overcome death, bear the sins of the world, and give eternal life.**
 
 ## 十字架与复活 | The cross and the resurrection
 

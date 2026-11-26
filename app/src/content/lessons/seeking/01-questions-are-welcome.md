@@ -15,18 +15,18 @@ scripture:
   - ref: 约翰福音 1:45-46
     refEn: John 1:45-46
     text:
-      zh: 腓力找着拿但业，对他说：“摩西在律法上所写的和众先知所记的那一位，我们遇见了，就是约瑟的儿子拿撒勒人耶稣。”拿但业对他说：“拿撒勒还能出什么好的吗？”腓力说：“你来看！”
-      en: 'Philip found Nathanael, and said to him, "We have found him, of whom Moses in the law, and the prophets, wrote: Jesus of Nazareth, the son of Joseph." Nathanael said to him, "Can any good thing come out of Nazareth?" Philip said to him, "Come and see!"'
+      zh: "腓力找着拿但业，对他说：“摩西在律法上所写的和众先知所记的那一位，我们遇见了，就是约瑟的儿子拿撒勒人耶稣。”拿但业对他说：“拿撒勒还能出什么好的吗？”腓力说：“你来看！”"
+      en: "Philip found Nathanael, and said to him, “We have found him, of whom Moses in the law, and the prophets, wrote: Jesus of Nazareth, the son of Joseph.” Nathanael said to him, “Can any good thing come out of Nazareth?” Philip said to him, “Come and see.”"
   - ref: 马可福音 9:24
     refEn: Mark 9:24
     text:
-      zh: 孩子的父亲立时喊着说：“我信！但我信不足，求主帮助。”
-      en: 'Immediately the father of the child cried out with tears, "I believe. Help my unbelief!"'
+      zh: "孩子的父亲立时喊着说：“我信！但我信不足，求主帮助。”"
+      en: "Immediately the father of the child cried out with tears, “I believe. Help my unbelief!”"
   - ref: 约翰福音 20:24-29
     refEn: John 20:24-29
     text:
-      zh: 过了八日，门徒又在屋里，多马也和他们同在。门都关了。耶稣来站在当中说：“愿你们平安！”就对多马说：“伸过你的指头来，摸我的手；伸出你的手来，探入我的肋旁。不要疑惑，总要信！”
-      en: 'After eight days, his disciples were inside again, and Thomas was with them. Jesus came, the doors being locked, and stood in the midst, and said, "Peace be to you." Then he said to Thomas, "Reach here your finger, and see my hands. Reach here your hand, and put it into my side. Don’t be unbelieving, but believing."'
+      zh: "那十二个门徒中，有称为低土马的多马；耶稣来的时候，他没有和他们同在。那些门徒就对他说：“我们已经看见主了。”多马却说：“我非看见他手上的钉痕，用指头探入那钉痕，又用手探入他的肋旁，我总不信。”过了八日，门徒又在屋里，多马也和他们同在，门都关了。耶稣来，站在当中说：“愿你们平安！”就对多马说：“伸过你的指头来，摸我的手；伸出你的手来，探入我的肋旁。不要疑惑，总要信！”多马说：“我的主！我的神！”耶稣对他说：“你因看见了我才信；那没有看见就信的有福了。”"
+      en: "But Thomas, one of the twelve, called Didymus, wasn’t with them when Jesus came. The other disciples therefore said to him, “We have seen the Lord!” But he said to them, “Unless I see in his hands the print of the nails, put my finger into the print of the nails, and put my hand into his side, I will not believe.” After eight days again his disciples were inside and Thomas was with them. Jesus came, the doors being locked, and stood in the middle, and said, “Peace be to you.” Then he said to Thomas, “Reach here your finger, and see my hands. Reach here your hand, and put it into my side. Don’t be unbelieving, but believing.” Thomas answered him, “My Lord and my God!” Jesus said to him, “Because you have seen me, you have believed. Blessed are those who have not seen, and have believed.”"
 reflect:
   - zh: 你现在对基督教信仰最大的一两个疑问是什么？试着具体写下来。
     en: What are your one or two biggest questions about the Christian faith right now? Try writing them down plainly.

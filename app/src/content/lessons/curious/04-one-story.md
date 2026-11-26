@@ -15,13 +15,13 @@ scripture:
   - ref: 创世记 1:1
     refEn: Genesis 1:1
     text:
-      zh: 起初，神创造天地。
-      en: In the beginning, God created the heavens and the earth.
+      zh: "起初，神创造天地。"
+      en: "In the beginning, God created the heavens and the earth."
   - ref: 启示录 21:3-4
     refEn: Revelation 21:3-4
     text:
-      zh: 我听见有大声音从宝座出来说：“看哪，神的帐幕在人间。他要与人同住，他们要作他的子民。神要亲自与他们同在，作他们的神。神要擦去他们一切的眼泪；不再有死亡，也不再有悲哀、哭号、疼痛，因为以前的事都过去了。”
-      en: 'I heard a loud voice out of the throne saying, "Behold, God’s dwelling is with men, and he will dwell with them, and they will be his people, and God himself will be with them as their God. He will wipe away from them every tear from their eyes. Death will be no more; neither will there be mourning, nor crying, nor pain, anymore. The first things have passed away."'
+      zh: "我听见有大声音从宝座出来说：“看哪，神的帐幕在人间。他要与人同住，他们要作他的子民。神要亲自与他们同在，作他们的神。神要擦去他们一切的眼泪；不再有死亡，也不再有悲哀、哭号、疼痛，因为以前的事都过去了。”"
+      en: "I heard a loud voice out of heaven saying, “Behold, God’s dwelling is with people, and he will dwell with them, and they will be his people, and God himself will be with them as their God. He will wipe away every tear from their eyes. Death will be no more; neither will there be mourning, nor crying, nor pain, any more. The first things have passed away.”"
 reflect:
   - zh: 把圣经当成一出六幕剧来读，和把它当成一堆道德格言来读，有什么不同？
     en: What changes when you read the Bible as a six-act drama, compared with reading it as a collection of moral sayings?

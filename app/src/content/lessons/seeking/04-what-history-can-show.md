@@ -15,13 +15,13 @@ scripture:
   - ref: 路加福音 2:1-2
     refEn: Luke 2:1-2
     text:
-      zh: 当那些日子，凯撒奥古斯都有旨意下来，叫天下人民都报名上册。这是居里扭作叙利亚巡抚的时候，头一次行报名上册的事。
-      en: Now in those days, a decree went out from Caesar Augustus that all the world should be enrolled. This was the first enrollment made when Quirinius was governor of Syria.
+      zh: "当那些日子，凯撒奥古斯都有旨意下来，叫天下人民都报名上册。这是居里扭作叙利亚巡抚的时候，头一次行报名上册的事。"
+      en: "Now in those days, a decree went out from Caesar Augustus that all the world should be enrolled. This was the first enrollment made when Quirinius was governor of Syria."
   - ref: 哥林多前书 15:3-8
     refEn: 1 Corinthians 15:3-8
     text:
-      zh: 我当日所领受又传给你们的，第一，就是基督照圣经所说，为我们的罪死了，而且埋葬了；又照圣经所说，第三天复活了；并且显给矶法看，然后显给十二使徒看；后来一时显给五百多弟兄看，其中一大半到如今还在，却也有已经睡了的。
-      en: For I delivered to you first of all that which I also received, that Christ died for our sins according to the Scriptures, that he was buried, that he was raised on the third day according to the Scriptures, and that he appeared to Cephas, then to the twelve. Then he appeared to over five hundred brothers at once, most of whom remain until now, but some have also fallen asleep.
+      zh: "我当日所领受又传给你们的：第一，就是基督照圣经所说，为我们的罪死了，而且埋葬了；又照圣经所说，第三天复活了，并且显给矶法看，然后显给十二使徒看；后来一时显给五百多弟兄看，其中一大半到如今还在，却也有已经睡了的。以后显给雅各看，再显给众使徒看，末了也显给我看；我如同未到产期而生的人一般。"
+      en: "For I delivered to you first of all that which I also received: that Christ died for our sins according to the Scriptures, that he was buried, that he was raised on the third day according to the Scriptures, and that he appeared to Cephas, then to the twelve. Then he appeared to over five hundred brothers at once, most of whom remain until now, but some have also fallen asleep. Then he appeared to James, then to all the apostles, and last of all, as to the child born at the wrong time, he appeared to me also."
 reflect:
   - zh: 为什么圣经作者总是把事件放在具体的皇帝、省长、城池年代里来写？
     en: Why do biblical writers repeatedly anchor events in the reigns of named emperors, governors, and cities?

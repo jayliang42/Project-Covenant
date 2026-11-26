@@ -12,19 +12,14 @@ status: published
 review: draft
 art: table-fellowship
 scripture:
-  - ref: 提摩太后书 2:15, 24-25
-    refEn: 2 Timothy 2:15, 24-25
-    text:
-      zh: 你当竭力在神面前得蒙喜悦，作无愧的工人，按着正意分解真理的道……然而主的仆人不可争竞，只要温温和和地待众人，善于教导，存心忍耐，用温柔劝戒那抵挡的人。
-      en: Give diligence to present yourself approved by God, a workman who doesn’t need to be ashamed, properly handling the word of truth... The Lord’s servant must not quarrel, but be gentle toward all, able to teach, patient, in gentleness correcting those who oppose him.
   - ref: 歌罗西书 3:16
     refEn: Colossians 3:16
     text:
-      zh: 当用各样的智慧，把基督的道理丰丰富富地存在心里，用诗章、颂词、灵歌，彼此教导，互相劝诫，心被恩感，歌颂神。
-      en: Let the word of Christ dwell in you richly; in all wisdom teaching and admonishing one another with psalms, hymns, and spiritual songs, singing with grace in your hearts to the Lord.
+      zh: "当用各样的智慧，把基督的道理丰丰富富地存在心里，用诗章、颂词、灵歌，彼此教导，互相劝戒，心被恩感，歌颂神。"
+      en: "Let the word of Christ dwell in you richly; in all wisdom teaching and admonishing one another with psalms, hymns, and spiritual songs, singing with grace in your heart to the Lord."
 reflect:
   - zh: 回想你参加过印象最好的一次小组查经：带领者做了什么，让你既看清了经文的意思，又敢于说出真实的想法？
-    en: "Think back to the best small-group Bible study you have attended: what did the leader do that helped people both see the text clearly and speak honestly?"
+    en: "Think back to the best small-group Bible study you have attended: what did the leader do that helped people both see the text clearly and speak openly?"
   - zh: 当有人在查经时提出一个尖锐的问题或跑题的观点时，怎样既温柔尊重对方，又把大家的注意力带回经文本身？
     en: When someone raises a sharp question or drifts off topic in a group, how can you respond warmly and still bring the group back to the passage?
 check:

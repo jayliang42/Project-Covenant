@@ -15,13 +15,13 @@ scripture:
   - ref: 诗篇 1:1-3
     refEn: Psalm 1:1-3
     text:
-      zh: 惟喜爱耶和华的律法，昼夜思想，这人便为有福！他要像一棵树栽在溪水旁，按时候结果子，叶子也不枯干。
-      en: His delight is in Yahweh’s law. On his law he meditates day and night. He will be like a tree planted by the streams of water, that produces its fruit in its season, whose leaf also does not wither.
+      zh: "不从恶人的计谋，不站罪人的道路，不坐亵慢人的座位，惟喜爱耶和华的律法，昼夜思想，这人便为有福！他要像一棵树栽在溪水旁，按时候结果子，叶子也不枯干。凡他所做的尽都顺利。"
+      en: "Blessed is the man who doesn’t walk in the counsel of the wicked, nor stand on the path of sinners, nor sit in the seat of scoffers; but his delight is in Yahweh’s law. On his law he meditates day and night. He will be like a tree planted by the streams of water, that produces its fruit in its season, whose leaf also does not wither. Whatever he does shall prosper."
   - ref: 雅各书 1:22
     refEn: James 1:22
     text:
-      zh: 只是你们要行道，不要单单听道，自己欺哄自己。
-      en: But be doers of the word, and not only hearers, deluding your own selves.
+      zh: "只是你们要行道，不要单单听道，自己欺哄自己。"
+      en: "But be doers of the word, and not only hearers, deluding your own selves."
 reflect:
   - zh: 在你现在的一天里，哪一个 10 分钟最安静、最容易固定下来读一段经文？
     en: In your current daily routine, which ten-minute window is quietest and easiest to protect for reading a short passage?

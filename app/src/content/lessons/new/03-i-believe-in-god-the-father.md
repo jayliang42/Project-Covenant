@@ -15,13 +15,13 @@ scripture:
   - ref: 马太福音 28:19
     refEn: Matthew 28:19
     text:
-      zh: 所以，你们要去，使万民作我的门徒，奉父、子、圣灵的名给他们施洗。
-      en: Go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit.
+      zh: "所以，你们要去，使万民作我的门徒，奉父、子、圣灵的名给他们施洗。"
+      en: "Go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit,"
   - ref: 约翰一书 4:8-10
     refEn: 1 John 4:8-10
     text:
-      zh: 没有爱心的，就不认识神，因为神就是爱。神差他独生子到世间来，使我们借着他得生，神爱我们的心在此就显明了。不是我们爱神，乃是神爱我们，差他的儿子为我们的罪作了挽回祭，这就是爱了。
-      en: He who doesn’t love doesn’t know God, for God is love. By this God’s love was revealed in us, that God has sent his one and only Son into the world that we might live through him. In this is love, not that we loved God, but that he loved us, and sent his Son as the atoning sacrifice for our sins.
+      zh: "没有爱心的，就不认识神，因为神就是爱。神差他独生子到世间来，使我们借着他得生，神爱我们的心在此就显明了。不是我们爱神，乃是神爱我们，差他的儿子为我们的罪作了挽回祭，这就是爱了。"
+      en: "He who doesn’t love doesn’t know God, for God is love. By this God’s love was revealed in us, that God has sent his one and only Son into the world that we might live through him. In this is love, not that we loved God, but that he loved us, and sent his Son as the atoning sacrifice for our sins."
 reflect:
   - zh: 神从永远就是父、子、圣灵彼此相爱的三一真神。这怎样说明爱在创造世界之前就有，是万物的源头？
     en: God has always been Father, Son, and Spirit in mutual love. How does this show that love existed before the world was made and is the source of all things?

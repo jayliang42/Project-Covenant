@@ -15,13 +15,13 @@ scripture:
   - ref: 以赛亚书 40:8
     refEn: Isaiah 40:8
     text:
-      zh: 草必枯干，花必凋残，惟有我们神的话必永远立定。
-      en: The grass withers, the flower fades; but the word of our God stands forever.
+      zh: "草必枯干，花必凋残，惟有我们神的话必永远立定。"
+      en: "The grass withers, the flower fades; but the word of our God stands forever.”"
   - ref: 尼希米记 8:8
     refEn: Nehemiah 8:8
     text:
-      zh: 他们清清楚楚地念神的律法书，讲明意思，使百姓明白所念的。
-      en: They read in the book, in the law of God, distinctly; and they gave the sense, so that they understood the reading.
+      zh: "他们清清楚楚地念神的律法书，讲明意思，使百姓明白所念的。"
+      en: "They read in the book, in the law of God, distinctly; and they gave the sense, so that they understood the reading."
 reflect:
   - zh: 圣经是经过历代文士抄写、核对和翻译才传到今天的。知道这一点，你对它有什么新的认识？
     en: How does knowing that the Bible came down through centuries of careful copying, comparison, and translation shape the way you view it?

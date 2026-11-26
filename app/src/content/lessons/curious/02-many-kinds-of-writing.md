@@ -15,13 +15,13 @@ scripture:
   - ref: 诗篇 23:1-2
     refEn: Psalm 23:1-2
     text:
-      zh: 耶和华是我的牧者，我必不至缺乏。他使我躺卧在青草地上，领我在可安歇的水边。
-      en: Yahweh is my shepherd; I shall lack nothing. He makes me lie down in green pastures. He leads me beside still waters.
+      zh: "耶和华是我的牧者，我必不致缺乏。他使我躺卧在青草地上，领我在可安歇的水边。"
+      en: "Yahweh is my shepherd: I shall lack nothing. He makes me lie down in green pastures. He leads me beside still waters."
   - ref: 箴言 15:1
     refEn: Proverbs 15:1
     text:
-      zh: 回答柔和，使怒消退；言语暴戾，触动怒气。
-      en: A gentle answer turns away wrath, but a harsh word stirs up anger.
+      zh: "回答柔和，使怒消退；言语暴戾，触动怒气。"
+      en: "A gentle answer turns away wrath, but a harsh word stirs up anger."
 reflect:
   - zh: 如果把一首比喻性的诗歌当成工程说明书来读，或者把一段历史记录当成可直接照搬的命令来读，会发生什么？
     en: What happens if we read a metaphorical poem like an engineering manual, or treat every historical event as a direct command to imitate?
