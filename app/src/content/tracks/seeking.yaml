@@ -10,10 +10,10 @@ art: wanderer-home
 units:
   - id: big-questions
     title: { zh: 大问题, en: The big questions }
-    summary: { zh: 神、苦难、意义, en: "God, suffering, meaning" }
+    summary: { zh: 神、苦难、宗教和科学, en: "God, suffering, religions, and science" }
   - id: history
     title: { zh: 历史与证据, en: History and evidence }
     summary: { zh: 证据能说明什么，不能说明什么, en: What evidence can and cannot show }
   - id: invitation
     title: { zh: 福音的邀请, en: The gospel invitation }
-    summary: { zh: 信是什么意思, en: What it means to believe }
+    summary: { zh: 罪、恩典、信和跟随, en: "Sin, grace, faith, and following Jesus" }

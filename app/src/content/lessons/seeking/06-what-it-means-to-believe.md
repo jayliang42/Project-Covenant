@@ -6,7 +6,7 @@ summary:
   zh: 圣经里的“信”包含知道、认同和信靠三层意思，最后落在把自己托付给基督。
   en: In Scripture, faith includes knowing, agreeing, and trusting, and it ends in entrusting yourself to Christ.
 unit: invitation
-order: 1
+order: 3
 minutes: 6
 status: published
 review: draft
