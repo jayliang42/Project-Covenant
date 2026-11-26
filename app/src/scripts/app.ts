@@ -296,6 +296,38 @@ const RELATED_BRIDGES: Record<string, { id: string; reason: Text }[]> = {
     { id: 'curious/12-why-the-cross', reason: { zh: '相关一课 · 耶稣为什么死在十字架上', en: "Related lesson · Why Jesus died on the cross" } },
     { id: 'seeking/09-did-jesus-rise', reason: { zh: '想查证 · 历史学家怎样看复活的证据', en: "Checking the evidence · How historians weigh the resurrection" } },
   ],
+  'curious/16-the-birth-of-jesus': [
+    { id: 'new/04-jesus-christ-his-only-son', reason: { zh: '读深一点 · 信经怎样讲耶稣', en: "Going deeper · What the creed says about Jesus" } },
+    { id: 'seeking/04-what-history-can-show', reason: { zh: '想查证 · 历史和考古能说明什么', en: "Checking the evidence · What history and archaeology can show" } },
+  ],
+  'curious/17-miracles-of-jesus': [
+    { id: 'seeking/08-science-and-faith', reason: { zh: '想查证 · 科学和信仰一定冲突吗', en: "Checking the evidence · Must science and faith conflict?" } },
+    { id: 'new/21-mark-1-who-is-this', reason: { zh: '动手做 · 读马可福音前八章', en: "Try it · Read Mark 1–8" } },
+  ],
+  'curious/18-people-jesus-met': [
+    { id: 'seeking/06-what-it-means-to-believe', reason: { zh: '接着想 · “信”是什么意思', en: "Thinking further · What it means to believe" } },
+    { id: 'seeking/12-grace', reason: { zh: '接着想 · 恩典', en: "Thinking further · Grace" } },
+  ],
+  'curious/19-the-lost-son': [
+    { id: 'seeking/12-grace', reason: { zh: '接着想 · 为什么得救不能靠自己挣', en: "Thinking further · Why salvation can't be earned" } },
+    { id: 'seeking/11-what-is-sin', reason: { zh: '接着想 · 圣经说的“罪”', en: "Thinking further · What the Bible means by sin" } },
+  ],
+  'curious/20-the-last-week': [
+    { id: 'new/23-mark-3-jerusalem', reason: { zh: '动手做 · 读马可福音 11–13 章', en: "Try it · Read Mark 11–13" } },
+    { id: 'deeper/18-understanding-the-atonement', reason: { zh: '读深一点 · 十字架成就了什么', en: "Going deeper · What the cross accomplished" } },
+  ],
+  'curious/21-david-and-the-psalms': [
+    { id: 'deeper/07-reading-psalms-and-wisdom', reason: { zh: '读深一点 · 怎样读诗篇和智慧书', en: "Going deeper · Reading the Psalms and wisdom books" } },
+    { id: 'deeper/01-covenant-thread', reason: { zh: '读深一点 · 圣约主线里的大卫之约', en: "Going deeper · The covenant with David in the covenant thread" } },
+  ],
+  'curious/22-feasts-of-israel': [
+    { id: 'deeper/06-god-dwelling-with-people', reason: { zh: '读深一点 · 圣殿主线', en: "Going deeper · The temple thread" } },
+    { id: 'new/05-baptism-and-communion', reason: { zh: '相关一课 · 圣餐和逾越节', en: "Related lesson · Communion and Passover" } },
+  ],
+  'curious/23-common-words': [
+    { id: 'seeking/11-what-is-sin', reason: { zh: '接着想 · 圣经说的“罪”', en: "Thinking further · What the Bible means by sin" } },
+    { id: 'seeking/06-what-it-means-to-believe', reason: { zh: '接着想 · “信”是什么意思', en: "Thinking further · What it means to believe" } },
+  ],
 };
 
 const data: { tracks: TrackInfo[] } = JSON.parse(document.getElementById('app-data')?.textContent || '{"tracks":[]}');
