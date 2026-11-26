@@ -39,7 +39,7 @@ const { Content } = await render(lesson);
         {d.review === 'draft'
           ? <span class="badge draft" title="AI draft; not human reviewed"><T zh="草稿 · 待人工审阅" en="Draft · not yet reviewed" /></span>
           : d.review === 'checked'
-            ? <span class="badge checked" title="Reviewed and fact-checked by AI against Scripture and public sources; not yet reviewed by a person"><T zh="AI 已审阅核对" en="Checked by AI" /></span>
+            ? <span class="badge checked" title="Reviewed and fact-checked by AI against Scripture and public sources"><T zh="AI 已审阅核对" en="Checked by AI" /></span>
             : <span class="badge reviewed"><T zh="已人工审阅" en="Reviewed by a person" /></span>}
       </p>
     </header>
