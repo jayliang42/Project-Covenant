@@ -39,7 +39,7 @@ check:
       - { zh: "说门徒夜里来把尸体偷走了", en: "Say that the disciples came at night and stole the body" }
       - { zh: "说坟墓找错了", en: "Say that everyone went to the wrong tomb" }
     answer: 1
-    explain: { zh: "《马太福音》28:12-15 记下了这个说法。值得注意的是，这个说法本身也承认坟墓是空的。", en: "Matthew 28:12–15 records this story. Notice that the story itself admits the tomb was empty." }
+    explain: { zh: "《马太福音》28:12-15 记下了这个说法。这个说法本身也承认坟墓是空的。", en: "Matthew 28:12–15 records this story. The story itself admits the tomb was empty." }
 further:
   - label: { zh: "复活与早期见证：文本史与历史研究边界", en: "Resurrection and Early Witnesses: Textual History and Historical Boundaries" }
     path: Bible_Timeline/复活与早期见证_文本史与历史研究边界.md

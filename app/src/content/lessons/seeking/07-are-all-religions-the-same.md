@@ -69,8 +69,8 @@ When you set the major religions side by side, you find that they answer some ba
 - **出路在哪里？** 许多宗教要人靠修行、行善或遵守规条，一步步往上走。基督教说，神亲自来到人中间，人得救靠的是神的恩典。<br>
   **What is the way out?** Many religions ask people to climb step by step through spiritual discipline, good deeds, or keeping rules. Christianity says God himself came down to us, and people are saved by his grace.
 
-这些回答不能同时都对。说“所有宗教都一样”，听起来很宽容，其实是没有认真看待每个宗教自己说了什么。<br>
-These answers cannot all be right at the same time. Saying “all religions are the same” sounds generous, but it does not take seriously what each religion says about itself.
+这些回答不能同时都对。说“所有宗教都一样”听起来很宽容。可是这样说，就没有认真听每个宗教自己说了什么。<br>
+These answers cannot all be right at the same time. Saying “all religions are the same” sounds generous. Yet it ignores what each religion says about itself.
 
 ## 耶稣的说法 | What Jesus claimed
 

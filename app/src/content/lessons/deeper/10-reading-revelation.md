@@ -60,7 +60,7 @@ further:
 Revelation describes itself in several ways at the start: it is “the Revelation of Jesus Christ” (Revelation 1:1), it is “prophecy” (Revelation 1:3), and it is a letter to “the seven assemblies that are in Asia” (Revelation 1:4).
 
 “启示文学”是当时犹太人熟悉的一种文体，《但以理书》后半部也有这种写法。它用异象、数字、怪兽和天上的景象来讲历史的真相，特别是在受压迫的时候，告诉读者神仍然掌权。<br>
-Apocalyptic writing was a form familiar to Jews of the time. The second half of Daniel is written this way too. It uses visions, numbers, beasts, and heavenly scenes to show what is really going on in history, especially in times of oppression, and tells readers that God is still in control.
+Apocalyptic writing was a form familiar to Jews of the time. The second half of Daniel is written this way too. It uses visions, numbers, beasts, and heavenly scenes to show what is happening in history, especially in times of oppression, and tells readers that God is still in control.
 
 大多数学者认为这卷书写于主后 1 世纪末，罗马皇帝图密善在位的时候，也有学者认为更早。当时七个教会有的受逼迫，有的被罗马社会同化，有的冷淡（启 2–3 章）。<br>
 Most scholars date the book to the end of the 1st century AD, during the reign of the emperor Domitian, though some date it earlier. At the time, some of the seven churches were being persecuted, some were blending into Roman society, and some had grown lukewarm (Revelation 2–3).
