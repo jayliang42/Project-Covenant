@@ -9,7 +9,7 @@ unit: core
 order: 1
 minutes: 7
 status: published
-review: draft
+review: checked
 art: triune-light
 scripture:
   - ref: 马太福音 28:19

@@ -9,7 +9,7 @@ unit: big-questions
 order: 3
 minutes: 7
 status: published
-review: draft
+review: checked
 art: abraham-stars
 scripture:
   - ref: 诗篇 19:1-2

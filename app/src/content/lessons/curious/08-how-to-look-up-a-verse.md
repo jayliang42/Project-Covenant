@@ -9,7 +9,7 @@ unit: what-is-it
 order: 4
 minutes: 5
 status: published
-review: draft
+review: checked
 art: lamp-path
 scripture:
   - ref: 诗篇 119:105

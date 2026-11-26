@@ -9,7 +9,7 @@ unit: daily
 order: 3
 minutes: 6
 status: published
-review: draft
+review: checked
 art: open-hands
 scripture:
   - ref: 诗篇 32:5

@@ -9,7 +9,7 @@ unit: daily
 order: 1
 minutes: 6
 status: published
-review: draft
+review: checked
 art: daily-bread
 scripture:
   - ref: 诗篇 1:1-3

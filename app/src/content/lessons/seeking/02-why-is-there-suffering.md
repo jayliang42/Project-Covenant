@@ -9,7 +9,7 @@ unit: big-questions
 order: 2
 minutes: 7
 status: published
-review: draft
+review: checked
 art: whirlwind
 scripture:
   - ref: 诗篇 34:18

@@ -9,7 +9,7 @@ unit: church
 order: 4
 minutes: 6
 status: published
-review: draft
+review: checked
 art: voices-together
 scripture:
   - ref: 彼得前书 3:15

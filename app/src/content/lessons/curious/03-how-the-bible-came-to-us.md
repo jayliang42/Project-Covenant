@@ -9,7 +9,7 @@ unit: what-is-it
 order: 3
 minutes: 6
 status: published
-review: draft
+review: checked
 art: scribe-copying
 scripture:
   - ref: 以赛亚书 40:8
@@ -77,8 +77,8 @@ In 1947 the **Dead Sea Scrolls** were found in caves at Qumran, by the Dead Sea.
 
 ## 翻译成中文和英文 | Translation into Chinese and English
 
-今天的中文和英文圣经，是学者直接从希伯来文、亚兰文和希腊文的校勘底本翻译的，没有经过别的语言转译。翻译大致有两种取向：<br>
-Today's Chinese and English Bibles are translated by scholars directly from critical editions of the Hebrew, Aramaic, and Greek texts, with no other language in between. Translations lean one of two ways:
+近几十年出版的主要中英文译本，多数是学者根据希伯来文、亚兰文和希腊文的校勘本直接翻译的。最常用的中文《和合本》（1919）情况不同：它以英文《修订本》（English Revised Version）为基础，再用原文核对。翻译大致有两种取向：<br>
+Most major Chinese and English translations of recent decades were made by scholars directly from critical editions of the Hebrew, Aramaic, and Greek texts. The widely used Chinese Union Version (1919) is different: it took the English Revised Version as its base and checked it against the original languages. Translations lean one of two ways:
 
 - **偏重字面对应（Formal equivalence）**：尽量保留原文的句式和词序，适合细读和比对。<br>
   **Word-for-word (formal equivalence)**: Keeps the original phrasing and word order as far as possible. Good for close study and comparison.

@@ -9,7 +9,7 @@ unit: core
 order: 4
 minutes: 7
 status: published
-review: draft
+review: checked
 art: triune-light
 scripture:
   - ref: 申命记 6:4

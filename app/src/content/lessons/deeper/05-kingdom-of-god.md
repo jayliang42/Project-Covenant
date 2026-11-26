@@ -9,7 +9,7 @@ unit: whole-bible
 order: 3
 minutes: 8
 status: published
-review: draft
+review: checked
 art: royal-scepter
 scripture:
   - ref: 但以理书 2:44

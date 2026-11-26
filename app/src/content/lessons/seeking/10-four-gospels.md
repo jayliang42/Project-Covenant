@@ -9,7 +9,7 @@ unit: history
 order: 4
 minutes: 7
 status: published
-review: draft
+review: checked
 art: four-clocks
 scripture:
   - ref: 路加福音 1:1-4
@@ -54,8 +54,8 @@ further:
 新约开头有四本书讲耶稣的一生：马太、马可、路加、约翰。教会从很早就同时使用这四本，没有把它们合并成一本。<br>
 The New Testament opens with four books about Jesus' life: Matthew, Mark, Luke, and John. From very early on the church used all four side by side and did not merge them into one.
 
-关于写作年代，学者的看法不完全一样。比较常见的说法是：《马可福音》大约写于主后 60 年代后期，《马太福音》和《路加福音》在 70–80 年代，《约翰福音》在 90 年代。也有学者认为它们写得更早。即使按较晚的说法，离耶稣受难也只有几十年，当时还有亲眼见过耶稣的人活着。<br>
-Scholars do not all agree on the dates. A common view is that Mark was written in the late 60s AD, Matthew and Luke in the 70s or 80s, and John in the 90s. Some scholars date them earlier. Even on the later dates, they were written within a few decades of Jesus' death, while people who had seen him were still alive.
+关于写作年代，学者的看法不完全一样。多数学者的看法是：《马可福音》大约写于主后 70 年前后，《马太福音》和《路加福音》在 80 年代前后，《约翰福音》在 90 年代。也有学者认为它们写得更早。即使按较晚的说法，离耶稣受难也只有几十年，至少前几本写成时，还有亲眼见过耶稣的人在世。<br>
+Scholars do not all agree on the dates. The majority view is that Mark was written around AD 70, Matthew and Luke around the 80s, and John in the 90s. Some scholars date them earlier. Even on the later dates, they were written within a few decades of Jesus' death, and at least the earlier ones while people who had seen him were still alive.
 
 路加在书的开头说，他“从起头都详细考察了”，要按次序写下来，使读者“知道所学之道都是确实的”（路 1:3-4）。<br>
 Luke says at the start of his book that he “traced the course of all things accurately from the first” and wrote in order so that his reader might “know the certainty” of what he had been taught (Luke 1:3–4).

@@ -9,7 +9,7 @@ unit: big-story
 order: 1
 minutes: 6
 status: published
-review: draft
+review: checked
 art: story-procession
 scripture:
   - ref: 创世记 1:1

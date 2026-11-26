@@ -9,7 +9,7 @@ unit: leading
 order: 1
 minutes: 8
 status: published
-review: draft
+review: checked
 art: table-fellowship
 scripture:
   - ref: 歌罗西书 3:16

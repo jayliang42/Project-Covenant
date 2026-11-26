@@ -9,7 +9,7 @@ unit: jesus
 order: 2
 minutes: 6
 status: published
-review: draft
+review: checked
 art: mount-teaching
 scripture:
   - ref: 马太福音 5:3-6

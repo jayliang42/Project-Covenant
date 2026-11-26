@@ -9,7 +9,7 @@ unit: story-end
 order: 1
 minutes: 6
 status: published
-review: draft
+review: checked
 art: pentecost
 scripture:
   - ref: 使徒行传 1:8

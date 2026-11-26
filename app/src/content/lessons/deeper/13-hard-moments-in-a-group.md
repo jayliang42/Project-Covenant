@@ -9,7 +9,7 @@ unit: leading
 order: 2
 minutes: 8
 status: published
-review: draft
+review: checked
 art: shared-yoke
 scripture:
   - ref: 雅各书 1:19

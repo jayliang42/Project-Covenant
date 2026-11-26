@@ -220,6 +220,34 @@ const RELATED_BRIDGES: Record<string, { id: string; reason: Text }[]> = {
     { id: 'deeper/04-leading-a-study', reason: { zh: '相关一课 · 怎样带查经', en: 'Related lesson · How to lead a study' } },
     { id: 'new/07-doubt-and-temptation', reason: { zh: '相关一课 · 有疑惑的时候', en: 'Related lesson · When doubts come' } },
   ],
+  'deeper/14-early-church-and-creeds': [
+    { id: 'new/09-one-god-three-persons', reason: { zh: '相关一课 · 三位一体', en: 'Related lesson · The Trinity' } },
+    { id: 'deeper/15-the-reformation', reason: { zh: '接着读 · 宗教改革', en: 'Next · The Reformation' } },
+  ],
+  'deeper/15-the-reformation': [
+    { id: 'deeper/17-justification-and-sanctification', reason: { zh: '读深一点 · 称义和成圣', en: 'Going deeper · Justification and sanctification' } },
+    { id: 'deeper/16-the-bible-in-chinese', reason: { zh: '接着读 · 中文圣经的历史', en: 'Next · The history of the Chinese Bible' } },
+  ],
+  'deeper/16-the-bible-in-chinese': [
+    { id: 'curious/03-how-the-bible-came-to-us', reason: { zh: '概览 · 圣经是怎样传下来的', en: 'Overview · How the Bible came to us' } },
+    { id: 'deeper/20-original-languages-and-tools', reason: { zh: '动手做 · 对照几个译本', en: 'Try it · Comparing translations' } },
+  ],
+  'deeper/17-justification-and-sanctification': [
+    { id: 'seeking/12-grace', reason: { zh: '背景 · 恩典', en: 'Background · Grace' } },
+    { id: 'new/06-when-i-fail', reason: { zh: '相关一课 · 犯了错怎么办', en: 'Related lesson · When you fail' } },
+  ],
+  'deeper/18-understanding-the-atonement': [
+    { id: 'curious/12-why-the-cross', reason: { zh: '概览 · 耶稣为什么死在十字架上', en: 'Overview · Why Jesus died on a cross' } },
+    { id: 'deeper/06-god-dwelling-with-people', reason: { zh: '相关一课 · 幔子裂开和神的同在', en: 'Related lesson · The torn veil and God’s presence' } },
+  ],
+  'deeper/19-sovereignty-and-choice': [
+    { id: 'seeking/13-counting-the-cost', reason: { zh: '相关一课 · 跟随耶稣的选择', en: 'Related lesson · The choice to follow Jesus' } },
+    { id: 'deeper/13-hard-moments-in-a-group', reason: { zh: '动手做 · 小组里讨论分歧', en: 'Try it · Discussing disagreements in a group' } },
+  ],
+  'deeper/20-original-languages-and-tools': [
+    { id: 'curious/08-how-to-look-up-a-verse', reason: { zh: '入门 · 怎样查经文', en: 'First look · How to look up a passage' } },
+    { id: 'deeper/04-leading-a-study', reason: { zh: '动手做 · 用工具书预备查经', en: 'Try it · Preparing a study with tools' } },
+  ],
 };
 
 const data: { tracks: TrackInfo[] } = JSON.parse(document.getElementById('app-data')?.textContent || '{"tracks":[]}');

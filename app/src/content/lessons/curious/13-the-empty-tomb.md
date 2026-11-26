@@ -9,7 +9,7 @@ unit: jesus
 order: 4
 minutes: 6
 status: published
-review: draft
+review: checked
 art: empty-tomb
 scripture:
   - ref: 路加福音 24:1-6

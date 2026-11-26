@@ -9,7 +9,7 @@ unit: reading-books
 order: 3
 minutes: 8
 status: published
-review: draft
+review: checked
 art: letter
 scripture:
   - ref: 哥林多前书 1:2

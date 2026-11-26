@@ -59,7 +59,7 @@ const lessons = defineCollection({
     order: z.number(),
     minutes: z.number().int().positive().default(5),
     status: z.enum(['published', 'planned']).default('published'),
-    review: z.enum(['draft', 'reviewed']).default('draft'),
+    review: z.enum(['draft', 'checked', 'reviewed']).default('draft'),
     art: z.string().optional(),
     scripture: z.array(scripture).default([]),
     reflect: z.array(text).default([]),

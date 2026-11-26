@@ -9,7 +9,7 @@ unit: big-story
 order: 2
 minutes: 6
 status: published
-review: draft
+review: checked
 art: garden-thorn
 scripture:
   - ref: 创世记 3:8-10

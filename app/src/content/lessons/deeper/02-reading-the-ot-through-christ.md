@@ -9,7 +9,7 @@ unit: whole-bible
 order: 2
 minutes: 8
 status: published
-review: draft
+review: checked
 art: stepping-stones
 scripture:
   - ref: 希伯来书 1:1-2

@@ -9,7 +9,7 @@ unit: what-is-it
 order: 2
 minutes: 6
 status: published
-review: draft
+review: checked
 art: five-scrolls
 scripture:
   - ref: 诗篇 23:1-2
@@ -69,8 +69,8 @@ Working out what kind of writing a book is, and reading it that way, saves a lot
 
 ## 六种常见文体 | Six common genres
 
-- **历史叙事**（如《创世记》《撒母耳记》《使徒行传》）：圣经超过四成的篇幅是故事。要留意，圣经记下某人做了某事，只是记录（description），不代表赞成我们照着做（prescription）。<br>
-  **Historical narrative** (Genesis, Samuel, Acts): Over forty percent of the Bible is narrative. Keep in mind that when Scripture describes what someone did, it is a record, and does not by itself prescribe that behavior for us.
+- **历史叙事**（如《创世记》《撒母耳记》《使徒行传》）：旧约有四成以上的篇幅是叙事，是圣经里最多的一种文体。要留意，圣经记下某人做了某事，只是记录（description），不代表赞成我们照着做（prescription）。<br>
+  **Historical narrative** (Genesis, Samuel, Acts): Over forty percent of the Old Testament is narrative, the most common kind of writing in the Bible. Keep in mind that when Scripture describes what someone did, it is a record, and does not by itself prescribe that behavior for us.
 - **律法与盟约条文**（如《出埃及记》后半、《申命记》）：神在古代近东的历史处境中赐给以色列民的盟约规范，用来显明神的圣洁、保护弱者、塑造敬拜的群体。<br>
   **Law and covenant terms** (the second half of Exodus, Deuteronomy): Covenant rules given to ancient Israel in its historical setting, to show God's holiness, protect the vulnerable, and shape a worshiping community.
 - **诗歌**（如《诗篇》《雅歌》）：多用比喻、拟人和希伯来“平行句法”（上下两句意思呼应或对照）。诗篇说“群山欢呼”，是用诗的语言表达受造界的喜乐。<br>

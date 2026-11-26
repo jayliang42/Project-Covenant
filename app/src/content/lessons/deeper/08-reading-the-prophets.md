@@ -9,7 +9,7 @@ unit: reading-books
 order: 2
 minutes: 8
 status: published
-review: draft
+review: checked
 art: dry-bones
 scripture:
   - ref: 阿摩司书 5:24

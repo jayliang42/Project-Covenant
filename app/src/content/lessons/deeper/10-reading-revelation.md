@@ -9,7 +9,7 @@ unit: reading-books
 order: 4
 minutes: 8
 status: published
-review: draft
+review: checked
 art: seven-lamps
 scripture:
   - ref: 启示录 1:3

@@ -9,7 +9,7 @@ unit: church
 order: 1
 minutes: 7
 status: published
-review: draft
+review: checked
 art: bread-cup
 scripture:
   - ref: 使徒行传 2:41-42

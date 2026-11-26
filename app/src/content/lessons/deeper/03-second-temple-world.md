@@ -9,7 +9,7 @@ unit: background
 order: 2
 minutes: 8
 status: published
-review: draft
+review: checked
 art: temple-courts
 scripture:
   - ref: 加拉太书 4:4-5

@@ -9,7 +9,7 @@ unit: big-story
 order: 3
 minutes: 6
 status: published
-review: draft
+review: checked
 art: abraham-stars
 scripture:
   - ref: 创世记 15:5-6

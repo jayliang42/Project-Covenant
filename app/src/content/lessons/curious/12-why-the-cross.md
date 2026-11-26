@@ -9,7 +9,7 @@ unit: jesus
 order: 3
 minutes: 7
 status: published
-review: draft
+review: checked
 art: lamb-altar
 scripture:
   - ref: 以赛亚书 53:5-6

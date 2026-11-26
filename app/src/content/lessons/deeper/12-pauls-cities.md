@@ -9,7 +9,7 @@ unit: background
 order: 3
 minutes: 8
 status: published
-review: draft
+review: checked
 art: roman-road
 scripture:
   - ref: 使徒行传 16:12

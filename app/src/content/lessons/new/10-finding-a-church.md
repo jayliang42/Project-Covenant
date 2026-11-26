@@ -9,7 +9,7 @@ unit: church
 order: 2
 minutes: 6
 status: published
-review: draft
+review: checked
 art: table-fellowship
 scripture:
   - ref: 希伯来书 10:24-25

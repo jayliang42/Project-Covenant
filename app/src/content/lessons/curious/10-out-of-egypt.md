@@ -9,7 +9,7 @@ unit: big-story
 order: 4
 minutes: 6
 status: published
-review: draft
+review: checked
 art: sea-crossing
 scripture:
   - ref: 出埃及记 2:24

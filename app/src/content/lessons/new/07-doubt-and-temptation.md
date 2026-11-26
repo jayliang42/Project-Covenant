@@ -9,7 +9,7 @@ unit: daily
 order: 4
 minutes: 6
 status: published
-review: draft
+review: checked
 art: lamp-light
 scripture:
   - ref: 哥林多前书 10:13

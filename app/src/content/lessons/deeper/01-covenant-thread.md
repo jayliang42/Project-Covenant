@@ -9,7 +9,7 @@ unit: whole-bible
 order: 1
 minutes: 8
 status: published
-review: draft
+review: checked
 art: eleven-threads
 scripture:
   - ref: 创世记 12:1-3

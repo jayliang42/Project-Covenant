@@ -9,7 +9,7 @@ unit: history
 order: 1
 minutes: 7
 status: published
-review: draft
+review: checked
 art: weighing-evidence
 scripture:
   - ref: 路加福音 2:1-2
@@ -65,8 +65,8 @@ Because it is written this way, later readers can check its historical setting a
    **Tel Dan Stele (9th century BC)**: Some scholars once doubted that King David was a historical figure. In 1993 a broken Aramaic inscription was found in northern Israel bearing the words "House of David" (*bytdwd*). It shows that neighboring kingdoms of the time knew of a dynasty of David.
 2. **希西家水道与西罗亚铭文（主前 8 世纪末）**：《列王纪下》20:20 记载犹大王希西家挖水道引水入城，防备亚述围城。这条凿穿岩石的隧道今天还在耶路撒冷地下，里面发现过一段古希伯来文铭文。<br>
    **Hezekiah's Tunnel and the Siloam Inscription (late 8th century BC)**: 2 Kings 20:20 records that King Hezekiah of Judah cut a tunnel to bring water into the city before the Assyrian siege. The rock-cut tunnel still runs beneath Jerusalem, and an inscription in ancient Hebrew was found inside it.
-3. **彼拉多石碑与迦百农会堂**：新约提到的罗马长官、加利利城镇、税吏和公会制度，与第一世纪罗马和犹太的历史资料相符。<br>
-   **The Pilate Stone and the synagogue at Capernaum**: The Roman officials, Galilean towns, tax collectors, and council system mentioned in the New Testament agree with what is known of first-century Roman and Jewish history.
+3. **彼拉多石碑与迦百农**：1961 年在该撒利亚发现的一块石碑刻有本丢·彼拉多的名字和“犹太巡抚”的头衔。迦百农现存的白色会堂建于主后 4–5 世纪，下面压着更早的黑色玄武岩地基，不少学者认为属于第一世纪。新约提到的罗马长官、加利利城镇、税吏和公会制度，与第一世纪罗马和犹太的历史资料大体相符。<br>
+   **The Pilate Stone and Capernaum**: A stone found at Caesarea in 1961 bears the name of Pontius Pilate and the title “prefect of Judea.” The white synagogue now standing at Capernaum dates from the 4th–5th century AD, built over older black basalt foundations that many scholars assign to the first century. The Roman officials, Galilean towns, tax collectors, and council system mentioned in the New Testament broadly agree with what is known of first-century Roman and Jewish history.
 
 ## 证据不能做什么 | What evidence cannot do
 

@@ -9,7 +9,7 @@ unit: invitation
 order: 2
 minutes: 6
 status: published
-review: draft
+review: checked
 art: wanderer-home
 scripture:
   - ref: 以弗所书 2:4-5

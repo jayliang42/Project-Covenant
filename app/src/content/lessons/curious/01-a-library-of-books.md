@@ -9,7 +9,7 @@ unit: what-is-it
 order: 1
 minutes: 5
 status: published
-review: draft
+review: checked
 art: bible-library
 scripture:
   - ref: 路加福音 1:1-4

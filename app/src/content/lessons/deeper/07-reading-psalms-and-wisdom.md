@@ -9,7 +9,7 @@ unit: reading-books
 order: 1
 minutes: 8
 status: published
-review: draft
+review: checked
 art: david-harp
 scripture:
   - ref: 诗篇 13:1-2

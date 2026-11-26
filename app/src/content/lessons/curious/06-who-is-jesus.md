@@ -9,7 +9,7 @@ unit: jesus
 order: 1
 minutes: 6
 status: published
-review: draft
+review: checked
 art: galilee-boat
 scripture:
   - ref: 马可福音 8:27-29

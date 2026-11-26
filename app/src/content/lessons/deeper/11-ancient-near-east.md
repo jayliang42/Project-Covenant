@@ -9,7 +9,7 @@ unit: background
 order: 1
 minutes: 8
 status: published
-review: draft
+review: checked
 art: dig-layers
 scripture:
   - ref: 创世记 1:16

@@ -9,7 +9,7 @@ unit: invitation
 order: 4
 minutes: 6
 status: published
-review: draft
+review: checked
 art: winding-path
 scripture:
   - ref: 路加福音 14:28

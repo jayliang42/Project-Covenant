@@ -9,7 +9,7 @@ unit: big-story
 order: 5
 minutes: 7
 status: published
-review: draft
+review: checked
 art: exile-road
 scripture:
   - ref: 撒母耳记下 7:12-13

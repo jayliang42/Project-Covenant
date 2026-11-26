@@ -9,7 +9,7 @@ unit: daily
 order: 2
 minutes: 6
 status: published
-review: draft
+review: checked
 art: morning-prayer
 scripture:
   - ref: 马太福音 6:6-13

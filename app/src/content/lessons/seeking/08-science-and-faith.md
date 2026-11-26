@@ -9,7 +9,7 @@ unit: big-questions
 order: 5
 minutes: 7
 status: published
-review: draft
+review: checked
 art: seasons-tree
 scripture:
   - ref: 诗篇 8:3-4

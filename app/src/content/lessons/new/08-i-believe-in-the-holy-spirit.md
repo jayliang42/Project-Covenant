@@ -9,7 +9,7 @@ unit: core
 order: 3
 minutes: 7
 status: published
-review: draft
+review: checked
 art: jordan-dove
 scripture:
   - ref: 约翰福音 14:16-17

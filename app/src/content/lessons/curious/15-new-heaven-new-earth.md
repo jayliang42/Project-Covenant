@@ -9,7 +9,7 @@ unit: story-end
 order: 2
 minutes: 6
 status: published
-review: draft
+review: checked
 art: river-of-life
 scripture:
   - ref: 以赛亚书 65:17

@@ -37,7 +37,7 @@ unit: church            # 必须是该路径 YAML 里某个单元的 id
 order: 2                # 单元内的顺序，可以用 1.5 插队
 minutes: 6              # 预计阅读分钟数
 status: published       # published 上线；planned 只显示“筹备中”
-review: draft           # draft 显示“草稿·待人工审阅”；人工审过改成 reviewed
+review: draft           # draft 显示“草稿·待人工审阅”；AI 核对过改成 checked（显示“AI 已审阅核对”）；人工审过改成 reviewed
 art: table-fellowship   # 可选：../assets/art/ 里的插画名（不带 .svg）
 scripture:
   - { ref: "来 10:24-25", refEn: "Hebrews 10:24-25" }

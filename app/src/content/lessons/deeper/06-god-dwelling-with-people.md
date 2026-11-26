@@ -9,7 +9,7 @@ unit: whole-bible
 order: 4
 minutes: 8
 status: published
-review: draft
+review: checked
 art: temple-courts
 scripture:
   - ref: 出埃及记 25:8

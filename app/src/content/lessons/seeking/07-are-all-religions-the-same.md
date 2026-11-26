@@ -9,7 +9,7 @@ unit: big-questions
 order: 4
 minutes: 7
 status: published
-review: draft
+review: checked
 art: compass-rose
 scripture:
   - ref: 使徒行传 17:26-27

@@ -9,7 +9,7 @@ unit: church
 order: 3
 minutes: 6
 status: published
-review: draft
+review: checked
 art: basin-towel
 scripture:
   - ref: 哥林多前书 12:4-7

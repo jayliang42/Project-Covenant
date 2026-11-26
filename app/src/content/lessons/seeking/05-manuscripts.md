@@ -9,7 +9,7 @@ unit: history
 order: 2
 minutes: 7
 status: published
-review: draft
+review: checked
 art: scroll-jars
 scripture:
   - ref: 彼得后书 1:16
@@ -35,7 +35,7 @@ check:
       - { zh: "提供了主前 3 世纪至主后 1 世纪的希伯来文抄本，比中世纪的马所拉抄本早约一千年。比对的结果是文本相当稳定，也留下了可供校勘的差异", en: "They provided Hebrew manuscripts from the 3rd century BC to the 1st century AD, about a thousand years older than the medieval copies. Comparison shows a largely stable text, along with variants useful for textual study" }
       - { zh: "证明旧约是在中世纪才写成的", en: "They proved the Old Testament was written in the Middle Ages" }
       - { zh: "里面全部是新约希腊文书信", en: "They consisted entirely of New Testament Greek letters" }
-    answer: 1
+    answer: 0
     explain:
       zh: 死海古卷让学者可以直接比对相隔一千年的希伯来文抄本。结果显示文本的主体传承可靠，也有助于校勘细节。
       en: The Qumran scrolls let scholars compare Hebrew manuscripts a thousand years apart. The results show that the main body of the text was passed on reliably, and they help with points of detail.
@@ -74,8 +74,8 @@ A game of telephone distorts the message because there is only one chain and no 
 
 - **旧约（希伯来圣经）**：有中世纪抄写严谨的**马所拉抄本**，如阿勒颇抄本和列宁格勒抄本。1947 年起，死海边的昆兰洞穴又出土了**死海古卷**，年代约在主前 250 年至主后 68 年之间。除《以斯帖记》外，旧约各卷都有抄本或残片，其中最著名的《大以赛亚书卷》几乎完整保存了全书 66 章。两批抄本相隔约一千年，比对下来，主体文本相当一致。<br>
   **The Old Testament (Hebrew Bible)**: There are the carefully copied medieval **Masoretic manuscripts**, such as the Aleppo and Leningrad Codices. From 1947 the **Dead Sea Scrolls** were found in the Qumran caves by the Dead Sea, dating from about 250 BC to AD 68. Every Old Testament book except Esther is represented by a copy or fragment, and the best known, the Great Isaiah Scroll, preserves almost all 66 chapters of the book. The two groups of manuscripts are about a thousand years apart, and when compared, the main text is largely the same.
-- **新约（希腊文）**：现存**超过 5,800 份希腊文抄本**，在古代文献里很少见。其中有第二世纪的莎草纸残片 P52，有约主后 200 年前后的 P46、P66、P75，也有第四世纪完整的《西奈抄本》和《梵蒂冈抄本》。此外还有上万份拉丁文、叙利亚文、科普特文的古译本，以及早期教父的大量引文。<br>
-  **The New Testament (Greek)**: **More than 5,800 Greek manuscripts** survive, which is rare for an ancient text. They include the second-century papyrus fragment P52, the papyri P46, P66, and P75 from around AD 200, and the complete fourth-century codices Sinaiticus and Vaticanus. There are also more than ten thousand manuscripts of ancient translations in Latin, Syriac, and Coptic, and many quotations in the early church fathers.
+- **新约（希腊文）**：德国明斯特新约文本研究所登记的**希腊文抄本约有 5,700 个编号**（其中少数已毁或下落不明），在古代文献里很少见。其中有第二世纪的莎草纸残片 P52，有约主后 200 年前后的 P46、P66、P75，也有第四世纪的大型抄本《西奈抄本》（新约完整）和《梵蒂冈抄本》。此外还有上万份拉丁文、叙利亚文、科普特文的古译本，以及早期教父的大量引文。<br>
+  **The New Testament (Greek)**: The Institute for New Testament Textual Research in Münster lists **about 5,700 Greek manuscript entries** (a few destroyed or now lost), which is rare for an ancient text. They include the second-century papyrus fragment P52, the papyri P46, P66, and P75 from around AD 200, and the great fourth-century codices Sinaiticus (with the complete New Testament) and Vaticanus. There are also more than ten thousand manuscripts of ancient translations in Latin, Syriac, and Coptic, and many quotations in the early church fathers.
 
 新约很早就传遍了地中海沿岸。抄本分散在亚历山大、安提阿、罗马等地，没有哪一个皇帝或主教能把它们全部收回来改掉。<br>
 The New Testament spread around the Mediterranean very early. Copies were scattered in Alexandria, Antioch, Rome, and elsewhere, and no emperor or bishop could have gathered them all in to change them.

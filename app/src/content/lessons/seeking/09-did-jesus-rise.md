@@ -9,7 +9,7 @@ unit: history
 order: 3
 minutes: 8
 status: published
-review: draft
+review: checked
 art: weighing-evidence
 scripture:
   - ref: 哥林多前书 15:3-7

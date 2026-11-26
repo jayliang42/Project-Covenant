@@ -9,7 +9,7 @@ unit: invitation
 order: 1
 minutes: 6
 status: published
-review: draft
+review: checked
 art: lost-sheep
 scripture:
   - ref: 罗马书 3:23

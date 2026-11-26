@@ -9,7 +9,7 @@ unit: invitation
 order: 3
 minutes: 6
 status: published
-review: draft
+review: checked
 art: open-hands
 scripture:
   - ref: 约翰福音 1:12

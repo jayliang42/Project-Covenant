@@ -9,7 +9,7 @@ unit: core
 order: 2
 minutes: 7
 status: published
-review: draft
+review: checked
 art: empty-tomb
 scripture:
   - ref: 罗马书 4:25
