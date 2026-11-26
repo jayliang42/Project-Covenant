@@ -52,6 +52,9 @@ further:
   - label: { zh: "圣经地名", en: "Places of the Bible" }
     path: Maps/Bible_Places_Bilingual.md
     why: { zh: "查这些城市的位置和相关经文。", en: "Find the location of these cities and the passages that mention them." }
+sources:
+  - label: { zh: "迦流铭文（Holy Land Photos）", en: "Gallio Inscription (Holy Land Photos)" }
+    url: "https://holylandphotos.org/photos/GCTCDLAR14"
 ---
 
 ## 城市里的教会 | Churches in cities

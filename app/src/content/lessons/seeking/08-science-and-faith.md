@@ -47,6 +47,9 @@ further:
   - label: { zh: "摩西五经：历史背景与证据边界", en: "Pentateuch: Historical Background and Evidence Boundaries" }
     path: Bible_Timeline/摩西五经_历史背景与证据边界.md
     why: { zh: "介绍《创世记》写作的古代背景，以及读这些章节时要注意的地方。", en: "Describes the ancient setting of Genesis and what to keep in mind when reading these chapters." }
+sources:
+  - label: { zh: "勒梅特小传（美国自然历史博物馆）", en: "Georges Lemaître, Father of the Big Bang (American Museum of Natural History)" }
+    url: "https://www.amnh.org/learn-teach/curriculum-collections/cosmic-horizons-book/georges-lemaitre-big-bang"
 ---
 
 ## 一个常见的印象 | A common impression

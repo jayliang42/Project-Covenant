@@ -52,6 +52,9 @@ further:
   - label: { zh: "天堂与基督徒盼望（双语讲道研读笔记）", en: "Heaven and Christian Hope (Bilingual Study)" }
     path: Bilingual_Notes/2025-11-23_Sunday_Heaven_and_Christian_Hope.md
     why: { zh: "讲《启示录》最后两章描写的盼望。", en: "Explains the hope described in the last two chapters of Revelation." }
+sources:
+  - label: { zh: "启示录的写作年代（Michael F. Bird）", en: "Dating the Book of Revelation (Michael F. Bird)" }
+    url: "https://michaelfbird.substack.com/p/dating-the-book-of-revelation-apocalypse"
 ---
 
 ## 这是什么样的书 | What kind of book this is

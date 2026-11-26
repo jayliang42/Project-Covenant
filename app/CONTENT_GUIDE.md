@@ -54,6 +54,9 @@ further:
   - label: { zh: 资料库里的相关页面, en: Related library page }
     path: "Bible_Timeline/Key_Passages_Bilingual.md"
     why: { zh: 一句话说明为什么值得延伸读这篇资料。, en: One sentence on why this deep-dive page is worth reading next. }
+sources:                # 可选：核对史实时用的公开资料，显示在课文末尾
+  - label: { zh: 资料名称（出处）, en: Source title (publisher) }
+    url: "https://example.org/page"
 ---
 
 ## 小标题 | Heading
@@ -122,6 +125,19 @@ Lessons should read like one person explaining something to a friend. The full r
 - To add, rename or reorder a unit, edit the `units` list in the track's YAML. The order in the list is the order on screen.<br>加单元、改名或调整顺序，改对应路径 YAML 里的 `units` 列表；列表顺序就是显示顺序。
 - A unit with no lessons yet shows “coming soon”. A lesson with `status: planned` only needs `title`, `summary`, `unit` and `order`. This is a handy way to plan the roadmap.<br>还没有课的单元会显示“筹备中”。`status: planned` 的课只需要 `title`、`summary`、`unit`、`order`，可以拿来先排课程规划。
 - A new track needs a YAML file in `tracks/`, a folder in `lessons/`, and its id added to `TRACK_ORDER` in `src/config.ts`.<br>新增一条路径：在 `tracks/` 加 YAML，在 `lessons/` 加同名文件夹，并把 id 加进 `src/config.ts` 的 `TRACK_ORDER`。
+
+<a id="sources-and-review"></a>
+## Sources and Unit Reviews | 资料来源和单元回顾
+
+- List the public sources used to check a lesson's dates, numbers and history under `sources`. They are shown at the end of the lesson. A lesson that only explains Scripture can leave the list empty.<br>核对一课的年代、数字和史实时用过的公开资料，写在 `sources` 里，会显示在课文末尾。只讲解经文的课可以不写。
+- When traditions disagree on a topic, describe each view in its own words and name the tradition that holds it. Do not present one view as the only Christian view.<br>各传统看法不同的题目，要按各自的说法分别写出来，并写明是哪个传统的看法。不要把其中一种写成基督教唯一的看法。
+- Every unit with two or more published lessons gets a review page at `review/<track>/<unit>/`. The page is built from the lessons: it lists each summary and takes the last quiz question of each lesson. There is nothing extra to write.<br>有两课以上已上线课程的单元，会自动生成单元回顾页 `review/<路径>/<单元>/`。页面内容来自各课：列出每课的摘要，并取每课的最后一道测验题。不需要另外写内容。
+
+<a id="lesson-checks"></a>
+## Checking Lessons | 检查课程
+
+`tools/check_lessons.py` checks every lesson for the plain-writing patterns, bilingual pairing, scripture wording against the 1919 Union text and the WEB, and quoted verses in the body. CI runs it on every pull request. See [tools/README.md](./tools/README.md).<br>
+`tools/check_lessons.py` 检查每一课的文风、中英配对、经文块是否和 1919 年和合本及 WEB 原文一致，以及正文里引用的经文。每个 PR 的 CI 都会运行它。说明见 [tools/README.md](./tools/README.md)。
 
 <a id="build-checks"></a>
 ## What the Build Checks | 构建会检查什么

@@ -52,6 +52,9 @@ further:
   - label: { zh: "基督教传统", en: "Christian Traditions" }
     path: Christian_Traditions/README.md
     why: { zh: "介绍东正教、天主教、新教等传统怎样看待这几次早期会议。", en: "Describes how the Orthodox, Catholic, and Protestant traditions regard these early councils." }
+sources:
+  - label: { zh: "367 年亚他那修列出新约书目（Christianity Today）", en: "367: Athanasius Defines the New Testament (Christianity Today)" }
+    url: "https://www.christianitytoday.com/1990/10/367-athanasius-defines-new-testament/"
 ---
 
 ## 使徒以后的教会 | The church after the apostles

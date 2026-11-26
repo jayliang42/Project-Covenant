@@ -52,6 +52,13 @@ further:
   - label: { zh: "圣经译本", en: "Bible Translations" }
     path: Bible_Translations/README.md
     why: { zh: "了解宗教改革以后，圣经怎样被翻译成各国语言。", en: "See how the Bible was translated into many languages after the Reformation." }
+sources:
+  - label: { zh: "《关于称义教义的联合声明》介绍（法国新教博物馆）", en: "Joint Declaration (1999) (Musée protestant)" }
+    url: "https://museeprotestant.org/en/notice/joint-declaration/"
+  - label: { zh: "丁道尔 1526 年新约（COJS）", en: "Tyndale New Testament, 1526 (COJS)" }
+    url: "https://cojs.org/Tyndale_New_Testament-_1526/"
+  - label: { zh: "耶稣会 1540 年获批（Christian History Institute）", en: "The Jesuits are approved, 1540 (Christian History Institute)" }
+    url: "https://christianhistoryinstitute.org/dailyquote/9/27"
 ---
 
 ## 改革以前 | Before the Reformation

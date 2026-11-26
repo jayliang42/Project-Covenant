@@ -34,7 +34,7 @@ const appData = {
 };
 const tabs = [
   { href: url(''), icon: 'home', zh: '首页', en: 'Home', match: (p: string) => p === url('') },
-  { href: url('tracks/'), icon: 'path', zh: '路径', en: 'Paths', match: (p: string) => p.startsWith(url('tracks/')) || p.startsWith(url('learn/')) },
+  { href: url('tracks/'), icon: 'path', zh: '路径', en: 'Paths', match: (p: string) => p.startsWith(url('tracks/')) || p.startsWith(url('learn/')) || p.startsWith(url('review/')) },
   { href: url('library/'), icon: 'library', zh: '资料库', en: 'Library', match: (p: string) => p.startsWith(url('library/')) },
   { href: url('me/'), icon: 'user', zh: '我的', en: 'Me', match: (p: string) => p.startsWith(url('me/')) },
 ] as const;

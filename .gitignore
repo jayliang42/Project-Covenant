@@ -36,3 +36,6 @@ site/out/
 # Python audit cache | Python 审计缓存
 __pycache__/
 *.py[cod]
+
+# Lesson tool downloads | 课程工具下载的经文数据
+app/tools/.sources/

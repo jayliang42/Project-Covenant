@@ -4,7 +4,7 @@ import Bi from '../../components/Bi.astro';
 import T from '../../components/T.astro';
 import Icon from '../../components/Icon.astro';
 import ProgressRing from '../../components/ProgressRing.astro';
-import { loadTracks, artUrl, lessonUrl, url, type TrackNode } from '../../lib/content';
+import { loadTracks, artUrl, lessonUrl, reviewUrl, url, type TrackNode } from '../../lib/content';
 
 export async function getStaticPaths() {
   const tracks = await loadTracks();
@@ -68,6 +68,19 @@ const d = track.data;
                 </div>
               </li>
             ),
+          )}
+          {unit.lessons.filter((l) => l.data.status === 'published').length > 1 && (
+            <li class="node review-node">
+              <a href={reviewUrl(track.id, unit.id)}>
+                <span class="node-dot"><Icon name="quiz" size={18} /></span>
+                <span class="node-card">
+                  <span class="node-text">
+                    <strong><T zh="单元回顾" en="Unit review" /></strong>
+                    <small class="muted"><T zh="本单元的要点和复习题" en="The unit's main points and review questions" /></small>
+                  </span>
+                </span>
+              </a>
+            </li>
           )}
           {unit.lessons.length === 0 && <li class="node planned"><div><span class="node-dot"></span><span class="node-card"><span class="node-text muted"><T zh="本单元的课程筹备中" en="Lessons for this unit are coming" /></span></span></div></li>}
         </ol>

@@ -47,6 +47,15 @@ further:
   - label: { zh: "圣经是怎样传到我们手中的", en: "How the Bible Came to Us" }
     path: Bible_Timeline/How_the_Bible_Came_to_Us_Bilingual.md
     why: { zh: "从抄本、正典到翻译，讲圣经流传的整个过程。", en: "Covers the whole journey of the Bible, from manuscripts and canon to translation." }
+sources:
+  - label: { zh: "《中文圣经翻译简史》（余仕扬，韩国圣经公会期刊）", en: "A Brief History of Bible Translation into Chinese (Suee Yan Yu, Korean Bible Society journal)" }
+    url: "https://www.bskorea.or.kr/data/pdf/19-08%20%5B%EC%9E%90%EB%A3%8C%5D%20A%20Brief%20History%20of%20Bible%20Translation%20into%20Chinese%20(Suee%20Yan%20Yu)%20doi.pdf"
+  - label: { zh: "中文圣经的里程碑（香港圣经公会）", en: "Milestones of Chinese Bible (Hong Kong Bible Society)" }
+    url: "https://hkbs.org.hk/en-us/8"
+  - label: { zh: "马礼逊传记（波士顿大学宣教史资料）", en: "Robert Morrison biography (Boston University, History of Missiology)" }
+    url: "https://www.bu.edu/missiology/missionary-biography/l-m/morrison-robert-1782-1834"
+  - label: { zh: "西安景教碑（维基百科）", en: "Xi'an Stele (Wikipedia)" }
+    url: "https://en.wikipedia.org/wiki/Xi%27an_Stele"
 ---
 
 ## 唐朝的景教 | The Church of the East in the Tang dynasty

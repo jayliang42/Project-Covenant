@@ -4,7 +4,7 @@ import AppLayout from '../../layouts/AppLayout.astro';
 import Bi from '../../components/Bi.astro';
 import T from '../../components/T.astro';
 import Icon from '../../components/Icon.astro';
-import { loadTracks, artUrl, lessonUrl, trackUrl, passageUrl, libraryUrl, type LessonEntry, type TrackNode } from '../../lib/content';
+import { loadTracks, artUrl, lessonUrl, trackUrl, reviewUrl, passageUrl, libraryUrl, type LessonEntry, type TrackNode } from '../../lib/content';
 
 export async function getStaticPaths() {
   const tracks = await loadTracks();
@@ -21,6 +21,8 @@ const { lesson, track, prev, next, index } = Astro.props as {
 const d = lesson.data;
 const unit = track.units.find((u) => u.id === d.unit)!;
 const { Content } = await render(lesson);
+const unitDone = unit.lessons.filter((l) => l.data.status === 'published');
+const endsUnit = unitDone.length > 1 && unitDone[unitDone.length - 1].id === lesson.id;
 ---
 <AppLayout title={d.title.zh} description={d.summary.zh} accent={track.data.color} back={{ href: trackUrl(track.id), label: track.data.title }}>
   <div class="read-progress" aria-hidden="true"></div>
@@ -132,6 +134,17 @@ const { Content } = await render(lesson);
       </section>
     )}
 
+    {d.sources.length > 0 && (
+      <section class="sources">
+        <h2 class="block-title"><Icon name="external" size={18} /><T zh="核对时用的资料" en="Sources checked" /></h2>
+        <ul>
+          {d.sources.map((src) => (
+            <li><a href={src.url} target="_blank" rel="noopener"><Bi text={src.label} /></a></li>
+          ))}
+        </ul>
+      </section>
+    )}
+
     <div class="complete-bar">
       <button type="button" class="btn btn-primary btn-complete" data-complete aria-pressed="false">
         <Icon name="check" />
@@ -141,6 +154,13 @@ const { Content } = await render(lesson);
     </div>
 
     <section class="after-complete" data-after-complete hidden>
+      {endsUnit && (
+        <a class="card next-card" href={reviewUrl(track.id, unit.id)}>
+          <span class="eyebrow"><T zh="这个单元读完了" en="You have finished this unit" /></span>
+          <strong><T zh="做单元回顾" en="Review the unit" /></strong>
+          <Icon name="right" />
+        </a>
+      )}
       {next
         ? <a class="card next-card" href={lessonUrl(next)}>
             <span class="eyebrow"><T zh="下一课" en="Next lesson" /></span>

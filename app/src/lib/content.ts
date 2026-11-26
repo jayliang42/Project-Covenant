@@ -89,6 +89,7 @@ const BASE = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 export const url = (p = '') => BASE + p.replace(/^\//, '');
 export const lessonUrl = (lesson: LessonEntry | string) => url(`learn/${typeof lesson === 'string' ? lesson : lesson.id}/`);
 export const trackUrl = (id: string) => url(`tracks/${id}/`);
+export const reviewUrl = (track: string, unit: string) => url(`review/${track}/${unit}/`);
 export const artUrl = (name?: string) => (name ? url(`repo-assets/art/${name}.svg`) : undefined);
 export const passageUrl = (refEn: string) => PASSAGE_URL.replace('{q}', encodeURIComponent(refEn));
 

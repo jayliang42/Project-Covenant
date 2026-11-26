@@ -40,6 +40,11 @@ jobs:
       - name: Audit historical content
         run: python3 scripts/audit_publication.py --history-content
 
+      - name: Check lesson writing, pairing, and scripture wording
+        run: |
+          python3 -c "import yaml" || python3 -m pip install --break-system-packages pyyaml
+          python3 app/tools/check_lessons.py
+
       - name: Set up Node.js for learning app
         uses: actions/setup-node@v4
         with:

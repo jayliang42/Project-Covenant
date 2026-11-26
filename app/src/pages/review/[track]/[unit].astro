@@ -1,0 +1,96 @@
+---
+import AppLayout from '../../../layouts/AppLayout.astro';
+import Bi from '../../../components/Bi.astro';
+import T from '../../../components/T.astro';
+import Icon from '../../../components/Icon.astro';
+import { loadTracks, lessonUrl, trackUrl, reviewUrl, type TrackNode, type UnitNode } from '../../../lib/content';
+
+// One review page per unit that has at least two published lessons. The page is built
+// from the lessons themselves: their summaries, and one quiz question from each.
+export async function getStaticPaths() {
+  const tracks = await loadTracks();
+  return tracks.flatMap((track) =>
+    track.units
+      .map((unit, ui) => ({ unit, ui, lessons: unit.lessons.filter((l) => l.data.status === 'published') }))
+      .filter((x) => x.lessons.length > 1)
+      .map(({ unit, ui }) => ({ params: { track: track.id, unit: unit.id }, props: { track, unit, ui } })),
+  );
+}
+const { track, unit, ui } = Astro.props as { track: TrackNode; unit: UnitNode; ui: number };
+const lessons = unit.lessons.filter((l) => l.data.status === 'published');
+const questions = lessons
+  .filter((l) => l.data.check.length > 0)
+  .map((l) => ({ lesson: l, q: l.data.check[l.data.check.length - 1] }));
+const nextUnit = track.units.slice(ui + 1).find((u) => u.lessons.some((l) => l.data.status === 'published'));
+const nextLesson = nextUnit?.lessons.find((l) => l.data.status === 'published');
+const title = `单元回顾：${unit.title.zh}`;
+---
+<AppLayout title={title} description={unit.summary?.zh} accent={track.data.color} back={{ href: trackUrl(track.id), label: track.data.title }}>
+  <article class="lesson unit-review">
+    <header class="lesson-head">
+      <p class="crumbs">
+        <a href={trackUrl(track.id)}><Bi text={track.data.title} /></a>
+        <span aria-hidden="true">›</span>
+        <Bi text={unit.title} />
+      </p>
+      <h1><T zh={title} en={`Unit review: ${unit.title.en || unit.title.zh}`} /></h1>
+      <p class="lead">
+        <T
+          zh={`这个单元有 ${lessons.length} 课。下面列出每一课讲了什么，再用 ${questions.length} 道题复习。`}
+          en={`This unit has ${lessons.length} lessons. Below is what each one covered, followed by ${questions.length} review questions.`}
+        />
+      </p>
+    </header>
+
+    <section class="further review-points">
+      <h2 class="block-title"><Icon name="book" size={18} /><T zh="这个单元讲了什么" en="What this unit covered" /></h2>
+      <ul>
+        {lessons.map((l) => (
+          <li>
+            <a href={lessonUrl(l)}>
+              <span class="further-copy">
+                <strong class="further-label"><Bi text={l.data.title} /></strong>
+                <small class="further-why muted"><Bi text={l.data.summary} /></small>
+              </span>
+              <Icon name="right" size={14} />
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    {questions.length > 0 && (
+      <section class="checks">
+        <h2 class="block-title"><Icon name="quiz" size={18} /><T zh="复习题" en="Review questions" /></h2>
+        {questions.map(({ lesson, q }, qi) => (
+          <div class="quiz" data-quiz data-answer={q.answer}>
+            <p class="quiz-q"><span class="quiz-n">{qi + 1}</span><span><Bi text={q.q} /></span></p>
+            <div class="quiz-options">
+              {q.options.map((o, oi) => <button type="button" data-option={oi}><Bi text={o} /></button>)}
+            </div>
+            <p class="quiz-result" data-quiz-result hidden>
+              <strong class="right-msg"><T zh="答对了。" en="Correct." /></strong>
+              <strong class="wrong-msg"><T zh="再想想，正确答案已标出。" en="Not quite. The right answer is marked." /></strong>
+              {q.explain && <> <Bi text={q.explain} /></>}
+              <a class="review-back" href={lessonUrl(lesson)}><T zh="回到这一课" en="Back to this lesson" /></a>
+            </p>
+          </div>
+        ))}
+      </section>
+    )}
+
+    <section class="after-complete">
+      {nextLesson
+        ? <a class="card next-card" href={lessonUrl(nextLesson)}>
+            <span class="eyebrow"><T zh="下一个单元" en="Next unit" /> · <Bi text={nextUnit!.title} /></span>
+            <strong><Bi text={nextLesson.data.title} /></strong>
+            <Icon name="right" />
+          </a>
+        : <a class="card next-card" href={trackUrl(track.id)}>
+            <span class="eyebrow"><T zh="这是本路径的最后一个单元" en="This is the last unit in this path" /></span>
+            <strong><T zh="回到路径" en="Back to the path" /></strong>
+            <Icon name="right" />
+          </a>}
+    </section>
+  </article>
+</AppLayout>
