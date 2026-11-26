@@ -248,6 +248,54 @@ const RELATED_BRIDGES: Record<string, { id: string; reason: Text }[]> = {
     { id: 'curious/08-how-to-look-up-a-verse', reason: { zh: '入门 · 怎样查经文', en: 'First look · How to look up a passage' } },
     { id: 'deeper/04-leading-a-study', reason: { zh: '动手做 · 用工具书预备查经', en: 'Try it · Preparing a study with tools' } },
   ],
+  'new/13-the-church-and-the-communion-of-saints': [
+    { id: 'new/10-finding-a-church', reason: { zh: '动手做 · 找一间教会并扎根', en: "Try it · Finding a church and putting down roots" } },
+    { id: 'deeper/14-early-church-and-creeds', reason: { zh: '读深一点 · 信经是怎样来的', en: "Going deeper · Where the creeds came from" } },
+  ],
+  'new/14-forgiveness-resurrection-and-life-everlasting': [
+    { id: 'new/06-when-i-fail', reason: { zh: '相关一课 · 信主以后又犯错了怎么办', en: "Related lesson · When I fail after believing" } },
+    { id: 'curious/15-new-heaven-new-earth', reason: { zh: '相关一课 · 新天新地', en: "Related lesson · The new heaven and new earth" } },
+  ],
+  'new/15-assurance': [
+    { id: 'new/07-doubt-and-temptation', reason: { zh: '相关一课 · 有疑惑、受试探的时候', en: "Related lesson · When you doubt or are tempted" } },
+    { id: 'deeper/19-sovereignty-and-choice', reason: { zh: '读深一点 · 神的主权和人的选择', en: "Going deeper · God's sovereignty and human choice" } },
+  ],
+  'new/16-forgiving-others': [
+    { id: 'new/02-learning-to-pray', reason: { zh: '相关一课 · 主祷文里的“免我们的债”', en: "Related lesson · “Forgive us our debts” in the Lord's Prayer" } },
+    { id: 'deeper/13-hard-moments-in-a-group', reason: { zh: '读深一点 · 小组里遇到难处', en: "Going deeper · Hard moments in a group" } },
+  ],
+  'new/17-money-and-giving': [
+    { id: 'curious/07-what-jesus-taught', reason: { zh: '相关一课 · 登山宝训里的财宝和忧虑', en: "Related lesson · Treasure and worry in the Sermon on the Mount" } },
+    { id: 'new/11-gifts-and-serving', reason: { zh: '接着读 · 恩赐和服事', en: "Next · Gifts and serving" } },
+  ],
+  'new/18-work-and-study': [
+    { id: 'new/11-gifts-and-serving', reason: { zh: '相关一课 · 每个人都有用处', en: "Related lesson · Everyone has a part" } },
+    { id: 'deeper/15-the-reformation', reason: { zh: '读深一点 · 宗教改革和“信徒皆祭司”', en: "Going deeper · The Reformation and the priesthood of all believers" } },
+  ],
+  'new/19-making-decisions': [
+    { id: 'new/02-learning-to-pray', reason: { zh: '动手做 · 为这个决定祷告', en: "Try it · Pray about the decision" } },
+    { id: 'deeper/19-sovereignty-and-choice', reason: { zh: '读深一点 · 神的主权和人的选择', en: "Going deeper · God's sovereignty and human choice" } },
+  ],
+  'new/20-when-suffering-comes': [
+    { id: 'seeking/02-why-is-there-suffering', reason: { zh: '想查证 · 如果神良善，为什么有苦难', en: "Checking the evidence · If God is good, why is there suffering?" } },
+    { id: 'deeper/07-reading-psalms-and-wisdom', reason: { zh: '读深一点 · 诗篇里的哀歌和约伯记', en: "Going deeper · Laments in the Psalms, and Job" } },
+  ],
+  'new/21-mark-1-who-is-this': [
+    { id: 'curious/06-who-is-jesus', reason: { zh: '相关一课 · 耶稣是谁', en: "Related lesson · Who is Jesus?" } },
+    { id: 'seeking/10-four-gospels', reason: { zh: '想查证 · 为什么有四本福音书', en: "Checking the evidence · Why four Gospels?" } },
+  ],
+  'new/22-mark-2-the-way-of-the-cross': [
+    { id: 'seeking/13-counting-the-cost', reason: { zh: '相关一课 · 跟随耶稣意味着什么', en: "Related lesson · What following Jesus involves" } },
+    { id: 'deeper/05-kingdom-of-god', reason: { zh: '读深一点 · 神的国', en: "Going deeper · The kingdom of God" } },
+  ],
+  'new/23-mark-3-jerusalem': [
+    { id: 'deeper/06-god-dwelling-with-people', reason: { zh: '读深一点 · 圣殿主线', en: "Going deeper · The temple thread" } },
+    { id: 'deeper/03-second-temple-world', reason: { zh: '读深一点 · 第二圣殿与罗马世界', en: "Going deeper · The Second Temple and Roman world" } },
+  ],
+  'new/24-mark-4-cross-and-empty-tomb': [
+    { id: 'curious/12-why-the-cross', reason: { zh: '相关一课 · 耶稣为什么死在十字架上', en: "Related lesson · Why Jesus died on the cross" } },
+    { id: 'seeking/09-did-jesus-rise', reason: { zh: '想查证 · 历史学家怎样看复活的证据', en: "Checking the evidence · How historians weigh the resurrection" } },
+  ],
 };
 
 const data: { tracks: TrackInfo[] } = JSON.parse(document.getElementById('app-data')?.textContent || '{"tracks":[]}');

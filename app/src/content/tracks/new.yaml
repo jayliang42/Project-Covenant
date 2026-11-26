@@ -1,7 +1,7 @@
 # 初信 | New believer
 title: { zh: 刚开始信, en: New believer }
 who: { zh: 我刚信主，想打好根基, en: I've just come to faith and want a solid start }
-tagline: { zh: 读经、祷告、基本信仰, en: "Scripture, prayer, and the basics of the faith" }
+tagline: { zh: 读经、祷告、基本信仰和日常生活, en: "Scripture, prayer, the basics of the faith, and daily life" }
 description:
   zh: 为初信的弟兄姊妹准备：建立每天读经和祷告的习惯，学会面对失败和试探，逐句明白信经，在教会中一起成长、服事。
   en: For new believers. Build daily habits of reading and prayer, learn to face failure and temptation, understand the creed line by line, and grow and serve together in a church.
@@ -10,10 +10,16 @@ art: stepping-stones
 units:
   - id: daily
     title: { zh: 每天的根基, en: Daily foundations }
-    summary: { zh: 读经、祷告、认罪和面对试探, en: "Reading, prayer, confession, and temptation" }
+    summary: { zh: 读经、祷告、认罪、面对试探和得救的确据, en: "Reading, prayer, confession, temptation, and assurance" }
   - id: core
     title: { zh: 我们信什么, en: What we believe }
-    summary: { zh: 使徒信经和三位一体, en: "The Apostles' Creed and the Trinity" }
+    summary: { zh: 逐句读使徒信经，认识三位一体, en: "The Apostles' Creed line by line, and the Trinity" }
   - id: church
     title: { zh: 在教会中成长, en: Growing in the church }
     summary: { zh: 洗礼、圣餐、教会生活、服事和分享信仰, en: "Baptism, communion, church life, serving, and sharing your faith" }
+  - id: living
+    title: { zh: 每天怎样生活, en: Living it out }
+    summary: { zh: 饶恕、金钱、工作、做决定和受苦, en: "Forgiveness, money, work, decisions, and suffering" }
+  - id: gospel
+    title: { zh: 读完一卷福音书, en: Reading one Gospel through }
+    summary: { zh: 用四课读完《马可福音》, en: Mark's Gospel in four lessons }
