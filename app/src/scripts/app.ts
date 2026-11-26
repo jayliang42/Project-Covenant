@@ -96,6 +96,130 @@ const RELATED_BRIDGES: Record<string, { id: string; reason: Text }[]> = {
     { id: 'new/01-reading-every-day', reason: { zh: '相关一课 · 先养成自己每天读经的习惯', en: 'Related lesson · Build your own daily reading habit first' } },
     { id: 'curious/02-many-kinds-of-writing', reason: { zh: '读经工具 · 帮组员分清叙事和书信', en: 'Reading tool · Helping a group tell narrative from letters' } },
   ],
+  'curious/08-how-to-look-up-a-verse': [
+    { id: 'new/01-reading-every-day', reason: { zh: '动手做 · 每天读一点圣经', en: 'Try it · Reading a little every day' } },
+    { id: 'curious/02-many-kinds-of-writing', reason: { zh: '接着读 · 圣经里的不同文体', en: 'Next · The kinds of writing in the Bible' } },
+  ],
+  'curious/09-abraham-and-the-promise': [
+    { id: 'deeper/01-covenant-thread', reason: { zh: '读深一点 · 亚伯拉罕之约和其他圣约', en: 'Going deeper · The covenant with Abraham and the others' } },
+    { id: 'seeking/12-grace', reason: { zh: '相关一课 · 因信被算为义', en: 'Related lesson · Counted righteous by faith' } },
+  ],
+  'curious/10-out-of-egypt': [
+    { id: 'deeper/06-god-dwelling-with-people', reason: { zh: '读深一点 · 会幕和神的同在', en: 'Going deeper · The tabernacle and God’s presence' } },
+    { id: 'deeper/11-ancient-near-east', reason: { zh: '背景 · 西奈之约和古代条约', en: 'Background · The Sinai covenant and ancient treaties' } },
+  ],
+  'curious/11-kings-prophets-exile': [
+    { id: 'deeper/08-reading-the-prophets', reason: { zh: '读深一点 · 怎样读先知书', en: 'Going deeper · How to read the prophets' } },
+    { id: 'deeper/05-kingdom-of-god', reason: { zh: '读深一点 · 大卫的子孙和神的国', en: 'Going deeper · David’s son and the kingdom of God' } },
+  ],
+  'curious/12-why-the-cross': [
+    { id: 'seeking/11-what-is-sin', reason: { zh: '相关问题 · 圣经说的罪是什么', en: 'Related question · What the Bible means by sin' } },
+    { id: 'new/04-jesus-christ-his-only-son', reason: { zh: '相关一课 · 信经里的受难和复活', en: 'Related lesson · The suffering and resurrection in the Creed' } },
+  ],
+  'curious/13-the-empty-tomb': [
+    { id: 'seeking/09-did-jesus-rise', reason: { zh: '想查证 · 历史学家怎样看复活', en: 'Checking the evidence · How historians see the resurrection' } },
+    { id: 'curious/14-the-church-begins', reason: { zh: '接着读 · 教会是怎样开始的', en: 'Next · How the church began' } },
+  ],
+  'curious/14-the-church-begins': [
+    { id: 'deeper/12-pauls-cities', reason: { zh: '背景 · 保罗去过的罗马城市', en: 'Background · The Roman cities Paul visited' } },
+    { id: 'new/08-i-believe-in-the-holy-spirit', reason: { zh: '相关一课 · 圣灵是谁', en: 'Related lesson · Who the Holy Spirit is' } },
+  ],
+  'curious/15-new-heaven-new-earth': [
+    { id: 'deeper/10-reading-revelation', reason: { zh: '读深一点 · 怎样读启示录', en: 'Going deeper · How to read Revelation' } },
+    { id: 'deeper/06-god-dwelling-with-people', reason: { zh: '读深一点 · 神与人同住', en: 'Going deeper · God living among people' } },
+  ],
+  'seeking/07-are-all-religions-the-same': [
+    { id: 'curious/06-who-is-jesus', reason: { zh: '相关一课 · 耶稣是谁', en: 'Related lesson · Who Jesus is' } },
+    { id: 'seeking/12-grace', reason: { zh: '相关一课 · 恩典', en: 'Related lesson · Grace' } },
+  ],
+  'seeking/08-science-and-faith': [
+    { id: 'seeking/03-does-god-exist', reason: { zh: '相关问题 · 有神吗', en: 'Related question · Does God exist?' } },
+    { id: 'curious/05-creation-and-fall', reason: { zh: '背景 · 创造和堕落', en: 'Background · Creation and fall' } },
+  ],
+  'seeking/09-did-jesus-rise': [
+    { id: 'curious/13-the-empty-tomb', reason: { zh: '概览 · 福音书怎样记述复活', en: 'Overview · How the Gospels tell of the resurrection' } },
+    { id: 'seeking/10-four-gospels', reason: { zh: '接着读 · 为什么有四本福音书', en: 'Next · Why four Gospels' } },
+  ],
+  'seeking/10-four-gospels': [
+    { id: 'seeking/05-manuscripts', reason: { zh: '想查证 · 抄本是怎样保存的', en: 'Checking the evidence · How the manuscripts were kept' } },
+    { id: 'curious/08-how-to-look-up-a-verse', reason: { zh: '动手做 · 选一卷福音书开始读', en: 'Try it · Pick a Gospel and start reading' } },
+  ],
+  'seeking/11-what-is-sin': [
+    { id: 'seeking/12-grace', reason: { zh: '接着读 · 恩典', en: 'Next · Grace' } },
+    { id: 'new/06-when-i-fail', reason: { zh: '相关一课 · 犯了错怎么办', en: 'Related lesson · What to do when you fail' } },
+  ],
+  'seeking/12-grace': [
+    { id: 'curious/07-what-jesus-taught', reason: { zh: '背景 · 耶稣的比喻', en: 'Background · The parables of Jesus' } },
+    { id: 'seeking/06-what-it-means-to-believe', reason: { zh: '接着读 · “信”是什么意思', en: 'Next · What it means to believe' } },
+  ],
+  'seeking/13-counting-the-cost': [
+    { id: 'new/01-reading-every-day', reason: { zh: '动手做 · 开始每天读经', en: 'Try it · Start reading every day' } },
+    { id: 'new/10-finding-a-church', reason: { zh: '动手做 · 找一间教会', en: 'Try it · Find a church' } },
+  ],
+  'new/06-when-i-fail': [
+    { id: 'new/02-learning-to-pray', reason: { zh: '相关一课 · 怎样祷告', en: 'Related lesson · How to pray' } },
+    { id: 'seeking/12-grace', reason: { zh: '背景 · 为什么得救靠恩典', en: 'Background · Why salvation is by grace' } },
+  ],
+  'new/07-doubt-and-temptation': [
+    { id: 'seeking/01-questions-are-welcome', reason: { zh: '相关一课 · 圣经欢迎人提问', en: 'Related lesson · The Bible welcomes questions' } },
+    { id: 'deeper/07-reading-psalms-and-wisdom', reason: { zh: '读深一点 · 用诗篇祷告', en: 'Going deeper · Praying the Psalms' } },
+  ],
+  'new/08-i-believe-in-the-holy-spirit': [
+    { id: 'new/09-one-god-three-persons', reason: { zh: '接着读 · 三位一体', en: 'Next · The Trinity' } },
+    { id: 'new/11-gifts-and-serving', reason: { zh: '动手做 · 恩赐和服事', en: 'Try it · Gifts and serving' } },
+  ],
+  'new/09-one-god-three-persons': [
+    { id: 'new/03-i-believe-in-god-the-father', reason: { zh: '相关一课 · 我信天父', en: 'Related lesson · I believe in the Father' } },
+    { id: 'deeper/06-god-dwelling-with-people', reason: { zh: '读深一点 · 神与人同住', en: 'Going deeper · God living among people' } },
+  ],
+  'new/10-finding-a-church': [
+    { id: 'new/05-baptism-and-communion', reason: { zh: '相关一课 · 基督徒为什么需要教会', en: 'Related lesson · Why Christians need the church' } },
+    { id: 'deeper/13-hard-moments-in-a-group', reason: { zh: '读深一点 · 小组里的难处', en: 'Going deeper · Hard moments in a group' } },
+  ],
+  'new/11-gifts-and-serving': [
+    { id: 'deeper/04-leading-a-study', reason: { zh: '读深一点 · 学习带查经', en: 'Going deeper · Learning to lead a study' } },
+    { id: 'new/12-sharing-your-faith', reason: { zh: '接着读 · 怎样谈自己的信仰', en: 'Next · Talking about your faith' } },
+  ],
+  'new/12-sharing-your-faith': [
+    { id: 'seeking/07-are-all-religions-the-same', reason: { zh: '相关问题 · 所有宗教都一样吗', en: 'Related question · Are all religions the same?' } },
+    { id: 'seeking/09-did-jesus-rise', reason: { zh: '想查证 · 复活的证据', en: 'Checking the evidence · The evidence for the resurrection' } },
+  ],
+  'deeper/05-kingdom-of-god': [
+    { id: 'curious/07-what-jesus-taught', reason: { zh: '背景 · 耶稣讲的神的国', en: 'Background · Jesus on the kingdom of God' } },
+    { id: 'deeper/06-god-dwelling-with-people', reason: { zh: '接着读 · 圣殿主线', en: 'Next · The temple thread' } },
+  ],
+  'deeper/06-god-dwelling-with-people': [
+    { id: 'curious/15-new-heaven-new-earth', reason: { zh: '概览 · 新天新地', en: 'Overview · The new heaven and new earth' } },
+    { id: 'deeper/03-second-temple-world', reason: { zh: '背景 · 第二圣殿时期', en: 'Background · The Second Temple period' } },
+  ],
+  'deeper/07-reading-psalms-and-wisdom': [
+    { id: 'seeking/02-why-is-there-suffering', reason: { zh: '相关问题 · 苦难和约伯记', en: 'Related question · Suffering and Job' } },
+    { id: 'deeper/08-reading-the-prophets', reason: { zh: '接着读 · 怎样读先知书', en: 'Next · How to read the prophets' } },
+  ],
+  'deeper/08-reading-the-prophets': [
+    { id: 'curious/11-kings-prophets-exile', reason: { zh: '背景 · 君王、先知和被掳', en: 'Background · Kings, prophets, and exile' } },
+    { id: 'deeper/02-reading-the-ot-through-christ', reason: { zh: '相关一课 · 旧约怎样指向基督', en: 'Related lesson · How the Old Testament points to Christ' } },
+  ],
+  'deeper/09-reading-the-letters': [
+    { id: 'deeper/12-pauls-cities', reason: { zh: '背景 · 保罗书信背后的城市', en: 'Background · The cities behind Paul’s letters' } },
+    { id: 'deeper/10-reading-revelation', reason: { zh: '接着读 · 怎样读启示录', en: 'Next · How to read Revelation' } },
+  ],
+  'deeper/10-reading-revelation': [
+    { id: 'curious/15-new-heaven-new-earth', reason: { zh: '概览 · 故事的结局', en: 'Overview · How the story ends' } },
+    { id: 'deeper/05-kingdom-of-god', reason: { zh: '相关一课 · 已经和还没有', en: 'Related lesson · Already and not yet' } },
+  ],
+  'deeper/11-ancient-near-east': [
+    { id: 'seeking/04-what-history-can-show', reason: { zh: '相关一课 · 考古能说明什么', en: 'Related lesson · What archaeology can show' } },
+    { id: 'curious/10-out-of-egypt', reason: { zh: '概览 · 出埃及和西奈之约', en: 'Overview · The exodus and the Sinai covenant' } },
+  ],
+  'deeper/12-pauls-cities': [
+    { id: 'curious/14-the-church-begins', reason: { zh: '概览 · 教会是怎样开始的', en: 'Overview · How the church began' } },
+    { id: 'deeper/09-reading-the-letters', reason: { zh: '接着读 · 怎样读书信', en: 'Next · How to read the letters' } },
+  ],
+  'deeper/13-hard-moments-in-a-group': [
+    { id: 'deeper/04-leading-a-study', reason: { zh: '相关一课 · 怎样带查经', en: 'Related lesson · How to lead a study' } },
+    { id: 'new/07-doubt-and-temptation', reason: { zh: '相关一课 · 有疑惑的时候', en: 'Related lesson · When doubts come' } },
+  ],
 };
 
 const data: { tracks: TrackInfo[] } = JSON.parse(document.getElementById('app-data')?.textContent || '{"tracks":[]}');
