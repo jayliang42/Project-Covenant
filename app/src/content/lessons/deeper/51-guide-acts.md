@@ -6,7 +6,7 @@ summary:
   zh: "《使徒行传》是路加福音的下卷，讲福音怎样从耶路撒冷传到罗马。前半卷以彼得为主，后半卷以保罗为主。本课介绍它的作者和年代的不同看法、按 1:8 展开的结构，以及读这卷书时要留意的“描述”和“规定”的分别。"
   en: "Acts is the second volume of Luke's Gospel and tells how the gospel spread from Jerusalem to Rome. Peter leads the first half and Paul the second. This lesson introduces differing views on its author and date, its structure built on 1:8, and the difference between describing and prescribing when reading it."
 unit: book-guides
-order: 8
+order: 9
 minutes: 9
 status: published
 review: checked

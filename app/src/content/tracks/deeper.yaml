@@ -16,7 +16,7 @@ units:
     summary: { zh: 叙事和律法、诗篇智慧书、先知书、福音书、比喻、书信、启示录、原文和工具书, en: "Narrative and law, Psalms and wisdom, prophets, Gospels, parables, letters, Revelation, original languages and tools" }
   - id: book-guides
     title: { zh: 逐卷导读, en: Book guides }
-    summary: { zh: 创世记、出埃及记、约伯记、诗篇、以赛亚书、马可、约翰、使徒行传、罗马书、以弗所书、希伯来书、雅各书, en: "Genesis, Exodus, Job, Psalms, Isaiah, Mark, John, Acts, Romans, Ephesians, Hebrews, James" }
+    summary: { zh: 创世记、出埃及记、约伯记、诗篇、以赛亚书、但以理书、马可、约翰、使徒行传、罗马书、以弗所书、希伯来书、雅各书, en: "Genesis, Exodus, Job, Psalms, Isaiah, Daniel, Mark, John, Acts, Romans, Ephesians, Hebrews, James" }
   - id: background
     title: { zh: 历史背景, en: Historical background }
     summary: { zh: 古代近东、第二圣殿、罗马城市、死海古卷, en: "Ancient Near East, Second Temple, Roman cities, the Dead Sea Scrolls" }
@@ -31,7 +31,7 @@ units:
     summary: { zh: 三大传统概览、圣经的权威和正典、基督再来、洗礼和圣餐、属灵恩赐、女性的服事、教会治理、马利亚、圣徒和圣像, en: "An overview of the three traditions, Scripture's authority and canon, Christ's return, baptism and the Lord's Supper, spiritual gifts, women in ministry, church government, Mary, saints and icons" }
   - id: ethics
     title: { zh: 婚姻和性的伦理, en: The ethics of marriage and sexuality }
-    summary: { zh: 婚姻、离婚和再婚；性伦理；安息日和主日；战争与和平；成功神学, en: "Marriage, divorce, and remarriage; sexual ethics; the Sabbath and the Lord's Day; war and peace; the prosperity gospel" }
+    summary: { zh: 婚姻、离婚和再婚；性伦理；安息日和主日；战争与和平；成功神学；喝酒, en: "Marriage, divorce, and remarriage; sexual ethics; the Sabbath and the Lord's Day; war and peace; the prosperity gospel; alcohol" }
   - id: leading
     title: { zh: 带领他人, en: Leading others }
     summary: { zh: 带查经、处理小组难处、陪伴受苦的人、预备分享、带领祷告, en: "Leading studies, handling hard moments, caring for those who suffer, preparing a talk, and leading prayer" }

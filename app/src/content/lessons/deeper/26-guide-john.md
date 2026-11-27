@@ -6,7 +6,7 @@ summary:
   zh: "《约翰福音》和另外三卷福音书写法很不一样。本课介绍它的结构、七个“神迹”和七个“我是”，作者自己说明的写作目的，以及学者对作者身份的几种看法。"
   en: "John is written very differently from the other three Gospels. This lesson introduces its structure, its seven signs and seven “I am” sayings, the purpose the author states, and the views scholars hold on who wrote it."
 unit: book-guides
-order: 7
+order: 8
 minutes: 8
 status: published
 review: checked

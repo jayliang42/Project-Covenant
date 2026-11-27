@@ -6,7 +6,7 @@ summary:
   zh: "《雅各书》很像旧约的箴言：短句多，讲试炼、说话、贫富和行道。它说“信心若没有行为就是死的”，路德因此称它为“稻草的书信”。本课介绍作者的不同看法、书的主题，以及雅各和保罗讲“称义”是否冲突。"
   en: "James reads much like Proverbs: short sayings on trials, speech, wealth and poverty, and doing the word. It says “faith, if it has no works, is dead,” and Luther therefore called it an “epistle of straw.” This lesson introduces differing views on its author, its themes, and whether James and Paul conflict on justification."
 unit: book-guides
-order: 12
+order: 13
 minutes: 8
 status: published
 review: checked

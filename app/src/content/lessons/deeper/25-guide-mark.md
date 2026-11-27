@@ -6,7 +6,7 @@ summary:
   zh: "“刚开始信”路径已经用四课读完了马可福音。这一课从学术的角度看它：马可福音和马太、路加的关系，学者对“谁先写成”的几种看法，以及这些看法对读经有什么用处。"
   en: "The New Believer path reads through Mark in four lessons. This lesson looks at Mark from the scholar's side: how it relates to Matthew and Luke, the views on which was written first, and how these views help in reading."
 unit: book-guides
-order: 6
+order: 7
 minutes: 8
 status: published
 review: checked

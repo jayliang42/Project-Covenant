@@ -6,7 +6,7 @@ summary:
   zh: "《罗马书》是保罗最长、最有系统的一封信，奥古斯丁、路德、卫斯理都在读这封信时有了转折。本课介绍它的写作背景和结构，并介绍近几十年关于“怎样读保罗”的一场大讨论。"
   en: "Romans is Paul's longest and most systematic letter, and Augustine, Luther, and Wesley each reached a turning point while reading it. This lesson introduces its setting and structure and a major recent debate on how to read Paul."
 unit: book-guides
-order: 9
+order: 10
 minutes: 9
 status: published
 review: checked

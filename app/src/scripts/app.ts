@@ -569,6 +569,17 @@ const RELATED_BRIDGES: Record<string, { id: string; reason: Text }[]> = {
     { id: 'curious/15-new-heaven-new-earth', reason: { zh: '入门 · 故事的结局：新天新地', en: "First look · How the story ends: a new heaven and earth" } },
     { id: 'deeper/21-guide-genesis', reason: { zh: '相关一课 · 逐卷读创世记', en: "Related lesson · A guide to Genesis" } },
   ],
+  'deeper/64-guide-daniel': [
+    { id: 'deeper/30-the-return-of-christ', reason: { zh: '相关一课 · 基督再来和几种末世观', en: "Related lesson · Christ's return and views of the end" } },
+    { id: 'seeking/22-who-did-jesus-say-he-was', reason: { zh: '相关问题 · 耶稣自己说他是谁', en: "Related question · Who did Jesus say he was?" } },
+  ],
+  'deeper/65-alcohol': [
+    { id: 'new/19-making-decisions', reason: { zh: '相关一课 · 怎样做决定', en: "Related lesson · Making decisions" } },
+  ],
+  'seeking/26-why-so-many-denominations': [
+    { id: 'deeper/62-the-three-great-traditions', reason: { zh: '读深一点 · 三大传统概览', en: "Going deeper · The three great traditions" } },
+    { id: 'new/10-finding-a-church', reason: { zh: '动手做 · 怎样找一间教会', en: "Try it · How to find a church" } },
+  ],
 };
 
 const data: { tracks: TrackInfo[] } = JSON.parse(document.getElementById('app-data')?.textContent || '{"tracks":[]}');

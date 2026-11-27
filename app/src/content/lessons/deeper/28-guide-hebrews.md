@@ -6,7 +6,7 @@ summary:
   zh: "《希伯来书》用旧约的祭司、献祭和会幕来说明耶稣是谁、做了什么。本课介绍它的主题和结构，作者是谁这个古老的问题，以及信徒对书中几段严厉警告的不同理解。"
   en: "Hebrews uses the Old Testament priesthood, sacrifices, and tabernacle to explain who Jesus is and what he has done. This lesson introduces its theme and structure, the ancient question of its authorship, and the different ways believers understand its severe warnings."
 unit: book-guides
-order: 11
+order: 12
 minutes: 9
 status: published
 review: checked
