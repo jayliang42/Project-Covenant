@@ -6,7 +6,7 @@ summary:
   zh: "一位受人尊敬的宗教领袖，一个被人躲着走的妇人，一个大家都讨厌的税吏长。本课看耶稣怎样对待这三个很不一样的人。"
   en: "A respected religious leader, a woman others avoided, and a chief tax collector everyone disliked. This lesson looks at how Jesus treated three very different people."
 unit: jesus
-order: 2.5
+order: 5
 minutes: 7
 status: published
 review: checked

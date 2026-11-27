@@ -6,7 +6,7 @@ summary:
   zh: "信经讲完圣灵，接着讲教会。本课解释“圣”“公”“圣徒相通”各是什么意思，并说明天主教、东正教和新教对“圣徒相通”的理解有什么不同。"
   en: "After the Holy Spirit, the creed speaks of the church. This lesson explains what “holy,” “catholic,” and “the communion of saints” mean, and how Catholic, Orthodox, and Protestant Christians understand the communion of saints differently."
 unit: core
-order: 5
+order: 4
 minutes: 8
 status: published
 review: checked

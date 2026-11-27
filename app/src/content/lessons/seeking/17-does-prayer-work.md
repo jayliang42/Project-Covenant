@@ -6,7 +6,7 @@ summary:
   zh: "有人祷告后病好了，也有人祷告后病没有好。本课看一项大型医学研究的结果，圣经怎样讲祷告，以及基督徒怎样理解没有蒙应允的祷告。"
   en: "Some people pray and recover, and others pray and do not. This lesson looks at the result of a large medical study, at how the Bible speaks of prayer, and at how Christians understand prayers that are not granted."
 unit: big-questions
-order: 9
+order: 6
 minutes: 7
 status: published
 review: checked

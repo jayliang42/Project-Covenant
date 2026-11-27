@@ -6,7 +6,7 @@ summary:
   zh: "福音书记载耶稣医治病人、平静风浪、使死人复活。本课看这些神迹有哪几类，福音书为什么记载它们，以及相信的人和不相信的人各自怎样看。"
   en: "The Gospels record Jesus healing the sick, stilling a storm, and raising the dead. This lesson looks at the kinds of miracles, why the Gospels record them, and how believers and sceptics each regard them."
 unit: jesus
-order: 2.3
+order: 4
 minutes: 7
 status: published
 review: checked

@@ -6,7 +6,7 @@ summary:
   zh: "福音书记载，妇女们发现坟墓空了，复活的耶稣向许多人显现。本课看这些记载讲了什么，以及基督徒为什么把复活看得这么重。"
   en: "The Gospels say the women found the tomb empty and the risen Jesus appeared to many people. This lesson looks at what those accounts say and why Christians count the resurrection so important."
 unit: jesus
-order: 4
+order: 9
 minutes: 6
 status: published
 review: checked

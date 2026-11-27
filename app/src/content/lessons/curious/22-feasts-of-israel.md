@@ -6,7 +6,7 @@ summary:
   zh: "逾越节、五旬节、赎罪日、住棚节，这些名字在新旧约里常常出现。本课介绍主要的节期各纪念什么，新约怎样把它们和耶稣连起来，以及基督徒今天怎样看待这些节期。"
   en: "Passover, Pentecost, the Day of Atonement, and the Feast of Booths appear often in both Testaments. This lesson introduces what the main feasts remember, how the New Testament connects them with Jesus, and how Christians regard them today."
 unit: big-story
-order: 4.3
+order: 5
 minutes: 7
 status: published
 review: checked

@@ -97,5 +97,5 @@ In 1977 the scholar E. P. Sanders published Paul and Palestinian Judaism, which 
 批评新观的学者，例如韦斯特霍姆，指出罗马书 4:4-5 说“做工的得工价，不算恩典……只信称罪人为义的神”，保罗在这里讲的明明是一般的行为和功德。也有很多学者认为两种读法可以互相补充：罗马书既讲罪人怎样被神接纳，也讲犹太人和外邦人怎样在基督里成为一家。<br>
 Critics of the New Perspective, such as Stephen Westerholm, point to Romans 4:4-5, “to him who works, the reward is not counted as grace... but believes in him who justifies the ungodly,” where Paul plainly speaks of works and merit in general. Many scholars also hold that the two readings complement each other: Romans speaks both of how sinners are accepted by God and of how Jews and Gentiles become one family in Christ.
 
-这场讨论主要在新教学者之间进行。天主教和东正教对称义有自己的理解，前面讲宗教改革和“称义与成圣”的两课介绍过。<br>
+这场讨论主要在新教学者之间进行。天主教和东正教对称义有自己的理解，“宗教改革”和“称义和成圣”两课介绍过。<br>
 This discussion has taken place mainly among Protestant scholars. Catholics and Orthodox have their own understanding of justification, introduced in the earlier lessons on the Reformation and on justification and sanctification.

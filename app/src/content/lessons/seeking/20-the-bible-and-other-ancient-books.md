@@ -6,7 +6,7 @@ summary:
   zh: "《论语》、佛经、《古兰经》都是影响很大的古代经典。本课比较它们是怎样成书的，说明圣经在写作方式上的几个特点，也说明这些比较能证明什么、不能证明什么。"
   en: "The Analects, the Buddhist scriptures, and the Qur'an are all ancient classics of great influence. This lesson compares how they came to be written, describes some features of how the Bible was written, and is clear about what such comparisons can and cannot show."
 unit: history
-order: 5
+order: 3
 minutes: 8
 status: published
 review: checked

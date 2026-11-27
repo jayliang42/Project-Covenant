@@ -6,7 +6,7 @@ summary:
   zh: "《使徒信经》的最后三句讲三样盼望：罪被赦免，身体复活，永远的生命。本课逐句解释，并说明各传统在“怎样认罪”上的不同做法。"
   en: "The last three lines of the Apostles' Creed name three hopes: sins forgiven, the body raised, and life everlasting. This lesson explains each line and describes how the traditions differ on the practice of confession."
 unit: core
-order: 6
+order: 5
 minutes: 8
 status: published
 review: checked

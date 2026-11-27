@@ -6,7 +6,7 @@ summary:
   zh: "马槽、牧羊人、东方来的博士，这些画面很多人都见过。本课看福音书怎样记载耶稣的出生，哪些是圣经里写的，哪些是后来的习俗。"
   en: "The manger, the shepherds, and the wise men from the east are familiar pictures. This lesson looks at how the Gospels record Jesus' birth, and separates what the Bible says from later custom."
 unit: jesus
-order: 1.5
+order: 2
 minutes: 7
 status: published
 review: checked

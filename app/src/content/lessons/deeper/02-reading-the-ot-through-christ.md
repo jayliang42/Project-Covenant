@@ -6,7 +6,7 @@ summary:
   zh: 复活的耶稣在以马忤斯路上怎样给门徒讲解摩西和众先知？本课介绍“预表与成全”的读法，并说明它和随意寓意的区别。
   en: How did the risen Jesus explain Moses and the prophets to two disciples on the road to Emmaus? This lesson introduces typology and fulfillment and shows how they differ from arbitrary allegory.
 unit: whole-bible
-order: 2
+order: 4
 minutes: 8
 status: published
 review: checked

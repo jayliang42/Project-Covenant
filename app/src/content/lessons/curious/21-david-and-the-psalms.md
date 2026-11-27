@@ -6,7 +6,7 @@ summary:
   zh: "大卫是旧约里篇幅最多的人物之一。本课讲他的一生、他的失败、神给他的应许，以及和他连在一起的那卷诗歌集。"
   en: "David is one of the most fully described people in the Old Testament. This lesson covers his life, his failure, God's promise to him, and the book of songs tied to his name."
 unit: big-story
-order: 4.5
+order: 6
 minutes: 7
 status: published
 review: checked
@@ -23,7 +23,7 @@ scripture:
       zh: "你寿数满足、与你列祖同睡的时候，我必使你的后裔接续你的位；我也必坚定他的国。他必为我的名建造殿宇；我必坚定他的国位，直到永远。"
       en: "When your days are fulfilled, and you sleep with your fathers, I will set up your offspring after you, who will proceed out of your body, and I will establish his kingdom. He will build a house for my name, and I will establish the throne of his kingdom forever."
   - ref: 诗篇 23:1-4
-    refEn: Psalms 23:1-4
+    refEn: Psalm 23:1-4
     text:
       zh: "耶和华是我的牧者，我必不致缺乏。他使我躺卧在青草地上，领我在可安歇的水边。他使我的灵魂苏醒，为自己的名引导我走义路。我虽然行过死荫的幽谷，也不怕遭害，因为你与我同在；你的杖，你的竿，都安慰我。"
       en: "Yahweh is my shepherd: I shall lack nothing. He makes me lie down in green pastures. He leads me beside still waters. He restores my soul. He guides me in the paths of righteousness for his name’s sake. Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me. Your rod and your staff, they comfort me."

@@ -5,8 +5,8 @@ title:
 summary:
   zh: "这是很多人对基督教最大的反感之一。本课看耶稣自己怎样讲审判，介绍教会里对地狱的三种理解，以及对“没有听过福音的人”的几种看法。"
   en: "For many people this is one of the strongest objections to Christianity. This lesson looks at how Jesus himself spoke of judgment, describes three understandings of hell held in the church, and sets out the views on those who never heard the gospel."
-unit: big-questions
-order: 8
+unit: hard-questions
+order: 2
 minutes: 9
 status: published
 review: checked

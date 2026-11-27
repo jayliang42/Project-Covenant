@@ -6,7 +6,7 @@ summary:
   zh: "先知书占了旧约很大篇幅，却常被人略过。本课讲先知是什么人，他们的话主要讲什么，以及怎样理解“预言”和“应验”。"
   en: "The prophets take up a large part of the Old Testament but are often skipped. This lesson explains who the prophets were, what they mainly said, and how to understand prophecy and fulfilment."
 unit: reading-books
-order: 2
+order: 3
 minutes: 8
 status: published
 review: checked

@@ -6,7 +6,7 @@ summary:
   zh: 八福、爱仇敌、浪子的父亲。耶稣讲的“天国”和世人通常看重的东西很不一样。
   en: The Beatitudes, love for enemies, and the prodigal's father. The kingdom Jesus taught values very different things from what people usually prize.
 unit: jesus
-order: 2
+order: 3
 minutes: 6
 status: published
 review: checked

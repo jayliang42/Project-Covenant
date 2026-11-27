@@ -5,8 +5,8 @@ title:
 summary:
   zh: "很多人担心信耶稣以后，这也不能做，那也不能做。本课看“自由”有哪两种意思，耶稣说的自由是什么，以及信徒实际要放下什么。"
   en: "Many people worry that after believing in Jesus they will be forbidden this and that. This lesson looks at two meanings of freedom, at the freedom Jesus speaks of, and at what a believer really has to lay down."
-unit: big-questions
-order: 10
+unit: hard-questions
+order: 4
 minutes: 7
 status: published
 review: checked

@@ -6,7 +6,7 @@ summary:
   zh: 宇宙的秩序、人心的道德直觉、科学方法的范围，以及圣经所说那位让人认识他的创造主。
   en: Cosmic order, human moral intuition, the scope of science, and the Creator who, according to Scripture, makes himself known.
 unit: big-questions
-order: 3
+order: 2
 minutes: 7
 status: published
 review: checked

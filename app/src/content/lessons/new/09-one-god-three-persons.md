@@ -6,7 +6,7 @@ summary:
   zh: "“三位一体”这个词不在圣经里，它总结的是圣经对神的描述。本课看这个教义说了什么，常见的几种误解，以及它和信徒生活的关系。"
   en: "The word “Trinity” is not in the Bible. It sums up how the Bible describes God. This lesson looks at what the doctrine says, some common misunderstandings, and how it bears on a believer's life."
 unit: core
-order: 4
+order: 6
 minutes: 7
 status: published
 review: checked

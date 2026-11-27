@@ -6,7 +6,7 @@ summary:
   zh: "本课看历史学家普遍接受的几件事，几种常见的其他解释，以及历史研究在这个问题上能走多远。"
   en: "This lesson looks at the facts most historians accept, several common alternative explanations, and how far historical study can go on this question."
 unit: history
-order: 3
+order: 6
 minutes: 8
 status: published
 review: checked

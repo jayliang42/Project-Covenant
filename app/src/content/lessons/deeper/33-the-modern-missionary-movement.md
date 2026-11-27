@@ -6,7 +6,7 @@ summary:
   zh: "1792 年，英国鞋匠出身的克理威廉发表小册子，呼吁教会向万民传福音。以后两百年，基督教从一个主要在欧美的宗教变成遍布全球的信仰。本课介绍这段历史，也说明它复杂的一面。"
   en: "In 1792 William Carey, a former shoemaker in England, published a pamphlet urging the church to take the gospel to all nations. Over the next two centuries Christianity went from a faith centred in Europe and the Americas to one spread across the globe. This lesson introduces this history, including its complicated side."
 unit: church-history
-order: 2.7
+order: 4
 minutes: 9
 status: published
 review: checked
@@ -76,8 +76,8 @@ In the first two centuries after the Reformation, Protestants did little to spre
 克理是英格兰的一位鞋匠，后来成了浸信会的牧师。1792 年 5 月 12 日，他发表了《论基督徒使用方法使异教徒归主的责任》，主张耶稣“使万民作我的门徒”（太 28:19）的吩咐今天仍然约束所有基督徒。同年 10 月 2 日，浸信会差会在凯特琳成立。1793 年 11 月，克理带着妻子和四个孩子到了加尔各答。<br>
 Carey was a shoemaker in England who became a Baptist pastor. On 12 May 1792 he published An Enquiry into the Obligations of Christians to Use Means for the Conversion of the Heathens, arguing that Jesus' command to “make disciples of all nations” (Matthew 28:19) still binds all Christians. On 2 October that year the Baptist Missionary Society was founded at Kettering. In November 1793 Carey arrived in Calcutta with his wife and four children.
 
-克理在印度工作了四十年，没有回过英国。他和同工在塞兰坡把整本圣经译成了六种语言，部分经卷译成了二十多种语言。前面一课讲过，第一部中文全本圣经之一也是在塞兰坡完成的。<br>
-Carey worked in India for forty years without returning to England. With his colleagues at Serampore he translated the whole Bible into six languages and parts of it into more than twenty more. As an earlier lesson mentioned, one of the first complete Chinese Bibles was also produced at Serampore.
+克理在印度工作了四十年，没有回过英国。他和同工在塞兰坡把整本圣经译成了六种语言，部分经卷译成了二十多种语言。“圣经怎样来到中文世界”一课会讲到，最早的中文全本圣经之一也是在塞兰坡完成的。<br>
+Carey worked in India for forty years without returning to England. With his colleagues at Serampore he translated the whole Bible into six languages and parts of it into more than twenty more. As the lesson on the Bible in Chinese explains, one of the first complete Chinese Bibles was also produced at Serampore.
 
 克理以后，英美相继成立了许多差会。19 世纪被一些历史学家称为新教的“宣教大世纪”。<br>
 After Carey, many mission societies were founded in Britain and America. Some historians call the 19th century the “great century” of Protestant mission.

@@ -6,7 +6,7 @@ summary:
   zh: "“神的国”是耶稣讲道的主题。本课顺着圣经追踪这条线：神是王，人被托付管理，以色列盼望大卫的子孙，耶稣宣告国度来到，以及它最后的完成。"
   en: "The kingdom of God was the theme of Jesus' preaching. This lesson traces the thread through Scripture: God as King, people entrusted with rule, Israel's hope for David's son, Jesus announcing the kingdom, and its final fulfilment."
 unit: whole-bible
-order: 3
+order: 2
 minutes: 8
 status: published
 review: checked

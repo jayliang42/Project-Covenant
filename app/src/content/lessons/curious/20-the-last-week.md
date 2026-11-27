@@ -6,7 +6,7 @@ summary:
   zh: "四卷福音书都用了很大的篇幅讲耶稣在耶路撒冷的最后一周。本课按日子把这一周的事排出来，并说明教会今天怎样纪念这几天。"
   en: "All four Gospels give a large share of their pages to Jesus' last week in Jerusalem. This lesson sets out the week day by day and explains how churches remember these days now."
 unit: jesus
-order: 2.9
+order: 7
 minutes: 7
 status: published
 review: checked

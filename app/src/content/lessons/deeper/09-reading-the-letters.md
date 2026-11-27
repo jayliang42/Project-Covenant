@@ -6,7 +6,7 @@ summary:
   zh: "新约 27 卷书里有 21 卷是书信。本课讲古代书信的格式，怎样从信里推想收信人的处境，以及把书信应用到今天时要注意什么。"
   en: "Twenty-one of the New Testament's 27 books are letters. This lesson explains the form of ancient letters, how to work out the readers' situation from the letter itself, and what to watch for when applying the letters today."
 unit: reading-books
-order: 3
+order: 5
 minutes: 8
 status: published
 review: checked

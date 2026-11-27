@@ -6,7 +6,7 @@ summary:
   zh: 这是最难回答的问题之一。本课看圣经在《约伯记》、《诗篇》和十字架的记载里怎样回应受苦的人。
   en: This is one of the hardest questions there is. This lesson looks at how the Bible responds to people who suffer, in Job, in the Psalms, and at the cross.
 unit: big-questions
-order: 2
+order: 3
 minutes: 7
 status: published
 review: checked

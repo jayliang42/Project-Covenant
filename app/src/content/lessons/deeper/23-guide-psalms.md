@@ -3,8 +3,8 @@ title:
   zh: "逐卷导读：诗篇"
   en: "Book guide: Psalms"
 summary:
-  zh: "前面一课讲了怎样读诗歌和智慧书，这一课看《诗篇》整卷书的安排：五卷的结构、开头两篇的作用、新约怎样引用诗篇，以及信徒怎样理解那些求神报应仇敌的诗。"
-  en: "An earlier lesson covered how to read poetry and wisdom. This one looks at how the book of Psalms as a whole is arranged: its five books, the role of the first two psalms, how the New Testament quotes the Psalms, and how believers understand the psalms that ask God to repay enemies."
+  zh: "“怎样读诗篇和智慧书”一课讲了读诗歌的方法，这一课看《诗篇》整卷书的安排：五卷的结构、开头两篇的作用、新约怎样引用诗篇，以及信徒怎样理解那些求神报应仇敌的诗。"
+  en: "The lesson on reading the Psalms and wisdom books covered how to read poetry. This one looks at how the book of Psalms as a whole is arranged: its five books, the role of the first two psalms, how the New Testament quotes the Psalms, and how believers understand the psalms that ask God to repay enemies."
 unit: book-guides
 order: 3
 minutes: 8
@@ -13,17 +13,17 @@ review: checked
 art: lyre-dawn
 scripture:
   - ref: 诗篇 1:1-2
-    refEn: Psalms 1:1-2
+    refEn: Psalm 1:1-2
     text:
       zh: "不从恶人的计谋，不站罪人的道路，不坐亵慢人的座位，惟喜爱耶和华的律法，昼夜思想，这人便为有福！"
       en: "Blessed is the man who doesn’t walk in the counsel of the wicked, nor stand on the path of sinners, nor sit in the seat of scoffers; but his delight is in Yahweh’s law. On his law he meditates day and night."
   - ref: 诗篇 2:7
-    refEn: Psalms 2:7
+    refEn: Psalm 2:7
     text:
       zh: "受膏者说：我要传圣旨。耶和华曾对我说：你是我的儿子，我今日生你。"
       en: "I will tell of the decree: Yahweh said to me, “You are my son. Today I have become your father.”"
   - ref: 诗篇 150:6
-    refEn: Psalms 150:6
+    refEn: Psalm 150:6
     text:
       zh: "凡有气息的都要赞美耶和华！你们要赞美耶和华！"
       en: "Let everything that has breath praise Yah! Praise Yah!"

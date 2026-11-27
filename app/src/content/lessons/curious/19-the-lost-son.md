@@ -6,7 +6,7 @@ summary:
   zh: "这是耶稣讲过的最有名的故事之一。本课一段一段地读它，看小儿子、大儿子和父亲各自代表什么，以及耶稣是讲给谁听的。"
   en: "This is one of the best-known stories Jesus told. This lesson reads it part by part, looking at what the younger son, the older son, and the father each stand for, and at whom Jesus was addressing."
 unit: jesus
-order: 2.7
+order: 6
 minutes: 7
 status: published
 review: checked

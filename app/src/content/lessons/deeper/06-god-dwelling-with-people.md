@@ -6,7 +6,7 @@ summary:
   zh: "从伊甸园、会幕、圣殿，到耶稣、教会和新耶路撒冷，圣经一路都在讲神要与人同住。本课顺着这条线读整本圣经。"
   en: "From Eden to the tabernacle and temple, then to Jesus, the church, and the New Jerusalem, the Bible keeps returning to God's desire to live among people. This lesson follows that thread through the whole Bible."
 unit: whole-bible
-order: 4
+order: 3
 minutes: 8
 status: published
 review: checked

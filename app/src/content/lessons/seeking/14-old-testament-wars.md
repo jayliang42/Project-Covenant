@@ -5,8 +5,8 @@ title:
 summary:
   zh: "《约书亚记》里攻取迦南的记载，是很多人读圣经时遇到的最大难题之一。本课先把经文自己说的内容摆出来，再介绍基督徒对这些经文的几种不同理解。"
   en: "The conquest of Canaan in Joshua is one of the hardest things many readers meet in the Bible. This lesson first sets out what the text itself says and then describes the different ways Christians understand these passages."
-unit: big-questions
-order: 6
+unit: hard-questions
+order: 1
 minutes: 9
 status: published
 review: checked

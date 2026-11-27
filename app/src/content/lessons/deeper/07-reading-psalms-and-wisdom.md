@@ -6,7 +6,7 @@ summary:
   zh: "诗篇是用来祷告和歌唱的诗，箴言、约伯记、传道书教人怎样在神面前有智慧地生活。本课讲希伯来诗歌的特点，以及读这些书时容易犯的错误。"
   en: "The Psalms are poems for prayer and song, and Proverbs, Job, and Ecclesiastes teach how to live wisely before God. This lesson explains features of Hebrew poetry and common mistakes in reading these books."
 unit: reading-books
-order: 1
+order: 2
 minutes: 8
 status: published
 review: checked

@@ -6,7 +6,7 @@ summary:
   zh: "《启示录》充满异象和象征，常让人害怕或好奇。本课讲这卷书的文体和背景，几种主要的解读方式，以及不同读法都承认的中心信息。"
   en: "Revelation is full of visions and symbols, and it often makes people anxious or curious. This lesson covers the book's genre and setting, the main ways of interpreting it, and the central message all of them recognize."
 unit: reading-books
-order: 4
+order: 6
 minutes: 8
 status: published
 review: checked

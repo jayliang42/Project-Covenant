@@ -5,8 +5,8 @@ title:
 summary:
   zh: "十字军、宗教裁判所、为奴隶制辩护、近年的丑闻，这些都是真实的历史。本课不回避这些事，并说明圣经自己怎样看待打着神的名义作恶的人。"
   en: "The Crusades, the Inquisition, the defence of slavery, and the scandals of recent years are real history. This lesson does not avoid them, and it explains how the Bible itself regards people who do evil in God's name."
-unit: big-questions
-order: 7
+unit: hard-questions
+order: 3
 minutes: 8
 status: published
 review: checked

@@ -6,7 +6,7 @@ summary:
   zh: "圣经最后两章写的是天地更新、神与人同住。本课看圣经怎样描写这个结局，以及它对今天的生活有什么意义。"
   en: "The Bible's last two chapters describe heaven and earth made new, with God living among people. This lesson looks at how the Bible pictures that ending and what it means for life now."
 unit: story-end
-order: 2
+order: 3
 minutes: 6
 status: published
 review: checked

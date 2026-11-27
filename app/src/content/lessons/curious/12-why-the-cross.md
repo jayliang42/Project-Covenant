@@ -6,7 +6,7 @@ summary:
   zh: "十字架是罗马最羞辱人的刑罚，最早的基督徒却把它放在信息的中心。本课看福音书怎样记述耶稣的死，新约又怎样解释它。"
   en: "The cross was Rome's most shameful punishment, yet the first Christians put it at the centre of their message. This lesson looks at how the Gospels tell of Jesus' death and how the New Testament explains it."
 unit: jesus
-order: 3
+order: 8
 minutes: 7
 status: published
 review: checked

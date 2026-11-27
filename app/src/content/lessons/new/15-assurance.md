@@ -106,5 +106,5 @@ All sides agree that salvation is by God's grace from start to finish, that beli
 怀疑的时候，先把眼睛从自己身上移开，去看基督和他的应许。保罗说：“我深信那在你们心里动了善工的，必成全这工，直到耶稣基督的日子”（腓 1:6）。<br>
 When you doubt, first turn your eyes away from yourself and look at Christ and his promise. Paul says he is “confident of this very thing, that he who began a good work in you will complete it until the day of Jesus Christ” (Philippians 1:6).
 
-如果是某件罪让你不安，就向神认罪，回到上一课讲的应许。如果怀疑持续很久，去找牧者或成熟的信徒谈一谈。把疑惑说出来，比一个人闷着想要好。<br>
-If a particular sin is troubling you, confess it to God and return to the promise in the previous lesson. If the doubt lasts a long time, talk with a pastor or a mature believer. Saying your doubts aloud is better than turning them over alone.
+如果是某件罪让你不安，就向神认罪，回到“我信罪得赦免”那一课讲的应许（约壹 1:9）。如果怀疑持续很久，去找牧者或成熟的信徒谈一谈。把疑惑说出来，比一个人闷着想要好。<br>
+If a particular sin is troubling you, confess it to God and return to the promise in the lesson on the forgiveness of sins (1 John 1:9). If the doubt lasts a long time, talk with a pastor or a mature believer. Saying your doubts aloud is better than turning them over alone.

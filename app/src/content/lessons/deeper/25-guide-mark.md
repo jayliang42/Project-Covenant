@@ -96,5 +96,5 @@ Mark's telling is often blunter, and the disciples' weakness shows more plainly.
 
 ## 马可福音的重点 | Mark's emphases
 
-前面四课已经按段落读过马可福音，这里只列出它的几个重点：开头就宣告耶稣是“神的儿子”（可 1:1）；前半部分不断问“这到底是谁”；8:29 彼得的认信是转折点；后半部分走向十字架，钥节是“人子来……要服事人，并且要舍命作多人的赎价”（可 10:45）；第一个亲口说出“这人真是神的儿子”的，是十字架下的罗马百夫长。<br>
-The four earlier lessons read Mark section by section, so here are only its main emphases. It opens by announcing Jesus as “the Son of God” (Mark 1:1). Its first half keeps asking, “Who then is this?” Peter's confession at 8:29 is the turning point. Its second half moves toward the cross, with the key verse, “the Son of Man also came not to be served, but to serve, and to give his life as a ransom for many” (Mark 10:45). The first person to say aloud, “Truly this man was the Son of God,” is the Roman centurion at the cross.
+“刚开始信”路径里的四课已经按段落读过马可福音，这里只列出它的几个重点：开头就宣告耶稣是“神的儿子”（可 1:1）；前半部分不断问“这到底是谁”；8:29 彼得的认信是转折点；后半部分走向十字架，钥节是“人子来……要服事人，并且要舍命作多人的赎价”（可 10:45）；第一个亲口说出“这人真是神的儿子”的，是十字架下的罗马百夫长。<br>
+The four lessons in the New Believer path read Mark section by section, so here are only its main emphases. It opens by announcing Jesus as “the Son of God” (Mark 1:1). Its first half keeps asking, “Who then is this?” Peter's confession at 8:29 is the turning point. Its second half moves toward the cross, with the key verse, “the Son of Man also came not to be served, but to serve, and to give his life as a ransom for many” (Mark 10:45). The first person to say aloud, “Truly this man was the Son of God,” is the Roman centurion at the cross.
