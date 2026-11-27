@@ -6,7 +6,7 @@ summary:
   zh: "很多基督徒想和朋友家人谈信仰，又怕说错、怕关系变僵。本课看新约里的人怎样讲自己的经历，以及几个尊重人的做法。"
   en: "Many Christians want to talk about their faith with friends and family, but worry about saying the wrong thing or straining the relationship. This lesson looks at how people in the New Testament told their stories, and some respectful ways to go about it."
 unit: church
-order: 4
+order: 5
 minutes: 6
 status: published
 review: checked

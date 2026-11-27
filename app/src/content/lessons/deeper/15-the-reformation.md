@@ -6,7 +6,7 @@ summary:
   zh: "16 世纪的宗教改革改变了西方教会的面貌。本课讲它为什么发生，改教家们关心的几个问题，以及今天不同的教会传统怎样看待这段历史。"
   en: "The 16th-century Reformation reshaped the Western church. This lesson explains why it happened, the questions the Reformers cared about, and how Christian traditions today view this history."
 unit: church-history
-order: 3
+order: 4
 minutes: 9
 status: published
 review: checked

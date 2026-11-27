@@ -6,7 +6,7 @@ summary:
   zh: "20 世纪的教会有几件大事：五旬节运动从洛杉矶传遍世界；普世教会协会成立；天主教召开第二次梵蒂冈大公会议；福音派在洛桑聚会。到 2010 年，世界上大多数基督徒已经住在欧洲和北美以外。"
   en: "Several major developments shaped the twentieth-century church: Pentecostalism spread from Los Angeles across the world; the World Council of Churches was founded; the Catholic Church held the Second Vatican Council; and evangelicals met at Lausanne. By 2010 most of the world's Christians lived outside Europe and North America."
 unit: church-history
-order: 7
+order: 9
 minutes: 9
 status: published
 review: checked

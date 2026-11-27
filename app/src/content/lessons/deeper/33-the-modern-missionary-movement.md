@@ -6,7 +6,7 @@ summary:
   zh: "1792 年，英国鞋匠出身的克理威廉发表小册子，呼吁教会向万民传福音。以后两百年，基督教从一个主要在欧美的宗教变成遍布全球的信仰。本课介绍这段历史，也说明它复杂的一面。"
   en: "In 1792 William Carey, a former shoemaker in England, published a pamphlet urging the church to take the gospel to all nations. Over the next two centuries Christianity went from a faith centred in Europe and the Americas to one spread across the globe. This lesson introduces this history, including its complicated side."
 unit: church-history
-order: 4
+order: 6
 minutes: 9
 status: published
 review: checked

@@ -6,7 +6,7 @@ summary:
   zh: "圣经说，圣灵给每个信徒恩赐，让他们彼此服事。本课看恩赐是什么，怎样找到自己可以服事的地方，以及服事的态度。"
   en: "The Bible says the Spirit gives every believer gifts for serving one another. This lesson looks at what gifts are, how to find a place to serve, and the attitude behind serving."
 unit: church
-order: 3
+order: 4
 minutes: 6
 status: published
 review: checked

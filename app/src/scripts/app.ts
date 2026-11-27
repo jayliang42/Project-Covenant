@@ -458,6 +458,42 @@ const RELATED_BRIDGES: Record<string, { id: string; reason: Text }[]> = {
   'deeper/42-church-government': [
     { id: 'new/10-finding-a-church', reason: { zh: '动手做 · 找教会时了解它怎样治理', en: "Try it · Ask how a church is governed when looking for one" } },
   ],
+  'new/26-meditating-and-memorizing': [
+    { id: 'new/01-reading-every-day', reason: { zh: '相关一课 · 每天读一点圣经', en: "Related lesson · Reading a little every day" } },
+    { id: 'deeper/23-guide-psalms', reason: { zh: '读深一点 · 逐卷读诗篇', en: "Going deeper · A guide to the Psalms" } },
+  ],
+  'new/27-fasting': [
+    { id: 'new/02-learning-to-pray', reason: { zh: '相关一课 · 怎样祷告', en: "Related lesson · How to pray" } },
+  ],
+  'new/28-why-gather-every-week': [
+    { id: 'deeper/45-sabbath-and-the-lords-day', reason: { zh: '读深一点 · 安息日和主日', en: "Going deeper · The Sabbath and the Lord's Day" } },
+    { id: 'new/05-baptism-and-communion', reason: { zh: '相关一课 · 洗礼和圣餐', en: "Related lesson · Baptism and communion" } },
+  ],
+  'deeper/43-humanity-and-original-sin': [
+    { id: 'deeper/19-sovereignty-and-choice', reason: { zh: '接着读 · 神的主权和人的选择', en: "Next · God's sovereignty and human choice" } },
+    { id: 'seeking/11-what-is-sin', reason: { zh: '入门 · 圣经说的“罪”是什么', en: "First look · What the Bible means by sin" } },
+  ],
+  'deeper/44-mary-across-traditions': [
+    { id: 'curious/16-the-birth-of-jesus', reason: { zh: '背景 · 耶稣的降生和童女怀孕', en: "Background · The birth of Jesus and the virgin birth" } },
+    { id: 'deeper/14-early-church-and-creeds', reason: { zh: '背景 · 早期教会的信经和大公会议', en: "Background · Early creeds and councils" } },
+  ],
+  'deeper/45-sabbath-and-the-lords-day': [
+    { id: 'deeper/37-reading-narrative-and-law', reason: { zh: '背景 · 基督徒怎样读旧约律法', en: "Background · How Christians read Old Testament law" } },
+  ],
+  'deeper/46-war-and-peace': [
+    { id: 'seeking/14-old-testament-wars', reason: { zh: '相关问题 · 旧约里的战争', en: "Related question · War in the Old Testament" } },
+  ],
+  'deeper/47-walking-with-those-who-suffer': [
+    { id: 'new/20-when-suffering-comes', reason: { zh: '相关一课 · 受苦的时候', en: "Related lesson · When suffering comes" } },
+    { id: 'deeper/13-hard-moments-in-a-group', reason: { zh: '相关一课 · 小组里遇到难处时', en: "Related lesson · Hard moments in a group" } },
+  ],
+  'deeper/48-the-medieval-church': [
+    { id: 'seeking/15-wrongs-done-by-the-church', reason: { zh: '相关问题 · 教会做过的错事', en: "Related question · Wrongs done by the church" } },
+    { id: 'deeper/15-the-reformation', reason: { zh: '接着读 · 宗教改革', en: "Next · The Reformation" } },
+  ],
+  'deeper/49-pietism-and-the-awakenings': [
+    { id: 'deeper/33-the-modern-missionary-movement', reason: { zh: '接着读 · 近代宣教运动', en: "Next · The modern missionary movement" } },
+  ],
 };
 
 const data: { tracks: TrackInfo[] } = JSON.parse(document.getElementById('app-data')?.textContent || '{"tracks":[]}');

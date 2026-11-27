@@ -6,7 +6,7 @@ summary:
   zh: "从马礼逊到广州，到 1949 年中国有约一百万新教徒和三百万天主教徒。本课介绍这段时间里的几位重要人物、几次大事，以及中国信徒建立本色教会的努力。本课只讲到 1949 年。"
   en: "From Morrison's arrival in Guangzhou to 1949, when China had about a million Protestants and three million Catholics. This lesson introduces some key people and events of the period and Chinese believers' efforts to build indigenous churches. It covers the years up to 1949 only."
 unit: church-history
-order: 6
+order: 8
 minutes: 10
 status: published
 review: checked
