@@ -6,7 +6,7 @@ summary:
   zh: "《以赛亚书》被称为“旧约里的福音书”，新约引用它的次数仅次于诗篇。本课介绍全书的三个部分、几段重要的经文，以及学者对这卷书作者的不同看法。"
   en: "Isaiah has been called “the gospel of the Old Testament,” and only the Psalms are quoted more often in the New Testament. This lesson introduces the book's three parts, several key passages, and the different views scholars hold on its authorship."
 unit: book-guides
-order: 4
+order: 5
 minutes: 9
 status: published
 review: checked

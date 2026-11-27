@@ -494,6 +494,32 @@ const RELATED_BRIDGES: Record<string, { id: string; reason: Text }[]> = {
   'deeper/49-pietism-and-the-awakenings': [
     { id: 'deeper/33-the-modern-missionary-movement', reason: { zh: '接着读 · 近代宣教运动', en: "Next · The modern missionary movement" } },
   ],
+  'seeking/23-does-the-bible-contradict-itself': [
+    { id: 'seeking/10-four-gospels', reason: { zh: '相关问题 · 四本福音书说法不一样怎么办', en: "Related question · Why the four Gospels differ" } },
+    { id: 'deeper/29-scripture-inspiration-and-canon', reason: { zh: '读深一点 · 各传统怎样看圣经的权威', en: "Going deeper · How the traditions see Scripture's authority" } },
+  ],
+  'seeking/24-is-christianity-western': [
+    { id: 'deeper/16-the-bible-in-chinese', reason: { zh: '读深一点 · 圣经怎样来到中文世界', en: "Going deeper · How the Bible came to the Chinese world" } },
+    { id: 'deeper/39-the-twentieth-century-church', reason: { zh: '背景 · 20 世纪基督徒分布的变化', en: "Background · How the Christian map changed in the twentieth century" } },
+  ],
+  'deeper/50-guide-job': [
+    { id: 'seeking/02-why-is-there-suffering', reason: { zh: '相关问题 · 如果神是良善的，为什么有苦难', en: "Related question · Why is there suffering?" } },
+    { id: 'deeper/47-walking-with-those-who-suffer', reason: { zh: '动手做 · 陪伴受苦的人', en: "Try it · Walking with those who suffer" } },
+  ],
+  'deeper/51-guide-acts': [
+    { id: 'curious/14-the-church-begins', reason: { zh: '入门 · 教会的开始', en: "First look · The church begins" } },
+    { id: 'deeper/12-pauls-cities', reason: { zh: '背景 · 保罗书信背后的罗马城市', en: "Background · The Roman cities behind Paul's letters" } },
+  ],
+  'deeper/52-guide-ephesians': [
+    { id: 'deeper/09-reading-the-letters', reason: { zh: '相关一课 · 怎样读新约书信', en: "Related lesson · How to read the New Testament letters" } },
+  ],
+  'deeper/53-guide-james': [
+    { id: 'deeper/17-justification-and-sanctification', reason: { zh: '读深一点 · 称义和成圣', en: "Going deeper · Justification and sanctification" } },
+  ],
+  'deeper/54-the-attributes-of-god': [
+    { id: 'new/09-one-god-three-persons', reason: { zh: '相关一课 · 三位一体', en: "Related lesson · The Trinity" } },
+    { id: 'deeper/19-sovereignty-and-choice', reason: { zh: '相关一课 · 神的主权和人的选择', en: "Related lesson · God's sovereignty and human choice" } },
+  ],
 };
 
 const data: { tracks: TrackInfo[] } = JSON.parse(document.getElementById('app-data')?.textContent || '{"tracks":[]}');

@@ -6,7 +6,7 @@ summary:
   zh: "“怎样读诗篇和智慧书”一课讲了读诗歌的方法，这一课看《诗篇》整卷书的安排：五卷的结构、开头两篇的作用、新约怎样引用诗篇，以及信徒怎样理解那些求神报应仇敌的诗。"
   en: "The lesson on reading the Psalms and wisdom books covered how to read poetry. This one looks at how the book of Psalms as a whole is arranged: its five books, the role of the first two psalms, how the New Testament quotes the Psalms, and how believers understand the psalms that ask God to repay enemies."
 unit: book-guides
-order: 3
+order: 4
 minutes: 8
 status: published
 review: checked

@@ -16,7 +16,7 @@ units:
     summary: { zh: 叙事和律法、诗篇智慧书、先知书、福音书、书信、启示录、原文和工具书, en: "Narrative and law, Psalms and wisdom, prophets, Gospels, letters, Revelation, original languages and tools" }
   - id: book-guides
     title: { zh: 逐卷导读, en: Book guides }
-    summary: { zh: 创世记、出埃及记、诗篇、以赛亚书、马可、约翰、罗马书、希伯来书, en: "Genesis, Exodus, Psalms, Isaiah, Mark, John, Romans, Hebrews" }
+    summary: { zh: 创世记、出埃及记、约伯记、诗篇、以赛亚书、马可、约翰、使徒行传、罗马书、以弗所书、希伯来书、雅各书, en: "Genesis, Exodus, Job, Psalms, Isaiah, Mark, John, Acts, Romans, Ephesians, Hebrews, James" }
   - id: background
     title: { zh: 历史背景, en: Historical background }
     summary: { zh: 古代近东、第二圣殿、罗马城市, en: "Ancient Near East, Second Temple, Roman cities" }
@@ -25,7 +25,7 @@ units:
     summary: { zh: 早期信经、东西教会分裂、中世纪、宗教改革、敬虔运动和大觉醒、近代宣教、中文圣经、中国教会（至 1949 年）、20 世纪的教会, en: "Early creeds, the East-West schism, the Middle Ages, the Reformation, Pietism and the Great Awakening, modern missions, the Chinese Bible, the church in China to 1949, the twentieth-century church" }
   - id: doctrine
     title: { zh: 更深地认识救恩, en: Understanding salvation more deeply }
-    summary: { zh: 称义和成圣、十字架、神的主权和人的选择、人和原罪, en: "Justification and sanctification, the cross, sovereignty and choice, humanity and original sin" }
+    summary: { zh: 称义和成圣、十字架、神的主权和人的选择、人和原罪、神的属性, en: "Justification and sanctification, the cross, sovereignty and choice, humanity and original sin, the attributes of God" }
   - id: church-teaching
     title: { zh: 各传统的不同教导, en: Where the traditions differ }
     summary: { zh: 圣经的权威和正典、基督再来、洗礼和圣餐、属灵恩赐、女性的服事、教会治理、马利亚, en: "Scripture's authority and canon, Christ's return, baptism and the Lord's Supper, spiritual gifts, women in ministry, church government, Mary" }

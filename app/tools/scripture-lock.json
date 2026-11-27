@@ -45,6 +45,10 @@
    "I will put hostility between you and the woman, and between your offspring and her offspring. He will bruise your head, and you will bruise his heel.”",
    "我又要叫你和女人彼此为仇；你的后裔和女人的后裔也彼此为仇。女人的后裔要伤你的头；你要伤他的脚跟。"
   ],
+  "Genesis 6:6": [
+   "Yahweh was sorry that he had made man on the earth, and it grieved him in his heart.",
+   "耶和华就后悔造人在地上，心中忧伤。"
+  ],
   "Genesis 9:6": [
    "Whoever sheds man’s blood, his blood will be shed by man, for God made man in his own image.",
    "凡流人血的，他的血也必被人所流，因为神造人是照自己的形像造的。"
@@ -157,6 +161,10 @@
    "Then the cloud covered the Tent of Meeting, and Yahweh’s glory filled the tabernacle.",
    "当时，云彩遮盖会幕，耶和华的荣光就充满了帐幕。"
   ],
+  "Leviticus 11:44": [
+   "For I am Yahweh your God. Sanctify yourselves therefore, and be holy; for I am holy. You shall not defile yourselves with any kind of creeping thing that moves on the earth.",
+   "我是耶和华─你们的神；所以你们要成为圣洁，因为我是圣洁的。你们也不可在地上的爬物污秽自己。"
+  ],
   "Leviticus 16:30": [
    "for on this day shall atonement be made for you, to cleanse you. You shall be clean from all your sins before Yahweh.",
    "因在这日要为你们赎罪，使你们洁净。你们要在耶和华面前得以洁净，脱尽一切的罪愆。"
@@ -237,6 +245,14 @@
    "They read in the book, in the law of God, distinctly; and they gave the sense, so that they understood the reading.",
    "他们清清楚楚地念神的律法书，讲明意思，使百姓明白所念的。"
   ],
+  "Job 1:8": [
+   "Yahweh said to Satan, “Have you considered my servant, Job? For there is no one like him in the earth, a blameless and an upright man, one who fears God, and turns away from evil.”",
+   "耶和华问撒但说：「你曾用心察看我的仆人约伯没有？地上再没有人像他完全正直，敬畏神，远离恶事。」"
+  ],
+  "Job 1:21": [
+   "He said, “Naked I came out of my mother’s womb, and naked will I return there. Yahweh gave, and Yahweh has taken away. Blessed be Yahweh’s name.”",
+   "说：「我赤身出于母胎，也必赤身归回；赏赐的是耶和华，收取的也是耶和华。耶和华的名是应当称颂的。」"
+  ],
   "Job 2:11": [
    "Now when Job’s three friends heard of all this evil that had come on him, they each came from his own place: Eliphaz the Temanite, Bildad the Shuhite, and Zophar the Naamathite; and they made an appointment together to come to sympathize with him and to comfort him.",
    "约伯的三个朋友─提幔人以利法、书亚人比勒达、拿玛人琐法─听说有这一切的灾祸临到他身上，各人就从本处约会同来，为他悲伤，安慰他。"
@@ -249,9 +265,33 @@
    "So they sat down with him on the ground seven days and seven nights, and no one spoke a word to him, for they saw that his grief was very great.",
    "他们就同他七天七夜坐在地上，一个人也不向他说句话，因为他极其痛苦。"
   ],
+  "Job 19:25": [
+   "But as for me, I know that my Redeemer lives. In the end, he will stand upon the earth.",
+   "我知道我的救赎主活着，末了必站立在地上。"
+  ],
+  "Job 38:1": [
+   "Then Yahweh answered Job out of the whirlwind,",
+   "那时，耶和华从旋风中回答约伯说："
+  ],
+  "Job 38:2": [
+   "“Who is this who darkens counsel by words without knowledge?",
+   "谁用无知的言语使我的旨意暗昧不明？"
+  ],
+  "Job 38:3": [
+   "Brace yourself like a man, for I will question you, then you answer me!",
+   "你要如勇士束腰；我问你，你可以指示我。"
+  ],
+  "Job 38:4": [
+   "“Where were you when I laid the foundations of the earth? Declare, if you have understanding.",
+   "我立大地根基的时候，你在哪里呢？你若有聪明，只管说吧！"
+  ],
   "Job 42:5": [
    "I had heard of you by the hearing of the ear, but now my eye sees you.",
    "我从前风闻有你，现在亲眼看见你。"
+  ],
+  "Job 42:6": [
+   "Therefore I abhor myself, and repent in dust and ashes.”",
+   "因此我厌恶自己（或译：我的言语），在尘土和炉灰中懊悔。"
   ],
   "Job 42:7": [
    "It was so, that after Yahweh had spoken these words to Job, Yahweh said to Eliphaz the Temanite, “My wrath is kindled against you, and against your two friends; for you have not spoken of me the thing that is right, as my servant Job has.",
@@ -353,6 +393,10 @@
    "until I entered God’s sanctuary, and considered their latter end.",
    "等我进了神的圣所，思想他们的结局。"
   ],
+  "Psalms 90:2": [
+   "Before the mountains were born, before you had formed the earth and the world, even from everlasting to everlasting, you are God.",
+   "诸山未曾生出，地与世界你未曾造成，从亘古到永远，你是神。"
+  ],
   "Psalms 103:12": [
    "As far as the east is from the west, so far has he removed our transgressions from us.",
    "东离西有多远，他叫我们的过犯离我们也有多远！"
@@ -376,6 +420,14 @@
   "Psalms 137:9": [
    "Happy shall he be, who takes and dashes your little ones against the rock.",
    "拿你的婴孩摔在磐石上的，那人便为有福！"
+  ],
+  "Psalms 139:7": [
+   "Where could I go from your Spirit? Or where could I flee from your presence?",
+   "我往哪里去躲避你的灵？我往哪里逃、躲避你的面？"
+  ],
+  "Psalms 139:8": [
+   "If I ascend up into heaven, you are there. If I make my bed in Sheol, behold, you are there!",
+   "我若升到天上，你在那里；我若在阴间下榻，你也在那里。"
   ],
   "Psalms 145:13": [
    "Your kingdom is an everlasting kingdom. Your dominion endures throughout all generations. Yahweh is faithful in all his words, and loving in all his deeds.",
@@ -453,6 +505,10 @@
    "“But you, Israel, my servant, Jacob whom I have chosen, the offspring of Abraham my friend,",
    "惟你以色列─我的仆人，雅各─我所拣选的，我朋友亚伯拉罕的后裔，"
   ],
+  "Isaiah 46:10": [
+   "I declare the end from the beginning, and from ancient times things that are not yet done. I say: My counsel will stand, and I will do all that I please.",
+   "我从起初指明末后的事，从古时言明未成的事，说：我的筹算必立定；凡我所喜悦的，我必成就。"
+  ],
   "Isaiah 53:5": [
    "But he was pierced for our transgressions. He was crushed for our iniquities. The punishment that brought our peace was on him; and by his wounds we are healed.",
    "哪知他为我们的过犯受害，为我们的罪孽压伤。因他受的刑罚，我们得平安；因他受的鞭伤，我们得医治。"
@@ -525,6 +581,10 @@
    "“In the days of those kings the God of heaven will set up a kingdom which will never be destroyed, nor will its sovereignty be left to another people; but it will break in pieces and consume all these kingdoms, and it will stand forever.",
    "当那列王在位的时候，天上的神必另立一国，永不败坏，也不归别国的人，却要打碎灭绝那一切国，这国必存到永远。"
   ],
+  "Hosea 11:8": [
+   "“How can I give you up, Ephraim? How can I hand you over, Israel? How can I make you like Admah? How can I make you like Zeboiim? My heart is turned within me, my compassion is aroused.",
+   "以法莲哪，我怎能舍弃你？以色列啊，我怎能弃绝你？我怎能使你如押玛？怎能使你如洗扁？我回心转意，我的怜爱大大发动。"
+  ],
   "Joel 2:12": [
    "“Yet even now,” says Yahweh, “turn to me with all your heart, and with fasting, and with weeping, and with mourning.”",
    "耶和华说：虽然如此，你们应当禁食、哭泣、悲哀，一心归向我。"
@@ -548,6 +608,10 @@
   "Haggai 2:9": [
    "‘The latter glory of this house will be greater than the former,’ says Yahweh of Armies; ‘and in this place I will give peace,’ says Yahweh of Armies.”",
    "这殿后来的荣耀必大过先前的荣耀；在这地方我必赐平安。这是万军之耶和华说的。」"
+  ],
+  "Malachi 3:6": [
+   "“For I, Yahweh, don’t change; therefore you, sons of Jacob, are not consumed.",
+   "因我─耶和华是不改变的，所以你们雅各之子没有灭亡。"
   ],
   "Matthew 1:1": [
    "The book of the genealogy of Jesus Christ, the son of David, the son of Abraham.",
@@ -860,6 +924,10 @@
   "Matthew 26:52": [
    "Then Jesus said to him, “Put your sword back into its place, for all those who take the sword will die by the sword.",
    "耶稣对他说：「收刀入鞘吧！凡动刀的，必死在刀下。"
+  ],
+  "Matthew 27:5": [
+   "He threw down the pieces of silver in the sanctuary, and departed. He went away and hanged himself.",
+   "犹大就把那银钱丢在殿里，出去吊死了。"
   ],
   "Matthew 28:19": [
    "Go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit,",
@@ -1224,6 +1292,10 @@
   "Luke 15:32": [
    "But it was appropriate to celebrate and be glad, for this, your brother, was dead, and is alive again. He was lost, and is found.’ ”",
    "只是你这个兄弟是死而复活、失而又得的，所以我们理当欢喜快乐。』」"
+  ],
+  "Luke 18:35": [
+   "As he came near Jericho, a certain blind man sat by the road, begging.",
+   "耶稣将近耶利哥的时候，有一个瞎子坐在路旁讨饭。"
   ],
   "Luke 19:5": [
    "When Jesus came to the place, he looked up and saw him, and said to him, “Zacchaeus, hurry and come down, for today I must stay at your house.”",
@@ -1605,6 +1677,18 @@
    "who also said, “You men of Galilee, why do you stand looking into the sky? This Jesus, who was received up from you into the sky, will come back in the same way as you saw him going into the sky.”",
    "「加利利人哪，你们为什么站着望天呢？这离开你们被接升天的耶稣，你们见他怎样往天上去，他还要怎样来。」"
   ],
+  "Acts 1:18": [
+   "Now this man obtained a field with the reward for his wickedness, and falling headlong, his body burst open, and all his intestines gushed out.",
+   "这人用他作恶的工价买了一块田，以后身子仆倒，肚腹崩裂，肠子都流出来。"
+  ],
+  "Acts 2:9": [
+   "Parthians, Medes, Elamites, and people from Mesopotamia, Judea, Cappadocia, Pontus, Asia,",
+   "我们帕提亚人、米底亚人、以拦人，和住在美索不达米亚、犹太、加帕多家、本都、亚细亚、"
+  ],
+  "Acts 2:10": [
+   "Phrygia, Pamphylia, Egypt, the parts of Libya around Cyrene, visitors from Rome, both Jews and proselytes,",
+   "弗吕家、旁非利亚、埃及的人，并靠近古利奈的利比亚一带地方的人，从罗马来的客旅中，或是犹太人，或是进犹太教的人，"
+  ],
   "Acts 2:11": [
    "Cretans and Arabians: we hear them speaking in our languages the mighty works of God!”",
    "克里特和阿拉伯人，都听见他们用我们的乡谈，讲说神的大作为。」"
@@ -1669,6 +1753,10 @@
    "While you kept it, didn’t it remain your own? After it was sold, wasn’t it in your power? How is it that you have conceived this thing in your heart? You haven’t lied to men, but to God.”",
    "田地还没有卖，不是你自己的吗？既卖了，价银不是你作主吗？你怎么心里起这意念呢？你不是欺哄人，是欺哄神了。」"
   ],
+  "Acts 6:7": [
+   "The word of God increased and the number of the disciples greatly multiplied in Jerusalem. A great company of the priests were obedient to the faith.",
+   "神的道兴旺起来；在耶路撒冷门徒数目加增的甚多，也有许多祭司信从了这道。"
+  ],
   "Acts 8:4": [
    "Therefore those who were scattered abroad went around preaching the word.",
    "那些分散的人往各处去传道。"
@@ -1712,6 +1800,10 @@
   "Acts 14:23": [
    "When they had appointed elders for them in every assembly, and had prayed with fasting, they commended them to the Lord, on whom they had believed.",
    "二人在各教会中选立了长老，又禁食祷告，就把他们交托所信的主。"
+  ],
+  "Acts 15:11": [
+   "But we believe that we are saved through the grace of the Lord Jesus, just as they are.”",
+   "我们得救乃是因主耶稣的恩，和他们一样，这是我们所信的。」"
   ],
   "Acts 16:12": [
    "and from there to Philippi, which is a city of Macedonia, the foremost of the district, a Roman colony. We were staying some days in this city.",
@@ -1764,6 +1856,10 @@
   "Acts 20:28": [
    "Take heed, therefore, to yourselves, and to all the flock, in which the Holy Spirit has made you overseers, to shepherd the assembly of the Lord and God which he purchased with his own blood.",
    "圣灵立你们作全群的监督，你们就当为自己谨慎，也为全群谨慎，牧养神的教会，就是他用自己血所买来的（或译：救赎的）。"
+  ],
+  "Acts 28:30": [
+   "Paul stayed two whole years in his own rented house and received all who were coming to him,",
+   "保罗在自己所租的房子里住了足足两年。凡来见他的人，他全都接待，"
   ],
   "Acts 28:31": [
    "preaching God’s Kingdom, and teaching the things concerning the Lord Jesus Christ with all boldness, without hindrance.",
@@ -2205,6 +2301,10 @@
    "I advanced in the Jews’ religion beyond many of my own age among my countrymen, being more exceedingly zealous for the traditions of my fathers.",
    "我又在犹太教中，比我本国许多同岁的人更有长进，为我祖宗的遗传更加热心。"
   ],
+  "Galatians 1:19": [
+   "But of the other apostles I saw no one except James, the Lord’s brother.",
+   "至于别的使徒，除了主的兄弟雅各，我都没有看见。"
+  ],
   "Galatians 2:20": [
    "I have been crucified with Christ, and it is no longer I who live, but Christ lives in me. That life which I now live in the flesh, I live by faith in the Son of God, who loved me, and gave himself up for me.",
    "我已经与基督同钉十字架，现在活着的不再是我，乃是基督在我里面活着；并且我如今在肉身活着，是因信神的儿子而活；他是爱我，为我舍己。"
@@ -2233,6 +2333,10 @@
    "Stand firm therefore in the liberty by which Christ has made us free, and don’t be entangled again with a yoke of bondage.",
    "基督释放了我们，叫我们得以自由。所以要站立得稳，不要再被奴仆的轭挟制。"
   ],
+  "Galatians 5:6": [
+   "For in Christ Jesus neither circumcision amounts to anything, nor uncircumcision, but faith working through love.",
+   "原来在基督耶稣里，受割礼不受割礼全无功效，惟独使人生发仁爱的信心才有功效。"
+  ],
   "Galatians 5:13": [
    "For you, brothers, were called for freedom. Only don’t use your freedom for gain to the flesh, but through love be servants to one another.",
    "弟兄们，你们蒙召是要得自由，只是不可将你们的自由当作放纵情欲的机会，总要用爱心互相服事。"
@@ -2252,6 +2356,10 @@
   "Galatians 6:2": [
    "Bear one another’s burdens, and so fulfill the law of Christ.",
    "你们各人的重担要互相担当，如此，就完全了基督的律法。"
+  ],
+  "Ephesians 1:3": [
+   "Blessed be the God and Father of our Lord Jesus Christ, who has blessed us with every spiritual blessing in the heavenly places in Christ,",
+   "愿颂赞归与我们主耶稣基督的父神！他在基督里曾赐给我们天上各样属灵的福气："
   ],
   "Ephesians 1:4": [
    "even as he chose us in him before the foundation of the world, that we would be holy and without defect before him in love,",
@@ -2281,9 +2389,17 @@
    "For we are his workmanship, created in Christ Jesus for good works, which God prepared before that we would walk in them.",
    "我们原是他的工作，在基督耶稣里造成的，为要叫我们行善，就是神所预备叫我们行的。"
   ],
+  "Ephesians 2:14": [
+   "For he is our peace, who made both one, and broke down the middle wall of separation,",
+   "因他使我们和睦（原文是因他是我们的和睦），将两下合而为一，拆毁了中间隔断的墙；"
+  ],
   "Ephesians 2:19": [
    "So then you are no longer strangers and foreigners, but you are fellow citizens with the saints and of the household of God,",
    "这样，你们不再作外人和客旅，是与圣徒同国，是神家里的人了；"
+  ],
+  "Ephesians 4:1": [
+   "I therefore, the prisoner in the Lord, beg you to walk worthily of the calling with which you were called,",
+   "我为主被囚的劝你们：既然蒙召，行事为人就当与蒙召的恩相称。"
   ],
   "Ephesians 4:2": [
    "with all lowliness and humility, with patience, bearing with one another in love,",
@@ -2316,6 +2432,10 @@
   "Ephesians 6:2": [
    "“Honor your father and mother,” which is the first commandment with a promise:",
    "「要孝敬父母，使你得福，在世长寿。」这是第一条带应许的诫命。"
+  ],
+  "Ephesians 6:11": [
+   "Put on the whole armor of God, that you may be able to stand against the wiles of the devil.",
+   "要穿戴神所赐的全副军装，就能抵挡魔鬼的诡计。"
   ],
   "Philippians 1:6": [
    "being confident of this very thing, that he who began a good work in you will complete it until the day of Jesus Christ.",
@@ -2396,6 +2516,10 @@
   "Colossians 4:6": [
    "Let your speech always be with grace, seasoned with salt, that you may know how you ought to answer each one.",
    "你们的言语要常常带着和气，好像用盐调和，就可知道该怎样回答各人。"
+  ],
+  "Colossians 4:14": [
+   "Luke the beloved physician and Demas greet you.",
+   "所亲爱的医生路加和底马问你们安。"
   ],
   "Colossians 4:16": [
    "When this letter has been read among you, cause it to be read also in the assembly of the Laodiceans, and that you also read the letter from Laodicea.",
@@ -2577,9 +2701,17 @@
    "But I exhort you, brothers, endure the word of exhortation; for I have written to you in few words.",
    "弟兄们，我略略写信给你们，望你们听我劝勉的话。"
   ],
+  "James 1:1": [
+   "James, a servant of God and of the Lord Jesus Christ, to the twelve tribes which are in the Dispersion: Greetings.",
+   "作神和主耶稣基督仆人的雅各请散住十二个支派之人的安。"
+  ],
   "James 1:5": [
    "But if any of you lacks wisdom, let him ask of God, who gives to all liberally and without reproach, and it will be given to him.",
    "你们中间若有缺少智慧的，应当求那厚赐与众人、也不斥责人的神，主就必赐给他。"
+  ],
+  "James 1:17": [
+   "Every good gift and every perfect gift is from above, coming down from the Father of lights, with whom can be no variation, nor turning shadow.",
+   "各样美善的恩赐和各样全备的赏赐都是从上头来的，从众光之父那里降下来的；在他并没有改变，也没有转动的影儿。"
   ],
   "James 1:19": [
    "So, then, my beloved brothers, let every man be swift to hear, slow to speak, and slow to anger;",
@@ -2589,6 +2721,14 @@
    "But be doers of the word, and not only hearers, deluding your own selves.",
    "只是你们要行道，不要单单听道，自己欺哄自己。"
   ],
+  "James 1:27": [
+   "Pure religion and undefiled before our God and Father is this: to visit the fatherless and widows in their affliction, and to keep oneself unstained by the world.",
+   "在神我们的父面前，那清洁没有玷污的虔诚，就是看顾在患难中的孤儿寡妇，并且保守自己不沾染世俗。"
+  ],
+  "James 2:17": [
+   "Even so faith, if it has no works, is dead in itself.",
+   "这样，信心若没有行为就是死的。"
+  ],
   "James 2:24": [
    "You see then that by works, a man is justified, and not only by faith.",
    "这样看来，人称义是因着行为，不是单因着信。"
@@ -2596,6 +2736,10 @@
   "James 2:26": [
    "For as the body apart from the spirit is dead, even so faith apart from works is dead.",
    "身体没有灵魂是死的，信心没有行为也是死的。"
+  ],
+  "James 3:5": [
+   "So the tongue is also a little member, and boasts great things. See how a small fire can spread to a large forest!",
+   "这样，舌头在百体里也是最小的，却能说大话。看哪，最小的火能点着最大的树林。"
   ],
   "James 3:9": [
    "With it we bless our God and Father, and with it we curse men who are made in the image of God.",
