@@ -10,7 +10,7 @@ order: 6
 minutes: 8
 status: published
 review: checked
-art: open-door
+art: open-hands
 scripture:
   - ref: 罗马书 10:9-10
     refEn: Romans 10:9-10

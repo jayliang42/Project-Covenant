@@ -10,7 +10,7 @@ order: 5
 minutes: 8
 status: published
 review: checked
-art: scroll-shelf
+art: bible-library
 scripture:
   - ref: 路加福音 1:1-4
     refEn: Luke 1:1-4
