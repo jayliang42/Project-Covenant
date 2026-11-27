@@ -360,6 +360,70 @@ const RELATED_BRIDGES: Record<string, { id: string; reason: Text }[]> = {
     { id: 'new/01-reading-every-day', reason: { zh: '下一步 · 每天读经', en: "Next step · Reading every day" } },
     { id: 'new/05-baptism-and-communion', reason: { zh: '下一步 · 洗礼和圣餐', en: "Next step · Baptism and communion" } },
   ],
+  'deeper/21-guide-genesis': [
+    { id: 'curious/09-abraham-and-the-promise', reason: { zh: '相关一课 · 亚伯拉罕和应许', en: "Related lesson · Abraham and the promise" } },
+    { id: 'seeking/08-science-and-faith', reason: { zh: '想查证 · 科学和信仰', en: "Checking the evidence · Science and faith" } },
+  ],
+  'deeper/22-guide-exodus': [
+    { id: 'curious/10-out-of-egypt', reason: { zh: '相关一课 · 出埃及', en: "Related lesson · Out of Egypt" } },
+    { id: 'deeper/06-god-dwelling-with-people', reason: { zh: '接着读 · 圣殿主线', en: "Next · The temple thread" } },
+  ],
+  'deeper/23-guide-psalms': [
+    { id: 'deeper/07-reading-psalms-and-wisdom', reason: { zh: '接着读 · 怎样读诗篇和智慧书', en: "Next · Reading the Psalms and wisdom books" } },
+    { id: 'curious/21-david-and-the-psalms', reason: { zh: '相关一课 · 大卫和诗篇', en: "Related lesson · David and the Psalms" } },
+  ],
+  'deeper/24-guide-isaiah': [
+    { id: 'deeper/08-reading-the-prophets', reason: { zh: '接着读 · 怎样读先知书', en: "Next · Reading the prophets" } },
+    { id: 'deeper/18-understanding-the-atonement', reason: { zh: '读深一点 · 十字架成就了什么', en: "Going deeper · What the cross accomplished" } },
+  ],
+  'deeper/25-guide-mark': [
+    { id: 'new/21-mark-1-who-is-this', reason: { zh: '动手做 · 用四课读完马可福音', en: "Try it · Read Mark in four lessons" } },
+    { id: 'seeking/10-four-gospels', reason: { zh: '相关一课 · 为什么有四本福音书', en: "Related lesson · Why four Gospels?" } },
+  ],
+  'deeper/26-guide-john': [
+    { id: 'curious/18-people-jesus-met', reason: { zh: '相关一课 · 耶稣遇见的三个人', en: "Related lesson · Three people Jesus met" } },
+    { id: 'curious/17-miracles-of-jesus', reason: { zh: '相关一课 · 耶稣的神迹', en: "Related lesson · The miracles of Jesus" } },
+  ],
+  'deeper/27-guide-romans': [
+    { id: 'deeper/17-justification-and-sanctification', reason: { zh: '读深一点 · 称义和成圣', en: "Going deeper · Justification and sanctification" } },
+    { id: 'deeper/09-reading-the-letters', reason: { zh: '接着读 · 怎样读书信', en: "Next · Reading the letters" } },
+  ],
+  'deeper/28-guide-hebrews': [
+    { id: 'new/15-assurance', reason: { zh: '相关一课 · 得救的确据', en: "Related lesson · Assurance of salvation" } },
+    { id: 'curious/22-feasts-of-israel', reason: { zh: '相关一课 · 赎罪日和节期', en: "Related lesson · The Day of Atonement and the feasts" } },
+  ],
+  'deeper/29-scripture-inspiration-and-canon': [
+    { id: 'seeking/05-manuscripts', reason: { zh: '想查证 · 抄本和文本', en: "Checking the evidence · Manuscripts and the text" } },
+    { id: 'seeking/20-the-bible-and-other-ancient-books', reason: { zh: '相关一课 · 圣经和别的古书', en: "Related lesson · The Bible and other ancient books" } },
+  ],
+  'deeper/30-the-return-of-christ': [
+    { id: 'deeper/10-reading-revelation', reason: { zh: '接着读 · 怎样读启示录', en: "Next · Reading Revelation" } },
+    { id: 'new/14-forgiveness-resurrection-and-life-everlasting', reason: { zh: '相关一课 · 身体复活和永生', en: "Related lesson · The resurrection of the body and life everlasting" } },
+  ],
+  'deeper/31-baptism-and-the-supper-across-traditions': [
+    { id: 'new/05-baptism-and-communion', reason: { zh: '先读 · 洗礼和圣餐的基本意思', en: "Read first · The basic meaning of baptism and communion" } },
+    { id: 'deeper/15-the-reformation', reason: { zh: '读深一点 · 宗教改革', en: "Going deeper · The Reformation" } },
+  ],
+  'deeper/32-east-and-west': [
+    { id: 'deeper/14-early-church-and-creeds', reason: { zh: '先读 · 早期教会和信经', en: "Read first · The early church and the creeds" } },
+    { id: 'deeper/15-the-reformation', reason: { zh: '接着读 · 宗教改革', en: "Next · The Reformation" } },
+  ],
+  'deeper/33-the-modern-missionary-movement': [
+    { id: 'new/12-sharing-your-faith', reason: { zh: '动手做 · 分享你的信仰', en: "Try it · Sharing your faith" } },
+    { id: 'deeper/16-the-bible-in-chinese', reason: { zh: '相关一课 · 中文圣经的历史', en: "Related lesson · The history of the Chinese Bible" } },
+  ],
+  'deeper/34-the-church-in-china-1807-1949': [
+    { id: 'deeper/16-the-bible-in-chinese', reason: { zh: '先读 · 中文圣经的历史', en: "Read first · The history of the Chinese Bible" } },
+    { id: 'seeking/19-when-family-does-not-understand', reason: { zh: '相关一课 · 祭祖和礼仪之争', en: "Related lesson · Ancestor rites and the Rites Controversy" } },
+  ],
+  'deeper/35-marriage-divorce-remarriage': [
+    { id: 'new/16-forgiving-others', reason: { zh: '相关一课 · 饶恕和和好', en: "Related lesson · Forgiveness and reconciliation" } },
+    { id: 'deeper/36-sexual-ethics', reason: { zh: '接着读 · 性伦理', en: "Next · Sexual ethics" } },
+  ],
+  'deeper/36-sexual-ethics': [
+    { id: 'deeper/35-marriage-divorce-remarriage', reason: { zh: '先读 · 婚姻、离婚和再婚', en: "Read first · Marriage, divorce, and remarriage" } },
+    { id: 'new/07-doubt-and-temptation', reason: { zh: '相关一课 · 面对试探', en: "Related lesson · Facing temptation" } },
+  ],
 };
 
 const data: { tracks: TrackInfo[] } = JSON.parse(document.getElementById('app-data')?.textContent || '{"tracks":[]}');
