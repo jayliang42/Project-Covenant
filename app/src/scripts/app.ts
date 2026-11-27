@@ -588,6 +588,14 @@ const RELATED_BRIDGES: Record<string, { id: string; reason: Text }[]> = {
     { id: 'deeper/35-marriage-divorce-remarriage', reason: { zh: '读深一点 · 婚姻、离婚和再婚', en: "Going deeper · Marriage, divorce, and remarriage" } },
     { id: 'seeking/19-when-family-does-not-understand', reason: { zh: '相关问题 · 家人不理解怎么办', en: "Related question · When family does not understand" } },
   ],
+  'curious/27-peter': [
+    { id: 'new/06-when-i-fail', reason: { zh: '相关一课 · 信主以后又犯错了怎么办', en: "Related lesson · When I fail after coming to faith" } },
+    { id: 'deeper/62-the-three-great-traditions', reason: { zh: '读深一点 · 三大传统怎样看教会的权柄', en: "Going deeper · How the traditions see church authority" } },
+  ],
+  'deeper/67-guide-1-corinthians': [
+    { id: 'seeking/09-did-jesus-rise', reason: { zh: '相关问题 · 耶稣真的复活了吗', en: "Related question · Did Jesus really rise?" } },
+    { id: 'deeper/12-pauls-cities', reason: { zh: '背景 · 保罗书信背后的罗马城市', en: "Background · The Roman cities behind Paul's letters" } },
+  ],
 };
 
 const data: { tracks: TrackInfo[] } = JSON.parse(document.getElementById('app-data')?.textContent || '{"tracks":[]}');

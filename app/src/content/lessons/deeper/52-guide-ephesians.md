@@ -6,7 +6,7 @@ summary:
   zh: "《以弗所书》前半讲神在基督里为我们做了什么，后半讲信徒因此要怎样生活。它特别强调犹太人和外邦人在基督里成为一个新人、一个身体。本课介绍它的结构、作者和收信人的问题，以及几段常被讨论的经文。"
   en: "The first half of Ephesians tells what God has done for us in Christ, and the second half how believers should live in response. It stresses that Jews and Gentiles become one new humanity, one body, in Christ. This lesson introduces its structure, the questions of author and recipients, and some much-discussed passages."
 unit: book-guides
-order: 11
+order: 12
 minutes: 8
 status: published
 review: checked
