@@ -6,7 +6,7 @@ summary:
   zh: "从唐朝的景教碑，到马礼逊的译本，再到 1919 年的《和合本》和后来的新译本，本课简要介绍中文圣经的历史，以及“神”和“上帝”两种译名的来历。"
   en: "From the Tang-dynasty Nestorian stele, through Morrison's translation, to the 1919 Union Version and later translations, this lesson gives a short history of the Chinese Bible and explains why there are two names for God, 神 and 上帝."
 unit: church-history
-order: 7
+order: 8
 minutes: 8
 status: published
 review: checked

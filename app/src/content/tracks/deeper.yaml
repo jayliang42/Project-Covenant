@@ -22,7 +22,7 @@ units:
     summary: { zh: 古代近东、第二圣殿、罗马城市、死海古卷, en: "Ancient Near East, Second Temple, Roman cities, the Dead Sea Scrolls" }
   - id: church-history
     title: { zh: 两千年的教会, en: Two thousand years of the church }
-    summary: { zh: 早期信经、东西教会分裂、中世纪、宗教改革、敬虔运动和大觉醒、近代宣教、中文圣经、中国教会（至 1949 年）、20 世纪的教会, en: "Early creeds, the East-West schism, the Middle Ages, the Reformation, Pietism and the Great Awakening, modern missions, the Chinese Bible, the church in China to 1949, the twentieth-century church" }
+    summary: { zh: 早期信经、罗马帝国里的早期基督徒、东西教会分裂、中世纪、宗教改革、敬虔运动和大觉醒、近代宣教、中文圣经、中国教会（至 1949 年）、20 世纪的教会, en: "Early creeds, early Christians under Rome, the East-West schism, the Middle Ages, the Reformation, Pietism and the Great Awakening, modern missions, the Chinese Bible, the church in China to 1949, the twentieth-century church" }
   - id: doctrine
     title: { zh: 更深地认识救恩, en: Understanding salvation more deeply }
     summary: { zh: 神的属性、人和原罪、十字架、称义和成圣、神的主权和人的选择, en: "The attributes of God, humanity and original sin, the cross, justification and sanctification, sovereignty and choice" }

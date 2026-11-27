@@ -19,7 +19,7 @@ units:
     summary: { zh: 洗礼、圣餐、找教会、每周聚会、服事、分享信仰和小组, en: "Baptism, communion, finding a church, weekly worship, serving, sharing your faith, and small groups" }
   - id: living
     title: { zh: 每天怎样生活, en: Living it out }
-    summary: { zh: 饶恕、金钱、工作、做决定、受苦、品格的成长和忧虑, en: "Forgiveness, money, work, decisions, suffering, growing in character, and anxiety" }
+    summary: { zh: 饶恕、金钱、工作、做决定、受苦、品格的成长、忧虑，以及婚姻家庭和单身, en: "Forgiveness, money, work, decisions, suffering, growing in character, anxiety, and marriage, family, and singleness" }
   - id: gospel
     title: { zh: 读完一卷福音书, en: Reading one Gospel through }
     summary: { zh: 用四课读完《马可福音》, en: Mark's Gospel in four lessons }

@@ -580,6 +580,14 @@ const RELATED_BRIDGES: Record<string, { id: string; reason: Text }[]> = {
     { id: 'deeper/62-the-three-great-traditions', reason: { zh: '读深一点 · 三大传统概览', en: "Going deeper · The three great traditions" } },
     { id: 'new/10-finding-a-church', reason: { zh: '动手做 · 怎样找一间教会', en: "Try it · How to find a church" } },
   ],
+  'deeper/66-early-christians-under-rome': [
+    { id: 'seeking/04-what-history-can-show', reason: { zh: '想查证 · 历史和考古能说明什么', en: "Checking the evidence · What history and archaeology can show" } },
+    { id: 'deeper/14-early-church-and-creeds', reason: { zh: '背景 · 早期教会和信经', en: "Background · The early church and the creeds" } },
+  ],
+  'new/31-marriage-family-and-singleness': [
+    { id: 'deeper/35-marriage-divorce-remarriage', reason: { zh: '读深一点 · 婚姻、离婚和再婚', en: "Going deeper · Marriage, divorce, and remarriage" } },
+    { id: 'seeking/19-when-family-does-not-understand', reason: { zh: '相关问题 · 家人不理解怎么办', en: "Related question · When family does not understand" } },
+  ],
 };
 
 const data: { tracks: TrackInfo[] } = JSON.parse(document.getElementById('app-data')?.textContent || '{"tracks":[]}');

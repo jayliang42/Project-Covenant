@@ -6,7 +6,7 @@ summary:
   zh: "1054 年，罗马和君士坦丁堡的教会互相开除教籍，以后东正教和天主教分成两支，至今没有重新合一。本课介绍分裂的原因、过程，以及 20 世纪以来双方关系的变化。"
   en: "In 1054 the churches of Rome and Constantinople excommunicated each other, and Orthodoxy and Catholicism have been separate ever since. This lesson introduces the causes and course of the split and how relations between the two have changed since the 20th century."
 unit: church-history
-order: 2
+order: 3
 minutes: 9
 status: published
 review: checked

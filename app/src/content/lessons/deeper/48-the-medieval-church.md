@@ -6,7 +6,7 @@ summary:
   zh: "从罗马帝国西部衰落到宗教改革，大约一千年。这段时间里，修道院保存了圣经抄本和学问，方济各提倡甘心贫穷，阿奎那把信仰和理性连在一起，胡斯等人已经开始呼吁改革。本课介绍这段常被忽略的历史，也不回避其中的问题。"
   en: "About a thousand years lie between the decline of the Western Roman Empire and the Reformation. In this period monasteries preserved biblical manuscripts and learning, Francis of Assisi embraced voluntary poverty, Aquinas joined faith and reason, and figures such as Hus were already calling for reform. This lesson introduces this often-neglected history without passing over its problems."
 unit: church-history
-order: 3
+order: 4
 minutes: 9
 status: published
 review: checked

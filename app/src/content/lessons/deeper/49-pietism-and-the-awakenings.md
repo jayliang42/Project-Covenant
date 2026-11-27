@@ -6,7 +6,7 @@ summary:
   zh: "宗教改革以后一百多年，有人觉得教会只剩下正确的教义，缺少生命。德国的敬虔运动提倡小组查经和活出信仰；摩拉维亚弟兄会差派宣教士；卫斯理、怀特腓和爱德华兹在英国和北美带出了大觉醒。今天福音派很多的做法都来自这段历史。"
   en: "More than a century after the Reformation, some felt the church had kept correct doctrine but lost its life. German Pietism promoted small-group Bible study and lived faith; the Moravians sent missionaries; Wesley, Whitefield, and Edwards led the Great Awakening in Britain and North America. Many evangelical practices today come from this history."
 unit: church-history
-order: 5
+order: 6
 minutes: 9
 status: published
 review: checked

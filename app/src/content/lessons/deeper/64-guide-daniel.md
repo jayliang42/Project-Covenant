@@ -93,5 +93,5 @@ In a vision Daniel saw “one like a son of man” coming with the clouds, to wh
 
 ## 读异象的提醒 | A caution on reading the visions
 
-但以理书 7–12 章的异象，各派有很多不同的解释，尤其是七十个七（9 章）和最后几章。有人把它们主要看成已经在古代应验的事，有人认为一部分还要在末后应验。“基督再来和千禧年”一课介绍了几种末世观。读的时候，可以先抓住全书清楚的信息：神掌管历史，他的国必要来到。<br>
+但以理书 7–12 章的异象，各派有很多不同的解释，尤其是七十个七（9 章）和最后几章。有人把它们主要看成已经在古代应验的事，有人认为一部分还要在末后应验。“基督再来和‘千禧年’”一课介绍了几种末世观。读的时候，可以先抓住全书清楚的信息：神掌管历史，他的国必要来到。<br>
 The visions of chapters 7–12 are interpreted in many ways, especially the seventy weeks (chapter 9) and the final chapters. Some see them mainly as fulfilled in ancient times; others believe part of them is still to be fulfilled at the end. The lesson on Christ's return and the millennium introduces several views of the end times. As you read, hold first to the book's clear message: God rules history, and his kingdom will come.
