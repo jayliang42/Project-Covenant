@@ -16,10 +16,10 @@ units:
     summary: { zh: 逐句读使徒信经，认识三位一体, en: "The Apostles' Creed line by line, and the Trinity" }
   - id: church
     title: { zh: 在教会中成长, en: Growing in the church }
-    summary: { zh: 洗礼、圣餐、找教会、每周聚会、服事和分享信仰, en: "Baptism, communion, finding a church, weekly worship, serving, and sharing your faith" }
+    summary: { zh: 洗礼、圣餐、找教会、每周聚会、服事、分享信仰和小组, en: "Baptism, communion, finding a church, weekly worship, serving, sharing your faith, and small groups" }
   - id: living
     title: { zh: 每天怎样生活, en: Living it out }
-    summary: { zh: 饶恕、金钱、工作、做决定、受苦和品格的成长, en: "Forgiveness, money, work, decisions, suffering, and growing in character" }
+    summary: { zh: 饶恕、金钱、工作、做决定、受苦、品格的成长和忧虑, en: "Forgiveness, money, work, decisions, suffering, growing in character, and anxiety" }
   - id: gospel
     title: { zh: 读完一卷福音书, en: Reading one Gospel through }
     summary: { zh: 用四课读完《马可福音》, en: Mark's Gospel in four lessons }

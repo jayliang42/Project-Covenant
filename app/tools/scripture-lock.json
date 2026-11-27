@@ -125,6 +125,14 @@
    "“You shall have no other gods before me.",
    "「除了我以外，你不可有别的神。"
   ],
+  "Exodus 20:4": [
+   "“You shall not make for yourselves an idol, nor any image of anything that is in the heavens above, or that is in the earth beneath, or that is in the water under the earth:",
+   "「不可为自己雕刻偶像，也不可做什么形像仿佛上天、下地，和地底下、水中的百物。"
+  ],
+  "Exodus 20:5": [
+   "you shall not bow yourself down to them, nor serve them, for I, Yahweh your God, am a jealous God, visiting the iniquity of the fathers on the children, on the third and on the fourth generation of those who hate me,",
+   "不可跪拜那些像，也不可事奉它，因为我耶和华─你的神是忌邪的神。恨我的，我必追讨他的罪，自父及子，直到三四代；"
+  ],
   "Exodus 20:8": [
    "“Remember the Sabbath day, to keep it holy.",
    "「当记念安息日，守为圣日。"
@@ -381,6 +389,10 @@
    "As the deer pants for the water brooks, so my soul pants after you, God.",
    "（可拉后裔的训诲诗，交与伶长。）神啊，我的心切慕你，如鹿切慕溪水。"
   ],
+  "Psalms 42:5": [
+   "Why are you in despair, my soul? Why are you disturbed within me? Hope in God! For I shall still praise him for the saving help of his presence.",
+   "我的心哪，你为何忧闷？为何在我里面烦躁？应当仰望神，因他笑脸帮助我；我还要称赞他。"
+  ],
   "Psalms 51:10": [
    "Create in me a clean heart, O God. Renew a right spirit within me.",
    "神啊，求你为我造清洁的心，使我里面重新有正直（或译：坚定）的灵。"
@@ -480,6 +492,14 @@
   "Ecclesiastes 1:2": [
    "“Vanity of vanities,” says the Preacher; “Vanity of vanities, all is vanity.”",
    "传道者说：虚空的虚空，虚空的虚空，凡事都是虚空。"
+  ],
+  "Ecclesiastes 4:9": [
+   "Two are better than one, because they have a good reward for their labor.",
+   "两个人总比一个人好，因为二人劳碌同得美好的果效。"
+  ],
+  "Ecclesiastes 4:10": [
+   "For if they fall, the one will lift up his fellow; but woe to him who is alone when he falls, and doesn’t have another to lift him up.",
+   "若是跌倒，这人可以扶起他的同伴；若是孤身跌倒，没有别人扶起他来，这人就有祸了。"
   ],
   "Ecclesiastes 12:13": [
    "This is the end of the matter. All has been heard. Fear God and keep his commandments; for this is the whole duty of man.",
@@ -605,6 +625,10 @@
    "He has shown you, O man, what is good. What does Yahweh require of you, but to act justly, to love mercy, and to walk humbly with your God?",
    "世人哪，耶和华已指示你何为善。他向你所要的是什么呢？只要你行公义，好怜悯，存谦卑的心，与你的神同行。"
   ],
+  "Habakkuk 2:4": [
+   "Behold, his soul is puffed up. It is not upright in him, but the righteous will live by his faith.",
+   "迦勒底人自高自大，心不正直；惟义人因信得生。"
+  ],
   "Haggai 2:9": [
    "‘The latter glory of this house will be greater than the former,’ says Yahweh of Armies; ‘and in this place I will give peace,’ says Yahweh of Armies.”",
    "这殿后来的荣耀必大过先前的荣耀；在这地方我必赐平安。这是万军之耶和华说的。」"
@@ -632,6 +656,18 @@
   "Matthew 2:15": [
    "and was there until the death of Herod; that it might be fulfilled which was spoken by the Lord through the prophet, saying, “Out of Egypt I called my son.”",
    "住在那里，直到希律死了。这是要应验主借先知所说的话，说：「我从埃及召出我的儿子来。」"
+  ],
+  "Matthew 3:1": [
+   "In those days, John the Baptizer came, preaching in the wilderness of Judea, saying,",
+   "那时，有施洗的约翰出来，在犹太的旷野传道，说："
+  ],
+  "Matthew 3:2": [
+   "“Repent, for the Kingdom of Heaven is at hand!”",
+   "「天国近了，你们应当悔改！」"
+  ],
+  "Matthew 3:3": [
+   "For this is he who was spoken of by Isaiah the prophet, saying, “The voice of one crying in the wilderness, make the way of the Lord ready! Make his paths straight!”",
+   "这人就是先知以赛亚所说的。他说：「在旷野有人声喊着说：预备主的道，修直他的路！」"
   ],
   "Matthew 3:16": [
    "Jesus, when he was baptized, went up directly from the water: and behold, the heavens were opened to him. He saw the Spirit of God descending as a dove, and coming on him.",
@@ -785,6 +821,22 @@
    "“No one can serve two masters, for either he will hate the one and love the other; or else he will be devoted to one and despise the other. You can’t serve both God and Mammon.",
    "「一个人不能事奉两个主；不是恶这个、爱那个，就是重这个、轻那个。你们不能又事奉神，又事奉玛门（玛门：财利的意思）。」"
   ],
+  "Matthew 6:25": [
+   "Therefore I tell you, don’t be anxious for your life: what you will eat, or what you will drink; nor yet for your body, what you will wear. Isn’t life more than food, and the body more than clothing?",
+   "「所以我告诉你们，不要为生命忧虑吃什么，喝什么；为身体忧虑穿什么。生命不胜于饮食吗？身体不胜于衣裳吗？"
+  ],
+  "Matthew 6:26": [
+   "See the birds of the sky, that they don’t sow, neither do they reap, nor gather into barns. Your heavenly Father feeds them. Aren’t you of much more value than they?",
+   "你们看那天上的飞鸟，也不种，也不收，也不积蓄在仓里，你们的天父尚且养活牠。你们不比飞鸟贵重得多吗？"
+  ],
+  "Matthew 6:27": [
+   "“Which of you, by being anxious, can add one moment to his lifespan?",
+   "你们哪一个能用思虑使寿数多加一刻呢（或译：使身量多加一肘呢）？"
+  ],
+  "Matthew 6:34": [
+   "Therefore don’t be anxious for tomorrow, for tomorrow will be anxious for itself. Each day’s own evil is sufficient.",
+   "所以，不要为明天忧虑，因为明天自有明天的忧虑；一天的难处一天当就够了。」"
+  ],
   "Matthew 7:7": [
    "“Ask, and it will be given you. Seek, and you will find. Knock, and it will be opened for you.",
    "「你们祈求，就给你们；寻找，就寻见；叩门，就给你们开门。"
@@ -853,6 +905,14 @@
    "If he refuses to listen to them, tell it to the assembly. If he refuses to hear the assembly also, let him be to you as a Gentile or a tax collector.",
    "若是不听他们，就告诉教会；若是不听教会，就看他像外邦人和税吏一样。"
   ],
+  "Matthew 18:19": [
+   "Again, assuredly I tell you, that if two of you will agree on earth concerning anything that they will ask, it will be done for them by my Father who is in heaven.",
+   "我又告诉你们，若是你们中间有两个人在地上同心合意地求什么事，我在天上的父必为他们成全。"
+  ],
+  "Matthew 18:20": [
+   "For where two or three are gathered together in my name, there I am in the middle of them.”",
+   "因为无论在哪里，有两三个人奉我的名聚会，那里就有我在他们中间。」"
+  ],
   "Matthew 18:21": [
    "Then Peter came and said to him, “Lord, how often shall my brother sin against me, and I forgive him? Until seven times?”",
    "那时，彼得进前来，对耶稣说：「主啊，我弟兄得罪我，我当饶恕他几次呢？到七次可以吗？」"
@@ -920,6 +980,10 @@
   "Matthew 25:46": [
    "These will go away into eternal punishment, but the righteous into eternal life.”",
    "这些人要往永刑里去；那些义人要往永生里去。」"
+  ],
+  "Matthew 26:38": [
+   "Then he said to them, “My soul is exceedingly sorrowful, even to death. Stay here, and watch with me.”",
+   "便对他们说：「我心里甚是忧伤，几乎要死；你们在这里等候，和我一同警醒。」"
   ],
   "Matthew 26:52": [
    "Then Jesus said to him, “Put your sword back into its place, for all those who take the sword will die by the sword.",
@@ -1312,6 +1376,10 @@
   "Luke 19:10": [
    "For the Son of Man came to seek and to save that which was lost.”",
    "人子来，为要寻找、拯救失丧的人。」"
+  ],
+  "Luke 20:38": [
+   "Now he is not the God of the dead, but of the living, for all are alive to him.”",
+   "神原不是死人的神，乃是活人的神；因为在他那里（那里：或译看来），人都是活的。」"
   ],
   "Luke 22:19": [
    "He took bread, and when he had given thanks, he broke, and gave it to them, saying, “This is my body which is given for you. Do this in memory of me.”",
@@ -1744,6 +1812,10 @@
   "Acts 2:47": [
    "praising God, and having favor with all the people. The Lord added to the assembly day by day those who were being saved.",
    "赞美神，得众民的喜爱。主将得救的人天天加给他们。"
+  ],
+  "Acts 4:24": [
+   "When they heard it, they lifted up their voice to God with one accord, and said, “O Lord, you are God, who made the heaven, the earth, the sea, and all that is in them;",
+   "他们听见了，就同心合意地高声向神说：「主啊！你是造天、地、海，和其中万物的，"
   ],
   "Acts 5:3": [
    "But Peter said, “Ananias, why has Satan filled your heart to lie to the Holy Spirit and to keep back part of the price of the land?",
@@ -2477,6 +2549,10 @@
    "Not that I speak because of lack, for I have learned in whatever state I am, to be content in it.",
    "我并不是因缺乏说这话；我无论在什么景况都可以知足，这是我已经学会了。"
   ],
+  "Colossians 1:15": [
+   "He is the image of the invisible God, the firstborn of all creation.",
+   "爱子是那不能看见之神的像，是首生的，在一切被造的以先。"
+  ],
   "Colossians 1:16": [
    "For by him all things were created in the heavens and on the earth, visible things and invisible things, whether thrones or dominions or principalities or powers. All things have been created through him and for him.",
    "因为万有都是靠他造的，无论是天上的，地上的；能看见的，不能看见的；或是有位的，主治的，执政的，掌权的；一概都是借着他造的，又是为他造的。"
@@ -2508,6 +2584,10 @@
   "Colossians 3:24": [
    "knowing that from the Lord you will receive the reward of the inheritance; for you serve the Lord Christ.",
    "因你们知道从主那里必得着基业为赏赐；你们所事奉的乃是主基督。"
+  ],
+  "Colossians 4:2": [
+   "Continue steadfastly in prayer, watching in it with thanksgiving,",
+   "你们要恒切祷告，在此警醒感恩。"
   ],
   "Colossians 4:5": [
    "Walk in wisdom toward those who are outside, redeeming the time.",
@@ -2561,6 +2641,10 @@
    "For even when we were with you, we commanded you this: “If anyone is not willing to work, don’t let him eat.”",
    "我们在你们那里的时候，曾吩咐你们说，若有人不肯做工，就不可吃饭。"
   ],
+  "I Timothy 2:1": [
+   "I exhort therefore, first of all, that petitions, prayers, intercessions, and givings of thanks be made for all men:",
+   "我劝你，第一要为万人恳求、祷告、代求、祝谢；"
+  ],
   "I Timothy 2:4": [
    "who desires all people to be saved and come to full knowledge of the truth.",
    "他愿意万人得救，明白真道。"
@@ -2596,6 +2680,10 @@
   "I Timothy 6:18": [
    "that they do good, that they be rich in good works, that they be ready to distribute, willing to share;",
    "又要嘱咐他们行善，在好事上富足，甘心施舍，乐意供给（或译：体贴）人，"
+  ],
+  "II Timothy 2:15": [
+   "Give diligence to present yourself approved by God, a workman who doesn’t need to be ashamed, properly handling the Word of Truth.",
+   "你当竭力在神面前得蒙喜悦，作无愧的工人，按着正意分解真理的道。"
   ],
   "II Timothy 2:24": [
    "The Lord’s servant must not quarrel, but be gentle toward all, able to teach, patient,",
@@ -2773,6 +2861,10 @@
    "As each has received a gift, employ it in serving one another, as good managers of the grace of God in its various forms.",
    "各人要照所得的恩赐彼此服事，作神百般恩赐的好管家。"
   ],
+  "I Peter 4:11": [
+   "If anyone speaks, let it be as it were the very words of God. If anyone serves, let it be as of the strength which God supplies, that in all things God may be glorified through Jesus Christ, to whom belong the glory and the dominion forever and ever. Amen.",
+   "若有讲道的，要按着神的圣言讲；若有服事人的，要按着神所赐的力量服事，叫神在凡事上因耶稣基督得荣耀。原来荣耀、权能都是他的，直到永永远远。阿们！"
+  ],
   "I Peter 5:2": [
    "Shepherd the flock of God which is among you, exercising the oversight, not under compulsion, but voluntarily, not for dishonest gain, but willingly;",
    "务要牧养在你们中间神的群羊，按着神旨意照管他们；不是出于勉强，乃是出于甘心；也不是因为贪财，乃是出于乐意；"
@@ -2780,6 +2872,10 @@
   "I Peter 5:3": [
    "not as lording it over those entrusted to you, but making yourselves examples to the flock.",
    "也不是辖制所托付你们的，乃是作群羊的榜样。"
+  ],
+  "I Peter 5:7": [
+   "casting all your worries on him, because he cares for you.",
+   "你们要将一切的忧虑卸给神，因为他顾念你们。"
   ],
   "II Peter 1:10": [
    "Therefore, brothers, be more diligent to make your calling and election sure. For if you do these things, you will never stumble.",
@@ -2864,6 +2960,10 @@
   "Revelation of John 5:6": [
    "I saw in the middle of the throne and of the four living creatures, and in the middle of the elders, a Lamb standing, as though it had been slain, having seven horns and seven eyes, which are the seven Spirits of God, sent out into all the earth.",
    "我又看见宝座与四活物，并长老之中有羔羊站立，像是被杀过的，有七角七眼，就是神的七灵，奉差遣往普天下去的。"
+  ],
+  "Revelation of John 5:8": [
+   "Now when he had taken the book, the four living creatures and the twenty-four elders fell down before the Lamb, each one having a harp, and golden bowls full of incense, which are the prayers of the saints.",
+   "他既拿了书卷，四活物和二十四位长老就俯伏在羔羊面前，各拿着琴和盛满了香的金炉；这香就是众圣徒的祈祷。"
   ],
   "Revelation of John 6:10": [
    "They cried with a loud voice, saying, “How long, Master, the holy and true, until you judge and avenge our blood on those who dwell on the earth?”",

@@ -520,6 +520,28 @@ const RELATED_BRIDGES: Record<string, { id: string; reason: Text }[]> = {
     { id: 'new/09-one-god-three-persons', reason: { zh: '相关一课 · 三位一体', en: "Related lesson · The Trinity" } },
     { id: 'deeper/19-sovereignty-and-choice', reason: { zh: '相关一课 · 神的主权和人的选择', en: "Related lesson · God's sovereignty and human choice" } },
   ],
+  'new/29-small-groups': [
+    { id: 'deeper/04-leading-a-study', reason: { zh: '读深一点 · 怎样带一次查经', en: "Going deeper · How to lead a Bible study" } },
+    { id: 'new/28-why-gather-every-week', reason: { zh: '相关一课 · 为什么每周聚会', en: "Related lesson · Why gather every week" } },
+  ],
+  'new/30-worry-and-anxiety': [
+    { id: 'new/20-when-suffering-comes', reason: { zh: '相关一课 · 受苦的时候', en: "Related lesson · When suffering comes" } },
+    { id: 'new/02-learning-to-pray', reason: { zh: '动手做 · 怎样祷告', en: "Try it · How to pray" } },
+  ],
+  'deeper/55-dead-sea-scrolls': [
+    { id: 'seeking/05-manuscripts', reason: { zh: '背景 · 抄本是怎样保存下来的', en: "Background · How the manuscripts survived" } },
+    { id: 'deeper/03-second-temple-world', reason: { zh: '相关一课 · 新约背后的第二圣殿世界', en: "Related lesson · The Second Temple world behind the New Testament" } },
+  ],
+  'deeper/56-saints-icons-and-intercession': [
+    { id: 'deeper/44-mary-across-traditions', reason: { zh: '相关一课 · 各传统怎样看马利亚', en: "Related lesson · How the traditions see Mary" } },
+    { id: 'new/13-the-church-and-the-communion-of-saints', reason: { zh: '入门 · 我信圣徒相通', en: "First look · The communion of saints" } },
+  ],
+  'deeper/57-giving-a-short-talk': [
+    { id: 'deeper/04-leading-a-study', reason: { zh: '相关一课 · 怎样带一次查经', en: "Related lesson · How to lead a Bible study" } },
+  ],
+  'deeper/58-leading-prayer-together': [
+    { id: 'new/02-learning-to-pray', reason: { zh: '入门 · 怎样祷告', en: "First look · How to pray" } },
+  ],
 };
 
 const data: { tracks: TrackInfo[] } = JSON.parse(document.getElementById('app-data')?.textContent || '{"tracks":[]}');
