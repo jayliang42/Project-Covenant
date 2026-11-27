@@ -557,6 +557,18 @@ const RELATED_BRIDGES: Record<string, { id: string; reason: Text }[]> = {
     { id: 'new/17-money-and-giving', reason: { zh: '入门 · 金钱和奉献', en: "First look · Money and giving" } },
     { id: 'new/20-when-suffering-comes', reason: { zh: '相关一课 · 受苦的时候', en: "Related lesson · When suffering comes" } },
   ],
+  'seeking/25-what-happens-after-death': [
+    { id: 'new/14-forgiveness-resurrection-and-life-everlasting', reason: { zh: '读深一点 · 我信身体复活，我信永生', en: "Going deeper · The resurrection of the body and life everlasting" } },
+    { id: 'seeking/16-hell-and-judgment', reason: { zh: '相关问题 · 地狱和审判', en: "Related question · Hell and judgment" } },
+  ],
+  'deeper/62-the-three-great-traditions': [
+    { id: 'deeper/32-east-and-west', reason: { zh: '背景 · 1054 年的东西分裂', en: "Background · The East-West schism of 1054" } },
+    { id: 'deeper/15-the-reformation', reason: { zh: '背景 · 宗教改革', en: "Background · The Reformation" } },
+  ],
+  'deeper/63-creation-and-new-creation': [
+    { id: 'curious/15-new-heaven-new-earth', reason: { zh: '入门 · 故事的结局：新天新地', en: "First look · How the story ends: a new heaven and earth" } },
+    { id: 'deeper/21-guide-genesis', reason: { zh: '相关一课 · 逐卷读创世记', en: "Related lesson · A guide to Genesis" } },
+  ],
 };
 
 const data: { tracks: TrackInfo[] } = JSON.parse(document.getElementById('app-data')?.textContent || '{"tracks":[]}');

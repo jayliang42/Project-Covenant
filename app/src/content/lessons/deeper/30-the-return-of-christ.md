@@ -6,7 +6,7 @@ summary:
   zh: "所有传统都相信耶稣要再来、死人要复活、神要审判世界。具体的次序和启示录 20 章的“一千年”怎样理解，看法很不一样。本课介绍四种主要的千禧年观和“被提”的不同看法。"
   en: "All traditions believe that Jesus will return, the dead will be raised, and God will judge the world. They differ widely on the order of events and on the “thousand years” of Revelation 20. This lesson introduces the four main views of the millennium and the differing views of the “rapture.”"
 unit: church-teaching
-order: 2
+order: 3
 minutes: 10
 status: published
 review: checked

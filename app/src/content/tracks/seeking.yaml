@@ -10,7 +10,7 @@ art: wanderer-home
 units:
   - id: big-questions
     title: { zh: 大问题, en: The big questions }
-    summary: { zh: 有没有神、苦难、各宗教、科学、祷告和圣经里的“矛盾”, en: "Whether God exists, suffering, the religions, science, prayer, and alleged contradictions in the Bible" }
+    summary: { zh: 有没有神、苦难、各宗教、科学、祷告、圣经里的“矛盾”和死后, en: "Whether God exists, suffering, the religions, science, prayer, alleged contradictions in the Bible, and life after death" }
   - id: hard-questions
     title: { zh: 最难接受的地方, en: The hardest parts }
     summary: { zh: 旧约里的战争、地狱、教会的过错、信仰和自由、基督教是不是“洋教”, en: "Wars in the Old Testament, hell, the church's wrongs, faith and freedom, whether Christianity is a Western religion" }

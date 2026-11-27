@@ -6,7 +6,7 @@ summary:
   zh: "女性可不可以作牧师、长老或神父？天主教和东正教只按立男性为神父；新教内部分成“互补派”和“平等派”两种主要看法。本课介绍双方引用的经文、各自的理由，以及几个教会的实际做法。"
   en: "Can women serve as pastors, elders, or priests? The Catholic and Orthodox churches ordain only men as priests, and Protestants divide mainly into complementarian and egalitarian views. This lesson introduces the passages each side cites, their reasons, and the practice of several churches."
 unit: church-teaching
-order: 5
+order: 6
 minutes: 10
 status: published
 review: checked

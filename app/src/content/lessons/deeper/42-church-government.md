@@ -6,7 +6,7 @@ summary:
   zh: "教会由谁来做决定？各宗派的治理方式大致分三种：由主教带领的主教制，由选出来的长老共同治理的长老制，以及由每个地方教会自己决定的会众制。本课介绍三种制度、各自引用的经文，以及哪些教会采用哪一种。"
   en: "Who makes decisions in a church? Church government falls broadly into three forms: episcopal, led by bishops; presbyterian, governed jointly by elected elders; and congregational, in which each local church decides for itself. This lesson introduces the three, the passages each cites, and which churches use which."
 unit: church-teaching
-order: 6
+order: 7
 minutes: 8
 status: published
 review: checked

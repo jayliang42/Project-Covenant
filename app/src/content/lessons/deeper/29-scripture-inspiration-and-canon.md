@@ -6,7 +6,7 @@ summary:
   zh: "基督徒都说圣经是神的话，但对“无误”的范围、圣经和教会传统的关系、旧约应当包括哪些书，看法并不相同。本课把几种主要的立场并排介绍。"
   en: "All Christians call the Bible God's word, yet they differ on the scope of its inerrancy, on how Scripture relates to church tradition, and on which books belong in the Old Testament. This lesson sets the main positions side by side."
 unit: church-teaching
-order: 1
+order: 2
 minutes: 10
 status: published
 review: checked

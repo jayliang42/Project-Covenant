@@ -6,7 +6,7 @@ summary:
   zh: "新约记载了说方言、预言、医病等恩赐。这些恩赐今天是否继续，是福音派内部讨论很多的问题。本课介绍“停止论”“延续论”、古典五旬节派和“开放但谨慎”几种立场，以及各方都同意的地方。"
   en: "The New Testament records gifts such as tongues, prophecy, and healing. Whether these gifts continue today is much debated among evangelicals. This lesson introduces cessationism, continuationism, classical Pentecostalism, and the “open but cautious” position, along with what all sides agree on."
 unit: church-teaching
-order: 4
+order: 5
 minutes: 9
 status: published
 review: checked

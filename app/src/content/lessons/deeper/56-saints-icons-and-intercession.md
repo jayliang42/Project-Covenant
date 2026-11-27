@@ -6,7 +6,7 @@ summary:
   zh: "天主教和东正教的信徒会请已经离世的圣徒为自己代求，东正教的教堂里满是圣像；很多新教教堂却只有一个十字架，甚至什么都没有。本课介绍这些做法的来历、各传统的理由，以及大家都同意的地方。"
   en: "Catholic and Orthodox believers ask departed saints to pray for them, and Orthodox churches are filled with icons; many Protestant churches have only a cross, or nothing at all. This lesson introduces where these practices come from, each tradition's reasons, and what all agree on."
 unit: church-teaching
-order: 8
+order: 9
 minutes: 9
 status: published
 review: checked

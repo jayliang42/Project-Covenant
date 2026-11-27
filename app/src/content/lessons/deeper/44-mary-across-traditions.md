@@ -6,7 +6,7 @@ summary:
   zh: "所有基督徒都尊敬马利亚，因为她是耶稣的母亲，也是顺服神的榜样。但天主教、东正教和新教对她的看法差别很大：称她为“神之母”、无原罪始胎、升天、向她祈求。本课介绍这些说法的来历和各传统的立场。"
   en: "All Christians honour Mary as the mother of Jesus and an example of obedience to God. But Catholic, Orthodox, and Protestant views of her differ widely: calling her “Mother of God,” the Immaculate Conception, the Assumption, and asking her intercession. This lesson explains where these teachings come from and where each tradition stands."
 unit: church-teaching
-order: 7
+order: 8
 minutes: 9
 status: published
 review: checked

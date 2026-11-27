@@ -21,6 +21,10 @@
    "God blessed them. God said to them, “Be fruitful, multiply, fill the earth, and subdue it. Have dominion over the fish of the sea, over the birds of the sky, and over every living thing that moves on the earth.”",
    "神就赐福给他们，又对他们说：「要生养众多，遍满地面，治理这地，也要管理海里的鱼、空中的鸟，和地上各样行动的活物。」"
   ],
+  "Genesis 1:31": [
+   "God saw everything that he had made, and, behold, it was very good. There was evening and there was morning, a sixth day.",
+   "神看着一切所造的都甚好。有晚上，有早晨，是第六日。"
+  ],
   "Genesis 2:15": [
    "Yahweh God took the man, and put him into the garden of Eden to cultivate and keep it.",
    "耶和华神将那人安置在伊甸园，使他修理，看守。"
@@ -52,6 +56,10 @@
   "Genesis 9:6": [
    "Whoever sheds man’s blood, his blood will be shed by man, for God made man in his own image.",
    "凡流人血的，他的血也必被人所流，因为神造人是照自己的形像造的。"
+  ],
+  "Genesis 9:10": [
+   "and with every living creature that is with you: the birds, the livestock, and every animal of the earth with you, of all that go out of the ship, even every animal of the earth.",
+   "并与你们这里的一切活物─就是飞鸟、牲畜、走兽，凡从方舟里出来的活物─立约。"
   ],
   "Genesis 12:1": [
    "Now Yahweh said to Abram, “Leave your country, and your relatives, and your father’s house, and go to the land that I will show you.",
@@ -449,6 +457,10 @@
    "Before the mountains were born, before you had formed the earth and the world, even from everlasting to everlasting, you are God.",
    "诸山未曾生出，地与世界你未曾造成，从亘古到永远，你是神。"
   ],
+  "Psalms 90:12": [
+   "So teach us to count our days, that we may gain a heart of wisdom.",
+   "求你指教我们怎样数算自己的日子，好叫我们得着智慧的心。"
+  ],
   "Psalms 103:12": [
    "As far as the east is from the west, so far has he removed our transgressions from us.",
    "东离西有多远，他叫我们的过犯离我们也有多远！"
@@ -532,6 +544,10 @@
   "Ecclesiastes 1:2": [
    "“Vanity of vanities,” says the Preacher; “Vanity of vanities, all is vanity.”",
    "传道者说：虚空的虚空，虚空的虚空，凡事都是虚空。"
+  ],
+  "Ecclesiastes 3:11": [
+   "He has made everything beautiful in its time. He has also set eternity in their hearts, yet so that man can’t find out the work that God has done from the beginning even to the end.",
+   "神造万物，各按其时成为美好，又将永生（原文是永远）安置在世人心里。然而神从始至终的作为，人不能参透。"
   ],
   "Ecclesiastes 4:9": [
    "Two are better than one, because they have a good reward for their labor.",
@@ -1709,6 +1725,10 @@
    "Jesus said to her, “I am the resurrection and the life. He who believes in me will still live, even if he dies.",
    "耶稣对她说：「复活在我，生命也在我。信我的人虽然死了，也必复活；"
   ],
+  "John 11:26": [
+   "Whoever lives and believes in me will never die. Do you believe this?”",
+   "凡活着信我的人必永远不死。你信这话吗？」"
+  ],
   "John 11:33": [
    "When Jesus therefore saw her weeping, and the Jews weeping who came with her, he groaned in the spirit, and was troubled,",
    "耶稣看见她哭，并看见与她同来的犹太人也哭，就心里悲叹，又甚忧愁，"
@@ -1752,6 +1772,10 @@
   "John 17:3": [
    "This is eternal life, that they should know you, the only true God, and him whom you sent, Jesus Christ.",
    "认识你─独一的真神，并且认识你所差来的耶稣基督，这就是永生。"
+  ],
+  "John 17:20": [
+   "Not for these only do I pray, but for those also who will believe in me through their word,",
+   "「我不但为这些人祈求，也为那些因他们的话信我的人祈求，"
   ],
   "John 17:21": [
    "that they may all be one; even as you, Father, are in me, and I in you, that they also may be one in us; that the world may believe that you sent me.",
@@ -2141,6 +2165,22 @@
    "For I consider that the sufferings of this present time are not worthy to be compared with the glory which will be revealed toward us.",
    "我想，现在的苦楚若比起将来要显于我们的荣耀就不足介意了。"
   ],
+  "Romans 8:19": [
+   "For the creation waits with eager expectation for the children of God to be revealed.",
+   "受造之物切望等候神的众子显出来。"
+  ],
+  "Romans 8:20": [
+   "For the creation was subjected to vanity, not of its own will, but because of him who subjected it, in hope",
+   "因为受造之物服在虚空之下，不是自己愿意，乃是因那叫他如此的。"
+  ],
+  "Romans 8:21": [
+   "that the creation itself also will be delivered from the bondage of decay into the liberty of the glory of the children of God.",
+   "但受造之物仍然指望脱离败坏的辖制，得享（享：原文是入）神儿女自由的荣耀。"
+  ],
+  "Romans 8:22": [
+   "For we know that the whole creation groans and travails in pain together until now.",
+   "我们知道，一切受造之物一同叹息，劳苦，直到如今。"
+  ],
   "Romans 8:26": [
    "In the same way, the Spirit also helps our weaknesses, for we don’t know how to pray as we ought. But the Spirit himself makes intercession for us with groanings which can’t be uttered.",
    "况且，我们的软弱有圣灵帮助；我们本不晓得当怎样祷告，只是圣灵亲自用说不出来的叹息替我们祷告。"
@@ -2208,6 +2248,10 @@
   "Romans 13:10": [
    "Love doesn’t harm a neighbor. Love therefore is the fulfillment of the law.",
    "爱是不加害与人的，所以爱就完全了律法。"
+  ],
+  "Romans 14:4": [
+   "Who are you who judge another’s servant? To his own lord he stands or falls. Yes, he will be made to stand, for God has power to make him stand.",
+   "你是谁，竟论断别人的仆人呢？他或站住或跌倒，自有他的主人在；而且他也必要站住，因为主能使他站住。"
   ],
   "Romans 14:5": [
    "One man esteems one day as more important. Another esteems every day alike. Let each man be fully assured in his own mind.",
@@ -2433,6 +2477,14 @@
    "It is sown a natural body; it is raised a spiritual body. There is a natural body and there is also a spiritual body.",
    "所种的是血气的身体，复活的是灵性的身体。若有血气的身体，也必有灵性的身体。"
   ],
+  "I Corinthians 15:54": [
+   "But when this perishable body will have become imperishable, and this mortal will have put on immortality, then what is written will happen: “Death is swallowed up in victory.”",
+   "这必朽坏的既变成不朽坏的，这必死的既变成不死的，那时经上所记「死被得胜吞灭」的话就应验了。"
+  ],
+  "I Corinthians 15:55": [
+   "“Death, where is your sting? Hades, where is your victory?”",
+   "死啊！你得胜的权势在哪里？死啊！你的毒钩在哪里？"
+  ],
   "II Corinthians 1:3": [
    "Blessed be the God and Father of our Lord Jesus Christ, the Father of mercies and God of all comfort;",
    "愿颂赞归与我们的主耶稣基督的父神，就是发慈悲的父，赐各样安慰的神。"
@@ -2444,6 +2496,14 @@
   "II Corinthians 3:18": [
    "But we all, with unveiled face seeing the glory of the Lord as in a mirror, are transformed into the same image from glory to glory, even as from the Lord, the Spirit.",
    "我们众人既然敞着脸得以看见主的荣光，好像从镜子里返照，就变成主的形状，荣上加荣，如同从主的灵变成的。"
+  ],
+  "II Corinthians 5:8": [
+   "We are courageous, I say, and are willing rather to be absent from the body and to be at home with the Lord.",
+   "我们坦然无惧，是更愿意离开身体与主同住。"
+  ],
+  "II Corinthians 5:17": [
+   "Therefore if anyone is in Christ, he is a new creation. The old things have passed away. Behold, all things have become new.",
+   "若有人在基督里，他就是新造的人，旧事已过，都变成新的了。"
   ],
   "II Corinthians 8:9": [
    "For you know the grace of our Lord Jesus Christ, that though he was rich, yet for your sakes he became poor, that you through his poverty might become rich.",
@@ -2633,6 +2693,18 @@
    "being confident of this very thing, that he who began a good work in you will complete it until the day of Jesus Christ.",
    "我深信那在你们心里动了善工的，必成全这工，直到耶稣基督的日子。"
   ],
+  "Philippians 1:21": [
+   "For to me to live is Christ, and to die is gain.",
+   "因我活着就是基督，我死了就有益处。"
+  ],
+  "Philippians 1:22": [
+   "But if I live on in the flesh, this will bring fruit from my work; yet I don’t know what I will choose.",
+   "但我在肉身活着，若成就我工夫的果子，我就不知道该挑选什么。"
+  ],
+  "Philippians 1:23": [
+   "But I am hard pressed between the two, having the desire to depart and be with Christ, which is far better.",
+   "我正在两难之间，情愿离世与基督同在，因为这是好得无比的。"
+  ],
   "Philippians 2:6": [
    "who, existing in the form of God, didn’t consider equality with God a thing to be grasped,",
    "他本有神的形像，不以自己与神同等为强夺的；"
@@ -2693,6 +2765,10 @@
    "He is before all things, and in him all things are held together.",
    "他在万有之先；万有也靠他而立。"
   ],
+  "Colossians 1:20": [
+   "and through him to reconcile all things to himself by him, whether things on the earth or things in the heavens, having made peace through the blood of his cross.",
+   "既然借着他在十字架上所流的血成就了和平，便借着他叫万有─无论是地上的、天上的─都与自己和好了。"
+  ],
   "Colossians 2:15": [
    "Having stripped the principalities and the powers, he made a show of them openly, triumphing over them in it.",
    "既将一切执政的、掌权的掳来，明显给众人看，就仗着十字架夸胜。"
@@ -2748,6 +2824,10 @@
   "I Thessalonians 4:5": [
    "not in the passion of lust, even as the Gentiles who don’t know God,",
    "不放纵私欲的邪情，像那不认识神的外邦人。"
+  ],
+  "I Thessalonians 4:13": [
+   "But we don’t want you to be ignorant, brothers, concerning those who have fallen asleep, so that you don’t grieve like the rest, who have no hope.",
+   "论到睡了的人，我们不愿意弟兄们不知道，恐怕你们忧伤，像那些没有指望的人一样。"
   ],
   "I Thessalonians 4:17": [
    "then we who are alive, who are left, will be caught up together with them in the clouds, to meet the Lord in the air. So we will be with the Lord forever.",
@@ -2868,6 +2948,10 @@
   "Hebrews 2:14": [
    "Since then the children have shared in flesh and blood, he also himself in the same way partook of the same, that through death he might bring to nothing him who had the power of death, that is, the devil,",
    "儿女既同有血肉之体，他也照样亲自成了血肉之体，特要借着死败坏那掌死权的，就是魔鬼，"
+  ],
+  "Hebrews 2:15": [
+   "and might deliver all of them who through fear of death were all their lifetime subject to bondage.",
+   "并要释放那些一生因怕死而为奴仆的人。"
   ],
   "Hebrews 4:9": [
    "There remains therefore a Sabbath rest for the people of God.",
@@ -3160,6 +3244,10 @@
   "Revelation of John 21:22": [
    "I saw no temple in it, for the Lord God, the Almighty, and the Lamb, are its temple.",
    "我未见城内有殿，因主神─全能者和羔羊为城的殿。"
+  ],
+  "Revelation of John 22:1": [
+   "He showed me a river of water of life, clear as crystal, proceeding out of the throne of God and of the Lamb,",
+   "天使又指示我在城内街道当中一道生命水的河，明亮如水晶，从神和羔羊的宝座流出来。"
   ],
   "Revelation of John 22:2": [
    "in the middle of its street. On this side of the river and on that was the tree of life, bearing twelve kinds of fruits, yielding its fruit every month. The leaves of the tree were for the healing of the nations.",

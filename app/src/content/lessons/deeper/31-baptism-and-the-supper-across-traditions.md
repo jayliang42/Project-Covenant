@@ -6,7 +6,7 @@ summary:
   zh: "“刚开始信”路径介绍过洗礼和圣餐的基本意思。这一课更细地比较各传统：给谁施洗、怎样施洗、洗礼成就了什么；圣餐里基督怎样同在，谁可以领。"
   en: "The New Believer path introduced the basic meaning of baptism and the Lord's Supper. This lesson compares the traditions in more detail: whom to baptize, how, and what baptism accomplishes; how Christ is present in the Supper, and who may receive it."
 unit: church-teaching
-order: 3
+order: 4
 minutes: 10
 status: published
 review: checked

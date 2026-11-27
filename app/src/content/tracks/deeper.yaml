@@ -10,7 +10,7 @@ art: river-of-life
 units:
   - id: whole-bible
     title: { zh: 整本圣经的脉络, en: The shape of the whole Bible }
-    summary: { zh: 圣约、国度、圣殿、出埃及，以及怎样在旧约里读出基督, en: "Covenant, kingdom, temple, the exodus, and reading Christ in the Old Testament" }
+    summary: { zh: 圣约、国度、圣殿、出埃及、创造和新创造，以及怎样在旧约里读出基督, en: "Covenant, kingdom, temple, the exodus, creation and new creation, and reading Christ in the Old Testament" }
   - id: reading-books
     title: { zh: 读不同的书卷, en: Reading different kinds of books }
     summary: { zh: 叙事和律法、诗篇智慧书、先知书、福音书、比喻、书信、启示录、原文和工具书, en: "Narrative and law, Psalms and wisdom, prophets, Gospels, parables, letters, Revelation, original languages and tools" }
@@ -28,7 +28,7 @@ units:
     summary: { zh: 神的属性、人和原罪、十字架、称义和成圣、神的主权和人的选择, en: "The attributes of God, humanity and original sin, the cross, justification and sanctification, sovereignty and choice" }
   - id: church-teaching
     title: { zh: 各传统的不同教导, en: Where the traditions differ }
-    summary: { zh: 圣经的权威和正典、基督再来、洗礼和圣餐、属灵恩赐、女性的服事、教会治理、马利亚、圣徒和圣像, en: "Scripture's authority and canon, Christ's return, baptism and the Lord's Supper, spiritual gifts, women in ministry, church government, Mary, saints and icons" }
+    summary: { zh: 三大传统概览、圣经的权威和正典、基督再来、洗礼和圣餐、属灵恩赐、女性的服事、教会治理、马利亚、圣徒和圣像, en: "An overview of the three traditions, Scripture's authority and canon, Christ's return, baptism and the Lord's Supper, spiritual gifts, women in ministry, church government, Mary, saints and icons" }
   - id: ethics
     title: { zh: 婚姻和性的伦理, en: The ethics of marriage and sexuality }
     summary: { zh: 婚姻、离婚和再婚；性伦理；安息日和主日；战争与和平；成功神学, en: "Marriage, divorce, and remarriage; sexual ethics; the Sabbath and the Lord's Day; war and peace; the prosperity gospel" }
