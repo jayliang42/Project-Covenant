@@ -6,7 +6,7 @@ summary:
   zh: "你已经大致知道圣经是一本什么书，它讲的故事，以及故事的中心人物。本课给你几个具体的建议：从哪一卷开始读，怎样读，读不懂怎么办，以及接下来可以走哪条路径。"
   en: "You now have a sense of what kind of book the Bible is, the story it tells, and the person at its centre. This lesson gives practical suggestions: which book to start with, how to read, what to do when you don't understand, and which path to take next."
 unit: story-end
-order: 4
+order: 5
 minutes: 6
 status: published
 review: checked

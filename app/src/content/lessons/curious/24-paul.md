@@ -6,7 +6,7 @@ summary:
   zh: "新约 27 卷书里有 13 卷署名保罗。他原来是逼迫基督徒的法利赛人，后来成了把福音传到外邦的使徒。本课讲他的经历，以及他为什么这样重要。"
   en: "Thirteen of the New Testament's 27 books bear Paul's name. He was a Pharisee who persecuted Christians and became the apostle who took the gospel to the Gentiles. This lesson tells his story and why he matters so much."
 unit: story-end
-order: 2
+order: 3
 minutes: 7
 status: published
 review: checked

@@ -16,7 +16,7 @@ units:
     summary: { zh: 叙事和律法、诗篇智慧书、先知书、福音书、比喻、书信、启示录、原文和工具书, en: "Narrative and law, Psalms and wisdom, prophets, Gospels, parables, letters, Revelation, original languages and tools" }
   - id: book-guides
     title: { zh: 逐卷导读, en: Book guides }
-    summary: { zh: 创世记、出埃及记、约伯记、诗篇、以赛亚书、但以理书、马可、约翰、使徒行传、罗马书、以弗所书、希伯来书、雅各书, en: "Genesis, Exodus, Job, Psalms, Isaiah, Daniel, Mark, John, Acts, Romans, Ephesians, Hebrews, James" }
+    summary: { zh: 创世记、出埃及记、约伯记、诗篇、以赛亚书、但以理书、马可、约翰、使徒行传、罗马书、哥林多前书、以弗所书、希伯来书、雅各书, en: "Genesis, Exodus, Job, Psalms, Isaiah, Daniel, Mark, John, Acts, Romans, 1 Corinthians, Ephesians, Hebrews, James" }
   - id: background
     title: { zh: 历史背景, en: Historical background }
     summary: { zh: 古代近东、第二圣殿、罗马城市、死海古卷, en: "Ancient Near East, Second Temple, Roman cities, the Dead Sea Scrolls" }
