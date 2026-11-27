@@ -328,6 +328,38 @@ const RELATED_BRIDGES: Record<string, { id: string; reason: Text }[]> = {
     { id: 'seeking/11-what-is-sin', reason: { zh: '接着想 · 圣经说的“罪”', en: "Thinking further · What the Bible means by sin" } },
     { id: 'seeking/06-what-it-means-to-believe', reason: { zh: '接着想 · “信”是什么意思', en: "Thinking further · What it means to believe" } },
   ],
+  'seeking/14-old-testament-wars': [
+    { id: 'seeking/02-why-is-there-suffering', reason: { zh: '相关一课 · 如果神良善，为什么有苦难', en: "Related lesson · If God is good, why is there suffering?" } },
+    { id: 'deeper/11-ancient-near-east', reason: { zh: '读深一点 · 古代近东的背景', en: "Going deeper · The ancient Near East background" } },
+  ],
+  'seeking/15-wrongs-done-by-the-church': [
+    { id: 'deeper/15-the-reformation', reason: { zh: '读深一点 · 宗教改革', en: "Going deeper · The Reformation" } },
+    { id: 'seeking/11-what-is-sin', reason: { zh: '接着想 · 圣经说的“罪”', en: "Thinking further · What the Bible means by sin" } },
+  ],
+  'seeking/16-hell-and-judgment': [
+    { id: 'deeper/18-understanding-the-atonement', reason: { zh: '读深一点 · 十字架成就了什么', en: "Going deeper · What the cross accomplished" } },
+    { id: 'curious/15-new-heaven-new-earth', reason: { zh: '相关一课 · 新天新地', en: "Related lesson · The new heaven and new earth" } },
+  ],
+  'seeking/17-does-prayer-work': [
+    { id: 'new/02-learning-to-pray', reason: { zh: '动手做 · 学习祷告', en: "Try it · Learning to pray" } },
+    { id: 'new/20-when-suffering-comes', reason: { zh: '相关一课 · 受苦的时候', en: "Related lesson · When suffering comes" } },
+  ],
+  'seeking/18-will-i-lose-my-freedom': [
+    { id: 'seeking/13-counting-the-cost', reason: { zh: '接着想 · 跟随耶稣的代价', en: "Thinking further · The cost of following Jesus" } },
+    { id: 'seeking/12-grace', reason: { zh: '接着想 · 恩典', en: "Thinking further · Grace" } },
+  ],
+  'seeking/19-when-family-does-not-understand': [
+    { id: 'new/16-forgiving-others', reason: { zh: '相关一课 · 饶恕和和好', en: "Related lesson · Forgiveness and reconciliation" } },
+    { id: 'new/10-finding-a-church', reason: { zh: '动手做 · 找一间教会', en: "Try it · Finding a church" } },
+  ],
+  'seeking/20-the-bible-and-other-ancient-books': [
+    { id: 'seeking/05-manuscripts', reason: { zh: '想查证 · 抄本和文本', en: "Checking the evidence · Manuscripts and the text" } },
+    { id: 'seeking/07-are-all-religions-the-same', reason: { zh: '相关一课 · 所有宗教都一样吗', en: "Related lesson · Are all religions the same?" } },
+  ],
+  'seeking/21-how-do-i-become-a-christian': [
+    { id: 'new/01-reading-every-day', reason: { zh: '下一步 · 每天读经', en: "Next step · Reading every day" } },
+    { id: 'new/05-baptism-and-communion', reason: { zh: '下一步 · 洗礼和圣餐', en: "Next step · Baptism and communion" } },
+  ],
 };
 
 const data: { tracks: TrackInfo[] } = JSON.parse(document.getElementById('app-data')?.textContent || '{"tracks":[]}');

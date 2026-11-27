@@ -68,7 +68,7 @@ const lessons = defineCollection({
       .array(z.object({ label: text, path: z.string(), why: text.optional() }))
       .default([]),
     // Public sources used when the lesson's facts were checked. Shown at the end of the lesson.
-    sources: z.array(z.object({ label: text, url: z.string().url() })).default([]),
+    sources: z.array(z.object({ label: text, url: z.url() })).default([]),
   }),
 });
 
