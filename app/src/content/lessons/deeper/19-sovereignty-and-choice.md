@@ -6,7 +6,7 @@ summary:
   zh: "圣经说神掌管一切、拣选人，也说人要选择、要负责。本课介绍圣经两方面的说法，教会历史上的几种主要立场，以及讨论这个问题时可以保持的态度。"
   en: "The Bible says God rules over all and chooses people, and it also says people must choose and are responsible. This lesson presents both sides of the biblical teaching, the main positions in church history, and a helpful attitude for discussing the question."
 unit: doctrine
-order: 3
+order: 5
 minutes: 9
 status: published
 review: checked

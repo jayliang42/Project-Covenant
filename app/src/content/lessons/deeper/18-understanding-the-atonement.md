@@ -6,7 +6,7 @@ summary:
   zh: "新约用好几种画面讲十字架。教会历史上，不同的神学家强调了不同的方面。本课介绍几种主要的理解，它们各自的经文根据，以及怎样把它们放在一起看。"
   en: "The New Testament uses several pictures for the cross, and theologians through history have stressed different ones. This lesson introduces the main views, the Scripture behind each, and how they fit together."
 unit: doctrine
-order: 2
+order: 3
 minutes: 9
 status: published
 review: checked

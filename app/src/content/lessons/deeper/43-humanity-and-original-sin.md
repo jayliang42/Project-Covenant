@@ -6,7 +6,7 @@ summary:
   zh: "圣经说人是照神的形象造的，又说罪从亚当进入世界。亚当的罪怎样影响他的后代？奥古斯丁和伯拉纠曾为此激烈争论；今天天主教、东正教和改革宗的说法仍有分别。本课把这些看法并排介绍。"
   en: "The Bible says humans are made in God's image, and that sin entered the world through Adam. How does Adam's sin affect his descendants? Augustine and Pelagius fought hard over this, and Catholic, Orthodox, and Reformed teaching still differ today. This lesson sets these views side by side."
 unit: doctrine
-order: 4
+order: 2
 minutes: 9
 status: published
 review: checked

@@ -6,7 +6,7 @@ summary:
   zh: "称义讲的是人在神面前的地位，成圣讲的是人一生的改变。本课分开讲这两个词，看它们怎样连在一起，以及弄混了会有什么问题。"
   en: "Justification is about a person's standing before God, and sanctification is about lifelong change. This lesson explains each word, how they connect, and what goes wrong when they are confused."
 unit: doctrine
-order: 1
+order: 4
 minutes: 8
 status: published
 review: checked

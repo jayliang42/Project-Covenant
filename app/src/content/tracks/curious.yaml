@@ -13,7 +13,7 @@ units:
     summary: { zh: 66 卷、两约、多种文体、怎样查经文、常见的词, en: "66 books, two testaments, kinds of writing, finding a verse, common words" }
   - id: big-story
     title: { zh: 一条大故事, en: One big story }
-    summary: { zh: 从创造到被掳归回，以及节期和大卫, en: "From creation to the return from exile, with the feasts and David" }
+    summary: { zh: 从创造到被掳归回，包括节期、应许之地和大卫, en: "From creation to the return from exile, including the feasts, the promised land, and David" }
   - id: jesus
     title: { zh: 耶稣是谁, en: Who is Jesus? }
     summary: { zh: 他的降生、教导、神迹、遇见的人、死和复活, en: "His birth, teaching, miracles, the people he met, his death and resurrection" }

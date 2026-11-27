@@ -6,7 +6,7 @@ summary:
   zh: "圣经原来用希伯来文、亚兰文和希腊文写成。本课介绍这几种语言的一些特点，几种常用的工具书，以及查原文时容易犯的错误。"
   en: "The Bible was first written in Hebrew, Aramaic, and Greek. This lesson introduces some features of these languages, a few common study tools, and mistakes people often make when looking up the original words."
 unit: reading-books
-order: 7
+order: 8
 minutes: 9
 status: published
 review: checked

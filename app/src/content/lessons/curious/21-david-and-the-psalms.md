@@ -6,7 +6,7 @@ summary:
   zh: "大卫是旧约里篇幅最多的人物之一。本课讲他的一生、他的失败、神给他的应许，以及和他连在一起的那卷诗歌集。"
   en: "David is one of the most fully described people in the Old Testament. This lesson covers his life, his failure, God's promise to him, and the book of songs tied to his name."
 unit: big-story
-order: 6
+order: 7
 minutes: 7
 status: published
 review: checked

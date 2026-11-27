@@ -10,10 +10,10 @@ art: river-of-life
 units:
   - id: whole-bible
     title: { zh: 整本圣经的脉络, en: The shape of the whole Bible }
-    summary: { zh: 圣约、国度、圣殿，以及怎样在旧约里读出基督, en: "Covenant, kingdom, temple, and reading Christ in the Old Testament" }
+    summary: { zh: 圣约、国度、圣殿、出埃及，以及怎样在旧约里读出基督, en: "Covenant, kingdom, temple, the exodus, and reading Christ in the Old Testament" }
   - id: reading-books
     title: { zh: 读不同的书卷, en: Reading different kinds of books }
-    summary: { zh: 叙事和律法、诗篇智慧书、先知书、福音书、书信、启示录、原文和工具书, en: "Narrative and law, Psalms and wisdom, prophets, Gospels, letters, Revelation, original languages and tools" }
+    summary: { zh: 叙事和律法、诗篇智慧书、先知书、福音书、比喻、书信、启示录、原文和工具书, en: "Narrative and law, Psalms and wisdom, prophets, Gospels, parables, letters, Revelation, original languages and tools" }
   - id: book-guides
     title: { zh: 逐卷导读, en: Book guides }
     summary: { zh: 创世记、出埃及记、约伯记、诗篇、以赛亚书、马可、约翰、使徒行传、罗马书、以弗所书、希伯来书、雅各书, en: "Genesis, Exodus, Job, Psalms, Isaiah, Mark, John, Acts, Romans, Ephesians, Hebrews, James" }
@@ -25,13 +25,13 @@ units:
     summary: { zh: 早期信经、东西教会分裂、中世纪、宗教改革、敬虔运动和大觉醒、近代宣教、中文圣经、中国教会（至 1949 年）、20 世纪的教会, en: "Early creeds, the East-West schism, the Middle Ages, the Reformation, Pietism and the Great Awakening, modern missions, the Chinese Bible, the church in China to 1949, the twentieth-century church" }
   - id: doctrine
     title: { zh: 更深地认识救恩, en: Understanding salvation more deeply }
-    summary: { zh: 称义和成圣、十字架、神的主权和人的选择、人和原罪、神的属性, en: "Justification and sanctification, the cross, sovereignty and choice, humanity and original sin, the attributes of God" }
+    summary: { zh: 神的属性、人和原罪、十字架、称义和成圣、神的主权和人的选择, en: "The attributes of God, humanity and original sin, the cross, justification and sanctification, sovereignty and choice" }
   - id: church-teaching
     title: { zh: 各传统的不同教导, en: Where the traditions differ }
     summary: { zh: 圣经的权威和正典、基督再来、洗礼和圣餐、属灵恩赐、女性的服事、教会治理、马利亚、圣徒和圣像, en: "Scripture's authority and canon, Christ's return, baptism and the Lord's Supper, spiritual gifts, women in ministry, church government, Mary, saints and icons" }
   - id: ethics
     title: { zh: 婚姻和性的伦理, en: The ethics of marriage and sexuality }
-    summary: { zh: 婚姻、离婚和再婚；性伦理；安息日和主日；战争与和平, en: "Marriage, divorce, and remarriage; sexual ethics; the Sabbath and the Lord's Day; war and peace" }
+    summary: { zh: 婚姻、离婚和再婚；性伦理；安息日和主日；战争与和平；成功神学, en: "Marriage, divorce, and remarriage; sexual ethics; the Sabbath and the Lord's Day; war and peace; the prosperity gospel" }
   - id: leading
     title: { zh: 带领他人, en: Leading others }
     summary: { zh: 带查经、处理小组难处、陪伴受苦的人、预备分享、带领祷告, en: "Leading studies, handling hard moments, caring for those who suffer, preparing a talk, and leading prayer" }

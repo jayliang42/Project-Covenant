@@ -542,6 +542,21 @@ const RELATED_BRIDGES: Record<string, { id: string; reason: Text }[]> = {
   'deeper/58-leading-prayer-together': [
     { id: 'new/02-learning-to-pray', reason: { zh: '入门 · 怎样祷告', en: "First look · How to pray" } },
   ],
+  'curious/26-the-promised-land': [
+    { id: 'seeking/14-old-testament-wars', reason: { zh: '相关问题 · 旧约里的战争', en: "Related question · War in the Old Testament" } },
+    { id: 'deeper/37-reading-narrative-and-law', reason: { zh: '读深一点 · 怎样读旧约的叙事', en: "Going deeper · How to read Old Testament narrative" } },
+  ],
+  'deeper/59-the-exodus-theme': [
+    { id: 'curious/10-out-of-egypt', reason: { zh: '入门 · 出埃及的故事', en: "First look · The story of the exodus" } },
+    { id: 'deeper/22-guide-exodus', reason: { zh: '相关一课 · 逐卷读出埃及记', en: "Related lesson · A guide to Exodus" } },
+  ],
+  'deeper/60-reading-the-parables': [
+    { id: 'curious/19-the-lost-son', reason: { zh: '动手做 · 读浪子的比喻', en: "Try it · Read the parable of the lost son" } },
+  ],
+  'deeper/61-the-prosperity-gospel': [
+    { id: 'new/17-money-and-giving', reason: { zh: '入门 · 金钱和奉献', en: "First look · Money and giving" } },
+    { id: 'new/20-when-suffering-comes', reason: { zh: '相关一课 · 受苦的时候', en: "Related lesson · When suffering comes" } },
+  ],
 };
 
 const data: { tracks: TrackInfo[] } = JSON.parse(document.getElementById('app-data')?.textContent || '{"tracks":[]}');

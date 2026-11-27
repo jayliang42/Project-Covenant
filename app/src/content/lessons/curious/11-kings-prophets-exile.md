@@ -6,7 +6,7 @@ summary:
   zh: "以色列有了王，又分裂成两国，先后被亚述和巴比伦灭亡。先知们一边责备百姓，一边应许将来有一位君王。"
   en: "Israel gained kings, split into two kingdoms, and fell to Assyria and then Babylon. The prophets rebuked the people and also promised a coming king."
 unit: big-story
-order: 7
+order: 8
 minutes: 7
 status: published
 review: checked

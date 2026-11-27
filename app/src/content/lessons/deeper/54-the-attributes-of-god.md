@@ -6,7 +6,7 @@ summary:
   zh: "圣经说神是永恒的、不改变的、无所不在的、圣洁的、慈爱的。传统神学把这些称为神的“属性”。本课介绍这些属性，以及近代的两场争论：神会不会受苦？神是否完全预知人将来的选择？"
   en: "The Bible says God is eternal, unchanging, everywhere present, holy, and loving. Traditional theology calls these God's “attributes.” This lesson introduces them, along with two modern debates: Can God suffer? Does God fully foreknow people's future choices?"
 unit: doctrine
-order: 5
+order: 1
 minutes: 9
 status: published
 review: checked
