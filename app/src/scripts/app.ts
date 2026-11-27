@@ -424,6 +424,40 @@ const RELATED_BRIDGES: Record<string, { id: string; reason: Text }[]> = {
     { id: 'deeper/35-marriage-divorce-remarriage', reason: { zh: '先读 · 婚姻、离婚和再婚', en: "Read first · Marriage, divorce, and remarriage" } },
     { id: 'new/07-doubt-and-temptation', reason: { zh: '相关一课 · 面对试探', en: "Related lesson · Facing temptation" } },
   ],
+  'curious/24-paul': [
+    { id: 'deeper/09-reading-the-letters', reason: { zh: '读深一点 · 怎样读保罗的书信', en: "Going deeper · How to read Paul's letters" } },
+    { id: 'deeper/27-guide-romans', reason: { zh: '读深一点 · 保罗最系统的一封信：罗马书', en: "Going deeper · Romans, Paul's most systematic letter" } },
+  ],
+  'curious/25-where-to-go-from-here': [
+    { id: 'new/01-reading-every-day', reason: { zh: '动手做 · 开始每天读一点圣经', en: "Try it · Start reading a little every day" } },
+    { id: 'seeking/01-questions-are-welcome', reason: { zh: '接着想 · 还有疑问，可以认真想一想', en: "Thinking further · Still have questions? Think them through" } },
+  ],
+  'seeking/22-who-did-jesus-say-he-was': [
+    { id: 'new/09-one-god-three-persons', reason: { zh: '接着想 · 耶稣是神，神只有一位', en: "Thinking further · Jesus is God, and God is one" } },
+    { id: 'deeper/14-early-church-and-creeds', reason: { zh: '背景 · 早期教会怎样用信经说明耶稣是谁', en: "Background · How the early creeds stated who Jesus is" } },
+  ],
+  'new/25-growing-in-character': [
+    { id: 'deeper/17-justification-and-sanctification', reason: { zh: '读深一点 · 各传统怎样理解成圣', en: "Going deeper · How the traditions understand sanctification" } },
+    { id: 'new/06-when-i-fail', reason: { zh: '相关一课 · 跌倒以后怎样回来', en: "Related lesson · Coming back after a fall" } },
+  ],
+  'deeper/37-reading-narrative-and-law': [
+    { id: 'deeper/02-reading-the-ot-through-christ', reason: { zh: '相关一课 · 怎样在旧约里读出基督', en: "Related lesson · Reading Christ in the Old Testament" } },
+  ],
+  'deeper/38-reading-the-gospels': [
+    { id: 'deeper/25-guide-mark', reason: { zh: '动手做 · 用这些方法读马可福音', en: "Try it · Use these methods on Mark" } },
+  ],
+  'deeper/39-the-twentieth-century-church': [
+    { id: 'deeper/40-spiritual-gifts-today', reason: { zh: '接着读 · 恩赐今天还有吗：各传统的看法', en: "Next · Are the gifts still given today?" } },
+  ],
+  'deeper/40-spiritual-gifts-today': [
+    { id: 'new/11-gifts-and-serving', reason: { zh: '动手做 · 用自己的恩赐服事', en: "Try it · Serve with your gifts" } },
+  ],
+  'deeper/41-women-in-ministry': [
+    { id: 'deeper/42-church-government', reason: { zh: '接着读 · 教会的职分怎样设立', en: "Next · How church offices are arranged" } },
+  ],
+  'deeper/42-church-government': [
+    { id: 'new/10-finding-a-church', reason: { zh: '动手做 · 找教会时了解它怎样治理', en: "Try it · Ask how a church is governed when looking for one" } },
+  ],
 };
 
 const data: { tracks: TrackInfo[] } = JSON.parse(document.getElementById('app-data')?.textContent || '{"tracks":[]}');

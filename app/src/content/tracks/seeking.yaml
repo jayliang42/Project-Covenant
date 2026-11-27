@@ -3,17 +3,20 @@ title: { zh: 认真思考信仰, en: Seeking }
 who: { zh: 我在认真思考要不要信, en: I'm seriously considering faith }
 tagline: { zh: 带着问题来，问题是受欢迎的, en: Bring your questions. They are welcome. }
 description:
-  zh: 为慕道朋友准备：面对几个大问题，了解历史和证据能说明什么、不能说明什么，再了解福音邀请人做什么。
-  en: For seekers. Face the big questions, see what history and evidence can and cannot show, and learn what the gospel invites you to do.
+  zh: 为慕道朋友准备：面对几个大问题和最难接受的地方，了解历史和证据能说明什么、不能说明什么，再了解福音邀请人做什么。
+  en: For seekers. Face the big questions and the hardest parts, see what history and evidence can and cannot show, and learn what the gospel invites you to do.
 color: "#2a7f86"
 art: wanderer-home
 units:
   - id: big-questions
     title: { zh: 大问题, en: The big questions }
-    summary: { zh: 神、苦难、宗教、科学、旧约战争、教会的过错、地狱、祷告和自由, en: "God, suffering, religions, science, Old Testament wars, the church's wrongs, hell, prayer, and freedom" }
+    summary: { zh: 有没有神、苦难、各宗教、科学和祷告, en: "Whether God exists, suffering, the religions, science, and prayer" }
+  - id: hard-questions
+    title: { zh: 最难接受的地方, en: The hardest parts }
+    summary: { zh: 旧约里的战争、地狱、教会的过错、信仰和自由, en: "Wars in the Old Testament, hell, the church's wrongs, faith and freedom" }
   - id: history
     title: { zh: 历史与证据, en: History and evidence }
-    summary: { zh: 证据能说明什么，不能说明什么；圣经和别的古书, en: "What evidence can and cannot show; the Bible and other ancient books" }
+    summary: { zh: 证据能说明什么、抄本、圣经和别的古书、四福音、耶稣自称是谁、复活, en: "What evidence can show, manuscripts, the Bible and other books, the four Gospels, Jesus' claims, the resurrection" }
   - id: invitation
     title: { zh: 福音的邀请, en: The gospel invitation }
     summary: { zh: 罪、恩典、信、跟随、家人和怎样信主, en: "Sin, grace, faith, following Jesus, family, and how to become a Christian" }
